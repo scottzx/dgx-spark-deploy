@@ -5,7 +5,7 @@
 An end-to-end private deployment toolkit for Large Language Models and Multimodal Video Generation on the **NVIDIA DGX Spark (GB10 / 128GB Unified Memory / Ubuntu 24.04 aarch64)**.
 
 - **LLM Inference**: Powered by **llama.cpp** with native Blackwell architecture (`sm_121a`) acceleration, serving GGUF quantized models via an OpenAI-compatible API (`0.0.0.0:8000`).
-- **Video Generation**: Upgraded to the official NVIDIA **Sol-H3-Spark** pipeline (H3 diffusion draft denoising + LTX-2.5 latent refinement), delivering 1344×768 @ 24fps (121 frames, ~5 seconds) HD videos with synchronized audio in ~65 seconds end-to-end.
+- **Video Generation**: Upgraded to the official NVIDIA **Sol-H3-Spark** pipeline (source based on [scottzx/Sana:sol-engine](https://github.com/scottzx/Sana/tree/sol-engine/models/minimax_h3/Sol-H3-Spark), upstream [NVlabs/Sana](https://github.com/NVlabs/Sana); H3 diffusion draft denoising + LTX-2.5 latent refinement), delivering 1344×768 @ 24fps (121 frames, ~5 seconds) HD videos with synchronized audio in ~65 seconds end-to-end.
 - **Session Cache Optimization**: NVMe-backed multi-slot FIFO KV cache persistence, root-anchor prefix hashing, and LCP rollback mitigation.
 - **Batch Acceptance**: Validated through continuous multi-shot batch workloads with full-frame lossless decoding and contact sheet verification. See [Deployment Playbook](docs/deployments/Sol-H3-Spark部署.md).
 

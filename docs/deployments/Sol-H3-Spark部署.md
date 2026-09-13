@@ -5,7 +5,7 @@
 ## 官方来源与配置
 
 - [项目说明](https://nvlabs.github.io/Sana/Sol-Engine/Sol-H3-Spark/)
-- [源码](https://github.com/NVlabs/Sana/tree/sol-engine/models/minimax_h3/Sol-H3-Spark)
+- [官方源码上游](https://github.com/NVlabs/Sana/tree/sol-engine/models/minimax_h3/Sol-H3-Spark) ｜ [实战 Fork 镜像归档](https://github.com/scottzx/Sana/tree/sol-engine/models/minimax_h3/Sol-H3-Spark)
 - Sana 固定提交：`8e0db4fa562d727ea28b8d63015c196db7d97cae`。
 - 384p H3 四步草稿 → H3 潜空间放大 → H3/LTX 适配器 → LTX-2.5 三步精修。
 - 输出 1344×768、121 帧、24 FPS，使用 H3 原始音频。
