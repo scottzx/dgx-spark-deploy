@@ -1,11 +1,13 @@
 # DGX Spark 模型私有化部署
 
+[English](README_EN.md) | **简体中文**
+
 在 **NVIDIA DGX Spark (GB10 / 128GB 统一内存 / Ubuntu 24.04 aarch64)** 上，
 基于 **llama.cpp** 部署 GGUF 量化模型，对外提供 OpenAI 兼容 API（默认 `0.0.0.0:8000`）。
 
 视频生成已成功升级至 NVIDIA 官方 **Sol-H3-Spark**：H3 草稿经 LTX-2.5 精修，
 输出 1344×768、121 帧（约 5 秒）的高清带声视频，端到端单视频生成仅约 67 秒。
-已通过全流程批次测试与关键帧画质验收，详见 [部署记录](docs/Sol-H3-Spark部署.md)。
+已通过全流程批次测试与关键帧画质验收，详见 [部署记录](docs/deployments/Sol-H3-Spark部署.md)。
 
 模型统一缓存目录：`~/models_cache/`
 
