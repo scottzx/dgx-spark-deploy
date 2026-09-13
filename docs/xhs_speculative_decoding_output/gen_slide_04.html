@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1440, height=1920, initial-scale=1.0">
+<title>小红书图文 - 4/4</title>
+<style>
+
+  /* ==========================================================================
+     严格设计系统与排版标准 (Design System & Typography Hierarchy)
+     ========================================================================== */
+  :root {
+    /* 色彩系统 */
+    --bg-canvas: #f9f8f4;          /* 温暖柔和的护眼米白底色 */
+    --text-primary: #1f1f1d;       /* 高对比度炭黑主标题/加粗 */
+    --text-body: #2d2c29;          /* 温润正文炭灰，普通/有序/无序正文统一采用 */
+    --text-muted: #888783;         /* 次要元数据、日期 */
+    --text-page: #7f7e7a;          /* 页码灰 */
+    --color-accent-blue: #477fda;  /* 皇冠徽章蓝 */
+    --color-link: #958047;         /* 复古金棕下划线链接 */
+    --badge-bg: #edeae0;           /* 代码与命令胶囊底色 */
+    --card-bg: #ffffff;            /* 悬浮卡片纯白底 */
+    --card-border: rgba(0, 0, 0, 0.05);
+    --card-shadow: 0 14px 34px rgba(0, 0, 0, 0.07);
+
+    /* 字体族定义 */
+    --font-base: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    --font-mono: "SF Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+
+    /* 字体大小阶梯 (Strict Font Size Scale) */
+    --font-h1: 56px;               /* 封面主标题 */
+    --font-h2: 46px;               /* 章节页主标题 */
+    --font-h3: 34px;               /* 小节/卡片内标题 */
+    --font-body: 34px;             /* 核心正文字号基准：普通正文、有序正文、无序正文全基准对齐！ */
+    --font-meta: 30px;             /* 作者信息、日期副标 */
+    --font-table: 28px;            /* 表格正文 */
+    --font-table-th: 26px;         /* 表头文字 */
+    --font-code: 28px;             /* 行内代码胶囊 */
+    --font-terminal: 27px;         /* 终端代码文字 */
+    --font-page: 32px;             /* 底部页码 */
+
+    /* 行间距阶梯 (Strict Line Heights) */
+    --lh-heading: 1.36;            /* 标题行高 */
+    --lh-body: 1.68;               /* 正文黄金舒适阅读行高 (普通、有序、无序完全统一) */
+    --lh-tight: 1.45;              /* 卡片、表格、终端紧凑行高 */
+
+    /* 上下间隔与垂直韵律 (Vertical Rhythm & Spacings - 紧凑防死白设计) */
+    --pad-canvas: 165px 120px 90px 120px;
+    --space-title-top: 36px;       /* 顶部作者栏到主标题的距离 */
+    --space-title-bottom: 20px;    /* 主标题到首个正文块的距离 */
+    --space-para: 18px;            /* 普通段落之间的上下间隔 */
+    --space-card: 24px;            /* 正文到独立卡片（表格/视窗/插槽）的间隔 */
+    --space-list-item: 14px;       /* 列表项与列表项之间的上下间隔 */
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    width: 1440px; height: 1920px; overflow: hidden;
+    background-color: var(--bg-canvas);
+    font-family: var(--font-base);
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    color: var(--text-body);
+  }
+
+  .slide-container {
+    position: relative; width: 1440px; height: 1920px;
+    padding: var(--pad-canvas);
+    display: flex; flex-direction: column; background-color: var(--bg-canvas);
+  }
+
+  /* ==========================================================================
+     顶部作者信息栏
+     ========================================================================== */
+  .header { display: flex; align-items: center; gap: 26px; flex-shrink: 0; }
+  .avatar {
+    width: 114px; height: 114px; border-radius: 50%; object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); flex-shrink: 0;
+  }
+  .author-info { display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+  .author-row { display: flex; align-items: center; gap: 12px; }
+  .author-name { font-size: 46px; font-weight: 700; color: var(--text-primary); line-height: 1.1; }
+  .crown-badge { width: 38px; height: 38px; display: inline-flex; align-items: center; justify-content: center; }
+  .author-sub { font-size: var(--font-meta); font-weight: 400; color: var(--text-muted); line-height: 1.2; }
+
+  /* ==========================================================================
+     标题阶梯 (H1, H2, H3)
+     ========================================================================== */
+  .title-h1 {
+    margin-top: var(--space-title-top);
+    font-size: var(--font-h1); font-weight: 800; line-height: var(--lh-heading);
+    color: var(--text-primary); letter-spacing: -0.5px;
+  }
+  .title-h2 {
+    margin-top: var(--space-title-top);
+    font-size: var(--font-h2); font-weight: 700; line-height: var(--lh-heading);
+    color: var(--text-primary); letter-spacing: -0.3px;
+  }
+  .title-h3 {
+    margin-top: var(--space-para);
+    font-size: var(--font-h3); font-weight: 700; line-height: 1.4;
+    color: var(--text-primary);
+  }
+
+  /* ==========================================================================
+     正文一致性系统 (普通正文、有序正文、无序正文全部采用相同字号和行高)
+     ========================================================================== */
+  /* 1. 普通正文 */
+  .text-p {
+    font-size: var(--font-body);
+    line-height: var(--lh-body);
+    color: var(--text-body);
+    margin-top: var(--space-para);
+    letter-spacing: -0.15px;
+    line-break: strict;
+    word-break: break-word;
+  }
+  .text-p:first-of-type {
+    margin-top: var(--space-title-bottom);
+  }
+  .text-p strong, .list-text strong {
+    font-weight: 700; color: var(--text-primary);
+  }
+
+  /* 2. 列表通用容器 */
+  .list-container {
+    display: flex; flex-direction: column;
+    gap: var(--space-list-item);
+    margin-top: var(--space-card);
+  }
+
+  /* 3. 有序列表项 (Ordered List) */
+  .ordered-item {
+    display: flex; gap: 20px; align-items: flex-start;
+  }
+  .ordered-num {
+    width: 44px; height: 44px; border-radius: 50%; background: #222222; color: #ffffff;
+    font-size: 22px; font-weight: 700; display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 6px;
+  }
+
+  /* 4. 无序列表项 (Unordered List) */
+  .unordered-item {
+    display: flex; gap: 22px; align-items: flex-start;
+  }
+  .unordered-bullet {
+    width: 12px; height: 12px; border-radius: 50%; background: #3b82f6;
+    flex-shrink: 0; margin-top: 22px;
+  }
+
+  /* 5. 嵌套列表缩进与层级设计 (Sub-items) */
+  .ordered-item.sub-item, .unordered-item.sub-item {
+    margin-left: 48px;
+  }
+  .unordered-item.sub-item .unordered-bullet {
+    width: 10px; height: 10px; background: #64748b; margin-top: 24px;
+  }
+  .ordered-item.sub-item .ordered-num {
+    width: 38px; height: 38px; font-size: 19px; background: #475569; margin-top: 8px;
+  }
+
+  /* 列表正文文本内容 —— 严格继承统一的正文字号与行高 */
+  .list-text {
+    font-size: var(--font-body);
+    line-height: var(--lh-body);
+    color: var(--text-body);
+    flex: 1;
+    letter-spacing: -0.15px;
+    line-break: strict;
+    word-break: break-word;
+  }
+
+  /* ==========================================================================
+     内联元素：胶囊代码与链接
+     ========================================================================== */
+  .code-badge {
+    display: inline; background-color: var(--badge-bg); color: var(--text-body);
+    padding: 3px 12px; border-radius: 8px; font-family: var(--font-mono);
+    font-weight: 600; font-size: var(--font-code); line-height: 1.35;
+    box-decoration-break: clone; -webkit-box-decoration-break: clone;
+    vertical-align: baseline;
+  }
+  .url-link {
+    color: var(--color-link); font-size: var(--font-body); font-weight: 500;
+    text-decoration: underline; text-underline-offset: 8px; word-break: break-all;
+  }
+
+  /* ==========================================================================
+     卡片容器组件：表格、Mac 终端视窗、引用卡片 (紧凑高密度体系)
+     ========================================================================== */
+  .content-card {
+    margin-top: var(--space-card); border-radius: 18px; background: var(--card-bg);
+    box-shadow: var(--card-shadow); border: 1px solid var(--card-border);
+    padding: 24px 28px; display: flex; flex-direction: column; gap: 14px;
+  }
+
+  /* Mac 视窗拟真容器 */
+  .mac-mockup-frame {
+    margin-top: var(--space-card); width: 100%; border-radius: 18px;
+    background: linear-gradient(135deg, #101924, #1c2b3d);
+    box-shadow: var(--card-shadow); padding: 20px 24px;
+    display: flex; flex-direction: column; overflow: hidden;
+  }
+  .mac-titlebar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-bottom: 12px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 14px;
+  }
+  .traffic-dots { display: flex; gap: 10px; }
+  .dot { width: 14px; height: 14px; border-radius: 50%; }
+  .dot.red { background: #ff5f56; }
+  .dot.yellow { background: #ffbd2e; }
+  .dot.green { background: #27c93f; }
+  .mac-title { font-family: var(--font-mono); font-size: 20px; color: #8fa0b5; }
+
+  /* 终端代码盒 */
+  .terminal-box {
+    background: #18191c; border-radius: 12px; padding: 22px 26px;
+    color: #e1e4e8; font-family: var(--font-mono); font-size: var(--font-terminal);
+    line-height: 1.5; overflow-x: hidden;
+    white-space: pre-wrap; word-break: break-all;
+  }
+  .terminal-box .cmd { color: #50fa7b; font-weight: 700; }
+  .terminal-box .comment { color: #6a737d; }
+  .terminal-box .highlight { color: #79c0ff; }
+
+  /* 结构化对比表 */
+  .tech-table {
+    width: 100%; border-collapse: collapse; font-size: var(--font-table);
+  }
+  .tech-table th {
+    text-align: left; padding: 12px 16px; border-bottom: 2px solid #e5e5e0;
+    color: #64748b; font-weight: 700; font-size: var(--font-table-th); line-height: 1.35;
+  }
+  .tech-table td {
+    padding: 14px 16px; border-bottom: 1px dashed #eee; color: #334155; line-height: 1.4;
+  }
+  .tech-table tr:last-child td { border-bottom: none; }
+  .tech-table td strong { color: #0284c7; }
+
+  /* 引用重点框 - 采用米金温和质感与科技蓝饰条 */
+  .callout-box {
+    background: #f1ede1; border-left: 8px solid var(--color-accent-blue); padding: 20px 26px;
+    border-radius: 6px 14px 14px 6px; margin-top: var(--space-card);
+    font-size: var(--font-body); color: var(--text-body); line-height: var(--lh-body);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+  }
+  .callout-box strong { color: var(--text-primary); font-weight: 700; }
+
+  /* 插图占位卡片 */
+  .illustration-slot {
+    margin-top: var(--space-card); width: 100%; min-height: 480px; border-radius: 18px;
+    background: #f0ede6; border: 2px dashed #d6d0c2;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px; color: #8c8270; padding: 30px; text-align: center;
+  }
+  .slot-icon { font-size: 48px; }
+  .slot-title { font-size: 32px; font-weight: 700; color: #6e6454; }
+  .slot-desc { font-size: 26px; color: #9c917d; max-width: 80%; line-height: 1.45; }
+
+  /* 底部页码 */
+  .footer { position: absolute; bottom: 85px; left: 0; right: 0; text-align: center; }
+  .pagination { font-size: var(--font-page); font-weight: 500; color: var(--text-page); letter-spacing: 1px; }
+
+</style>
+</head>
+<body>
+<div class="slide-container">
+  
+  <div class="header">
+    <img class="avatar" src="assets/avatar.png" alt="Avatar">
+    <div class="author-info">
+      <div class="author-row">
+        <span class="author-name">晓风谈AI</span>
+        <span class="crown-badge">
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#477fda" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z"/>
+          </svg>
+        </span>
+      </div>
+      <div class="author-sub">26/09/10</div>
+    </div>
+  </div>
+  <div class="slide-body">
+    <div class="title-h2">端侧超大模型性能调优黄金铁律</div>
+<div class="text-p">通过本次工程调优实践，我们提炼出端侧超大模型性能调优的四项核心工程铁律，为后续私有化架构演进提供参考指导。</div>
+<div class="list-container">
+
+              <div class="unordered-item">
+                <div class="unordered-bullet"></div>
+                <div class="list-text"><strong>认清访存物理铁律</strong>：生成延迟由内存总线带宽决定，32B 稠密模型全量硬算反而比 177B 稀疏架构慢一倍以上，不可盲目换用大稠密；</div>
+              </div>
+
+              <div class="unordered-item">
+                <div class="unordered-bullet"></div>
+                <div class="list-text"><strong>投机解码是唯一无损捷径</strong>：在不降低脑容量、不换弱模型的前提下，投机采样是用闲置算力打破带宽限制的唯一确定性路径；</div>
+              </div>
+
+              <div class="unordered-item">
+                <div class="unordered-bullet"></div>
+                <div class="list-text"><strong>优先选择零风险垫脚石</strong>：模式匹配方案不吃任何额外显存、零配置复杂度，在代码、文档和结构化场景稳赚不赔；</div>
+              </div>
+
+              <div class="unordered-item">
+                <div class="unordered-bullet"></div>
+                <div class="list-text"><strong>追求极速的进阶演进路线</strong>：若业务追求 40 到 50 的翻倍极速，后续可无缝挂载同系列超轻量独立小模型，进一步释放硬件算力红利。</div>
+              </div>
+</div>
+
+            <div class="callout-box">
+              <strong>终局架构洞察</strong>：在 128G 统一内存设备上，177B 稀疏模型叠加轻量投机解码与 NVMe 会话持久化，是兼顾顶尖智力与极速响应的工业级黄金解法。
+            </div>
+  </div>
+  
+  <div class="footer">
+    <div class="pagination">4/4</div>
+  </div>
+</div>
+</body>
+</html>

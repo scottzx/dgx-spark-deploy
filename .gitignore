@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & virtualenvs
+.env
+.env.*
+env/
+venv/
+envs/
+.venv/
+ENV/
+
+# Model weights & large binaries (Never commit model weights!)
+models_cache/
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.tar.gz
+*.zip
+*.7z
+
+# Video & Heavy Media Outputs
+outputs/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.pcm
+*.flac
+
+# NVMe Cache & Serving Temporary Files
+slot_cache/
+*.slot
+*.session
+
+# Logs and databases
+*.log
+logs/
+*.sqlite
+*.db
+
+# Operating System & IDE Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Corporate & local symlinks
+云深处*.pptx
+xhs_presentation
+scratch/

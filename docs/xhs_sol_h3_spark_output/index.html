@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sol-H3-Spark 部署与验收实操经验帖 - 小红书 3:4 科技长图巡展工作台</title>
+<style>
+  :root {
+    --bg-dark: #12141a;
+    --card-bg: #1c1f26;
+    --accent: #3b82f6;
+    --text: #f0f2f5;
+    --text-dim: #9ba1b0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Segoe UI", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: rgba(28, 31, 38, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 14px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-logo { width: 38px; height: 38px; border-radius: 50%; object-fit: cover; }
+  .brand-title { font-size: 18px; font-weight: 700; }
+  .brand-tag {
+    font-size: 12px; background: rgba(59, 130, 246, 0.18);
+    color: #60a5fa; padding: 2px 8px; border-radius: 4px; font-weight: 600;
+  }
+
+  .controls { display: flex; align-items: center; gap: 16px; }
+
+  .btn {
+    background: #2a2e38; color: var(--text); border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 8px 16px; border-radius: 8px; font-size: 14px; font-weight: 500; cursor: pointer;
+    transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 6px; text-decoration: none;
+  }
+  .btn:hover { background: #373c49; border-color: rgba(255, 255, 255, 0.25); }
+  .btn-primary { background: var(--accent); border-color: var(--accent); }
+  .btn-primary:hover { background: #2563eb; }
+
+  .mode-switch {
+    display: flex; background: #1e222b; border-radius: 8px; padding: 3px; border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .mode-btn {
+    padding: 6px 14px; border-radius: 6px; font-size: 13px; border: none; background: transparent; color: var(--text-dim); cursor: pointer;
+  }
+  .mode-btn.active { background: #2d3340; color: #fff; font-weight: 600; }
+
+  main { flex: 1; padding: 36px 20px; display: flex; justify-content: center; align-items: flex-start; }
+
+  .gallery-view {
+    display: flex; flex-wrap: wrap; gap: 36px; justify-content: center; width: 100%; max-width: 1800px;
+  }
+
+  .slide-wrapper {
+    display: flex; flex-direction: column; align-items: center; gap: 12px;
+  }
+  .slide-label { font-size: 14px; color: var(--text-dim); display: flex; align-items: center; gap: 8px; }
+  .slide-label strong { color: #fff; }
+
+  .slide-viewport {
+    width: 432px; height: 576px; overflow: hidden; position: relative;
+    border-radius: 12px; box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    background: #f9f8f4; transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .slide-viewport:hover { transform: translateY(-4px); box-shadow: 0 22px 48px rgba(0, 0, 0, 0.55); }
+  .slide-viewport iframe {
+    width: 1440px; height: 1920px; border: none; transform: scale(0.3); transform-origin: 0 0; pointer-events: none;
+  }
+
+  .deck-view { display: none; flex-direction: column; align-items: center; gap: 24px; }
+  .deck-viewport {
+    width: 600px; height: 800px; overflow: hidden; position: relative;
+    border-radius: 16px; box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6); background: #f9f8f4;
+  }
+  .deck-viewport iframe { width: 1440px; height: 1920px; border: none; transform: scale(0.41666667); transform-origin: 0 0; }
+  .deck-nav { display: flex; align-items: center; gap: 24px; font-size: 16px; }
+
+  .toast-bar {
+    position: fixed; bottom: 24px; right: 24px; background: #1e222b;
+    border: 1px solid rgba(255, 255, 255, 0.12); padding: 12px 20px; border-radius: 10px;
+    font-size: 13px; color: var(--text-dim); box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4); z-index: 100;
+  }
+  .toast-bar code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 4px; color: #60a5fa; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <img src="assets/avatar.png" alt="Avatar" class="brand-logo">
+    <div class="brand-title">Sol-H3-Spark 第一次实战经验帖 · 微短剧实测与三大暗坑复盘</div>
+    <div class="brand-tag">3:4 · 1440×1920 超清 · 7页</div>
+  </div>
+
+  <div class="controls">
+    <div class="mode-switch">
+      <button class="mode-btn active" id="btn-gallery" onclick="switchMode('gallery')">画廊矩阵</button>
+      <button class="mode-btn" id="btn-deck" onclick="switchMode('deck')">单页巡展 (键盘左右)</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="gallery-view" id="galleryView"></div>
+
+  <div class="deck-view" id="deckView">
+    <div class="deck-viewport">
+      <iframe id="deckIframe" src=""></iframe>
+    </div>
+    <div class="deck-nav">
+      <button class="btn" onclick="prevSlide()">◀ 上一页</button>
+      <span id="deckPageIndicator">1 / 7</span>
+      <button class="btn" onclick="nextSlide()">下一页 ▶</button>
+    </div>
+  </div>
+</main>
+
+<div class="toast-bar">
+  💡 编译源文件: <code>docs/xhs_sol_h3_spark_cards.md</code> · 7 张 1440×1920 高清经验卡片
+</div>
+
+<script>
+  const slides = [
+    { html: 'gen_slide_01.html', png: 'rendered_output/gen_slide_01.png', label: '01 封面 · 英伟达Sol-H3-Spark第一次微短剧实战复盘' },
+    { html: 'gen_slide_02.html', png: 'rendered_output/gen_slide_02.png', label: '02 效率 · 单卡六十五秒批量连续出片的高效流水线' },
+    { html: 'gen_slide_03.html', png: 'rendered_output/gen_slide_03.png', label: '03 避坑一 · 第一大致命暗坑角色与装束跨镜头严重漂移' },
+    { html: 'gen_slide_04.html', png: 'rendered_output/gen_slide_04.png', label: '04 避坑二 · 第二大致命暗坑场景空间割裂与机位缺乏连贯' },
+    { html: 'gen_slide_05.html', png: 'rendered_output/gen_slide_05.png', label: '05 避坑三 · 第三大致命暗坑原生音频无法开口讲清台词' },
+    { html: 'gen_slide_06.html', png: 'rendered_output/gen_slide_06.png', label: '06 神细节 · 实战神级细节大赏小女儿学巧虎呼呼吹手肘' },
+    { html: 'gen_slide_07.html', png: 'rendered_output/gen_slide_07.png', label: '07 演进 · 下一代端侧视频生成工业化全流程演进方向' }
+  ];
+
+  let currentIndex = 0;
+
+  function renderGallery() {
+    const container = document.getElementById('galleryView');
+    container.innerHTML = slides.map((item, idx) => `
+      <div class="slide-wrapper">
+        <div class="slide-label"><strong>P${idx+1}</strong> · ${item.label}</div>
+        <div class="slide-viewport">
+          <iframe src="${item.html}"></iframe>
+        </div>
+        <div style="display:flex; gap:8px;">
+          <a href="${item.html}" target="_blank" class="btn" style="font-size:12px; padding:4px 10px;">HTML源码</a>
+          <a href="${item.png}" target="_blank" class="btn btn-primary" style="font-size:12px; padding:4px 10px;">高清PNG</a>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function switchMode(mode) {
+    const gallery = document.getElementById('galleryView');
+    const deck = document.getElementById('deckView');
+    const btnGallery = document.getElementById('btn-gallery');
+    const btnDeck = document.getElementById('btn-deck');
+
+    if (mode === 'gallery') {
+      gallery.style.display = 'flex';
+      deck.style.display = 'none';
+      btnGallery.classList.add('active');
+      btnDeck.classList.remove('active');
+    } else {
+      gallery.style.display = 'none';
+      deck.style.display = 'flex';
+      btnGallery.classList.remove('active');
+      btnDeck.classList.add('active');
+      updateDeck();
+    }
+  }
+
+  function updateDeck() {
+    document.getElementById('deckIframe').src = slides[currentIndex].html;
+    document.getElementById('deckPageIndicator').innerText = `${currentIndex + 1} / ${slides.length}`;
+  }
+
+  function nextSlide() {
+    if (currentIndex < slides.length - 1) {
+      currentIndex++;
+      updateDeck();
+    }
+  }
+
+  function prevSlide() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateDeck();
+    }
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (document.getElementById('deckView').style.display === 'flex') {
+      if (e.key === 'ArrowRight' || e.key === 'Space') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    }
+  });
+
+  renderGallery();
+  updateDeck();
+</script>
+
+</body>
+</html>
