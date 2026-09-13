@@ -1,6 +1,6 @@
 # DGX Spark 项目文档体系索引 (Documentation Index)
 
-本目录归档了在 **NVIDIA DGX Spark (GB10 / 128GB Unified Memory / aarch64)** 上进行大语言模型与多模态视频生成私有化部署的全流程技术文档、实操手册、基准压测与运营卡片。
+本目录归档了在 **NVIDIA DGX Spark (GB10 / 128GB Unified Memory / aarch64)** 上进行大语言模型与多模态视频生成私有化部署的全流程技术文档、实操手册与技术报告体系。
 
 ---
 
@@ -8,25 +8,24 @@
 
 ```text
 docs/
-├── README.md                     # 本文档导航索引
-├── deployments/                  # 核心服务部署与运维实操手册
-│   ├── Sol-H3-Spark部署.md       # Sol-H3-Spark 视频生成部署与微短剧实战记录
+├── README.md                          # 本文档导航索引
+├── deployments/                       # 核心服务部署与运维实操手册
+│   ├── Sol-H3-Spark部署.md            # Sol-H3-Spark 视频生成部署与微短剧实战记录
 │   └── DGX_Spark_Qwen3.8_部署与实战全景总结.md # Qwen3.8 / llama.cpp / NVMe 缓存全景总结
-├── benchmarks/                   # 验收测试与多模态抽帧接触表
-│   ├── acceptance-20260913-023512/ # 官方三类标准用例（海浪/舞蹈/公园）验收
-│   ├── pool_daughter_blow_001/    # 单镜头微动作测试接触表
-│   └── pool_elbow_story_001/      # 三镜头父女泳池连续微短剧批次接触表
-├── presentations/                # 视觉呈现与小红书 3:4 科技长图工作台
-│   ├── 01_sol_h3_spark_story/    # 微短剧实战复盘（7页 1440×1920，含 index.html 巡展工作台）
-│   ├── 02_llm_session_cache/     # NVMe 会话缓存与多槽位调度工程卡片
-│   ├── 03_speculative_decoding/  # 投机采样加速卡片
-│   └── archive/                  # 历史版本归档
-└── assets/                       # 共享视觉多媒体资源
+├── presentations/                     # 连续技术报告与视觉呈现工作台 (01 ~ 06)
+│   ├── 01_sol_h3_spark_story/         # 技术报告 01：微短剧实战复盘 (小红书 3:4 长图与工作台)
+│   ├── 02_llm_session_cache/          # 技术报告 02：NVMe 会话缓存与多槽位调度工程卡片
+│   ├── 03_speculative_decoding/       # 技术报告 03：投机采样加速技术卡片
+│   ├── 04_acceptance_standard_cases/  # 技术报告 04：官方标准三用例基准验收与全景接触表
+│   ├── 05_pool_daughter_blow_test/    # 技术报告 05：单镜头微动作连续性测试技术报告
+│   ├── 06_pool_elbow_story_batch/     # 技术报告 06：三镜头连续微短剧批次生成与一致性评测报告
+│   └── archive/                       # 历史卡片版本归档
+└── assets/                            # 共享视觉多媒体资源
 ```
 
 ---
 
-## 一、核心部署指南 (Deployments)
+## 一、核心部署手册 (Deployments)
 
 | 文档名称 | 核心主题 | 主要内容 |
 | :--- | :--- | :--- |
@@ -35,24 +34,15 @@ docs/
 
 ---
 
-## 二、评测与验收报告 (Benchmarks)
+## 二、连续技术报告与视觉呈现体系 (Presentations: 01 ~ 06)
 
-| 目录 | 评测目标 | 包含产物 |
-| :--- | :--- | :--- |
-| [acceptance-20260913-023512](benchmarks/acceptance-20260913-023512) | 官方标准三用例基准 | `dog_park`, `coastal_waves`, `dance_stage` 全帧无损解码与关键帧接触表 |
-| [pool_daughter_blow_001](benchmarks/pool_daughter_blow_001) | 单镜头动作解算审查 | 小女孩学巧虎吹手肘痛痛拜拜微表情与手部解剖结构审查 |
-| [pool_elbow_story_001](benchmarks/pool_elbow_story_001) | 三镜头微短剧批量推理 | 3 个分镜端到端用时（66.6s / 66.1s / 63.3s）、一致性审查与问题记录 |
+本系列按序列记录了从“基础理论、长图文复盘”到“全流程基准测试与多镜头故事生成”的连续技术报告：
 
----
-
-## 三、视觉与宣发卡片 (Presentations)
-
-基于 `xhs-tech-card` 规范制作的 1440×1920 Retina 高清小红书长图卡片：
-
-* **[01_sol_h3_spark_story](presentations/01_sol_h3_spark_story/)**：
-  * **主题**：英伟达Sol-H3-Spark第一次微短剧实战复盘
-  * **包含**：7 张 3:4 高清 PNG、源码 [cards.md](presentations/01_sol_h3_spark_story/cards.md)、本地交互巡展工作台 [index.html](presentations/01_sol_h3_spark_story/index.html)。
-* **[02_llm_session_cache](presentations/02_llm_session_cache/)**：
-  * **主题**：大模型高并发 NVMe 会话持久化与 KV Cache 调度优化
-* **[03_speculative_decoding](presentations/03_speculative_decoding/)**：
-  * **主题**：基于小模型辅助的投机采样推理加速实践
+| 编号 | 报告与成果主题 | 形式与交付物 | 核心内容摘要 |
+| :--- | :--- | :--- | :--- |
+| **01** | [01_sol_h3_spark_story](presentations/01_sol_h3_spark_story/) | 3:4 科技长图卡片 / HTML 巡展工作台 | 英伟达Sol-H3-Spark第一次微短剧实战复盘（7页 1440×1920，含 index.html 交互工作台） |
+| **02** | [02_llm_session_cache](presentations/02_llm_session_cache/) | 3:4 科技长图卡片 | 大模型高并发 NVMe 会话持久化与 KV Cache 调度优化工程卡片 |
+| **03** | [03_speculative_decoding](presentations/03_speculative_decoding/) | 3:4 科技长图卡片 | 基于小模型辅助的投机采样推理加速实践卡片 |
+| **04** | [04_acceptance_standard_cases](presentations/04_acceptance_standard_cases/) | 技术报告 / 关键帧接触表 | 官方标准三用例（海浪/舞蹈/公园）端到端 67s 验收与全帧无损解码质检 |
+| **05** | [05_pool_daughter_blow_test](presentations/05_pool_daughter_blow_test/) | 技术报告 / 关键帧接触表 | 单镜头高动态双人人际交互动作解算测试（小女孩学巧虎吹手肘，手部解剖结构零崩溃） |
+| **06** | [06_pool_elbow_story_batch](presentations/06_pool_elbow_story_batch/) | 技术报告 / 分镜接触表 | 三镜头连续微短剧批处理测试（平均 65.3s/镜）与角色/场景跨镜头一致性深入复盘 |

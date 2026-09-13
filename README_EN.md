@@ -30,8 +30,7 @@ dgx-spark-deploy/
 ├── docs/
 │   ├── README.md              # Documentation index
 │   ├── deployments/           # Technical manuals & architecture summaries
-│   ├── benchmarks/            # Acceptance test logs & contact sheets
-│   └── presentations/         # 3:4 tech card presentations & web workbenches
+│   └── presentations/         # Technical reports & visual presentations (01 ~ 06)
 └── .agents/skills/            # Agentic engineering skills (KV cache optimization)
 ```
 
