@@ -30,7 +30,7 @@ dgx-spark-deploy/
 ├── docs/
 │   ├── README.md              # Documentation index
 │   ├── deployments/           # Technical manuals & architecture summaries
-│   └── presentations/         # Technical reports & visual presentations (01 ~ 06)
+│   └── benchmarks/            # Technical benchmarks & quality inspection reports (04 ~ 06)
 └── .agents/skills/            # Agentic engineering skills (KV cache optimization)
 ```
 
@@ -76,6 +76,7 @@ dgx-spark-deploy/
 | `preflight_sol_h3_component.py` | Dry-run validation of Qwen prompt encoder and H3 denoiser workers |
 | `verify_sol_h3_video.py` | Full-frame lossless MP4 decoding and automated 6-keyframe contact sheet generator |
 | `run_pool_elbow_batch.py` | Multi-shot consecutive batch story generator (3 continuous shots) |
+| `run_chained_cow_story.py` | 4-shot chained story generator with tail-frame inheritance, TTS muxing, and concat |
 
 ---
 

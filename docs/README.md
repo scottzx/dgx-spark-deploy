@@ -12,16 +12,17 @@ docs/
 ├── deployments/                       # 核心服务部署与运维实操手册
 │   ├── Sol-H3-Spark部署.md            # Sol-H3-Spark 视频生成部署与微短剧实战记录
 │   └── DGX_Spark_Qwen3.8_部署与实战全景总结.md # Qwen3.8 / llama.cpp / NVMe 缓存全景总结
-├── presentations/                     # 连续技术报告与视觉呈现工作台 (01 ~ 06)
-│   ├── 01_sol_h3_spark_story/         # 技术报告 01：微短剧实战复盘 (小红书 3:4 长图与工作台)
-│   ├── 02_llm_session_cache/          # 技术报告 02：NVMe 会话缓存与多槽位调度工程卡片
-│   ├── 03_speculative_decoding/       # 技术报告 03：投机采样加速技术卡片
-│   ├── 04_acceptance_standard_cases/  # 技术报告 04：官方标准三用例基准验收与全景接触表
-│   ├── 05_pool_daughter_blow_test/    # 技术报告 05：单镜头微动作连续性测试技术报告
-│   ├── 06_pool_elbow_story_batch/     # 技术报告 06：三镜头连续微短剧批次生成与一致性评测报告
-│   └── archive/                       # 历史卡片版本归档
+├── benchmarks/                        # 性能基准验收与分镜画质质检报告
+│   ├── 04_acceptance_standard_cases/  # 官方标准三用例基准验收与全景接触表
+│   ├── 05_pool_daughter_blow_test/    # 单镜头微动作连续性测试技术报告
+│   └── 06_pool_elbow_story_batch/     # 三镜头连续微短剧批次生成与一致性评测报告
 └── assets/                            # 共享视觉多媒体资源
 ```
+
+> [!TIP]
+> **小红书内容创作与发布体系已全量归口**：  
+> 本项目对应的小红书 3:4 科技长图卡片、HTML 巡展工作台、社媒文案、封面与移动端一键发布链路已统一归口至内容创作库：  
+> `~/Documents/03-内容创作/xhs-publish/01-spark本地部署/`（涵盖 Vol.01 ~ Vol.07 完整分期系列）。
 
 ---
 
@@ -34,15 +35,24 @@ docs/
 
 ---
 
-## 二、连续技术报告与视觉呈现体系 (Presentations: 01 ~ 06)
+## 二、工程基准验收与质检报告 (Benchmarks)
 
-本系列按序列记录了从“基础理论、长图文复盘”到“全流程基准测试与多镜头故事生成”的连续技术报告：
-
-| 编号 | 报告与成果主题 | 形式与交付物 | 核心内容摘要 |
+| 编号 | 验收报告主题 | 形式与交付物 | 核心内容摘要 |
 | :--- | :--- | :--- | :--- |
-| **01** | [01_sol_h3_spark_story](presentations/01_sol_h3_spark_story/) | 3:4 科技长图卡片 / HTML 巡展工作台 | 英伟达Sol-H3-Spark第一次微短剧实战复盘（7页 1440×1920，含 index.html 交互工作台） |
-| **02** | [02_llm_session_cache](presentations/02_llm_session_cache/) | 3:4 科技长图卡片 | 大模型高并发 NVMe 会话持久化与 KV Cache 调度优化工程卡片 |
-| **03** | [03_speculative_decoding](presentations/03_speculative_decoding/) | 3:4 科技长图卡片 | 基于小模型辅助的投机采样推理加速实践卡片 |
-| **04** | [04_acceptance_standard_cases](presentations/04_acceptance_standard_cases/) | 技术报告 / 关键帧接触表 | 官方标准三用例（海浪/舞蹈/公园）端到端 67s 验收与全帧无损解码质检 |
-| **05** | [05_pool_daughter_blow_test](presentations/05_pool_daughter_blow_test/) | 技术报告 / 关键帧接触表 | 单镜头高动态双人人际交互动作解算测试（小女孩学巧虎吹手肘，手部解剖结构零崩溃） |
-| **06** | [06_pool_elbow_story_batch](presentations/06_pool_elbow_story_batch/) | 技术报告 / 分镜接触表 | 三镜头连续微短剧批处理测试（平均 65.3s/镜）与角色/场景跨镜头一致性深入复盘 |
+| **04** | [04_acceptance_standard_cases](benchmarks/04_acceptance_standard_cases/) | 技术报告 / 关键帧接触表 | 官方标准三用例（海浪/舞蹈/公园）端到端 67s 验收与全帧无损解码质检 |
+| **05** | [05_pool_daughter_blow_test](benchmarks/05_pool_daughter_blow_test/) | 技术报告 / 关键帧接触表 | 单镜头高动态双人人际交互动作解算测试（小女孩学巧虎吹手肘，手部解剖结构零崩溃） |
+| **06** | [06_pool_elbow_story_batch](benchmarks/06_pool_elbow_story_batch/) | 技术报告 / 分镜接触表 | 三镜头连续微短剧批处理测试（平均 65.3s/镜）与角色/场景跨镜头一致性深入复盘 |
+
+---
+
+## 三、小红书发布体系关联 (XHS Publication Linkage)
+
+小红书对应的大系列内容位于：[`~/Documents/03-内容创作/xhs-publish/01-spark本地部署/`](file:///Users/scott/Documents/03-%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C/xhs-publish/01-spark%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2/)
+
+* **Vol.01** 模型选型与部署实录（53分钟实录粗剪与转录）
+* **Vol.02** 部署实战全景总结（13页长图卡片与成片视频）
+* **Vol.03** 长上下文突破与并发调度工程实战（8页长图卡片）
+* **Vol.04** Sol-H3-Spark 第一次微短剧实战复盘（7页 1440×1920 长图与交互工作台）
+* **Vol.05** NVMe 会话持久化与 KV Cache 调度优化（5页长图卡片）
+* **Vol.06** 小模型辅助投机采样推理加速实践（6页长图卡片）
+* **Vol.07** 四镜头 20 秒链式动画微短剧（单机 56s/镜）、角色 TTS 混流、双语字幕压制与移动端一键发布平台
