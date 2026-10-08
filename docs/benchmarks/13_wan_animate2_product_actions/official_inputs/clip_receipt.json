@@ -1,0 +1,8 @@
+{
+  "source": "template.mp4",
+  "source_sha256": "d13cde551b5aaa365a83d9321e75b2694b74713c6b0ea1c8feda44070f6b1ee3",
+  "output": "driving_49f24.mp4",
+  "output_sha256": "36a0db9bffcb82f47e08a0bafb7d14556b121f085d6098dd3f9eba4be0a9eb09",
+  "transformation": "ffmpeg fps=24, first 49 frames, H.264, no audio",
+  "purpose": "Official human dance footage, 2.04 seconds; environment compatibility only."
+}

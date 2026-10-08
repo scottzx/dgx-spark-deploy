@@ -1,0 +1,10 @@
+{
+  "id": "S10_clean",
+  "title": "\u5965\u5fb7\u4fee\u65af\u5411\u4e0b\u722c\u68af",
+  "output": "keyframes/S10_clean.png",
+  "references": [
+    "keyframes/S10_start.png"
+  ],
+  "prompt": "Remove the ONE MAN and all his clothes, cloak, sword and body from this frame. Leave a completely EMPTY wooden ladder. Reconstruct the wooden ladder rungs and rails and the horse platform behind where he stood. Keep the exact unchanged camera, rigid wooden horse, open upward hatch, ladder feet, wheels, gate, fountain, lighting and stone background. No people at all, no silhouettes in the hatch. Photorealistic movie set empty background plate, one frame no text.",
+  "seed": 2026100820
+}

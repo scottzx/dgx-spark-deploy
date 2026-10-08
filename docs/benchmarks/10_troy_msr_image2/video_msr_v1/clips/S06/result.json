@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "id": "S06",
+  "title": "暮色关城门",
+  "seed": 2026100506,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S06/raw.mp4",
+  "raw_sha256": "fe6be27bb1f4e9a00b245fb26bca64381389361a7588e781735112e83e403fa3",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S06/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "38f9dac2ca8f82cfa52ef1add6ab28a5e3670c25830ad0d517e7a3b45cab268e",
+    "bytes": 1007293
+  },
+  "generation_s": 118.40238443017006,
+  "phases_s": {
+    "reference_encode_block_s": 1.5970082441344857,
+    "denoising_loop_s": 46.665513169020414,
+    "diffusion_block_s": 111.80344479903579,
+    "decode_and_encode_block_s": 4.964962029829621
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "guard",
+      "kind": "character",
+      "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+      "source_file": "assets/characters/trojan_guard_01_v1.png",
+      "file": "inputs/guard.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+      "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard/frames/s06_v2.png",
+      "file": "inputs/board_S06.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S06.png",
+      "sha256": "29209fbbf85a5e934889164d93943b32c8d1bdfc2194a2a03dd82055d907a886",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "cff5d835fe261bcb07eab5de989aa948c6dc7ee9920c207dab6105e5f3f51296",
+  "prompt_cache_fingerprint": "746cbb3fdcfdfbcdd4a94646cae594bade12db5088b25710e96d5a1294eff144",
+  "peak_torch_allocated_bytes": 42457568768,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

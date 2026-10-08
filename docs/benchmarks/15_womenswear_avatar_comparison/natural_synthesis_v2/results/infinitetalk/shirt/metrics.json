@@ -1,0 +1,39 @@
+{
+  "engine": "infinitetalk",
+  "product": "shirt",
+  "input_sha256": {
+    "driver.mp4": "27dbafbb87e1719f0b28677cef5064a373b856878579829462689be2689cf4e6",
+    "audio.wav": "cb69979a0724bc75095054de1e6ade64f305b49f3de4900756207974fe1c5408",
+    "audio_16k.wav": "3624372ae85954efbe0001fd04c2811869c8d1ddc601b2481e734966ac55512f",
+    "reference.png": "505e483397eab87245e0a04410b106028af2a268d66008b79575bf8f90ab0e22",
+    "first_frame.png": "fd41e143d9484e8fd996a28e958223d349f92dd6ab7a9099ad581940a48b6073"
+  },
+  "commit": "50aa0a94184315407a991ae804d9b58d6d311ba8",
+  "shared_model_load_seconds": 186.2458696491085,
+  "render_seconds": 3578.644393712748,
+  "peak_cuda_allocated_gib": 42.750619888305664,
+  "native_output": "/home/admin/womenswear-avatar-natural-v2/outputs/infinitetalk/shirt/native.mp4",
+  "scope": "Official video-to-video InfiniteTalk. The LTX clip guides the action; InfiniteTalk regenerates the speaking video.",
+  "steps_per_chunk": 8,
+  "motion_frame": 9,
+  "requested_size": [
+    576,
+    768
+  ],
+  "aspect_ratio": "3:4",
+  "model_generates_product_actions": true,
+  "variant": "Official documented FusionX LoRA accelerated inference, eight steps, scale 1.0",
+  "original_LTX_actions_preserved": false,
+  "compatibility": [
+    "FlashAttention-2 and single-device xFormers dense attention use PyTorch SDPA",
+    "inspect.ArgSpec restored for Python 3.12",
+    "Wav2Vec2 eager attention restores original attention-output behavior",
+    "Optional demo TTS disabled; same original Serena audio"
+  ],
+  "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+  "native_duration_seconds": 8.0,
+  "native_output_sha256": "94d29e09153c834061cfdb35e026ad91cac6cd055169a26d054bf03ff2652038",
+  "video_sha256": "a5a7ad9f8bfea7c8406efb4fc2adb86fbed29e1696c150117fde280203b11a38",
+  "final_frame_hold_seconds": 0.04,
+  "normalization_note": "Exact 200-frame/8.00s native output: one 40ms display hold of its final real frame."
+}

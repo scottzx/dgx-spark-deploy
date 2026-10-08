@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "id": "S12",
+  "title": "随队士兵跟出",
+  "seed": 2026100512,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S12/raw.mp4",
+  "raw_sha256": "5490b0d98663603e4ab528f6ff03393ca53d8f0f85463bf46135e0117704227e",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S12/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "39acef8601698ad19da21e0e49afe0e2d65fd20fe66758e8beab26e849ff5a28",
+    "bytes": 1067628
+  },
+  "generation_s": 145.83538054767996,
+  "phases_s": {
+    "reference_encode_block_s": 2.849268075078726,
+    "denoising_loop_s": 65.29524693079293,
+    "diffusion_block_s": 137.99547928897664,
+    "decode_and_encode_block_s": 4.959485660772771
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "odysseus",
+      "kind": "character",
+      "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+      "source_file": "assets/characters/odysseus_v1.png",
+      "file": "inputs/odysseus.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+      "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "soldier",
+      "kind": "character",
+      "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+      "source_file": "assets/characters/greek_soldier_01_v1.png",
+      "file": "inputs/soldier.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+      "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 3,
+      "id": "horse",
+      "kind": "prop",
+      "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+      "source_file": "assets/scenes/trojan_horse_v1.png",
+      "file": "inputs/horse.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+      "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 4,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard/frames/s12_v2.png",
+      "file": "inputs/board_S12.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S12.png",
+      "sha256": "b7f6171ac5a36c04f1fbfd50e52751a39661a9f6efba5a3dec64c828094901a2",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "64b5de72240e2614209170431b7820ea067c7a0accae0679295608c8c280349a",
+  "prompt_cache_fingerprint": "086b67261a01e1b0d03cdf32c2595bd19ec6ce360c63cfa970238c53a165101e",
+  "peak_torch_allocated_bytes": 42458428928,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "case_id": "climax_v2_01_gate",
+  "mode": "final",
+  "duration_s": 5,
+  "e2e_s": 61.39,
+  "transition": "independent",
+  "previous_clip_id": null,
+  "delivered_frames": 121,
+  "delivered_duration_s": 5.041666666666667,
+  "trim_frames": 0,
+  "continuation": {},
+  "reported_e2e_s": 61.39,
+  "qwen_s": 3.133493637,
+  "stage1_s": 23.277452689,
+  "stage2_s": 34.426439657,
+  "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261004-012109_ref2va/climax_v2_01_gate/stage1",
+  "video_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261004-012109_ref2va/climax_v2_01_gate/stage2/refined_1344x768_121f.mp4",
+  "video_url": "/outputs/api_server_runs/session_20261004-012109_ref2va/climax_v2_01_gate/stage2/refined_1344x768_121f.mp4",
+  "contact_sheet_url": "/outputs/api_server_runs/session_20261004-012109_ref2va/climax_v2_01_gate/stage2/contact_sheet/contact_sheet.png",
+  "client_wall_s": 61.57847982691601,
+  "media": {
+    "frames": 121,
+    "width": 1344,
+    "height": 768,
+    "fps": 24,
+    "duration_s": 5.041666666666667,
+    "sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true
+  }
+}

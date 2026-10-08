@@ -1,0 +1,40 @@
+{
+  "engine": "Official diffusers WanAnimate2DistilledModularPipeline",
+  "input_kind": "generated_product_video",
+  "product": "diet",
+  "reference": "/home/admin/wan-animate2-runtime/inputs/products/reference.png",
+  "reference_sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e",
+  "driving": "/home/admin/wan-animate2-runtime/inputs/products/diet_driver.mp4",
+  "driving_sha256": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+  "prompt": "人物外观描述：一位成年中国女性，齐肩黑色直发，穿红色长袖上衣，坐在浅灰色桌后，面向镜头。背景描述：柔和均匀的摄影棚灯光，灰色背景，固定中景镜头。桌上有三罐商品：左边红白原味罐、中间银红健怡罐、右边红黑零度罐。动作描述：跟随参照视频的连续动作，双手开始为空，拿起中间银底红字的健怡可口可乐罐，举至胸前，正面朝向镜头，手持介绍，随后将同一罐放回原位，松开手，空手自然放在桌上。另外两罐始终在桌上。手与罐保持合理接触，商品形状、颜色、图案和人物面貌保持一致，不增加商品，不切镜头。",
+  "model_directory": "/home/admin/models_cache/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+  "steps": 10,
+  "seed": 20261008,
+  "fps": 24,
+  "input_frames": 201,
+  "input_fps": 25.0,
+  "segment_frame_length": 81,
+  "requested_area_size": [
+    576,
+    384
+  ],
+  "frames": 192,
+  "output_size": [
+    576,
+    384
+  ],
+  "load_seconds_shared": 350.52557394700125,
+  "generation_including_compile_seconds": 529.4077557050623,
+  "case_total_seconds": 530.013404740952,
+  "peak_cuda_allocated_gib": 60.899526596069336,
+  "output_sha256": "dae71db2131e52cc17c11a25cdac5c6c870a7a8e145a613318ac3cb861d1e409",
+  "packages": {
+    "torch": "2.14.1",
+    "diffusers": "0.41.0",
+    "transformers": "5.19.0",
+    "huggingface-hub": "1.33.0",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.2"
+  },
+  "policy": "Motion follows the declared video. Generated drivers are not real capture; their errors may carry into the result. Official examples verify the environment only."
+}

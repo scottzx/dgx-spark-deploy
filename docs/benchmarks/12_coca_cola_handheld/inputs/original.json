@@ -1,0 +1,22 @@
+{
+  "model": "Qwen-Image-2.1 + Viggle Turbo 6-step",
+  "seed": 20261008,
+  "prompt": "Create a single coherent photorealistic ecommerce presenter photograph. Reference image 1 is the presenter: preserve this exact adult Chinese woman, her facial identity, straight shoulder-length black hair, red crew-neck blouse and warm gray studio background. Reference image 2 is the exact beverage can she is presenting: preserve its can shape, colors, design and visible brand lettering. Reframe as a waist-up medium shot, square composition. Her unobstructed face occupies approximately one third of the image height in the upper half. She looks at the camera with gently closed lips. Both forearms and anatomically correct hands are completely visible. She physically holds exactly one can upright at upper chest height below and to the right of her face as seen by the viewer. Her right hand grips the lower side of the can with fingers naturally wrapping around its curved surface, and her left palm supports the can bottom. The main can label faces the camera and is unobstructed. Realistic hand-can contact, contact shadows and natural proportions; the can is about the length of her palm. Face, both hands and whole can clearly visible with margin around them, consistent soft studio lighting. No separate product panel, no collage, no floating can, no additional cans, no extra fingers, no subtitles. Opaque square photograph.",
+  "size": [
+    768,
+    768
+  ],
+  "references": [
+    "/home/admin/digital-human-runtime/inputs/presenter.png",
+    "/home/admin/digital-human-runtime/inputs/original_gb.jpg"
+  ],
+  "reference_sha256": [
+    "4b7dff47b29efdd65cc5391583201fa07a347635f929303b59824fe167eb2584",
+    "5b2c28d45df3a4b875474f92e9971ecefc1cdc2553c833bdcd29fabe943bf48e"
+  ],
+  "load_seconds": 211.7718120040372,
+  "generation_seconds": 14.055427250918001,
+  "peak_cuda_allocated_gib": 39.383155822753906,
+  "sha256": "f4a40802905f814c02e0a8218d273d3dc6d3f8366c90a6c065b33589bb75d293",
+  "policy": "Single generated input per SKU; shared unchanged across A/B/C; no packaging repair or post-composited product"
+}

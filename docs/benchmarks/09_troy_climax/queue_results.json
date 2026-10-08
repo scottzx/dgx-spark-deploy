@@ -1,0 +1,27 @@
+[
+  {
+    "phase": "native_h3",
+    "exit_code": 0,
+    "elapsed_s": 165.62542818812653
+  },
+  {
+    "phase": "caches",
+    "exit_code": 0,
+    "elapsed_s": 126.06535592814907
+  },
+  {
+    "phase": "refiners",
+    "exit_code": 0,
+    "elapsed_s": 573.5397091354243
+  },
+  {
+    "phase": "ingredients",
+    "exit_code": 0,
+    "elapsed_s": 796.1168584441766
+  },
+  {
+    "phase": "msr",
+    "exit_code": 0,
+    "elapsed_s": 856.5824678009376
+  }
+]

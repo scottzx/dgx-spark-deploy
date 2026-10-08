@@ -1,0 +1,52 @@
+{
+  "finite_and_non_clipping": true,
+  "exact_action_duration": true,
+  "level_matching_passed": true,
+  "clips": [
+    {
+      "product": "original",
+      "old": {
+        "duration_seconds": 8.04,
+        "integrated_lufs": -17.98,
+        "true_peak_dbfs": -4.31,
+        "clipping_samples": 0
+      },
+      "new": {
+        "duration_seconds": 8.04,
+        "integrated_lufs": -22.99,
+        "true_peak_dbfs": -9.24,
+        "clipping_samples": 0
+      }
+    },
+    {
+      "product": "diet",
+      "old": {
+        "duration_seconds": 8.04,
+        "integrated_lufs": -20.81,
+        "true_peak_dbfs": -3.87,
+        "clipping_samples": 0
+      },
+      "new": {
+        "duration_seconds": 8.04,
+        "integrated_lufs": -23.01,
+        "true_peak_dbfs": -7.35,
+        "clipping_samples": 0
+      }
+    },
+    {
+      "product": "zero",
+      "old": {
+        "duration_seconds": 8.04,
+        "integrated_lufs": -21.35,
+        "true_peak_dbfs": -4.45,
+        "clipping_samples": 0
+      },
+      "new": {
+        "duration_seconds": 8.04,
+        "integrated_lufs": -23.0,
+        "true_peak_dbfs": -6.39,
+        "clipping_samples": 0
+      }
+    }
+  ]
+}

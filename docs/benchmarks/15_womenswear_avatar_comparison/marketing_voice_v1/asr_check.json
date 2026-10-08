@@ -1,0 +1,184 @@
+{
+  "checked_at_utc": "2026-10-08T11:27:35.372161+00:00",
+  "model": "SenseVoiceSmall",
+  "device": "cpu",
+  "clips": [
+    {
+      "profile": "baseline",
+      "clip": "audition",
+      "expected_text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+      "result": [
+        {
+          "key": "audition",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>姐妹们，今天这三件女装，咱们一件一件看，先看这件白色衬衫，简洁利落，通勤很好搭，再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适，喜欢哪一件，我们再看看细节。"
+        }
+      ]
+    },
+    {
+      "profile": "baseline",
+      "clip": "shirt",
+      "expected_text": "白色衬衫，简洁利落，通勤好搭。",
+      "result": [
+        {
+          "key": "shirt",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>白色衬衫简洁利落，通勤好搭。"
+        }
+      ]
+    },
+    {
+      "profile": "baseline",
+      "clip": "cardigan",
+      "expected_text": "粉色开衫，温柔百搭，适合叠穿。",
+      "result": [
+        {
+          "key": "cardigan",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>粉色开衫温柔百搭，适合叠穿。"
+        }
+      ]
+    },
+    {
+      "profile": "baseline",
+      "clip": "dress",
+      "expected_text": "黑色连衣裙，线条简洁，日常好搭。",
+      "result": [
+        {
+          "key": "dress",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>黑色连衣裙线条简洁，日常好搭。"
+        }
+      ]
+    },
+    {
+      "profile": "serena_full",
+      "clip": "audition",
+      "expected_text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+      "result": [
+        {
+          "key": "audition",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>姐妹们，今天这三件女装，咱们一件一件看，先看这件白色衬衫，简洁利落，通勤很好搭，再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节。"
+        }
+      ]
+    },
+    {
+      "profile": "serena_full",
+      "clip": "shirt",
+      "expected_text": "白色衬衫，简洁利落，通勤好搭。",
+      "result": [
+        {
+          "key": "shirt",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>白色衬衫简洁利落，通勤好搭。"
+        }
+      ]
+    },
+    {
+      "profile": "serena_full",
+      "clip": "cardigan",
+      "expected_text": "粉色开衫，温柔百搭，适合叠穿。",
+      "result": [
+        {
+          "key": "cardigan",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>紫色开衫温柔百搭，适合叠穿。"
+        }
+      ]
+    },
+    {
+      "profile": "serena_full",
+      "clip": "dress",
+      "expected_text": "黑色连衣裙，线条简洁，日常好搭。",
+      "result": [
+        {
+          "key": "dress",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>黑色连衣裙线条简洁，日常好搭。"
+        }
+      ]
+    },
+    {
+      "profile": "vivian_guide",
+      "clip": "audition",
+      "expected_text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+      "result": [
+        {
+          "key": "audition",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>姐妹们，今天这三件女装，咱们一件一件看，先看这件白色衬衫，简洁利落，通勤很好搭，再看粉色开衫温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适，喜欢哪一件，我们再看看细节。"
+        }
+      ]
+    },
+    {
+      "profile": "vivian_guide",
+      "clip": "shirt",
+      "expected_text": "白色衬衫，简洁利落，通勤好搭。",
+      "result": [
+        {
+          "key": "shirt",
+          "text": "<|zh|><|SURPRISED|><|Speech|><|withitn|>白色衬衫简洁利落，通勤好搭。"
+        }
+      ]
+    },
+    {
+      "profile": "vivian_guide",
+      "clip": "cardigan",
+      "expected_text": "粉色开衫，温柔百搭，适合叠穿。",
+      "result": [
+        {
+          "key": "cardigan",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>粉色开衫温柔百搭，适合叠穿。"
+        }
+      ]
+    },
+    {
+      "profile": "vivian_guide",
+      "clip": "dress",
+      "expected_text": "黑色连衣裙，线条简洁，日常好搭。",
+      "result": [
+        {
+          "key": "dress",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>黑色连衣裙线条简洁，日常好搭。"
+        }
+      ]
+    },
+    {
+      "profile": "vivian_live",
+      "clip": "audition",
+      "expected_text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+      "result": [
+        {
+          "key": "audition",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>姐妹们，今天这三件女装，咱们一件一件看，先看这件白色衬衫，简洁利落，通勤很好搭，再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适，喜欢哪一件，我们再看看细节。"
+        }
+      ]
+    },
+    {
+      "profile": "vivian_live",
+      "clip": "shirt",
+      "expected_text": "白色衬衫，简洁利落，通勤好搭。",
+      "result": [
+        {
+          "key": "shirt",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>白色衬衫简洁利落，通勤好搭。"
+        }
+      ]
+    },
+    {
+      "profile": "vivian_live",
+      "clip": "cardigan",
+      "expected_text": "粉色开衫，温柔百搭，适合叠穿。",
+      "result": [
+        {
+          "key": "cardigan",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>粉色开衫温柔百搭，适合叠穿。"
+        }
+      ]
+    },
+    {
+      "profile": "vivian_live",
+      "clip": "dress",
+      "expected_text": "黑色连衣裙，线条简洁，日常好搭。",
+      "result": [
+        {
+          "key": "dress",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>黑色连衣裙线条简洁，日常好的。"
+        }
+      ]
+    }
+  ],
+  "scope": "Automatic transcript and model tags; subjective timbre and expressiveness require listening."
+}

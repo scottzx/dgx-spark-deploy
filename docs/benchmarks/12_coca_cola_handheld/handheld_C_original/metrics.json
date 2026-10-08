@@ -1,0 +1,32 @@
+{
+  "route": "C",
+  "engine": "EchoMimicV3 Flash",
+  "size": [
+    512,
+    512
+  ],
+  "steps": 8,
+  "attention": "native PyTorch SDPA",
+  "precision": "bfloat16 (explicit cast after custom T5 loader)",
+  "shot_policy": "97-frame shots, same reference image at each shot; no temporal continuation between shots",
+  "input_image": "/home/admin/digital-human-runtime/inputs/handheld/original.png",
+  "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/original_16k.wav",
+  "prompt": "A professional woman in a red blouse speaks naturally to the camera while physically holding one beverage can in both hands. She gently lifts the can a few centimeters to present it and then holds it steady, with subtle head movement and a small friendly expression. Her fingers stay wrapped around the same can, one palm supports its base, label faces camera. Preserve the reference can colors, shape, lettering, her facial identity, and realistic hand-object contact. Locked camera, no cuts, no extra products.",
+  "negative_prompt": "distorted face, distorted hands, extra fingers, hand passing through can, floating can, duplicate can, can disappearing, changing can shape, changing label, blurred logo, exaggerated arm gestures, fast rotation, camera movement",
+  "load_and_prepare_seconds": 58.32174022914842,
+  "generation_seconds": 89.5494438027963,
+  "duration_seconds": 3.88,
+  "frames": 97,
+  "generation_fps": 1.0832004742945265,
+  "peak_cuda_allocated_gib": 19.323780059814453,
+  "shots": [
+    {
+      "shot": 0,
+      "audio_start_seconds": 0.0,
+      "audio_duration_seconds": 3.88,
+      "generated_frames": 97,
+      "retained_frames": 97,
+      "seconds": 89.12141551729292
+    }
+  ]
+}

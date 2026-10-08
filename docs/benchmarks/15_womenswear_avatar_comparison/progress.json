@@ -1,0 +1,117 @@
+{
+  "pid": 2253733,
+  "started_at_utc": "2026-10-08T06:36:21.566787+00:00",
+  "state": "complete",
+  "stages": [
+    {
+      "stage": "voice",
+      "state": "complete",
+      "started_at_utc": "2026-10-08T06:00:29.213017+00:00",
+      "command": [
+        "/home/admin/digital-human-runtime/avatar-env/bin/python",
+        "/home/admin/womenswear-avatar-tests/prepare_voice.py"
+      ],
+      "returncode": 0,
+      "seconds": 47.84621819574386,
+      "ended_at_utc": "2026-10-08T06:01:17.059503+00:00"
+    },
+    {
+      "stage": "cache",
+      "state": "complete",
+      "started_at_utc": "2026-10-08T06:05:22.112361+00:00",
+      "command": [
+        "/home/admin/sol-spark-runtime/stage2-env/bin/python",
+        "/home/admin/womenswear-avatar-tests/run_ltx.py",
+        "cache"
+      ],
+      "returncode": 0,
+      "seconds": 43.56642501195893,
+      "ended_at_utc": "2026-10-08T06:06:05.679211+00:00"
+    },
+    {
+      "stage": "ltx",
+      "state": "complete",
+      "started_at_utc": "2026-10-08T06:06:05.679773+00:00",
+      "command": [
+        "/home/admin/sol-spark-runtime/stage2-env/bin/python",
+        "/home/admin/womenswear-avatar-tests/run_ltx.py",
+        "generate"
+      ],
+      "returncode": 0,
+      "seconds": 478.0843023052439,
+      "ended_at_utc": "2026-10-08T06:14:03.773538+00:00"
+    },
+    {
+      "stage": "inputs",
+      "state": "complete",
+      "started_at_utc": "2026-10-08T06:14:03.783757+00:00",
+      "command": [
+        "/home/admin/digital-human-runtime/avatar-env/bin/python",
+        "/home/admin/womenswear-avatar-tests/prepare_inputs.py"
+      ],
+      "returncode": 0,
+      "seconds": 0.21519378805533051,
+      "ended_at_utc": "2026-10-08T06:14:03.999137+00:00"
+    },
+    {
+      "stage": "latentsync",
+      "state": "complete",
+      "started_at_utc": "2026-10-08T06:14:03.999737+00:00",
+      "command": [
+        "/home/admin/digital-human-runtime/avatar-env/bin/python",
+        "/home/admin/womenswear-avatar-tests/run_latentsync.py"
+      ],
+      "returncode": 0,
+      "seconds": 1164.108946572058,
+      "ended_at_utc": "2026-10-08T06:33:28.118091+00:00"
+    },
+    {
+      "stage": "longcat",
+      "state": "complete",
+      "started_at_utc": "2026-10-08T06:36:21.569255+00:00",
+      "command": [
+        "/home/admin/digital-human-runtime/avatar-env/bin/python",
+        "/home/admin/womenswear-avatar-tests/run_longcat.py"
+      ],
+      "returncode": 0,
+      "seconds": 4693.984449767042,
+      "ended_at_utc": "2026-10-08T07:54:35.553995+00:00"
+    },
+    {
+      "stage": "infinitetalk",
+      "state": "complete",
+      "started_at_utc": "2026-10-08T07:54:35.565579+00:00",
+      "command": [
+        "/home/admin/digital-human-runtime/avatar-env/bin/python",
+        "/home/admin/womenswear-avatar-tests/run_infinitetalk.py"
+      ],
+      "returncode": 0,
+      "seconds": 10869.923341296148,
+      "ended_at_utc": "2026-10-08T10:55:45.498219+00:00"
+    }
+  ],
+  "updated_at_utc": "2026-10-08T10:55:45.633333+00:00",
+  "current_stage": "infinitetalk",
+  "completed_at_utc": "2026-10-08T10:55:45.633320+00:00",
+  "detail": "",
+  "log_tail": "3519098647, \"render_seconds\": 3548.6953216237016, \"peak_cuda_allocated_gib\": 42.7452449798584, \"native_output\": \"/home/admin/womenswear-avatar-tests/outputs/infinitetalk/dress/native.mp4\", \"scope\": \"Official video-to-video InfiniteTalk. The LTX clip guides the action; InfiniteTalk regenerates the speaking video.\", \"steps_per_chunk\": 8, \"motion_frame\": 9, \"requested_size\": [576, 768], \"aspect_ratio\": \"3:4\", \"model_generates_product_actions\": true, \"variant\": \"Official documented FusionX LoRA accelerated inference, eight steps, scale 1.0\", \"original_LTX_actions_preserved\": false, \"compatibility\": [\"FlashAttention-2 and single-device xFormers dense attention use PyTorch SDPA\", \"inspect.ArgSpec restored for Python 3.12\", \"Wav2Vec2 eager attention restores original attention-output behavior\", \"Optional demo TTS disabled; same original Serena audio\"], \"action_quality\": \"Not yet visually accepted; inspect pickup, product contact and return.\", \"native_duration_seconds\": 8.0, \"native_output_sha256\": \"c40ef39968b1e463c8b47c8bb6e51dbffb9fa737d3f150579b5c08a402c6e604\", \"video_sha256\": \"0d2df742df1059946c23a35318a640eadc331c777cac707c5c4139e3786acff2\", \"final_frame_hold_seconds\": 0.04, \"normalization_note\": \"Exact 200-frame/8.00s native output: one 40ms display hold of its final real frame.\"}",
+  "outputs": [
+    "infinitetalk/cardigan",
+    "infinitetalk/dress",
+    "infinitetalk/shirt",
+    "latentsync/cardigan",
+    "latentsync/dress",
+    "latentsync/shirt",
+    "longcat/cardigan",
+    "longcat/dress",
+    "longcat/shirt"
+  ],
+  "ltx_outputs": [
+    "cardigan",
+    "dress",
+    "shirt"
+  ],
+  "voice_ready": true,
+  "inputs_ready": true,
+  "collected_at_utc": "2026-10-08T10:56:10.715951+00:00"
+}

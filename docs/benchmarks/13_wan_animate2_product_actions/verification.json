@@ -1,0 +1,194 @@
+[
+  {
+    "file": "inputs/original_driver.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      768,
+      512
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b"
+  },
+  {
+    "file": "motion/original/motion.mp4",
+    "frames": 192,
+    "fps": 24,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 8.0,
+    "full_decode_passed": true,
+    "sha256": "aee840b304bf618d6dbf350f756a71ab5a3579d215be5728337ef5c874d5ce06"
+  },
+  {
+    "file": "motion_25/original/motion.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "04326c3f5a7f24a2db79a015678c5dd697a0649cdea002eaf918f361fc12edac"
+  },
+  {
+    "file": "dubbed/original/dubbed.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "7a4957c9ec048fcf1526765b1564324a167b2792fa38b692f8cec02194a396ee"
+  },
+  {
+    "file": "baseline/original.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      768,
+      512
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "6d219c72e06f65aa2923061f0d0a5517a6ab37f7af79d961674bb2e8c481fe47"
+  },
+  {
+    "file": "inputs/diet_driver.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      768,
+      512
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7"
+  },
+  {
+    "file": "motion/diet/motion.mp4",
+    "frames": 192,
+    "fps": 24,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 8.0,
+    "full_decode_passed": true,
+    "sha256": "dae71db2131e52cc17c11a25cdac5c6c870a7a8e145a613318ac3cb861d1e409"
+  },
+  {
+    "file": "motion_25/diet/motion.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "6162b3bf37e8f7e9b9c716c935cfdf92bb4bffed6cc0c2896a1d27869deb15da"
+  },
+  {
+    "file": "dubbed/diet/dubbed.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "4ff8506096b9924c01e5a498bc19550fd3d1d8b34f0218d94c2c4aae3903e4c0"
+  },
+  {
+    "file": "baseline/diet.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      768,
+      512
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "b9dd4bd46a4989d936fa9739a421f2e5357aa5234bd863be0d14c46dfbfc5f89"
+  },
+  {
+    "file": "inputs/zero_driver.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      768,
+      512
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7"
+  },
+  {
+    "file": "motion/zero/motion.mp4",
+    "frames": 192,
+    "fps": 24,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 8.0,
+    "full_decode_passed": true,
+    "sha256": "84271701d2f8b5b37b26b580371ccd3fba4d51a527cd8637cabf1547b33d6c83"
+  },
+  {
+    "file": "motion_25/zero/motion.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "d442a9fbe225c9fcddf49d1c0d3a945d9f6a5499184f1dbd9edd9a24cb19390a"
+  },
+  {
+    "file": "dubbed/zero/dubbed.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "f67ac7021caf9ffc088ffc1117b36dd29c9c1e9d6158ec2981484d58685d0873"
+  },
+  {
+    "file": "baseline/zero.mp4",
+    "frames": 201,
+    "fps": 25,
+    "size": [
+      768,
+      512
+    ],
+    "duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "sha256": "ee3b319f5088a22574f93f466eb0aa954edce82afbabd7799b99ee923de01523"
+  },
+  {
+    "file": "three_products_wan_serena.mp4",
+    "frames": 603,
+    "fps": 25,
+    "size": [
+      576,
+      384
+    ],
+    "duration_seconds": 24.12,
+    "full_decode_passed": true,
+    "sha256": "87cf87f7ec2ddc78f995c8d0b8a08c3d8ffa50c15e4fa5608e53dba59e0a59c8"
+  }
+]

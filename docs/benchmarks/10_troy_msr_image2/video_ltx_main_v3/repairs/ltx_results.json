@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "clips": [
+    {
+      "status": "TECHNICAL_PASS",
+      "id": "S01",
+      "input_fingerprint": "a6b7ac121fb289308bd55c76398699465a2a54bca19660a45587a4701d09b507",
+      "manifest_fingerprint": "726de984b99d58cbb75afaf6e9dceb1273d47639c24d1f6c511f203b1a948f71",
+      "model": "ltx",
+      "variant": "film_v3_repair",
+      "seed": 2026100601,
+      "decoder": "native LTX video VAE",
+      "refiner": false,
+      "raw_frames": 121,
+      "raw_sha256": "4a02207e5246693fb716df4d98eb6369afe1f9684810b610ca74b8228f2b6486",
+      "media": {
+        "frames": 120,
+        "size": [
+          672,
+          384
+        ],
+        "fps": 24,
+        "duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "e6a5ece7c19ce1682752c7c72b29d4febfaeb931d55a29804cdd382acb6cd30b",
+        "bytes": 1737823
+      },
+      "generation_s": 91.92586732795462,
+      "inference_profile": "BF16 dev transformer + distilled LoRA strength1,8 steps,first-frame strength1; no MSR",
+      "quality_status": "pending_manual"
+    },
+    {
+      "status": "TECHNICAL_PASS",
+      "id": "S07",
+      "input_fingerprint": "d791867736a4a94532a51a0a425e909addc261126d3efba11d1d562bfd40ca87",
+      "manifest_fingerprint": "726de984b99d58cbb75afaf6e9dceb1273d47639c24d1f6c511f203b1a948f71",
+      "model": "ltx",
+      "variant": "film_v3_repair",
+      "seed": 2026100607,
+      "decoder": "native LTX video VAE",
+      "refiner": false,
+      "raw_frames": 121,
+      "raw_sha256": "d6a64f3b6b91cbcf8e845eca34331a0b160f2bd6674731d0ad85a18fd61f0c4e",
+      "media": {
+        "frames": 120,
+        "size": [
+          672,
+          384
+        ],
+        "fps": 24,
+        "duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "1157e1314654b6bf2f93b602763077ec39e1a659be1133d5208a706f7f6da216",
+        "bytes": 1620742
+      },
+      "generation_s": 27.115086765028536,
+      "inference_profile": "BF16 dev transformer + distilled LoRA strength1,8 steps,first-frame strength1; no MSR",
+      "quality_status": "pending_manual"
+    }
+  ]
+}

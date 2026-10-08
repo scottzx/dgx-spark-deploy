@@ -1,0 +1,10 @@
+{
+  "id": "S16_end",
+  "title": "双人抬闩与掩护",
+  "output": "keyframes/S16_end.png",
+  "references": [
+    "keyframes/S16_start.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Use image 1 as exact start composition. Change ONLY the bar and operators arms: the SAME single wooden bar is lifted VERTICALLY 25 centimeters ABOVE and CLEAR OF BOTH empty wall brackets, still HORIZONTAL across the CLOSED gate, held by FOUR hands of the same two operators. Their feet and bodies stay in the same positions, swords still sheathed LEFT, young Greek shield strapped flat on BACK, Odysseus has NO shield. Do not turn the bar vertical or carry it away. The same five right-side fighters advance to the next sword-and-shield pose. Closed gate, stone walls, framing and lighting unchanged.",
+  "seed": 2026100633
+}

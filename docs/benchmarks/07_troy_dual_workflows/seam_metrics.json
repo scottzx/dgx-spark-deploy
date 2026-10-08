@@ -1,0 +1,28 @@
+{
+  "joins": [
+    {
+      "transition": "continue",
+      "rgb_mae_at_join": 0.05919424444437027,
+      "rgb_mae_before_join": 0.0066034854389727116,
+      "rgb_mae_after_join": 0.008768156170845032,
+      "audio_rms_50ms_before": 0.004358729566274412,
+      "audio_rms_50ms_after": 0.004465945259375617,
+      "audio_level_step": 0.012149534710284043
+    },
+    {
+      "transition": "independent",
+      "rgb_mae_at_join": 0.09982437640428543,
+      "rgb_mae_before_join": 0.0066034854389727116,
+      "rgb_mae_after_join": 0.012734022922813892,
+      "audio_rms_50ms_before": 0.004358729566274412,
+      "audio_rms_50ms_after": 0.015956492093692296,
+      "audio_level_step": 0.5708902773270007
+    }
+  ],
+  "overlap_audio": {
+    "correlation": 0.7539777079935188,
+    "lag_ms": 0.0,
+    "span_s": 0.7916666666666666
+  },
+  "note": "Descriptive measurements only. Lighting/motion affect image MAE; periodic audio can alias correlation lag."
+}

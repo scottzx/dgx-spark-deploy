@@ -1,0 +1,659 @@
+[
+  {
+    "engine": "joyhallo",
+    "product": "original",
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "dbbe5b2db754ff1e707bdde3fc41a23b585aea17",
+    "shared_model_load_seconds": 11.910953464917839,
+    "render_seconds": 992.2942709946074,
+    "peak_cuda_allocated_gib": 7.779936790466309,
+    "native_output": "/home/admin/avatar-company-tests/outputs/joyhallo/original/native.mp4",
+    "scope": "Official audio-driven portrait model, face cropped from the original generated reference. Does not generate product actions.",
+    "portrait_crop_xyxy": [
+      259,
+      0,
+      515,
+      255
+    ],
+    "portrait_reference_sha256": "8920cf7050105cb43132dd89f3d8a6ef8ef92dcb90d9b1a7329846f90109123a",
+    "native_frames": 201,
+    "steps_per_chunk": 40,
+    "guidance_scale": 3.5,
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "CPU ONNX face detection/embedding",
+      "MediaPipe 1.1.0 ARM64 official wheel",
+      "Wav2Vec2 eager attention",
+      "Published inference without training optimizer/dataloader",
+      "Clean speech without source separation",
+      "PyTorch SDPA attention adapter where required"
+    ],
+    "native_duration_seconds": 8.04,
+    "native_output_sha256": "da1611db0f96c0415976f2909847b7ebb3a59edde279950c50278fd8d352390f",
+    "video_sha256": "a0ffbabe2a45658ad2ca8f6a43f907df35de0df678fdd23c0b551bafc4aa7681",
+    "final_frame_hold_seconds": 0.0,
+    "normalization_note": "Trim only; no tail hold."
+  },
+  {
+    "engine": "joyhallo",
+    "product": "diet",
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "dbbe5b2db754ff1e707bdde3fc41a23b585aea17",
+    "shared_model_load_seconds": 11.910953464917839,
+    "render_seconds": 989.7158403201029,
+    "peak_cuda_allocated_gib": 7.779936790466309,
+    "native_output": "/home/admin/avatar-company-tests/outputs/joyhallo/diet/native.mp4",
+    "scope": "Official audio-driven portrait model, face cropped from the original generated reference. Does not generate product actions.",
+    "portrait_crop_xyxy": [
+      259,
+      0,
+      515,
+      256
+    ],
+    "portrait_reference_sha256": "e4b2bd02a8f502e2ac5e87e0e3d275e25727819836f62fe1c4928d581e5963cc",
+    "native_frames": 201,
+    "steps_per_chunk": 40,
+    "guidance_scale": 3.5,
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "CPU ONNX face detection/embedding",
+      "MediaPipe 1.1.0 ARM64 official wheel",
+      "Wav2Vec2 eager attention",
+      "Published inference without training optimizer/dataloader",
+      "Clean speech without source separation",
+      "PyTorch SDPA attention adapter where required"
+    ],
+    "native_duration_seconds": 8.04,
+    "native_output_sha256": "fc50ddf425dd8eeb70e39abb624ae6ce5b158e906886cd9a212de236548d4a96",
+    "video_sha256": "93d1ccbe64aa4191961043ad67213829c48026e62d6d350921deb6747f61ca35",
+    "final_frame_hold_seconds": 0.0,
+    "normalization_note": "Trim only; no tail hold."
+  },
+  {
+    "engine": "joyhallo",
+    "product": "zero",
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "dbbe5b2db754ff1e707bdde3fc41a23b585aea17",
+    "shared_model_load_seconds": 11.910953464917839,
+    "render_seconds": 990.1102268826216,
+    "peak_cuda_allocated_gib": 7.779936790466309,
+    "native_output": "/home/admin/avatar-company-tests/outputs/joyhallo/zero/native.mp4",
+    "scope": "Official audio-driven portrait model, face cropped from the original generated reference. Does not generate product actions.",
+    "portrait_crop_xyxy": [
+      260,
+      0,
+      515,
+      255
+    ],
+    "portrait_reference_sha256": "520883def78cdc95bed6a92d5c7b8f32ab406e5959586951d9c6ef82011e823e",
+    "native_frames": 201,
+    "steps_per_chunk": 40,
+    "guidance_scale": 3.5,
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "CPU ONNX face detection/embedding",
+      "MediaPipe 1.1.0 ARM64 official wheel",
+      "Wav2Vec2 eager attention",
+      "Published inference without training optimizer/dataloader",
+      "Clean speech without source separation",
+      "PyTorch SDPA attention adapter where required"
+    ],
+    "native_duration_seconds": 8.04,
+    "native_output_sha256": "ec5a9bbb5c3307512e98ddac3d34b51e9c32039e748912bb3443421546d03fab",
+    "video_sha256": "bd1814389a17d76ea7d700212fe6fd051497a0b14320eb600750ae6fb8008d85",
+    "final_frame_hold_seconds": 0.0,
+    "normalization_note": "Trim only; no tail hold."
+  },
+  {
+    "engine": "joyvasa",
+    "product": "original",
+    "scope": "Official image-and-audio portrait animation. Hands and products originate from one still image; this test does not generate pickup/return actions.",
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "driver": "/home/admin/avatar-company-tests/inputs/original/audio_16k.wav",
+    "driver_sha256": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+    "native_output": "/home/admin/avatar-company-tests/outputs/joyvasa/original/first_frame_audio_16k.mp4",
+    "native_output_sha256": "d8a498450a157d09235986258f6d73ca7799da312c6174d75c1946ef664ef049",
+    "video_sha256": "1cfef966e038a82fea48f584b6f43119708e993a745363bde4780b0b37edc0b5",
+    "shared_model_load_seconds": 4.358682113699615,
+    "render_seconds": 22.490488635841757,
+    "peak_cuda_allocated_gib": 2.6995596885681152,
+    "commit": "916a90f8de490e8648fee460c1200bd5d9a795af",
+    "compatibility": [
+      "CPU ONNX face detection/landmarks, four threads",
+      "PyTorch trusted official checkpoint weights_only=False",
+      "HuBERT eager attention restores original attention-output behavior"
+    ],
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": false
+  },
+  {
+    "engine": "joyvasa",
+    "product": "diet",
+    "scope": "Official image-and-audio portrait animation. Hands and products originate from one still image; this test does not generate pickup/return actions.",
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "driver": "/home/admin/avatar-company-tests/inputs/diet/audio_16k.wav",
+    "driver_sha256": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+    "native_output": "/home/admin/avatar-company-tests/outputs/joyvasa/diet/first_frame_audio_16k.mp4",
+    "native_output_sha256": "63ed5402d33f43111b03d8a5912bffe7a9f0dbcf6ea83bc2920ae2aa9db83071",
+    "video_sha256": "c2b7d201fbdd80509f5dcc3e1ab874c504bb310975bc103ab1b6be72e9868990",
+    "shared_model_load_seconds": 4.358682113699615,
+    "render_seconds": 15.508330878801644,
+    "peak_cuda_allocated_gib": 1.4495062828063965,
+    "commit": "916a90f8de490e8648fee460c1200bd5d9a795af",
+    "compatibility": [
+      "CPU ONNX face detection/landmarks, four threads",
+      "PyTorch trusted official checkpoint weights_only=False",
+      "HuBERT eager attention restores original attention-output behavior"
+    ],
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": false
+  },
+  {
+    "engine": "joyvasa",
+    "product": "zero",
+    "scope": "Official image-and-audio portrait animation. Hands and products originate from one still image; this test does not generate pickup/return actions.",
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "driver": "/home/admin/avatar-company-tests/inputs/zero/audio_16k.wav",
+    "driver_sha256": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+    "native_output": "/home/admin/avatar-company-tests/outputs/joyvasa/zero/first_frame_audio_16k.mp4",
+    "native_output_sha256": "8b16891249d472c2dcad0eb3137ea4fdc7b3984084e01d61850a1f6c0eb7aeaa",
+    "video_sha256": "bc4e8fc9e92f2c6a94e5a8871c8652a08ed72da4458bc5cdee9d895fbe542c2c",
+    "shared_model_load_seconds": 4.358682113699615,
+    "render_seconds": 15.748707853257656,
+    "peak_cuda_allocated_gib": 1.450235366821289,
+    "commit": "916a90f8de490e8648fee460c1200bd5d9a795af",
+    "compatibility": [
+      "CPU ONNX face detection/landmarks, four threads",
+      "PyTorch trusted official checkpoint weights_only=False",
+      "HuBERT eager attention restores original attention-output behavior"
+    ],
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": false
+  },
+  {
+    "engine": "infinitetalk",
+    "product": "original",
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "50aa0a94184315407a991ae804d9b58d6d311ba8",
+    "shared_model_load_seconds": 195.61556276865304,
+    "render_seconds": 3146.70351556642,
+    "peak_cuda_allocated_gib": 41.75558423995972,
+    "native_output": "/home/admin/avatar-company-tests/outputs/infinitetalk/original/native.mp4",
+    "scope": "Official video-to-video InfiniteTalk. The LTX clip guides the action; InfiniteTalk regenerates the speaking video.",
+    "steps_per_chunk": 8,
+    "motion_frame": 9,
+    "model_generates_product_actions": true,
+    "variant": "Official documented FusionX LoRA accelerated inference, eight steps, scale 1.0",
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "FlashAttention-2 and single-device xFormers dense attention use PyTorch SDPA",
+      "inspect.ArgSpec restored for Python 3.12",
+      "Wav2Vec2 eager attention restores original attention-output behavior",
+      "Optional demo TTS disabled; same original Serena audio"
+    ],
+    "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+    "native_duration_seconds": 8.0,
+    "native_output_sha256": "4fdc9131f79cfaee483da0a3fdfb3a85fd0dffa9404e9fbebd5ab7a1ae2dd35d",
+    "video_sha256": "045cf5cdb7e56a48b44c0d6f68bae0b59e37da8ca137d45247ce62f31066eddf",
+    "final_frame_hold_seconds": 0.04,
+    "normalization_note": "Exact 200-frame/8.00s native output: one 40ms display hold of its final real frame.",
+    "native_frames": 200,
+    "pre_normalization_video_sha256": "c620589b57623998a1e9bb333dce5f21ac7e351202e08823723d36b0bec4c476",
+    "original_mux_receipt": "/home/admin/avatar-company-tests/outputs/infinitetalk/original/original_mux_receipt.json"
+  },
+  {
+    "engine": "infinitetalk",
+    "product": "diet",
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "50aa0a94184315407a991ae804d9b58d6d311ba8",
+    "shared_model_load_seconds": 195.61556276865304,
+    "render_seconds": 3181.458098291885,
+    "peak_cuda_allocated_gib": 41.75452184677124,
+    "native_output": "/home/admin/avatar-company-tests/outputs/infinitetalk/diet/native.mp4",
+    "scope": "Official video-to-video InfiniteTalk. The LTX clip guides the action; InfiniteTalk regenerates the speaking video.",
+    "steps_per_chunk": 8,
+    "motion_frame": 9,
+    "model_generates_product_actions": true,
+    "variant": "Official documented FusionX LoRA accelerated inference, eight steps, scale 1.0",
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "FlashAttention-2 and single-device xFormers dense attention use PyTorch SDPA",
+      "inspect.ArgSpec restored for Python 3.12",
+      "Wav2Vec2 eager attention restores original attention-output behavior",
+      "Optional demo TTS disabled; same original Serena audio"
+    ],
+    "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+    "native_duration_seconds": 8.0,
+    "native_output_sha256": "ec892ac61ce0b2e25074c81fb1b08a1ebaba24e1f6815ad713791f1230b7a4f0",
+    "video_sha256": "9c27da0a9c461892799124928cd6fe4a658341c254b01a7d691ecce7ac1221db",
+    "final_frame_hold_seconds": 0.04,
+    "normalization_note": "Exact 200-frame/8.00s native output: one 40ms display hold of its final real frame.",
+    "native_frames": 200,
+    "pre_normalization_video_sha256": "5fd89a336731d165379ccdf4b7d193f85f12cbf584ea77659697cd08b28284ee",
+    "original_mux_receipt": "/home/admin/avatar-company-tests/outputs/infinitetalk/diet/original_mux_receipt.json"
+  },
+  {
+    "engine": "infinitetalk",
+    "product": "zero",
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "50aa0a94184315407a991ae804d9b58d6d311ba8",
+    "shared_model_load_seconds": 195.61556276865304,
+    "render_seconds": 3156.6052733976394,
+    "peak_cuda_allocated_gib": 41.75591230392456,
+    "native_output": "/home/admin/avatar-company-tests/outputs/infinitetalk/zero/native.mp4",
+    "scope": "Official video-to-video InfiniteTalk. The LTX clip guides the action; InfiniteTalk regenerates the speaking video.",
+    "steps_per_chunk": 8,
+    "motion_frame": 9,
+    "model_generates_product_actions": true,
+    "variant": "Official documented FusionX LoRA accelerated inference, eight steps, scale 1.0",
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "FlashAttention-2 and single-device xFormers dense attention use PyTorch SDPA",
+      "inspect.ArgSpec restored for Python 3.12",
+      "Wav2Vec2 eager attention restores original attention-output behavior",
+      "Optional demo TTS disabled; same original Serena audio"
+    ],
+    "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+    "native_duration_seconds": 8.0,
+    "native_output_sha256": "a1cfce973921050bd36c7e3f39a3009d57928dc1b9145ef66c82f2982b45237e",
+    "video_sha256": "86844c54fa1744d5bf7f87619dff4f00c52d487880df5354cc78531cfd692de1",
+    "final_frame_hold_seconds": 0.04,
+    "normalization_note": "Exact 200-frame/8.00s native output: one 40ms display hold of its final real frame.",
+    "native_frames": 200,
+    "pre_normalization_video_sha256": "ae7c538c89a634f595527d4ab60927ab144da627b98e004ec11fd09c7773c439",
+    "original_mux_receipt": "/home/admin/avatar-company-tests/outputs/infinitetalk/zero/original_mux_receipt.json"
+  },
+  {
+    "engine": "longcat",
+    "product": "original",
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "6b3f4b8582a8bc3f20f795735f5383716c4ba794",
+    "shared_model_load_seconds": 208.19265252212062,
+    "render_seconds": 1218.6038016802631,
+    "peak_cuda_allocated_gib": 60.2659854888916,
+    "native_output": "/home/admin/avatar-company-tests/outputs/longcat/original/native.mp4",
+    "scope": "Official image+audio+text generation and two continuation chunks; all hands/products/actions are generated by LongCat.",
+    "steps_per_chunk": 8,
+    "chunks": 3,
+    "native_frames": 253,
+    "model_generates_product_actions": true,
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "Single GPU context parallel world size 1",
+      "FlashAttention-2 interface uses equivalent dense PyTorch SDPA",
+      "Clean Serena speech used directly without vocal separation"
+    ],
+    "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+    "native_duration_seconds": 10.12,
+    "native_output_sha256": "da9b3a139293734c7b77362d09191468c211436e31aeb7c2a474d293fbbdaf27",
+    "video_sha256": "4806590752946c1e1744ab607d6eb50d52e09b2bf8ebe2bac0b137a936427dad"
+  },
+  {
+    "engine": "longcat",
+    "product": "diet",
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "6b3f4b8582a8bc3f20f795735f5383716c4ba794",
+    "shared_model_load_seconds": 208.19265252212062,
+    "render_seconds": 1211.9284911481664,
+    "peak_cuda_allocated_gib": 60.26613426208496,
+    "native_output": "/home/admin/avatar-company-tests/outputs/longcat/diet/native.mp4",
+    "scope": "Official image+audio+text generation and two continuation chunks; all hands/products/actions are generated by LongCat.",
+    "steps_per_chunk": 8,
+    "chunks": 3,
+    "native_frames": 253,
+    "model_generates_product_actions": true,
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "Single GPU context parallel world size 1",
+      "FlashAttention-2 interface uses equivalent dense PyTorch SDPA",
+      "Clean Serena speech used directly without vocal separation"
+    ],
+    "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+    "native_duration_seconds": 10.12,
+    "native_output_sha256": "1cd8db406bc95e9d8fbcb0fdf1626e6529964e053ce5101805973d6a0543cabd",
+    "video_sha256": "66a34e9ce5d2dc1d7092aa83ee2981a84b4f8c62e74518f7165f6ecb14334de1"
+  },
+  {
+    "engine": "longcat",
+    "product": "zero",
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "6b3f4b8582a8bc3f20f795735f5383716c4ba794",
+    "shared_model_load_seconds": 208.19265252212062,
+    "render_seconds": 1207.9345427840017,
+    "peak_cuda_allocated_gib": 60.266496658325195,
+    "native_output": "/home/admin/avatar-company-tests/outputs/longcat/zero/native.mp4",
+    "scope": "Official image+audio+text generation and two continuation chunks; all hands/products/actions are generated by LongCat.",
+    "steps_per_chunk": 8,
+    "chunks": 3,
+    "native_frames": 253,
+    "model_generates_product_actions": true,
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "Single GPU context parallel world size 1",
+      "FlashAttention-2 interface uses equivalent dense PyTorch SDPA",
+      "Clean Serena speech used directly without vocal separation"
+    ],
+    "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+    "native_duration_seconds": 10.12,
+    "native_output_sha256": "87ee312aa3f1e640664b7148c3ca3d9fdbefa0b96c2f230ce3dae8479fe2894b",
+    "video_sha256": "3bc37697e88849bd2fd5605b4740536708838d9cb099ce95fe7bf0bcb21b0a7d"
+  },
+  {
+    "engine": "liveportrait",
+    "product": "original",
+    "scope": "Lip-region retargeting onto LTX action video. Driver is the previously generated Serena/MuseTalk video; this is not an independent audio-to-motion model.",
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "driver": "/home/admin/digital-human-runtime/outputs/product_actions_dubbed_serena_smooth/original/dubbed.mp4",
+    "driver_sha256": "6d219c72e06f65aa2923061f0d0a5517a6ab37f7af79d961674bb2e8c481fe47",
+    "native_output": "/home/admin/avatar-company-tests/outputs/liveportrait/original/driver--dubbed.mp4",
+    "native_output_sha256": "b42cd4f206e69ab8c590726ca8c06f03ae525c2c24b151b6fbad6c1317441f16",
+    "video_sha256": "464705d7121bc77b9f5d3e5ba9cd2d8dbc0114c9eb58b290e6e68b6f93a98ea4",
+    "shared_model_load_seconds": 0.8320596651174128,
+    "render_seconds": 35.223152121994644,
+    "peak_cuda_allocated_gib": 2.6050333976745605,
+    "commit": "9b294b3d0536135442ea73cb01e6cb3ca7029dd3",
+    "compatibility": [
+      "CPU ONNX face detection/landmarks, four threads",
+      "PyTorch trusted official checkpoint weights_only=False"
+    ],
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": true
+  },
+  {
+    "engine": "liveportrait",
+    "product": "diet",
+    "scope": "Lip-region retargeting onto LTX action video. Driver is the previously generated Serena/MuseTalk video; this is not an independent audio-to-motion model.",
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "driver": "/home/admin/digital-human-runtime/outputs/product_actions_dubbed_serena_smooth/diet/dubbed.mp4",
+    "driver_sha256": "b9dd4bd46a4989d936fa9739a421f2e5357aa5234bd863be0d14c46dfbfc5f89",
+    "native_output": "/home/admin/avatar-company-tests/outputs/liveportrait/diet/driver--dubbed.mp4",
+    "native_output_sha256": "960b2d968486b5ab91c39daec605f21b713d02231c1ea2b1a20698a8c16bb9b1",
+    "video_sha256": "25d24c8070d06d6d69f860f7d27483099ed9e7a3392378d11be132a7be5b91a1",
+    "shared_model_load_seconds": 0.8320596651174128,
+    "render_seconds": 34.27286751382053,
+    "peak_cuda_allocated_gib": 1.3535709381103516,
+    "commit": "9b294b3d0536135442ea73cb01e6cb3ca7029dd3",
+    "compatibility": [
+      "CPU ONNX face detection/landmarks, four threads",
+      "PyTorch trusted official checkpoint weights_only=False"
+    ],
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": true
+  },
+  {
+    "engine": "liveportrait",
+    "product": "zero",
+    "scope": "Lip-region retargeting onto LTX action video. Driver is the previously generated Serena/MuseTalk video; this is not an independent audio-to-motion model.",
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "driver": "/home/admin/digital-human-runtime/outputs/product_actions_dubbed_serena_smooth/zero/dubbed.mp4",
+    "driver_sha256": "ee3b319f5088a22574f93f466eb0aa954edce82afbabd7799b99ee923de01523",
+    "native_output": "/home/admin/avatar-company-tests/outputs/liveportrait/zero/driver--dubbed.mp4",
+    "native_output_sha256": "1f84ac8ed3134d0c99aba552fdfd92aebe839d61878dd9e4271cabc2e36ae9fe",
+    "video_sha256": "e633ed6015877cbae484e166bc0bb84ab4192e9b51ed66e8681d331061c69480",
+    "shared_model_load_seconds": 0.8320596651174128,
+    "render_seconds": 34.88947354210541,
+    "peak_cuda_allocated_gib": 1.3530960083007812,
+    "commit": "9b294b3d0536135442ea73cb01e6cb3ca7029dd3",
+    "compatibility": [
+      "CPU ONNX face detection/landmarks, four threads",
+      "PyTorch trusted official checkpoint weights_only=False"
+    ],
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": true
+  },
+  {
+    "engine": "latentsync",
+    "product": "original",
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "a229c3948406bc2cf6eaf4873e662e70c6a04746",
+    "shared_model_load_seconds": 11.27645057439804,
+    "render_seconds": 381.00006301002577,
+    "peak_cuda_allocated_gib": 10.991151332855225,
+    "native_output": "/home/admin/avatar-company-tests/outputs/latentsync/original/native.mp4",
+    "scope": "Official video-to-video lip synchronization. Pickup/return body actions come from the original LTX video.",
+    "steps": 20,
+    "guidance_scale": 1.5,
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": true,
+    "compatibility": [
+      "OpenCV/FFmpeg CPU decord adapter",
+      "CPU ONNX face detection, four threads",
+      "Existing local sd-vae-ft-mse weights",
+      "Diffusers 0.32.2 in isolated dependency directory"
+    ],
+    "native_duration_seconds": 8.12,
+    "native_output_sha256": "926baf60b5fed28d9c395c4ffdf9e197070bb2090d51c535c454c06b53c9a671",
+    "video_sha256": "6ecf059337516d6468bba19e0e9f248480cc6f134dcb3ee3e04650a70555c875"
+  },
+  {
+    "engine": "latentsync",
+    "product": "diet",
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "a229c3948406bc2cf6eaf4873e662e70c6a04746",
+    "shared_model_load_seconds": 11.27645057439804,
+    "render_seconds": 378.83897875389084,
+    "peak_cuda_allocated_gib": 10.991151332855225,
+    "native_output": "/home/admin/avatar-company-tests/outputs/latentsync/diet/native.mp4",
+    "scope": "Official video-to-video lip synchronization. Pickup/return body actions come from the original LTX video.",
+    "steps": 20,
+    "guidance_scale": 1.5,
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": true,
+    "compatibility": [
+      "OpenCV/FFmpeg CPU decord adapter",
+      "CPU ONNX face detection, four threads",
+      "Existing local sd-vae-ft-mse weights",
+      "Diffusers 0.32.2 in isolated dependency directory"
+    ],
+    "native_duration_seconds": 8.12,
+    "native_output_sha256": "ef0a4464b2ad3faa1f794aee3763ff89d8803e11762d36fb420212012af61db9",
+    "video_sha256": "2a130d41e458e9213aa2defafd655407dabb96b7c74d54626f4d06b26f205639"
+  },
+  {
+    "engine": "latentsync",
+    "product": "zero",
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "a229c3948406bc2cf6eaf4873e662e70c6a04746",
+    "shared_model_load_seconds": 11.27645057439804,
+    "render_seconds": 378.2207741299644,
+    "peak_cuda_allocated_gib": 10.991151332855225,
+    "native_output": "/home/admin/avatar-company-tests/outputs/latentsync/zero/native.mp4",
+    "scope": "Official video-to-video lip synchronization. Pickup/return body actions come from the original LTX video.",
+    "steps": 20,
+    "guidance_scale": 1.5,
+    "model_generates_product_actions": false,
+    "original_LTX_actions_preserved": true,
+    "compatibility": [
+      "OpenCV/FFmpeg CPU decord adapter",
+      "CPU ONNX face detection, four threads",
+      "Existing local sd-vae-ft-mse weights",
+      "Diffusers 0.32.2 in isolated dependency directory"
+    ],
+    "native_duration_seconds": 8.12,
+    "native_output_sha256": "224e5cae8188e7df401e35847e737138e192682e0cf8f119335e006c1b7d20f9",
+    "video_sha256": "163e03031c5e73bc082d40c97f06b5084a5d87ffd175246f5c6f911df5fafdef"
+  },
+  {
+    "engine": "avatarforever",
+    "product": "original",
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "4dfc42b0e2dbbded4d148387d186219bd7601279",
+    "shared_model_load_seconds": 0.010128890629857779,
+    "render_seconds": 126.65772495558485,
+    "peak_cuda_allocated_gib": 40.40370750427246,
+    "native_output": "/home/admin/avatar-company-tests/outputs/avatarforever/original/native.mp4",
+    "scope": "Official AvatarForever first-frame + audio + text generation, with autoregressive history feature cache.",
+    "model_loading_is_lazy": true,
+    "timing_includes_lazy_model_loads": true,
+    "fast_infer": false,
+    "model_generates_product_actions": true,
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "Existing GB10 PyTorch 2.14.1 / CUDA 13 instead of repository Torch 2.7 environment"
+    ],
+    "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+    "native_duration_seconds": 8.04,
+    "native_output_sha256": "4613dc401b50f4a0cc982461797f84d41359ea73ac58c627c7778afc9e332d1c",
+    "video_sha256": "496a8f59a3ba380be0979f56b492779eef084873eded85ab9c73948a781f5790",
+    "final_frame_hold_seconds": 0.0,
+    "normalization_note": "Trim only; no tail hold."
+  },
+  {
+    "engine": "avatarforever",
+    "product": "diet",
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "4dfc42b0e2dbbded4d148387d186219bd7601279",
+    "shared_model_load_seconds": 0.010128890629857779,
+    "render_seconds": 73.14892260078341,
+    "peak_cuda_allocated_gib": 40.406585693359375,
+    "native_output": "/home/admin/avatar-company-tests/outputs/avatarforever/diet/native.mp4",
+    "scope": "Official AvatarForever first-frame + audio + text generation, with autoregressive history feature cache.",
+    "model_loading_is_lazy": true,
+    "timing_includes_lazy_model_loads": true,
+    "fast_infer": false,
+    "model_generates_product_actions": true,
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "Existing GB10 PyTorch 2.14.1 / CUDA 13 instead of repository Torch 2.7 environment"
+    ],
+    "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+    "native_duration_seconds": 8.04,
+    "native_output_sha256": "a1ac44105a40d43711bff0115f1da8f6af721823d3d8f59a1b411849aacdac5b",
+    "video_sha256": "dc3d76c52d60891e26c4b179c45ce14fecdd0d5cc2ed2dec368ca1d96cac6d42",
+    "final_frame_hold_seconds": 0.0,
+    "normalization_note": "Trim only; no tail hold."
+  },
+  {
+    "engine": "avatarforever",
+    "product": "zero",
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "commit": "4dfc42b0e2dbbded4d148387d186219bd7601279",
+    "shared_model_load_seconds": 0.010128890629857779,
+    "render_seconds": 71.79653052566573,
+    "peak_cuda_allocated_gib": 40.407623291015625,
+    "native_output": "/home/admin/avatar-company-tests/outputs/avatarforever/zero/native.mp4",
+    "scope": "Official AvatarForever first-frame + audio + text generation, with autoregressive history feature cache.",
+    "model_loading_is_lazy": true,
+    "timing_includes_lazy_model_loads": true,
+    "fast_infer": false,
+    "model_generates_product_actions": true,
+    "original_LTX_actions_preserved": false,
+    "compatibility": [
+      "Existing GB10 PyTorch 2.14.1 / CUDA 13 instead of repository Torch 2.7 environment"
+    ],
+    "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+    "native_duration_seconds": 8.04,
+    "native_output_sha256": "5880723bc71b97a93fa9301a8e0db914a19b769b69a96ad5a933e80f74813e50",
+    "video_sha256": "b22d31683f1c11b85493f2037c273d711a0f36f55b5dc4cd284776fe57b10d55",
+    "final_frame_hold_seconds": 0.0,
+    "normalization_note": "Trim only; no tail hold."
+  }
+]

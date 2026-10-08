@@ -1,0 +1,13 @@
+{
+  "model_path": "/home/admin/models_cache/Qwen-Image-2.1",
+  "model_id": "Qwen-Image-2.1",
+  "backend": "sglang",
+  "attention_backend": "torch_sdpa",
+  "performance_mode": "speed",
+  "lora_path": null,
+  "quantization": null,
+  "component_quantizations": {},
+  "disable_conditioning_cache": false,
+  "conditioning_cache_max_size_mb": 512.0,
+  "num_gpus": 1
+}

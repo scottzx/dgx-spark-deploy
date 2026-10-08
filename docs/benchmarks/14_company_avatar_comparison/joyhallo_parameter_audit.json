@@ -1,0 +1,16 @@
+{
+  "commit": "dbbe5b2db754ff1e707bdde3fc41a23b585aea17",
+  "official_config": "configs/inference/inference.yaml",
+  "official_inference": "scripts/inference.py",
+  "parameters": {
+    "n_sample_frames": 16,
+    "n_motion_frames": 2,
+    "audio_margin": 2,
+    "fps": 25,
+    "inference_steps": 40,
+    "cfg_scale": 3.5,
+    "seed": 42
+  },
+  "observed_runner_matches": "Each new 16-frame chunk uses the same source image plus the preceding two generated frames as the reference condition. Actual output chunks are concatenated, then trimmed to source audio length, matching the official inference loop.",
+  "rendering_note": "No static avatar clips, transition blending, or frame synthesis are inserted in the standardized clip."
+}

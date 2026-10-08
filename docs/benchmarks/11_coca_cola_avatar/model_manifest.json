@@ -1,0 +1,386 @@
+[
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "revision": "59119b6c681230c3eeee157e224ae1941746711e",
+    "name": "Model_Lite/config.json",
+    "target": "flashhead/Model_Lite/config.json",
+    "size": 357,
+    "sha256": null
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "revision": "59119b6c681230c3eeee157e224ae1941746711e",
+    "name": "Model_Lite/diffusion_pytorch_model.safetensors",
+    "target": "flashhead/Model_Lite/diffusion_pytorch_model.safetensors",
+    "size": 6107542048,
+    "sha256": "aaf1cde6e80ca23f740aae236c47954249f65b151db133cc0f77d3a138ccdf6e"
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "revision": "59119b6c681230c3eeee157e224ae1941746711e",
+    "name": "VAE_LTX/config.json",
+    "target": "flashhead/VAE_LTX/config.json",
+    "size": 501,
+    "sha256": null
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "revision": "59119b6c681230c3eeee157e224ae1941746711e",
+    "name": "VAE_LTX/diffusion_pytorch_model.safetensors",
+    "target": "flashhead/VAE_LTX/diffusion_pytorch_model.safetensors",
+    "size": 1676798532,
+    "sha256": "265ca87cb5dff5e37f924286e957324e282fe7710a952a7dafc0df43883e2010"
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "revision": "59119b6c681230c3eeee157e224ae1941746711e",
+    "name": "config.json",
+    "target": "flashhead/config.json",
+    "size": 99,
+    "sha256": null
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "revision": "59119b6c681230c3eeee157e224ae1941746711e",
+    "name": "model_index.json",
+    "target": "flashhead/model_index.json",
+    "size": 77,
+    "sha256": null
+  },
+  {
+    "repo": "TMElyralab/MuseTalk",
+    "revision": "2bcb936e2fddb4d86db4c62fd45b387d0c061571",
+    "name": "musetalkV15/musetalk.json",
+    "target": "musetalk/musetalkV15/musetalk.json",
+    "size": 748,
+    "sha256": null
+  },
+  {
+    "repo": "TMElyralab/MuseTalk",
+    "revision": "2bcb936e2fddb4d86db4c62fd45b387d0c061571",
+    "name": "musetalkV15/unet.pth",
+    "target": "musetalk/musetalkV15/unet.pth",
+    "size": 3400074924,
+    "sha256": "7ebf6c98c181e20838e4c0054e96e944ac60d5d692cc01db42839fe11b787007"
+  },
+  {
+    "repo": "stabilityai/sd-vae-ft-mse",
+    "revision": "31f26fdeee1355a5c34592e401dd41e45d25a493",
+    "name": "config.json",
+    "target": "musetalk/sd-vae/config.json",
+    "size": 547,
+    "sha256": null
+  },
+  {
+    "repo": "stabilityai/sd-vae-ft-mse",
+    "revision": "31f26fdeee1355a5c34592e401dd41e45d25a493",
+    "name": "diffusion_pytorch_model.safetensors",
+    "target": "musetalk/sd-vae/diffusion_pytorch_model.safetensors",
+    "size": 334643276,
+    "sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815"
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "added_tokens.json",
+    "target": "musetalk/whisper/added_tokens.json",
+    "size": 34604,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "config.json",
+    "target": "musetalk/whisper/config.json",
+    "size": 1983,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "generation_config.json",
+    "target": "musetalk/whisper/generation_config.json",
+    "size": 3747,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "merges.txt",
+    "target": "musetalk/whisper/merges.txt",
+    "size": 493869,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "model.safetensors",
+    "target": "musetalk/whisper/model.safetensors",
+    "size": 151061672,
+    "sha256": "7ebd0e69e78190ffe1438491fa05cc1f5c1aa3a4c4db3bc1723adbb551ea2395"
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "normalizer.json",
+    "target": "musetalk/whisper/normalizer.json",
+    "size": 52666,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "preprocessor_config.json",
+    "target": "musetalk/whisper/preprocessor_config.json",
+    "size": 184990,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "special_tokens_map.json",
+    "target": "musetalk/whisper/special_tokens_map.json",
+    "size": 2194,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "tokenizer.json",
+    "target": "musetalk/whisper/tokenizer.json",
+    "size": 2480466,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "tokenizer_config.json",
+    "target": "musetalk/whisper/tokenizer_config.json",
+    "size": 282683,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "vocab.json",
+    "target": "musetalk/whisper/vocab.json",
+    "size": 835550,
+    "sha256": null
+  },
+  {
+    "repo": "camenduru/MuseTalk",
+    "revision": "5cfe77e50e1dc10ac599e5340d610d69a5086af2",
+    "name": "face-parse-bisent/79999_iter.pth",
+    "target": "musetalk/face-parse-bisent/79999_iter.pth",
+    "size": 53289463,
+    "sha256": "468e13ca13a9b43cc0881a9f99083a430e9c0a38abd935431d1c28ee94b26567"
+  },
+  {
+    "repo": "camenduru/MuseTalk",
+    "revision": "5cfe77e50e1dc10ac599e5340d610d69a5086af2",
+    "name": "face-parse-bisent/resnet18-5c106cde.pth",
+    "target": "musetalk/face-parse-bisent/resnet18-5c106cde.pth",
+    "size": 46827520,
+    "sha256": "5c106cde386e87d4033832f2996f5493238eda96ccf559d1d62760c4de0613f8"
+  },
+  {
+    "repo": "facebook/wav2vec2-base-960h",
+    "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+    "name": "config.json",
+    "target": "wav2vec2-base-960h/config.json",
+    "size": 1596,
+    "sha256": null
+  },
+  {
+    "repo": "facebook/wav2vec2-base-960h",
+    "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+    "name": "feature_extractor_config.json",
+    "target": "wav2vec2-base-960h/feature_extractor_config.json",
+    "size": 158,
+    "sha256": null
+  },
+  {
+    "repo": "facebook/wav2vec2-base-960h",
+    "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+    "name": "model.safetensors",
+    "target": "wav2vec2-base-960h/model.safetensors",
+    "size": 377607901,
+    "sha256": "8aa76ab2243c81747a1f832954586bc566090c83a0ac167df6f31f0fa917d74a"
+  },
+  {
+    "repo": "facebook/wav2vec2-base-960h",
+    "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+    "name": "preprocessor_config.json",
+    "target": "wav2vec2-base-960h/preprocessor_config.json",
+    "size": 159,
+    "sha256": null
+  },
+  {
+    "repo": "facebook/wav2vec2-base-960h",
+    "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+    "name": "special_tokens_map.json",
+    "target": "wav2vec2-base-960h/special_tokens_map.json",
+    "size": 85,
+    "sha256": null
+  },
+  {
+    "repo": "facebook/wav2vec2-base-960h",
+    "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+    "name": "tokenizer_config.json",
+    "target": "wav2vec2-base-960h/tokenizer_config.json",
+    "size": 163,
+    "sha256": null
+  },
+  {
+    "repo": "facebook/wav2vec2-base-960h",
+    "revision": "22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+    "name": "vocab.json",
+    "target": "wav2vec2-base-960h/vocab.json",
+    "size": 291,
+    "sha256": null
+  },
+  {
+    "repo": "TencentGameMate/chinese-wav2vec2-base",
+    "revision": "3991242c806928916fff4a8c0e4f76acf661b743",
+    "name": "config.json",
+    "target": "chinese-wav2vec2-base/config.json",
+    "size": 1951,
+    "sha256": null
+  },
+  {
+    "repo": "TencentGameMate/chinese-wav2vec2-base",
+    "revision": "3991242c806928916fff4a8c0e4f76acf661b743",
+    "name": "preprocessor_config.json",
+    "target": "chinese-wav2vec2-base/preprocessor_config.json",
+    "size": 160,
+    "sha256": null
+  },
+  {
+    "repo": "TencentGameMate/chinese-wav2vec2-base",
+    "revision": "3991242c806928916fff4a8c0e4f76acf661b743",
+    "name": "pytorch_model.bin",
+    "target": "chinese-wav2vec2-base/pytorch_model.bin",
+    "size": 380261837,
+    "sha256": "be2da40c9e7ae26bfc904a3ed79ebb9e8f060bec6dba85d6a6ae86114bc38901"
+  },
+  {
+    "repo": "BadToBest/EchoMimicV3",
+    "revision": "311e176905a8c4c24b240b530488fe636ce4d249",
+    "name": "echomimicv3-flash-pro/config.json",
+    "target": "echomimic/echomimicv3-flash-pro/config.json",
+    "size": 577,
+    "sha256": null
+  },
+  {
+    "repo": "BadToBest/EchoMimicV3",
+    "revision": "311e176905a8c4c24b240b530488fe636ce4d249",
+    "name": "echomimicv3-flash-pro/diffusion_pytorch_model.safetensors",
+    "target": "echomimic/echomimicv3-flash-pro/diffusion_pytorch_model.safetensors",
+    "size": 3727671120,
+    "sha256": "5ebdbb2fc709108bf2a1728fd92eb2874804e4bc0324e92a2cd55425968c85a4"
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "Wan2.1_VAE.pth",
+    "target": "wan-fun/Wan2.1_VAE.pth",
+    "size": 507609880,
+    "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981"
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "config.json",
+    "target": "wan-fun/config.json",
+    "size": 249,
+    "sha256": null
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "configuration.json",
+    "target": "wan-fun/configuration.json",
+    "size": 47,
+    "sha256": null
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "google/umt5-xxl/special_tokens_map.json",
+    "target": "wan-fun/google/umt5-xxl/special_tokens_map.json",
+    "size": 6623,
+    "sha256": null
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "google/umt5-xxl/spiece.model",
+    "target": "wan-fun/google/umt5-xxl/spiece.model",
+    "size": 4548313,
+    "sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458"
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "google/umt5-xxl/tokenizer.json",
+    "target": "wan-fun/google/umt5-xxl/tokenizer.json",
+    "size": 16837417,
+    "sha256": "6e197b4d3dbd71da14b4eb255f4fa91c9c1f2068b20a2de2472967ca3d22602b"
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "google/umt5-xxl/tokenizer_config.json",
+    "target": "wan-fun/google/umt5-xxl/tokenizer_config.json",
+    "size": 61728,
+    "sha256": null
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth",
+    "target": "wan-fun/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth",
+    "size": 4772359047,
+    "sha256": "628c9998b613391f193eb67ff68da9667d75f492911e4eb3decf23460a158c38"
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "models_t5_umt5-xxl-enc-bf16.pth",
+    "target": "wan-fun/models_t5_umt5-xxl-enc-bf16.pth",
+    "size": 11361920418,
+    "sha256": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d"
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "xlm-roberta-large/sentencepiece.bpe.model",
+    "target": "wan-fun/xlm-roberta-large/sentencepiece.bpe.model",
+    "size": 5069051,
+    "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865"
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "xlm-roberta-large/special_tokens_map.json",
+    "target": "wan-fun/xlm-roberta-large/special_tokens_map.json",
+    "size": 280,
+    "sha256": null
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "xlm-roberta-large/tokenizer.json",
+    "target": "wan-fun/xlm-roberta-large/tokenizer.json",
+    "size": 17082660,
+    "sha256": "62c24cdc13d4c9952d63718d6c9fa4c287974249e16b7ade6d5a85e7bbb75626"
+  },
+  {
+    "repo": "alibaba-pai/Wan2.1-Fun-V1.1-1.3B-InP",
+    "revision": "fc913c34361f4ec879e2f9c78b4f11ae50a937d1",
+    "name": "xlm-roberta-large/tokenizer_config.json",
+    "target": "wan-fun/xlm-roberta-large/tokenizer_config.json",
+    "size": 418,
+    "sha256": null
+  }
+]

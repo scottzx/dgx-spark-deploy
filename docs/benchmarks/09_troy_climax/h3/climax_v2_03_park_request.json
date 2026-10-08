@@ -1,0 +1,18 @@
+{
+  "case_id": "climax_v2_03_park",
+  "prompt": "subject_definitions:\n<Subject 1> is the rigid wheeled timber horse and square in <Picture 1>.\n<Picture 2> is this shot framing, time of day and staging reference.\nsummary: [reference generation] Sunset. New wide shot of the central square. The wooden horse rolls its last small distance and comes to a complete stop beside the stone fountain between two bronze braziers. The Trojan workers release the ropes and walk away. The wooden body remains rigid, hatch completely shut. All Greek soldiers are concealed and invisible. Hold the final parked position with a slow push-in.\nretention_analysis:\n<Subject 1>: fully_preserved - horse construction, wheels, shut hatch and landmarks.\n<Picture 2>: partially_preserved - preserve staging and follow the action.\ndetailed_description: Live-action 1970s Shaw Brothers historical studio cinema, ancient Troy, saturated 35mm film colors, theatrical hard light, practical timber and stone sets. One enormous hollow wooden Trojan horse, visibly made from timber planks with the same golden bronze bands, mounted on the same four-wheeled timber platform. Its four rigid wooden legs never walk, its head never moves, and its wheels rotate only while pulled. One rectangular hinged hatch on its camera-facing belly and one wooden ladder. The belly hatch is shut and no ladder is visible. No Greek soldier is visible. [Shot 1] Sunset. New wide shot of the central square. The wooden horse rolls its last small distance and comes to a complete stop beside the stone fountain between two bronze braziers. The Trojan workers release the ropes and walk away. The wooden body remains rigid, hatch completely shut. All Greek soldiers are concealed and invisible. Hold the final parked position with a slow push-in. overall_soundscape: Wheels slow and stop, footsteps recede, fountain water and evening wind. No dialogue or music. non_diegetic_music: None.",
+  "references": [
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/horse_square.png"
+    },
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/board_03.png"
+    }
+  ],
+  "seed": 2026100403,
+  "duration_s": 5,
+  "mode": "final",
+  "transition": "independent"
+}

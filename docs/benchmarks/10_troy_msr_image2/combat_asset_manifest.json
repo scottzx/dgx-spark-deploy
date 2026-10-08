@@ -1,0 +1,66 @@
+{
+  "title": "夺门战斗：军团资产",
+  "expected_assets": 2,
+  "generation_tool": "built-in image_gen",
+  "requested_model_label": "image2",
+  "model_version_reported_by_tool": null,
+  "mode_selection": {
+    "exposed_by_tool": false,
+    "explicit_quality_parameter_sent": false,
+    "actual_quality": null,
+    "actual_fast_or_detailed_mode": null,
+    "note": "内置image_gen仅开放提示词、参考图与透明背景；未返回模式或具体模型。不能据出图耗时推断精细或快生图。"
+  },
+  "assets": [
+    {
+      "kind": "asset",
+      "id": "greek_infantry",
+      "title": "希腊军团群体参考",
+      "frame_file": "assets/groups/greek_infantry_v1.png",
+      "prompt_file": "storyboard_v2/prompts/asset_greek_infantry.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-8871a0c9-7eb1-485f-af7d-3e4544b29886.png",
+      "references": [
+        "assets/characters/greek_soldier_01_v1.png"
+      ],
+      "generation_wall_s": 120,
+      "status": "generated_pending_manual_review",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "bytes": 2613150,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "partial",
+        "scope": "group appearance reference",
+        "note": "灰蓝衣装、胸甲与圆盾可读，前排有不同造型；部分胡须士兵相貌接近，不作为逐人身份参考。"
+      }
+    },
+    {
+      "kind": "asset",
+      "id": "trojan_defenders",
+      "title": "特洛伊守军群体参考",
+      "frame_file": "assets/groups/trojan_defenders_v1.png",
+      "prompt_file": "storyboard_v2/prompts/asset_trojan_defenders.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-9f8c4ea8-cf06-45e4-bfdd-da44bd402c74.png",
+      "references": [
+        "assets/characters/trojan_guard_01_v1.png"
+      ],
+      "generation_wall_s": 41,
+      "status": "generated_pending_manual_review",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+      "bytes": 2606402,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "partial",
+        "scope": "group appearance reference",
+        "note": "赭黄衣装、红褐披风与鳞甲可区分；可见人数少于提示词目标，背景旗帜出现马头纹样，分镜只继承衣甲并要求纯色旗帜。"
+      }
+    }
+  ],
+  "status": "group_references_generated_reviewed",
+  "generated_count": 2
+}

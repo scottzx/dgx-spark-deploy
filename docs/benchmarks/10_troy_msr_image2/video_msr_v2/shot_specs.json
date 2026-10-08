@@ -1,0 +1,178 @@
+{
+  "version": 2,
+  "remote_root": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006",
+  "cases": [
+    {
+      "id": "S10",
+      "title": "奥德修斯向下爬梯",
+      "actors": [
+        "odysseus"
+      ],
+      "camera": "locked full-body medium wide side view",
+      "start": {
+        "actor": "one Odysseus on upper ladder; torso faces wooden horse; hands grip both rails; feet on upper rungs",
+        "hatch": "open upward, top hinge",
+        "ladder": "one fixed ladder",
+        "gate": "closed"
+      },
+      "end": {
+        "actor": "same Odysseus exactly two rungs lower, facing horse, hands grip rails, feet still on ladder",
+        "hatch": "unchanged",
+        "ladder": "unchanged",
+        "gate": "closed"
+      },
+      "invariants": [
+        "one Odysseus, no duplicates",
+        "no shield",
+        "sword stays sheathed at left hip",
+        "one rigid wooden horse facing right",
+        "one ladder and one hatch",
+        "camera stationary"
+      ],
+      "acceptance": [
+        "pelvis visibly moves down at least two rungs",
+        "no upward travel or direction reversal",
+        "both hands alternate secure ladder grips",
+        "identity, sword sheath and horse remain stable"
+      ]
+    },
+    {
+      "id": "S15",
+      "title": "剑矛交锋对照",
+      "actors": [
+        "odysseus",
+        "guard",
+        "greeks",
+        "trojans"
+      ],
+      "camera": "locked full-body medium wide",
+      "start": {
+        "odysseus": "left foreground right-hand sword raised before parry; left hand empty",
+        "guard": "right foreground spear thrust beginning; left shield",
+        "extras": "two background fighting pairs",
+        "gate": "closed"
+      },
+      "end": {
+        "odysseus": "same left foreground sword high right after parry; left hand empty",
+        "guard": "same right foreground recoils one half-step after spear deflection; shield left",
+        "extras": "same two background pairs at next fight phase",
+        "gate": "closed"
+      },
+      "invariants": [
+        "six distinct people",
+        "Odysseus has no shield",
+        "guard keeps right spear and left shield",
+        "two background Greek/Trojan pairs",
+        "closed gate and camera fixed"
+      ],
+      "acceptance": [
+        "visible spear thrust and sword parry",
+        "no equipment transfer or duplication",
+        "both background pairs continue combat",
+        "lead faces and gate preserved"
+      ]
+    },
+    {
+      "id": "S16",
+      "title": "双人抬闩与掩护",
+      "actors": [
+        "odysseus",
+        "soldier",
+        "greeks",
+        "trojans"
+      ],
+      "camera": "locked wide inner-gate view",
+      "start": {
+        "bar": "one wooden bar horizontal and seated in two wall brackets",
+        "operators": "Odysseus left and young Greek right grip bar with both hands",
+        "soldier_shield": "strapped flat on back",
+        "swords": "both sheathed left",
+        "gate": "closed",
+        "extras": "three Greeks and two Trojans fighting at right"
+      },
+      "end": {
+        "bar": "same bar lifted 25cm vertically clear above both brackets, held horizontally in front of closed gate",
+        "operators": "same two actors, both hands still carry bar",
+        "soldier_shield": "same flat back shield",
+        "swords": "both sheathed",
+        "gate": "closed",
+        "extras": "same five cover fighters continue at right"
+      },
+      "invariants": [
+        "seven distinct actors total",
+        "operators never draw swords",
+        "young soldier shield stays on back",
+        "Odysseus no shield",
+        "one bar only",
+        "both gate leaves closed",
+        "no camera move"
+      ],
+      "acceptance": [
+        "two operators jointly lift the bar clear of both brackets",
+        "four hands stay on bar",
+        "no shield appears in operators hands",
+        "cover fighters engage throughout",
+        "gate remains closed"
+      ]
+    },
+    {
+      "id": "S20",
+      "title": "大军团持续群战",
+      "actors": [
+        "greeks",
+        "trojans"
+      ],
+      "camera": "locked elevated wide master shot; no crane this regression",
+      "start": {
+        "foreground": "two readable Greek/Trojan sword-shield combat pairs, attack preparation",
+        "middle": "blue-gray and rust-colored infantry fighting around both sides of horse",
+        "background": "dense opposing armies clash between open left gate and right fountain",
+        "horse": "one rigid horse, hatch up, ladder down"
+      },
+      "end": {
+        "foreground": "same four foreground fighters after blocked strikes, half-step recoil",
+        "middle": "same armies advance and recoil during combat",
+        "background": "same dense clash with weapons raised",
+        "horse": "unchanged"
+      },
+      "invariants": [
+        "no named heroes",
+        "Greeks blue-gray, Trojans ochre/rust",
+        "one horse, one hatch, one ladder",
+        "gate open on left and fountain on right",
+        "foreground, middle and background combat",
+        "locked camera"
+      ],
+      "acceptance": [
+        "both foreground pairs visibly strike, block and recoil",
+        "middle and rear lines fight rather than parade or stand still",
+        "factions visually distinct",
+        "no living horse motion or hero duplication",
+        "spatial landmarks remain fixed"
+      ]
+    }
+  ],
+  "conditioning_methods": [
+    "msr",
+    "msr_first",
+    "msr_first_last"
+  ],
+  "seeds": [
+    2026100601,
+    2026100602
+  ],
+  "frames": 121,
+  "fps": 24,
+  "steps": 8,
+  "delivery_frames": 120,
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_size": [
+    768,
+    432
+  ],
+  "camera_change_from_v1": "locked in all four regression cases",
+  "quality_gate": "manual criteria; technical decode PASS does not imply creative acceptance"
+}

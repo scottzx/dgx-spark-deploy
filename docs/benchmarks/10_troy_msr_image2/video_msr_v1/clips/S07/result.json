@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "id": "S07",
+  "title": "夜间静场",
+  "seed": 2026100507,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S07/raw.mp4",
+  "raw_sha256": "ab163ba73754ba64a45ebd6bcfd912f02dd45047f968bb492f00ed799f1b4f4f",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S07/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "ec7557fa89452a912d2b920045875b471be5a0c4afa0c6de7607b0c0767ab3e0",
+    "bytes": 953175
+  },
+  "generation_s": 127.42479274608195,
+  "phases_s": {
+    "reference_encode_block_s": 1.611799814272672,
+    "denoising_loop_s": 46.24921433022246,
+    "diffusion_block_s": 120.6995324571617,
+    "decode_and_encode_block_s": 5.083156569860876
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "horse",
+      "kind": "prop",
+      "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+      "source_file": "assets/scenes/trojan_horse_v1.png",
+      "file": "inputs/horse.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+      "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 2,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard/frames/s07_v1.png",
+      "file": "inputs/board_S07.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S07.png",
+      "sha256": "9e44ec0c3ba76421e336323781eb3d96b44333497c204405c058832bd15e5131",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "23e51acfaad1cd51b4718c759d582f779ecb902cb0d8444420db2b7e59ab690c",
+  "prompt_cache_fingerprint": "353ffd889d7f4f652cfaf2c6bc10eade08382f71b490e93ac75b316f28bdeebd",
+  "peak_torch_allocated_bytes": 42456642048,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "scope": "Three temporal samples per clip (0.3, 2.5, 4.7 seconds); not full-frame motion or audio review",
+  "shots": [
+    {
+      "id": "S01",
+      "status": "pass_at_samples",
+      "note": "Three identities and set stable at samples; Sinon changes empty-hand gesture and guard turns; horse remains a rigid background prop."
+    },
+    {
+      "id": "S02",
+      "status": "fail_at_samples",
+      "note": "A living horse head enters at the right edge late in the shot; the guard spear disappears after the first sample. Rope-pulling motion is visible, but prop and weapon continuity fail."
+    },
+    {
+      "id": "S03",
+      "status": "partial_at_samples",
+      "note": "Wheel/platform travel is visible and the horse stays a rigid constructed prop. The camera widens from the wheel detail toward the full platform; exact threshold and lighting continuity need full playback."
+    },
+    {
+      "id": "S04",
+      "status": "fail_at_samples",
+      "note": "Three people haul the wooden platform and it advances, but the planned DAY exterior becomes a blue NIGHT scene with lit braziers. The horse rotates in the wider end framing; daytime-to-dusk narrative continuity fails."
+    },
+    {
+      "id": "S05",
+      "status": "pass_at_samples",
+      "note": "Dusk stays consistent; the worker and woman depart, hauling rope slackens, rigid wooden horse remains parked with no ladder. Camera slowly advances."
+    },
+    {
+      "id": "S06",
+      "status": "fail_at_samples",
+      "note": "Gate leaves close, but the mid sample contains a second guard. A loose bar is held in front of an already seated bar; single-person/single-bar operation is not preserved."
+    },
+    {
+      "id": "S07",
+      "status": "pass_at_samples",
+      "note": "Empty night square stays empty; gate closed, horse remains rigid with closed hatch and no ladder. Push-in, fire and fountain vary across samples."
+    },
+    {
+      "id": "S08",
+      "status": "pass_at_samples",
+      "note": "One Odysseus appears inside the single hatch; the top-hinged panel lifts upward and he peers out. Face and indigo costume stay consistent, no ladder or duplicate ground figure at the samples."
+    },
+    {
+      "id": "S09",
+      "status": "fail_at_samples",
+      "note": "Single actor and single ladder are retained, but the ladder is already in place at the first sample. Odysseus descends and reaches the paving early instead of remaining in the hatch to lower/steady it; this conflicts with the separate descent and landing shots."
+    },
+    {
+      "id": "S10",
+      "status": "fail_at_samples",
+      "note": "Odysseus climbs UP toward the hatch across the samples instead of descending. Single actor, ladder, indigo cloak and sheathed left-hip sword persist, but action direction is reversed."
+    },
+    {
+      "id": "S11",
+      "status": "partial_at_samples",
+      "note": "One Odysseus on the paving turns toward the empty hatch and signals with an empty hand. He starts already on the ground and walks toward the ladder, so the requested last-rung landing is not shown."
+    },
+    {
+      "id": "S12",
+      "status": "fail_at_samples",
+      "note": "Two distinct people are retained and the young soldier shield remains on his back, but the soldier climbs UP into the hatch instead of coming down. Odysseus stays on the paving."
+    },
+    {
+      "id": "S13",
+      "status": "fail_at_samples",
+      "note": "Six Greeks remain distinguishable and move as a group, but they turn and walk toward the horse/ladder rather than crouch-advance toward the rear-left gate. The young soldier shield shifts from hand-held to back-strapped."
+    },
+    {
+      "id": "S14",
+      "status": "partial_at_samples",
+      "note": "Guard turns and runs, then defenders form a line inside the closed gate. Defensive reaction is readable, but the late formation contains extra soldiers and the lead guard carries a short blade rather than keeping his spear."
+    },
+    {
+      "id": "S15",
+      "status": "pass_at_samples",
+      "note": "Foreground sword-versus-spear parry and recoil are readable; two background pairs also change combat poses. Named identities, Odysseus empty left hand/no shield, guard spear/shield and closed gate persist at the three samples. Full contact timing not reviewed."
+    },
+    {
+      "id": "S16",
+      "status": "partial_at_samples",
+      "note": "The two operators remove and carry away one bar while the gate stays closed, with fighters at the side. The young soldier shield remains at his side instead of clearly back-strapped, weakening the required two-empty-hand operation; late side-fight group expands."
+    },
+    {
+      "id": "S17",
+      "status": "partial_at_samples",
+      "note": "Agamemnon appears once in crimson and many Greek soldiers step forward outside the closed gate. Army motion is clear, but depth remains shallow, the sword signal is weak, and a camera pan crops the commander out by the final sample."
+    },
+    {
+      "id": "S18",
+      "status": "partial_at_samples",
+      "note": "Two operators push the two leaves open, the young soldier shield is on his back and the swords stay sheathed. The revealed space contains an expanded formation/fight outside the gate instead of retaining exactly the seven-person interior side-forecourt fight."
+    },
+    {
+      "id": "S19",
+      "status": "partial_at_samples",
+      "note": "Initial crowded gate battle and troop movement are visible, with one crimson Agamemnon. Later the camera centers the commander and the surrounding troops line up; sustained Greek-versus-Trojan contact and faction separation weaken."
+    },
+    {
+      "id": "S20",
+      "status": "partial_at_samples",
+      "note": "Large anonymous crowd battle, crane/rising view and several foreground clashes are visible; no named hero is inserted. Rear ranks largely stand in a surrounding line, while later foreground action becomes walking/repositioning; faction colors and sustained paired contact remain weak."
+    }
+  ],
+  "summary": {
+    "pass_at_samples": 5,
+    "fail_at_samples": 7,
+    "partial_at_samples": 8
+  },
+  "audio_review": "Audio track presence and decoding verified; speech/music absence not independently listened to or transcribed."
+}

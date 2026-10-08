@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "case_id": "troy_20261003_220446_opening",
+  "mode": "final",
+  "duration_s": 5,
+  "e2e_s": 94.41,
+  "transition": "independent",
+  "previous_clip_id": null,
+  "delivered_frames": 121,
+  "delivered_duration_s": 5.041666666666667,
+  "trim_frames": 0,
+  "continuation": {},
+  "reported_e2e_s": 94.38,
+  "qwen_s": 2.817577894,
+  "stage1_s": 55.045432302,
+  "stage2_s": 34.593515969,
+  "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage1",
+  "video_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage2/refined_1344x768_121f.mp4",
+  "video_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage2/refined_1344x768_121f.mp4",
+  "contact_sheet_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage2/contact_sheet/contact_sheet.png"
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "file": "four_methods_comparison.mp4",
+    "width": 1344,
+    "height": 848,
+    "frames": 121,
+    "duration_s": 5.041667,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "ingredients/trial.mp4",
+    "width": 768,
+    "height": 448,
+    "frames": 121,
+    "duration_s": 5.041667,
+    "sample_rate": "48000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "msr/trial.mp4",
+    "width": 768,
+    "height": 448,
+    "frames": 121,
+    "duration_s": 5.041667,
+    "sample_rate": "48000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "native_baseline/troy_20261003_220446_continuation/h3_native.mp4",
+    "width": 672,
+    "height": 384,
+    "frames": 102,
+    "duration_s": 4.25,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "native_baseline/troy_20261003_220446_opening/h3_native.mp4",
+    "width": 672,
+    "height": 384,
+    "frames": 121,
+    "duration_s": 5.041667,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "optimized_workflows/continuous.mp4",
+    "width": 1344,
+    "height": 768,
+    "frames": 223,
+    "duration_s": 9.291667,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "optimized_workflows/storyboard.mp4",
+    "width": 1344,
+    "height": 768,
+    "frames": 242,
+    "duration_s": 10.083333,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "ref2va/continuous.mp4",
+    "width": 1344,
+    "height": 768,
+    "frames": 223,
+    "duration_s": 9.291667,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "ref2va/storyboard.mp4",
+    "width": 1344,
+    "height": 768,
+    "frames": 242,
+    "duration_s": 10.083333,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "ref_native/continuous.mp4",
+    "width": 672,
+    "height": 384,
+    "frames": 223,
+    "duration_s": 9.291667,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "ref_native/identity_ref_continuation/h3_native.mp4",
+    "width": 672,
+    "height": 384,
+    "frames": 102,
+    "duration_s": 4.25,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "ref_native/identity_ref_new_angle/h3_native.mp4",
+    "width": 672,
+    "height": 384,
+    "frames": 121,
+    "duration_s": 5.041667,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "ref_native/identity_ref_opening/h3_native.mp4",
+    "width": 672,
+    "height": 384,
+    "frames": 121,
+    "duration_s": 5.041667,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "ref_native/storyboard.mp4",
+    "width": 672,
+    "height": 384,
+    "frames": 242,
+    "duration_s": 10.083333,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "specific_refiner/delivery/refined_1344x768_121f.mp4",
+    "width": 1344,
+    "height": 768,
+    "frames": 121,
+    "duration_s": 5.041667,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  },
+  {
+    "file": "specific_refiner/low_noise/refined_1344x768_121f.mp4",
+    "width": 1344,
+    "height": 768,
+    "frames": 121,
+    "duration_s": 5.041667,
+    "sample_rate": "32000",
+    "channels": 2,
+    "full_decode": "PASS"
+  }
+]

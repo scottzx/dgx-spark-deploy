@@ -1,0 +1,157 @@
+{
+  "status": "PASS",
+  "manifest_fingerprint": "2e85b7075733b54237b052bda6acde23d0c2e0867d9e70d54d40737ee870996f",
+  "repair_manifest_fingerprint": "726de984b99d58cbb75afaf6e9dceb1273d47639c24d1f6c511f203b1a948f71",
+  "film": {
+    "path": "film.mp4",
+    "frames": 2190,
+    "duration_s": 91.25,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ],
+    "channels": 2,
+    "audio_sample_rate": 32000,
+    "full_decode": true,
+    "sha256": "a52f16cb1e0effe20c9aaf73dcf863c3f6903b8e10b2ec79c6193ab1a753b92c",
+    "container_duration_s": 91.25
+  },
+  "battle_excerpt": {
+    "path": "battle.mp4",
+    "frames": 762,
+    "duration_s": 31.75,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ],
+    "channels": 2,
+    "audio_sample_rate": 32000,
+    "full_decode": true,
+    "sha256": "c7a937f5668e4d19c0b57cd8ed547bb22b18ff70fd7df6242c83b6bb8a3e9e9b",
+    "container_duration_s": 31.75
+  },
+  "source_clips": [
+    {
+      "id": "S01",
+      "sha256": "e6a5ece7c19ce1682752c7c72b29d4febfaeb931d55a29804cdd382acb6cd30b",
+      "model": "ltx"
+    },
+    {
+      "id": "S02",
+      "sha256": "2ef5aac1af673727dd78a75d093e7044646f67750d673a29c8b7845238d2dc8e",
+      "model": "ltx"
+    },
+    {
+      "id": "S03",
+      "sha256": "d353e2007cc0a3ebd9a82b3ac1f4ded2b21285f18cec9e20353c3bf584e76595",
+      "model": "ltx"
+    },
+    {
+      "id": "S04",
+      "sha256": "a20358f8c3e111e83dd954b24098a57f68ca3b15f0b9dfc5f7f15e3c3bc6f4fd",
+      "model": "ltx"
+    },
+    {
+      "id": "S05",
+      "sha256": "9aedbbc47fe99eca408e02cd6fae9e339e51d118272da94b9a60e18e625f9240",
+      "model": "ltx"
+    },
+    {
+      "id": "S06",
+      "sha256": "360f3fd8e18c263956fca70b5f8da3a8141e3c5f021e6955d9884ac1fe20b6c3",
+      "model": "ltx"
+    },
+    {
+      "id": "S07",
+      "sha256": "1157e1314654b6bf2f93b602763077ec39e1a659be1133d5208a706f7f6da216",
+      "model": "ltx"
+    },
+    {
+      "id": "S08",
+      "sha256": "27e3b6d864b5583517b8e14360281b79181f29ef49404b6f72832f720f18e10f",
+      "model": "ltx"
+    },
+    {
+      "id": "S09",
+      "sha256": "ea72a4ce2c4fe8aada8830ff01216cde4098a36d325ca9ead268d3ba606ed5dd",
+      "model": "ltx"
+    },
+    {
+      "id": "S10",
+      "sha256": "7e89a62c0c810be654dc90a5b015d183430b37a10eb5246ba1c3772a5c2092dc",
+      "model": "ltx"
+    },
+    {
+      "id": "S11",
+      "sha256": "cde54d163dc65aafd92a0503ef00576afa6aa9da268f0b59b55d9ad62a4c93e2",
+      "model": "ltx"
+    },
+    {
+      "id": "S12",
+      "sha256": "7dd6171d9eecaab921a81ae19c108e1f7469366dcc99eb60e7f6f866752f247c",
+      "model": "ltx"
+    },
+    {
+      "id": "S13",
+      "sha256": "ddd79868fb04cc4e188c3bc12fb0103af8bedd794edafedf507e196a88652503",
+      "model": "ltx"
+    },
+    {
+      "id": "S14",
+      "sha256": "9c8442700fdf43224a20ad1940e16111141d9d591ab4b52baf03bca294a43728",
+      "model": "ltx"
+    },
+    {
+      "id": "S15",
+      "sha256": "87550a32c3efeb1ef069b219fa61d846fe5facda722f8c09c13b5d70ef1bb810",
+      "model": "ltx"
+    },
+    {
+      "id": "S16",
+      "sha256": "70cdd1ce94bd32056a99eae5951d25ebbdf3b187df2c0e3f972b35af1f9cc3f1",
+      "model": "ltx"
+    },
+    {
+      "id": "S17",
+      "sha256": "6609900201ed24ce3f896af94288e9827b12a539de21caf1be3f4a07f9ac24f1",
+      "model": "h3"
+    },
+    {
+      "id": "S18",
+      "sha256": "76d5b299b368d74a5f0d729a1edb4bfb8d9bf93a83ac052d0da2f64f693ffc21",
+      "model": "ltx"
+    },
+    {
+      "id": "S19",
+      "sha256": "9f0f278ddb312308c8809acce2e22dd59025ac4197b9519b77949940cd74c7ce",
+      "model": "ltx"
+    },
+    {
+      "id": "S20",
+      "sha256": "d2e7d63ae24a504ca98c5dae8acee9e5d960cbb7154e67e930a075d33963bfbc",
+      "model": "ltx"
+    }
+  ],
+  "model_counts": {
+    "ltx": 19,
+    "h3": 1
+  },
+  "uncut_film": {
+    "path": "film_uncut_100s.mp4",
+    "frames": 2400,
+    "duration_s": 100.0,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ],
+    "channels": 2,
+    "audio_sample_rate": 32000,
+    "full_decode": true,
+    "sha256": "3d7da6a8f26ac14ed6dc1fdc53623c81c7915d36a23b042c490f84ed825e51e4",
+    "container_duration_s": 100.0
+  },
+  "edit_plan_fingerprint": "cbddc799057090b8a750cdad373a4e155b1d2134085176233eaa5f95ee91a58d"
+}

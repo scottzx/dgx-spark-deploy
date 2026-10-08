@@ -1,0 +1,64 @@
+{
+  "status": "TEST_RUN_COMPLETE",
+  "objective": "继续测试，跑完这一轮四版视频",
+  "checked_at_utc": "2026-10-03T19:58:14.259578+00:00",
+  "completed_requirements": {
+    "four_complete_method_films": true,
+    "six_story_beats_per_method": true,
+    "same_669_frame_timeline": true,
+    "source_master_checksums_match": true,
+    "full_master_decode": true,
+    "comparison_rendered_and_verified": true,
+    "timing_measurements_saved": true,
+    "visual_review_saved": true,
+    "video_service_restored": true,
+    "qwen_text_not_restored": true
+  },
+  "films": [
+    {
+      "method": "generic",
+      "path": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/09_troy_climax/generic/film.mp4",
+      "sha256": "bb9c6105238b2db92dc8657b7b22a9795364d0ad7314405da9ac8cbc33f38d65",
+      "frames": 669,
+      "duration_s": 27.875,
+      "full_decode": true
+    },
+    {
+      "method": "specific",
+      "path": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/09_troy_climax/specific/film.mp4",
+      "sha256": "06593d7313091675fba8b6ba87d9614a2f4c20b8b8c253d19972e1d3858c7f5d",
+      "frames": 669,
+      "duration_s": 27.875,
+      "full_decode": true
+    },
+    {
+      "method": "ingredients",
+      "path": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/09_troy_climax/ingredients/film.mp4",
+      "sha256": "d549edcbfe285bfa35890ca30917d422874a1e92d7ad1b49c466b001f763c547",
+      "frames": 669,
+      "duration_s": 27.875,
+      "full_decode": true
+    },
+    {
+      "method": "msr",
+      "path": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/09_troy_climax/msr/film.mp4",
+      "sha256": "87f35ba3e77b0bf27de579f1b0fc9f82f0f4e1dca37539872c44237c3dd02ef7",
+      "frames": 669,
+      "duration_s": 27.875,
+      "full_decode": true
+    }
+  ],
+  "comparison_path": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/09_troy_climax/four_methods_story.mp4",
+  "source_protocol_audit": {
+    "status": "PASS",
+    "shots_per_method": 6,
+    "methods": 4,
+    "matched_capture_pairs": 6,
+    "verified_continuation_joins": 3,
+    "frames_per_film": 669,
+    "media_files_hashed": 52,
+    "assets_verified": 17,
+    "qwen_text_service": "exited"
+  },
+  "production_quality": "Not all methods pass narrative/identity review; test completion does not imply production readiness"
+}

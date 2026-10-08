@@ -1,0 +1,41 @@
+[
+  {
+    "product": "original",
+    "native_frames": 192,
+    "native_fps": 24,
+    "native_duration_seconds": 8.0,
+    "output_frames": 201,
+    "output_fps": 25,
+    "output_duration_seconds": 8.04,
+    "source_sha256": "aee840b304bf618d6dbf350f756a71ab5a3579d215be5728337ef5c874d5ce06",
+    "output_sha256": "04326c3f5a7f24a2db79a015678c5dd697a0649cdea002eaf918f361fc12edac",
+    "last_frame_hold_seconds": 0.04,
+    "policy": "Official FPS preprocessing floors 201/25*24 to 192 frames (8.0 seconds). Timestamp-based conversion plus one 40 ms hold of the final generated frame aligns the existing 8.04-second voice. No speed change, reversed action, interpolation, or fabricated return action."
+  },
+  {
+    "product": "diet",
+    "native_frames": 192,
+    "native_fps": 24,
+    "native_duration_seconds": 8.0,
+    "output_frames": 201,
+    "output_fps": 25,
+    "output_duration_seconds": 8.04,
+    "source_sha256": "dae71db2131e52cc17c11a25cdac5c6c870a7a8e145a613318ac3cb861d1e409",
+    "output_sha256": "6162b3bf37e8f7e9b9c716c935cfdf92bb4bffed6cc0c2896a1d27869deb15da",
+    "last_frame_hold_seconds": 0.04,
+    "policy": "Official FPS preprocessing floors 201/25*24 to 192 frames (8.0 seconds). Timestamp-based conversion plus one 40 ms hold of the final generated frame aligns the existing 8.04-second voice. No speed change, reversed action, interpolation, or fabricated return action."
+  },
+  {
+    "product": "zero",
+    "native_frames": 192,
+    "native_fps": 24,
+    "native_duration_seconds": 8.0,
+    "output_frames": 201,
+    "output_fps": 25,
+    "output_duration_seconds": 8.04,
+    "source_sha256": "84271701d2f8b5b37b26b580371ccd3fba4d51a527cd8637cabf1547b33d6c83",
+    "output_sha256": "d442a9fbe225c9fcddf49d1c0d3a945d9f6a5499184f1dbd9edd9a24cb19390a",
+    "last_frame_hold_seconds": 0.04,
+    "policy": "Official FPS preprocessing floors 201/25*24 to 192 frames (8.0 seconds). Timestamp-based conversion plus one 40 ms hold of the final generated frame aligns the existing 8.04-second voice. No speed change, reversed action, interpolation, or fabricated return action."
+  }
+]

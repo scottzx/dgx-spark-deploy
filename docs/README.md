@@ -11,6 +11,7 @@ docs/
 ├── README.md                          # 本文档导航索引
 ├── deployments/                       # 核心服务部署与运维实操手册
 │   ├── Sol-H3-Spark部署.md            # Sol-H3-Spark 视频生成部署与微短剧实战记录
+│   ├── Qwen-Image-2.1部署.md          # 图像资产、透明 PNG 与参考图编辑
 │   └── DGX_Spark_Qwen3.8_部署与实战全景总结.md # Qwen3.8 / llama.cpp / NVMe 缓存全景总结
 ├── benchmarks/                        # 性能基准验收与分镜画质质检报告
 │   ├── 04_acceptance_standard_cases/  # 官方标准三用例基准验收与全景接触表
@@ -31,6 +32,9 @@ docs/
 | 文档名称 | 核心主题 | 主要内容 |
 | :--- | :--- | :--- |
 | [Sol-H3-Spark部署.md](deployments/Sol-H3-Spark部署.md) | **视频多模态生成** | H3 扩散草稿 + LTX-2.5 视频精修全流程部署、多镜头批处理调度、微短剧实测与 5 大工业化暗坑复盘 |
+| [Qwen-Image-2.1部署.md](deployments/Qwen-Image-2.1部署.md) | **图像资产生成** | 独立 BF16 环境、官方权重校验、文生图、透明 PNG 和参考图编辑 |
+| [Qwen-Image-2.1加速实测.md](deployments/Qwen-Image-2.1加速实测.md) | **资产生成速度** | 六步 Turbo、模型复用与 SGLang 原生后端对照测试 |
+| [Qwen-Image-2.1多角色合成实测.md](deployments/Qwen-Image-2.1多角色合成实测.md) | **多参考合成** | 五角色、三背景、三种后端的同素材对照 |
 | [DGX_Spark_Qwen3.8_部署与实战全景总结.md](deployments/DGX_Spark_Qwen3.8_部署与实战全景总结.md) | **大语言模型推理** | 基于 llama.cpp 编译 Blackwell (sm_121a) 原生加速、Docker 生产级部署、投机采样与 NVMe 会话缓存 |
 
 ---
@@ -42,6 +46,10 @@ docs/
 | **04** | [04_acceptance_standard_cases](benchmarks/04_acceptance_standard_cases/) | 技术报告 / 关键帧接触表 | 官方标准三用例（海浪/舞蹈/公园）端到端 67s 验收与全帧无损解码质检 |
 | **05** | [05_pool_daughter_blow_test](benchmarks/05_pool_daughter_blow_test/) | 技术报告 / 关键帧接触表 | 单镜头高动态双人人际交互动作解算测试（小女孩学巧虎吹手肘，手部解剖结构零崩溃） |
 | **06** | [06_pool_elbow_story_batch](benchmarks/06_pool_elbow_story_batch/) | 技术报告 / 分镜接触表 | 三镜头连续微短剧批处理测试（平均 65.3s/镜）与角色/场景跨镜头一致性深入复盘 |
+| **11** | [可口可乐数字人三路线](benchmarks/11_coca_cola_avatar/README.md) | 本地口播视频 / 对比页 | LiveTalking MuseTalk、OpenAvatarChat FlashHead、EchoMimicV3 同人物与配音对照 |
+| **12** | [三组商品拿起、介绍、放回](benchmarks/12_coca_cola_handheld/README.md) | 完整动作视频 / 逐步帧对照 / 架构评估 | A/B/C 固定手持基线＋LTX-2.5 连续动作与 MuseTalk 口播；动作流程成立，包装保真未通过 |
+| **13** | [Wan-Animate-2 三组商品动作迁移](benchmarks/13_wan_animate2_product_actions/README.md) | 动作参照片 / Wan 输出 / 口播对比 | 用户授权以生成视频驱动，独立部署 14B 蒸馏模型，验证三组拿起、介绍、放回与包装连续性 |
+| **14** | [六项公司数字人项目三组对照](benchmarks/14_company_avatar_comparison/README.md) | 七种模型 / 同配音对比页 / 运行记录 | 同一套 LTX 商品动作与 Serena 配音，分别检查商品交互、说话起止连续性及 Spark 生成耗时 |
 
 ---
 

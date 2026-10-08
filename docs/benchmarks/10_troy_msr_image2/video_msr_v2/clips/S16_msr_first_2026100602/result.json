@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "id": "S16_msr_first_2026100602",
+  "title": "双人抬闩与掩护",
+  "seed": 2026100602,
+  "manifest_fingerprint": "fc3fefccad737763bfa1324360513889459ebf383e505fc4062e2723badb88e4",
+  "input_fingerprint": "d8723edd0844e1fc364968be3b60816c53fa9f8368b53f0534835327f581f4b0",
+  "method": "msr_first",
+  "resident_transformer": true,
+  "case_id": "S16",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S16_msr_first_2026100602/raw.mp4",
+  "raw_sha256": "348b445f10f60778133090f7d2492e410d36d6f9a71a35702d5db812d6547c70",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S16_msr_first_2026100602/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "4a005c01d3ad06294d315df83d51be9467f4445442e9a19d31b2a54bd0447400",
+    "bytes": 1005445
+  },
+  "generation_s": 84.20665130810812,
+  "phases_s": {
+    "reference_encode_block_s": 3.559659430757165,
+    "denoising_loop_s": 75.10774040967226,
+    "diffusion_block_s": 75.11500031501055,
+    "decode_and_encode_block_s": 5.507262253668159
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "odysseus",
+      "kind": "character",
+      "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+      "file": "inputs/odysseus.png",
+      "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+      "offset": -5,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "soldier",
+      "kind": "character",
+      "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+      "file": "inputs/soldier.png",
+      "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 3,
+      "id": "greeks",
+      "kind": "group",
+      "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+      "file": "inputs/greeks.png",
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 4,
+      "id": "trojans",
+      "kind": "group",
+      "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+      "file": "inputs/trojans.png",
+      "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 5,
+      "id": "board",
+      "kind": "staging",
+      "role": "start-state composition reference; same cast, not additional people",
+      "file": "keyframes/S16_start_v4.png",
+      "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "file": "keyframes/S16_start_v4.png",
+      "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6",
+      "frame_index": 0,
+      "strength": 1.0,
+      "kind": "temporal_anchor",
+      "conditioning": "replace latent0"
+    }
+  ],
+  "prompt_sha256": "e65e137a488d87439a86ac8c52b4dfd764f42d96b114a7a0c356bd0611ceba9f",
+  "prompt_cache_fingerprint": "07de613bc6d62926caef92f245c60519ba848537e7b016a2e29ad8e55ec6d679",
+  "peak_torch_allocated_bytes": 41515994112,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

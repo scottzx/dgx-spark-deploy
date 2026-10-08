@@ -1,0 +1,30 @@
+{
+  "case_id": "identity_ref_new_angle",
+  "prompt": "subject_definitions:\n<Subject 1> is the bearded Greek warrior in <Picture 1>, with short dark hair, engraved bronze cuirass, red cloak and brown sandals.\n<Subject 2> is the clean-shaven Greek warrior in <Picture 2>, with curly black hair, engraved bronze cuirass, blue cloak and brown sandals.\n<Subject 3> is the equipment in <Picture 3>: two straight silver swords, and one round bronze shield belonging only to <Subject 2>. Both men carry a sword in their right hand; the red warrior's left hand remains empty and the blue warrior's left hand carries the shield.\n<Subject 4> is the Troy courtyard in <Picture 4>, with a large stationary wooden horse sculpture assembled from timber planks, stone walls, sand and burning braziers.\n<Picture 5> is the shot composition reference with red warrior left, blue warrior right and the wooden horse behind them.\nsummary: [reference generation] Two consistent Greek warriors perform a controlled stage duel in the Troy courtyard, filmed like a 1970s Shaw Brothers studio action movie.\nretention_analysis:\n<Subject 1>: fully_preserved - preserve face, beard, hair, armor and red cloak.\n<Subject 2>: fully_preserved - preserve face, hair, armor and blue cloak.\n<Subject 3>: fully_preserved - exactly two swords and one shield, with unchanged ownership throughout.\n<Subject 4>: fully_preserved - preserve the wooden construction, courtyard and torch lighting.\n<Picture 5>: partially_preserved - preserve blocking and lighting while changing camera framing only as specified.\ndetailed_description: The target video uses warm torchlight, a theatrical studio set, saturated red and blue cloaks, 35mm grain and clear Shaw Brothers sword choreography.\n[Shot 1] A new independent low-angle medium-wide shot. The same red warrior stands on the left and the same blue warrior stands on the right. Hold this closer camera framing, making their faces and engraved armor readable. The blue warrior raises his left-hand round bronze shield to block the red warrior right-hand sword strike, then counters with his own right-hand sword. The red warrior steps back and parries. Preserve both faces, beards, hair, red and blue cloaks, the two silver swords and the single blue-warrior shield. The wooden timber horse remains behind them. overall_soundscape: Quiet night wind, crackling braziers, sandal scuffs and metallic sword clashes. No dialogue. non_diegetic_music: None.",
+  "references": [
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/red_identity.png"
+    },
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/blue_identity.png"
+    },
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/equipment.png"
+    },
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/setting.png"
+    },
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/board.png"
+    }
+  ],
+  "seed": 2026100303,
+  "duration_s": 5,
+  "mode": "final",
+  "transition": "independent"
+}

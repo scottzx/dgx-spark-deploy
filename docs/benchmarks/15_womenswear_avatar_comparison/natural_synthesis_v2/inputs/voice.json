@@ -1,0 +1,59 @@
+{
+  "profile": "serena_default",
+  "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "speaker": "Serena",
+  "instruction": "",
+  "approved_source": "/home/admin/womenswear-avatar-tests/natural_voice_v2/serena_default",
+  "source_receipt_sha256": "73fbb0f45281d0e17aa590b9d7dbdd1ac50ea9d4595f8ad39381f27e2e8fc3cf",
+  "clips": [
+    {
+      "product": "shirt",
+      "text": "这件白衬衫款式比较简单，配长裤就挺好看。",
+      "speaker": "Serena",
+      "speech_duration_seconds": 3.92,
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 6.32,
+      "duration_seconds": 8.04,
+      "sample_rate": 24000,
+      "sha256": "cb69979a0724bc75095054de1e6ade64f305b49f3de4900756207974fe1c5408",
+      "speech_sha256": "179c218906420a1db96c5bcc2758d958212650696dce49e187f018f9cd9cb41a",
+      "approved_samples_unchanged": true,
+      "pitch_changed": false,
+      "speed_changed": false,
+      "gain_changed": false
+    },
+    {
+      "product": "cardigan",
+      "text": "这件粉色开衫，搭在衬衫外面也挺合适。",
+      "speaker": "Serena",
+      "speech_duration_seconds": 3.28,
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 5.68,
+      "duration_seconds": 8.04,
+      "sample_rate": 24000,
+      "sha256": "fe44a50fd16d2aac42a75992ececbde2ff40f9ec3d7ff81130563170b5bd8c40",
+      "speech_sha256": "9f0f0cbf44761fea4d77aee8cb28add98c0bc732f73cfe3a9fe724326d3cc613",
+      "approved_samples_unchanged": true,
+      "pitch_changed": false,
+      "speed_changed": false,
+      "gain_changed": false
+    },
+    {
+      "product": "dress",
+      "text": "这件黑色连衣裙，平时出门穿也挺好搭。",
+      "speaker": "Serena",
+      "speech_duration_seconds": 3.52,
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 5.92,
+      "duration_seconds": 8.04,
+      "sample_rate": 24000,
+      "sha256": "44fe02bfeb0971a3d5f0655c83dacba0c0e646481ec4e7a4e16f52f98db431d8",
+      "speech_sha256": "03cc99a368be5013842e5aa3728652c8881f6954821407e206b3063a9b0f44f2",
+      "approved_samples_unchanged": true,
+      "pitch_changed": false,
+      "speed_changed": false,
+      "gain_changed": false
+    }
+  ],
+  "policy": "Exact approved short WAV samples, only placed at 2.4s in an 8.04s timeline. No time stretch, pitch change, additional EQ or gain."
+}

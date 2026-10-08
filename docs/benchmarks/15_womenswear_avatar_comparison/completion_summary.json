@@ -1,0 +1,29 @@
+{
+  "checked_at_utc": "2026-10-08T10:58:23.384267+00:00",
+  "generation_state": "complete",
+  "candidates": 9,
+  "compilations": 3,
+  "verified_media": 33,
+  "native_originals": 9,
+  "native_playback_versions": 9,
+  "size": [
+    576,
+    768
+  ],
+  "aspect_ratio": "3:4",
+  "fps": 25,
+  "clip_duration_seconds": 8.04,
+  "compilation_duration_seconds": 24.12,
+  "common_input_hashes_equal_per_product": true,
+  "same_product_decoded_audio_equal": true,
+  "generated_reference_images": 7,
+  "reference_size": [
+    1086,
+    1448
+  ],
+  "visual_findings_recorded": 9,
+  "action_acceptance": "See individual observations; generation completion is separate from action acceptance.",
+  "browser_qa": "browser_qa.json",
+  "all_three_compilations_played_to_end": true,
+  "comparison_screenshot": "comparison_complete.png"
+}

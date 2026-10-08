@@ -1,0 +1,32 @@
+{
+  "url": "http://127.0.0.1:58121/review.html",
+  "videos": [
+    {
+      "source": "actions/three_products.mp4",
+      "duration": 24.12,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "source": "actions/dubbed/original/dubbed.mp4",
+      "duration": 8.04,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "source": "actions/dubbed/diet/dubbed.mp4",
+      "duration": 8.04,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "source": "actions/dubbed/zero/dubbed.mp4",
+      "duration": 8.04,
+      "width": 768,
+      "height": 512
+    }
+  ],
+  "playback_passed": true,
+  "mobile_no_horizontal_overflow": true,
+  "page_errors": []
+}

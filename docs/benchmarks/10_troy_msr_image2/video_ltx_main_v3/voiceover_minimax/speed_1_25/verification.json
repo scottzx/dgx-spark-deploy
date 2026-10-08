@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "source": {
+    "path": "../film_voiced.mp4",
+    "sha256": "dc7045f59d25dda49812107f54f2190650154f55c9d536463a2b6b4777ce0b32",
+    "duration_s": 91.25,
+    "frames": 2190,
+    "fps": 24
+  },
+  "speed_factor": 1.25,
+  "film": {
+    "path": "film_1_25x.mp4",
+    "sha256": "61d06daa35e3ed0d16eb9e58aabe2c7850922bd48071363f5325fdacfa42f44a",
+    "bytes": 26244103,
+    "duration_s": 73.0,
+    "video_duration_s": 73.0,
+    "audio_duration_s": 73.0,
+    "frames": 2190,
+    "fps": 30,
+    "size": [
+      672,
+      384
+    ],
+    "audio_sample_rate": 32000,
+    "audio_channels": 2,
+    "full_decode": true
+  },
+  "video_filter": "setpts=(PTS-STARTPTS)/1.25",
+  "audio_filter": "atempo=1.25,aresample=32000,apad=whole_len=2336000,atrim=end_sample=2336000,asetpts=N/SR/TB",
+  "audio_pitch_preserved_by": "FFmpeg atempo",
+  "frame_count_preserved": true,
+  "subtitle_scale": 0.8,
+  "subtitles": "narration_1_25x.srt",
+  "playback_rate_required": 1
+}

@@ -1,0 +1,250 @@
+{
+  "checked_at_utc": "2026-10-08T11:02:02.106404+00:00",
+  "url": "http://127.0.0.1:58124/review.html?v=womenswear-portrait",
+  "stage": "9/9 candidates and 3/3 compilations available",
+  "white_shirt": {
+    "main_players": 2,
+    "synchronous_play_observed": true,
+    "one_shared_audio_observed": true,
+    "all_pause_verified": true,
+    "decoded_video_dimensions": [
+      576,
+      768
+    ],
+    "portrait_ratio": "3:4"
+  },
+  "browser_session": "Owned Agent Window; final session xuxb stopped.",
+  "limits": "Playback starts together with one common audio track; timestamps show small start offsets, not frame-exact locking. Visual acceptance is recorded separately.",
+  "compilation_interim": {
+    "routes": [
+      "latentsync",
+      "longcat"
+    ],
+    "duration_seconds": 24.12,
+    "size": [
+      576,
+      768
+    ],
+    "sync_play_observed": true,
+    "single_unmuted_player": true,
+    "initial_times_seconds": [
+      0.090098,
+      0.109668
+    ],
+    "screenshot": "comparison_in_progress.png",
+    "session": "belm stopped",
+    "both_played_to_end": true
+  },
+  "white_shirt_three_way": {
+    "routes": [
+      "latentsync",
+      "longcat",
+      "infinitetalk"
+    ],
+    "size": [
+      576,
+      768
+    ],
+    "duration_seconds": 8.04,
+    "all_played_to_end": true,
+    "only_one_unmuted_player": true,
+    "initial_current_times_seconds": [
+      0.027228,
+      0.034744,
+      0.081704
+    ],
+    "screenshot": "shirt_three_way_ending.png",
+    "session": "ldpu stopped"
+  },
+  "cardigan_three_way": {
+    "routes": [
+      "latentsync",
+      "longcat",
+      "infinitetalk"
+    ],
+    "size": [
+      576,
+      768
+    ],
+    "duration_seconds": 8.04,
+    "all_played_to_end": true,
+    "only_one_unmuted_player": true,
+    "initial_current_times_seconds": [
+      0.082091,
+      0.099475,
+      0.09947
+    ],
+    "session": "zjmu stopped"
+  },
+  "dress_three_way": {
+    "initial": [
+      {
+        "engine": "latentsync",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 8.04,
+        "time": 0.14365,
+        "muted": false,
+        "paused": false,
+        "ended": false,
+        "error": null
+      },
+      {
+        "engine": "longcat",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 8.04,
+        "time": 0.169236,
+        "muted": true,
+        "paused": false,
+        "ended": false,
+        "error": null
+      },
+      {
+        "engine": "infinitetalk",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 8.04,
+        "time": 0.169223,
+        "muted": true,
+        "paused": false,
+        "ended": false,
+        "error": null
+      }
+    ],
+    "ending": [
+      {
+        "engine": "latentsync",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 8.04,
+        "time": 8.04,
+        "muted": false,
+        "paused": true,
+        "ended": true,
+        "error": null
+      },
+      {
+        "engine": "longcat",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 8.04,
+        "time": 8.04,
+        "muted": true,
+        "paused": true,
+        "ended": true,
+        "error": null
+      },
+      {
+        "engine": "infinitetalk",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 8.04,
+        "time": 8.04,
+        "muted": true,
+        "paused": true,
+        "ended": true,
+        "error": null
+      }
+    ],
+    "session": "xuxb stopped"
+  },
+  "compilation_three_way": {
+    "initial": [
+      {
+        "engine": "latentsync",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 24.12,
+        "time": 0.236095,
+        "muted": false,
+        "paused": false,
+        "ended": false,
+        "error": null
+      },
+      {
+        "engine": "longcat",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 24.12,
+        "time": 0.276095,
+        "muted": true,
+        "paused": false,
+        "ended": false,
+        "error": null
+      },
+      {
+        "engine": "infinitetalk",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 24.12,
+        "time": 0.276085,
+        "muted": true,
+        "paused": false,
+        "ended": false,
+        "error": null
+      }
+    ],
+    "ending": [
+      {
+        "engine": "latentsync",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 24.12,
+        "time": 24.12,
+        "muted": false,
+        "paused": true,
+        "ended": true,
+        "error": null
+      },
+      {
+        "engine": "longcat",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 24.12,
+        "time": 24.12,
+        "muted": true,
+        "paused": true,
+        "ended": true,
+        "error": null
+      },
+      {
+        "engine": "infinitetalk",
+        "dimensions": [
+          576,
+          768
+        ],
+        "duration": 24.12,
+        "time": 24.12,
+        "muted": true,
+        "paused": true,
+        "ended": true,
+        "error": null
+      }
+    ],
+    "session": "xuxb stopped"
+  },
+  "final_screenshot": "comparison_complete.png"
+}

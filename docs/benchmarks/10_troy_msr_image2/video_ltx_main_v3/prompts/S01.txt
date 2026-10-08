@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy, with handmade sandstone and timber, aged bronze armor and saturated 35mm film colors. Continue naturally from the supplied first frame, preserving the visible actors, faces, costumes, composition and current state. In bright daylight outside the open gate, the three existing people remain in their own positions. Sinon on the left opens both empty hands toward the rigid wooden horse, then lowers one hand as the guard looks toward the horse. The bronze-helmeted guard keeps his spear in his right hand and shield on his left arm. The woman watches from behind. Subtle breathing and facial reactions; mouths stay closed. The wooden horse remains a rigid timber object on wheels, its side hatch closed. No extra people, duplicated named actor, extra limbs, modern objects, captions or fantasy effects.
+
+overall_soundscape: A slow small push toward Sinon. Day wind, fabric rustle and faint armor creaks. No dialogue or singing.
+
+non_diegetic_music: N/A

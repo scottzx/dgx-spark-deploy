@@ -1,0 +1,10 @@
+{
+  "conditioning_ready_monotonic_ns": 2535295469377021,
+  "output_root": "/home/admin/sol-spark-runtime/identity_tests_20261003/specific_refiner/low_noise",
+  "request_id": "troy_20261003_220446_opening",
+  "stage2_connector_loaded": false,
+  "stage2_gemma_loaded": false,
+  "stage2_prepare_s": 7.7098e-05,
+  "stage2_prepare_started_monotonic_ns": 2535295469299923,
+  "status": "READY"
+}

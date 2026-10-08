@@ -1,0 +1,118 @@
+{
+  "status": "PASS",
+  "url": "http://127.0.0.1:59137/combat_prompt_ab/review.html",
+  "cases": 3,
+  "cards": 12,
+  "sync_groups": 3,
+  "media": [
+    {
+      "src": "best_duel.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "comparison_15s.mp4",
+      "duration": 15,
+      "width": 1344,
+      "height": 768
+    },
+    {
+      "src": "clips/combat_ab_ltx_old_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_ltx_new_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_h3_old_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_h3_new_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_ltx_old_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_ltx_new_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_h3_old_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_h3_new_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_ltx_old_2026100603/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_ltx_new_2026100603/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_h3_old_2026100603/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/combat_ab_h3_new_2026100603/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    }
+  ],
+  "synced": [
+    {
+      "time": 0.372999,
+      "muted": true,
+      "paused": false
+    },
+    {
+      "time": 0.373017,
+      "muted": true,
+      "paused": false
+    },
+    {
+      "time": 0.373062,
+      "muted": true,
+      "paused": false
+    },
+    {
+      "time": 0.373014,
+      "muted": true,
+      "paused": false
+    }
+  ],
+  "featured_played_to_s": 2.004822,
+  "browser_errors": [],
+  "screenshot": "preview.png"
+}

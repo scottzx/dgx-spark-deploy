@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "id": "S16_msr_2026100602",
+  "title": "双人抬闩与掩护",
+  "seed": 2026100602,
+  "manifest_fingerprint": "fc3fefccad737763bfa1324360513889459ebf383e505fc4062e2723badb88e4",
+  "input_fingerprint": "4d0306adfbade30e74a039dc41edba7c405d5a85de0a8943c3149f8975dac2fb",
+  "method": "msr",
+  "resident_transformer": true,
+  "case_id": "S16",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S16_msr_2026100602/raw.mp4",
+  "raw_sha256": "4ee098dc746561788ca124b95d364e842d3d41efb1c721b759cf3ecb2b9d0baf",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S16_msr_2026100602/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "ddca6bef6cc2bc374ae47cb3dd29a907135334e4df334c822444557044b77c7f",
+    "bytes": 919287
+  },
+  "generation_s": 83.30532321380451,
+  "phases_s": {
+    "reference_encode_block_s": 3.443877174053341,
+    "denoising_loop_s": 74.94054466905072,
+    "diffusion_block_s": 74.94754099892452,
+    "decode_and_encode_block_s": 4.898289932869375
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "odysseus",
+      "kind": "character",
+      "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+      "file": "inputs/odysseus.png",
+      "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+      "offset": -5,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "soldier",
+      "kind": "character",
+      "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+      "file": "inputs/soldier.png",
+      "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 3,
+      "id": "greeks",
+      "kind": "group",
+      "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+      "file": "inputs/greeks.png",
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 4,
+      "id": "trojans",
+      "kind": "group",
+      "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+      "file": "inputs/trojans.png",
+      "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 5,
+      "id": "board",
+      "kind": "staging",
+      "role": "start-state composition reference; same cast, not additional people",
+      "file": "keyframes/S16_start_v4.png",
+      "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "e65e137a488d87439a86ac8c52b4dfd764f42d96b114a7a0c356bd0611ceba9f",
+  "prompt_cache_fingerprint": "07de613bc6d62926caef92f245c60519ba848537e7b016a2e29ad8e55ec6d679",
+  "peak_torch_allocated_bytes": 41515908096,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "key": "vivian_guide",
+  "label": "A · 热情专业导购",
+  "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "speaker": "Vivian",
+  "instruction": "像有经验的女装直播导购面对镜头介绍产品，热情、自信、亲切，有感染力。声音中音区饱满，有扎实的气息支撑和清楚的咬字，亮而圆润。产品名和搭配卖点有明确重音，语气有起伏，短停顿清楚，节奏利落，句尾干净有力。普通话标准。避免尖细嗓音、刺耳高音、喊叫和气声。",
+  "shared_model_load_seconds": 31.141957849729806,
+  "clips": [
+    {
+      "key": "audition",
+      "text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+      "sample_rate": 24000,
+      "duration_seconds": 24.96,
+      "seed": 2026100900,
+      "raw_sha256": "7b24495373d8a6f3d539ca8600fadff637f496ff2cf4d465e8b530c276697f26",
+      "sha256": "4f93f636578978d066775b3811f6522a5f45aa834ef92ef2a567a69dcd51ed9d",
+      "reused_existing_raw": false,
+      "generation_and_processing_seconds": 18.448116107843816,
+      "processing": {
+        "target_lufs": -23,
+        "constant_gain_db": -2.3900000000000006,
+        "pre_gain_measurement": {
+          "input_i": "-20.61",
+          "input_tp": "-2.53",
+          "input_lra": "3.20",
+          "input_thresh": "-30.96",
+          "output_i": "-20.83",
+          "output_tp": "-3.00",
+          "output_lra": "2.00",
+          "output_thresh": "-31.22",
+          "normalization_type": "dynamic",
+          "target_offset": "0.83"
+        },
+        "pitch_changed": false,
+        "speed_changed": false,
+        "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+      },
+      "fits_existing_3_44_second_window": false
+    },
+    {
+      "key": "shirt",
+      "text": "白色衬衫，简洁利落，通勤好搭。",
+      "sample_rate": 24000,
+      "duration_seconds": 6.4,
+      "seed": 2026100901,
+      "raw_sha256": "825809f3c41d6841e1e11d777eadce99137a2b215dd475bad395dddf94c1b1a7",
+      "sha256": "a45ce2a79c49938fbd619d4af8c15179fdba41e8e12e294910e87a05eb18e380",
+      "reused_existing_raw": false,
+      "generation_and_processing_seconds": 4.8024295419454575,
+      "processing": {
+        "target_lufs": -23,
+        "constant_gain_db": -4.989999999999998,
+        "pre_gain_measurement": {
+          "input_i": "-18.01",
+          "input_tp": "-3.12",
+          "input_lra": "2.60",
+          "input_thresh": "-28.57",
+          "output_i": "-20.40",
+          "output_tp": "-6.29",
+          "output_lra": "1.90",
+          "output_thresh": "-30.99",
+          "normalization_type": "dynamic",
+          "target_offset": "0.40"
+        },
+        "pitch_changed": false,
+        "speed_changed": false,
+        "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+      },
+      "fits_existing_3_44_second_window": false
+    },
+    {
+      "key": "cardigan",
+      "text": "粉色开衫，温柔百搭，适合叠穿。",
+      "sample_rate": 24000,
+      "duration_seconds": 4.24,
+      "seed": 2026100902,
+      "raw_sha256": "41b3a8e578b11f33e185de7e48b99a6b35800ce8268842b33aac4aa6c508c06c",
+      "sha256": "3c900099f9f73cdcc84df44e0a1237f01974d113828fc4c6dd27943c202e68e7",
+      "reused_existing_raw": false,
+      "generation_and_processing_seconds": 3.1651630848646164,
+      "processing": {
+        "target_lufs": -23,
+        "constant_gain_db": -3.460000000000001,
+        "pre_gain_measurement": {
+          "input_i": "-19.54",
+          "input_tp": "-3.66",
+          "input_lra": "0.80",
+          "input_thresh": "-29.95",
+          "output_i": "-19.04",
+          "output_tp": "-3.14",
+          "output_lra": "0.10",
+          "output_thresh": "-29.40",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.96"
+        },
+        "pitch_changed": false,
+        "speed_changed": false,
+        "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+      },
+      "fits_existing_3_44_second_window": false
+    },
+    {
+      "key": "dress",
+      "text": "黑色连衣裙，线条简洁，日常好搭。",
+      "sample_rate": 24000,
+      "duration_seconds": 5.52,
+      "seed": 2026100903,
+      "raw_sha256": "8358a224877c617ac205b35e183c68467c14af599d7ce5bb6446b1b4aa645dd6",
+      "sha256": "12537659a55aa6402289d830aa57488ba6f52e521577218f387063fc5ded1951",
+      "reused_existing_raw": false,
+      "generation_and_processing_seconds": 4.138326675165445,
+      "processing": {
+        "target_lufs": -23,
+        "constant_gain_db": -1.6700000000000017,
+        "pre_gain_measurement": {
+          "input_i": "-21.33",
+          "input_tp": "-5.37",
+          "input_lra": "0.50",
+          "input_thresh": "-31.74",
+          "output_i": "-20.32",
+          "output_tp": "-3.97",
+          "output_lra": "0.80",
+          "output_thresh": "-30.69",
+          "normalization_type": "dynamic",
+          "target_offset": "0.32"
+        },
+        "pitch_changed": false,
+        "speed_changed": false,
+        "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+      },
+      "fits_existing_3_44_second_window": false
+    }
+  ],
+  "generated_at_utc": "2026-10-08T11:24:59.382269+00:00",
+  "scope": "Audio audition only; existing lip-synchronized videos are unchanged.",
+  "loudness_revision": "All auditions matched to -23 LUFS by constant gain; timing, pitch and delivery unchanged."
+}

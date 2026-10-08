@@ -1,0 +1,134 @@
+{
+  "status": "PASS",
+  "shots": [
+    {
+      "status": "PASS",
+      "case_id": "troy_20261003_220446_opening",
+      "mode": "final",
+      "duration_s": 5,
+      "e2e_s": 94.41,
+      "transition": "independent",
+      "previous_clip_id": null,
+      "delivered_frames": 121,
+      "delivered_duration_s": 5.041666666666667,
+      "trim_frames": 0,
+      "continuation": {},
+      "reported_e2e_s": 94.38,
+      "qwen_s": 2.817577894,
+      "stage1_s": 55.045432302,
+      "stage2_s": 34.593515969,
+      "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage1",
+      "video_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage2/refined_1344x768_121f.mp4",
+      "video_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage2/refined_1344x768_121f.mp4",
+      "contact_sheet_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage2/contact_sheet/contact_sheet.png"
+    },
+    {
+      "status": "PASS",
+      "case_id": "troy_20261003_220446_continuation",
+      "mode": "final",
+      "duration_s": 5,
+      "e2e_s": 79.26,
+      "transition": "continue",
+      "previous_clip_id": "troy_20261003_220446_opening",
+      "delivered_frames": 102,
+      "delivered_duration_s": 4.25,
+      "trim_frames": 19,
+      "continuation": {
+        "source_capture": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage1",
+        "source_sha256": "e56688ea4faca02de8f22f904aa89ae6ff15b15e765c9c9e2b7106cae8b49c12",
+        "context_frames": 22,
+        "trim_frames": 19,
+        "audio_context_frames": 24,
+        "condition_video_rows": 1764,
+        "condition_audio_rows": 80,
+        "video_timeline_offsets": [
+          0,
+          1,
+          5,
+          9,
+          13,
+          17,
+          18
+        ],
+        "audio_join_frame": 19,
+        "frozen_prefix_verified": true,
+        "method": "native_H3_AV_latent_timeline_prefix"
+      },
+      "reported_e2e_s": 79.07,
+      "qwen_s": 2.128178183,
+      "stage1_s": 40.656107484,
+      "stage2_s": 34.721857385,
+      "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_continuation/stage1",
+      "video_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_continuation/stage2/refined_1344x768_121f_delivered.mp4",
+      "video_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_continuation/stage2/refined_1344x768_121f_delivered.mp4",
+      "contact_sheet_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_continuation/stage2/contact_sheet/contact_sheet.png"
+    },
+    {
+      "status": "PASS",
+      "case_id": "troy_20261003_220446_new_angle",
+      "mode": "final",
+      "duration_s": 5,
+      "e2e_s": 73.24,
+      "transition": "independent",
+      "previous_clip_id": null,
+      "delivered_frames": 121,
+      "delivered_duration_s": 5.041666666666667,
+      "trim_frames": 0,
+      "continuation": {},
+      "reported_e2e_s": 73.24,
+      "qwen_s": 2.138101042,
+      "stage1_s": 35.077389079,
+      "stage2_s": 35.20253364,
+      "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_new_angle/stage1",
+      "video_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_new_angle/stage2/refined_1344x768_121f.mp4",
+      "video_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_new_angle/stage2/refined_1344x768_121f.mp4",
+      "contact_sheet_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_new_angle/stage2/contact_sheet/contact_sheet.png"
+    }
+  ],
+  "films": [
+    {
+      "name": "storyboard",
+      "file": "/home/admin/sol-spark-runtime/outputs/troy_dual_workflows_20261003_v2/troy_storyboard.mp4",
+      "contact_sheet": "/home/admin/sol-spark-runtime/outputs/troy_dual_workflows_20261003_v2/storyboard_contact_sheet.png",
+      "media": {
+        "status": "PASS",
+        "frames": 242,
+        "duration_s": 10.083333,
+        "width": 1344,
+        "height": 768,
+        "sample_rate": 32000,
+        "full_decode": true
+      },
+      "seam_frame": 121,
+      "shots": [
+        "troy_20261003_220446_opening",
+        "troy_20261003_220446_new_angle"
+      ]
+    },
+    {
+      "name": "continuous",
+      "file": "/home/admin/sol-spark-runtime/outputs/troy_dual_workflows_20261003_v2/troy_continuous.mp4",
+      "contact_sheet": "/home/admin/sol-spark-runtime/outputs/troy_dual_workflows_20261003_v2/continuous_contact_sheet.png",
+      "media": {
+        "status": "PASS",
+        "frames": 223,
+        "duration_s": 9.291667,
+        "width": 1344,
+        "height": 768,
+        "sample_rate": 32000,
+        "full_decode": true
+      },
+      "seam_frame": 121,
+      "shots": [
+        "troy_20261003_220446_opening",
+        "troy_20261003_220446_continuation"
+      ]
+    }
+  ],
+  "test_sequence": [
+    "independent",
+    "continue",
+    "independent"
+  ],
+  "continuity_scope": "Frozen native H3 AV prefix verified; LTX delivery needs visual/audio review"
+}

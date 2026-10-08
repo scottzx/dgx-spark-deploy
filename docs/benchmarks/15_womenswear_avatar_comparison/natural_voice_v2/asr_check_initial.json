@@ -1,0 +1,203 @@
+{
+  "checked_at_utc": "2026-10-08T11:47:18.052408+00:00",
+  "model": "SenseVoiceSmall",
+  "device": "cpu",
+  "clips": [
+    {
+      "profile": "serena_chat",
+      "clip": "audition",
+      "sha256": "099fd57304a0e730da712efb68e694cc61e454bf7514adde4d3a790451452d5f",
+      "expected_text": "我们先看这件白衬衫，款式比较简单，上班的时候可以配长裤。接着是这件粉色开衫，搭在衬衫外面也挺合适。最后这件黑色连衣裙，整体的线条很简洁，平时出门穿也好搭。这三件你比较喜欢哪一件，我再拿近一点给你看。",
+      "result": [
+        {
+          "key": "audition",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>我们先看这件白衬衫，款式比较简单，上班的时候可以配长裤。接着是这件粉色开衫，搭在衬衫外面也挺合适。最后这件黑色连衣裙整体的线条很简洁，平时出门穿也好搭这三件你比较喜欢哪一件，我再拿近一点给你看。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "serena_chat",
+      "clip": "audition_original_text",
+      "sha256": "efca82ff6c31abb7d558e71ca9e6db8ce74e71875dec8e083b67ffd09702c416",
+      "expected_text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+      "result": [
+        {
+          "key": "audition_original_text",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>姐妹们，今天这三件女装，咱们一件一件看，先看这件白色衬衫，简洁利落，同情很好搭，再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": false
+    },
+    {
+      "profile": "serena_chat",
+      "clip": "shirt",
+      "sha256": "5386982a405734f4e315013406c0359f8e104d868f7c07ac0604b003347b4fae",
+      "expected_text": "这件白衬衫款式比较简单，配长裤就挺好看。",
+      "result": [
+        {
+          "key": "shirt",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>这件白衬衫款式比较简单，配长裤就挺好看。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "serena_chat",
+      "clip": "cardigan",
+      "sha256": "28afd5d016cec8b21313b1c3f34803bfe30f900afa4c520d24905ddb0e412271",
+      "expected_text": "这件粉色开衫，搭在衬衫外面也挺合适。",
+      "result": [
+        {
+          "key": "cardigan",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>这件粉色开衫搭在衬衫外面也挺合适。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "serena_chat",
+      "clip": "dress",
+      "sha256": "6470e0241cb019dd5dd749669ccd7177403f63b580612a1cca7d7dd11e8f3b13",
+      "expected_text": "这件黑色连衣裙，平时出门穿也挺好搭。",
+      "result": [
+        {
+          "key": "dress",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>这件黑色连衣裙平时出门穿也挺好搭。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "serena_default",
+      "clip": "audition",
+      "sha256": "e679cc23fc573d37863ca17174783a411c981ebffe8d4168091d634d87a278c7",
+      "expected_text": "我们先看这件白衬衫，款式比较简单，上班的时候可以配长裤。接着是这件粉色开衫，搭在衬衫外面也挺合适。最后这件黑色连衣裙，整体的线条很简洁，平时出门穿也好搭。这三件你比较喜欢哪一件，我再拿近一点给你看。",
+      "result": [
+        {
+          "key": "audition",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>我们先看这件白衬衫，款式比较简单，上班的时候可以配长裤，接着是这件粉色开衫，搭在衬衫外面也挺合适。最后这件黑色连衣裙整体的线条很简洁，平时出门穿也好搭。这三件你比较喜欢哪一件，我再拿近一点给你看。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "serena_default",
+      "clip": "audition_original_text",
+      "sha256": "80182d434148af4a61f0fc79e895e3953307cd529ec99dab31b2d2f3f0630e9c",
+      "expected_text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+      "result": [
+        {
+          "key": "audition_original_text",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>姐妹们，今天这三件女装，咱们一件一件看，先看这件白色衬衫，简洁利落，通勤很好搭，再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "serena_default",
+      "clip": "shirt",
+      "sha256": "179c218906420a1db96c5bcc2758d958212650696dce49e187f018f9cd9cb41a",
+      "expected_text": "这件白衬衫款式比较简单，配长裤就挺好看。",
+      "result": [
+        {
+          "key": "shirt",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>这件白衬衫款式比较简单，配长裤就挺好看。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "serena_default",
+      "clip": "cardigan",
+      "sha256": "9f0f0cbf44761fea4d77aee8cb28add98c0bc732f73cfe3a9fe724326d3cc613",
+      "expected_text": "这件粉色开衫，搭在衬衫外面也挺合适。",
+      "result": [
+        {
+          "key": "cardigan",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>这件粉色开衫搭在衬衫外面也挺合适。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "serena_default",
+      "clip": "dress",
+      "sha256": "6aec97327eaf6d3cf37d765fb85942957457c5f739f2fa321eaf8cdd4c8de2e9",
+      "expected_text": "这件黑色连衣裙，平时出门穿也挺好搭。",
+      "result": [
+        {
+          "key": "dress",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>这件黑色连衣裙平时出门穿也挺好的。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": false
+    },
+    {
+      "profile": "vivian_default",
+      "clip": "audition",
+      "sha256": "079a8229b38294a0d9c63b31a5ea422fbbffb27fb3d568ad25d8418dafa5fbd6",
+      "expected_text": "我们先看这件白衬衫，款式比较简单，上班的时候可以配长裤。接着是这件粉色开衫，搭在衬衫外面也挺合适。最后这件黑色连衣裙，整体的线条很简洁，平时出门穿也好搭。这三件你比较喜欢哪一件，我再拿近一点给你看。",
+      "result": [
+        {
+          "key": "audition",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>我们先看这件白衬衫，款式比较简单，上班的时候可以配长裤，接着是这件粉色开衫，搭在衬衫外面也挺合适。最后这件黑色连衣裙整体的线条很简洁，平时出门穿也好搭这三件你比较喜欢哪一件，我再拿近一点给你看。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "vivian_default",
+      "clip": "audition_original_text",
+      "sha256": "a934f5fe32d0af832e5e3d42ec3553342c37132b61e6ffbce63907dad4de7d0a",
+      "expected_text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+      "result": [
+        {
+          "key": "audition_original_text",
+          "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>姐妹们，今天这三件女装，咱们一件一件看，先看这件白色衬衫，简洁利落，通勤很好搭，再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "vivian_default",
+      "clip": "shirt",
+      "sha256": "63de85a154bba43a3685f057c6505ba26dd9c66a4f7408a9a6194d4e23b18e63",
+      "expected_text": "这件白衬衫款式比较简单，配长裤就挺好看。",
+      "result": [
+        {
+          "key": "shirt",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>这件白衬衫款式比较简单，配长裤就挺好看。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "vivian_default",
+      "clip": "cardigan",
+      "sha256": "32a3873da3369a4572ca9804b326d4e84bf99adfad8dd6ed10a7c77ecc5e3299",
+      "expected_text": "这件粉色开衫，搭在衬衫外面也挺合适。",
+      "result": [
+        {
+          "key": "cardigan",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>这件粉色开衫搭在衬衫外面也挺合适。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    },
+    {
+      "profile": "vivian_default",
+      "clip": "dress",
+      "sha256": "bd4c5e9050110969cdf2e54f05c5fad6e852571f3012dc632271bee5c3a04b8e",
+      "expected_text": "这件黑色连衣裙，平时出门穿也挺好搭。",
+      "result": [
+        {
+          "key": "dress",
+          "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>这件黑色连衣裙平时出门穿也挺好搭。"
+        }
+      ],
+      "text_matches_after_punctuation_normalization": true
+    }
+  ],
+  "scope": "Automatic transcript audit; subjective naturalness and timbre require listening."
+}

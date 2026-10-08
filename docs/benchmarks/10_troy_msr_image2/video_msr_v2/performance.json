@@ -1,0 +1,10 @@
+{
+  "generated": 24,
+  "steady_candidates": 23,
+  "steady_mean_generation_s": 74.41333028902908,
+  "steady_mean_denoising_s": 66.20110507173787,
+  "mean_other_s": 8.212225217291195,
+  "previous_mean_generation_s": 141.06631083183456,
+  "previous_mean_other_s": 78.38881102437153,
+  "comparison_scope": "Descriptive timing of different shot batches, not a controlled speedup benchmark; first v2 clip includes double numerical probe and is excluded."
+}

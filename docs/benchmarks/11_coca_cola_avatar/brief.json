@@ -1,0 +1,42 @@
+{
+  "created_date": "2026-10-07",
+  "hardware": "DGX Spark / GB10 / aarch64 / 128GB unified memory",
+  "purpose": "中文数字人口播带货；可口可乐原味、健怡、零度三个易拉罐",
+  "routes": [
+    {
+      "id": "A",
+      "framework": "LiveTalking",
+      "avatar": "MuseTalk 1.5",
+      "mode": "实时口型驱动"
+    },
+    {
+      "id": "B",
+      "framework": "OpenAvatarChat",
+      "avatar": "SoulX-FlashHead Lite",
+      "mode": "照片驱动流式人物"
+    },
+    {
+      "id": "C",
+      "framework": "EchoMimicV3",
+      "avatar": "EchoMimicV3 Flash",
+      "mode": "离线人物动画；必要时再评估 LatentSync"
+    }
+  ],
+  "presenter": "原创虚构成年中国女性，约30岁，红色上衣，正面中近景",
+  "voice": "本地 Qwen3-TTS CustomVoice / Vivian / 中文",
+  "script": "可口可乐，今天你想选哪一罐？原味，熟悉的经典可乐风味。健怡，无糖，口感更轻盈。零度，同样无糖，更接近原味可口可乐的风味。聚餐、追剧，或者想来一口冰爽，三种选择，按你的口味来。原味、健怡、零度，认准罐身标识，挑一罐你喜欢的，冰镇后更过瘾！",
+  "product_visual_policy": "使用官网产品图作为独立商品展示层；模型只驱动主播，商品标识不进入生成重绘。默认官网英美版参考包装，不代表特定国行SKU。",
+  "facts_source": "https://www.coca-cola.com/us/en/offerings/faq/whats-the-difference-between-coca-cola-zero-sugar-and-diet-coke",
+  "checks": [
+    "完整解码",
+    "音轨一致",
+    "中文口播正确",
+    "口型与声音同步",
+    "面部稳定",
+    "手部和身体自然度",
+    "三罐包装保真",
+    "冷启动与推理耗时分开",
+    "平均FPS与首段延迟",
+    "GPU内存峰值"
+  ]
+}

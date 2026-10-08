@@ -1,0 +1,55 @@
+{
+  "status": "complete",
+  "started_unix": 1791291260.2938159,
+  "phases": [
+    {
+      "phase": "native",
+      "exit_code": 0,
+      "wall_s": 165.59378779213876
+    },
+    {
+      "phase": "caches",
+      "exit_code": 0,
+      "wall_s": 32.583026089239866
+    },
+    {
+      "phase": "ltx",
+      "exit_code": 0,
+      "wall_s": 263.79801965598017
+    }
+  ],
+  "video_service_before": {
+    "status": "READY",
+    "task": "fl2va",
+    "paths_file": "/home/admin/sol-spark-runtime/paths.json",
+    "startup_and_warmup_s": 464.82121300697327,
+    "ready_time": "2026-10-06T02:01:27.364611",
+    "requests_served": 6,
+    "workflows": [
+      "independent",
+      "continue"
+    ],
+    "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+    "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=fl2va; modes: draft|final)"
+  },
+  "original_server_pid": 2002294,
+  "child_pid": 2014105,
+  "generation_status": "complete",
+  "restored_server_pid": 2015547,
+  "video_service_restored": true,
+  "video_service_after": {
+    "status": "READY",
+    "task": "fl2va",
+    "paths_file": "/home/admin/sol-spark-runtime/paths.json",
+    "startup_and_warmup_s": 457.1161096096039,
+    "ready_time": "2026-10-06T21:11:02.051933",
+    "requests_served": 0,
+    "workflows": [
+      "independent",
+      "continue"
+    ],
+    "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+    "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=fl2va; modes: draft|final)"
+  },
+  "finished_unix": 1791292264.0106852
+}

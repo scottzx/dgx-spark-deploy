@@ -1,0 +1,92 @@
+{
+  "route": "A",
+  "engine": "LiveTalking MuseTalk 1.5 rendering components",
+  "integration_scope": "Fixed narration, model inference and compositing; WebRTC and conversational LLM not included",
+  "roi_method": "OpenCV Haar on one static portrait",
+  "input_image": "/home/admin/digital-human-runtime/inputs/handheld/diet.png",
+  "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/diet_16k.wav",
+  "bbox": [
+    209,
+    137,
+    471,
+    420
+  ],
+  "frames": 97,
+  "fps": 25,
+  "duration_seconds": 3.88,
+  "load_and_avatar_prepare_seconds": 5.9197604223154485,
+  "audio_feature_seconds": 0.03808924602344632,
+  "render_and_write_seconds": 3.311278301756829,
+  "gpu_inference_seconds": 2.999195426236838,
+  "gpu_inference_fps": 32.342007176807485,
+  "render_and_write_fps": 29.293822856428516,
+  "first_batch_seconds": 0.32966877380385995,
+  "peak_cuda_allocated_gib": 6.6849894523620605,
+  "batches": [
+    {
+      "first_frame": 0,
+      "frames": 8,
+      "seconds": 0.32873287331312895
+    },
+    {
+      "first_frame": 8,
+      "frames": 8,
+      "seconds": 0.2382601359859109
+    },
+    {
+      "first_frame": 16,
+      "frames": 8,
+      "seconds": 0.2374308267608285
+    },
+    {
+      "first_frame": 24,
+      "frames": 8,
+      "seconds": 0.2354986402206123
+    },
+    {
+      "first_frame": 32,
+      "frames": 8,
+      "seconds": 0.23736109910532832
+    },
+    {
+      "first_frame": 40,
+      "frames": 8,
+      "seconds": 0.23583564721047878
+    },
+    {
+      "first_frame": 48,
+      "frames": 8,
+      "seconds": 0.2359152790158987
+    },
+    {
+      "first_frame": 56,
+      "frames": 8,
+      "seconds": 0.23661038139835
+    },
+    {
+      "first_frame": 64,
+      "frames": 8,
+      "seconds": 0.2341668689623475
+    },
+    {
+      "first_frame": 72,
+      "frames": 8,
+      "seconds": 0.23585259215906262
+    },
+    {
+      "first_frame": 80,
+      "frames": 8,
+      "seconds": 0.23460475588217378
+    },
+    {
+      "first_frame": 88,
+      "frames": 8,
+      "seconds": 0.23586817597970366
+    },
+    {
+      "first_frame": 96,
+      "frames": 1,
+      "seconds": 0.0730581502430141
+    }
+  ]
+}

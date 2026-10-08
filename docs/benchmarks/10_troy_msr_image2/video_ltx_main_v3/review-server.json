@@ -1,0 +1,9 @@
+{
+  "pid": 42686,
+  "port": 59137,
+  "bind": "127.0.0.1",
+  "directory": "/Users/scott/Documents/01-\u5f00\u53d1\u9879\u76ee/DXG\u79c1\u6709\u5316\u90e8\u7f72/docs/benchmarks/10_troy_msr_image2",
+  "url": "http://127.0.0.1:59137/video_ltx_main_v3/review.html",
+  "range_requests": true,
+  "replaces_owned_pid": 6988
+}

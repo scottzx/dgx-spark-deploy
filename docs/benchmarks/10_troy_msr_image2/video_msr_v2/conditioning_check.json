@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "scope": "CPU integration of installed native classes and existing MSR adapter; sentinel content, no model-quality claim",
+  "cases": [
+    {
+      "slots": 3,
+      "method": "msr",
+      "tokens": 10416,
+      "roundtrip": true,
+      "cropped_shape": [
+        1,
+        128,
+        16,
+        14,
+        24
+      ]
+    },
+    {
+      "slots": 3,
+      "method": "msr_first",
+      "tokens": 10416,
+      "roundtrip": true,
+      "cropped_shape": [
+        1,
+        128,
+        16,
+        14,
+        24
+      ]
+    },
+    {
+      "slots": 3,
+      "method": "msr_first_last",
+      "tokens": 10752,
+      "roundtrip": true,
+      "cropped_shape": [
+        1,
+        128,
+        16,
+        14,
+        24
+      ]
+    },
+    {
+      "slots": 5,
+      "method": "msr",
+      "tokens": 13776,
+      "roundtrip": true,
+      "cropped_shape": [
+        1,
+        128,
+        16,
+        14,
+        24
+      ]
+    },
+    {
+      "slots": 5,
+      "method": "msr_first",
+      "tokens": 13776,
+      "roundtrip": true,
+      "cropped_shape": [
+        1,
+        128,
+        16,
+        14,
+        24
+      ]
+    },
+    {
+      "slots": 5,
+      "method": "msr_first_last",
+      "tokens": 14112,
+      "roundtrip": true,
+      "cropped_shape": [
+        1,
+        128,
+        16,
+        14,
+        24
+      ]
+    }
+  ]
+}

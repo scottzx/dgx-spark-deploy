@@ -1,0 +1,8 @@
+Use case: precise-object-edit.
+Asset type: standalone clean exterior city-gate environment master for the Trojan Horse film.
+Input image 1: architecture, practical movie-set finish and lighting reference; remove the horse and all people from the scene.
+Primary request: show the exterior stone city gate and forecourt of ancient Troy in a clear daytime wide shot, with the entrance and approach road empty for later staging of Sinon's persuasion and the wooden horse.
+Scene: an immense arched sandstone gate between weathered stone towers, open heavy timber gate leaves, warm stone walls, the interior square faintly visible through the arch. Broad dusty stone approach road with enough unobstructed space for a large horse on its wheeled platform, weathered stones and rope-hauling footpaths, simple unmarked crimson cloth banners at the gate. Ancient handcrafted film sets, not a modern location.
+Style/medium: photorealistic live-action 1970s Shaw Brothers historical studio cinema, practical stone and timber art direction, saturated warm sandstone and restrained 35mm film color, crisp theatrical daylight, subtle fine grain.
+Composition/framing: landscape 16:9, wide master from outside looking through the gate, eye-level slightly oblique view with spatial depth; entire arch opening and its ground clearance clearly readable. Keep architecture coherent with the supplied gate.
+Constraints: NO people, no horse, no animals, no soldiers, no statue figures, no modern objects, no text, no lettering, no signs, no collage, no storyboard panels, no frame or watermark. A clean reusable environment plate.

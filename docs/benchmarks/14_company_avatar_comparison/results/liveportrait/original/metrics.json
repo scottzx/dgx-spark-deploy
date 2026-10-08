@@ -1,0 +1,26 @@
+{
+  "engine": "liveportrait",
+  "product": "original",
+  "scope": "Lip-region retargeting onto LTX action video. Driver is the previously generated Serena/MuseTalk video; this is not an independent audio-to-motion model.",
+  "input_sha256": {
+    "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+    "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+    "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+    "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+  },
+  "driver": "/home/admin/digital-human-runtime/outputs/product_actions_dubbed_serena_smooth/original/dubbed.mp4",
+  "driver_sha256": "6d219c72e06f65aa2923061f0d0a5517a6ab37f7af79d961674bb2e8c481fe47",
+  "native_output": "/home/admin/avatar-company-tests/outputs/liveportrait/original/driver--dubbed.mp4",
+  "native_output_sha256": "b42cd4f206e69ab8c590726ca8c06f03ae525c2c24b151b6fbad6c1317441f16",
+  "video_sha256": "464705d7121bc77b9f5d3e5ba9cd2d8dbc0114c9eb58b290e6e68b6f93a98ea4",
+  "shared_model_load_seconds": 0.8320596651174128,
+  "render_seconds": 35.223152121994644,
+  "peak_cuda_allocated_gib": 2.6050333976745605,
+  "commit": "9b294b3d0536135442ea73cb01e6cb3ca7029dd3",
+  "compatibility": [
+    "CPU ONNX face detection/landmarks, four threads",
+    "PyTorch trusted official checkpoint weights_only=False"
+  ],
+  "model_generates_product_actions": false,
+  "original_LTX_actions_preserved": true
+}

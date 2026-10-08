@@ -1,0 +1,820 @@
+{
+  "title": "木马计：夺门",
+  "version": "v2",
+  "expected_shots": 20,
+  "generation_tool": "mixed historical sources; future self-hosted Qwen-Image-2.1",
+  "requested_model_label": "Qwen Image 2.1 for future generation",
+  "model_version_reported_by_tool": "Qwen-Image-2.1 for new Qwen records only",
+  "mode_selection": {
+    "new_qwen_generation": {
+      "steps": 40,
+      "lora": null,
+      "precision": "BF16",
+      "backend": "sglang",
+      "size": [
+        1536,
+        864
+      ]
+    },
+    "earlier_cloud_mode": "unknown"
+  },
+  "status": "static_preview_complete_with_caveats",
+  "video_generated": true,
+  "shots": [
+    {
+      "id": "S01",
+      "title": "西农陈情",
+      "frame_file": "storyboard/frames/s01_v1.png",
+      "prompt_file": "storyboard/prompts/s01.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-10f3217b-adcf-468d-ab06-c85035f03fc3.png",
+      "references": [
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/gate_day_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/trojan_horse_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/sinon_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_guard_01_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_citizen_01_v1.png"
+      ],
+      "generation_wall_s": 235,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "cd46b04cc6acc039948ad7ea6cc00dd063b43151e5ed9a0c2f4e3dabe146dda5",
+      "bytes": 2667237,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "三名人物明确，西农空手、守卫持矛盾；木马留在劝诱背景。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S02",
+      "title": "守卫放行",
+      "frame_file": "storyboard/frames/s02_v1.png",
+      "prompt_file": "storyboard/prompts/s02.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-dbb163fe-278c-48c0-a6d9-94cb7625b248.png",
+      "references": [
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/gate_day_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/sinon_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_guard_01_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_worker_01_v1.png"
+      ],
+      "generation_wall_s": 280,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "165af8f7cc8aa526cbcd4ac37549739750b98d6be7242b7cee61380973c40022",
+      "bytes": 2557257,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "守卫持装备侧身放行，搬运者双手牵绳；西农、守卫、搬运者共三人。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S03",
+      "title": "木轮越过门槛",
+      "frame_file": "storyboard/frames/s03_v1.png",
+      "prompt_file": "storyboard/prompts/s03.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-d7213184-fb16-4d03-9817-6a67e01acc32.png",
+      "references": [
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/gate_day_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/trojan_horse_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_worker_01_v1.png"
+      ],
+      "generation_wall_s": 249,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "276251eb8d61bef578a7f3f5a1494d06859b118ff3ae7780361474a4bcc1cd26",
+      "bytes": 2487102,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "低机位明确木轮跨石门槛，木腿与平台为刚性结构；仅搬运者局部入画。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S04",
+      "title": "木马进入广场",
+      "frame_file": "storyboard/frames/s04_v1.png",
+      "prompt_file": "storyboard/prompts/s04.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-2075a3eb-c7a5-41ff-a6cf-ecba85d41e3d.png",
+      "references": [
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/square_day_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/trojan_horse_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_worker_01_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_citizen_01_v1.png"
+      ],
+      "generation_wall_s": 240,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4e71adcd964c71139d8c25646df4d3565a3d99defcaf4964e2e5acdc0e9856cd",
+      "bytes": 2601254,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "朝右的木马进入左门右喷泉的广场；两名不同搬运者与市民共三人。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S05",
+      "title": "暮色停驻",
+      "frame_file": "storyboard/frames/s05_v1.png",
+      "prompt_file": "storyboard/prompts/s05.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-18b0b01b-db31-4787-9de3-17b485d2ee42.png",
+      "references": [
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/square_dusk_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/trojan_horse_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_worker_01_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_citizen_01_v1.png"
+      ],
+      "generation_wall_s": 234,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "714d42deaeeaa3edd493ab5117cee2de198633ae54220e66b48283f8ed635a1a",
+      "bytes": 2358570,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "暮色停驻、绳索松弛，两名平民背身离开，舱门仍关。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S06",
+      "title": "暮色关城门",
+      "frame_file": "storyboard/frames/s06_v2.png",
+      "prompt_file": "storyboard/prompts/s06_v2.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-ced1be38-b3ec-4e19-a9ae-e3e74471acca.png",
+      "references": [
+        "storyboard/frames/s06_v1.png",
+        "assets/characters/trojan_guard_01_v1.png"
+      ],
+      "generation_wall_s": 218,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "29209fbbf85a5e934889164d93943b32c8d1bdfc2194a2a03dd82055d907a886",
+      "bytes": 2254969,
+      "copy_matches_source": true,
+      "previous_versions": [
+        {
+          "id": "S06",
+          "title": "暮色关城门",
+          "frame_file": "storyboard/frames/s06_v1.png",
+          "prompt_file": "storyboard/prompts/s06.txt",
+          "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-b0bd0259-f735-44d8-ad83-80492ff12baf.png",
+          "references": [
+            "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/gate_day_v1.png",
+            "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/square_dusk_v1.png",
+            "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/characters/trojan_guard_01_v1.png"
+          ],
+          "generation_wall_s": 222,
+          "status": "generated_pending_manual_review",
+          "tool": "built-in image_gen",
+          "width": 1672,
+          "height": 941,
+          "sha256": "8810974461e8579264d003d388c7bee092fb3d72390bfabc934b9bbbb79b261c",
+          "bytes": 2357896,
+          "copy_matches_source": true,
+          "manual_review": {
+            "status": "needs_revision",
+            "note": "V1横闩跨在未合拢的门扇上，物理状态冲突；已排队修成闭门上闩。",
+            "scope": "static keyframe visual review"
+          }
+        }
+      ],
+      "manual_review": {
+        "status": "pass",
+        "note": "V2门扇完全闭合，单一横闩跨闭合中缝；守卫双手上闩，矛盾留在墙边。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S07",
+      "title": "夜间静场",
+      "frame_file": "storyboard/frames/s07_v1.png",
+      "prompt_file": "storyboard/prompts/s07.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-f206fbc6-8b63-49e2-a2f0-05a5313b89d7.png",
+      "references": [
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/square_night_v1.png",
+        "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/assets/scenes/trojan_horse_v1.png"
+      ],
+      "generation_wall_s": 448,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "9e44ec0c3ba76421e336323781eb3d96b44333497c204405c058832bd15e5131",
+      "bytes": 2463025,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "空广场无人物无梯子，舱门和远处城门关闭；木马、喷泉及火盆地理延续。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S08",
+      "title": "侧舱试探开启",
+      "frame_file": "storyboard/frames/s08_v1.png",
+      "prompt_file": "storyboard/prompts/s08.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-6203c791-fff3-4487-8ac9-fba4f7b9e967.png",
+      "references": [
+        "storyboard/frames/s07_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/odysseus_v1.png"
+      ],
+      "generation_wall_s": 244,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "380d4744d460f9a97ce1ce7f3524fb98fb5a28622a356d09176d0357636874c3",
+      "bytes": 2400988,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "仅奥德修斯一人从同一侧腹舱口探视，上掀舱门仍连接马体；未出现梯子或地面人物。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S09",
+      "title": "放下木梯",
+      "frame_file": "storyboard/frames/s09_v1.png",
+      "prompt_file": "storyboard/prompts/s09.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-473bb6d2-d666-44f9-addf-76e7faae9404.png",
+      "references": [
+        "storyboard/frames/s07_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/odysseus_v1.png"
+      ],
+      "generation_wall_s": 486,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "662dcb331f6d26f0a26aa90ce4ba9f6b894fb720be42d5602ca14d394e3a4ad6",
+      "bytes": 2467677,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "奥德修斯在舱口双手稳梯，无盾；一架梯子从舱口下缘通到平台旁石地，轮子完整。舱口边框与近景有少量生成差异，后续以本镜梯子布置为准。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S10",
+      "title": "奥德修斯下梯",
+      "frame_file": "storyboard/frames/s10_v1.png",
+      "prompt_file": "storyboard/prompts/s10.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-90fbde77-d633-4cda-9012-8cf94cd82820.png",
+      "references": [
+        "storyboard/frames/s09_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/odysseus_v1.png"
+      ],
+      "generation_wall_s": 166,
+      "status": "reviewed_static_partial",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "dba1180389e9d9d0ec635349a54289a3181edf0581e4d710c8927d6ae70ab295",
+      "bytes": 2453095,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "partial",
+        "note": "单一奥德修斯面向马体下梯，双手抓梯、剑入鞘、无盾。木梯横档与舱框比例相较S09有变化，作为初版保留。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S11",
+      "title": "落地示意",
+      "frame_file": "storyboard/frames/s11_v1.png",
+      "prompt_file": "storyboard/prompts/s11.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-ac445128-c745-4905-b49e-68223be171fe.png",
+      "references": [
+        "storyboard/frames/s09_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/odysseus_v1.png"
+      ],
+      "generation_wall_s": 198,
+      "status": "reviewed_static_partial",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "ddd56a76fd6754f44126e0719536149604ccb4be79e146017eecede19f57fc91",
+      "bytes": 2416577,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "partial",
+        "note": "奥德修斯已完全落地并空手示意，舱口无人复制；盔甲纹饰、舱框与木梯细节有生成变化。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "id": "S12",
+      "title": "随队士兵跟出",
+      "frame_file": "storyboard/frames/s12_v2.png",
+      "prompt_file": "storyboard/prompts/s12_v2.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-71ace565-35df-42a7-bee5-d5fd6abef380.png",
+      "references": [
+        "storyboard/frames/s12_v1.png",
+        "assets/characters/greek_soldier_01_v1.png"
+      ],
+      "generation_wall_s": 120,
+      "status": "reviewed_static_partial",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "b7f6171ac5a36c04f1fbfd50e52751a39661a9f6efba5a3dec64c828094901a2",
+      "bytes": 2376908,
+      "copy_matches_source": true,
+      "previous_versions": [
+        {
+          "id": "S12",
+          "title": "随队士兵跟出",
+          "frame_file": "storyboard/frames/s12_v1.png",
+          "prompt_file": "storyboard/prompts/s12.txt",
+          "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-22a99a0f-18e3-4043-a357-2652406b1ed1.png",
+          "references": [
+            "storyboard/frames/s09_v1.png",
+            "assets/scenes/trojan_horse_v1.png",
+            "assets/characters/odysseus_v1.png",
+            "assets/characters/greek_soldier_01_v1.png"
+          ],
+          "generation_wall_s": 172,
+          "status": "generated_pending_manual_review",
+          "tool": "built-in image_gen",
+          "width": 1672,
+          "height": 941,
+          "sha256": "a75c4da93697cef59100b722b928d6e6d37bbfa5d3ab0e0daa6984a435d1d730",
+          "bytes": 2481562,
+          "copy_matches_source": true,
+          "manual_review": {
+            "status": "needs_revision",
+            "note": "V1随队士兵面向镜头下梯，与设计的面向木马攀梯方向不符，排队局部修正。",
+            "scope": "static keyframe visual review"
+          }
+        }
+      ],
+      "manual_review": {
+        "status": "partial",
+        "note": "V2士兵面向木马下梯，背负单盾，奥德修斯在地面，人数为两人；剑位置部分受盾与衣装遮挡，舱框与横档仍按初版审阅。",
+        "scope": "static keyframe visual review"
+      },
+      "reused_from_version": "v1"
+    },
+    {
+      "kind": "shot",
+      "id": "S13",
+      "title": "伏兵集结备战",
+      "frame_file": "storyboard_v2/frames/s13_v1.png",
+      "prompt_file": "storyboard_v2/prompts/s13.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-3d39be10-d0cd-459c-a632-3f2031278b65.png",
+      "references": [
+        "storyboard/frames/s09_v1.png",
+        "assets/characters/odysseus_v1.png",
+        "assets/characters/greek_soldier_01_v1.png",
+        "assets/groups/greek_infantry_v1.png"
+      ],
+      "generation_wall_s": 137,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "3aa28006faf81fcc2564ac92949ce5c84f4d6a986d27437a8d7660f555cb6255",
+      "bytes": 2445752,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "六人伏兵集结，奥德修斯拔剑无盾，随队士兵左盾右剑；木马舱口空、单梯保留，闭门在远处。",
+        "scope": "static keyframe visual review"
+      }
+    },
+    {
+      "kind": "shot",
+      "id": "S14",
+      "title": "守军发现突袭",
+      "frame_file": "storyboard_v2/frames/s14_v1.png",
+      "prompt_file": "storyboard_v2/prompts/s14.txt",
+      "source": "/Users/scott/.codex/generated_images/01a106bf-122d-7800-93c7-e880fbafa62b/exec-a9e2d8e7-7663-4bf3-8fe9-f10a8e656f34.png",
+      "references": [
+        "storyboard/frames/s13_v1.png",
+        "assets/characters/trojan_guard_01_v1.png",
+        "assets/groups/trojan_defenders_v1.png"
+      ],
+      "generation_wall_s": 135,
+      "status": "reviewed_static_pass",
+      "tool": "built-in image_gen",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4ef550008e3307365e155288f0606aab868f73ce2f9142d9027dfdcd4278c1ae",
+      "bytes": 2401338,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "pass",
+        "note": "守卫与五名守軍进入拦截姿态，右矛左盾，木门闭合、横闩就位。",
+        "scope": "static keyframe visual review"
+      }
+    },
+    {
+      "kind": "shot",
+      "id": "S15",
+      "title": "门内短兵相接",
+      "frame_file": "storyboard_v2/frames/s15_qwen21_v2.png",
+      "prompt_file": "storyboard_v2/prompts/s15_qwen21_v2.txt",
+      "source": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/qwen21/outputs/s15_qwen21_v2.png",
+      "remote_source": "/home/admin/qwen-image-2.1-runtime/outputs/troy-gate-qwen21-20261005/outputs/s15_qwen21_v2.png",
+      "references": [
+        "storyboard/frames/s13_v1.png",
+        "assets/characters/odysseus_v1.png",
+        "assets/characters/trojan_guard_01_v1.png"
+      ],
+      "generation_wall_s": 78.39475866686553,
+      "status": "reviewed_static_partial",
+      "tool": "self-hosted Qwen Image 2.1",
+      "model": "Qwen-Image-2.1",
+      "provider": "self-hosted",
+      "steps": 40,
+      "seed": 2026101515,
+      "backend": "sglang",
+      "precision": "BF16",
+      "lora": null,
+      "metadata_file": "qwen21/outputs/s15_qwen21_v2.json",
+      "width": 1536,
+      "height": 864,
+      "sha256": "df73cd890460358b3ca2c445b4d68fa38eb2decd2d74170821bb2b6a9842a9d9",
+      "bytes": 2667562,
+      "copy_matches_source": true,
+      "previous_versions": [
+        {
+          "kind": "shot",
+          "id": "S15",
+          "title": "门内短兵相接",
+          "frame_file": "storyboard_v2/frames/s15_qwen21_v1.png",
+          "prompt_file": "storyboard_v2/prompts/s15_qwen21_v1.txt",
+          "source": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/qwen21/outputs/s15_qwen21_v1.png",
+          "remote_source": "/home/admin/qwen-image-2.1-runtime/outputs/troy-gate-qwen21-20261005/outputs/s15_qwen21_v1.png",
+          "references": [
+            "storyboard/frames/s13_v1.png",
+            "assets/characters/odysseus_v1.png",
+            "assets/characters/trojan_guard_01_v1.png",
+            "assets/groups/greek_infantry_v1.png",
+            "assets/groups/trojan_defenders_v1.png"
+          ],
+          "generation_wall_s": 101.63676724210382,
+          "status": "needs_revision",
+          "tool": "self-hosted Qwen Image 2.1",
+          "model": "Qwen-Image-2.1",
+          "provider": "self-hosted",
+          "steps": 40,
+          "seed": 2026100515,
+          "backend": "sglang",
+          "precision": "BF16",
+          "lora": null,
+          "metadata_file": "qwen21/outputs/s15_qwen21_v1.json",
+          "width": 1536,
+          "height": 864,
+          "sha256": "68918ced46bd212e320e1a12db96e03978498054798b85902c69864eb6ccba39",
+          "bytes": 2775396,
+          "copy_matches_source": true,
+          "manual_review": {
+            "status": "needs_revision",
+            "note": "首版出现八人；奥德修斯双手各持一剑、守卫头盔改形、旗帜出现马纹。减少群体参考重新生成。",
+            "scope": "static keyframe visual review"
+          }
+        }
+      ],
+      "manual_review": {
+        "status": "partial",
+        "note": "第二版已纠正为六人；奥德修斯仅右手一剑、左手空，守卫恢复尖盔右矛左盾，旗帜纯红。前景剑矛交锋可读；后排四人更接近备战，尚未形成要求的两组对打。",
+        "scope": "static keyframe visual review"
+      }
+    },
+    {
+      "kind": "shot",
+      "id": "S16",
+      "title": "掩护之下解除横闩",
+      "frame_file": "storyboard_v2/frames/s16_qwen21_v1.png",
+      "prompt_file": "storyboard_v2/prompts/s16_qwen21_v1.txt",
+      "source": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/qwen21/outputs/s16_qwen21_v1.png",
+      "remote_source": "/home/admin/qwen-image-2.1-runtime/outputs/troy-gate-qwen21-20261005/outputs/s16_qwen21_v1.png",
+      "references": [
+        "storyboard/frames/s13_v1.png",
+        "assets/characters/odysseus_v1.png",
+        "assets/characters/greek_soldier_01_v1.png",
+        "assets/groups/greek_infantry_v1.png",
+        "assets/groups/trojan_defenders_v1.png"
+      ],
+      "generation_wall_s": 100.08361320383847,
+      "status": "reviewed_static_partial",
+      "tool": "self-hosted Qwen Image 2.1",
+      "model": "Qwen-Image-2.1",
+      "provider": "self-hosted",
+      "steps": 40,
+      "seed": 2026100516,
+      "backend": "sglang",
+      "precision": "BF16",
+      "lora": null,
+      "metadata_file": "qwen21/outputs/s16_qwen21_v1.json",
+      "width": 1536,
+      "height": 864,
+      "sha256": "12b33401ecb199785ffd85eb7eb3e69aba8e0f081ab77ad44ce6377a9e1e4bf7",
+      "bytes": 2860367,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "partial",
+        "note": "两名操作者双手抬单闩，剑入鞘、年轻士兵背盾；旁侧战斗可读。实际七人（多一名后排守军），掩护战的交叉兵器细节仍需视频前复核。",
+        "scope": "static keyframe visual review"
+      }
+    },
+    {
+      "kind": "shot",
+      "id": "S17",
+      "title": "阿伽门农率军待突破",
+      "frame_file": "storyboard_v2/frames/s17_qwen21_v1.png",
+      "prompt_file": "storyboard_v2/prompts/s17_qwen21_v1.txt",
+      "source": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/qwen21/outputs/s17_qwen21_v1.png",
+      "remote_source": "/home/admin/qwen-image-2.1-runtime/outputs/troy-gate-qwen21-20261005/outputs/s17_qwen21_v1.png",
+      "references": [
+        "storyboard/frames/s14_v2.png",
+        "assets/characters/agamemnon_v1.png",
+        "assets/groups/greek_infantry_v1.png"
+      ],
+      "generation_wall_s": 79.24721901491284,
+      "status": "reviewed_static_partial",
+      "tool": "self-hosted Qwen Image 2.1",
+      "model": "Qwen-Image-2.1",
+      "provider": "self-hosted",
+      "steps": 40,
+      "seed": 2026100517,
+      "backend": "sglang",
+      "precision": "BF16",
+      "lora": null,
+      "metadata_file": "qwen21/outputs/s17_qwen21_v1.json",
+      "width": 1536,
+      "height": 864,
+      "sha256": "d0a38cd68d7ef14b834b29ff36aaf40ccff4d76e90b173194a9ac0d7ed036966",
+      "bytes": 2822543,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "partial",
+        "note": "阿伽门农右手单剑、左手空、无盾；闭门与纯红旗正确，身后已有数十军士和前后排。可见人数无法确认达到四十，队列纵深偏浅，作为待突破军阵预览。",
+        "scope": "static keyframe visual review"
+      }
+    },
+    {
+      "kind": "shot",
+      "id": "S18",
+      "title": "交战中推开城门",
+      "frame_file": "storyboard_v2/frames/s18_qwen21_v2.png",
+      "prompt_file": "storyboard_v2/prompts/s18_qwen21_v2.txt",
+      "source": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/qwen21/outputs/s18_qwen21_v2.png",
+      "remote_source": "/home/admin/qwen-image-2.1-runtime/outputs/troy-gate-qwen21-20261005/outputs/s18_qwen21_v2.png",
+      "references": [
+        "storyboard_v2/frames/s16_qwen21_v1.png"
+      ],
+      "generation_wall_s": 56.6465461673215,
+      "status": "reviewed_static_partial",
+      "tool": "self-hosted Qwen Image 2.1",
+      "model": "Qwen-Image-2.1",
+      "provider": "self-hosted",
+      "steps": 40,
+      "seed": 2026101518,
+      "backend": "sglang",
+      "precision": "BF16",
+      "lora": null,
+      "metadata_file": "qwen21/outputs/s18_qwen21_v2.json",
+      "width": 1536,
+      "height": 864,
+      "sha256": "9b4ba7f6e165fce76ba2ea1b9b4a98999c9751368da27173049fae5b0edf5051",
+      "bytes": 2864592,
+      "copy_matches_source": true,
+      "previous_versions": [
+        {
+          "kind": "shot",
+          "id": "S18",
+          "title": "交战中推开城门",
+          "frame_file": "storyboard_v2/frames/s18_qwen21_v1.png",
+          "prompt_file": "storyboard_v2/prompts/s18_qwen21_v1.txt",
+          "source": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/qwen21/outputs/s18_qwen21_v1.png",
+          "remote_source": "/home/admin/qwen-image-2.1-runtime/outputs/troy-gate-qwen21-20261005/outputs/s18_qwen21_v1.png",
+          "references": [
+            "storyboard_v2/frames/s16_qwen21_v1.png",
+            "assets/characters/odysseus_v1.png",
+            "assets/characters/greek_soldier_01_v1.png"
+          ],
+          "generation_wall_s": 78.56537026492879,
+          "status": "needs_revision",
+          "tool": "self-hosted Qwen Image 2.1",
+          "model": "Qwen-Image-2.1",
+          "provider": "self-hosted",
+          "steps": 40,
+          "seed": 2026100518,
+          "backend": "sglang",
+          "precision": "BF16",
+          "lora": null,
+          "metadata_file": "qwen21/outputs/s18_qwen21_v1.json",
+          "width": 1536,
+          "height": 864,
+          "sha256": "95ac3ec8e96973273e56a05c4ca13c0c12837e335a0c4fdf1489adf971220e92",
+          "bytes": 2789040,
+          "copy_matches_source": true,
+          "manual_review": {
+            "status": "needs_revision",
+            "note": "首版门已打开，但出现两名奥德修斯，推门者还多出背盾；需要回到单一S16参考修正身份与装备。",
+            "scope": "static keyframe visual review"
+          }
+        }
+      ],
+      "manual_review": {
+        "status": "partial",
+        "note": "第二版消除重复奥德修斯，原两位操作人推开同一门扇、剑入鞘，年轻兵背盾；侧面五人掩护战保留，调度已按七人更新。门洞蓝夜缺口可读；横闩已离开门面但靠墙位置未清楚展示，双手部分遮挡、侧战兵器待复核。",
+        "scope": "static keyframe visual review"
+      }
+    },
+    {
+      "kind": "shot",
+      "id": "S19",
+      "title": "军团冲门交锋",
+      "frame_file": "storyboard_v2/frames/s19_qwen21_v1.png",
+      "prompt_file": "storyboard_v2/prompts/s19_qwen21_v1.txt",
+      "source": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/qwen21/outputs/s19_qwen21_v1.png",
+      "remote_source": "/home/admin/qwen-image-2.1-runtime/outputs/troy-gate-qwen21-20261005/outputs/s19_qwen21_v1.png",
+      "references": [
+        "storyboard_v2/frames/s18_qwen21_v2.png",
+        "assets/characters/agamemnon_v1.png",
+        "assets/groups/greek_infantry_v1.png",
+        "assets/groups/trojan_defenders_v1.png"
+      ],
+      "generation_wall_s": 88.95532165793702,
+      "status": "reviewed_static_partial",
+      "tool": "self-hosted Qwen Image 2.1",
+      "model": "Qwen-Image-2.1",
+      "provider": "self-hosted",
+      "steps": 40,
+      "seed": 2026100519,
+      "backend": "sglang",
+      "precision": "BF16",
+      "lora": null,
+      "metadata_file": "qwen21/outputs/s19_qwen21_v1.json",
+      "width": 1536,
+      "height": 864,
+      "sha256": "6ed03ff6b3bbb517a768c31908ecdc33c7790151e153dec34c8e2273894fdf03",
+      "bytes": 2809845,
+      "copy_matches_source": true,
+      "manual_review": {
+        "status": "partial",
+        "note": "军队持续穿过敞开门洞，前景多组交锋、右侧守军队列与唯一红披风阿伽门农可读，规模符合大军段目的。前景部分两军衣色相近，盾剑交叠与手部有模糊，统帅位置偏门洞后部；未逐人计数。",
+        "scope": "static keyframe visual review"
+      }
+    },
+    {
+      "kind": "shot",
+      "id": "S20",
+      "title": "广场两军大规模混战",
+      "frame_file": "storyboard_v2/frames/s20_qwen21_v2.png",
+      "prompt_file": "storyboard_v2/prompts/s20_qwen21_v2.txt",
+      "source": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/qwen21/outputs/s20_qwen21_v2.png",
+      "remote_source": "/home/admin/qwen-image-2.1-runtime/outputs/troy-gate-qwen21-20261005/outputs/s20_qwen21_v2.png",
+      "references": [
+        "storyboard_v2/frames/s20_qwen21_v1.png"
+      ],
+      "generation_wall_s": 56.7266426528804,
+      "status": "reviewed_static_partial",
+      "tool": "self-hosted Qwen Image 2.1",
+      "model": "Qwen-Image-2.1",
+      "provider": "self-hosted",
+      "steps": 40,
+      "seed": 2026101520,
+      "backend": "sglang",
+      "precision": "BF16",
+      "lora": null,
+      "metadata_file": "qwen21/outputs/s20_qwen21_v2.json",
+      "width": 1536,
+      "height": 864,
+      "sha256": "f7be7c6ca583062347d02a4868e2e076210a86deeddc74259871964b1b5ac095",
+      "bytes": 2998812,
+      "copy_matches_source": true,
+      "previous_versions": [
+        {
+          "kind": "shot",
+          "id": "S20",
+          "title": "广场两军大规模混战",
+          "frame_file": "storyboard_v2/frames/s20_qwen21_v1.png",
+          "prompt_file": "storyboard_v2/prompts/s20_qwen21_v1.txt",
+          "source": "/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/qwen21/outputs/s20_qwen21_v1.png",
+          "remote_source": "/home/admin/qwen-image-2.1-runtime/outputs/troy-gate-qwen21-20261005/outputs/s20_qwen21_v1.png",
+          "references": [
+            "storyboard/frames/s09_v1.png",
+            "assets/groups/greek_infantry_v1.png",
+            "assets/groups/trojan_defenders_v1.png",
+            "assets/characters/agamemnon_v1.png",
+            "assets/characters/odysseus_v1.png"
+          ],
+          "generation_wall_s": 100.61506075132638,
+          "status": "needs_revision",
+          "tool": "self-hosted Qwen Image 2.1",
+          "model": "Qwen-Image-2.1",
+          "provider": "self-hosted",
+          "steps": 40,
+          "seed": 2026100520,
+          "backend": "sglang",
+          "precision": "BF16",
+          "lora": null,
+          "metadata_file": "qwen21/outputs/s20_qwen21_v1.json",
+          "width": 1536,
+          "height": 864,
+          "sha256": "afb7f630fd1ccced059b5e1baf3d5952e7f3e88f839a792a430f99376dc74694",
+          "bytes": 3051476,
+          "copy_matches_source": true,
+          "manual_review": {
+            "status": "needs_revision",
+            "note": "首版已有大军规模和多组前景交锋，地理可读；但红披风统帅和蓝衣英雄被复制、旗帜有马纹。收尾改为普通军队大全景，具名英雄画外。",
+            "scope": "static keyframe visual review"
+          }
+        }
+      ],
+      "manual_review": {
+        "status": "partial",
+        "note": "第二版保留大军团规模、前景多组交锋和后景队列，将重复红/蓝英雄改为匿名军士，旗帜纯红；左后门开、中左木马空舱单梯、右喷泉可读。未逐人计数；密集兵器与部分近景阵营衣色仍有混淆，相机俯视程度较弱，作为大战构图预览。",
+        "scope": "static keyframe visual review"
+      }
+    }
+  ],
+  "generated_count": 20,
+  "generation_policy": {
+    "switch_date": "2026-10-05",
+    "user_instruction": "使用qwen image 2.1负责后续的生图工作，不要直接用云端的文生图片工具",
+    "cloud_queue_stopped": true,
+    "retained_cloud_shots": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14"
+    ],
+    "new_qwen_shots": [
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19",
+      "S20"
+    ]
+  },
+  "review_summary": {
+    "pass": 11,
+    "partial": 9,
+    "scope": "single static frame per selected shot; not video or stability validation"
+  },
+  "run_session_file": "qwen21/session.json",
+  "server_config_file": "qwen21/server-config.json",
+  "video_test": {
+    "status": "complete_with_visual_caveats",
+    "method": "MSR V2 native",
+    "film_file": "video_msr_v1/film.mp4",
+    "review_file": "video_msr_v1/review.html",
+    "duration_s": 100,
+    "size": [
+      768,
+      432
+    ],
+    "fps": 24
+  }
+}

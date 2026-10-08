@@ -1,0 +1,204 @@
+{
+  "base_url": "http://127.0.0.1:58122/",
+  "links_checked": 33,
+  "checks": [
+    {
+      "path": "README.md",
+      "status": 200,
+      "content_type": "text/markdown",
+      "bytes": 9058
+    },
+    {
+      "path": "baseline/diet.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 1038698
+    },
+    {
+      "path": "baseline/original.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 897334
+    },
+    {
+      "path": "baseline/zero.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 924391
+    },
+    {
+      "path": "dubbed/diet/contact.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 406296
+    },
+    {
+      "path": "dubbed/diet/dubbed.mp4?v=4ff8506096b9",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 557176
+    },
+    {
+      "path": "dubbed/diet/poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 12975
+    },
+    {
+      "path": "dubbed/diet/segment_boundaries.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 181407
+    },
+    {
+      "path": "dubbed/diet/speech_boundaries.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 325572
+    },
+    {
+      "path": "dubbed/original/contact.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 397610
+    },
+    {
+      "path": "dubbed/original/dubbed.mp4?v=7a4957c9ec04",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 460402
+    },
+    {
+      "path": "dubbed/original/poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 12362
+    },
+    {
+      "path": "dubbed/original/segment_boundaries.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 174913
+    },
+    {
+      "path": "dubbed/original/speech_boundaries.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 329467
+    },
+    {
+      "path": "dubbed/zero/contact.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 406762
+    },
+    {
+      "path": "dubbed/zero/dubbed.mp4?v=f67ac7021caf",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 462359
+    },
+    {
+      "path": "dubbed/zero/poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 12990
+    },
+    {
+      "path": "dubbed/zero/segment_boundaries.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 180866
+    },
+    {
+      "path": "dubbed/zero/speech_boundaries.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 325849
+    },
+    {
+      "path": "inputs/diet_driver.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 870281
+    },
+    {
+      "path": "inputs/original_driver.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 807150
+    },
+    {
+      "path": "inputs/sources.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 2151
+    },
+    {
+      "path": "inputs/zero_driver.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 772978
+    },
+    {
+      "path": "metrics.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 11758
+    },
+    {
+      "path": "motion/diet/motion.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 175706
+    },
+    {
+      "path": "motion/original/motion.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 149095
+    },
+    {
+      "path": "motion/zero/motion.mp4",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 145226
+    },
+    {
+      "path": "poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "bytes": 12315
+    },
+    {
+      "path": "qa.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 4700
+    },
+    {
+      "path": "review.html",
+      "status": 200,
+      "content_type": "text/html",
+      "bytes": 6299
+    },
+    {
+      "path": "three_products_wan_serena.mp4?v=87cf87f7ec2d",
+      "status": 200,
+      "content_type": "video/mp4",
+      "bytes": 1406729
+    },
+    {
+      "path": "transition_diagnostics.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 6523
+    },
+    {
+      "path": "verification.json",
+      "status": 200,
+      "content_type": "application/json",
+      "bytes": 4278
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": "generic/film.mp4",
+      "bytes": 16365745,
+      "sha256": "bb9c6105238b2db92dc8657b7b22a9795364d0ad7314405da9ac8cbc33f38d65"
+    },
+    {
+      "path": "generic/climax_v2_01_gate/refined_1344x768_121f.mp4",
+      "bytes": 4289882,
+      "sha256": "ebaaebe3f962972a2392dbe8d561baa0e0c05e9a6d59e14c64f3f253778e3133"
+    },
+    {
+      "path": "generic/climax_v2_01_gate/delivered.mp4",
+      "bytes": 3849230,
+      "sha256": "6a4a4d99383bf57d4aa91eb5e93b9f6fdde704d102702c2a65a71b55ecadd65e"
+    },
+    {
+      "path": "generic/climax_v2_02_square/refined_1344x768_121f.mp4",
+      "bytes": 3149312,
+      "sha256": "7f69330959c437219d49ddbd48d62f62ce364424c8a9570df46a7842889a3356"
+    },
+    {
+      "path": "generic/climax_v2_02_square/delivered.mp4",
+      "bytes": 2463389,
+      "sha256": "44b2bfa27cf78a5d84d98bb7cb48819584c37f0efa5c1d0acd661cb54d7d382c"
+    },
+    {
+      "path": "generic/climax_v2_03_park/refined_1344x768_121f.mp4",
+      "bytes": 2442744,
+      "sha256": "9ec1b604133a9eac88f1f9cf2025ce0703a19a281ff33f61a09abbf9e384e058"
+    },
+    {
+      "path": "generic/climax_v2_03_park/delivered.mp4",
+      "bytes": 2384862,
+      "sha256": "892a537babac2f5cea378cb4ba53b77d1545f6c25450863208d529d7c99cb1f2"
+    },
+    {
+      "path": "generic/climax_v2_04_night/refined_1344x768_121f.mp4",
+      "bytes": 2419456,
+      "sha256": "5e4979097cfab6b1eedb114ad654f6fd3730c6311874d61305509ee2e1e430d5"
+    },
+    {
+      "path": "generic/climax_v2_04_night/delivered.mp4",
+      "bytes": 2371039,
+      "sha256": "d12630b454870bb9b8a4906bb9adf211906131fde90de17a0fef6f3ace7b8516"
+    },
+    {
+      "path": "generic/climax_v2_05_hatch/refined_1344x768_121f.mp4",
+      "bytes": 3519531,
+      "sha256": "3cb6c6e8f9a4cace14a50799c3dc56b0816cac91dc5bd2ec7fe0e24f51525dbc"
+    },
+    {
+      "path": "generic/climax_v2_05_hatch/delivered.mp4",
+      "bytes": 2639442,
+      "sha256": "4efca4bf9c03eed31a8396d02ec3f605eaf7a96faa121f608d42583df5ed8eb8"
+    },
+    {
+      "path": "generic/climax_v2_06_exit/refined_1344x768_121f.mp4",
+      "bytes": 4591030,
+      "sha256": "5c92afd280851c0765e762b2c39bf4745880723fe30bb4bb8fc720dda20777fe"
+    },
+    {
+      "path": "generic/climax_v2_06_exit/delivered.mp4",
+      "bytes": 3473086,
+      "sha256": "603eb215e6623d490ab3e12a223a422aa869951b394d74048d5561e111d04c8e"
+    },
+    {
+      "path": "specific/film.mp4",
+      "bytes": 15923019,
+      "sha256": "06593d7313091675fba8b6ba87d9614a2f4c20b8b8c253d19972e1d3858c7f5d"
+    },
+    {
+      "path": "specific/climax_v2_01_gate/refined_1344x768_121f.mp4",
+      "bytes": 3936876,
+      "sha256": "5e8440c74552301a601e8ea6f1c3182832a9102f9e6a9c70f185c128e95b8ce9"
+    },
+    {
+      "path": "specific/climax_v2_01_gate/delivered.mp4",
+      "bytes": 3588085,
+      "sha256": "29a2ba51e02d851c7bb00671d0df746d3aef5212e10a492cadefa9e054245981"
+    },
+    {
+      "path": "specific/climax_v2_02_square/refined_1344x768_121f.mp4",
+      "bytes": 3070355,
+      "sha256": "787a8bd5839256eb7c40bb071c999cd62bb71fb7d180454115b07a2ca0c6c17d"
+    },
+    {
+      "path": "specific/climax_v2_02_square/delivered.mp4",
+      "bytes": 2424880,
+      "sha256": "ed694d0d14bbc02584ce8ddfbdcb2105c2da33bc053679c3ce2b1fa5bd8911b3"
+    },
+    {
+      "path": "specific/climax_v2_03_park/refined_1344x768_121f.mp4",
+      "bytes": 2306893,
+      "sha256": "b19d1b2e36abb3fef689bd31b0825a3d6aa539d316418f5ddae940f458de153d"
+    },
+    {
+      "path": "specific/climax_v2_03_park/delivered.mp4",
+      "bytes": 2280735,
+      "sha256": "2b76f11c6795a2dc614d1de8d6c13f605aae2e2718ece17296d63ccd288a4a93"
+    },
+    {
+      "path": "specific/climax_v2_04_night/refined_1344x768_121f.mp4",
+      "bytes": 2414521,
+      "sha256": "e8609cbb8371f311f757575ab5fd3c3398643e0a478df974079332f24fdaa235"
+    },
+    {
+      "path": "specific/climax_v2_04_night/delivered.mp4",
+      "bytes": 2384072,
+      "sha256": "658c786c1f11fc7ff757d64bffe0122f8d34374e0a8dda6189cebfc9a67b67f6"
+    },
+    {
+      "path": "specific/climax_v2_05_hatch/refined_1344x768_121f.mp4",
+      "bytes": 3492978,
+      "sha256": "1da99fc55f644d7a7bbbc6ec68a250b09037ff8ae9e1c1376b4cef629c83485a"
+    },
+    {
+      "path": "specific/climax_v2_05_hatch/delivered.mp4",
+      "bytes": 2694471,
+      "sha256": "c54ab083bb83ef76a85a28dc0b3ded85db2ad8cc644e2c76029cd76f798852fe"
+    },
+    {
+      "path": "specific/climax_v2_06_exit/refined_1344x768_121f.mp4",
+      "bytes": 4413069,
+      "sha256": "251fdf9c824a1f9c39fe3ff9a637a3efb6dcaff728ce74721d8775d27cfe4a9b"
+    },
+    {
+      "path": "specific/climax_v2_06_exit/delivered.mp4",
+      "bytes": 3339365,
+      "sha256": "c4b10a44b0cd1c6e6ec1eb3a633f9a13294dd0a0a4e6a733f61bfe613f2a0dab"
+    },
+    {
+      "path": "ingredients/film.mp4",
+      "bytes": 4160298,
+      "sha256": "d549edcbfe285bfa35890ca30917d422874a1e92d7ad1b49c466b001f763c547"
+    },
+    {
+      "path": "ingredients/climax_v2_01_gate/raw.mp4",
+      "bytes": 644372,
+      "sha256": "d3a32c938c24327925295b3565a3a4c80e6be83a7bba8118fbb01031e55945da"
+    },
+    {
+      "path": "ingredients/climax_v2_01_gate/delivered.mp4",
+      "bytes": 650691,
+      "sha256": "1620d414923c51fcc193dd5feb73497f93fafced8dda657d9074a990a5039a71"
+    },
+    {
+      "path": "ingredients/climax_v2_02_square/raw.mp4",
+      "bytes": 674518,
+      "sha256": "a0211a0e85f674538e737bfb899d8488786ef99d6c4d8374548d0bb745fe6424"
+    },
+    {
+      "path": "ingredients/climax_v2_02_square/delivered.mp4",
+      "bytes": 581478,
+      "sha256": "88174676b536751521da5837865d791502d5fcaa5d1a9682c8b505405255a62b"
+    },
+    {
+      "path": "ingredients/climax_v2_03_park/raw.mp4",
+      "bytes": 496574,
+      "sha256": "79cc8e439a86e39869f95964855748f403c6d423d8b01fa247daf344d5093822"
+    },
+    {
+      "path": "ingredients/climax_v2_03_park/delivered.mp4",
+      "bytes": 471046,
+      "sha256": "a71e7c3057e6453b98972340fa4dce0a97560707577bd2b35ece89396efb90f2"
+    },
+    {
+      "path": "ingredients/climax_v2_04_night/raw.mp4",
+      "bytes": 936038,
+      "sha256": "6f3f7b63fb54148e5629dae73677493d27819f4b44b74829a16c835bfc4482e6"
+    },
+    {
+      "path": "ingredients/climax_v2_04_night/delivered.mp4",
+      "bytes": 862691,
+      "sha256": "6d6dd85b7abf53d70d2cdbe21fee828b8690fa15e41897fc6b07fd33111b0ad4"
+    },
+    {
+      "path": "ingredients/climax_v2_05_hatch/raw.mp4",
+      "bytes": 990660,
+      "sha256": "ec5d9e50d0821cd1975d905ffbc376d261bb5583b5617c2f448231bff5e64c19"
+    },
+    {
+      "path": "ingredients/climax_v2_05_hatch/delivered.mp4",
+      "bytes": 798140,
+      "sha256": "bdd38d25dca4e4625cc19c7d095ebdb1d42fdc1eb6e9047ad72d0738a6a8a703"
+    },
+    {
+      "path": "ingredients/climax_v2_06_exit/raw.mp4",
+      "bytes": 1072778,
+      "sha256": "24b28e3082ea99a7608d42d0528a86e35c7da17c9d37c130dac6645045071ae6"
+    },
+    {
+      "path": "ingredients/climax_v2_06_exit/delivered.mp4",
+      "bytes": 860837,
+      "sha256": "d79427b7dd6faaa1c931f926c02c890f18df52604a6719ca3c3087a5dbc28315"
+    },
+    {
+      "path": "msr/film.mp4",
+      "bytes": 7031996,
+      "sha256": "87f35ba3e77b0bf27de579f1b0fc9f82f0f4e1dca37539872c44237c3dd02ef7"
+    },
+    {
+      "path": "msr/climax_v2_01_gate/raw.mp4",
+      "bytes": 1833914,
+      "sha256": "0ee33c86caafb204bef2041de59000129d7c7b9d97b25ae121277b075da2110b"
+    },
+    {
+      "path": "msr/climax_v2_01_gate/delivered.mp4",
+      "bytes": 1673258,
+      "sha256": "85de55c9c0afbb980489c7ff6836de2f623b8444342d2c59fc1022a2d549a203"
+    },
+    {
+      "path": "msr/climax_v2_02_square/raw.mp4",
+      "bytes": 1830633,
+      "sha256": "f61b26100bc52299f1aa3a35e4b55a1b0eb8069dfb07fd8d4ce8f6167329df73"
+    },
+    {
+      "path": "msr/climax_v2_02_square/delivered.mp4",
+      "bytes": 1410867,
+      "sha256": "20fcfa6442a3bef575064ed76c0b21468c303432cd5579e10e8876810c4f2c9d"
+    },
+    {
+      "path": "msr/climax_v2_03_park/raw.mp4",
+      "bytes": 939999,
+      "sha256": "3e0c51c52121d7e2fffbbf5271ec7f1c37bde330594fc869f41937b42774110a"
+    },
+    {
+      "path": "msr/climax_v2_03_park/delivered.mp4",
+      "bytes": 945256,
+      "sha256": "656219ee62cd30fc8172f1afaf72a588687183f086f3c1d3c9468b08b5b6b42c"
+    },
+    {
+      "path": "msr/climax_v2_04_night/raw.mp4",
+      "bytes": 1021121,
+      "sha256": "990e7a36639b2e9af252a64325f1d5eda2954cf68ee49f806bbdde5a4123ef2a"
+    },
+    {
+      "path": "msr/climax_v2_04_night/delivered.mp4",
+      "bytes": 950063,
+      "sha256": "c3210d002506ae0561769bdb733ee5a5ed1557fc2ae82170957e39c6ea5c5008"
+    },
+    {
+      "path": "msr/climax_v2_05_hatch/raw.mp4",
+      "bytes": 1413081,
+      "sha256": "7cc901184716ffde6cc28084ab902ed651658926325b77305bd04d972c2405c5"
+    },
+    {
+      "path": "msr/climax_v2_05_hatch/delivered.mp4",
+      "bytes": 1126811,
+      "sha256": "91cc01d88ec5aa65257457b4326e68f76b95379a6e15c36e6fb9dde09fc5bd49"
+    },
+    {
+      "path": "msr/climax_v2_06_exit/raw.mp4",
+      "bytes": 1355425,
+      "sha256": "4484ce4f53c39d198f3ff22bf5a190d19a5085fa8ce48acc317a59e19880e8b9"
+    },
+    {
+      "path": "msr/climax_v2_06_exit/delivered.mp4",
+      "bytes": 1063158,
+      "sha256": "516672adaf9757581de6bfd24dfed425c22d9dbee23091fa115072865ce02915"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "S15_start",
+  "title": "剑矛交锋对照",
+  "output": "keyframes/S15_start.png",
+  "references": [
+    "inputs/board_S15.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Exactly SIX people, preserving reference cast. Foreground LEFT Odysseus indigo cloak, sword in RIGHT hand lifted diagonally ready to parry; LEFT hand EMPTY, NO shield. Foreground RIGHT pointed-helmet Trojan in ochre with rust cloak, spear in RIGHT hand beginning a thrust toward Odysseus, ONE shield in LEFT hand. Their weapons have NOT touched yet; spear tip and sword are visibly separate. Background exactly two separate fighting pairs: two blue-gray Greeks facing two ochre/rust Trojans. Closed double gate. Preserve background people positions and distance.",
+  "seed": 2026100630,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S15_start.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.742324055638164,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "df73cd890460358b3ca2c445b4d68fa38eb2decd2d74170821bb2b6a9842a9d9"
+  ],
+  "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6",
+  "bytes": 2663764,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

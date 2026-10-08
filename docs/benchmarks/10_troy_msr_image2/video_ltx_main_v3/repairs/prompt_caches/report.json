@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "caches": [
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/repairs/prompt_caches/S01.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/repairs/prompt_caches/S01.pt",
+      "bytes": 12587685,
+      "elapsed_s": 12.349237587,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "c5acf3bbe2e1ede5302f252c9b02e0df23ca3b1de4fada05f623ce8b35338cea",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/repairs/prompt_caches/S07.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/repairs/prompt_caches/S07.pt",
+      "bytes": 12587493,
+      "elapsed_s": 5.652859784,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "d4a95e8f1ff6a3aa5b7a7202e9cc9991587274b86e5f49c4862bb81e47cac9f6",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    }
+  ],
+  "manifest_fingerprint": "726de984b99d58cbb75afaf6e9dceb1273d47639c24d1f6c511f203b1a948f71"
+}

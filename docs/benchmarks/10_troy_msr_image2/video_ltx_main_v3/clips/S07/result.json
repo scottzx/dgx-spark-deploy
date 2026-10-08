@@ -1,0 +1,33 @@
+{
+  "status": "TECHNICAL_PASS",
+  "id": "S07",
+  "input_fingerprint": "ca50f2159e6aa8163833186cfac458ed05d8e316494f1b75e60de5b238351298",
+  "manifest_fingerprint": "2e85b7075733b54237b052bda6acde23d0c2e0867d9e70d54d40737ee870996f",
+  "model": "h3",
+  "variant": "film_v3",
+  "seed": 2026100607,
+  "decoder": "native full H3 VAE",
+  "refiner": false,
+  "raw_frames": 124,
+  "raw_sha256": "0cf66515509a02677e5902705583cf2b1907700647ffcd8eb79fd597111744d3",
+  "media": {
+    "frames": 120,
+    "size": [
+      672,
+      384
+    ],
+    "fps": 24,
+    "duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "9d1cdf140d879185e865474fb290d66f55350e87d2b26b369ae8d029b59eecad",
+    "bytes": 1598617
+  },
+  "native_decode_and_delivery_s": 24.135131776798517,
+  "inference_profile": "existing local W8A8/FastH3-VSA FL2VA, four transformer updates; native full VAE, no LTX refinement",
+  "h3_capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-210324_fl2va/troy_v3_S07/stage1",
+  "capture_tensor_sha256": "fb7697b17896c3466c424ce93f0060722a8732e9cbd6b791059730dcc643abe3",
+  "generation_s": 64.20920022809878,
+  "quality_status": "pending_manual"
+}

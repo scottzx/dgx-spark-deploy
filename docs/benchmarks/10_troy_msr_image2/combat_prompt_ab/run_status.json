@@ -1,0 +1,101 @@
+{
+  "status": "complete",
+  "recorded_utc": "2026-10-06T13:19:37.202119+00:00",
+  "manifest_fingerprint": "48f2b7b853489f654863c0d57b958ec04216e4494c090beb44ba74354520b714",
+  "generated_clips": 12,
+  "technical_check": {
+    "status": "PASS",
+    "completed": 12,
+    "total": 12
+  },
+  "sampled_visual_review": {
+    "technical_pass": 12,
+    "partial_at_samples": 6,
+    "fail_at_samples": 6,
+    "production_approved": 0
+  },
+  "audio_reviewed": false,
+  "h3_new_prompt_improved_pairs": 3,
+  "h3_paired_seeds": 3,
+  "featured_candidate": "combat_ab_h3_new_2026100601",
+  "featured_is_production_approved": false,
+  "assembled_media": [
+    {
+      "path": "seed_01.mp4",
+      "frames": 120,
+      "size": [
+        1344,
+        768
+      ],
+      "fps": 24,
+      "duration_s": 5.0,
+      "sha256": "e7c7fb87f3bf8ff2be3ce5bddc0e0e01084650756c80119999a923dcdb5e2a72",
+      "full_decode": true
+    },
+    {
+      "path": "seed_02.mp4",
+      "frames": 120,
+      "size": [
+        1344,
+        768
+      ],
+      "fps": 24,
+      "duration_s": 5.0,
+      "sha256": "090e6d320914ea3cbc3ee8f4c31d8486bde7acadf5d6668c07aa5f8a5f50ca45",
+      "full_decode": true
+    },
+    {
+      "path": "seed_03.mp4",
+      "frames": 120,
+      "size": [
+        1344,
+        768
+      ],
+      "fps": 24,
+      "duration_s": 5.0,
+      "sha256": "4d8c4e005451b97e8918684eef524b29f0e16730582a63a8a4c1df495b3afd89",
+      "full_decode": true
+    },
+    {
+      "path": "comparison_15s.mp4",
+      "frames": 360,
+      "size": [
+        1344,
+        768
+      ],
+      "fps": 24,
+      "duration_s": 15.0,
+      "sha256": "516f5e8d638eec42637ed88a67cb921388eaaa88c7d05d7143a03745df368a12",
+      "full_decode": true
+    },
+    {
+      "path": "best_duel.mp4",
+      "frames": 120,
+      "size": [
+        672,
+        384
+      ],
+      "fps": 24,
+      "duration_s": 5.0,
+      "sha256": "eb13f38563d9aa9c60f7b330d9eba5609186588d8908bda31701aa66775ec239",
+      "full_decode": true
+    }
+  ],
+  "browser_check": {
+    "status": "PASS",
+    "loaded_media": 14,
+    "sync_groups": 3,
+    "browser_errors": []
+  },
+  "video_service_restored": true,
+  "video_service_health": "READY",
+  "restored_server_pid": 2015547,
+  "limits": [
+    "Deployment-specific accelerated H3 and 8-step distilled LTX configurations.",
+    "Same first frame only; no MSR, tail frame or combat LoRA.",
+    "One foreground duel, not a full army battle capability test.",
+    "Sampled assistant visual assessment, not all-frame physics or independent production approval.",
+    "Audio retained but not listened to or reviewed."
+  ],
+  "summary": "H3＋连续攻防描述在三个种子都增加了攻防阶段，优于原描述的长时间架兵器；LTX改写后部分镜头更早活动，但六段均有兵器一致性问题。H3盾挡仍有停顿、受力和第二次闪避不足，完整成片验收尚未通过。"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "S16_end_v3",
+  "title": "双人抬闩与掩护",
+  "output": "keyframes/S16_end_v3.png",
+  "references": [
+    "keyframes/S16_start_v3.png"
+  ],
+  "prompt": "Edit image1 minimally. Both operators lift the SAME wooden bar straight UP by 75pixels to ABOVE their shoulders. The bar remains exactly HORIZONTAL in the FOUR hands, no carry-away. The TWO OPEN-TOP U-shaped iron cradles remain exactly in their old positions mounted on the closed door and are now EMPTY. There is a clearly visible 50pixel AIR GAP between the bar underside and cradle tops. No metal above the bar, no closed rings. Only bar, hands and forearms move upward; all feet, actors, body positions, sword sheaths, young Greek shield strapped on BACK, Odysseus with NO shield and all side fighters remain unchanged. Door stays completely CLOSED. Same camera and night lighting. Single photoreal film still no text.",
+  "seed": 2026100933,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S16_end_v3.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.66736560687423,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "3a742d44eb73e4784659032472379f0facb63b6f481338b789574db80cd12b8e"
+  ],
+  "sha256": "d5ffb4b113ce5fd12893bbbd5ba8ce25f680ff7cabe3cce9aa8a2242e23db9e0",
+  "bytes": 2695129,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

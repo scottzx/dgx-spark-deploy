@@ -1,0 +1,6 @@
+{
+  "port": 58121,
+  "bind": "127.0.0.1",
+  "review_url": "http://127.0.0.1:58121/review.html",
+  "command": "python3 -m http.server 58121 --bind 127.0.0.1 --directory docs/benchmarks/12_coca_cola_handheld"
+}

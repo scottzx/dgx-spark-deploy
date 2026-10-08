@@ -1,0 +1,440 @@
+{
+  "route": "A",
+  "engine": "LiveTalking MuseTalk 1.5 rendering components",
+  "integration_scope": "Fixed narration, model inference and compositing; WebRTC and conversational LLM not included",
+  "roi_method": "OpenCV Haar on one static portrait",
+  "bbox": [
+    227,
+    150,
+    540,
+    488
+  ],
+  "frames": 661,
+  "fps": 25,
+  "duration_seconds": 26.44,
+  "load_and_avatar_prepare_seconds": 5.490942750126123,
+  "audio_feature_seconds": 0.03694472694769502,
+  "render_and_write_seconds": 21.874956196174026,
+  "gpu_inference_seconds": 19.66475807270035,
+  "gpu_inference_fps": 33.6134315792898,
+  "render_and_write_fps": 30.217203365902524,
+  "first_batch_seconds": 0.3230228181928396,
+  "peak_cuda_allocated_gib": 6.6849894523620605,
+  "batches": [
+    {
+      "first_frame": 0,
+      "frames": 8,
+      "seconds": 0.3221524618566036
+    },
+    {
+      "first_frame": 8,
+      "frames": 8,
+      "seconds": 0.23666214896366
+    },
+    {
+      "first_frame": 16,
+      "frames": 8,
+      "seconds": 0.23657928500324488
+    },
+    {
+      "first_frame": 24,
+      "frames": 8,
+      "seconds": 0.23483956418931484
+    },
+    {
+      "first_frame": 32,
+      "frames": 8,
+      "seconds": 0.23659069277346134
+    },
+    {
+      "first_frame": 40,
+      "frames": 8,
+      "seconds": 0.23684114310890436
+    },
+    {
+      "first_frame": 48,
+      "frames": 8,
+      "seconds": 0.23474268475547433
+    },
+    {
+      "first_frame": 56,
+      "frames": 8,
+      "seconds": 0.23588897800073028
+    },
+    {
+      "first_frame": 64,
+      "frames": 8,
+      "seconds": 0.23442969098687172
+    },
+    {
+      "first_frame": 72,
+      "frames": 8,
+      "seconds": 0.236593350302428
+    },
+    {
+      "first_frame": 80,
+      "frames": 8,
+      "seconds": 0.2363637969829142
+    },
+    {
+      "first_frame": 88,
+      "frames": 8,
+      "seconds": 0.2367556714452803
+    },
+    {
+      "first_frame": 96,
+      "frames": 8,
+      "seconds": 0.2375772432424128
+    },
+    {
+      "first_frame": 104,
+      "frames": 8,
+      "seconds": 0.23789930902421474
+    },
+    {
+      "first_frame": 112,
+      "frames": 8,
+      "seconds": 0.23592080315575004
+    },
+    {
+      "first_frame": 120,
+      "frames": 8,
+      "seconds": 0.23694709595292807
+    },
+    {
+      "first_frame": 128,
+      "frames": 8,
+      "seconds": 0.23703234503045678
+    },
+    {
+      "first_frame": 136,
+      "frames": 8,
+      "seconds": 0.23633579723536968
+    },
+    {
+      "first_frame": 144,
+      "frames": 8,
+      "seconds": 0.23775655683130026
+    },
+    {
+      "first_frame": 152,
+      "frames": 8,
+      "seconds": 0.23551121819764376
+    },
+    {
+      "first_frame": 160,
+      "frames": 8,
+      "seconds": 0.23673064820468426
+    },
+    {
+      "first_frame": 168,
+      "frames": 8,
+      "seconds": 0.239052243065089
+    },
+    {
+      "first_frame": 176,
+      "frames": 8,
+      "seconds": 0.23723149811848998
+    },
+    {
+      "first_frame": 184,
+      "frames": 8,
+      "seconds": 0.23738772328943014
+    },
+    {
+      "first_frame": 192,
+      "frames": 8,
+      "seconds": 0.23780388478189707
+    },
+    {
+      "first_frame": 200,
+      "frames": 8,
+      "seconds": 0.23815739108249545
+    },
+    {
+      "first_frame": 208,
+      "frames": 8,
+      "seconds": 0.2361596212722361
+    },
+    {
+      "first_frame": 216,
+      "frames": 8,
+      "seconds": 0.23658480821177363
+    },
+    {
+      "first_frame": 224,
+      "frames": 8,
+      "seconds": 0.23681148001924157
+    },
+    {
+      "first_frame": 232,
+      "frames": 8,
+      "seconds": 0.23518136003986
+    },
+    {
+      "first_frame": 240,
+      "frames": 8,
+      "seconds": 0.23818566277623177
+    },
+    {
+      "first_frame": 248,
+      "frames": 8,
+      "seconds": 0.23878499399870634
+    },
+    {
+      "first_frame": 256,
+      "frames": 8,
+      "seconds": 0.2374954679980874
+    },
+    {
+      "first_frame": 264,
+      "frames": 8,
+      "seconds": 0.23745757900178432
+    },
+    {
+      "first_frame": 272,
+      "frames": 8,
+      "seconds": 0.23365396074950695
+    },
+    {
+      "first_frame": 280,
+      "frames": 8,
+      "seconds": 0.23640258330851793
+    },
+    {
+      "first_frame": 288,
+      "frames": 8,
+      "seconds": 0.23752766009420156
+    },
+    {
+      "first_frame": 296,
+      "frames": 8,
+      "seconds": 0.236556694842875
+    },
+    {
+      "first_frame": 304,
+      "frames": 8,
+      "seconds": 0.23621830996125937
+    },
+    {
+      "first_frame": 312,
+      "frames": 8,
+      "seconds": 0.23589315731078386
+    },
+    {
+      "first_frame": 320,
+      "frames": 8,
+      "seconds": 0.23691420117393136
+    },
+    {
+      "first_frame": 328,
+      "frames": 8,
+      "seconds": 0.23642061511054635
+    },
+    {
+      "first_frame": 336,
+      "frames": 8,
+      "seconds": 0.23650564020499587
+    },
+    {
+      "first_frame": 344,
+      "frames": 8,
+      "seconds": 0.2364658317528665
+    },
+    {
+      "first_frame": 352,
+      "frames": 8,
+      "seconds": 0.23905792506411672
+    },
+    {
+      "first_frame": 360,
+      "frames": 8,
+      "seconds": 0.23657154385000467
+    },
+    {
+      "first_frame": 368,
+      "frames": 8,
+      "seconds": 0.23622797382995486
+    },
+    {
+      "first_frame": 376,
+      "frames": 8,
+      "seconds": 0.2354160831309855
+    },
+    {
+      "first_frame": 384,
+      "frames": 8,
+      "seconds": 0.23634418286383152
+    },
+    {
+      "first_frame": 392,
+      "frames": 8,
+      "seconds": 0.23569361958652735
+    },
+    {
+      "first_frame": 400,
+      "frames": 8,
+      "seconds": 0.23814217699691653
+    },
+    {
+      "first_frame": 408,
+      "frames": 8,
+      "seconds": 0.23747505294159055
+    },
+    {
+      "first_frame": 416,
+      "frames": 8,
+      "seconds": 0.23836299404501915
+    },
+    {
+      "first_frame": 424,
+      "frames": 8,
+      "seconds": 0.23592224530875683
+    },
+    {
+      "first_frame": 432,
+      "frames": 8,
+      "seconds": 0.23744118120521307
+    },
+    {
+      "first_frame": 440,
+      "frames": 8,
+      "seconds": 0.2361727268435061
+    },
+    {
+      "first_frame": 448,
+      "frames": 8,
+      "seconds": 0.23462049523368478
+    },
+    {
+      "first_frame": 456,
+      "frames": 8,
+      "seconds": 0.23747442988678813
+    },
+    {
+      "first_frame": 464,
+      "frames": 8,
+      "seconds": 0.23639000905677676
+    },
+    {
+      "first_frame": 472,
+      "frames": 8,
+      "seconds": 0.23695988301187754
+    },
+    {
+      "first_frame": 480,
+      "frames": 8,
+      "seconds": 0.23700127517804503
+    },
+    {
+      "first_frame": 488,
+      "frames": 8,
+      "seconds": 0.2368393549695611
+    },
+    {
+      "first_frame": 496,
+      "frames": 8,
+      "seconds": 0.2352726273238659
+    },
+    {
+      "first_frame": 504,
+      "frames": 8,
+      "seconds": 0.2376710711978376
+    },
+    {
+      "first_frame": 512,
+      "frames": 8,
+      "seconds": 0.2371726050041616
+    },
+    {
+      "first_frame": 520,
+      "frames": 8,
+      "seconds": 0.23846443509683013
+    },
+    {
+      "first_frame": 528,
+      "frames": 8,
+      "seconds": 0.23681561136618257
+    },
+    {
+      "first_frame": 536,
+      "frames": 8,
+      "seconds": 0.23922407114878297
+    },
+    {
+      "first_frame": 544,
+      "frames": 8,
+      "seconds": 0.2348265927284956
+    },
+    {
+      "first_frame": 552,
+      "frames": 8,
+      "seconds": 0.23869846807792783
+    },
+    {
+      "first_frame": 560,
+      "frames": 8,
+      "seconds": 0.23475808091461658
+    },
+    {
+      "first_frame": 568,
+      "frames": 8,
+      "seconds": 0.23436638293787837
+    },
+    {
+      "first_frame": 576,
+      "frames": 8,
+      "seconds": 0.23802024219185114
+    },
+    {
+      "first_frame": 584,
+      "frames": 8,
+      "seconds": 0.23633904894813895
+    },
+    {
+      "first_frame": 592,
+      "frames": 8,
+      "seconds": 0.23584971809759736
+    },
+    {
+      "first_frame": 600,
+      "frames": 8,
+      "seconds": 0.23731798119843006
+    },
+    {
+      "first_frame": 608,
+      "frames": 8,
+      "seconds": 0.23769769631326199
+    },
+    {
+      "first_frame": 616,
+      "frames": 8,
+      "seconds": 0.23719513276591897
+    },
+    {
+      "first_frame": 624,
+      "frames": 8,
+      "seconds": 0.23782548867166042
+    },
+    {
+      "first_frame": 632,
+      "frames": 8,
+      "seconds": 0.23901088628917933
+    },
+    {
+      "first_frame": 640,
+      "frames": 8,
+      "seconds": 0.23615784803405404
+    },
+    {
+      "first_frame": 648,
+      "frames": 8,
+      "seconds": 0.23686308413743973
+    },
+    {
+      "first_frame": 656,
+      "frames": 5,
+      "seconds": 0.16409499384462833
+    }
+  ]
+}

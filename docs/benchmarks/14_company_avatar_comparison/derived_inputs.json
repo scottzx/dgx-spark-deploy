@@ -1,0 +1,20 @@
+[
+  {
+    "product": "original",
+    "first_frame_png_sha256": "f10bfdbd84a963043973105fbade70eb76c58d8c9e637d8f36f432511ce6e419",
+    "source_driver_sha256": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+    "derivation": "First decoded frame of the corresponding raw LTX action driver, no talking-face processing."
+  },
+  {
+    "product": "diet",
+    "first_frame_png_sha256": "edfa0bf48e95b53f92445a69fa6b3a24fdfb646e95d66c53e1598285febbb03d",
+    "source_driver_sha256": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+    "derivation": "First decoded frame of the corresponding raw LTX action driver, no talking-face processing."
+  },
+  {
+    "product": "zero",
+    "first_frame_png_sha256": "050780136622ea7d8e1df7040613b2a804915bc0e1b6caf8709d74984392d5ef",
+    "source_driver_sha256": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+    "derivation": "First decoded frame of the corresponding raw LTX action driver, no talking-face processing."
+  }
+]

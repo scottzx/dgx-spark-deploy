@@ -1,0 +1,11 @@
+{
+  "case_id": "troy_20261003_220446_opening",
+  "final_mp4_complete_monotonic_ns": 2535295444946402,
+  "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/specific_refiner/delivery/refined_1344x768_121f.mp4",
+  "output_bytes": 4429481,
+  "output_sha256": "1ca64fb3141487c25c10c8c58ce76557305e1c7250adc51e4388cd9c77203c64",
+  "request_id": "troy_20261003_220446_opening",
+  "stage2_request_s": 49.955574232,
+  "stage2_started_monotonic_ns": 2535245489372170,
+  "status": "PASS"
+}

@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "started_unix": 1791297139.9536238,
+  "supervisor_pid": 2019006,
+  "base_child_pid": 2021411,
+  "phases": [
+    {
+      "phase": "caches",
+      "exit_code": 0,
+      "wall_s": 21.768141312990338
+    },
+    {
+      "phase": "ltx",
+      "exit_code": 0,
+      "wall_s": 149.72405049670488
+    }
+  ],
+  "child_pid": 2026217,
+  "generation_status": "complete",
+  "supervisor_resumed": true,
+  "finished_unix": 1791297650.573037
+}

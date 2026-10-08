@@ -1,0 +1,34 @@
+{
+  "engine": "avatarforever_speaking",
+  "product": "original",
+  "input_sha256": {
+    "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+    "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+    "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+    "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+  },
+  "commit": "4dfc42b0e2dbbded4d148387d186219bd7601279",
+  "shared_model_load_seconds": 0.0004448620602488518,
+  "render_seconds": 103.67479096679017,
+  "peak_cuda_allocated_gib": 39.81420421600342,
+  "native_output": "/home/admin/avatar-company-tests/outputs/avatarforever_speaking/original/native.mp4",
+  "scope": "Official AvatarForever first-frame + audio + text generation; history feature cache=False, prompt variant=official-speaking.",
+  "model_loading_is_lazy": true,
+  "timing_includes_lazy_model_loads": true,
+  "fast_infer": false,
+  "variant": "official-speaking",
+  "prompt": "Natural audio-driven speaking motion with accurate lip synchronization, smooth and continuous facial animation, subtle head movement, natural blinking, gentle breathing, and relaxed upper-body motion. Expressions and gestures should respond naturally to the rhythm, tone, and emotion of the speech while remaining restrained and realistic.\n\nMaintain strong temporal consistency across all frames. Keep facial appearance, identity, pose, body structure, clothing details, lighting, and background stable throughout the video. Avoid sudden motion changes, excessive gestures, unnatural expression shifts, frame-to-frame appearance variation, flickering, jitter, ghosting, texture instability, temporal artifacts, or deformation. All motion should be coherent, fluid, stable, and naturally driven by the audio.",
+  "ar_history_feature_cache": false,
+  "product_action_requested": false,
+  "model_generates_product_actions": true,
+  "original_LTX_actions_preserved": false,
+  "compatibility": [
+    "Existing GB10 PyTorch 2.14.1 / CUDA 13 instead of repository Torch 2.7 environment"
+  ],
+  "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+  "native_duration_seconds": 8.04,
+  "native_output_sha256": "70aa388ae746851704701a5174e4fdff9938ff11baad459da39f73c485cde5ff",
+  "video_sha256": "52bf966c600b0a6b7fa840643bd90249b872e5536524da07327ff5d511fcacb6",
+  "final_frame_hold_seconds": 0.0,
+  "normalization_note": "Trim only; no tail hold."
+}

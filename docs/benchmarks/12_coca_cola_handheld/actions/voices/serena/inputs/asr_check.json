@@ -1,0 +1,10 @@
+{
+  "input": "/home/admin/digital-human-runtime/inputs/product_actions_serena/voice_preview.wav",
+  "elapsed_seconds": 2.0374433966353536,
+  "result": [
+    {
+      "key": "voice_preview",
+      "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>原味熟悉的经典可乐风味，剑怡无糖，口感更轻盈，零度同样无糖，更接近原味可口可乐的风味。"
+    }
+  ]
+}

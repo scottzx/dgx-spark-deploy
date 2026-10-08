@@ -1,0 +1,101 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "file": "cardigan_handover.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "aspect_ratio": "3:4",
+      "sha256": "51968ddeaa7e25a8cb4c330aa5be6606cb05e0186ecac4c6aea618ad22209ef4",
+      "references": [
+        "cardigan_held.png"
+      ],
+      "prompt_key": "cardigan_handover"
+    },
+    {
+      "file": "cardigan_held.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "aspect_ratio": "3:4",
+      "sha256": "2a1c80063fc552d1db4d231dffec3e73963bb1182e676e431fb442b9748efa79",
+      "references": [
+        "empty.png",
+        "landscape_draft/cardigan_held.png"
+      ],
+      "prompt_key": "cardigan_held"
+    },
+    {
+      "file": "dress_handover.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "aspect_ratio": "3:4",
+      "sha256": "c3cbc8f71de1ab259f5dc444a966977ddb38918660c92978cc6476cc9761a314",
+      "references": [
+        "dress_held.png"
+      ],
+      "prompt_key": "dress_handover"
+    },
+    {
+      "file": "dress_held.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "aspect_ratio": "3:4",
+      "sha256": "5612d39eec997f0ab484993b119d4ff82e8ad26e9075935c2283ab69195b022b",
+      "references": [
+        "empty.png",
+        "landscape_draft/dress_held.png"
+      ],
+      "prompt_key": "dress_held"
+    },
+    {
+      "file": "empty.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "aspect_ratio": "3:4",
+      "sha256": "505e483397eab87245e0a04410b106028af2a268d66008b79575bf8f90ab0e22",
+      "references": [
+        "../../11_coca_cola_avatar/assets/presenter.png"
+      ],
+      "prompt_key": "empty"
+    },
+    {
+      "file": "shirt_handover.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "aspect_ratio": "3:4",
+      "sha256": "2f4da4853ea078cb3c7a7d39cefeb2297c0bf09ddd64fdd8acde077127ea1a4f",
+      "references": [
+        "shirt_held.png"
+      ],
+      "prompt_key": "shirt_handover"
+    },
+    {
+      "file": "shirt_held.png",
+      "size": [
+        1086,
+        1448
+      ],
+      "aspect_ratio": "3:4",
+      "sha256": "3412789a81ef701f715e854d384c9502a512e9abbac5fa79df160aec67244447",
+      "references": [
+        "empty.png",
+        "landscape_draft/shirt_held.png"
+      ],
+      "prompt_key": "shirt_held"
+    }
+  ],
+  "visual_review": "Same fictional presenter and unobstructed face. Complete garment visible in held frames. One assistant hand at viewer right in handover frames.",
+  "prompt_set": "assets/image_prompts.json"
+}

@@ -1,0 +1,54 @@
+{
+  "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "speaker": "Vivian",
+  "sample_rate": 24000,
+  "duration_seconds": 26.44,
+  "load_seconds": 35.43288348382339,
+  "total_seconds": 56.41387093486264,
+  "segments": [
+    {
+      "id": 0,
+      "text": "可口可乐，今天你想选哪一罐？",
+      "start_seconds": 0.0,
+      "end_seconds": 3.36,
+      "generation_seconds": 4.139965908136219
+    },
+    {
+      "id": 1,
+      "text": "原味，熟悉的经典可乐风味。",
+      "start_seconds": 3.54,
+      "end_seconds": 6.1,
+      "generation_seconds": 1.9838392809033394
+    },
+    {
+      "id": 2,
+      "text": "健怡，无糖，口感更轻盈。",
+      "start_seconds": 6.28,
+      "end_seconds": 9.72,
+      "generation_seconds": 2.5975500531494617
+    },
+    {
+      "id": 3,
+      "text": "零度，同样无糖，更接近原味可口可乐的风味。",
+      "start_seconds": 9.9,
+      "end_seconds": 13.34,
+      "generation_seconds": 2.6608782606199384
+    },
+    {
+      "id": 4,
+      "text": "聚餐、追剧，或者想来一口冰爽，三种选择，按你的口味来。",
+      "start_seconds": 13.52,
+      "end_seconds": 19.92,
+      "generation_seconds": 4.8633634792640805
+    },
+    {
+      "id": 5,
+      "text": "原味、健怡、零度，认准罐身标识，挑一罐你喜欢的，冰镇后更过瘾！",
+      "start_seconds": 20.1,
+      "end_seconds": 26.26,
+      "generation_seconds": 4.689230107236654
+    }
+  ],
+  "torch": "2.14.1+cu130",
+  "sha256": "b9d7cee56948b6dad7d916b158088789d90840ac927b85a7c78c834f73e0a2c0"
+}

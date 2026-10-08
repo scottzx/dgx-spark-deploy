@@ -1,0 +1,328 @@
+{
+  "method": "Manual inspection of actual extracted frames. This is not an automated quality score or a phoneme alignment benchmark.",
+  "observations": [
+    {
+      "engine": "LivePortrait",
+      "finding": "三组持罐与放回关键帧保留 LTX 身体与商品动作；开口、收口附近的连续帧未见人物或头部突然切换。它以已有 MuseTalk 口播视频驱动面部，效果不能视为独立中文音频驱动能力，也没有据此判定所有音节精确同步。",
+      "engine_key": "liveportrait",
+      "cases_reviewed": [
+        "original",
+        "diet",
+        "zero"
+      ],
+      "evidence": [
+        "results/liveportrait/original/opening_consecutive_faces.jpg",
+        "results/liveportrait/original/ending_consecutive_faces.jpg",
+        "results/liveportrait/diet/opening_consecutive_faces.jpg",
+        "results/liveportrait/diet/ending_consecutive_faces.jpg",
+        "results/liveportrait/zero/opening_consecutive_faces.jpg",
+        "results/liveportrait/zero/ending_consecutive_faces.jpg"
+      ]
+    },
+    {
+      "engine": "LatentSync 1.6",
+      "finding": "三组持罐与结束关键帧保留 LTX 商品动作；开口、收口附近的连续帧未见人物或头部突然切换。原味约 2.52 秒开始张口，音频 2.48 秒附近开始明显起声，不能将更早的闭嘴帧直接判为明显延迟。未据此判定整段所有音节精确同步。",
+      "engine_key": "latentsync",
+      "evidence": [
+        "results/latentsync/original/opening_consecutive_faces.jpg",
+        "results/latentsync/original/onset_frames_62_64.jpg",
+        "results/latentsync/original/ending_consecutive_faces.jpg",
+        "results/latentsync/diet/opening_consecutive_faces.jpg",
+        "results/latentsync/diet/ending_consecutive_faces.jpg",
+        "results/latentsync/zero/opening_consecutive_faces.jpg",
+        "results/latentsync/zero/ending_consecutive_faces.jpg"
+      ],
+      "onset_audit": {
+        "video_frame_indices": [
+          62,
+          63,
+          64
+        ],
+        "video_seconds": [
+          2.48,
+          2.52,
+          2.56
+        ],
+        "observation": "Frame 62 closed lips; frame 63 slightly parted lips; frame 64 clearly parted lips.",
+        "audio_40ms_rms_normalized": [
+          [
+            2.32,
+            0.0
+          ],
+          [
+            2.36,
+            0.0
+          ],
+          [
+            2.4,
+            0.0
+          ],
+          [
+            2.44,
+            0.0034
+          ],
+          [
+            2.48,
+            0.0515
+          ],
+          [
+            2.52,
+            0.1293
+          ],
+          [
+            2.56,
+            0.1258
+          ]
+        ],
+        "audio_source": "Spark shared original/audio_16k.wav; onset timing approximated by 40ms bins, not forced phoneme alignment."
+      },
+      "cases_reviewed": [
+        "original",
+        "diet",
+        "zero"
+      ]
+    },
+    {
+      "engine": "LongCat-Video-Avatar 1.5",
+      "engine_key": "longcat",
+      "cases_reviewed": [
+        "original",
+        "diet",
+        "zero"
+      ],
+      "finding": "原味与零度出现额外商品，放回后变成四罐。健怡保持三罐，拿起、手持与放回基本成立；原生末帧双手仍接触商品，未见明确离手画面。三组各生成约 20 分钟，完整商品流程没有稳定通过。 三组开口、收口连续帧未见人物或头部突然切换，未据此判定整段音节同步。",
+      "evidence": [
+        "results/longcat/original/phase_4.jpg",
+        "results/longcat/original/phase_6.4.jpg",
+        "results/longcat/original/phase_8.jpg",
+        "results/longcat/original/native_end_10s.jpg",
+        "results/longcat/diet/phase_4.jpg",
+        "results/longcat/diet/phase_8.jpg",
+        "results/longcat/diet/native_end_10s.jpg",
+        "results/longcat/original/native_last_frame_252.jpg",
+        "results/longcat/diet/native_last_frame_252.jpg",
+        "results/longcat/zero/phase_4.jpg",
+        "results/longcat/zero/phase_8.jpg",
+        "results/longcat/zero/native_last_frame_252.jpg",
+        "results/longcat/original/opening_consecutive_faces.jpg",
+        "results/longcat/original/ending_consecutive_faces.jpg",
+        "results/longcat/diet/opening_consecutive_faces.jpg",
+        "results/longcat/diet/ending_consecutive_faces.jpg",
+        "results/longcat/zero/opening_consecutive_faces.jpg",
+        "results/longcat/zero/ending_consecutive_faces.jpg"
+      ],
+      "case_findings": {
+        "original": "原味首次生成未通过商品动作要求：4 秒时桌上保留三罐，同时手中额外生成银色罐；6.4 秒及 8 秒时桌上出现四罐。手持罐颜色与目标原味红罐不一致，8 秒时左手仍接触其他罐。该条生成约 20.3 分钟。另查原生第 10 秒仍有四罐，右手接触新增罐顶部、左手接触原中间罐；不能将该问题仅归因于 8.04 秒裁剪。",
+        "diet": "健怡持罐与放回关键帧保持三罐；拿起、手持与放回基本成立。8 秒及原生末帧双手仍接触中间商品，未见明确离手画面；静帧接触不足以确定是否仍用力握持。",
+        "zero": "零度在 4 秒时桌上保留三罐，手中额外生成另一罐；8 秒及原生最后一帧均有四罐，手仍接触新增商品。"
+      },
+      "native_last_frame_audit": {
+        "frame": 252,
+        "time_seconds": 10.08,
+        "products": [
+          "original",
+          "diet",
+          "zero"
+        ],
+        "finding": "Original and zero: four cans. Diet: three cans. Hands remain in contact with cans at native final frame; no clear visible withdrawal. Contact alone does not establish gripping force."
+      },
+      "speech_continuity_observation": "三组各五个开口、收口连续帧未见人物或头部突然切换；未据此判定整段音节精确同步。"
+    },
+    {
+      "engine": "InfiniteTalk FusionX 8-step",
+      "engine_key": "infinitetalk",
+      "cases_reviewed": [
+        "original",
+        "diet",
+        "zero"
+      ],
+      "finding": "三组各生成约 52–53 分钟，完整商品流程均未通过。原味拿错中间银罐，后半段出现额外红罐，结束仍手持；健怡拿对中间银罐、检查帧保持三罐，但结束仍手持，没有放回；零度先拿中间银罐，中段放回后又举右侧红罐，结束仍手持。三组开口、收口附近连续帧未见人物或头部突然切换，未据此判定整段音节同步。",
+      "evidence": [
+        "results/infinitetalk/original/phase_1.6.jpg",
+        "results/infinitetalk/original/phase_4.jpg",
+        "results/infinitetalk/original/phase_6.4.jpg",
+        "results/infinitetalk/original/phase_8.jpg",
+        "results/infinitetalk/original/opening_consecutive_faces.jpg",
+        "results/infinitetalk/original/ending_consecutive_faces.jpg",
+        "results/infinitetalk/diet/phase_1.6.jpg",
+        "results/infinitetalk/diet/phase_4.jpg",
+        "results/infinitetalk/diet/phase_8.jpg",
+        "results/infinitetalk/diet/opening_consecutive_faces.jpg",
+        "results/infinitetalk/diet/ending_consecutive_faces.jpg",
+        "results/infinitetalk/zero/phase_1.6.jpg",
+        "results/infinitetalk/zero/phase_2.4.jpg",
+        "results/infinitetalk/zero/phase_4.jpg",
+        "results/infinitetalk/zero/phase_6.4.jpg",
+        "results/infinitetalk/zero/phase_8.jpg",
+        "results/infinitetalk/zero/opening_consecutive_faces.jpg",
+        "results/infinitetalk/zero/ending_consecutive_faces.jpg"
+      ],
+      "speech_continuity_observation": "三组各五个开口、收口连续帧未见人物或头部姿态突然切换；未据此判定整段音节精确同步。",
+      "case_findings": {
+        "original": "前半段拿起中间银罐，未拿目标左侧红罐；后半段手持红罐时桌上仍有三罐；原生最后一帧仍手持，没有放回。",
+        "diet": "1.6 秒与 4 秒手持中间银罐，桌上保留左右两罐，共三罐；原生末帧（统一 8 秒帧）仍手持靠近嘴部，没有放回并松手。",
+        "zero": "1.6 秒与 2.4 秒拿中间银罐，未按要求拿右侧红罐；4 秒三罐都在桌上，6.4 秒及原生末帧又手持右侧红罐，结束没有放回。检查帧保持总共三罐，但商品选择与拿放时序不符合要求。"
+      }
+    },
+    {
+      "engine": "JoyVASA",
+      "engine_key": "joyvasa",
+      "cases_reviewed": [
+        "original",
+        "diet",
+        "zero"
+      ],
+      "finding": "三组生成约 15–22 秒，能驱动口型，但属于静态肖像路线，身体与商品沿用首帧，没有拿起、手持介绍、放回动作。三组开口、收口五帧检查未见人物或头部突然切换；原味、健怡眼睛与嘴部表情偏夸张。未据此判定所有音节同步。",
+      "evidence": [
+        "results/joyvasa/original/opening_consecutive_faces.jpg",
+        "results/joyvasa/original/ending_consecutive_faces.jpg",
+        "results/joyvasa/diet/opening_consecutive_faces.jpg",
+        "results/joyvasa/diet/ending_consecutive_faces.jpg",
+        "results/joyvasa/zero/opening_consecutive_faces.jpg",
+        "results/joyvasa/zero/ending_consecutive_faces.jpg",
+        "results/joyvasa/original/phase_4.jpg",
+        "results/joyvasa/original/phase_8.jpg"
+      ]
+    },
+    {
+      "engine": "Avatar-Forever",
+      "engine_key": "avatarforever",
+      "cases_reviewed": [
+        "original",
+        "diet",
+        "zero"
+      ],
+      "finding": "三组生成约 72–127 秒，动作与口播表现不一致。原味拿起左侧红罐后较早放回，结束又接触中间银罐；原味说话段的抽样连续帧持续闭嘴。健怡检查帧未见清楚离桌手持动作，开口、收口五帧嘴部基本闭合。零度有拿起右侧红罐、放回与明确离手，也能张口，但介绍尚未结束就放回。三组说话边界五帧未见人物或头部突然切换。",
+      "evidence": [
+        "results/avatarforever/original/opening_consecutive_faces.jpg",
+        "results/avatarforever/original/ending_consecutive_faces.jpg",
+        "results/avatarforever/diet/opening_consecutive_faces.jpg",
+        "results/avatarforever/diet/ending_consecutive_faces.jpg",
+        "results/avatarforever/zero/opening_consecutive_faces.jpg",
+        "results/avatarforever/zero/ending_consecutive_faces.jpg",
+        "results/avatarforever/original/phase_1.6.jpg",
+        "results/avatarforever/original/phase_2.4.jpg",
+        "results/avatarforever/original/phase_4.jpg",
+        "results/avatarforever/original/phase_8.jpg",
+        "results/avatarforever/diet/phase_1.6.jpg",
+        "results/avatarforever/diet/phase_2.4.jpg",
+        "results/avatarforever/diet/phase_4.jpg",
+        "results/avatarforever/diet/phase_8.jpg",
+        "results/avatarforever/zero/phase_1.6.jpg",
+        "results/avatarforever/zero/phase_2.4.jpg",
+        "results/avatarforever/zero/phase_4.jpg",
+        "results/avatarforever/zero/phase_8.jpg",
+        "results/avatarforever/original/active_speech_samples.jpg"
+      ],
+      "case_findings": {
+        "original": "1.6 秒举起左侧红罐，4 秒三罐已回到桌上，8 秒手又接触中间银罐。2.56–4.64 秒每隔四帧的 14 张原始抽样帧嘴部保持闭合，不能判为有效口播。",
+        "diet": "1.6、2.4、4、8 秒检查帧中银罐仍在桌上，未见明确离桌手持介绍。开口、收口各五个连续帧基本闭嘴；未据此推断整段绝无嘴部运动。",
+        "zero": "1.6 秒拿起右侧红罐，2.4 秒已开始放低，4 秒已放回，8 秒双手明显离开商品。基本拿放与离手成立，持罐介绍较短；4 秒及说话边界可见张口，口型表现优于本次原味与健怡。"
+      },
+      "mouth_diagnostic": "原味原生音轨已检查，包含实际语音。补充测试分别关闭历史特征缓存，以及关闭缓存并采用作者默认口播提示词，独立于主测试。"
+    },
+    {
+      "engine": "JoyHallo",
+      "engine_key": "joyhallo",
+      "cases_reviewed": [
+        "original",
+        "diet",
+        "zero"
+      ],
+      "finding": "三组各生成约 16.5 分钟，仅为面部肖像口播，无法完成商品拿放。原味、健怡在第 64 帧的 16 帧分段边缘出现眼睛、嘴部及面部纹理较突兀的变化；零度该位置口型变化幅度也较大。本次没有判为连续性通过。人物外观与基线有差异，表情变化偏大，未据此判定所有音节同步。",
+      "evidence": [
+        "results/joyhallo/original/opening_consecutive_faces.jpg",
+        "results/joyhallo/original/ending_consecutive_faces.jpg",
+        "results/joyhallo/original/chunk_boundary_64_faces.jpg",
+        "results/joyhallo/diet/opening_consecutive_faces.jpg",
+        "results/joyhallo/diet/ending_consecutive_faces.jpg",
+        "results/joyhallo/diet/chunk_boundary_64_faces.jpg",
+        "results/joyhallo/zero/opening_consecutive_faces.jpg",
+        "results/joyhallo/zero/ending_consecutive_faces.jpg",
+        "results/joyhallo/zero/chunk_boundary_64_faces.jpg"
+      ],
+      "chunk_boundary_audit": {
+        "frames": [
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "timestamps": [
+          2.44,
+          2.48,
+          2.52,
+          2.56,
+          2.6,
+          2.64,
+          2.68
+        ],
+        "boundary_frame": 64,
+        "boundary_seconds": 2.56,
+        "operation": "Actual candidate frames, crop x=122,y=160,w=256,h=258, scale 256x256, seven frames in one row. No frame synthesis.",
+        "finding": "Original and diet: abrupt expression/face-texture changes across frames 63 to 64. Zero: a large mouth-shape change at the same boundary. This does not prove every chunk boundary is equally affected or measure phoneme alignment.",
+        "cases_reviewed": [
+          "original",
+          "diet",
+          "zero"
+        ]
+      }
+    },
+    {
+      "engine": "Avatar-Forever（官方默认关闭历史特征缓存）",
+      "engine_key": "avatarforever_nocache",
+      "cases_reviewed": [
+        "original",
+        "diet",
+        "zero"
+      ],
+      "finding": "按官方默认关闭历史特征缓存补测三组，生成约 97–105 秒。原味、健怡说话段抽样仍基本闭嘴，关闭该开关未解决口播问题。原味举起左侧红罐并较早放回，结束又双手握中间银罐；健怡检查帧未见明确离桌持罐介绍；零度能拿起右侧红罐、放回、离手并有口型活动，但较早放回、后半段空手讲述。三组没有稳定完成完整商品流程。开口、收口五帧未见人物突然切换，未判定所有音节同步。",
+      "case_findings": {
+        "original": "1.6 秒举起左侧红罐，4 秒已经放回，8 秒双手握中间银罐。2.56–4.64 秒每隔 0.16 秒的 14 张脸部抽样帧持续闭嘴。",
+        "diet": "1.6、2.4 秒银罐仍在桌上，8 秒双手在桌面休息。2.56–4.64 秒的 14 张脸部抽样基本闭嘴，未见清楚手持商品介绍。",
+        "zero": "1.6 秒手持右侧红罐，4 秒罐已放回右侧，手已离开商品；8 秒三罐在桌上、双手空着。2.56–4.64 秒脸部抽样有口型变化，基本拿放及离手成立，但持罐介绍较短。"
+      },
+      "evidence": [
+        "results/avatarforever_nocache/original/active_speech_faces.jpg",
+        "results/avatarforever_nocache/original/opening_consecutive_faces.jpg",
+        "results/avatarforever_nocache/original/ending_consecutive_faces.jpg",
+        "results/avatarforever_nocache/original/phase_1.6.jpg",
+        "results/avatarforever_nocache/original/phase_2.4.jpg",
+        "results/avatarforever_nocache/original/phase_4.jpg",
+        "results/avatarforever_nocache/original/phase_8.jpg",
+        "results/avatarforever_nocache/diet/active_speech_faces.jpg",
+        "results/avatarforever_nocache/diet/opening_consecutive_faces.jpg",
+        "results/avatarforever_nocache/diet/ending_consecutive_faces.jpg",
+        "results/avatarforever_nocache/diet/phase_1.6.jpg",
+        "results/avatarforever_nocache/diet/phase_2.4.jpg",
+        "results/avatarforever_nocache/diet/phase_4.jpg",
+        "results/avatarforever_nocache/diet/phase_8.jpg",
+        "results/avatarforever_nocache/zero/active_speech_faces.jpg",
+        "results/avatarforever_nocache/zero/opening_consecutive_faces.jpg",
+        "results/avatarforever_nocache/zero/ending_consecutive_faces.jpg",
+        "results/avatarforever_nocache/zero/phase_1.6.jpg",
+        "results/avatarforever_nocache/zero/phase_2.4.jpg",
+        "results/avatarforever_nocache/zero/phase_4.jpg",
+        "results/avatarforever_nocache/zero/phase_8.jpg"
+      ],
+      "scope": "Only history feature caching differs from the corresponding primary product trial. Different weight-loading and allocator states also affect wall-clock timing; do not attribute all timing differences to the cache flag."
+    },
+    {
+      "engine": "Avatar-Forever（作者默认口播提示词）",
+      "engine_key": "avatarforever_speaking",
+      "cases_reviewed": [
+        "original"
+      ],
+      "finding": "原味组采用作者默认口播提示词、关闭历史特征缓存，生成约 104 秒，2.56–4.64 秒抽样可见明显口型变化，优于同缓存设置下的商品提示词对照。开口附近手靠近嘴部，视线偏离镜头；开口、收口五帧未见人物突然切换。该条没有拿放商品要求，不能当作带货动作通过；未判定整段音节精确同步。",
+      "scope": "Same original input, seed, resolution and cache=False as the no-cache product case; only the text prompt differs. This is a mouth diagnostic with no product-action requirement.",
+      "evidence": [
+        "results/avatarforever_speaking/original/active_speech_faces.jpg",
+        "results/avatarforever_speaking/original/opening_consecutive_faces.jpg",
+        "results/avatarforever_speaking/original/ending_consecutive_faces.jpg"
+      ]
+    }
+  ]
+}

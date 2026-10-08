@@ -1,0 +1,76 @@
+{
+  "status": "complete",
+  "scope": "Four-shot controlled engineering regression; no full film remake",
+  "verified_at_utc": "2026-10-05T18:21:47.849460+00:00",
+  "manifest_fingerprint": "fc3fefccad737763bfa1324360513889459ebf383e505fc4062e2723badb88e4",
+  "generated_clips": 24,
+  "quality_counts": {
+    "pass_at_samples": 0,
+    "partial_at_samples": 15,
+    "fail_at_samples": 9
+  },
+  "strict_full_clip_accepted": 0,
+  "action_excerpt": {
+    "sha256": "5d131a956e97c44800d246d66366e557e4db5af29026b5ee8a93508c8fc83ac6",
+    "frames": 192,
+    "fps": 24,
+    "duration_s": 8.0,
+    "size": [
+      768,
+      432
+    ],
+    "full_decode": true
+  },
+  "comparison": {
+    "sha256": "098b9cb892f28ca95f52e82eb05a2ed95d86f6ac8cf0bb0079c74e7d1e57c8ac",
+    "frames": 960,
+    "fps": 24,
+    "duration_s": 40.0,
+    "size": [
+      1728,
+      372
+    ],
+    "full_decode": true
+  },
+  "diagnostic": {
+    "sha256": "94650c5da15b2592fd6461257f045e1e03acd75d0ac570517846a64d16ccf535",
+    "frames": 480,
+    "fps": 24,
+    "duration_s": 20.0,
+    "size": [
+      768,
+      432
+    ],
+    "full_decode": true
+  },
+  "video_service_restored": true,
+  "independent_health": {
+    "status": "READY",
+    "task": "fl2va",
+    "paths_file": "/home/admin/sol-spark-runtime/paths.json",
+    "startup_and_warmup_s": 464.82121300697327,
+    "ready_time": "2026-10-06T02:01:27.364611",
+    "requests_served": 0,
+    "workflows": [
+      "independent",
+      "continue"
+    ],
+    "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+    "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=fl2va; modes: draft|final)"
+  },
+  "authoritative_session": "video_session.json",
+  "historical_failed_session": "session.json",
+  "limits": [
+    "Eleven temporal samples per clip and 6fps in excerpt intervals; not full motion certification",
+    "Original audio retained without listening review",
+    "Revised combined image-to-video drain path has not been re-exercised"
+  ],
+  "browser_verification": {
+    "status": "PASS",
+    "cases": 4,
+    "cards": 24,
+    "media_count": 27,
+    "sync_groups": 8,
+    "browser_errors": []
+  }
+}

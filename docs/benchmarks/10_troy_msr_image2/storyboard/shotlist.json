@@ -1,0 +1,860 @@
+{
+  "title": "木马计：开门",
+  "version": "v1",
+  "status": "initial_storyboard_complete",
+  "target_duration_s": 80,
+  "shot_count": 16,
+  "aspect_ratio": "16:9",
+  "audio": {
+    "dialogue": false,
+    "music": false,
+    "ambience": true
+  },
+  "requested_model_label": "image2",
+  "image_generation_tool": "built-in image_gen",
+  "model_version_reported_by_tool": null,
+  "scenes": [
+    {
+      "id": "A",
+      "name": "城门外：劝诱",
+      "shots": [
+        "S01",
+        "S02"
+      ],
+      "time": "日",
+      "assets": "gate、horse；sinon、guard、citizen、worker",
+      "space": "木马在城外；西农与守卫面对面，市民后侧观察。",
+      "state": "城门敞开但受守卫控制；舱门关闭，梯子收起。",
+      "risk": "守卫两手持矛盾时用点头和侧身表演，不增加第三只手。"
+    },
+    {
+      "id": "B",
+      "name": "门槛到广场：搬运",
+      "shots": [
+        "S03",
+        "S04"
+      ],
+      "time": "日",
+      "assets": "gate、horse、day；worker、citizen",
+      "space": "S03用低机位轮子细节过渡；S04回到广场左门、右喷泉的主地理。",
+      "state": "木马仅随车轮移动；木腿、头和躯干没有动物运动。",
+      "risk": "只复用一名搬运者代表；第二搬运者另设脸和体态，不复制人。"
+    },
+    {
+      "id": "C",
+      "name": "停驻与关门",
+      "shots": [
+        "S05",
+        "S06"
+      ],
+      "time": "暮",
+      "assets": "dusk、horse、gate；worker、citizen、guard",
+      "space": "木马停驻位置延续日景；S06反打门内侧，装备靠墙。",
+      "state": "S05绳索松弛；S06城门由开到闭；舱门一直关闭。",
+      "risk": "统一所有旗帜为纯色暗红，移除城门资产中的太阳纹样。"
+    },
+    {
+      "id": "D",
+      "name": "静场与出马",
+      "shots": [
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "time": "夜",
+      "assets": "night、horse；odysseus、soldier",
+      "space": "保持同一木马侧腹和梯子轴线；喷泉在右，城门在左后方。",
+      "state": "闭舱无梯 → 开舱无梯 → 放下一架梯 → 奥德修斯下梯 → 奥德修斯落地 → 随队士兵下梯。",
+      "risk": "木马不变真马；禁止第二舱门/第二梯子；奥德修斯不得在舱口与地面复制出现。"
+    },
+    {
+      "id": "E",
+      "name": "城门内：开门与接应",
+      "shots": [
+        "S13",
+        "S15",
+        "S16"
+      ],
+      "time": "夜",
+      "assets": "gate、night；odysseus、soldier、agamemnon",
+      "space": "S13、S15、S16同一门内轴线；移除的横闩留在门侧，通道可走。",
+      "state": "闭门抬闩 → 开门 → 阿伽门农由外进内。",
+      "risk": "圆盾只归随队士兵并背负；三把剑都在各自左髋入鞘。"
+    },
+    {
+      "id": "F",
+      "name": "城门外：待命",
+      "shots": [
+        "S14"
+      ],
+      "time": "夜",
+      "assets": "gate；agamemnon；3名匿名接应士兵",
+      "space": "同一城门外侧，与门内解除横闩交叉剪辑。",
+      "state": "闭门待命；阿伽门农不曾藏在木马里。",
+      "risk": "三名匿名接应士兵不复用城内随队士兵身份，主角不复制。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "S01",
+      "title": "西农陈情",
+      "scene": "A",
+      "time": "日",
+      "size": "中景",
+      "camera": "50mm，略低机位，缓慢推近",
+      "actors": [
+        "sinon",
+        "guard",
+        "citizen"
+      ],
+      "count": "3 人：西农、守卫、市民代表",
+      "refs": [
+        "gate",
+        "horse",
+        "sinon",
+        "guard",
+        "citizen"
+      ],
+      "beat": "西农向守卫摊开空手，再转向木马示意；市民在后侧观察。",
+      "still": "西农正面对守卫，双手张开；守卫仍持矛盾，木马在城外背景中，舱门闭合。",
+      "start": "守卫阻拦，西农停在门外。",
+      "end": "守卫将视线转向木马，怀疑开始松动。",
+      "state": {
+        "gate": "open_guarded",
+        "hatch": "closed",
+        "ladder": "hidden"
+      },
+      "sound": "微风、布料轻响、远处城内人声氛围，无可辨对白。",
+      "action_en": "Exactly three living people: Sinon from his reference in the foreground left, the Trojan guard from his reference foreground right, and the female Trojan citizen from her reference farther back. Sinon calmly opens both EMPTY hands while appealing to the guard, glancing toward the giant wooden horse parked OUTSIDE the open city gate behind them. The guard still holds one upright spear in his anatomical right hand and one shield in his left, listening with cautious attention. The woman watches, unarmed. Medium eye-level cinematic framing prioritizes clear matching faces. The horse can be partly background-obscured, but its rigid plank body, wheeled platform and CLOSED single side hatch are recognizable. No Greek soldier or commander is visible.",
+      "index": 1,
+      "target_duration_s": 5,
+      "timeline_start_s": 0,
+      "timeline_end_s": 5,
+      "frame_file": "storyboard/frames/s01_v1.png",
+      "prompt_file": "storyboard/prompts/s01.txt",
+      "reference_asset_ids": [
+        "gate",
+        "horse",
+        "sinon",
+        "guard",
+        "citizen"
+      ],
+      "reference_files": [
+        "assets/scenes/gate_day_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/sinon_v1.png",
+        "assets/characters/trojan_guard_01_v1.png",
+        "assets/characters/trojan_citizen_01_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S01, '西农陈情', in a continuous silent Trojan Horse story.\nInput image 1: environment architecture and lighting reference (assets/scenes/gate_day_v1.png).\nInput image 2: authoritative wooden horse design reference (assets/scenes/trojan_horse_v1.png).\nInput image 3: exact identity/costume reference for 西农 (assets/characters/sinon_v1.png).\nInput image 4: exact identity/costume reference for 特洛伊守卫 (assets/characters/trojan_guard_01_v1.png).\nInput image 5: exact identity/costume reference for 市民代表 (assets/characters/trojan_citizen_01_v1.png).\nPrimary request: Exactly three living people: Sinon from his reference in the foreground left, the Trojan guard from his reference foreground right, and the female Trojan citizen from her reference farther back. Sinon calmly opens both EMPTY hands while appealing to the guard, glancing toward the giant wooden horse parked OUTSIDE the open city gate behind them. The guard still holds one upright spear in his anatomical right hand and one shield in his left, listening with cautious attention. The woman watches, unarmed. Medium eye-level cinematic framing prioritizes clear matching faces. The horse can be partly background-obscured, but its rigid plank body, wheeled platform and CLOSED single side hatch are recognizable. No Greek soldier or commander is visible.\nCamera intent: 中景; 50mm，略低机位，缓慢推近. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore."
+    },
+    {
+      "id": "S02",
+      "title": "守卫放行",
+      "scene": "A",
+      "time": "日",
+      "size": "中近景",
+      "camera": "50mm，平视，固定",
+      "actors": [
+        "sinon",
+        "guard",
+        "worker"
+      ],
+      "count": "3 人：西农、守卫、搬运者代表",
+      "refs": [
+        "gate",
+        "sinon",
+        "guard",
+        "worker"
+      ],
+      "beat": "守卫微微点头侧身，让出入口；搬运者抓起牵引绳。",
+      "still": "守卫仍持矛盾侧身让道，搬运者双手抓绳，西农在后侧松一口气。",
+      "start": "搬运者等待守卫决定。",
+      "end": "绳索绷紧，木马开始被接受。",
+      "state": {
+        "gate": "open_permission_granted",
+        "hatch": "closed_offscreen",
+        "ladder": "hidden"
+      },
+      "sound": "绳纤维摩擦、脚步、衣甲轻响。",
+      "action_en": "Exactly three living people: the same Trojan guard, the same Trojan worker and Sinon, with faces and costumes matching their individual references. The guard has nodded and stepped aside, visibly opening a path toward the open city gate while STILL holding his right-hand spear and left-hand shield, no extra hands. The stocky gray-olive-clad worker takes a thick plain haul rope in BOTH hands at the threshold. Sinon stands a little behind, unarmed, with a restrained relieved expression. Medium-close shot makes the consent and rope-grasping readable. The rope exits toward the OFFSCREEN horse; do not invent a miniature horse inside the frame. No female citizen in this shot, no Greek armored man.",
+      "index": 2,
+      "target_duration_s": 5,
+      "timeline_start_s": 5,
+      "timeline_end_s": 10,
+      "frame_file": "storyboard/frames/s02_v1.png",
+      "prompt_file": "storyboard/prompts/s02.txt",
+      "reference_asset_ids": [
+        "gate",
+        "sinon",
+        "guard",
+        "worker"
+      ],
+      "reference_files": [
+        "assets/scenes/gate_day_v1.png",
+        "assets/characters/sinon_v1.png",
+        "assets/characters/trojan_guard_01_v1.png",
+        "assets/characters/trojan_worker_01_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S02, '守卫放行', in a continuous silent Trojan Horse story.\nInput image 1: environment architecture and lighting reference (assets/scenes/gate_day_v1.png).\nInput image 2: exact identity/costume reference for 西农 (assets/characters/sinon_v1.png).\nInput image 3: exact identity/costume reference for 特洛伊守卫 (assets/characters/trojan_guard_01_v1.png).\nInput image 4: exact identity/costume reference for 搬运者代表 (assets/characters/trojan_worker_01_v1.png).\nPrimary request: Exactly three living people: the same Trojan guard, the same Trojan worker and Sinon, with faces and costumes matching their individual references. The guard has nodded and stepped aside, visibly opening a path toward the open city gate while STILL holding his right-hand spear and left-hand shield, no extra hands. The stocky gray-olive-clad worker takes a thick plain haul rope in BOTH hands at the threshold. Sinon stands a little behind, unarmed, with a restrained relieved expression. Medium-close shot makes the consent and rope-grasping readable. The rope exits toward the OFFSCREEN horse; do not invent a miniature horse inside the frame. No female citizen in this shot, no Greek armored man.\nCamera intent: 中近景; 50mm，平视，固定. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore."
+    },
+    {
+      "id": "S03",
+      "title": "木轮越过门槛",
+      "scene": "B",
+      "time": "日",
+      "size": "低机位细节",
+      "camera": "35mm，贴近地面，随轮轻移",
+      "actors": [
+        "worker"
+      ],
+      "count": "1 名搬运者（仅腿部或半身可见）",
+      "refs": [
+        "gate",
+        "horse",
+        "worker"
+      ],
+      "beat": "车轮越过石门槛；绳索和搬运者步伐把静物带进城。",
+      "still": "木轮压过门槛，搬运者朝门内牵绳，木马腿与平台保持刚性。",
+      "start": "轮缘抵到门槛。",
+      "end": "轮子滚入门洞，方向延续向城内。",
+      "state": {
+        "gate": "open",
+        "hatch": "closed_out_of_frame",
+        "ladder": "hidden"
+      },
+      "sound": "木轮闷响、绳索拉紧、鞋底刮石。",
+      "action_en": "One low ground-level cinematic detail shot of the EXACT master horse's near wooden wheel rolling over the worn stone threshold of the open city gate. Show the same timber platform, wheel hub, rigid lower wooden legs and plank materials; the horse's head is intentionally outside this detail framing. The same worker's sandaled feet and lower gray-olive tunic are visible in one instance, walking INTO the arch and pulling the taut rope, not standing on or underneath a wheel. Exactly one living person's partial body, no cloned legs. Make transport by wheels obvious, not movement of wooden horse legs. No hatch opening, no ladder, no Greek soldiers. Keep only the original four-wheeled construction, no additional axles.",
+      "index": 3,
+      "target_duration_s": 5,
+      "timeline_start_s": 10,
+      "timeline_end_s": 15,
+      "frame_file": "storyboard/frames/s03_v1.png",
+      "prompt_file": "storyboard/prompts/s03.txt",
+      "reference_asset_ids": [
+        "gate",
+        "horse",
+        "worker"
+      ],
+      "reference_files": [
+        "assets/scenes/gate_day_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/trojan_worker_01_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S03, '木轮越过门槛', in a continuous silent Trojan Horse story.\nInput image 1: environment architecture and lighting reference (assets/scenes/gate_day_v1.png).\nInput image 2: authoritative wooden horse design reference (assets/scenes/trojan_horse_v1.png).\nInput image 3: exact identity/costume reference for 搬运者代表 (assets/characters/trojan_worker_01_v1.png).\nPrimary request: One low ground-level cinematic detail shot of the EXACT master horse's near wooden wheel rolling over the worn stone threshold of the open city gate. Show the same timber platform, wheel hub, rigid lower wooden legs and plank materials; the horse's head is intentionally outside this detail framing. The same worker's sandaled feet and lower gray-olive tunic are visible in one instance, walking INTO the arch and pulling the taut rope, not standing on or underneath a wheel. Exactly one living person's partial body, no cloned legs. Make transport by wheels obvious, not movement of wooden horse legs. No hatch opening, no ladder, no Greek soldiers. Keep only the original four-wheeled construction, no additional axles.\nCamera intent: 低机位细节; 35mm，贴近地面，随轮轻移. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore."
+    },
+    {
+      "id": "S04",
+      "title": "木马进入广场",
+      "scene": "B",
+      "time": "日",
+      "size": "全景",
+      "camera": "28mm，平视，向右短距离横移",
+      "actors": [
+        "worker",
+        "citizen"
+      ],
+      "count": "3 人：搬运者代表、1 名不同相貌的匿名搬运者、市民代表",
+      "refs": [
+        "day",
+        "horse",
+        "worker",
+        "citizen"
+      ],
+      "beat": "木马从左后城门进入广场，搬运者牵引，市民旁观。",
+      "still": "木马朝右、全身与平台可见；两个搬运者在前方拉绳，市民在喷泉旁。",
+      "start": "木马离开门洞。",
+      "end": "平台抵近喷泉旁的停驻点。",
+      "state": {
+        "gate": "open",
+        "hatch": "closed",
+        "ladder": "hidden"
+      },
+      "sound": "木轮、绳索、喷泉流水、轻脚步。",
+      "action_en": "Wide DAYLIGHT shot of the exact master square: city gate in the LEFT background, simple tiered fountain on the RIGHT, two bronze braziers at the edges, unmarked crimson banners. The exact rigid wooden horse faces RIGHT and has just rolled from the left gate toward its established center-left parking position. Full head, tail, four wooden legs and four-wheeled platform fit within the frame. Exactly three people: the stocky worker from the reference and ONE different anonymous lean older worker with cropped gray hair in plain tan work clothes pull the ropes ahead of the platform; the female citizen from her reference watches beside the fountain with empty hands. Distinct faces, no cloned worker. Hatch fully CLOSED, no ladder, no Greeks visible. Keep the square's established architecture and relative fountain, gate and brazier positions.",
+      "index": 4,
+      "target_duration_s": 5,
+      "timeline_start_s": 15,
+      "timeline_end_s": 20,
+      "frame_file": "storyboard/frames/s04_v1.png",
+      "prompt_file": "storyboard/prompts/s04.txt",
+      "reference_asset_ids": [
+        "day",
+        "horse",
+        "worker",
+        "citizen"
+      ],
+      "reference_files": [
+        "assets/scenes/square_day_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/trojan_worker_01_v1.png",
+        "assets/characters/trojan_citizen_01_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S04, '木马进入广场', in a continuous silent Trojan Horse story.\nInput image 1: environment architecture and lighting reference (assets/scenes/square_day_v1.png).\nInput image 2: authoritative wooden horse design reference (assets/scenes/trojan_horse_v1.png).\nInput image 3: exact identity/costume reference for 搬运者代表 (assets/characters/trojan_worker_01_v1.png).\nInput image 4: exact identity/costume reference for 市民代表 (assets/characters/trojan_citizen_01_v1.png).\nPrimary request: Wide DAYLIGHT shot of the exact master square: city gate in the LEFT background, simple tiered fountain on the RIGHT, two bronze braziers at the edges, unmarked crimson banners. The exact rigid wooden horse faces RIGHT and has just rolled from the left gate toward its established center-left parking position. Full head, tail, four wooden legs and four-wheeled platform fit within the frame. Exactly three people: the stocky worker from the reference and ONE different anonymous lean older worker with cropped gray hair in plain tan work clothes pull the ropes ahead of the platform; the female citizen from her reference watches beside the fountain with empty hands. Distinct faces, no cloned worker. Hatch fully CLOSED, no ladder, no Greeks visible. Keep the square's established architecture and relative fountain, gate and brazier positions.\nCamera intent: 全景; 28mm，平视，向右短距离横移. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore."
+    },
+    {
+      "id": "S05",
+      "title": "暮色停驻",
+      "scene": "C",
+      "time": "暮",
+      "size": "中全景",
+      "camera": "35mm，固定，小幅推近",
+      "actors": [
+        "worker",
+        "citizen"
+      ],
+      "count": "2 人：搬运者代表、市民代表",
+      "refs": [
+        "dusk",
+        "horse",
+        "worker",
+        "citizen"
+      ],
+      "beat": "车轮停下，绳索松弛；搬运者和市民离开，把木马留在暮色里。",
+      "still": "平台已停驻，绳索松垂；两人转身离开，不再拉车。",
+      "start": "木马完成最后一小段移动。",
+      "end": "人物走出附近，木马独自停在喷泉旁。",
+      "state": {
+        "gate": "open_distant",
+        "hatch": "closed",
+        "ladder": "hidden"
+      },
+      "sound": "车轮最后一声轻响、远去脚步、喷泉与晚风。",
+      "action_en": "Medium-wide DUSK view with the same horse parked motionless in the SAME square position, facing right. Exactly two people: the referenced Trojan worker has released the rope, which now lies slack on the stone paving clear of the wheels; the referenced female citizen turns away with him toward the background street. They are leaving, not pulling or climbing. Show the horse's entire platform and rigid body against the established fountain on the right and gate on the left. Warm sunset, cool readable shadows, matching the dusk master. Closed belly hatch, no ladder, no Greek men. No added festival props, animals or cloned bystanders.",
+      "index": 5,
+      "target_duration_s": 5,
+      "timeline_start_s": 20,
+      "timeline_end_s": 25,
+      "frame_file": "storyboard/frames/s05_v1.png",
+      "prompt_file": "storyboard/prompts/s05.txt",
+      "reference_asset_ids": [
+        "dusk",
+        "horse",
+        "worker",
+        "citizen"
+      ],
+      "reference_files": [
+        "assets/scenes/square_dusk_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/trojan_worker_01_v1.png",
+        "assets/characters/trojan_citizen_01_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S05, '暮色停驻', in a continuous silent Trojan Horse story.\nInput image 1: environment architecture and lighting reference (assets/scenes/square_dusk_v1.png).\nInput image 2: authoritative wooden horse design reference (assets/scenes/trojan_horse_v1.png).\nInput image 3: exact identity/costume reference for 搬运者代表 (assets/characters/trojan_worker_01_v1.png).\nInput image 4: exact identity/costume reference for 市民代表 (assets/characters/trojan_citizen_01_v1.png).\nPrimary request: Medium-wide DUSK view with the same horse parked motionless in the SAME square position, facing right. Exactly two people: the referenced Trojan worker has released the rope, which now lies slack on the stone paving clear of the wheels; the referenced female citizen turns away with him toward the background street. They are leaving, not pulling or climbing. Show the horse's entire platform and rigid body against the established fountain on the right and gate on the left. Warm sunset, cool readable shadows, matching the dusk master. Closed belly hatch, no ladder, no Greek men. No added festival props, animals or cloned bystanders.\nCamera intent: 中全景; 35mm，固定，小幅推近. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore."
+    },
+    {
+      "id": "S06",
+      "title": "暮色关城门",
+      "scene": "C",
+      "time": "暮",
+      "size": "中全景",
+      "camera": "35mm，门内朝门外，固定",
+      "actors": [
+        "guard"
+      ],
+      "count": "1 人：守卫",
+      "refs": [
+        "gate",
+        "dusk",
+        "guard"
+      ],
+      "beat": "守卫将城门合拢，用双手把横闩安进内侧卡槽。",
+      "still": "两扇木门完全闭合；守卫双手将一根横闩安入卡槽，矛与盾靠在身边墙脚。",
+      "start": "城门仍敞开，守卫把装备放到门侧。",
+      "end": "两扇木门闭合，横闩落定。",
+      "state": {
+        "gate": "closed_bar_being_seated",
+        "hatch": "closed_offscreen",
+        "ladder": "hidden"
+      },
+      "sound": "木门摩擦、沉重门轴、门闩闷响。",
+      "action_en": "Repair shot S06: heavy timber gate leaves are now COMPLETELY CLOSED, meeting flush at the centre seam with ZERO opening and no view through. The inside face has exactly one horizontal timber locking bar supported by believable dark iron brackets attached to the closed door leaves. Guard, hands and bar must fit into this closed-door physical state.",
+      "index": 6,
+      "target_duration_s": 5,
+      "timeline_start_s": 25,
+      "timeline_end_s": 30,
+      "frame_file": "storyboard/frames/s06_v2.png",
+      "prompt_file": "storyboard/prompts/s06_v2.txt",
+      "reference_asset_ids": [
+        "S06_v1_environment",
+        "guard"
+      ],
+      "reference_files": [
+        "storyboard/frames/s06_v1.png",
+        "assets/characters/trojan_guard_01_v1.png"
+      ],
+      "image_prompt": "Edit input image 1 into the corrected S06 storyboard keyframe. Input image 2 is the exact guard identity/costume reference. Preserve original 16:9 live-action composition, sandstone inside gate, dusk warmth, rust-cloaked guard, plain crimson banners, spear and shield leaning at LEFT wall. Crucial correction: BOTH huge timber leaves are fully shut and meet at a straight centre seam; remove the bright gap and all views through it. The guard faces the shut door with BOTH hands gripping exactly ONE heavy horizontal timber locking bar, seating it into two practical iron sockets bolted to the inside door faces. Bar bridges the closed centre seam and rests securely at chest/waist height, no impossible bar through an open doorway. Guard may show face in natural three-quarter profile. Exactly ONE guard; no Greek characters, no horse, no extra weapons or shield. Spear and round shield remain standing against left stone wall, his hands only hold the bar. Preserve 1970s Shaw Brothers photoreal practical-set color and lighting, real fabric and bronze, subtle 35mm grain. One coherent film photograph with one action state; no caption, text, labels, panels, watermarks or modern mechanism."
+    },
+    {
+      "id": "S07",
+      "title": "夜间静场",
+      "scene": "D",
+      "time": "夜",
+      "size": "全景",
+      "camera": "28mm，沿用广场主机位，极慢推近",
+      "actors": [],
+      "count": "0 人",
+      "refs": [
+        "night",
+        "horse"
+      ],
+      "beat": "夜色压低人声，广场空无一人，木马仍像白天一样静止。",
+      "still": "同一木马、喷泉、火盆；远处城门已关，舱门仍闭合。",
+      "start": "暮色转入深蓝夜色。",
+      "end": "镜头停在木马侧腹，尚无任何人物或梯子。",
+      "state": {
+        "gate": "closed_distant",
+        "hatch": "closed",
+        "ladder": "hidden"
+      },
+      "sound": "夜风、喷泉、两处火盆声。",
+      "action_en": "ONE empty NIGHT master frame of the EXACT referenced square, same camera, framing, horse placement, plank design, closed side hatch, wheels, fountain, braziers, walls and banners as the night master. The only narrative change from that plate is that the distant heavy timber CITY GATE at the left is now fully CLOSED, following the dusk gate-closing shot; preserve its arch and dimensions. Zero living people, zero animals, no humanoid statues. Horse rigid and motionless facing right; hatch flush and completely closed, NO ladder visible. Readable cobalt ambient light and amber firelight like the night master. Unmarked plain crimson banners. Full horse and platform readable. No mysterious soldier silhouettes in the background.",
+      "index": 7,
+      "target_duration_s": 5,
+      "timeline_start_s": 30,
+      "timeline_end_s": 35,
+      "frame_file": "storyboard/frames/s07_v1.png",
+      "prompt_file": "storyboard/prompts/s07.txt",
+      "reference_asset_ids": [
+        "night",
+        "horse"
+      ],
+      "reference_files": [
+        "assets/scenes/square_night_v1.png",
+        "assets/scenes/trojan_horse_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S07, '夜间静场', in a continuous silent Trojan Horse story.\nInput image 1: environment architecture and lighting reference (assets/scenes/square_night_v1.png).\nInput image 2: authoritative wooden horse design reference (assets/scenes/trojan_horse_v1.png).\nPrimary request: ONE empty NIGHT master frame of the EXACT referenced square, same camera, framing, horse placement, plank design, closed side hatch, wheels, fountain, braziers, walls and banners as the night master. The only narrative change from that plate is that the distant heavy timber CITY GATE at the left is now fully CLOSED, following the dusk gate-closing shot; preserve its arch and dimensions. Zero living people, zero animals, no humanoid statues. Horse rigid and motionless facing right; hatch flush and completely closed, NO ladder visible. Readable cobalt ambient light and amber firelight like the night master. Unmarked plain crimson banners. Full horse and platform readable. No mysterious soldier silhouettes in the background.\nCamera intent: 全景; 28mm，沿用广场主机位，极慢推近. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore."
+    },
+    {
+      "id": "S08",
+      "title": "侧舱试探开启",
+      "scene": "D",
+      "time": "夜",
+      "size": "中景",
+      "camera": "50mm，朝同一侧腹缓慢推近",
+      "actors": [
+        "odysseus"
+      ],
+      "count": "1 人：奥德修斯（脸与上身）",
+      "refs": [
+        "night",
+        "horse",
+        "odysseus"
+      ],
+      "anchor": "S07",
+      "beat": "唯一的侧腹舱门向外上掀，奥德修斯从暗处探头查看。",
+      "still": "同一舱门半开，奥德修斯在舱内，只露脸与上身；还没有梯子。",
+      "start": "舱门闭合。",
+      "end": "舱门开启，奥德修斯确认附近无人。",
+      "state": {
+        "gate": "closed_distant",
+        "hatch": "partially_open_upward",
+        "ladder": "hidden"
+      },
+      "sound": "木铰链轻响、火盆、布料微响。",
+      "action_en": "Medium shot of the SAME camera-facing side-belly hatch on the exact parked wooden horse, keeping plank geometry and bronze bands from the night master. The single rectangular hatch is hinged along its TOP edge and has swung outward and UP to a partially open position, revealing a genuinely dark hollow wooden interior. Exactly ONE living man: Odysseus with the precise referenced face, short dark wavy hair, trimmed beard, indigo clothing and worn bronze armor cautiously peers out from INSIDE the hatch. Only his face and upper torso are visible; he is NOT on the paving or outside beside the horse. His hands hold the inner wooden rim, no drawn weapon, no shield. NO ladder is visible yet. Background geography and cobalt/amber lighting derive from the empty night master; city gate remains closed. Crop horse head if needed to make the hatch and identity readable. No extra hatch or doorway.",
+      "index": 8,
+      "target_duration_s": 5,
+      "timeline_start_s": 35,
+      "timeline_end_s": 40,
+      "frame_file": "storyboard/frames/s08_v1.png",
+      "prompt_file": "storyboard/prompts/s08.txt",
+      "reference_asset_ids": [
+        "S07_authoritative_night_square",
+        "horse",
+        "odysseus"
+      ],
+      "reference_files": [
+        "storyboard/frames/s07_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/odysseus_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S08, '侧舱试探开启', in a continuous silent Trojan Horse story.\nInput image 1: authoritative EMPTY NIGHT SQUARE master from shot S07 (storyboard/frames/s07_v1.png); preserve horse scale, parked position, blue/amber lighting, plain banners and CLOSED distant city gate.\nInput image 2: authoritative wooden horse design reference (assets/scenes/trojan_horse_v1.png).\nInput image 3: exact identity/costume reference for 奥德修斯 (assets/characters/odysseus_v1.png).\nPrimary request: Medium shot of the SAME camera-facing side-belly hatch on the exact parked wooden horse, keeping plank geometry and bronze bands from the night master. The single rectangular hatch is hinged along its TOP edge and has swung outward and UP to a partially open position, revealing a genuinely dark hollow wooden interior. Exactly ONE living man: Odysseus with the precise referenced face, short dark wavy hair, trimmed beard, indigo clothing and worn bronze armor cautiously peers out from INSIDE the hatch. Only his face and upper torso are visible; he is NOT on the paving or outside beside the horse. His hands hold the inner wooden rim, no drawn weapon, no shield. NO ladder is visible yet. Background geography and cobalt/amber lighting derive from the empty night master; city gate remains closed. Crop horse head if needed to make the hatch and identity readable. No extra hatch or doorway.\nCamera intent: 中景; 50mm，朝同一侧腹缓慢推近. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore."
+    },
+    {
+      "id": "S09",
+      "title": "放下木梯",
+      "scene": "D",
+      "time": "夜",
+      "size": "中全景",
+      "camera": "40mm，同侧机位，轻微拉开",
+      "actors": [
+        "odysseus"
+      ],
+      "count": "1 人：奥德修斯",
+      "refs": [
+        "night",
+        "horse",
+        "odysseus"
+      ],
+      "anchor": "S07",
+      "beat": "奥德修斯从舱口把一架木梯放到石地，双手稳住梯侧。",
+      "still": "舱门完全上掀；唯一木梯已从舱口下缘斜搭到平台旁石地，奥德修斯仍在舱口。",
+      "start": "舱门打开，木梯尚在舱内。",
+      "end": "梯脚接触石地，形成可攀爬通路。",
+      "state": {
+        "gate": "closed_distant",
+        "hatch": "open_upward",
+        "ladder": "one_deployed_to_paving"
+      },
+      "sound": "木梯擦过舱缘、梯脚落石、衣甲轻响。",
+      "action_en": "Medium-wide NIGHT frame of the SAME side belly hatch on the SAME rigid wooden horse, facing right. One rectangular TOP-hinged hatch is fully opened upward and stays attached, a dark interior behind it. Exactly ONE man, Odysseus with his exact reference face and indigo armor costume, is still at the hatch threshold inside, using BOTH empty hands to position exactly ONE simple sturdy timber ladder. The ladder top rests on the lower hatch ledge; the ladder slopes outward toward the camera and its two feet rest on the STONE PAVING immediately beside the wheeled platform, clear of wheels and not piercing the platform. Whole ladder including both feet visible, sensible rung spacing and adult-climb scale. Odysseus has NO shield and one sword fully sheathed at his anatomical LEFT hip. No man already on the ground, no second soldier, no second ladder. Match established night square, gate closed, fountain on right when within frame.",
+      "index": 9,
+      "target_duration_s": 5,
+      "timeline_start_s": 40,
+      "timeline_end_s": 45,
+      "frame_file": "storyboard/frames/s09_v1.png",
+      "prompt_file": "storyboard/prompts/s09.txt",
+      "reference_asset_ids": [
+        "S07_authoritative_night_square",
+        "horse",
+        "odysseus"
+      ],
+      "reference_files": [
+        "storyboard/frames/s07_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/odysseus_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S09, '放下木梯', in a continuous silent Trojan Horse story.\nInput image 1: authoritative EMPTY NIGHT SQUARE master from shot S07 (storyboard/frames/s07_v1.png); preserve horse scale, parked position, blue/amber lighting, plain banners and CLOSED distant city gate.\nInput image 2: authoritative wooden horse design reference (assets/scenes/trojan_horse_v1.png).\nInput image 3: exact identity/costume reference for 奥德修斯 (assets/characters/odysseus_v1.png).\nPrimary request: Medium-wide NIGHT frame of the SAME side belly hatch on the SAME rigid wooden horse, facing right. One rectangular TOP-hinged hatch is fully opened upward and stays attached, a dark interior behind it. Exactly ONE man, Odysseus with his exact reference face and indigo armor costume, is still at the hatch threshold inside, using BOTH empty hands to position exactly ONE simple sturdy timber ladder. The ladder top rests on the lower hatch ledge; the ladder slopes outward toward the camera and its two feet rest on the STONE PAVING immediately beside the wheeled platform, clear of wheels and not piercing the platform. Whole ladder including both feet visible, sensible rung spacing and adult-climb scale. Odysseus has NO shield and one sword fully sheathed at his anatomical LEFT hip. No man already on the ground, no second soldier, no second ladder. Match established night square, gate closed, fountain on right when within frame.\nCamera intent: 中全景; 40mm，同侧机位，轻微拉开. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore."
+    },
+    {
+      "id": "S10",
+      "title": "奥德修斯下梯",
+      "scene": "D",
+      "time": "夜",
+      "size": "中全景",
+      "camera": "40mm，保持同侧轴线，固定",
+      "actors": [
+        "odysseus"
+      ],
+      "count": "1 人：奥德修斯",
+      "refs": [
+        "night",
+        "horse",
+        "odysseus"
+      ],
+      "anchor": "S07",
+      "beat": "奥德修斯面向梯子，逐级向下，肩侧回望广场。",
+      "still": "奥德修斯位于梯中段，双手抓梯侧，双脚各踩一阶，身体朝向马体。",
+      "start": "奥德修斯从舱口进入梯子。",
+      "end": "下降到梯子下段，准备落地。",
+      "state": {
+        "gate": "closed_distant",
+        "hatch": "open_upward",
+        "ladder": "one_deployed_to_paving"
+      },
+      "sound": "梯级受力轻响、衣甲与皮革摩擦。",
+      "action_en": "NIGHT medium-wide action keyframe. The SAME single ladder runs from the lower edge of the SAME upward-open side belly hatch down to stone paving beside the SAME four-wheel platform. Exactly ONE instance of Odysseus, matching his reference face, indigo tunic, cloak and bronze armor, is HALFWAY DOWN the ladder. He faces TOWARD the horse and ladder for safe descent, with both empty hands gripping its side rails and both feet supported on separate rungs; a natural over-shoulder turn lets part of his face be seen. One sheathed sword at anatomical LEFT hip, no shield, no weapon in a hand. Frame the FULL ladder and the whole climber, even if the horse head is naturally out of this medium frame. Hatch above, paving below, descent direction unambiguous. No additional person at hatch or on ground. Maintain the existing square and readable blue-amber night lighting.",
+      "index": 10,
+      "target_duration_s": 5,
+      "timeline_start_s": 45,
+      "timeline_end_s": 50,
+      "frame_file": "storyboard/frames/s10_v1.png",
+      "prompt_file": "storyboard/prompts/s10.txt",
+      "reference_asset_ids": [
+        "S09_hatch_ladder_environment_master",
+        "horse",
+        "odysseus"
+      ],
+      "reference_files": [
+        "storyboard/frames/s09_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/odysseus_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S10, '奥德修斯下梯', in a continuous silent Trojan Horse story.\nInput image 1: authoritative NIGHT ENVIRONMENT + OPEN HATCH + DEPLOYED LADDER master (storyboard/frames/s09_v1.png). Keep EXACT same ladder design/rung count, top location, feet on paving clear of wheels, horse's flank opening and upward-hinged flap, lighting and stone square. The man/pose in this reference is NOT an additional character; replace/reposition him for this shot.\nInput image 2: authoritative wooden horse design reference (assets/scenes/trojan_horse_v1.png).\nInput image 3: exact identity/costume reference for 奥德修斯 (assets/characters/odysseus_v1.png).\nPrimary request: NIGHT medium-wide action keyframe. The SAME single ladder runs from the lower edge of the SAME upward-open side belly hatch down to stone paving beside the SAME four-wheel platform. Exactly ONE instance of Odysseus, matching his reference face, indigo tunic, cloak and bronze armor, is HALFWAY DOWN the ladder. He faces TOWARD the horse and ladder for safe descent, with both empty hands gripping its side rails and both feet supported on separate rungs; a natural over-shoulder turn lets part of his face be seen. One sheathed sword at anatomical LEFT hip, no shield, no weapon in a hand. Frame the FULL ladder and the whole climber, even if the horse head is naturally out of this medium frame. Hatch above, paving below, descent direction unambiguous. No additional person at hatch or on ground. Maintain the existing square and readable blue-amber night lighting.\nCamera intent: 中全景; 40mm，保持同侧轴线，固定. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore.\nUse input 1 as a real set continuation. Camera may move closer naturally but do not redesign the ladder or relocate it, enlarge the hatch into a tall doorway, mirror the horse, move the fountain, or keep an extra reference man at the opening. Maintain sensible man-to-hatch and man-to-ladder scale. The climber faces the horse, descending down toward stone paving. Identity comes from the dedicated character input(s)."
+    },
+    {
+      "id": "S11",
+      "title": "落地示意",
+      "scene": "D",
+      "time": "夜",
+      "size": "中景",
+      "camera": "50mm，略低机位，短推近",
+      "actors": [
+        "odysseus"
+      ],
+      "count": "1 人：奥德修斯",
+      "refs": [
+        "night",
+        "horse",
+        "odysseus"
+      ],
+      "anchor": "S07",
+      "beat": "奥德修斯踩到石地，停一下，抬起空手向舱内示意安全。",
+      "still": "奥德修斯站在梯脚旁石地，抬起一只空手；舱口里没有另一个复制人物。",
+      "start": "最后一阶下梯。",
+      "end": "空手做出继续的手势，目光转向城门。",
+      "state": {
+        "gate": "closed_distant",
+        "hatch": "open_upward",
+        "ladder": "one_deployed_to_paving"
+      },
+      "sound": "鞋底落石、夜风、喷泉、轻衣甲响。",
+      "action_en": "Exactly ONE living man in the NIGHT square: Odysseus is now fully standing on the STONE PAVING beside the foot of the single deployed wooden ladder, having finished descending. Match his precise face and indigo bronze costume; both feet planted on paving, no foot still on a rung. He raises one clearly EMPTY hand in a small silent 'come down' signal toward the OPEN belly hatch above, the other hand empty and relaxed. The single ladder and same timber platform establish the landing location behind him; hatch stays upward open, with NO visible second figure inside yet. One sword fully sheathed at anatomical LEFT hip, NO shield, no duplicated Odysseus at hatch. Medium cinematic portrait with enough surrounding ladder/platform to read the action and look toward the closed city gate.",
+      "index": 11,
+      "target_duration_s": 5,
+      "timeline_start_s": 50,
+      "timeline_end_s": 55,
+      "frame_file": "storyboard/frames/s11_v1.png",
+      "prompt_file": "storyboard/prompts/s11.txt",
+      "reference_asset_ids": [
+        "S09_hatch_ladder_environment_master",
+        "horse",
+        "odysseus"
+      ],
+      "reference_files": [
+        "storyboard/frames/s09_v1.png",
+        "assets/scenes/trojan_horse_v1.png",
+        "assets/characters/odysseus_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S11, '落地示意', in a continuous silent Trojan Horse story.\nInput image 1: authoritative NIGHT ENVIRONMENT + OPEN HATCH + DEPLOYED LADDER master (storyboard/frames/s09_v1.png). Keep EXACT same ladder design/rung count, top location, feet on paving clear of wheels, horse's flank opening and upward-hinged flap, lighting and stone square. The man/pose in this reference is NOT an additional character; replace/reposition him for this shot.\nInput image 2: authoritative wooden horse design reference (assets/scenes/trojan_horse_v1.png).\nInput image 3: exact identity/costume reference for 奥德修斯 (assets/characters/odysseus_v1.png).\nPrimary request: Exactly ONE living man in the NIGHT square: Odysseus is now fully standing on the STONE PAVING beside the foot of the single deployed wooden ladder, having finished descending. Match his precise face and indigo bronze costume; both feet planted on paving, no foot still on a rung. He raises one clearly EMPTY hand in a small silent 'come down' signal toward the OPEN belly hatch above, the other hand empty and relaxed. The single ladder and same timber platform establish the landing location behind him; hatch stays upward open, with NO visible second figure inside yet. One sword fully sheathed at anatomical LEFT hip, NO shield, no duplicated Odysseus at hatch. Medium cinematic portrait with enough surrounding ladder/platform to read the action and look toward the closed city gate.\nCamera intent: 中景; 50mm，略低机位，短推近. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore.\nUse input 1 as a real set continuation. Camera may move closer naturally but do not redesign the ladder or relocate it, enlarge the hatch into a tall doorway, mirror the horse, move the fountain, or keep an extra reference man at the opening. Maintain sensible man-to-hatch and man-to-ladder scale. The climber faces the horse, descending down toward stone paving. Identity comes from the dedicated character input(s)."
+    },
+    {
+      "id": "S12",
+      "title": "随队士兵跟出",
+      "scene": "D",
+      "time": "夜",
+      "size": "中全景",
+      "camera": "40mm，与下梯镜保持同侧，固定",
+      "actors": [
+        "odysseus",
+        "soldier"
+      ],
+      "count": "2 人：奥德修斯、随队士兵",
+      "refs": [
+        "night",
+        "horse",
+        "odysseus",
+        "soldier"
+      ],
+      "anchor": "S07",
+      "beat": "随队士兵沿同一梯子下来，奥德修斯在地面警戒。",
+      "still": "随队士兵在梯中段、盾在背后；奥德修斯在地面望向城门。",
+      "start": "奥德修斯已经落地，随队士兵进入梯子。",
+      "end": "随队士兵接近地面，两人准备离开木马。",
+      "state": {
+        "gate": "closed_distant",
+        "hatch": "open_upward",
+        "ladder": "one_deployed_to_paving"
+      },
+      "sound": "梯级、甲片、布料与两人的轻脚步。",
+      "action_en": "Exactly TWO distinct men in one readable NIGHT action frame. The referenced young clean-shaven GREEK SOLDIER in muted blue-gray clothing and simple bronze armor is halfway DOWN the SAME single wooden ladder from the SAME upward-open belly hatch, facing the ladder and gripping both rails with BOTH EMPTY hands. His ONE round bronze-edged shield is visibly strapped on his BACK, never handheld, and his sword remains fully sheathed at anatomical LEFT hip. The referenced bearded indigo-clad ODYSSEUS is already standing on paving beside the ladder, looking toward the closed city gate, empty hands, NO shield and a sheathed left-hip sword. Match both individual faces, no swapping cloaks or armor, no cloned man. Whole ladder, hatch lower ledge, platform and both men's feet within this medium-wide frame. Exactly one hatch and one ladder. No Agamemnon or Sinon.",
+      "index": 12,
+      "target_duration_s": 5,
+      "timeline_start_s": 55,
+      "timeline_end_s": 60,
+      "frame_file": "storyboard/frames/s12_v2.png",
+      "prompt_file": "storyboard/prompts/s12_v2.txt",
+      "reference_asset_ids": [
+        "S12_v1_target",
+        "soldier"
+      ],
+      "reference_files": [
+        "storyboard/frames/s12_v1.png",
+        "assets/characters/greek_soldier_01_v1.png"
+      ],
+      "image_prompt": "Edit input image 1, shot S12. Input image 2 gives exact younger soldier identity/costume. Make a local, physical climbing-pose correction ONLY to the younger clean-shaven soldier ON THE LADDER: turn his whole body around to FACE THE LADDER AND THE WOODEN HORSE, so the camera sees his BACK and three-quarter profile as he DESCENDS. Both empty hands grip the two ladder rails. Both sandalled feet point TOWARD the horse, each on a separate rung; knees/hips naturally bend toward ladder, torso stays close to the rails. His one circular bronze/wood shield is strapped FLAT on his BACK, visible from camera, not held; one sword fully SHEATHED at his anatomical LEFT hip, with rear-view camera it appears on left side of his body. Head may glance down over one shoulder in a natural partial profile; preserve the young clean-shaven face, short black hair, gray-blue costume and plain bronze armor from input 2. Keep the bearded indigo Odysseus on stone ground at frame LEFT completely unchanged. Exactly TWO men. Preserve the entire wooden horse, platform, wheels, SAME open top-hinged side-belly flap, SAME single ladder size/rungs/feet location, gate CLOSED at left rear, fountain at right, crimson plain banners, blue night/amber brazier lighting, camera framing and 16:9 aspect. No extra man at hatch. Do not mirror image, redesign horse or armor, add weapon in hands, captions, labels, panel, modern item or watermark. Photoreal live-action 1970s Shaw Brothers practical set with fine 35mm grain."
+    },
+    {
+      "id": "S13",
+      "title": "解除城门横闩",
+      "scene": "E",
+      "time": "夜",
+      "size": "中景",
+      "camera": "40mm，门内侧，固定",
+      "actors": [
+        "odysseus",
+        "soldier"
+      ],
+      "count": "2 人：奥德修斯、随队士兵",
+      "refs": [
+        "gate",
+        "night",
+        "odysseus",
+        "soldier"
+      ],
+      "beat": "两人到达门内侧，合力把木横闩从卡槽中抬起。",
+      "still": "门扇仍闭合，两人双手抬起横闩；剑仍入鞘，盾仍背负。",
+      "start": "两人抵达闭合城门。",
+      "end": "横闩脱离卡槽，木门可开启。",
+      "state": {
+        "gate": "closed_bar_being_removed",
+        "hatch": "open_offscreen",
+        "ladder": "deployed_offscreen"
+      },
+      "sound": "木横闩摩擦、轻喘气、皮革与甲片响。",
+      "action_en": "View from INSIDE Troy toward the now fully CLOSED pair of heavy timber gate leaves under the established sandstone arch, at NIGHT. Same gate architectural design, plain crimson unmarked cloth banners, readable cobalt night fill with warm spill from the square offscreen. Exactly TWO men: Odysseus in indigo and the younger clean-shaven Greek soldier in gray-blue, faces and costume matching their references. Both use their EMPTY hands to lift ONE heavy horizontal timber locking bar out of its practical wooden sockets on the INNER gate face. Bar visibly raised from sockets, believable hand contact and weight. Gate leaves remain CLOSED at this frame. Both swords fully sheathed at anatomical LEFT hip; Odysseus has no shield, the soldier's one round shield stays on his BACK. No guard, Sinon or Agamemnon in this view; no horse squeezed beside the gate, no modern lock or extra gate.",
+      "index": 13,
+      "target_duration_s": 5,
+      "timeline_start_s": 60,
+      "timeline_end_s": 65,
+      "frame_file": "storyboard/frames/s13_v1.png",
+      "prompt_file": "storyboard/prompts/s13.txt",
+      "reference_asset_ids": [
+        "S06_closed_gate_inside_master",
+        "night",
+        "odysseus",
+        "soldier"
+      ],
+      "reference_files": [
+        "storyboard/frames/s06_v2.png",
+        "assets/scenes/square_night_v1.png",
+        "assets/characters/odysseus_v1.png",
+        "assets/characters/greek_soldier_01_v1.png"
+      ],
+      "image_prompt": "Use case: historical-scene.\nAsset type: ONE standalone cinematic storyboard keyframe, landscape 16:9, high detail. This is shot S13, '解除城门横闩', in a continuous silent Trojan Horse story.\nInput image 1: authoritative INSIDE CLOSED GATE set from corrected S06 (storyboard/frames/s06_v2.png), preserve timber leaf joints, closed centre seam, iron bar sockets, stone sidewalls, plain crimson banners and camera axis; change dusk to night.\nInput image 2: NIGHT LIGHTING palette reference only (assets/scenes/square_night_v1.png); no horse or fountain in this gate close frame.\nInput image 3: exact identity/costume reference for 奥德修斯 (assets/characters/odysseus_v1.png).\nInput image 4: exact identity/costume reference for 希腊随队士兵 (assets/characters/greek_soldier_01_v1.png).\nPrimary request: View from INSIDE Troy toward the now fully CLOSED pair of heavy timber gate leaves under the established sandstone arch, at NIGHT. Same gate architectural design, plain crimson unmarked cloth banners, readable cobalt night fill with warm spill from the square offscreen. Exactly TWO men: Odysseus in indigo and the younger clean-shaven Greek soldier in gray-blue, faces and costume matching their references. Both use their EMPTY hands to lift ONE heavy horizontal timber locking bar out of its practical wooden sockets on the INNER gate face. Bar visibly raised from sockets, believable hand contact and weight. Gate leaves remain CLOSED at this frame. Both swords fully sheathed at anatomical LEFT hip; Odysseus has no shield, the soldier's one round shield stays on his BACK. No guard, Sinon or Agamemnon in this view; no horse squeezed beside the gate, no modern lock or extra gate.\nCamera intent: 中景; 40mm，门内侧，固定. Frame ONE key moment, never several action stages in one image.\nStyle/medium: Photorealistic live-action frame from an imagined 1970s Shaw Brothers historical studio film set in ancient Troy: practical handmade sandstone and timber sets, real woven fabric and aged bronze, theatrical hard key with readable fill, saturated restrained 35mm colors, subtle fine film grain. Match the supplied character faces and costumes; not an illustration, modern blockbuster CGI, videogame or fantasy painting.\nGlobal continuity: all banners are plain dark crimson without sun emblems or writing. Horse is a rigid wooden construction on one four-wheeled platform, never a living animal. Greek swords stay fully sheathed at anatomical LEFT hips; hands are empty unless gripping ladder, door or locking bar. Odysseus and Agamemnon never own shields; the young Greek soldier owns exactly one back-strapped shield. Character count and hatch/ladder/gate state must follow this shot, even if a reference plate shows another state.\nConstraints: one coherent live-action photograph only, no text, no captions, no labels, no shot number printed, no panels or montage, no black frame or watermark. No Achilles, no modern objects, no extra duplicate faces, characters, hatch, ladder, sword or shield. Reference sheets are NOT contents of the scene. No combat or gore.\nThis is the SAME interior gate view as S06 at NIGHT. The Trojan guard, his spear and his shield are now ABSENT. Replace him with exactly the two distinct Greek men named in inputs 3 and 4. One long bar being lifted together clear of its two sockets. No daytime glow. Bearded indigo Odysseus on frame LEFT, younger clean-shaven gray-blue soldier on frame RIGHT with shield on his BACK, not in either hand. Both swords fully sheathed on anatomical LEFT hips."
+    },
+    {
+      "id": "S14",
+      "title": "阿伽门农门外待命",
+      "scene": "F",
+      "time": "夜",
+      "size": "中全景",
+      "camera": "50mm，城外反打，缓慢推近",
+      "actors": [
+        "agamemnon"
+      ],
+      "count": "4 人：阿伽门农、3 名不同相貌的匿名接应士兵",
+      "refs": [
+        "gate",
+        "agamemnon"
+      ],
+      "beat": "城外，阿伽门农压低脚步，带队停在闭合城门前。",
+      "still": "红披风统帅在前，三名接应士兵隐在后方，所有人面向闭合城门。",
+      "start": "接应队伍靠近城门。",
+      "end": "阿伽门农停步等待，视线固定在门缝。",
+      "state": {
+        "gate": "closed_seen_from_outside",
+        "hatch": "open_offscreen",
+        "ladder": "deployed_offscreen"
+      },
+      "sound": "夜风、克制的脚步、盔甲轻响。",
+      "action_en": "NIGHT reverse angle OUTSIDE Troy's same arched gate, the heavy timber leaves fully CLOSED. Widen the gate environment reference for staging and remove ALL sun emblems from its crimson banners, which are plain cloth like the square. The ONE referenced AGAMEMNON, older broad-faced gray-bearded commander in ornate bronze lion cuirass and crimson cloak, waits in the foreground looking toward the gate, his face completely visible and matching the reference. One sword fully sheathed at anatomical LEFT hip, NO shield, both hands empty. Exactly THREE other anonymous Greek reinforcement soldiers stand farther back in muted practical bronze armor, helmets and different silhouettes; no repeated Agamemnon face, no duplicate of the individually referenced Greek soldier who is inside Troy. Total FOUR living people. Quiet tension, blue night fill and gentle warm rim, readable faces. No horse outside, no Sinon or Odysseus, no charge or fighting.",
+      "index": 14,
+      "target_duration_s": 5,
+      "timeline_start_s": 65,
+      "timeline_end_s": 70,
+      "frame_file": "storyboard/frames/s14_v2.png",
+      "prompt_file": "storyboard/prompts/s14_v2.txt",
+      "reference_asset_ids": [
+        "S14_v1_target",
+        "agamemnon"
+      ],
+      "reference_files": [
+        "storyboard/frames/s14_v1.png",
+        "assets/characters/agamemnon_v1.png"
+      ],
+      "image_prompt": "Edit input image 1, S14. Input image 2 is the original Agamemnon identity/costume/equipment asset. Make ONE localized equipment continuity fix on the foreground red-cloaked older commander. Move his only sheathed sword/scabbard from his current near/anatomical RIGHT hip (screen LEFT side under his right hand) to his anatomical LEFT hip, the far side of his body on screen RIGHT alongside his left arm, matching input 2. Remove the old near-side sword entirely. Exactly ONE sword, fully SHEATHED, no blade exposed, no weapon held. The far-side scabbard may be partly naturally hidden by his left arm/crimson cloak; do not add a second sword for visibility. Preserve his face, gray-black hair and beard, lion-engraved bronze armor, crimson cloak, exact pose and gaze to CLOSED gate. Preserve exactly THREE distinct supporting soldiers behind him, their original poses and equipment. Preserve whole night exterior sandstone gate set, closed gate without inner locking bar, plain dark crimson banners, blue night sky and amber firelight, camera and 16:9 framing. No other changes, no extra people/shields, no text/labels/panels/watermarks. Photorealistic live-action 1970s Shaw Brothers practical set and fine grain."
+    },
+    {
+      "id": "S15",
+      "title": "城门重开",
+      "scene": "E",
+      "time": "夜",
+      "size": "中全景",
+      "camera": "35mm，保持门内机位，缓慢拉开",
+      "actors": [
+        "odysseus",
+        "soldier"
+      ],
+      "count": "2 人：奥德修斯、随队士兵",
+      "refs": [
+        "gate",
+        "night",
+        "odysseus",
+        "soldier"
+      ],
+      "anchor": "S13",
+      "beat": "横闩已靠墙，两人把门扇打开，城外黑暗出现在门洞中。",
+      "still": "门扇打开形成通路，奥德修斯与士兵分在两侧，阿伽门农暂未进入画面。",
+      "start": "横闩解除，两人推门。",
+      "end": "门洞打开，可以容人通过。",
+      "state": {
+        "gate": "opening_to_open",
+        "hatch": "open_offscreen",
+        "ladder": "deployed_offscreen"
+      },
+      "sound": "门轴低响、木门摩擦、门外夜风。",
+      "action_en": "Continue the INSIDE-gate camera axis and exact sandstone arch and timber-door construction from the earlier locking-bar frame. At NIGHT the same TWO men, Odysseus and the young Greek soldier, have set the ONE removed locking bar safely leaning against the inside wall, visibly out of the path. They now push the two timber gate leaves apart with their EMPTY hands, one man on each side of the opening. A clear dark passage to outside is opening between the doors. Match exact faces, indigo versus gray-blue costumes, sheathed swords at anatomical LEFT hip; Odysseus no shield, the soldier's ONE shield remains on his BACK. Exactly TWO people visible; reinforcements remain offscreen until the next shot. No guard, Sinon, extra bar, horse or additional door. Plain crimson banners and same blue/amber night treatment.",
+      "index": 15,
+      "target_duration_s": 5,
+      "timeline_start_s": 70,
+      "timeline_end_s": 75,
+      "frame_file": "storyboard/frames/s15_v1.png",
+      "prompt_file": "storyboard/prompts/s15.txt",
+      "reference_asset_ids": [
+        "S13_inside_gate_night_master",
+        "odysseus",
+        "soldier"
+      ],
+      "reference_files": [
+        "storyboard/frames/s13_v1.png",
+        "assets/characters/odysseus_v1.png",
+        "assets/characters/greek_soldier_01_v1.png"
+      ],
+      "image_prompt": "ONE standalone 16:9 photoreal live-action keyframe for shot S15 城门重开, continuing the silent Trojan Horse story. Input image 1 is authoritative INSIDE GATE NIGHT set and character placement from S13; keep same timber door design, iron sockets, sandstone sidewalls, plain crimson banners and amber torch with blue ambient night fill. Input 2 is exact Odysseus identity and costume. Input 3 is exact young Greek soldier identity and costume. Continue same camera axis, camera pulled back slightly to medium-wide 35mm. Advance ONLY the physical story state: the ONE locking timber bar has been removed, now leaning vertically against the inside LEFT stone wall clear of walking path. Both door leaves are OPEN, spread to either side, revealing a clear passage out into dark countryside under BLUE NIGHT SKY. Exactly TWO men: dark-bearded indigo Odysseus at frame LEFT pushes/holds left leaf with BOTH empty hands; clean-shaven younger gray-blue soldier at frame RIGHT pushes/holds right leaf with BOTH empty hands. Bodies lean naturally toward door edges, arms/hands contact timber, faces may remain recognizable in partial profile. Preserve distinction between men. Odysseus has NO shield. Soldier's exactly ONE round shield stays strapped to his BACK. Both swords fully SHEATHED at anatomical LEFT hips, may be naturally partially obscured by cloak; no swords in hands, no extra weapons. Remove any locking bar spanning the opening or floating above it. No duplicate bar, no guard/spear/shield from dusk guard, no Agamemnon or reinforcements visible yet, no horse/fountain, no additional people. Outside is dark ground and countryside only, not a second city courtyard. One moment, coherent door mechanics and empty clear passage. 1970s Shaw Brothers historical studio practical sandstone and timber, real fabric/bronze, theatrical hard light with readable fill, saturated 35mm color and subtle fine grain. No text, shot-number, panels, captions, watermarks, modern mechanism, Achilles, combat or gore."
+    },
+    {
+      "id": "S16",
+      "title": "门内接应",
+      "scene": "E",
+      "time": "夜",
+      "size": "中全景",
+      "camera": "40mm，同一门内轴线，固定收束",
+      "actors": [
+        "agamemnon",
+        "odysseus",
+        "soldier"
+      ],
+      "count": "3 人：阿伽门农、奥德修斯、随队士兵",
+      "refs": [
+        "gate",
+        "night",
+        "agamemnon",
+        "odysseus",
+        "soldier"
+      ],
+      "anchor": "S15",
+      "beat": "阿伽门农跨过门槛，与奥德修斯交换一个点头；随队士兵守住通路。",
+      "still": "统帅已经跨入城内，奥德修斯站门侧，随队士兵在另一侧，门洞敞开。",
+      "start": "门洞打开，阿伽门农迈步进入。",
+      "end": "两名主角无声点头，接应完成，画面停住。",
+      "state": {
+        "gate": "open",
+        "hatch": "open_offscreen",
+        "ladder": "deployed_offscreen"
+      },
+      "sound": "稳重脚步、甲片、城外夜风；声音自然收束。",
+      "action_en": "Final NIGHT medium-wide frame from INSIDE Troy at the SAME open city gate and same camera axis as the gate-opening shot. Exactly THREE distinct living men: the older gray-bearded crimson-cloaked AGAMEMNON has crossed the stone threshold and stands just INSIDE the arch, exchanging a restrained nod with the bearded indigo-clad ODYSSEUS beside one gate leaf. The clean-shaven gray-blue GREEK SOLDIER stands by the OTHER leaf maintaining the passage. Each face and costume must match its own supplied reference, no swapping, no duplicating. All three swords remain fully sheathed at anatomical LEFT hip, both commanders have NO shields and empty hands, the young soldier's ONE round shield is on his BACK and his hands empty. Gate leaves stay open, removed locking bar stays leaning safely on inside wall. Plain crimson banners, blue ambient and warm practical rim light. No handshake, battle, crowd, horse, Sinon or fourth person in this closing frame.",
+      "index": 16,
+      "target_duration_s": 5,
+      "timeline_start_s": 75,
+      "timeline_end_s": 80,
+      "frame_file": "storyboard/frames/s16_v1.png",
+      "prompt_file": "storyboard/prompts/s16.txt",
+      "reference_asset_ids": [
+        "S15_open_inside_gate_master",
+        "agamemnon",
+        "odysseus",
+        "soldier"
+      ],
+      "reference_files": [
+        "storyboard/frames/s15_v1.png",
+        "assets/characters/agamemnon_v1.png",
+        "assets/characters/odysseus_v1.png",
+        "assets/characters/greek_soldier_01_v1.png"
+      ],
+      "image_prompt": "Create ONE standalone 16:9 live-action storyboard keyframe, shot S16 门内接应, the final beat of a silent Trojan Horse sequence. Input 1 is authoritative OPEN INSIDE GATE NIGHT set, camera axis, door positions and the two existing Greek men from S15. Input 2 is exact Agamemnon older commander face/body, gray-black full beard and wavy hair, crimson cloak/tunic and lion-decorated bronze cuirass. Input 3 is exact Odysseus dark short waves and trimmed beard, indigo tunic/cloak and practical bronze armor. Input 4 is exact younger clean-shaven Greek soldier, short black hair, gray-blue clothing, bronze cuirass, one back-strapped shield. Continue input 1 naturally: same sandstone walls and plain crimson flags, same left wall torch, same TWO open door leaves, same removed SINGLE timber locking bar leaning at LEFT stone wall outside walking path, blue night countryside visible through passage. Camera still INSIDE looking OUT, gently wider medium-wide 40mm so three adult bodies and threshold are readable. Exactly THREE people in ONE moment: Agamemnon has just CROSSED THE THRESHOLD FROM OUTSIDE TO INSIDE and is now standing on the INSIDE stone paving near center, one step nearer camera than door leaves, red cloak trailing. He turns his face slightly toward frame LEFT and exchanges a quiet acknowledging nod and eye contact with Odysseus. Odysseus stands INSIDE at frame LEFT beside left gate leaf, looks toward Agamemnon, empty hands relaxed/released from door. Young soldier stays at frame RIGHT by other door, one empty hand lightly steadying gate, other empty hand lowered, body partly facing outside so his ONE shield strapped on BACK remains visible. No fourth person, no anonymous reinforcements in passage or behind commander, no duplicated Odysseus. Distinguish older gray-bearded RED commander from younger dark-bearded INDIGO Odysseus and clean-shaven GRAY-BLUE soldier. ALL THREE have exactly one sword FULLY SHEATHED on their own anatomical LEFT hip; in front view the red commander's scabbard is on screen RIGHT alongside his LEFT hand and may be partly hidden by cloak. NONE holds a sword. Agamemnon and Odysseus have NO shield. Only the young soldier has ONE BACK shield. No handshake, no fighting, no gore, no raised weapons. Do not close gate, reinstall bar, add horse/fountain, modern item, text/caption/label/shot number, panel, watermark, extra shield or sword. Photoreal frame from imagined 1970s Shaw Brothers historical studio film: practical hand-built timber and sandstone, true woven fabric/aged bronze, theatrical hard warm torch key with blue ambient readable fill, saturated restrained 35mm color and subtle film grain. Show one coherent photograph of the rendezvous, not a multi-stage montage."
+    }
+  ],
+  "video_generated": false,
+  "mode_selection": {
+    "exposed_by_tool": false,
+    "explicit_quality_parameter_sent": false,
+    "actual_quality": null,
+    "actual_fast_or_detailed_mode": null,
+    "note": "内置image_gen仅开放提示词、参考图与透明背景；未返回模式或具体模型。不能据出图耗时推断精细或快生图。"
+  }
+}

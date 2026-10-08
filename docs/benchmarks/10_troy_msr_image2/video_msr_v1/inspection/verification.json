@@ -1,0 +1,280 @@
+{
+  "status": "complete",
+  "inspected": 20,
+  "expected": 20,
+  "clips": [
+    {
+      "id": "S01",
+      "title": "西农陈情",
+      "sha256": "6928168b1000646b2bb9595b25d0f7f994038d39d00a6fcb81431e556fd8a6f7",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 39.23750305175781,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S02",
+      "title": "守卫放行",
+      "sha256": "b2bc2094a5ca2c9797ecd483f548e9d6b420e61a969801ad67402c5f2b165c1f",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 51.03402328491211,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S03",
+      "title": "木轮越过门槛",
+      "sha256": "9739fd01a55c85dae09b0d8fef40bc84fa545356989503493c0ddc9ed6e3c80c",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 44.95613098144531,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S04",
+      "title": "木马进入广场",
+      "sha256": "dae5b51bf9c47ada1b9e48b8e8f012451f7d54ff4413d661e0b5bc1308bf0d32",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 26.82765007019043,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S05",
+      "title": "暮色停驻",
+      "sha256": "9446f5acb0a6672d10fb5cd912e40c15a22aeb7112b683570f3cbc20d3f35bcb",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 29.71738624572754,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S06",
+      "title": "暮色关城门",
+      "sha256": "38f9dac2ca8f82cfa52ef1add6ab28a5e3670c25830ad0d517e7a3b45cab268e",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 25.242128372192383,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S07",
+      "title": "夜间静场",
+      "sha256": "ec7557fa89452a912d2b920045875b471be5a0c4afa0c6de7607b0c0767ab3e0",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 25.814979553222656,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S08",
+      "title": "侧舱试探开启",
+      "sha256": "7b246feedd76b27616bb152faed89b24eb932a40ea6438fadc8eba0c384847e6",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 35.30572509765625,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S09",
+      "title": "放下木梯",
+      "sha256": "a63a39a8dffa470a09ce8fb20a2362dc6a3d7113177c3580e6dfbe8f921e5a66",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 30.964214324951172,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S10",
+      "title": "奥德修斯下梯",
+      "sha256": "e89a7918e99d713d01867dbade1093593e266c9d77212e623d14cb34160b359d",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 32.50423812866211,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S11",
+      "title": "落地示意",
+      "sha256": "a60c72845ce0f47f2025f937519d83879324779993e0ed18c2e76795fa889dd2",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 35.334190368652344,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S12",
+      "title": "随队士兵跟出",
+      "sha256": "39acef8601698ad19da21e0e49afe0e2d65fd20fe66758e8beab26e849ff5a28",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 31.983558654785156,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S13",
+      "title": "伏兵集结备战",
+      "sha256": "4b135e16665e4820317360d3d4d138a09b8dad171b33216e7fc6b5c539de489d",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 27.488500595092773,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S14",
+      "title": "守军发现突袭",
+      "sha256": "e5213e81edb77a3e986850c7d9ce2f90b6e4977474d65202846aadd9331b4293",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 28.194765090942383,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S15",
+      "title": "门内短兵相接",
+      "sha256": "8ec16e7d23ade0af70a136a5dd4ee62af9921dcfadb2521131e5dbc45edaaf97",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 21.274944305419922,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S16",
+      "title": "掩护之下解除横闩",
+      "sha256": "fd4270bcaab4aa0bb7e8e071cd71106c488183510abfd5e1d11eab5d7d8881c6",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 31.04926872253418,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S17",
+      "title": "阿伽门农率军待突破",
+      "sha256": "f459a45283ed008c787e51f53dec881a4f2eb0f1a26fcfb1d867e420c8497548",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 27.112815856933594,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S18",
+      "title": "交战中推开城门",
+      "sha256": "3f51aaa12ae8ad8d92a60c974e0848af471c82a14b36e195eacfd6625f368815",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 41.44834899902344,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S19",
+      "title": "军团冲门交锋",
+      "sha256": "aee63db4ab4a1f8361ea41c27331813bc3cd4bedab7f5a648c130e0b277a7bc8",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 28.059919357299805,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    },
+    {
+      "id": "S20",
+      "title": "广场两军大规模混战",
+      "sha256": "3d05777c6aba8fce530046da57ecc27193c91fb1e6afeda065f20947567c3fd4",
+      "copy_matches": true,
+      "sampled_times_s": [
+        0.3,
+        2.5,
+        4.7
+      ],
+      "first_last_pixel_mae_255": 25.072546005249023,
+      "motion_metric_scope": "pixel variation includes camera and lighting; does not prove action compliance"
+    }
+  ],
+  "film": {
+    "sha256": "41bbae62134b92e7832795062e7e7baa892bef0faf0f29b3db5ddc078b26af1b",
+    "copy_matches": true,
+    "frames": 2400,
+    "duration_s": 100,
+    "fps": 24,
+    "size": [
+      768,
+      432
+    ],
+    "channels": 2,
+    "full_decode": true
+  }
+}

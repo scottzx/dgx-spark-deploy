@@ -1,0 +1,41 @@
+{
+  "engine": "joyhallo",
+  "product": "original",
+  "input_sha256": {
+    "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+    "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+    "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+    "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+  },
+  "commit": "dbbe5b2db754ff1e707bdde3fc41a23b585aea17",
+  "shared_model_load_seconds": 11.910953464917839,
+  "render_seconds": 992.2942709946074,
+  "peak_cuda_allocated_gib": 7.779936790466309,
+  "native_output": "/home/admin/avatar-company-tests/outputs/joyhallo/original/native.mp4",
+  "scope": "Official audio-driven portrait model, face cropped from the original generated reference. Does not generate product actions.",
+  "portrait_crop_xyxy": [
+    259,
+    0,
+    515,
+    255
+  ],
+  "portrait_reference_sha256": "8920cf7050105cb43132dd89f3d8a6ef8ef92dcb90d9b1a7329846f90109123a",
+  "native_frames": 201,
+  "steps_per_chunk": 40,
+  "guidance_scale": 3.5,
+  "model_generates_product_actions": false,
+  "original_LTX_actions_preserved": false,
+  "compatibility": [
+    "CPU ONNX face detection/embedding",
+    "MediaPipe 1.1.0 ARM64 official wheel",
+    "Wav2Vec2 eager attention",
+    "Published inference without training optimizer/dataloader",
+    "Clean speech without source separation",
+    "PyTorch SDPA attention adapter where required"
+  ],
+  "native_duration_seconds": 8.04,
+  "native_output_sha256": "da1611db0f96c0415976f2909847b7ebb3a59edde279950c50278fd8d352390f",
+  "video_sha256": "a0ffbabe2a45658ad2ca8f6a43f907df35de0df678fdd23c0b551bafc4aa7681",
+  "final_frame_hold_seconds": 0.0,
+  "normalization_note": "Trim only; no tail hold."
+}

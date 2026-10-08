@@ -1,0 +1,37 @@
+{
+  "id": "S16_start_v2",
+  "title": "双人抬闩与掩护",
+  "output": "keyframes/S16_start_v2.png",
+  "references": [
+    "keyframes/S16_end.png"
+  ],
+  "prompt": "Edit image1 into the START pose BEFORE lifting the gate bar. Preserve camera and seven actors and all background geometry. The single heavy gate bar must be completely STRAIGHT and LEVEL left-to-right, parallel with the horizontal iron gate straps, not tilted. Lower the whole bar to CHEST HEIGHT of both operators. The bar is now seated INSIDE TWO clearly visible iron U-shaped retaining brackets, one on each gate leaf close to the left and right ends of the bar. These TWO brackets are firmly mounted on the closed gate and support the bar, the bar prevents the double doors opening. Left Odysseus and right young soldier each grip the bar with BOTH hands, four hands visible, palms below and fingers curled around the same bar. Left Odysseus has NO shield; right soldier has exactly ONE shield strapped flat against his upper BACK (show the shoulder straps), not hanging from elbow or hand. Both swords remain sheathed at LEFT hip. Preserve all five cover fighters to right, with same faces and costumes, no additional people. ONE bar, TWO supporting brackets, FOUR hands on the bar, CLOSED gate. Night practical film still, no blood, no text.",
+  "seed": 2026100732,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S16_start_v2.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.93795379111543,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "a0544c0c62ab11f2e86d2b2e4f09f89612a8c7b273066e68b4fc5836e346e3ff"
+  ],
+  "sha256": "7e5cbf99143dbae3721374a2b10a4887b813050a7f4912ecc2da4849825d355f",
+  "bytes": 2778686,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

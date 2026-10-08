@@ -1,0 +1,10 @@
+{
+  "id": "S16_end_v3",
+  "title": "\u53cc\u4eba\u62ac\u95e9\u4e0e\u63a9\u62a4",
+  "output": "keyframes/S16_end_v3.png",
+  "references": [
+    "keyframes/S16_start_v3.png"
+  ],
+  "prompt": "Edit image1 minimally. Both operators lift the SAME wooden bar straight UP by 75pixels to ABOVE their shoulders. The bar remains exactly HORIZONTAL in the FOUR hands, no carry-away. The TWO OPEN-TOP U-shaped iron cradles remain exactly in their old positions mounted on the closed door and are now EMPTY. There is a clearly visible 50pixel AIR GAP between the bar underside and cradle tops. No metal above the bar, no closed rings. Only bar, hands and forearms move upward; all feet, actors, body positions, sword sheaths, young Greek shield strapped on BACK, Odysseus with NO shield and all side fighters remain unchanged. Door stays completely CLOSED. Same camera and night lighting. Single photoreal film still no text.",
+  "seed": 2026100933
+}

@@ -1,0 +1,67 @@
+--- SoulX-FlashHead/flash_head/src/modules/flash_head_model.py
++++ SoulX-FlashHead/flash_head/src/modules/flash_head_model.py
+@@ -8,12 +8,13 @@
+ from diffusers.configuration_utils import ConfigMixin, register_to_config
+ import torch.cuda.amp as amp
+ import torch.distributed as dist
+-from xfuser.core.distributed import (
+-    get_sequence_parallel_rank,
+-    get_sequence_parallel_world_size,
+-    get_sp_group,
+-)
+-from xfuser.core.long_ctx_attention import xFuserLongContextAttention
++try:
++    from xfuser.core.distributed import (get_sequence_parallel_rank, get_sequence_parallel_world_size, get_sp_group)
++    from xfuser.core.long_ctx_attention import xFuserLongContextAttention
++except ImportError:
++    # Single-GPU use_usp=False never calls these distributed branches.
++    get_sequence_parallel_rank = get_sequence_parallel_world_size = get_sp_group = None
++    xFuserLongContextAttention = None
+ try:
+     import flash_attn_interface
+     FLASH_ATTN_3_AVAILABLE = True
+--- SoulX-FlashHead/flash_head/src/pipeline/flash_head_pipeline.py
++++ SoulX-FlashHead/flash_head/src/pipeline/flash_head_pipeline.py
+@@ -13,7 +13,7 @@
+ from flash_head.src.modules.flash_head_model import WanModelAudioProject
+ from flash_head.audio_analysis.wav2vec2 import Wav2Vec2Model
+ from flash_head.utils.utils import match_and_blend_colors_torch, resize_and_centercrop
+-from flash_head.utils.facecrop import process_image
++# Face cropping is optional; supplied reference has already been framed.
+ 
+ # compile models to speedup inference
+ COMPILE_MODEL = True
+--- SoulX-FlashHead/flash_head/src/pipeline/flash_head_pipeline.py
++++ SoulX-FlashHead/flash_head/src/pipeline/flash_head_pipeline.py
+@@ -24,6 +24,7 @@
+ def get_cond_image_dict(cond_image_path_or_dir, use_face_crop):
+     def get_image(cond_image_path, use_face_crop):
+         if use_face_crop:
++            from flash_head.utils.facecrop import process_image
+             try:
+                 image = process_image(cond_image_path)
+                 return image
+--- SoulX-FlashHead/flash_head/src/pipeline/flash_head_pipeline.py
++++ SoulX-FlashHead/flash_head/src/pipeline/flash_head_pipeline.py
+@@ -16,8 +16,8 @@
+ # Face cropping is optional; supplied reference has already been framed.
+ 
+ # compile models to speedup inference
+-COMPILE_MODEL = True
+-COMPILE_VAE = True
++COMPILE_MODEL = False
++COMPILE_VAE = False  # Eager SDPA baseline; benchmark this configuration explicitly.
+ # use parallel vae to speedup decode/encode, only support WanVAE
+ USE_PARALLEL_VAE = True
+ 
+--- echomimic_v3/infer_flash.py
++++ echomimic_v3/infer_flash.py
+@@ -26,7 +26,7 @@
+ from src.fm_solvers_unipc import FlowUniPCMultistepScheduler
+ from src.cache_utils import get_teacache_coefficients
+ 
+-import decord
++ # decord is unused by this image + audio entry point
+ import json
+ import random
+ import math

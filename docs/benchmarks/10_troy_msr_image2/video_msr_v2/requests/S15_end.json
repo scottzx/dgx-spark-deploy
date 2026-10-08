@@ -1,0 +1,10 @@
+{
+  "id": "S15_end",
+  "title": "剑矛交锋对照",
+  "output": "keyframes/S15_end.png",
+  "references": [
+    "keyframes/S15_start.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Use image 1 as exact start composition, same SIX people. Show the next instant AFTER one sword parry: Odysseus LEFT stays in place, his RIGHT sword now raised diagonally higher, LEFT hand still EMPTY and no shield. The foreground guard RIGHT recoils half a step right, leaning back, his RIGHT spear deflected upward, his LEFT hand still holds the same shield. Maintain the gap between fighters, no gore. The same two background pairs each move into a different sword-block pose. Gate and camera unchanged.",
+  "seed": 2026100631
+}

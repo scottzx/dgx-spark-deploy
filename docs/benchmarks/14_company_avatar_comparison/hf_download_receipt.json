@@ -1,0 +1,212 @@
+[
+  {
+    "target": "joyvasa/motion_generator/motion_generator_hubert_chinese.pt",
+    "sha256": "9dd869329725caedf5f0c13dd383abec1e385f566d8afe2047b141f604844e80",
+    "size": 414067833,
+    "repo": "jdh-algo/JoyVASA",
+    "revision": "b8f13fe9c23679c56f21b1baafb92ed00dc087c3"
+  },
+  {
+    "target": "hubert/pytorch_model.bin",
+    "sha256": "2fefccd26c2794a583b80f6f7210c721873cb7ebae2c1cde3baf9b27855e24d8",
+    "size": 377552987,
+    "repo": "TencentGameMate/chinese-hubert-base",
+    "revision": "fce0375452b1dd6c080ac3248d423d4d037bc831"
+  },
+  {
+    "target": "latentsync/latentsync_unet.pt",
+    "sha256": "0a478e89eb660f82da4c35dbdde8a5adfb27f99d1b4e50edd03729e1e98316d3",
+    "size": 5072222488,
+    "repo": "ByteDance/LatentSync-1.6",
+    "revision": "c42c7e6c8e9c213626389fa7d9a3c444b8536353"
+  },
+  {
+    "target": "latentsync/whisper/tiny.pt",
+    "sha256": "65147644a518d12f04e32d6f3b26facc3f8dd46e5390956a9424a650c0ce22b9",
+    "size": 75572083,
+    "repo": "ByteDance/LatentSync-1.6",
+    "revision": "c42c7e6c8e9c213626389fa7d9a3c444b8536353"
+  },
+  {
+    "target": "hallo_base/config.json",
+    "sha256": "54125dcae52cd09c10d22675402329364c1e191129d693e87c69190b8ddc0628",
+    "size": 39,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/audio_separator/download_checks.json",
+    "sha256": "2fcb8e7f28cc7720a59fd373e7482163a88451ecdc0034e0bc97a410b889f1df",
+    "size": 17194,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/audio_separator/mdx_model_data.json",
+    "sha256": "7b5bcc54884cf2a68c9857c0a3bfb0e0a86dc2d56188ced2ed7b9e17311eb0b8",
+    "size": 11975,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/audio_separator/vr_model_data.json",
+    "sha256": "6a2021b9aa355c10f845b68c73944d47bd9e1fdf37b8a584b14ce8f88b09bb2f",
+    "size": 4380,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/face_analysis/models/genderage.onnx",
+    "sha256": "4fde69b1c810857b88c64a335084f1c3fe8f01246c9a191b48c7bb756d6652fb",
+    "size": 1322532,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/face_analysis/models/face_landmarker_v2_with_blendshapes.task",
+    "sha256": "64184e229b263107bc2b804c6625db1341ff2bb731874b0bcc2fe6544e0bc9ff",
+    "size": 3758596,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "joyhallo/net.pth",
+    "sha256": "da24fee72f2691034643d4ed2f3e28da3aae341e1a7cdf2de223ecbb50d200a2",
+    "size": 4747491236,
+    "repo": "jdh-algo/JoyHallo-v1",
+    "revision": "098012a25cebbae69c9adcbf2931830c0be78024"
+  },
+  {
+    "target": "hallo_base/face_analysis/models/2d106det.onnx",
+    "sha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+    "size": 5030888,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/face_analysis/models/1k3d68.onnx",
+    "sha256": "df5c06b8a0c12e422b2ed8947b8869faa4105387f199c477af038aa01f9a45cc",
+    "size": 143607619,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/face_analysis/models/scrfd_10g_bnkps.onnx",
+    "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+    "size": 16923827,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/face_analysis/models/glintr100.onnx",
+    "sha256": "4ab1d6435d639628a6f3e5008dd4f929edf4c4124b1a7169e1048f9fef534cdf",
+    "size": 260665334,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/sd-vae-ft-mse/config.json",
+    "sha256": "92d3dfb746fca211a2c9e019e285f8597412211728dce3c5bcf4eda0f2d62e7e",
+    "size": 547,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/sd-vae-ft-mse/.gitattributes",
+    "sha256": "15bff3ac97756db161d7bae5a5aa24899c4c01fc02effcc3f0499cb642a3618b",
+    "size": 1456,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/stable-diffusion-v1-5/unet/config.json",
+    "sha256": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96",
+    "size": 743,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/motion_module/mm_sd_v15_v2.ckpt",
+    "sha256": "69ed0f5fef82b110aca51bcab73b21104242bc65d6ab4b8b2a2a94d31cad1bf0",
+    "size": 1817888431,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/sd-vae-ft-mse/diffusion_pytorch_model.safetensors",
+    "sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815",
+    "size": 334643276,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/wav2vec/wav2vec2-base-960h/feature_extractor_config.json",
+    "sha256": "d3de0c797bf9b65f90bc65c30cb7b303ebeda341f6fc80af33628c4b26b95632",
+    "size": 158,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/wav2vec/wav2vec2-base-960h/.gitattributes",
+    "sha256": "63e367f7468466447415f35c52584a3c3f397fe638e2f985b25ec29ac25bde14",
+    "size": 790,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/wav2vec/wav2vec2-base-960h/config.json",
+    "sha256": "d3ec255c063d9f95057b553b19c20135b259875834a4fe9deb218a6be25b4cf3",
+    "size": 1596,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/stable-diffusion-v1-5/unet/diffusion_pytorch_model.safetensors",
+    "sha256": "19da7aaa4b880e59d56843f1fcb4dd9b599c28a1d9d9af7c1143057c8ffae9f1",
+    "size": 3438167540,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/wav2vec/wav2vec2-base-960h/special_tokens_map.json",
+    "sha256": "bb7068de1150661a10b55f9e4b12a0e77af8bf91f5e45e1b58afaf1d0e17f675",
+    "size": 85,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/wav2vec/wav2vec2-base-960h/tokenizer_config.json",
+    "sha256": "dc790594f5bc351a4311c6624f40acd95850d4aaf2a5cb3c656c9b610720b608",
+    "size": 163,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/wav2vec/wav2vec2-base-960h/vocab.json",
+    "sha256": "19727f8944fe6459fc3f240ae2c198395b740f6a029bd23e06656266b83bcf64",
+    "size": 291,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/wav2vec/wav2vec2-base-960h/preprocessor_config.json",
+    "sha256": "b225d617c025463b9e157e06afea8b90dc7078fc70b013c533328423e0486b4a",
+    "size": 159,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "hallo_base/wav2vec/wav2vec2-base-960h/model.safetensors",
+    "sha256": "8aa76ab2243c81747a1f832954586bc566090c83a0ac167df6f31f0fa917d74a",
+    "size": 377607901,
+    "repo": "fudan-generative-ai/hallo",
+    "revision": "e808a77174645203e1cc97240539e033984b3972"
+  },
+  {
+    "target": "avatarforever/avatarforever-ltx-2.3-22b.safetensors",
+    "sha256": "08dea67ed3d35a75da49b056ce2ca59a0e9ce538b429143fb9022c9bd5c3b145",
+    "size": 46183958894,
+    "repo": "LetsThink/AvatarForever",
+    "revision": "622ea82482c09e7fb2d8e29cb7ff1d009c820f05"
+  }
+]

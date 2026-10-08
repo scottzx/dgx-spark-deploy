@@ -1,0 +1,28 @@
+{
+  "route": "B",
+  "engine": "OpenAvatarChat FlashHeadProcessor + SoulX-FlashHead Lite",
+  "integration_scope": "Actual OAC streaming audio buffer and paired output queue; browser WebRTC/LLM not included",
+  "attention": "native PyTorch SDPA",
+  "torch_compile": false,
+  "size": [
+    512,
+    512
+  ],
+  "input_image": "/home/admin/digital-human-runtime/inputs/handheld/diet.png",
+  "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/diet_16k.wav",
+  "load_and_prepare_seconds": 4.854563991073519,
+  "generation_seconds": 7.279569515958428,
+  "frames": 97,
+  "duration_seconds": 3.88,
+  "generation_fps": 13.324963761573335,
+  "first_chunk_seconds": 1.8981885057874024,
+  "chunk_seconds": [
+    1.8981885057874024,
+    1.0691477479413152,
+    1.6375655280426145,
+    1.0742601538076997,
+    1.5942266690544784
+  ],
+  "peak_cuda_allocated_gib": 4.977908611297607,
+  "output_audio_matches_input": true
+}

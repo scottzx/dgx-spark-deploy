@@ -1,0 +1,26 @@
+[
+  {
+    "path": "docs/benchmarks/13_wan_animate2_product_actions/official_inputs/reference.png",
+    "source_url": "https://raw.githubusercontent.com/Wan-Video/Wan-Animate-2/3ad2fef7d61d6200c9c653e0fe47be7616b323f3/examples/demo1/reference.png",
+    "source_revision": "3ad2fef7d61d6200c9c653e0fe47be7616b323f3",
+    "bytes": 3358192,
+    "sha256": "f4a0eb00f08f15d8b2cf14e37ed6e284473e34c5f04dad6e8681484cbada9521",
+    "role": "Official environment verification example; not a product action acceptance source."
+  },
+  {
+    "path": "docs/benchmarks/13_wan_animate2_product_actions/official_inputs/template.mp4",
+    "source_url": "https://raw.githubusercontent.com/Wan-Video/Wan-Animate-2/3ad2fef7d61d6200c9c653e0fe47be7616b323f3/examples/demo1/template.mp4",
+    "source_revision": "3ad2fef7d61d6200c9c653e0fe47be7616b323f3",
+    "bytes": 6181519,
+    "sha256": "d13cde551b5aaa365a83d9321e75b2694b74713c6b0ea1c8feda44070f6b1ee3",
+    "role": "Official environment verification example; not a product action acceptance source."
+  },
+  {
+    "path": "docs/benchmarks/13_wan_animate2_product_actions/official_inputs/prompt.txt",
+    "source_url": "https://raw.githubusercontent.com/Wan-Video/Wan-Animate-2/3ad2fef7d61d6200c9c653e0fe47be7616b323f3/examples/demo1/prompt.txt",
+    "source_revision": "3ad2fef7d61d6200c9c653e0fe47be7616b323f3",
+    "bytes": 429,
+    "sha256": "02983bfd92d8383e2b13cd4a06dfbf7d9fdfe38a22a898198e4fdf240e9318bb",
+    "role": "Official environment verification example; not a product action acceptance source."
+  }
+]

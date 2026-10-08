@@ -1,0 +1,245 @@
+[
+  {
+    "product": "original",
+    "motion": {
+      "product": "original",
+      "model": "LTX-2.5 dev + distilled LoRA",
+      "frames": 201,
+      "fps": 25,
+      "duration_seconds": 8.04,
+      "size": [
+        768,
+        512
+      ],
+      "steps": 8,
+      "seed": 2026100720,
+      "generation_including_model_loading_seconds": 159.50088825821877,
+      "peak_cuda_allocated_gib": 39.5538763999939,
+      "prompt": "A single continuous eight-second photorealistic ecommerce demonstration, locked medium camera, no cuts, no zoom. The same Chinese woman with shoulder-length black hair and red blouse sits behind a light gray table against a gray studio backdrop. Three upright cans stand in a separated row: original red and white can at viewer left, silver diet can in the middle, red and black zero sugar can at viewer right. At the beginning both hands are empty. During the first two seconds she reaches for ONLY the left can, the red Coca-Cola Original Taste can with white lettering, wraps her fingers around it, and lifts it smoothly off the table to upper chest height. For the middle four seconds she holds this one can upright with both hands, front label facing the camera, and naturally speaks to the viewer while presenting it. During the final two seconds she lowers the SAME can back onto its ORIGINAL tabletop position, lets the base touch the table, releases her grip, and rests both empty hands on the table. The other two cans stay untouched at their original positions throughout. Exactly three cans exist at every time: during presentation one is in her hands and two are on the table. Continuous physically plausible reach, grasp, lift, hold, lower, contact, release. Preserve the can identity, colors, cylinder shape, label and her facial identity. Soft steady studio light, natural fingers and contact shadows, no floating products, no duplicates, no spontaneous transformation.",
+      "conditioning": [
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+          "frame": 0,
+          "strength": 1.0,
+          "sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+        },
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/original_held.png",
+          "frame": 64,
+          "strength": 0.9,
+          "sha256": "a992e6c2adbb77384588db5023393972ce703d39704f604f67f67762d988aad6"
+        },
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/original_held.png",
+          "frame": 136,
+          "strength": 0.9,
+          "sha256": "a992e6c2adbb77384588db5023393972ce703d39704f604f67f67762d988aad6"
+        },
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+          "frame": 200,
+          "strength": 1.0,
+          "sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+        }
+      ],
+      "policy": "One continuous generated clip; keyframes are diffusion conditions, no inserted endpoint frames or reverse playback; Chinese dubbing is applied separately."
+    },
+    "dubbing": {
+      "product": "original",
+      "engine": "LiveTalking MuseTalk 1.5 on moving LTX frames",
+      "input_video": "/home/admin/digital-human-runtime/outputs/product_actions_ltx/original/motion.mp4",
+      "input_audio": "/home/admin/digital-human-runtime/inputs/product_actions_serena/original.wav",
+      "voice_profile": "serena_soft",
+      "speaker": "Serena",
+      "frames": 201,
+      "fps": 25,
+      "duration_seconds": 8.04,
+      "size": [
+        768,
+        512
+      ],
+      "load_seconds_shared": 4.99112510913983,
+      "video_preparation_and_audio_features_seconds": 11.305999639909714,
+      "render_and_write_seconds": 6.3748492412269115,
+      "peak_cuda_allocated_gib": 6.6849894523620605,
+      "face_detection_fallback_frames": [],
+      "dubbed_frames": 96,
+      "dubbing_window_seconds": [
+        2.2,
+        6.0
+      ],
+      "narration_starts_seconds": 2.4,
+      "policy": "Per-frame face input and masks; original moving hands, can, table and other products retained. No reversed playback or post-inserted return action.",
+      "input_audio_sha256": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "final_audio_level_matching": {
+        "target_integrated_lufs": -23,
+        "measured_before_lufs": -28.24,
+        "constant_gain_db": 5.239999999999998,
+        "pitch_or_timing_changed": false
+      },
+      "level_matching_policy": "Constant gain applied after lip inference; timing, speech content and pitch unchanged; existing Serena lip-rendered frames retained."
+    }
+  },
+  {
+    "product": "diet",
+    "motion": {
+      "product": "diet",
+      "model": "LTX-2.5 dev + distilled LoRA",
+      "frames": 201,
+      "fps": 25,
+      "duration_seconds": 8.04,
+      "size": [
+        768,
+        512
+      ],
+      "steps": 8,
+      "seed": 2026100721,
+      "generation_including_model_loading_seconds": 132.6694001457654,
+      "peak_cuda_allocated_gib": 39.5538763999939,
+      "prompt": "A single continuous eight-second photorealistic ecommerce demonstration, locked medium camera, no cuts, no zoom. The same Chinese woman with shoulder-length black hair and red blouse sits behind a light gray table against a gray studio backdrop. Three upright cans stand in a separated row: original red and white can at viewer left, silver diet can in the middle, red and black zero sugar can at viewer right. At the beginning both hands are empty. During the first two seconds she reaches for ONLY the middle can, the silver Diet Coke can with red lettering, wraps her fingers around it, and lifts it smoothly off the table to upper chest height. For the middle four seconds she holds this one can upright with both hands, front label facing the camera, and naturally speaks to the viewer while presenting it. During the final two seconds she lowers the SAME can back onto its ORIGINAL tabletop position, lets the base touch the table, releases her grip, and rests both empty hands on the table. The other two cans stay untouched at their original positions throughout. Exactly three cans exist at every time: during presentation one is in her hands and two are on the table. Continuous physically plausible reach, grasp, lift, hold, lower, contact, release. Preserve the can identity, colors, cylinder shape, label and her facial identity. Soft steady studio light, natural fingers and contact shadows, no floating products, no duplicates, no spontaneous transformation.",
+      "conditioning": [
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+          "frame": 0,
+          "strength": 1.0,
+          "sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+        },
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/diet_held.png",
+          "frame": 64,
+          "strength": 0.9,
+          "sha256": "f0eec541a436b8cf185e9d169623eddbaecbd7c4a0fb2d4f2c3a75cea218d49d"
+        },
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/diet_held.png",
+          "frame": 136,
+          "strength": 0.9,
+          "sha256": "f0eec541a436b8cf185e9d169623eddbaecbd7c4a0fb2d4f2c3a75cea218d49d"
+        },
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+          "frame": 200,
+          "strength": 1.0,
+          "sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+        }
+      ],
+      "policy": "One continuous generated clip; keyframes are diffusion conditions, no inserted endpoint frames or reverse playback; Chinese dubbing is applied separately."
+    },
+    "dubbing": {
+      "product": "diet",
+      "engine": "LiveTalking MuseTalk 1.5 on moving LTX frames",
+      "input_video": "/home/admin/digital-human-runtime/outputs/product_actions_ltx/diet/motion.mp4",
+      "input_audio": "/home/admin/digital-human-runtime/inputs/product_actions_serena/diet.wav",
+      "voice_profile": "serena_soft",
+      "speaker": "Serena",
+      "frames": 201,
+      "fps": 25,
+      "duration_seconds": 8.04,
+      "size": [
+        768,
+        512
+      ],
+      "load_seconds_shared": 4.99112510913983,
+      "video_preparation_and_audio_features_seconds": 10.844795312266797,
+      "render_and_write_seconds": 6.3585653537884355,
+      "peak_cuda_allocated_gib": 6.6849894523620605,
+      "face_detection_fallback_frames": [],
+      "dubbed_frames": 96,
+      "dubbing_window_seconds": [
+        2.2,
+        6.0
+      ],
+      "narration_starts_seconds": 2.4,
+      "policy": "Per-frame face input and masks; original moving hands, can, table and other products retained. No reversed playback or post-inserted return action.",
+      "input_audio_sha256": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "final_audio_level_matching": {
+        "target_integrated_lufs": -23,
+        "measured_before_lufs": -19.94,
+        "constant_gain_db": -3.0599999999999987,
+        "pitch_or_timing_changed": false
+      },
+      "level_matching_policy": "Constant gain applied after lip inference; timing, speech content and pitch unchanged; existing Serena lip-rendered frames retained."
+    }
+  },
+  {
+    "product": "zero",
+    "motion": {
+      "product": "zero",
+      "model": "LTX-2.5 dev + distilled LoRA",
+      "frames": 201,
+      "fps": 25,
+      "duration_seconds": 8.04,
+      "size": [
+        768,
+        512
+      ],
+      "steps": 8,
+      "seed": 2026100722,
+      "generation_including_model_loading_seconds": 131.1095267860219,
+      "peak_cuda_allocated_gib": 39.5538763999939,
+      "prompt": "A single continuous eight-second photorealistic ecommerce demonstration, locked medium camera, no cuts, no zoom. The same Chinese woman with shoulder-length black hair and red blouse sits behind a light gray table against a gray studio backdrop. Three upright cans stand in a separated row: original red and white can at viewer left, silver diet can in the middle, red and black zero sugar can at viewer right. At the beginning both hands are empty. During the first two seconds she reaches for ONLY the right can, the red Coca-Cola Zero Sugar can with black lettering, wraps her fingers around it, and lifts it smoothly off the table to upper chest height. For the middle four seconds she holds this one can upright with both hands, front label facing the camera, and naturally speaks to the viewer while presenting it. During the final two seconds she lowers the SAME can back onto its ORIGINAL tabletop position, lets the base touch the table, releases her grip, and rests both empty hands on the table. The other two cans stay untouched at their original positions throughout. Exactly three cans exist at every time: during presentation one is in her hands and two are on the table. Continuous physically plausible reach, grasp, lift, hold, lower, contact, release. Preserve the can identity, colors, cylinder shape, label and her facial identity. Soft steady studio light, natural fingers and contact shadows, no floating products, no duplicates, no spontaneous transformation.",
+      "conditioning": [
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+          "frame": 0,
+          "strength": 1.0,
+          "sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+        },
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/zero_held_v2.png",
+          "frame": 64,
+          "strength": 0.9,
+          "sha256": "ac6ff6ff75ae961ee48444ce564bb6192ebaec7e338010696301f70e5f57c964"
+        },
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/zero_held_v2.png",
+          "frame": 136,
+          "strength": 0.9,
+          "sha256": "ac6ff6ff75ae961ee48444ce564bb6192ebaec7e338010696301f70e5f57c964"
+        },
+        {
+          "path": "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+          "frame": 200,
+          "strength": 1.0,
+          "sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+        }
+      ],
+      "policy": "One continuous generated clip; keyframes are diffusion conditions, no inserted endpoint frames or reverse playback; Chinese dubbing is applied separately."
+    },
+    "dubbing": {
+      "product": "zero",
+      "engine": "LiveTalking MuseTalk 1.5 on moving LTX frames",
+      "input_video": "/home/admin/digital-human-runtime/outputs/product_actions_ltx/zero/motion.mp4",
+      "input_audio": "/home/admin/digital-human-runtime/inputs/product_actions_serena/zero.wav",
+      "voice_profile": "serena_soft",
+      "speaker": "Serena",
+      "frames": 201,
+      "fps": 25,
+      "duration_seconds": 8.04,
+      "size": [
+        768,
+        512
+      ],
+      "load_seconds_shared": 4.99112510913983,
+      "video_preparation_and_audio_features_seconds": 18.083424808923155,
+      "render_and_write_seconds": 6.374068234115839,
+      "peak_cuda_allocated_gib": 6.6849894523620605,
+      "face_detection_fallback_frames": [],
+      "dubbed_frames": 96,
+      "dubbing_window_seconds": [
+        2.2,
+        6.0
+      ],
+      "narration_starts_seconds": 2.4,
+      "policy": "Per-frame face input and masks; original moving hands, can, table and other products retained. No reversed playback or post-inserted return action.",
+      "input_audio_sha256": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "final_audio_level_matching": {
+        "target_integrated_lufs": -23,
+        "measured_before_lufs": -21.0,
+        "constant_gain_db": -2.0,
+        "pitch_or_timing_changed": false
+      },
+      "level_matching_policy": "Constant gain applied after lip inference; timing, speech content and pitch unchanged; existing Serena lip-rendered frames retained."
+    }
+  }
+]

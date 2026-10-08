@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "id": "S16",
+  "title": "掩护之下解除横闩",
+  "seed": 2026100516,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S16/raw.mp4",
+  "raw_sha256": "f70bfa53bf62f62f889ee7825fc42f6f4823f7dd83ebcaa7928f61a078807620",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S16/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "fd4270bcaab4aa0bb7e8e071cd71106c488183510abfd5e1d11eab5d7d8881c6",
+    "bytes": 1453941
+  },
+  "generation_s": 155.61662404378876,
+  "phases_s": {
+    "reference_encode_block_s": 3.4540316709317267,
+    "denoising_loop_s": 76.43198083201423,
+    "diffusion_block_s": 147.15585822798312,
+    "decode_and_encode_block_s": 4.979125097859651
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "odysseus",
+      "kind": "character",
+      "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+      "source_file": "assets/characters/odysseus_v1.png",
+      "file": "inputs/odysseus.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+      "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+      "offset": -5,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "soldier",
+      "kind": "character",
+      "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+      "source_file": "assets/characters/greek_soldier_01_v1.png",
+      "file": "inputs/soldier.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+      "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 3,
+      "id": "greeks",
+      "kind": "group",
+      "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+      "source_file": "assets/groups/greek_infantry_v1.png",
+      "file": "inputs/greeks.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 4,
+      "id": "trojans",
+      "kind": "group",
+      "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+      "source_file": "assets/groups/trojan_defenders_v1.png",
+      "file": "inputs/trojans.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+      "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 5,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard_v2/frames/s16_qwen21_v1.png",
+      "file": "inputs/board_S16.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S16.png",
+      "sha256": "12b33401ecb199785ffd85eb7eb3e69aba8e0f081ab77ad44ce6377a9e1e4bf7",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "10b11fc23638af976e6938823971b96c30713596bc853bfe7f29c720e85dacc2",
+  "prompt_cache_fingerprint": "cb130502d356b6d6fe9cc51fe4909a6bfc7d2e6f3cc9611b569619603eb81ad4",
+  "peak_torch_allocated_bytes": 42458859008,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

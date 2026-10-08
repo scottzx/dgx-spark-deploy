@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "url": "http://127.0.0.1:59137/video_ltx_main_v3/review.html",
+  "cards": 20,
+  "media": [
+    {
+      "src": "film.mp4",
+      "duration": 91.25,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "battle.mp4",
+      "duration": 31.75,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "film_uncut_100s.mp4",
+      "duration": 100,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "../video_msr_v1/film.mp4",
+      "duration": 100,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "repairs/clips/S01/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S02/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S03/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S04/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S05/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S06/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "repairs/clips/S07/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S08/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S09/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S10/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S11/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S12/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S13/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S14/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S15/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S16/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S17/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S18/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S19/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "src": "clips/S20/delivered.mp4",
+      "duration": 5,
+      "width": 672,
+      "height": 384
+    }
+  ],
+  "full_film_played_to_s": 2.009081,
+  "seeked_to_s": 67,
+  "synced": [
+    {
+      "time": 0.366859,
+      "muted": true,
+      "paused": false
+    },
+    {
+      "time": 0.366881,
+      "muted": true,
+      "paused": false
+    }
+  ],
+  "browser_errors": [],
+  "screenshot": "preview.png"
+}

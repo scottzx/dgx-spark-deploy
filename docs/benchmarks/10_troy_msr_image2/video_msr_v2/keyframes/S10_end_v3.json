@@ -1,0 +1,39 @@
+{
+  "id": "S10_end_v3",
+  "title": "奥德修斯向下爬梯",
+  "output": "keyframes/S10_end_v3.png",
+  "references": [
+    "keyframes/S10_clean.png",
+    "inputs/odysseus.png"
+  ],
+  "prompt": "Image1 is the empty scene. Image2 is only the identity and costume reference of ONE Odysseus, not a separate person in scene. Add this ONE man to the LOWEST third of the wooden ladder. His head is completely BELOW the open horse hatch, halfway between hatch bottom and the wheel axle height, around y=350 to400 in this1536x864frame. His waist is at wheel axle height around y=580. His sandals rest on the second and third ladder rungs ABOVE the stone ground around y=750, he is still on ladder, not ground or platform. Show his full body and both feet. His torso faces the wooden horse in three-quarter back view, both hands grip the low sections of the two rails. Same dark curly hair, trimmed beard, indigo cloak, bronze armor and sheathed sword at LEFT hip from image2; NO shield. Preserve the background scene EXACTLY as image1, no other people, no extra ladder, no moving horse. The man must be LOW on ladder with large EMPTY ladder region between his shoulders and hatch. One photorealistic historical film still, no text.",
+  "seed": 2026100821,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S10_end_v3.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 67.86768005369231,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "33534973febfe109704bbfc7d4f8a86bf5cc6916262020230f09fa1c7da6992f",
+    "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+  ],
+  "sha256": "27feea2da244b67fb8703e414f7e54df571c6d396cb18f58b935d2af5358a60c",
+  "bytes": 2752796,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

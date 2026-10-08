@@ -1,0 +1,23 @@
+[
+  {
+    "product": "shirt",
+    "speech_sha256": "179c218906420a1db96c5bcc2758d958212650696dce49e187f018f9cd9cb41a",
+    "approved_pcm_samples_identical": true,
+    "silence_before_and_after_verified": true,
+    "speech_duration": 3.92
+  },
+  {
+    "product": "cardigan",
+    "speech_sha256": "9f0f0cbf44761fea4d77aee8cb28add98c0bc732f73cfe3a9fe724326d3cc613",
+    "approved_pcm_samples_identical": true,
+    "silence_before_and_after_verified": true,
+    "speech_duration": 3.28
+  },
+  {
+    "product": "dress",
+    "speech_sha256": "03cc99a368be5013842e5aa3728652c8881f6954821407e206b3063a9b0f44f2",
+    "approved_pcm_samples_identical": true,
+    "silence_before_and_after_verified": true,
+    "speech_duration": 3.52
+  }
+]

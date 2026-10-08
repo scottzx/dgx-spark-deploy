@@ -63,3 +63,9 @@ Thumbs.db
 云深处*.pptx
 xhs_presentation
 scratch/
+
+# Local TLS credentials and benchmark runtime markers
+/scott-mac.tailfb4720.ts.net.crt
+/scott-mac.tailfb4720.ts.net.key
+docs/benchmarks/**/*.pid
+docs/benchmarks/**/build.lock

@@ -1,0 +1,9 @@
+Use case: precise-object-edit.
+Asset type: a single clean master prop reference for MSR video conditioning.
+Input image 1: visual-design reference for the wooden horse and wheeled timber platform only.
+Primary request: create a standalone practical film-prop photograph of THIS SAME Trojan wooden horse, with the surroundings simplified into an empty neutral studio courtyard. Preserve the dark honey-brown plank body, rigid four timber legs, carved head and blocklike timber mane, decorative antique bronze straps, rectangular belly hatch on the camera-facing flank, and timber platform. The horse faces to the RIGHT just like the reference.
+Scene/backdrop: plain warm stone paving against a simple softly lit taupe backdrop, no buildings, fountain, workers, guards or statues. One prop only.
+Style/medium: photorealistic live-action 1970s Shaw Brothers historical studio-film art department photograph, practical handcrafted timber and bronze, warm theatrical key light and restrained film grain.
+Composition/framing: landscape 16:9, full object including head, tail, all feet and wheeled platform visible with generous clear margins. Eye-level side three-quarter view matching the reference camera-facing flank; no extreme wide-angle distortion.
+Construction invariants: visibly hollow timber-plank torso; four rigid wooden legs fixed to one rectangular transport platform. Exactly four large solid wooden wheels total, two on each side of the platform (the two camera-facing wheels visible, opposite wheels naturally partly occluded). Exactly one small rectangular side-belly hatch, CLOSED flush with the planks. No open hatch, no ladder visible, no soldier. Rigid prop, not living horse anatomy, no fur or skin, no moving limbs. Keep the original wooden construction and bronze strap design.
+Constraints: one single photograph, no lettering, no labels, no panels, no collage, no border, no watermark. Remove every human figure from the reference surroundings.

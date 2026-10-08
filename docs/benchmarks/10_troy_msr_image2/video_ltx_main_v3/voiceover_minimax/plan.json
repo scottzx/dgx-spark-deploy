@@ -1,0 +1,152 @@
+{
+  "source_film": "../film.mp4",
+  "source_film_sha256": "a52f16cb1e0effe20c9aaf73dcf863c3f6903b8e10b2ec79c6193ab1a753b92c",
+  "source_edit_plan_fingerprint": "cbddc799057090b8a750cdad373a4e155b1d2134085176233eaa5f95ee91a58d",
+  "film_duration_s": 91.25,
+  "cli": "mmx",
+  "cli_version": "1.0.25",
+  "speech_model": "speech-2.8-hd",
+  "voice_id": "Chinese (Mandarin)_Male_Announcer",
+  "voice_name": "播报男声",
+  "language": "Chinese",
+  "pitch": -1,
+  "sample_rate": 32000,
+  "channels": 1,
+  "audio_format": "wav",
+  "style": "Chinese male dramatic narrator, scene aligned, natural automatic emotion; foreground speech with ducked native film audio.",
+  "cues": [
+    {
+      "id": "N01",
+      "start_s": 0.6,
+      "latest_end_s": 9.6,
+      "text": "西农以献礼为名，取得了特洛伊人的信任。城门，就这样向木马敞开。",
+      "speed": 1.06,
+      "text_sha256": "6a0cdc9248741ab39dea3ac459a2ff7fc994afa56e8c76fe86c6f6911ee079b5",
+      "text_file": "segments/N01/text.txt",
+      "audio_file": "segments/N01/raw.wav",
+      "subtitles_file": "segments/N01/raw.srt"
+    },
+    {
+      "id": "N02",
+      "start_s": 10.6,
+      "latest_end_s": 19.7,
+      "text": "木轮越过门槛。特洛伊人亲手，把藏着伏兵的木马拖进城中。",
+      "speed": 1.06,
+      "text_sha256": "577e76dcaa737c4d31b02dd7102fb423cc1bc5e4c5244eb956aa9d2eb7c1233b",
+      "text_file": "segments/N02/text.txt",
+      "audio_file": "segments/N02/raw.wav",
+      "subtitles_file": "segments/N02/raw.srt"
+    },
+    {
+      "id": "N03",
+      "start_s": 21.0,
+      "latest_end_s": 29.5,
+      "text": "暮色降临，城门落闩。木马留在广场，人们卸下了戒备。",
+      "speed": 1.06,
+      "text_sha256": "de276a5367987f32c79c830ce33809bc2dbcaff589ce271ae73c935b6928671b",
+      "text_file": "segments/N03/text.txt",
+      "audio_file": "segments/N03/raw.wav",
+      "subtitles_file": "segments/N03/raw.srt"
+    },
+    {
+      "id": "N04",
+      "start_s": 30.6,
+      "latest_end_s": 39.7,
+      "text": "夜色深处，木马的舱口悄然开启。奥德修斯探出身来。",
+      "speed": 1.06,
+      "text_sha256": "abf33a482f63d8f7211ed27eb140faea29c570fe04ed47148d038d1b7685f509",
+      "text_file": "segments/N04/text.txt",
+      "audio_file": "segments/N04/raw.wav",
+      "subtitles_file": "segments/N04/raw.srt"
+    },
+    {
+      "id": "N05",
+      "start_s": 42.3,
+      "latest_end_s": 54.0,
+      "text": "他沿木梯下行，向同伴发出信号。伏兵一个接一个，踏上特洛伊的石路。",
+      "speed": 1.06,
+      "text_sha256": "56dfc382346eadd9dd632fc19297001074c18d4a514b24edd033272cdf123e34",
+      "text_file": "segments/N05/text.txt",
+      "audio_file": "segments/N05/raw.wav",
+      "subtitles_file": "segments/N05/raw.srt"
+    },
+    {
+      "id": "N06",
+      "start_s": 55.0,
+      "latest_end_s": 59.4,
+      "text": "六人小队，直逼城门。",
+      "speed": 1.06,
+      "text_sha256": "aef0eaef7451c6275a889f30f3d5fc9f3fb4e2e791995faf3855e869d16ce428",
+      "text_file": "segments/N06/text.txt",
+      "audio_file": "segments/N06/raw.wav",
+      "subtitles_file": "segments/N06/raw.srt"
+    },
+    {
+      "id": "N07",
+      "start_s": 60.0,
+      "latest_end_s": 64.4,
+      "text": "守军拦路，夺门之战爆发。",
+      "speed": 1.06,
+      "text_sha256": "22eb3327620c6109342c984fa1622724e878539c5b9df009efa4020187adacc3",
+      "text_file": "segments/N07/text.txt",
+      "audio_file": "segments/N07/raw.wav",
+      "subtitles_file": "segments/N07/raw.srt"
+    },
+    {
+      "id": "N08",
+      "start_s": 65.0,
+      "latest_end_s": 69.4,
+      "text": "剑矛相接，伏兵抢进门前。",
+      "speed": 1.06,
+      "text_sha256": "2e8597d9bfb635cd9196af8edfd8b570292377b68bdab23be43ada3fbb03f572",
+      "text_file": "segments/N08/text.txt",
+      "audio_file": "segments/N08/raw.wav",
+      "subtitles_file": "segments/N08/raw.srt"
+    },
+    {
+      "id": "N09",
+      "start_s": 70.0,
+      "latest_end_s": 74.3,
+      "text": "同伴拼死掩护，两人抬起门闩。",
+      "speed": 1.06,
+      "text_sha256": "3f192acb2b1a673d1cff4e415050104f9e4f34103387033d402bfee70a19a32e",
+      "text_file": "segments/N09/text.txt",
+      "audio_file": "segments/N09/raw.wav",
+      "subtitles_file": "segments/N09/raw.srt"
+    },
+    {
+      "id": "N10",
+      "start_s": 74.7,
+      "latest_end_s": 81.1,
+      "text": "城外，阿伽门农举剑待命。城门，终于打开。",
+      "speed": 1.06,
+      "text_sha256": "439b774c6ff8ca7945c816f2df7310ce537f5f0d8506e91e48efb3d40ff69852",
+      "text_file": "segments/N10/text.txt",
+      "audio_file": "segments/N10/raw.wav",
+      "subtitles_file": "segments/N10/raw.srt"
+    },
+    {
+      "id": "N11",
+      "start_s": 81.5,
+      "latest_end_s": 85.9,
+      "text": "希腊军团涌入，与守军迎面交锋。",
+      "speed": 1.06,
+      "text_sha256": "69724d46888ec02e0131bbbcfb8717f9a0a89b3cc57735d8dca42df8ffc735df",
+      "text_file": "segments/N11/text.txt",
+      "audio_file": "segments/N11/raw.wav",
+      "subtitles_file": "segments/N11/raw.srt"
+    },
+    {
+      "id": "N12",
+      "start_s": 86.6,
+      "latest_end_s": 91.1,
+      "text": "木马计得手，决战才刚开始。",
+      "speed": 1.06,
+      "text_sha256": "0ebcf664840d5c2e894b2b76977c19e39f414f4cd4809a7a2448d45055ced874",
+      "text_file": "segments/N12/text.txt",
+      "audio_file": "segments/N12/raw.wav",
+      "subtitles_file": "segments/N12/raw.srt"
+    }
+  ],
+  "fingerprint": "7510ba9e055f1db657fcdd73ea1716d8859c7a814d3efcb43c887c3e1a32364e"
+}

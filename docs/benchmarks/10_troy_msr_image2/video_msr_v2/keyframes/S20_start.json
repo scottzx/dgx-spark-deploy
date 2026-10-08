@@ -1,0 +1,37 @@
+{
+  "id": "S20_start",
+  "title": "大军团持续群战",
+  "output": "keyframes/S20_start.png",
+  "references": [
+    "inputs/board_S20.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Anonymous mass army battle. Preserve the wide frame, ONE rigid wooden horse facing RIGHT center, one upward-open hatch and one ladder, open gate LEFT, fountain RIGHT. NO named heroes. Improve clear faction colors: all Greeks blue-gray cloth and bronze, all Trojans ochre tunics and rust-red short capes. In the foreground exactly TWO readable opposed fighting pairs: Greek at left versus Trojan at right in each pair, RIGHT-hand sword, LEFT-hand shield, swords raised before strike and shields braced. Behind them many different infantry visibly fight in staggered opposing pairs across middle and rear zones, with crossing swords and defensive shields; no symmetrical parade, no line facing camera. Keep camera, stonework, horse scale and illumination fixed.",
+  "seed": 2026100640,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S20_start.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.99037409527227,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "f7be7c6ca583062347d02a4868e2e076210a86deeddc74259871964b1b5ac095"
+  ],
+  "sha256": "ddbcecd413a1c327a88f40c2d2d95d5bed3c4b21f72adbe4907b20cd9e6b08a9",
+  "bytes": 3014702,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

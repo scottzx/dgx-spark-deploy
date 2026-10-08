@@ -1,0 +1,41 @@
+{
+  "id": "S10_end_v4",
+  "title": "奥德修斯向下爬梯",
+  "output": "keyframes/S10_end_v4.png",
+  "references": [
+    "keyframes/S10_clean.png",
+    "keyframes/S10_start.png",
+    "guides/S10_end_pose.png"
+  ],
+  "prompt": "Compose a single photorealistic movie still. IMAGE1 is the exact empty scene and fixed camera. IMAGE2 is ONLY the same man identity, armor and indigo cloak reference. IMAGE3 is a simple POSE AND POSITION GUIDE, not the output style. Insert ONE Odysseus on the ladder in IMAGE1 at the exact small body size, LOWER body location and bent-leg climbing pose indicated by the black stick figure in IMAGE3. The black figure head is WELL BELOW the hatch opening, not inside the hatch. Match this lower head, shoulder, pelvis and feet placement; keep human proportions like IMAGE2, do not enlarge him. Both knees partly bent as he descends, both sandals on LOWER ladder rungs above ground, both hands gripping rails. Dark curly hair, trimmed beard, indigo cloak, bronze cuirass, sword sheathed LEFT, NO shield. Preserve all background geometry, horse, hatch, wheels, gate and fountain from IMAGE1. Render real actor anatomy and practical historical film textures, do NOT show sketch lines, skeleton, guide, labels or panels. One person only, no blood or text.",
+  "seed": 2026101021,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S10_end_v4.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 78.6511341938749,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "33534973febfe109704bbfc7d4f8a86bf5cc6916262020230f09fa1c7da6992f",
+    "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17",
+    "faf7886d5bc12931a00e8fd2df5af9276dcbb8822857fbe9a5b1b91ee077e9aa"
+  ],
+  "sha256": "c48a91aa1533c33c96fbe3f9a4e16703721ca2a06348e67569aa7382aef1f4e8",
+  "bytes": 2788597,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

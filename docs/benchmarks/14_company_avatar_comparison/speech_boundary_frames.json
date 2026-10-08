@@ -1,0 +1,1602 @@
+[
+  {
+    "engine": "liveportrait",
+    "product": "original",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/liveportrait/original/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "liveportrait",
+    "product": "original",
+    "phase": "ending",
+    "speech_boundary_seconds": 4.689583333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "timestamps": [
+      4.6,
+      4.64,
+      4.68,
+      4.72,
+      4.76
+    ],
+    "image": "results/liveportrait/original/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "liveportrait",
+    "product": "diet",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/liveportrait/diet/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "liveportrait",
+    "product": "diet",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.511083333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "timestamps": [
+      5.44,
+      5.48,
+      5.52,
+      5.56,
+      5.6
+    ],
+    "image": "results/liveportrait/diet/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "liveportrait",
+    "product": "zero",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/liveportrait/zero/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "liveportrait",
+    "product": "zero",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.839041666666667,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "timestamps": [
+      5.76,
+      5.8,
+      5.84,
+      5.88,
+      5.92
+    ],
+    "image": "results/liveportrait/zero/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "latentsync",
+    "product": "original",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/latentsync/original/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "latentsync",
+    "product": "original",
+    "phase": "ending",
+    "speech_boundary_seconds": 4.689583333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "timestamps": [
+      4.6,
+      4.64,
+      4.68,
+      4.72,
+      4.76
+    ],
+    "image": "results/latentsync/original/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "latentsync",
+    "product": "diet",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/latentsync/diet/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "latentsync",
+    "product": "diet",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.511083333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "timestamps": [
+      5.44,
+      5.48,
+      5.52,
+      5.56,
+      5.6
+    ],
+    "image": "results/latentsync/diet/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "latentsync",
+    "product": "zero",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/latentsync/zero/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "latentsync",
+    "product": "zero",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.839041666666667,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "timestamps": [
+      5.76,
+      5.8,
+      5.84,
+      5.88,
+      5.92
+    ],
+    "image": "results/latentsync/zero/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "longcat",
+    "product": "original",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/longcat/original/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "longcat",
+    "product": "original",
+    "phase": "ending",
+    "speech_boundary_seconds": 4.689583333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "timestamps": [
+      4.6,
+      4.64,
+      4.68,
+      4.72,
+      4.76
+    ],
+    "image": "results/longcat/original/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "longcat",
+    "product": "diet",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/longcat/diet/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "longcat",
+    "product": "diet",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.511083333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "timestamps": [
+      5.44,
+      5.48,
+      5.52,
+      5.56,
+      5.6
+    ],
+    "image": "results/longcat/diet/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "longcat",
+    "product": "zero",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/longcat/zero/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "longcat",
+    "product": "zero",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.839041666666667,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "timestamps": [
+      5.76,
+      5.8,
+      5.84,
+      5.88,
+      5.92
+    ],
+    "image": "results/longcat/zero/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "infinitetalk",
+    "product": "original",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/infinitetalk/original/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "infinitetalk",
+    "product": "original",
+    "phase": "ending",
+    "speech_boundary_seconds": 4.689583333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "timestamps": [
+      4.6,
+      4.64,
+      4.68,
+      4.72,
+      4.76
+    ],
+    "image": "results/infinitetalk/original/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "infinitetalk",
+    "product": "diet",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/infinitetalk/diet/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "infinitetalk",
+    "product": "diet",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.511083333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "timestamps": [
+      5.44,
+      5.48,
+      5.52,
+      5.56,
+      5.6
+    ],
+    "image": "results/infinitetalk/diet/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "infinitetalk",
+    "product": "zero",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/infinitetalk/zero/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "infinitetalk",
+    "product": "zero",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.839041666666667,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "timestamps": [
+      5.76,
+      5.8,
+      5.84,
+      5.88,
+      5.92
+    ],
+    "image": "results/infinitetalk/zero/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever",
+    "product": "original",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/avatarforever/original/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever",
+    "product": "original",
+    "phase": "ending",
+    "speech_boundary_seconds": 4.689583333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "timestamps": [
+      4.6,
+      4.64,
+      4.68,
+      4.72,
+      4.76
+    ],
+    "image": "results/avatarforever/original/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever",
+    "product": "diet",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/avatarforever/diet/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever",
+    "product": "diet",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.511083333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "timestamps": [
+      5.44,
+      5.48,
+      5.52,
+      5.56,
+      5.6
+    ],
+    "image": "results/avatarforever/diet/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever",
+    "product": "zero",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/avatarforever/zero/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever",
+    "product": "zero",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.839041666666667,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "timestamps": [
+      5.76,
+      5.8,
+      5.84,
+      5.88,
+      5.92
+    ],
+    "image": "results/avatarforever/zero/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "joyhallo",
+    "product": "original",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 3,
+    "candidate_face_crop_xywh": [
+      122,
+      160,
+      256,
+      258
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/joyhallo/original/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Baseline crop x=320,y=80,w=128,h=128; candidate crop x=122,y=160,w=256,h=258, mapped through recorded portrait input crop. Both scaled bilinearly to 256x256. No frame synthesis or pixel-error score."
+  },
+  {
+    "engine": "joyhallo",
+    "product": "original",
+    "phase": "ending",
+    "speech_boundary_seconds": 4.689583333333333,
+    "inspection_format_version": 3,
+    "candidate_face_crop_xywh": [
+      122,
+      160,
+      256,
+      258
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "timestamps": [
+      4.6,
+      4.64,
+      4.68,
+      4.72,
+      4.76
+    ],
+    "image": "results/joyhallo/original/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Baseline crop x=320,y=80,w=128,h=128; candidate crop x=122,y=160,w=256,h=258, mapped through recorded portrait input crop. Both scaled bilinearly to 256x256. No frame synthesis or pixel-error score."
+  },
+  {
+    "engine": "joyhallo",
+    "product": "diet",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 3,
+    "candidate_face_crop_xywh": [
+      122,
+      160,
+      256,
+      256
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/joyhallo/diet/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Baseline crop x=320,y=80,w=128,h=128; candidate crop x=122,y=160,w=256,h=256, mapped through recorded portrait input crop. Both scaled bilinearly to 256x256. No frame synthesis or pixel-error score."
+  },
+  {
+    "engine": "joyhallo",
+    "product": "diet",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.511083333333333,
+    "inspection_format_version": 3,
+    "candidate_face_crop_xywh": [
+      122,
+      160,
+      256,
+      256
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "timestamps": [
+      5.44,
+      5.48,
+      5.52,
+      5.56,
+      5.6
+    ],
+    "image": "results/joyhallo/diet/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Baseline crop x=320,y=80,w=128,h=128; candidate crop x=122,y=160,w=256,h=256, mapped through recorded portrait input crop. Both scaled bilinearly to 256x256. No frame synthesis or pixel-error score."
+  },
+  {
+    "engine": "joyhallo",
+    "product": "zero",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 3,
+    "candidate_face_crop_xywh": [
+      120,
+      160,
+      258,
+      258
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/joyhallo/zero/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Baseline crop x=320,y=80,w=128,h=128; candidate crop x=120,y=160,w=258,h=258, mapped through recorded portrait input crop. Both scaled bilinearly to 256x256. No frame synthesis or pixel-error score."
+  },
+  {
+    "engine": "joyhallo",
+    "product": "zero",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.839041666666667,
+    "inspection_format_version": 3,
+    "candidate_face_crop_xywh": [
+      120,
+      160,
+      258,
+      258
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "timestamps": [
+      5.76,
+      5.8,
+      5.84,
+      5.88,
+      5.92
+    ],
+    "image": "results/joyhallo/zero/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Baseline crop x=320,y=80,w=128,h=128; candidate crop x=120,y=160,w=258,h=258, mapped through recorded portrait input crop. Both scaled bilinearly to 256x256. No frame synthesis or pixel-error score."
+  },
+  {
+    "engine": "joyvasa",
+    "product": "original",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/joyvasa/original/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "joyvasa",
+    "product": "original",
+    "phase": "ending",
+    "speech_boundary_seconds": 4.689583333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "timestamps": [
+      4.6,
+      4.64,
+      4.68,
+      4.72,
+      4.76
+    ],
+    "image": "results/joyvasa/original/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "joyvasa",
+    "product": "diet",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/joyvasa/diet/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "joyvasa",
+    "product": "diet",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.511083333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "timestamps": [
+      5.44,
+      5.48,
+      5.52,
+      5.56,
+      5.6
+    ],
+    "image": "results/joyvasa/diet/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "joyvasa",
+    "product": "zero",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/joyvasa/zero/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "joyvasa",
+    "product": "zero",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.839041666666667,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "timestamps": [
+      5.76,
+      5.8,
+      5.84,
+      5.88,
+      5.92
+    ],
+    "image": "results/joyvasa/zero/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever_nocache",
+    "product": "original",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/avatarforever_nocache/original/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever_nocache",
+    "product": "original",
+    "phase": "ending",
+    "speech_boundary_seconds": 4.689583333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "timestamps": [
+      4.6,
+      4.64,
+      4.68,
+      4.72,
+      4.76
+    ],
+    "image": "results/avatarforever_nocache/original/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever_nocache",
+    "product": "diet",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/avatarforever_nocache/diet/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever_nocache",
+    "product": "diet",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.511083333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      136,
+      137,
+      138,
+      139,
+      140
+    ],
+    "timestamps": [
+      5.44,
+      5.48,
+      5.52,
+      5.56,
+      5.6
+    ],
+    "image": "results/avatarforever_nocache/diet/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever_nocache",
+    "product": "zero",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/avatarforever_nocache/zero/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever_nocache",
+    "product": "zero",
+    "phase": "ending",
+    "speech_boundary_seconds": 5.839041666666667,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      144,
+      145,
+      146,
+      147,
+      148
+    ],
+    "timestamps": [
+      5.76,
+      5.8,
+      5.84,
+      5.88,
+      5.92
+    ],
+    "image": "results/avatarforever_nocache/zero/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever_speaking",
+    "product": "original",
+    "phase": "opening",
+    "speech_boundary_seconds": 2.48,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "timestamps": [
+      2.4,
+      2.44,
+      2.48,
+      2.52,
+      2.56
+    ],
+    "image": "results/avatarforever_speaking/original/opening_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  },
+  {
+    "engine": "avatarforever_speaking",
+    "product": "original",
+    "phase": "ending",
+    "speech_boundary_seconds": 4.689583333333333,
+    "inspection_format_version": 2,
+    "candidate_face_crop_xywh": [
+      320,
+      80,
+      128,
+      128
+    ],
+    "nominal_audio_padding_start_seconds": 2.4,
+    "opening_center_note": "First clear speech energy is near 2.48s in all three shared tracks; 40ms bins, not forced phoneme alignment.",
+    "frames": [
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "timestamps": [
+      4.6,
+      4.64,
+      4.68,
+      4.72,
+      4.76
+    ],
+    "image": "results/avatarforever_speaking/original/ending_consecutive_faces.jpg",
+    "layout": "Top row: LTX+Serena baseline. Bottom row: candidate. Left to right: five consecutive frames.",
+    "operation": "Fixed 128x128 face crop at x=320,y=80, bilinear 2x enlargement. No frame synthesis or quality score."
+  }
+]

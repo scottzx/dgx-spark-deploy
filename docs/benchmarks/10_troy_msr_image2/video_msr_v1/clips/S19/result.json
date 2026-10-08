@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "id": "S19",
+  "title": "军团冲门交锋",
+  "seed": 2026100519,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S19/raw.mp4",
+  "raw_sha256": "35df26c96ee3be6513c39407f8f51a63689186a010b8df168a7dfa97e82c4992",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S19/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "aee63db4ab4a1f8361ea41c27331813bc3cd4bedab7f5a648c130e0b277a7bc8",
+    "bytes": 1742767
+  },
+  "generation_s": 137.9308649362065,
+  "phases_s": {
+    "reference_encode_block_s": 2.8728283108212054,
+    "denoising_loop_s": 65.15114989504218,
+    "diffusion_block_s": 130.0432986910455,
+    "decode_and_encode_block_s": 4.961584668140858
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "agamemnon",
+      "kind": "character",
+      "role": "Agamemnon, older stocky gray-black bearded commander, lion cuirass, crimson cloak, no shield",
+      "source_file": "assets/characters/agamemnon_v1.png",
+      "file": "inputs/agamemnon.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/agamemnon.png",
+      "sha256": "d7d48940893fe78b4e3929c75a6ab34dfb023df95810345fe5df299cef696b7f",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "greeks",
+      "kind": "group",
+      "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+      "source_file": "assets/groups/greek_infantry_v1.png",
+      "file": "inputs/greeks.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 3,
+      "id": "trojans",
+      "kind": "group",
+      "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+      "source_file": "assets/groups/trojan_defenders_v1.png",
+      "file": "inputs/trojans.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+      "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 4,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard_v2/frames/s19_qwen21_v1.png",
+      "file": "inputs/board_S19.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S19.png",
+      "sha256": "6ed03ff6b3bbb517a768c31908ecdc33c7790151e153dec34c8e2273894fdf03",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "29e17bea5c13a21e816e33233fc205bcd4a40cf7b09bcd61c31e8de7f0141541",
+  "prompt_cache_fingerprint": "dbff121961f86d552f143e944d06867b034d8aad4d25a84bce9fbf2b592edea5",
+  "peak_torch_allocated_bytes": 42457502208,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "policy": "8-bit RGB adjacent-frame MAE in the median tracked face crop. A diagnostic, not a lip-sync, identity or aesthetic acceptance score. Native segment boundaries may land between 25 FPS frames.",
+  "clips": [
+    {
+      "product": "original",
+      "audio_hash_unchanged": true,
+      "transition_weights_continuous": true,
+      "face_crop": [
+        239,
+        50,
+        96,
+        104
+      ],
+      "boundaries": [
+        {
+          "time_seconds": 2.2,
+          "description": "旧开口硬切点",
+          "nearest_frame": 55,
+          "dubbing_residual_step_mae": 0.9163995981216431,
+          "motion_face_step_mae": 0.5094484686851501,
+          "motion_step_ratio_to_local_median": 2.6468343362426814
+        },
+        {
+          "time_seconds": 6.04,
+          "description": "旧收口硬切点",
+          "nearest_frame": 151,
+          "dubbing_residual_step_mae": 0.7336071133613586,
+          "motion_face_step_mae": 0.9019430875778198,
+          "motion_step_ratio_to_local_median": 0.6982063056699795
+        },
+        {
+          "time_seconds": 2.4,
+          "description": "本轮开口",
+          "nearest_frame": 60,
+          "dubbing_residual_step_mae": 1.9372663497924805,
+          "motion_face_step_mae": 0.2074986696243286,
+          "motion_step_ratio_to_local_median": 1.2878160120153004
+        },
+        {
+          "time_seconds": 4.689583333333333,
+          "description": "本轮收口",
+          "nearest_frame": 117,
+          "dubbing_residual_step_mae": 0.4807024598121643,
+          "motion_face_step_mae": 0.014423076994717121,
+          "motion_step_ratio_to_local_median": 0.4561774082641232
+        },
+        {
+          "time_seconds": 3.375,
+          "description": "Wan 第二段首帧",
+          "nearest_frame": 84,
+          "dubbing_residual_step_mae": 2.6049344539642334,
+          "motion_face_step_mae": 1.5177950859069824,
+          "motion_step_ratio_to_local_median": 4.2085724764019155
+        },
+        {
+          "time_seconds": 6.708333333333333,
+          "description": "Wan 第三段首帧",
+          "nearest_frame": 168,
+          "dubbing_residual_step_mae": 1.9300881624221802,
+          "motion_face_step_mae": 1.3096287250518799,
+          "motion_step_ratio_to_local_median": 1.1602578725870651
+        }
+      ]
+    },
+    {
+      "product": "diet",
+      "audio_hash_unchanged": true,
+      "transition_weights_continuous": true,
+      "face_crop": [
+        241,
+        50,
+        96,
+        104
+      ],
+      "boundaries": [
+        {
+          "time_seconds": 2.2,
+          "description": "旧开口硬切点",
+          "nearest_frame": 55,
+          "dubbing_residual_step_mae": 1.1296741962432861,
+          "motion_face_step_mae": 0.9637085795402527,
+          "motion_step_ratio_to_local_median": 1.5197704564204741
+        },
+        {
+          "time_seconds": 6.04,
+          "description": "旧收口硬切点",
+          "nearest_frame": 151,
+          "dubbing_residual_step_mae": 1.830094814300537,
+          "motion_face_step_mae": 3.331563949584961,
+          "motion_step_ratio_to_local_median": 2.4709539930970768
+        },
+        {
+          "time_seconds": 2.4,
+          "description": "本轮开口",
+          "nearest_frame": 60,
+          "dubbing_residual_step_mae": 3.1223957538604736,
+          "motion_face_step_mae": 0.47776442766189575,
+          "motion_step_ratio_to_local_median": 0.7965045073656394
+        },
+        {
+          "time_seconds": 5.511083333333334,
+          "description": "本轮收口",
+          "nearest_frame": 138,
+          "dubbing_residual_step_mae": 0.5521835088729858,
+          "motion_face_step_mae": 0.2962072789669037,
+          "motion_step_ratio_to_local_median": 0.31891874599388903
+        },
+        {
+          "time_seconds": 3.375,
+          "description": "Wan 第二段首帧",
+          "nearest_frame": 84,
+          "dubbing_residual_step_mae": 2.764389753341675,
+          "motion_face_step_mae": 2.414797067642212,
+          "motion_step_ratio_to_local_median": 0.7087228516255175
+        },
+        {
+          "time_seconds": 6.708333333333333,
+          "description": "Wan 第三段首帧",
+          "nearest_frame": 168,
+          "dubbing_residual_step_mae": 2.398771286010742,
+          "motion_face_step_mae": 2.290698528289795,
+          "motion_step_ratio_to_local_median": 1.6949358076020395
+        }
+      ]
+    },
+    {
+      "product": "zero",
+      "audio_hash_unchanged": true,
+      "transition_weights_continuous": true,
+      "face_crop": [
+        242,
+        51,
+        96,
+        104
+      ],
+      "boundaries": [
+        {
+          "time_seconds": 2.2,
+          "description": "旧开口硬切点",
+          "nearest_frame": 55,
+          "dubbing_residual_step_mae": 0.9125601053237915,
+          "motion_face_step_mae": 0.4305889308452606,
+          "motion_step_ratio_to_local_median": 1.0
+        },
+        {
+          "time_seconds": 6.04,
+          "description": "旧收口硬切点",
+          "nearest_frame": 151,
+          "dubbing_residual_step_mae": 1.4111912250518799,
+          "motion_face_step_mae": 2.1641292572021484,
+          "motion_step_ratio_to_local_median": 1.2274422721475557
+        },
+        {
+          "time_seconds": 2.4,
+          "description": "本轮开口",
+          "nearest_frame": 60,
+          "dubbing_residual_step_mae": 2.050447463989258,
+          "motion_face_step_mae": 0.31436964869499207,
+          "motion_step_ratio_to_local_median": 0.8786040712575435
+        },
+        {
+          "time_seconds": 5.839041666666667,
+          "description": "本轮收口",
+          "nearest_frame": 146,
+          "dubbing_residual_step_mae": 1.626268744468689,
+          "motion_face_step_mae": 2.891359567642212,
+          "motion_step_ratio_to_local_median": 1.0754939728926276
+        },
+        {
+          "time_seconds": 3.375,
+          "description": "Wan 第二段首帧",
+          "nearest_frame": 84,
+          "dubbing_residual_step_mae": 2.1202924251556396,
+          "motion_face_step_mae": 0.8530648946762085,
+          "motion_step_ratio_to_local_median": 10.566997730101239
+        },
+        {
+          "time_seconds": 6.708333333333333,
+          "description": "Wan 第三段首帧",
+          "nearest_frame": 168,
+          "dubbing_residual_step_mae": 2.253939628601074,
+          "motion_face_step_mae": 1.3841146230697632,
+          "motion_step_ratio_to_local_median": 1.569686892565331
+        }
+      ]
+    }
+  ]
+}

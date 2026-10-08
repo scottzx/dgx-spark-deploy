@@ -1,0 +1,360 @@
+{
+  "status": "PASS",
+  "method": "ingredients",
+  "clips": [
+    {
+      "status": "PASS",
+      "case_id": "climax_v2_01_gate",
+      "method": "ingredients",
+      "seed": 2026100401,
+      "output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_01_gate/raw.mp4",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_01_gate/delivered.mp4",
+      "delivered_frames": 121,
+      "generation_s": 138.104424436111,
+      "phases_s": {
+        "reference_encode_block_s": 3.1547552761621773,
+        "denoising_loop_s": 57.25520577002317,
+        "diffusion_block_s": 129.31424301723018,
+        "decode_and_encode_block_s": 5.406630534213036
+      },
+      "conditions": [
+        {
+          "type": "static_sheet",
+          "latent_shape": [
+            1,
+            128,
+            16,
+            14,
+            24
+          ]
+        }
+      ],
+      "prompt_key": "ingredients_01_gate",
+      "prompt_fingerprint": "87aaf9b5e3e7b26c5be2ed9bd1addffb769e42f26aa6f902c56ae4f01afa21ea",
+      "reference_sources": [
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/horse_square.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/board_01.png"
+      ],
+      "ingredients_sheet": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/ingredients_01.png",
+      "peak_torch_allocated_bytes": 42439439872,
+      "steps": 8,
+      "width": 768,
+      "height": 448,
+      "media": {
+        "frames": 121,
+        "width": 768,
+        "height": 448,
+        "fps": 24,
+        "duration_s": 5.041666666666667,
+        "sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true
+      },
+      "transition": "independent",
+      "timeline_trim": "shorten ending to common story duration",
+      "timing_boundary": "prompt cache load through raw MP4, including per-block model loading",
+      "native_port": false,
+      "audio_reference": false
+    },
+    {
+      "status": "PASS",
+      "case_id": "climax_v2_02_square",
+      "method": "ingredients",
+      "seed": 2026100402,
+      "output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_02_square/raw.mp4",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_02_square/delivered.mp4",
+      "delivered_frames": 102,
+      "generation_s": 134.6626204890199,
+      "phases_s": {
+        "reference_encode_block_s": 2.613260878250003,
+        "denoising_loop_s": 57.4277033819817,
+        "diffusion_block_s": 125.09743215003982,
+        "decode_and_encode_block_s": 6.878366680815816
+      },
+      "conditions": [
+        {
+          "type": "static_sheet",
+          "latent_shape": [
+            1,
+            128,
+            16,
+            14,
+            24
+          ]
+        }
+      ],
+      "prompt_key": "ingredients_02_square",
+      "prompt_fingerprint": "f1beff091b0f15db26fb366feddf448a8b7c403fa01b0c3bacc993aab769e09b",
+      "reference_sources": [
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/horse_square.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/board_02.png"
+      ],
+      "ingredients_sheet": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/ingredients_02.png",
+      "peak_torch_allocated_bytes": 42441363968,
+      "steps": 8,
+      "width": 768,
+      "height": 448,
+      "media": {
+        "frames": 102,
+        "width": 768,
+        "height": 448,
+        "fps": 24,
+        "duration_s": 4.25,
+        "sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true
+      },
+      "transition": "independent",
+      "timeline_trim": "shorten ending to common story duration",
+      "timing_boundary": "prompt cache load through raw MP4, including per-block model loading",
+      "native_port": false,
+      "audio_reference": false
+    },
+    {
+      "status": "PASS",
+      "case_id": "climax_v2_03_park",
+      "method": "ingredients",
+      "seed": 2026100403,
+      "output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_03_park/raw.mp4",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_03_park/delivered.mp4",
+      "delivered_frames": 121,
+      "generation_s": 119.56833073776215,
+      "phases_s": {
+        "reference_encode_block_s": 2.8172561931423843,
+        "denoising_loop_s": 57.29384299693629,
+        "diffusion_block_s": 111.7484123702161,
+        "decode_and_encode_block_s": 4.977115366142243
+      },
+      "conditions": [
+        {
+          "type": "static_sheet",
+          "latent_shape": [
+            1,
+            128,
+            16,
+            14,
+            24
+          ]
+        }
+      ],
+      "prompt_key": "ingredients_03_park",
+      "prompt_fingerprint": "4ed67704a077d8c186c31e20d4a28a11f14243e3fb35250b25812181c419505b",
+      "reference_sources": [
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/horse_square.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/board_03.png"
+      ],
+      "ingredients_sheet": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/ingredients_03.png",
+      "peak_torch_allocated_bytes": 42442290688,
+      "steps": 8,
+      "width": 768,
+      "height": 448,
+      "media": {
+        "frames": 121,
+        "width": 768,
+        "height": 448,
+        "fps": 24,
+        "duration_s": 5.041666666666667,
+        "sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true
+      },
+      "transition": "independent",
+      "timeline_trim": "shorten ending to common story duration",
+      "timing_boundary": "prompt cache load through raw MP4, including per-block model loading",
+      "native_port": false,
+      "audio_reference": false
+    },
+    {
+      "status": "PASS",
+      "case_id": "climax_v2_04_night",
+      "method": "ingredients",
+      "seed": 2026100404,
+      "output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_04_night/raw.mp4",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_04_night/delivered.mp4",
+      "delivered_frames": 121,
+      "generation_s": 118.30385071691126,
+      "phases_s": {
+        "reference_encode_block_s": 2.725227420218289,
+        "denoising_loop_s": 57.348238717764616,
+        "diffusion_block_s": 110.59526102384552,
+        "decode_and_encode_block_s": 4.938034371938556
+      },
+      "conditions": [
+        {
+          "type": "static_sheet",
+          "latent_shape": [
+            1,
+            128,
+            16,
+            14,
+            24
+          ]
+        }
+      ],
+      "prompt_key": "ingredients_04_night",
+      "prompt_fingerprint": "6f5375af5d770789ec90faf246a635a2eb280b25df8826804b74edff25020bb2",
+      "reference_sources": [
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/horse_square.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/board_04.png"
+      ],
+      "ingredients_sheet": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/ingredients_04.png",
+      "peak_torch_allocated_bytes": 42441560576,
+      "steps": 8,
+      "width": 768,
+      "height": 448,
+      "media": {
+        "frames": 121,
+        "width": 768,
+        "height": 448,
+        "fps": 24,
+        "duration_s": 5.041666666666667,
+        "sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true
+      },
+      "transition": "independent",
+      "timeline_trim": "shorten ending to common story duration",
+      "timing_boundary": "prompt cache load through raw MP4, including per-block model loading",
+      "native_port": false,
+      "audio_reference": false
+    },
+    {
+      "status": "PASS",
+      "case_id": "climax_v2_05_hatch",
+      "method": "ingredients",
+      "seed": 2026100405,
+      "output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_05_hatch/raw.mp4",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_05_hatch/delivered.mp4",
+      "delivered_frames": 102,
+      "generation_s": 133.4344662381336,
+      "phases_s": {
+        "reference_encode_block_s": 2.7575468318536878,
+        "denoising_loop_s": 57.20411683572456,
+        "diffusion_block_s": 125.45458457106724,
+        "decode_and_encode_block_s": 5.19930568896234
+      },
+      "conditions": [
+        {
+          "type": "static_sheet",
+          "latent_shape": [
+            1,
+            128,
+            16,
+            14,
+            24
+          ]
+        }
+      ],
+      "prompt_key": "ingredients_05_hatch",
+      "prompt_fingerprint": "49d6e7157a1d4d3f5614e8dbc2f382e2801b3ca52158371870298ed8f25fb2ce",
+      "reference_sources": [
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/red_identity.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/blue_identity.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/equipment.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/horse_square.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/board_05.png"
+      ],
+      "ingredients_sheet": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/ingredients_05.png",
+      "peak_torch_allocated_bytes": 42441560576,
+      "steps": 8,
+      "width": 768,
+      "height": 448,
+      "media": {
+        "frames": 102,
+        "width": 768,
+        "height": 448,
+        "fps": 24,
+        "duration_s": 4.25,
+        "sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true
+      },
+      "transition": "independent",
+      "timeline_trim": "shorten ending to common story duration",
+      "timing_boundary": "prompt cache load through raw MP4, including per-block model loading",
+      "native_port": false,
+      "audio_reference": false
+    },
+    {
+      "status": "PASS",
+      "case_id": "climax_v2_06_exit",
+      "method": "ingredients",
+      "seed": 2026100406,
+      "output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_06_exit/raw.mp4",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/climax_v2_06_exit/delivered.mp4",
+      "delivered_frames": 102,
+      "generation_s": 132.9961375873536,
+      "phases_s": {
+        "reference_encode_block_s": 2.76258936105296,
+        "denoising_loop_s": 56.89689289778471,
+        "diffusion_block_s": 125.02977002691478,
+        "decode_and_encode_block_s": 5.159057163167745
+      },
+      "conditions": [
+        {
+          "type": "static_sheet",
+          "latent_shape": [
+            1,
+            128,
+            16,
+            14,
+            24
+          ]
+        }
+      ],
+      "prompt_key": "ingredients_06_exit",
+      "prompt_fingerprint": "ddfd3c33cbfdca943dcc462637752a9416563747922cfa55d5e38a14fa649bae",
+      "reference_sources": [
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/red_identity.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/blue_identity.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/equipment.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/horse_square.png",
+        "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/board_06.png"
+      ],
+      "ingredients_sheet": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/ingredients_06.png",
+      "peak_torch_allocated_bytes": 42441560576,
+      "steps": 8,
+      "width": 768,
+      "height": 448,
+      "media": {
+        "frames": 102,
+        "width": 768,
+        "height": 448,
+        "fps": 24,
+        "duration_s": 4.25,
+        "sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true
+      },
+      "transition": "independent",
+      "timeline_trim": "shorten ending to common story duration",
+      "timing_boundary": "prompt cache load through raw MP4, including per-block model loading",
+      "native_port": false,
+      "audio_reference": false
+    }
+  ],
+  "output": "/home/admin/sol-spark-runtime/troy_climax_20261004/ingredients/film.mp4",
+  "media": {
+    "frames": 669,
+    "width": 768,
+    "height": 448,
+    "fps": 24,
+    "duration_s": 27.875,
+    "sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true
+  },
+  "comparison_scope": "H3 generic/specific share captures. Native LTX methods generate independent shots; shorten their ending to matched timeline lengths, without claiming motion continuation.",
+  "method_preparation_s": 0.758969091810286,
+  "weight_receipt": {
+    "status": "PASS",
+    "source": "ModelScope",
+    "repo": "Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients",
+    "file": "ltx-2.5-22b-ic-lora-ingredients-0.9.safetensors",
+    "bytes": 1308787472,
+    "sha256": "ff873a5beada3c579a8137c7c53343916f78bcc9a529ba910143073fe8715e95",
+    "checksum_source": "official Hugging Face revision metadata, independently verified"
+  },
+  "generation_s": 777.0698302052915,
+  "timing_note": "Per-block official model lifecycle; weights reload for each block. Offline text preparation, validation and final assembly excluded."
+}

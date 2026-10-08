@@ -1,0 +1,6 @@
+{
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "status": "cancelled",
+  "reason": "Public model transfer remained too slow; cached Chinese voices can provide the requested style auditions. Partial cache retained, no VoiceDesign output claimed.",
+  "ended_at_utc": "2026-10-08T11:25:03.760536+00:00"
+}

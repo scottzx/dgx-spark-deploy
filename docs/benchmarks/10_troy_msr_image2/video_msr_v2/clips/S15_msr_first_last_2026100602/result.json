@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "id": "S15_msr_first_last_2026100602",
+  "title": "剑矛交锋对照",
+  "seed": 2026100602,
+  "manifest_fingerprint": "fc3fefccad737763bfa1324360513889459ebf383e505fc4062e2723badb88e4",
+  "input_fingerprint": "a0b30fbd05f2bc27cf2953abfbd3ec2611a0c32dc6731422b0530fabf9642d86",
+  "method": "msr_first_last",
+  "resident_transformer": true,
+  "case_id": "S15",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S15_msr_first_last_2026100602/raw.mp4",
+  "raw_sha256": "92445bbc963f05b8f9e900aedf98c581f790a331be7d3454625c020034da4519",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S15_msr_first_last_2026100602/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "f11af6948980114041a4ba5e8a808b50c31d6325426510203f5ba2c909340df3",
+    "bytes": 1453570
+  },
+  "generation_s": 85.99983144924045,
+  "phases_s": {
+    "reference_encode_block_s": 3.556275213137269,
+    "denoising_loop_s": 77.15584238618612,
+    "diffusion_block_s": 77.1629499043338,
+    "decode_and_encode_block_s": 5.265430353116244
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "odysseus",
+      "kind": "character",
+      "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+      "file": "inputs/odysseus.png",
+      "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+      "offset": -5,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "guard",
+      "kind": "character",
+      "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+      "file": "inputs/guard.png",
+      "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 3,
+      "id": "greeks",
+      "kind": "group",
+      "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+      "file": "inputs/greeks.png",
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 4,
+      "id": "trojans",
+      "kind": "group",
+      "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+      "file": "inputs/trojans.png",
+      "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 5,
+      "id": "board",
+      "kind": "staging",
+      "role": "start-state composition reference; same cast, not additional people",
+      "file": "keyframes/S15_start.png",
+      "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "file": "keyframes/S15_start.png",
+      "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6",
+      "frame_index": 0,
+      "strength": 1.0,
+      "kind": "temporal_anchor",
+      "conditioning": "replace latent0"
+    },
+    {
+      "file": "keyframes/S15_end.png",
+      "sha256": "f4f49b95aeeff8f820fee327b0d0e25615b1e9735717e8b604f849bb60ca9fa7",
+      "frame_index": 120,
+      "strength": 1.0,
+      "kind": "temporal_anchor",
+      "conditioning": "append guiding tokens at pixel frame120"
+    }
+  ],
+  "prompt_sha256": "cbbd11d41ba5d1b90d2b43ec8f4d4639269ba1c01613ffeaad7355339c953923",
+  "prompt_cache_fingerprint": "0a8124afcefdef6ec53c3003233a22a0fb4aaef006bb25055c1b40532a04012e",
+  "peak_torch_allocated_bytes": 41602155520,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

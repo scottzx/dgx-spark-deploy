@@ -1,0 +1,16 @@
+{
+  "selected_frames": 16,
+  "retained_revision_frames": 3,
+  "png_crc_and_decode_checked": 19,
+  "source_copy_sha256_matched": 19,
+  "prompt_and_reference_paths_checked": 16,
+  "review_summary": {
+    "pass": 13,
+    "partial": 3
+  },
+  "successful_image_generations": 19,
+  "failed_requests_retried": 2,
+  "sum_successful_generation_wall_s": 4196,
+  "video_generated": false,
+  "quality_mode_confirmed": false
+}

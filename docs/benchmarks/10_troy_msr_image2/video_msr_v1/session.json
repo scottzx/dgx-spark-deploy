@@ -1,0 +1,52 @@
+{
+  "status": "complete",
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "started_unix": 1791171739.1023433,
+  "phases": [
+    {
+      "phase": "caches",
+      "exit_code": 0,
+      "wall_s": 140.86998573504388
+    },
+    {
+      "phase": "render",
+      "exit_code": 0,
+      "wall_s": 2860.2217217539437
+    }
+  ],
+  "video_service_before": {
+    "status": "READY",
+    "task": "fl2va",
+    "paths_file": "/home/admin/sol-spark-runtime/paths.json",
+    "startup_and_warmup_s": 469.03189420700073,
+    "ready_time": "2026-10-05T10:18:31.885405",
+    "requests_served": 0,
+    "workflows": [
+      "independent",
+      "continue"
+    ],
+    "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+    "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=fl2va; modes: draft|final)"
+  },
+  "child_pid": 1966176,
+  "status_before_restore": "generation_complete",
+  "restored_server_pid": 1979077,
+  "finished_unix": 1791175987.15375,
+  "video_service_restored": true,
+  "video_service_after": {
+    "status": "READY",
+    "task": "fl2va",
+    "paths_file": "/home/admin/sol-spark-runtime/paths.json",
+    "startup_and_warmup_s": 1265.9686858654022,
+    "ready_time": "2026-10-05T12:54:13.083854",
+    "requests_served": 0,
+    "workflows": [
+      "independent",
+      "continue"
+    ],
+    "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+    "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=fl2va; modes: draft|final)"
+  },
+  "late_restore_verified_unix": 1791177184.1888187,
+  "restore_note": "Resident server became READY after the 1200-second supervision deadline; independently verified without restarting it."
+}

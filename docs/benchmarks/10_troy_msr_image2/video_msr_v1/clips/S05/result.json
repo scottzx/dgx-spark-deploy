@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "id": "S05",
+  "title": "暮色停驻",
+  "seed": 2026100505,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S05/raw.mp4",
+  "raw_sha256": "64786a67875402f6cab9c6d826804bdfdc11ee3182206e9793d6060e27ff9b93",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S05/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "9446f5acb0a6672d10fb5cd912e40c15a22aeb7112b683570f3cbc20d3f35bcb",
+    "bytes": 999375
+  },
+  "generation_s": 141.54368740087375,
+  "phases_s": {
+    "reference_encode_block_s": 2.9120083525776863,
+    "denoising_loop_s": 65.19436645973474,
+    "diffusion_block_s": 133.57184413587674,
+    "decode_and_encode_block_s": 5.03274831129238
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "worker",
+      "kind": "character",
+      "role": "the unarmed Trojan rope-pulling worker",
+      "source_file": "assets/characters/trojan_worker_01_v1.png",
+      "file": "inputs/worker.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+      "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "citizen",
+      "kind": "character",
+      "role": "the unarmed Trojan woman citizen",
+      "source_file": "assets/characters/trojan_citizen_01_v1.png",
+      "file": "inputs/citizen.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/citizen.png",
+      "sha256": "ff4cc759109642df55ef851dbc8b600aabc39dac5baaed322a781e932fec190a",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 3,
+      "id": "dusk",
+      "kind": "scene",
+      "role": "square architecture at dusk: gate rear left, fountain right",
+      "source_file": "assets/scenes/square_dusk_v1.png",
+      "file": "inputs/dusk.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/dusk.png",
+      "sha256": "7d86b6b3e4f9a2d40963cd6077919c8664433edc92d1feada440cd6100c6155c",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 4,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard/frames/s05_v1.png",
+      "file": "inputs/board_S05.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S05.png",
+      "sha256": "714d42deaeeaa3edd493ab5117cee2de198633ae54220e66b48283f8ed635a1a",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "4f6659e9ddd0797bac69b7dd822a39c7bdb088dd0d59ee3f1fa4e47834a8c5a6",
+  "prompt_cache_fingerprint": "a69b0672d1dd0f469bd2712ec3e1db4af4fd73269bb94e92eb834190bcf2734c",
+  "peak_torch_allocated_bytes": 42457502208,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

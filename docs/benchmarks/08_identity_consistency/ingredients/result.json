@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "method": "ingredients",
+  "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/ingredients/trial.mp4",
+  "elapsed_s": 138.56717354571447,
+  "width": 768,
+  "height": 448,
+  "frames": 121,
+  "fps": 24,
+  "seed": 2026100301,
+  "steps": 8,
+  "distilled_lora_strength": 1.0,
+  "identity_lora_strength": 1.0,
+  "base_model": "/home/admin/sol-spark-runtime/checkpoints/LTX-2.5/diffusion_models/ltx-2.5-22b-dev-transformer-bf16.safetensors",
+  "conditions": [
+    {
+      "type": "static_sheet_video",
+      "frames": 121,
+      "latent_shape": [
+        1,
+        128,
+        16,
+        14,
+        24
+      ]
+    }
+  ],
+  "prompt": "Reference sheet: A black reference-sheet layout. Top left shows the bearded Greek warrior with short dark hair, engraved bronze cuirass, red cloak and sandals, including face and full body. Top middle shows the clean-shaven Greek warrior with curly black hair, engraved bronze cuirass, blue cloak and sandals, including face and full body. Top right shows two straight silver swords and one round bronze shield. Bottom row shows the sandy Troy courtyard, stone walls, lit braziers and a large wooden horse sculpture visibly assembled from timber planks. Generated video: A single continuous five-second medium-wide shot in a 1970s Shaw Brothers studio sword film. Two Greek warriors duel in a sandy torch-lit Troy courtyard. The bearded warrior on the left has short dark hair, an engraved bronze cuirass, a red cloak and brown sandals; his right hand holds one straight silver sword and his left hand is empty. The clean-shaven warrior on the right has curly black hair, an engraved bronze cuirass, a blue cloak and brown sandals; his right hand holds one straight silver sword and his left hand holds a round bronze shield. The red warrior advances and delivers a diagonal strike. The blue warrior parries while continuously holding his shield. They take a half step back and circle with readable controlled choreography. Both faces, hair, engraved bronze armor, red and blue cloaks and weapons remain the same throughout. A large stationary wooden Trojan horse assembled from timber planks stands behind them. Warm amber braziers, deep blue night, saturated 35mm film colors, theatrical studio lighting, gentle rightward camera tracking. Exactly two warriors, two swords and one round shield. Wind, crackling flames, sandal scuffs and metallic blade clashes, no dialogue or music.",
+  "weight_receipt": {
+    "status": "PASS",
+    "source": "ModelScope",
+    "repo": "Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients",
+    "file": "ltx-2.5-22b-ic-lora-ingredients-0.9.safetensors",
+    "bytes": 1308787472,
+    "sha256": "ff873a5beada3c579a8137c7c53343916f78bcc9a529ba910143073fe8715e95",
+    "checksum_source": "official Hugging Face revision metadata, independently verified"
+  },
+  "native_port": false,
+  "msr_source_revision": null,
+  "stage2_refinement": false
+}

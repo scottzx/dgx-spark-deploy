@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-10-07T17:46:12+0800",
+  "processes": [
+    {
+      "pid": 785109,
+      "ppid": 1,
+      "command": "/home/admin/sol-spark-runtime/bootstrap-env/bin/python /home/admin/sol-spark-runtime/sol_async_gateway.py",
+      "cwd": "/home/admin"
+    },
+    {
+      "pid": 1048303,
+      "ppid": 1,
+      "command": "/home/admin/envs/proxy-env/bin/python3 /home/admin/session_fifo_proxy.py",
+      "cwd": "/home/admin"
+    },
+    {
+      "pid": 2026947,
+      "ppid": 1,
+      "command": "/home/admin/sol-spark-runtime/bootstrap-env/bin/python /home/admin/sol-spark-runtime/sol_api_server.py",
+      "cwd": "/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark"
+    },
+    {
+      "pid": 2026962,
+      "ppid": 2026947,
+      "command": "/home/admin/sol-spark-runtime/stage1-env/bin/python -m runtime.worker --module stage1 --options /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/stage1-worker/options.json --ready /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/stage1-worker/ready.json",
+      "cwd": "/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark"
+    },
+    {
+      "pid": 2026970,
+      "ppid": 2026962,
+      "command": "/home/admin/sol-spark-runtime/stage1-env/bin/python -B -s -c from multiprocessing.resource_tracker import main;main(19)",
+      "cwd": "/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark"
+    },
+    {
+      "pid": 2026971,
+      "ppid": 2026962,
+      "command": "/home/admin/sol-spark-runtime/stage1-env/bin/python -B -s -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=20, pipe_handle=28) --multiprocessing-fork",
+      "cwd": "/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark"
+    },
+    {
+      "pid": 2027504,
+      "ppid": 2026947,
+      "command": "/home/admin/sol-spark-runtime/stage2-env/bin/python -m torch.distributed.run --standalone --nproc_per_node=1 --module runtime.worker --module stage2 --options /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/stage2-worker/options.json --ready /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/stage2-worker/ready.json",
+      "cwd": "/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark"
+    },
+    {
+      "pid": 2027510,
+      "ppid": 2027504,
+      "command": "/home/admin/sol-spark-runtime/stage2-env/bin/python -u -m runtime.worker --module stage2 --options /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/stage2-worker/options.json --ready /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/stage2-worker/ready.json",
+      "cwd": "/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark"
+    },
+    {
+      "pid": 2028118,
+      "ppid": 2026947,
+      "command": "bash /home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark/qwen_python.sh -m runtime.worker --module qwen --options /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/qwen-worker/options.json --ready /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/qwen-worker/ready.json",
+      "cwd": "/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark"
+    },
+    {
+      "pid": 2028133,
+      "ppid": 2028118,
+      "command": "docker run --rm --name sol-h3-qwen-2028118-11168-8384 --pull=never --gpus device=0 --ipc=host --network=none -i --user 1000:1000 --mount type=bind,src=/home/admin/sol-spark-runtime,dst=/home/admin/sol-spark-runtime --mount type=bind,src=/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark,dst=/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark,readonly --workdir /home/admin/sol-spark-runtime -e USER=admin -e LOGNAME=admin -e HOME=/home/admin/sol-spark-runtime/.qwen-home -e XDG_CACHE_HOME=/home/admin/sol-spark-runtime/.qwen-home/.cache -e TORCHINDUCTOR_CACHE_DIR=/home/admin/sol-spark-runtime/.qwen-home/.cache/torchinductor -e OMP_NUM_THREADS=1 -e OPENBLAS_NUM_THREADS=1 -e MKL_NUM_THREADS=1 -e NUMEXPR_NUM_THREADS=1 -e TOKENIZERS_PARALLELISM=false -e HF_HUB_OFFLINE=1 -e TRANSFORMERS_OFFLINE=1 -e PYTHONPATH=/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark -e PYTHONUNBUFFERED=1 -e PYTHONDONTWRITEBYTECODE=1 --entrypoint /usr/bin/python3 sol-h3-spark-qwen -m runtime.worker --module qwen --options /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/qwen-worker/options.json --ready /home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-224051_fl2va/qwen-worker/ready.json",
+      "cwd": "/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark"
+    }
+  ],
+  "running_containers": [
+    "sol-h3-qwen-2028118-11168-8384"
+  ]
+}

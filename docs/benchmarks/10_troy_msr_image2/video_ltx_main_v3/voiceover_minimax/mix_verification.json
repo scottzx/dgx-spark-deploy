@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "plan_fingerprint": "7510ba9e055f1db657fcdd73ea1716d8859c7a814d3efcb43c887c3e1a32364e",
+  "source_film_sha256": "a52f16cb1e0effe20c9aaf73dcf863c3f6903b8e10b2ec79c6193ab1a753b92c",
+  "film": {
+    "path": "film_voiced.mp4",
+    "duration_s": 91.25,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "dc7045f59d25dda49812107f54f2190650154f55c9d536463a2b6b4777ce0b32",
+    "bytes": 30428686,
+    "frames": 2190,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ]
+  },
+  "battle_excerpt": {
+    "path": "battle_voiced.mp4",
+    "duration_s": 31.75,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "4c0a3804627aeaa52060e5649f826fb0b6c5a3dac434c37533717df2740fefcf",
+    "bytes": 9495156,
+    "frames": 762,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ]
+  },
+  "narration": {
+    "path": "narration.wav",
+    "duration_s": 91.25,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "f82f3ce4ab0b683639c5bccf61e9840b9a013ffeba346b476d23dd3e0c4c2b1e",
+    "bytes": 11680078
+  },
+  "mix": {
+    "path": "mix.wav",
+    "duration_s": 91.25,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "1ddba9c7e6ffaaab81b3a8062d7e1f5d05d73a236c24b889b799f0c1c7962a20",
+    "bytes": 11680078
+  },
+  "cues": 12,
+  "subtitles": 12,
+  "source_video_packet_hash": "SHA256=9b08a6dae725a40539907fb6440fd54143867ff1ad3413f5b4367846d27bb28d",
+  "voiced_video_packet_hash": "SHA256=9b08a6dae725a40539907fb6440fd54143867ff1ad3413f5b4367846d27bb28d",
+  "video_reencoded": false,
+  "narration_time_stretched": false,
+  "subtitles_source": "MiniMax returned segment timing",
+  "final_loudness": {
+    "input_i": "-16.02",
+    "input_tp": "-1.68",
+    "input_lra": "7.30",
+    "input_thresh": "-28.10",
+    "output_i": "-16.58",
+    "output_tp": "-2.00",
+    "output_lra": "14.70",
+    "output_thresh": "-28.67",
+    "normalization_type": "dynamic",
+    "target_offset": "0.58"
+  },
+  "mix_filter": "[0:a]aresample=32000,aformat=sample_fmts=fltp:channel_layouts=stereo,volume=0.55[amb];[1:a]asplit=2[sc][vo];[amb][sc]sidechaincompress=threshold=0.025:ratio=6:attack=10:release=300:makeup=1[duck];[duck][vo]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,alimiter=limit=0.90:level=false:latency=true,aresample=32000,apad=whole_len=2920000,atrim=end_sample=2920000[m]",
+  "independent_listening_review": false,
+  "independent_asr_review": false
+}

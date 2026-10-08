@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "source": "ModelScope",
+  "repo": "LiconStudio/LTX-2.5-Multiple-Subject-Reference",
+  "file": "LTX-2.5-Licon-MSR-V2.safetensors",
+  "bytes": 2215094328,
+  "sha256": "7cf982168d4f77f44b02943fb458f937f90c89335dcf7cf71b2f425e78bab713",
+  "checksum_source": "official Hugging Face revision metadata, independently verified"
+}

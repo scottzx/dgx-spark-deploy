@@ -1,0 +1,37 @@
+{
+  "id": "S10_end_v2",
+  "title": "奥德修斯向下爬梯",
+  "output": "keyframes/S10_end_v2.png",
+  "references": [
+    "keyframes/S10_start.png"
+  ],
+  "prompt": "Edit this frame. Keep the exact fixed background, camera, horse, open hatch, stone gate and fountain. Move the WHOLE single man DOWN THE LADDER BY TWO RUNG HEIGHTS, about 110 pixels in this 1536x864 image. His head, shoulders, waist, arms and BOTH FEET must all move DOWN together, not just straighten his knee. The top of his head is NOW BELOW the lower edge of the horse hatch, at about y=350 pixels; his waist is around y=570, his lowest foot is on the second rung above the ground around y=750. His head was originally level with the hatch; it must now be clearly well below it. Preserve his body proportions and same face, dark wavy hair, beard, indigo cloak and bronze armor. He still faces the horse, both hands grip the lower parts of the two rails, both feet supported on lower rungs ABOVE the ground, his sword sheathed left, NO shield. ONLY his entire body and cloak move lower; wooden ladder and all scene elements stay fixed. One photorealistic night film still, no extra man or equipment, no text, no panels.",
+  "seed": 2026100721,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S10_end_v2.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.5550273261033,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17"
+  ],
+  "sha256": "2742eacff23f5ae5b8a5e3e01b0e16f7cc1c391ad32cb5cae916f1f6132ba231",
+  "bytes": 2791703,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

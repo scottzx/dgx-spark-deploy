@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "url": "http://127.0.0.1:59137/video_ltx_main_v3/voiceover_minimax/review.html",
+  "media": [
+    {
+      "id": "film",
+      "duration": 91.25,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "id": "battle",
+      "duration": 31.75,
+      "width": 672,
+      "height": 384
+    },
+    {
+      "id": "narration",
+      "duration": 91.25,
+      "width": null,
+      "height": null
+    }
+  ],
+  "audible_playback": {
+    "time": 2.014487,
+    "muted": false,
+    "volume": 1,
+    "paused": false,
+    "decoded_audio_bytes": 54019
+  },
+  "seeked_to_s": 70.6,
+  "active_caption": "同伴拼死掩护，两人抬起门闩。",
+  "range_http_status": 206,
+  "browser_errors": [],
+  "screenshot": "preview.png",
+  "scope": "Browser audio decoding and playback check; not independent perceptual listening."
+}

@@ -1,0 +1,209 @@
+{
+  "status": "passed",
+  "selected_shots": 20,
+  "retained_cloud_shots": 14,
+  "new_qwen_selected_shots": 6,
+  "qwen_attempts": 9,
+  "qwen_request_http_seconds_total": 740.871,
+  "png_crc_and_deflate_valid": true,
+  "all_selected_copies_match_sources": true,
+  "all_prompt_and_reference_paths_match_actual_records": true,
+  "reference_path_comparison": "Normalize historical absolute paths and newer workspace-relative paths without changing receipts.",
+  "http_200_paths": 74,
+  "shot_checks": [
+    {
+      "id": "S01",
+      "sha256": "cd46b04cc6acc039948ad7ea6cc00dd063b43151e5ed9a0c2f4e3dabe146dda5",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S02",
+      "sha256": "165af8f7cc8aa526cbcd4ac37549739750b98d6be7242b7cee61380973c40022",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S03",
+      "sha256": "276251eb8d61bef578a7f3f5a1494d06859b118ff3ae7780361474a4bcc1cd26",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S04",
+      "sha256": "4e71adcd964c71139d8c25646df4d3565a3d99defcaf4964e2e5acdc0e9856cd",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S05",
+      "sha256": "714d42deaeeaa3edd493ab5117cee2de198633ae54220e66b48283f8ed635a1a",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S06",
+      "sha256": "29209fbbf85a5e934889164d93943b32c8d1bdfc2194a2a03dd82055d907a886",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S07",
+      "sha256": "9e44ec0c3ba76421e336323781eb3d96b44333497c204405c058832bd15e5131",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S08",
+      "sha256": "380d4744d460f9a97ce1ce7f3524fb98fb5a28622a356d09176d0357636874c3",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S09",
+      "sha256": "662dcb331f6d26f0a26aa90ce4ba9f6b894fb720be42d5602ca14d394e3a4ad6",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S10",
+      "sha256": "dba1180389e9d9d0ec635349a54289a3181edf0581e4d710c8927d6ae70ab295",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S11",
+      "sha256": "ddd56a76fd6754f44126e0719536149604ccb4be79e146017eecede19f57fc91",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S12",
+      "sha256": "b7f6171ac5a36c04f1fbfd50e52751a39661a9f6efba5a3dec64c828094901a2",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S13",
+      "sha256": "3aa28006faf81fcc2564ac92949ce5c84f4d6a986d27437a8d7660f555cb6255",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S14",
+      "sha256": "4ef550008e3307365e155288f0606aab868f73ce2f9142d9027dfdcd4278c1ae",
+      "size": [
+        1672,
+        941
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S15",
+      "sha256": "df73cd890460358b3ca2c445b4d68fa38eb2decd2d74170821bb2b6a9842a9d9",
+      "size": [
+        1536,
+        864
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S16",
+      "sha256": "12b33401ecb199785ffd85eb7eb3e69aba8e0f081ab77ad44ce6377a9e1e4bf7",
+      "size": [
+        1536,
+        864
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S17",
+      "sha256": "d0a38cd68d7ef14b834b29ff36aaf40ccff4d76e90b173194a9ac0d7ed036966",
+      "size": [
+        1536,
+        864
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S18",
+      "sha256": "9b4ba7f6e165fce76ba2ea1b9b4a98999c9751368da27173049fae5b0edf5051",
+      "size": [
+        1536,
+        864
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S19",
+      "sha256": "6ed03ff6b3bbb517a768c31908ecdc33c7790151e153dec34c8e2273894fdf03",
+      "size": [
+        1536,
+        864
+      ],
+      "source_copy_matches": true
+    },
+    {
+      "id": "S20",
+      "sha256": "f7be7c6ca583062347d02a4868e2e076210a86deeddc74259871964b1b5ac095",
+      "size": [
+        1536,
+        864
+      ],
+      "source_copy_matches": true
+    }
+  ],
+  "manual_review": {
+    "pass": 11,
+    "partial": 9,
+    "scope": "single static frame per selected shot; not video or stability validation"
+  },
+  "scope": "File integrity and provenance only; not image quality, identity stability or video validation.",
+  "gallery_ui_verified": {
+    "url": "http://127.0.0.1:59137/storyboard_v2/review.html",
+    "displayed_selected_count": "20 / 20",
+    "s20_lightbox_image_visually_confirmed": true,
+    "proof_screenshot": "storyboard_v2/preview_s20.png"
+  },
+  "video_service_restored": true,
+  "run_session_file": "qwen21/session.json"
+}

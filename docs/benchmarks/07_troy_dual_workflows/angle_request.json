@@ -1,0 +1,9 @@
+{
+  "case_id": "troy_20261003_220446_new_angle",
+  "transition": "independent",
+  "first_frame": "/home/admin/sol-spark-runtime/inputs/troy_workflows_20261003/board_02.png",
+  "seed": 2026100303,
+  "duration_s": 5,
+  "mode": "final",
+  "prompt": "integrated_multimodal_description: Live action in the visual style of a 1970s Shaw Brothers swordplay film, set in ancient Troy, anamorphic widescreen, theatrical amber hard light and cyan night shadows, handmade studio courtyard set, rich red and gold color, slight 35mm film grain. Exactly two adult Greek warriors with bronze cuirasses, leather sandals, short bronze swords and round shields. The bearded warrior wears a red cloak; the curly-haired clean-shaven warrior wears a blue cloak. A massive wooden Trojan horse stands behind them between ancient stone walls and two burning braziers. Clear choreographed stage combat, visible footwork, anatomically coherent bodies and swords. No wounds, no blood, no text, no extra people. A separately staged five-second action insert. In the first half second a classic Shaw Brothers rapid crash zoom pushes from the wide view into a dramatic low-angle medium shot of the two fighters. Then hold that closer camera position. The blue warrior raises his round shield against a red warrior diagonal sword strike, turns sideways and counters with a thrust; the red warrior steps back and parries. Strong readable choreographed gestures with swinging cloaks. End on the crossed swords. No other shots or people within this insert. overall_soundscape: Continuous quiet night wind and steady crackling braziers, leather sandals scuff the sand, a short clear bronze sword clash at each parry. No voices or dialogue. non_diegetic_music: None."
+}

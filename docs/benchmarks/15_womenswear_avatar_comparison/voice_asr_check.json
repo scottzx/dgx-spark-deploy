@@ -1,0 +1,16 @@
+{
+  "input": "voices/voice_preview.wav",
+  "device": "CPU",
+  "elapsed_seconds": 3.0176390358246863,
+  "result": [
+    {
+      "key": "voice_preview",
+      "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>白色衬衫简洁利落，同勤好搭，粉色开衫，温柔百搭，适合叠穿黑色连衣裙，线条简洁，日常好搭。"
+    }
+  ],
+  "expected": [
+    "白色衬衫，简洁利落，通勤好搭。",
+    "粉色开衫，温柔百搭，适合叠穿。",
+    "黑色连衣裙，线条简洁，日常好搭。"
+  ]
+}

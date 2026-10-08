@@ -1,0 +1,11 @@
+{
+  "id": "S16_end_v4",
+  "title": "\u53cc\u4eba\u62ac\u95e9\u4e0e\u63a9\u62a4",
+  "output": "keyframes/S16_end_v4.png",
+  "references": [
+    "keyframes/S16_start_v4.png",
+    "guides/S16_end_geometry.png"
+  ],
+  "prompt": "IMAGE1 is the photorealistic scene with the same seven people. IMAGE2 is a simple GEOMETRY guide showing ONLY ONE continuous wooden gate bar and EXACTLY TWO small open-top metal U-shaped cradles. Correct the mechanics in image1 to MATCH image2 at these exact positions. The bar is one continuous beam with NO gap and NO break in center. Only TWO small cradles total at the far ends of the beam, not four large U shapes. Each cradle is OPEN at TOP with absolutely NO metal above it, not a closed ring. The SAME horizontal bar is now ABOVE the operators heads, LIFTED 90pixels clear above both EMPTY holders, with a large visible AIR GAP. Four operator hands carry the raised bar. The TWO holders stay fixed to gate at their original lower positions. Preserve all actor faces and costumes, feet, closed doors, side fighters, fixed camera and night lighting. Young soldier ONE shield on BACK and both swords sheathed LEFT; Odysseus NO shield. Output one photorealistic FILM still, NO guide lines, diagrams or text.",
+  "seed": 2026101033
+}

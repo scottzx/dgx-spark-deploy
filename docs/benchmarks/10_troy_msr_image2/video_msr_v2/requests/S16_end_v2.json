@@ -1,0 +1,10 @@
+{
+  "id": "S16_end_v2",
+  "title": "\u53cc\u4eba\u62ac\u95e9\u4e0e\u63a9\u62a4",
+  "output": "keyframes/S16_end_v2.png",
+  "references": [
+    "keyframes/S16_start_v2.png"
+  ],
+  "prompt": "Use image1 as exact START composition. Now lift the SAME single horizontal gate bar about 70 PIXELS UP so it is clearly ABOVE the TWO iron U-shaped gate brackets. Show an unmistakable air gap between bar underside and both EMPTY bracket tops. Leave both brackets in their old positions attached to the gate. Left Odysseus and right young Greek move ONLY their four hands and arms upward with the bar, still holding it together horizontally; bodies and feet unchanged. The bar must be entirely clear of the brackets but still across the closed gate, not carried away. Gate remains CLOSED. Exactly same seven actors, same side fighters, same young soldier ONE shield strapped on BACK, both swords sheathed LEFT; Odysseus NO shield. Background, camera, torch light unchanged. Photorealistic single film still no text or blood.",
+  "seed": 2026100733
+}

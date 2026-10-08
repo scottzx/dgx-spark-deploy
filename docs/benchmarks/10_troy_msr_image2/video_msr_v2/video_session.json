@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "started_unix": 1791220747.6905372,
+  "video_service_before": {
+    "status": "READY",
+    "task": "fl2va",
+    "paths_file": "/home/admin/sol-spark-runtime/paths.json",
+    "startup_and_warmup_s": 1265.9686858654022,
+    "ready_time": "2026-10-05T12:54:13.083854",
+    "requests_served": 0,
+    "workflows": [
+      "independent",
+      "continue"
+    ],
+    "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+    "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=fl2va; modes: draft|final)"
+  },
+  "phases": [
+    {
+      "phase": "caches",
+      "exit_code": 0,
+      "wall_s": 46.72200100822374
+    },
+    {
+      "phase": "render",
+      "exit_code": 0,
+      "wall_s": 2027.467928652186
+    }
+  ],
+  "resume_reason": "AssertionError('CUDA image worker remains')",
+  "child_pid": 1994566,
+  "generation_status": "generation_complete",
+  "restored_server_pid": 2002294,
+  "video_service_restored": true,
+  "video_service_after": {
+    "status": "READY",
+    "task": "fl2va",
+    "paths_file": "/home/admin/sol-spark-runtime/paths.json",
+    "startup_and_warmup_s": 464.82121300697327,
+    "ready_time": "2026-10-06T02:01:27.364611",
+    "requests_served": 0,
+    "workflows": [
+      "independent",
+      "continue"
+    ],
+    "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+    "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=fl2va; modes: draft|final)"
+  },
+  "finished_unix": 1791223290.385486
+}

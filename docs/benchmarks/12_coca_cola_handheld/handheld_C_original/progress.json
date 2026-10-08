@@ -1,0 +1,13 @@
+{
+  "completed_shots": [
+    {
+      "shot": 0,
+      "audio_start_seconds": 0.0,
+      "audio_duration_seconds": 3.88,
+      "generated_frames": 97,
+      "retained_frames": 97,
+      "seconds": 89.12141551729292
+    }
+  ],
+  "retained_frames": 97
+}

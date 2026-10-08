@@ -1,0 +1,14 @@
+{
+  "status": "READY",
+  "task": "ref2va",
+  "paths_file": "/home/admin/sol-spark-runtime/paths.ref2va.json",
+  "startup_and_warmup_s": 430.66067719459534,
+  "ready_time": "2026-10-04T01:28:19.736083",
+  "requests_served": 6,
+  "workflows": [
+    "independent",
+    "continue"
+  ],
+  "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+  "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=ref2va; modes: draft|final)"
+}

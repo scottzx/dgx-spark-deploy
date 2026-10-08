@@ -1,0 +1,9 @@
+{
+  "case_id": "troy_v3_S07",
+  "seed": 2026100607,
+  "duration_s": 5,
+  "mode": "draft",
+  "transition": "independent",
+  "first_frame": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/inputs/S07.png",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy, with handmade sandstone and timber, aged bronze armor and saturated 35mm film colors. Continue naturally from the supplied first frame, preserving the visible actors, faces, costumes, composition and current state. The empty square remains unoccupied at night. The rigid timber horse stands parked center-left, facing right, its belly hatch closed and with no visible ladder. The stone gate at rear left stays shut. Flame tips flutter and the fountain water continues flowing; moonlight and amber firelight remain steady. No extra people, duplicated named actor, extra limbs, modern objects, captions or fantasy effects.\n\noverall_soundscape: An extremely slow wide push. Fountain water, fire crackle and night wind only. No dialogue or singing.\n\nnon_diegetic_music: N/A"
+}

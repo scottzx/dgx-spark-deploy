@@ -1,0 +1,204 @@
+{
+  "sample_rate": 24000,
+  "channels": 1,
+  "format": "decoded signed 16-bit PCM",
+  "note": "Decoded sample counts include AAC trailing packet padding. Compilations are re-encoded and verified separately for duration.",
+  "clips": [
+    {
+      "path": "baseline/diet.mp4",
+      "video_sha256": "b9dd4bd46a4989d936fa9739a421f2e5357aa5234bd863be0d14c46dfbfc5f89",
+      "pcm_sha256": "c6f8a838ce06d457c9b638f5ba8edc19bcec1121b42e76fdc6c771cf02ae29a7",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "baseline/original.mp4",
+      "video_sha256": "6d219c72e06f65aa2923061f0d0a5517a6ab37f7af79d961674bb2e8c481fe47",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "baseline/zero.mp4",
+      "video_sha256": "ee3b319f5088a22574f93f466eb0aa954edce82afbabd7799b99ee923de01523",
+      "pcm_sha256": "34b424755491a97f9d1b527dfd06fc31245b7efc55ad41b69c78dee96bb08a0f",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/avatarforever/diet/video.mp4",
+      "video_sha256": "dc3d76c52d60891e26c4b179c45ce14fecdd0d5cc2ed2dec368ca1d96cac6d42",
+      "pcm_sha256": "c6f8a838ce06d457c9b638f5ba8edc19bcec1121b42e76fdc6c771cf02ae29a7",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/avatarforever/original/video.mp4",
+      "video_sha256": "496a8f59a3ba380be0979f56b492779eef084873eded85ab9c73948a781f5790",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/avatarforever/zero/video.mp4",
+      "video_sha256": "b22d31683f1c11b85493f2037c273d711a0f36f55b5dc4cd284776fe57b10d55",
+      "pcm_sha256": "34b424755491a97f9d1b527dfd06fc31245b7efc55ad41b69c78dee96bb08a0f",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/avatarforever_nocache/diet/video.mp4",
+      "video_sha256": "322e255a92be73d5e7c25d05864b5e7f4740ca41d37c573a51e71a6a66a0772d",
+      "pcm_sha256": "c6f8a838ce06d457c9b638f5ba8edc19bcec1121b42e76fdc6c771cf02ae29a7",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/avatarforever_nocache/original/video.mp4",
+      "video_sha256": "fc55323a415b0bed1350e9a263d79a257f87e9294a9e89e7c77e77a5063f95be",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/avatarforever_nocache/zero/video.mp4",
+      "video_sha256": "6a8891a6abacb76fb2ec1ae868643f097dc396c9328a818fa218afcf975d4187",
+      "pcm_sha256": "34b424755491a97f9d1b527dfd06fc31245b7efc55ad41b69c78dee96bb08a0f",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/avatarforever_speaking/original/video.mp4",
+      "video_sha256": "52bf966c600b0a6b7fa840643bd90249b872e5536524da07327ff5d511fcacb6",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/infinitetalk/diet/video.mp4",
+      "video_sha256": "9c27da0a9c461892799124928cd6fe4a658341c254b01a7d691ecce7ac1221db",
+      "pcm_sha256": "c6f8a838ce06d457c9b638f5ba8edc19bcec1121b42e76fdc6c771cf02ae29a7",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/infinitetalk/original/video.mp4",
+      "video_sha256": "045cf5cdb7e56a48b44c0d6f68bae0b59e37da8ca137d45247ce62f31066eddf",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/infinitetalk/zero/video.mp4",
+      "video_sha256": "86844c54fa1744d5bf7f87619dff4f00c52d487880df5354cc78531cfd692de1",
+      "pcm_sha256": "34b424755491a97f9d1b527dfd06fc31245b7efc55ad41b69c78dee96bb08a0f",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/joyhallo/diet/video.mp4",
+      "video_sha256": "93d1ccbe64aa4191961043ad67213829c48026e62d6d350921deb6747f61ca35",
+      "pcm_sha256": "c6f8a838ce06d457c9b638f5ba8edc19bcec1121b42e76fdc6c771cf02ae29a7",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/joyhallo/original/video.mp4",
+      "video_sha256": "a0ffbabe2a45658ad2ca8f6a43f907df35de0df678fdd23c0b551bafc4aa7681",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/joyhallo/zero/video.mp4",
+      "video_sha256": "bd1814389a17d76ea7d700212fe6fd051497a0b14320eb600750ae6fb8008d85",
+      "pcm_sha256": "34b424755491a97f9d1b527dfd06fc31245b7efc55ad41b69c78dee96bb08a0f",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/joyvasa/diet/video.mp4",
+      "video_sha256": "c2b7d201fbdd80509f5dcc3e1ab874c504bb310975bc103ab1b6be72e9868990",
+      "pcm_sha256": "c6f8a838ce06d457c9b638f5ba8edc19bcec1121b42e76fdc6c771cf02ae29a7",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/joyvasa/original/video.mp4",
+      "video_sha256": "1cfef966e038a82fea48f584b6f43119708e993a745363bde4780b0b37edc0b5",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/joyvasa/zero/video.mp4",
+      "video_sha256": "bc4e8fc9e92f2c6a94e5a8871c8652a08ed72da4458bc5cdee9d895fbe542c2c",
+      "pcm_sha256": "34b424755491a97f9d1b527dfd06fc31245b7efc55ad41b69c78dee96bb08a0f",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/latentsync/diet/video.mp4",
+      "video_sha256": "2a130d41e458e9213aa2defafd655407dabb96b7c74d54626f4d06b26f205639",
+      "pcm_sha256": "c6f8a838ce06d457c9b638f5ba8edc19bcec1121b42e76fdc6c771cf02ae29a7",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/latentsync/original/video.mp4",
+      "video_sha256": "6ecf059337516d6468bba19e0e9f248480cc6f134dcb3ee3e04650a70555c875",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/latentsync/zero/video.mp4",
+      "video_sha256": "163e03031c5e73bc082d40c97f06b5084a5d87ffd175246f5c6f911df5fafdef",
+      "pcm_sha256": "34b424755491a97f9d1b527dfd06fc31245b7efc55ad41b69c78dee96bb08a0f",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/liveportrait/diet/video.mp4",
+      "video_sha256": "25d24c8070d06d6d69f860f7d27483099ed9e7a3392378d11be132a7be5b91a1",
+      "pcm_sha256": "c6f8a838ce06d457c9b638f5ba8edc19bcec1121b42e76fdc6c771cf02ae29a7",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/liveportrait/original/video.mp4",
+      "video_sha256": "464705d7121bc77b9f5d3e5ba9cd2d8dbc0114c9eb58b290e6e68b6f93a98ea4",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/liveportrait/zero/video.mp4",
+      "video_sha256": "e633ed6015877cbae484e166bc0bb84ab4192e9b51ed66e8681d331061c69480",
+      "pcm_sha256": "34b424755491a97f9d1b527dfd06fc31245b7efc55ad41b69c78dee96bb08a0f",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/longcat/diet/video.mp4",
+      "video_sha256": "66a34e9ce5d2dc1d7092aa83ee2981a84b4f8c62e74518f7165f6ecb14334de1",
+      "pcm_sha256": "c6f8a838ce06d457c9b638f5ba8edc19bcec1121b42e76fdc6c771cf02ae29a7",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/longcat/original/video.mp4",
+      "video_sha256": "4806590752946c1e1744ab607d6eb50d52e09b2bf8ebe2bac0b137a936427dad",
+      "pcm_sha256": "043425cac552a0aa94ec541a520e1265179139009326b859cb1fb1b30b4a8d4e",
+      "samples": 193536,
+      "matches_baseline": true
+    },
+    {
+      "path": "results/longcat/zero/video.mp4",
+      "video_sha256": "3bc37697e88849bd2fd5605b4740536708838d9cb099ce95fe7bf0bcb21b0a7d",
+      "pcm_sha256": "34b424755491a97f9d1b527dfd06fc31245b7efc55ad41b69c78dee96bb08a0f",
+      "samples": 193536,
+      "matches_baseline": true
+    }
+  ]
+}

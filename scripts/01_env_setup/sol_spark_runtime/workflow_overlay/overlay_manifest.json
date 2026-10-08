@@ -1,0 +1,52 @@
+{
+  "runtime/stage1.py": {
+    "before_sha256": "2598b65adec352dda577ecb83bdb1abd434f11906d2e42be882e1aa0998ed7ed",
+    "after_sha256": "3a85e42193d7aea51963817e6c082107412eec27f81c0b0d83d7c72a7caf7a57"
+  },
+  "runtime/stage1_ops/capture.py": {
+    "before_sha256": "a0f4be4c83f5287b29159fe45ce91217e8557a672675ad61409b151579aa7ea5",
+    "after_sha256": "b4ffee6066e20b4933d64c73938ad715c628fe8ddbd34b277f9ff7e783c81f7f"
+  },
+  "runtime/pipeline.py": {
+    "before_sha256": "67b121e67ea4306e4a8a8e315725902f2e196d5d1bc8dde5ffb80bab3064b054",
+    "after_sha256": "10a49ea034593be5f994cc79afbdef14cc6eb0c99d3f03cd4f113eddd44c7d1a"
+  },
+  "runtime/config.py": {
+    "before_sha256": "75a802a3e6d0bb84db026d202b30057445925efee47caa19805a0f71a0df5a63",
+    "after_sha256": "6af76e83ec41499ae86cdfaa53cc210ea2016e66d15a2214eeca445be75f1351"
+  },
+  "sol_api_server.py": {
+    "before_sha256": "c3faf7cfcc4ef9cd82efec36a57ee47119ebeff6f67b1f48afd12fc2fff0e114",
+    "after_sha256": "506a5c2f6727f0c47332d50af5048fdaec72f821fde7354bfee00f7e08d61c2b",
+    "compatible_before_sha256": [
+      "afdecb1b685beb75e6e120f35f66479f1764a90a75637e8e570262ce0203dfc3"
+    ]
+  },
+  "runtime/workflows.py": {
+    "before_sha256": null,
+    "after_sha256": "1d45bcd7afdc31177a5d059932bf0150441ef5b59070eee2d00cc448d6219187",
+    "compatible_before_sha256": [
+      "c15e3049c03d4b487a43a91e010892af7c95646c9d72f228600deae718b488e4",
+      "e4d07c7ef71f017b9311990a6ecfec12da90776e7ea111566c0f8fee211b4324"
+    ]
+  },
+  "runtime/stage1_ops/continuation.py": {
+    "before_sha256": null,
+    "after_sha256": "507b3ab49f5026026f4e652f4955da13e05990fc026b213d2be23fc9a46027de",
+    "compatible_before_sha256": [
+      "c374f91a59a98db0c88f2c31a81f323abf3850ec2304383ddbd835d336a3391e"
+    ]
+  },
+  "tests/test_pipeline.py": {
+    "before_sha256": "69e0bf8ea0d539a7148779690aae111c5917f2565c25d78f5b710a0fd0d47d22",
+    "after_sha256": "2c41501daf52722ebf69dde2921fe49609a4e5c5e702fa48962e5c4549bd32b7"
+  },
+  "tests/test_stage2_contract.py": {
+    "before_sha256": "75b68f59f6a155e2679e037cb0e9112817bc2ceeddd5d51e8cd99d471c60a5bf",
+    "after_sha256": "299dfe6f69dc9f8b890c1ccd3e33ae5d7e72485f17624fa22ceef18d9449c883"
+  },
+  "runtime/stage1_ops/lookup.py": {
+    "before_sha256": "467134caa9aa9df897ccee9f12183be52acb3ca4e1774d237d3c572c0864dc21",
+    "after_sha256": "8fd685ab80f5bba5bed9f02040a88c15b780757b856847bdf95f1f5b2f90d252"
+  }
+}

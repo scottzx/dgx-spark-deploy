@@ -1,0 +1,39 @@
+{
+  "engine": "infinitetalk",
+  "product": "cardigan",
+  "input_sha256": {
+    "driver.mp4": "72be54a548655a49ed830f744a5386bf838ac64be911466847747c3ea259d3e3",
+    "audio.wav": "321d70c0e2d7d5affaf691c1d72b0dd479677abdd5a730fe179681ee5da7de1d",
+    "audio_16k.wav": "bd1f569de9da04cd39c572b1d15745132fc7906f8c16451b57981a44e5cd8d6f",
+    "reference.png": "505e483397eab87245e0a04410b106028af2a268d66008b79575bf8f90ab0e22",
+    "first_frame.png": "0d30980a2523bbd8ca079cc88a6ab156250a8864694b87c910a9b5d97db5411c"
+  },
+  "commit": "50aa0a94184315407a991ae804d9b58d6d311ba8",
+  "shared_model_load_seconds": 217.9653519098647,
+  "render_seconds": 3517.8417408470996,
+  "peak_cuda_allocated_gib": 42.7452449798584,
+  "native_output": "/home/admin/womenswear-avatar-tests/outputs/infinitetalk/cardigan/native.mp4",
+  "scope": "Official video-to-video InfiniteTalk. The LTX clip guides the action; InfiniteTalk regenerates the speaking video.",
+  "steps_per_chunk": 8,
+  "motion_frame": 9,
+  "requested_size": [
+    576,
+    768
+  ],
+  "aspect_ratio": "3:4",
+  "model_generates_product_actions": true,
+  "variant": "Official documented FusionX LoRA accelerated inference, eight steps, scale 1.0",
+  "original_LTX_actions_preserved": false,
+  "compatibility": [
+    "FlashAttention-2 and single-device xFormers dense attention use PyTorch SDPA",
+    "inspect.ArgSpec restored for Python 3.12",
+    "Wav2Vec2 eager attention restores original attention-output behavior",
+    "Optional demo TTS disabled; same original Serena audio"
+  ],
+  "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+  "native_duration_seconds": 8.0,
+  "native_output_sha256": "ef0edad72b515336f321f4e7faf6ef789651ddc7017e22cfbd9ef3cc07b92a08",
+  "video_sha256": "f45104fc2a27d67bb489fce6c2ba1862b98963baf751363c7ff5c94c72475620",
+  "final_frame_hold_seconds": 0.04,
+  "normalization_note": "Exact 200-frame/8.00s native output: one 40ms display hold of its final real frame."
+}

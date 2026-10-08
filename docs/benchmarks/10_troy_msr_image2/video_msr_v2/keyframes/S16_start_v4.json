@@ -1,0 +1,39 @@
+{
+  "id": "S16_start_v4",
+  "title": "双人抬闩与掩护",
+  "output": "keyframes/S16_start_v4.png",
+  "references": [
+    "keyframes/S16_start_v2.png",
+    "guides/S16_start_geometry.png"
+  ],
+  "prompt": "IMAGE1 is the photorealistic scene with the same seven people. IMAGE2 is a simple GEOMETRY guide showing ONLY ONE continuous wooden gate bar and EXACTLY TWO small open-top metal U-shaped cradles. Correct the mechanics in image1 to MATCH image2 at these exact positions. The bar is one continuous beam with NO gap and NO break in center. Only TWO small cradles total at the far ends of the beam, not four large U shapes. Each cradle is OPEN at TOP with absolutely NO metal above it, not a closed ring. The single horizontal bar RESTS inside these two open-top holders at chest height, four operator hands grip it. Preserve all actor faces and costumes, feet, closed doors, side fighters, fixed camera and night lighting. Young soldier ONE shield on BACK and both swords sheathed LEFT; Odysseus NO shield. Output one photorealistic FILM still, NO guide lines, diagrams or text.",
+  "seed": 2026101032,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S16_start_v4.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 66.51024203980342,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "7e5cbf99143dbae3721374a2b10a4887b813050a7f4912ecc2da4849825d355f",
+    "2186e8c16d84903ccfa2b9296bf0a4bcc05ecc0f8e1210db175ac849d9517b46"
+  ],
+  "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6",
+  "bytes": 2717933,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

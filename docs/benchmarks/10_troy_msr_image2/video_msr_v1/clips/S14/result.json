@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "id": "S14",
+  "title": "守军发现突袭",
+  "seed": 2026100514,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S14/raw.mp4",
+  "raw_sha256": "1a05bff4287d51fdb58144162ae2b162b52100e1fd63c7031ecd3c099abaade4",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S14/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "e5213e81edb77a3e986850c7d9ce2f90b6e4977474d65202846aadd9331b4293",
+    "bytes": 1526456
+  },
+  "generation_s": 129.4707026788965,
+  "phases_s": {
+    "reference_encode_block_s": 2.2637356938794255,
+    "denoising_loop_s": 55.97150584217161,
+    "diffusion_block_s": 122.02193971490487,
+    "decode_and_encode_block_s": 5.153549320995808
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "guard",
+      "kind": "character",
+      "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+      "source_file": "assets/characters/trojan_guard_01_v1.png",
+      "file": "inputs/guard.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+      "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "trojans",
+      "kind": "group",
+      "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+      "source_file": "assets/groups/trojan_defenders_v1.png",
+      "file": "inputs/trojans.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+      "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 3,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard_v2/frames/s14_v1.png",
+      "file": "inputs/board_S14.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S14.png",
+      "sha256": "4ef550008e3307365e155288f0606aab868f73ce2f9142d9027dfdcd4278c1ae",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "d48360e254b9411231148763d200a6213c4979ce7d4fea239dd68e7223984096",
+  "prompt_cache_fingerprint": "662064c6b2f6604564f6dd2ed95fbd11286bd41b4aed7fcc49955b5880642507",
+  "peak_torch_allocated_bytes": 42457998848,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

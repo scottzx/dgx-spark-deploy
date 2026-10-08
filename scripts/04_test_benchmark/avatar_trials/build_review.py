@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+"""Write a portable comparison page from measured results."""
+import html
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3] / 'docs/benchmarks/11_coca_cola_avatar'
+ROUTES = [('A', 'route_A_musetalk', 'LiveTalking + MuseTalk 1.5', '口型驱动'),
+          ('B', 'route_B_flashhead', 'OpenAvatarChat + FlashHead Lite', '流式人物动画'),
+          ('C', 'route_C_echomimic', 'EchoMimicV3 Flash', '离线人物动画')]
+
+
+def main():
+    cards, rows, measurements = [], [], []
+    for key, directory, name, mode in ROUTES:
+        m = json.loads((ROOT / directory / 'metrics.json').read_text())
+        measurements.append(m)
+        fps = m.get('render_and_write_fps', m.get('generation_fps'))
+        seconds = m.get('render_and_write_seconds', m.get('generation_seconds'))
+        load_seconds = m.get('load_and_avatar_prepare_seconds', m.get('load_and_prepare_seconds'))
+        first = m.get('first_batch_seconds', m.get('first_chunk_seconds'))
+        if first is None:
+            first = m['shots'][0]['seconds']
+        peak = m['peak_cuda_allocated_gib']
+        cards.append(f'''<article class="sample">
+          <div class="sample-top"><b class="route">{key}</b><div><h2>{html.escape(name)}</h2><p>{mode}</p></div></div>
+          <video controls playsinline preload="metadata" {'muted' if key != 'A' else ''}
+             poster="{directory}/poster.jpg" src="{directory}/coca_cola_vertical.mp4"
+             data-vertical="{directory}/coca_cola_vertical.mp4" data-raw="{directory}/raw.mp4"></video>
+          <div class="numbers"><span><b>{fps:.1f}</b> FPS</span><span><b>{seconds:.1f}</b> 秒生成</span><span><b>{peak:.1f}</b> GiB CUDA 峰值</span></div>
+          <div class="downloads"><a href="{directory}/coca_cola_vertical.mp4" download>下载成片 ↗</a><a href="{directory}/raw.mp4">人物原片</a><a href="{directory}/metrics.json">测量记录</a></div>
+          </article>''')
+        size = m.get('size', [768, 768])
+        rows.append(f'<tr><td>{key} · {html.escape(name)}</td><td>{size[0]} × {size[1]}</td><td>{seconds:.2f}s</td><td>{fps:.2f}</td><td>{first:.2f}s</td><td>{load_seconds:.2f}s</td><td>{peak:.2f}</td></tr>')
+    (ROOT / 'comparison_metrics.json').write_text(json.dumps(measurements, ensure_ascii=False, indent=2) + '\n')
+    result_lines = ['# 测量结果', '', '| 路线 | 有效 FPS | 26.44 秒生成耗时 | 加载与准备 | CUDA allocated 峰值 |',
+                    '| --- | ---: | ---: | ---: | ---: |']
+    for m in measurements:
+        fps = m.get('render_and_write_fps', m.get('generation_fps'))
+        seconds = m.get('render_and_write_seconds', m.get('generation_seconds'))
+        load = m.get('load_and_avatar_prepare_seconds', m.get('load_and_prepare_seconds'))
+        result_lines.append(f'| {m["route"]} · {m["engine"]} | {fps:.2f} | {seconds:.2f}s | {load:.2f}s | {m["peak_cuda_allocated_gib"]:.2f} GiB |')
+    result_lines += ['', '推荐 A 作为 Spark 实时口播的起点；B 用来继续评估人物自然度与提速；C 适合离线视频制作。',
+                     '', '这是本次固定口播组件测试的结果。各路线的计时范围与未测项目见 [实测说明](README.md)。', '']
+    (ROOT / 'RESULTS.md').write_text('\n'.join(result_lines))
+    page = '''<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>可口可乐数字人 · Spark 三路线实测</title>
+    <style>
+    :root{color-scheme:light;--red:#d71924;--ink:#25201d;--muted:#766e68;--line:#e6dfd9}*{box-sizing:border-box}body{margin:0;background:#f7f4f0;color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}main{max-width:1500px;margin:auto;padding:48px 40px 60px}.eyebrow{letter-spacing:.12em;font-size:12px;color:var(--red);font-weight:700}h1{font-size:clamp(30px,4vw,54px);line-height:1.25;margin:16px 0}header p{max-width:830px;color:var(--muted);margin-bottom:26px}.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:24px 0}button,select{font:inherit;border:1px solid var(--line);border-radius:10px;padding:10px 16px;background:white;color:var(--ink);cursor:pointer}button.primary{background:var(--red);border-color:var(--red);color:white}button:hover{filter:brightness(.96)}.toolbar label{margin-left:auto;color:var(--muted);font-size:14px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.sample{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}.sample-top{display:flex;gap:12px;align-items:center;min-height:76px}.route{width:38px;height:38px;display:grid;place-items:center;background:#f9e5e3;color:var(--red);border-radius:10px;font-size:21px;flex:none}h2{font-size:17px;line-height:1.4;margin:0}.sample-top p{font-size:13px;margin:3px 0;color:var(--muted)}video{width:100%;display:block;aspect-ratio:9/16;background:#e8dfd6;border-radius:9px}.raw video{aspect-ratio:1}.numbers{display:grid;grid-template-columns:1fr 1fr 1.1fr;gap:4px;font-size:11px;color:var(--muted);margin:17px 0}.numbers b{display:block;font-size:23px;line-height:1.3;color:var(--ink);font-weight:650}.downloads{display:flex;gap:15px;flex-wrap:wrap;font-size:12px}a{color:var(--red);text-decoration:none}a:hover{text-decoration:underline}.panel{margin-top:26px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px}.panel h3{margin:0 0 13px;font-size:19px}.note{color:var(--muted);font-size:13px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px;white-space:nowrap}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:500}.script{color:#534b46;max-width:1000px}details{margin-top:20px}summary{cursor:pointer;color:var(--muted)}footer{margin-top:30px;color:var(--muted);font-size:12px}#status{color:var(--muted);font-size:12px}@media(min-width:650px) and (max-width:900px){main{padding:28px 18px}.grid{gap:12px}.sample{padding:12px}.sample-top{gap:7px;min-height:100px}h2{font-size:14px}.route{width:30px;height:30px}.numbers b{font-size:20px}.downloads{gap:8px}}@media(max-width:649px){main{padding:28px 18px}.grid{grid-template-columns:1fr}.sample{max-width:540px;width:100%;margin:auto}.toolbar label{margin-left:0}.panel{padding:18px}}
+    </style></head><body><main><header><div class="eyebrow">DGX SPARK / GB10 · 2026.10.07</div><h1>同一句口播，三条路线。</h1><p>可口可乐原味、健怡、零度。三条样片使用同一张原创主播照片、同一段 26.44 秒中文配音，以及同一套商品图和字幕。切换“人物原片”可直接比较嘴部、头部和表情。</p></header>
+    <div class="toolbar"><button class="primary" id="play">三条同步播放</button><button id="pause">暂停</button><button id="restart">从头比较</button><span id="status">同步播放时只保留 A 的声音</span><label>视图 <select id="view"><option value="vertical">竖版成片</option><option value="raw">人物原片</option></select></label></div>
+    <section class="grid">CARDS</section>
+    <section class="panel"><h3>本次测量</h3><div class="table-wrap"><table><thead><tr><th>路线</th><th>人物原片尺寸</th><th>26.44 秒生成耗时</th><th>有效 FPS</th><th>首批 / 首段</th><th>加载与准备</th><th>CUDA 峰值 GiB</th></tr></thead><tbody>ROWS</tbody></table></div><p class="note">A 包含人物合成和写帧；B 包含音频缓冲、生成和输出队列；C 包含分镜生成和写帧。最终广告排版、H.264 压缩、下载、TTS 与模型加载不计入 FPS。“首批 / 首段”分别为 A 的 8 帧、B 的 24 帧、C 的 81 帧生成耗时，单位不同，不能直接当作直播首帧延迟。加载数据来自本次文件缓存条件，并非冷机启动。CUDA 峰值为 PyTorch allocated，不代表 Spark 整机内存占用。</p></section>
+    <section class="panel"><h3>如何看这一轮</h3><p class="script">A 优先评估直播口播：本次已达到 25 FPS 目标，照片基底的身体和眼神较静态。B 优先评估自然人物动画：有头部和表情变化，当前使用原生 SDPA、未启用编译的兼容基线，尚未达到 25 FPS。C 用于离线短视频：每 81 帧重新参考同一张照片，分镜接缝可见嘴部与头部姿态回跳，连续性仍需改进。</p><p class="note">这是固定口播的模型与流式处理组件测试。LiveTalking / OpenAvatarChat 的浏览器 WebRTC、问答、打断、长时间直播和 OBS 推流均未在本轮验证。未加入手持商品动作；商品图以独立图层合成。</p><details><summary>口播文案、素材与项目来源</summary><p class="script">SCRIPT</p><p class="note">主播：本地 Qwen-Image-2.1 + 六步 LoRA 生成的虚构成年人物。声音：本地 Qwen3-TTS / Vivian。商品：可口可乐官网英美版参考罐装图，不代表特定国行 SKU；正式商品页应替换为实际销售包装。</p><p class="note"><a href="https://www.coca-cola.com/us/en/offerings/faq/whats-the-difference-between-coca-cola-zero-sugar-and-diet-coke">产品风味说明</a> · <a href="assets/sources.json">商品图来源</a> · <a href="assets/narration.wav">原始配音</a> · <a href="assets/presenter.png">主播照片</a></p><p class="note"><a href="https://github.com/lipku/LiveTalking">LiveTalking</a> · <a href="https://github.com/TMElyralab/MuseTalk">MuseTalk</a> · <a href="https://github.com/HumanAIGC-Engineering/OpenAvatarChat">OpenAvatarChat</a> · <a href="https://github.com/Soul-AILab/SoulX-FlashHead">SoulX-FlashHead</a> · <a href="https://github.com/antgroup/echomimic_v3">EchoMimicV3</a></p></details></section>
+    <footer>模型、配音和人物生成均在 Spark 本地完成。其他 GPU 模型服务保持暂停；停机前快照已保存。<a href="README.md">实测报告与复现说明</a> · <a href="comparison_metrics.json">汇总数据</a></footer></main>
+    <script>
+    const videos=[...document.querySelectorAll('video')],status=document.querySelector('#status');let syncing=false;
+    const align=()=>{if(!syncing||videos[0].paused)return;const t=videos[0].currentTime;videos.slice(1).forEach(v=>{if(v.readyState>=2&&Math.abs(v.currentTime-t)>.06)v.currentTime=t})};
+    videos[0].addEventListener('timeupdate',align);
+    document.querySelector('#play').onclick=async()=>{const t=videos[0].currentTime;videos.forEach((v,i)=>{v.currentTime=t;v.muted=i!==0});syncing=true;try{await Promise.all(videos.map(v=>v.play()));align();status.textContent='三条同步播放 · A 有声，B/C 静音'}catch(e){syncing=false;status.textContent='浏览器阻止播放，请点击单个视频播放按钮'}};
+    document.querySelector('#pause').onclick=()=>{syncing=false;videos.forEach(v=>v.pause())};
+    document.querySelector('#restart').onclick=()=>{syncing=false;videos.forEach(v=>{v.pause();v.currentTime=0});status.textContent='已回到开头'};
+    document.querySelector('#view').onchange=e=>{syncing=false;const t=videos[0].currentTime;videos.forEach(v=>{v.pause();v.src=v.dataset[e.target.value];v.addEventListener('loadedmetadata',()=>v.currentTime=Math.min(t,v.duration),{once:true})});document.querySelector('.grid').classList.toggle('raw',e.target.value==='raw');status.textContent='已切换视图，点击同步播放继续'};
+    </script></body></html>'''
+    brief = json.loads((ROOT / 'brief.json').read_text())
+    page = page.replace('CARDS', '\n'.join(cards)).replace('ROWS', '\n'.join(rows)).replace('SCRIPT', html.escape(brief['script']))
+    (ROOT / 'review.html').write_text(page)
+
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,54 @@
+{
+  "scope": "Manual sampled-frame review of one Troy story, not a biometric or motion-fluidity benchmark",
+  "methods": {
+    "generic": {
+      "narrative": "PARTIAL",
+      "issues": [
+        "Wood texture becomes organic-looking",
+        "Hatch and ladder appear prematurely",
+        "Duplicated red soldier and incorrect shields in final continuation"
+      ]
+    },
+    "specific": {
+      "narrative": "PARTIAL",
+      "improvements": [
+        "Timber construction and wheels better retained"
+      ],
+      "issues": [
+        "Premature hatch inherited from H3",
+        "Duplicated red soldier and incorrect shields remain",
+        "Facial and armor identity not fully preserved"
+      ]
+    },
+    "ingredients": {
+      "narrative": "FAIL_CURRENT_INPUT_CONFIG",
+      "issues": [
+        "Reference-sheet layout generated in sampled frames from first three shots",
+        "Reference/text artifacts near night-shot opening",
+        "Night actions appear to climb inward instead of the requested exit"
+      ]
+    },
+    "msr": {
+      "narrative": "PARTIAL",
+      "observations": [
+        "Most readable overall story in this case",
+        "Final sampled frame shows red soldier on ground and blue soldier descending ladder",
+        "Wooden construction retained"
+      ],
+      "issues": [
+        "Independent-shot restaging",
+        "Drawn swords and changed shield placement",
+        "Faces, hair and armor not precisely locked"
+      ]
+    }
+  },
+  "evidence": [
+    "story_comparison.png",
+    "night_comparison.png",
+    "native_night_comparison.png",
+    "review_frames/ingredients_2.5.png",
+    "review_frames/msr_27.13.png",
+    "review_frames/specific_27.13.png"
+  ],
+  "quality_pass_for_all_methods": false
+}

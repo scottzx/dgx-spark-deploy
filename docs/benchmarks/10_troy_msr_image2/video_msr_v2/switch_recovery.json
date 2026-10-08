@@ -1,0 +1,10 @@
+{
+  "reason": "CUDA process teardown was asynchronous; do not assert immediately after parent exit",
+  "supervisor_pid": 1985375,
+  "owned_restore_pid": 1991758,
+  "signals": "SIGTERM only; include separately spawned startup worker group after verifying parentage",
+  "remaining_restore_group": [
+    "1991758       1 1991758 Ss   /home/admin/sol-spark-runtime/bootstrap-env/bin/python /home/admin/sol-spark-runtime/sol_api_server.py"
+  ],
+  "owned_startup_worker_group": 1991771
+}

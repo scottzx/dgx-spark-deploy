@@ -1,0 +1,757 @@
+{
+  "manifest_fingerprint": "fc3fefccad737763bfa1324360513889459ebf383e505fc4062e2723badb88e4",
+  "clips": [
+    {
+      "id": "S10_msr_2026100601",
+      "case_id": "S10",
+      "input_fingerprint": "8169311131568e05bdab0768c5a5a0c7196921b1c2bcbac3229607568f606a30",
+      "output_sha256": "4afda0dadafdbc21d52fcc91a99dc7d054ecdedee05a46506ea0778ffcf262f7",
+      "file": "clips/S10_msr_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S10_msr_2026100601",
+        "case_id": "S10",
+        "method": "msr",
+        "seed": 2026100601,
+        "quality_status": "fail_at_samples",
+        "hard_violations": [
+          "ascends before descending",
+          "leaves ladder and ends on ground"
+        ],
+        "notes": "0–2秒先向上靠近舱口，3.5秒转身离梯并落地；终点没有停在低两级的梯上。",
+        "observed_good": [
+          "single actor",
+          "rigid horse and ladder",
+          "no handheld shield"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "8169311131568e05bdab0768c5a5a0c7196921b1c2bcbac3229607568f606a30",
+        "output_sha256": "4afda0dadafdbc21d52fcc91a99dc7d054ecdedee05a46506ea0778ffcf262f7"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S10_msr_2026100602",
+      "case_id": "S10",
+      "input_fingerprint": "31dff8ce69782f44b546acfaf1cbdf657c98059403187d35da1e84dd3a6217f8",
+      "output_sha256": "cd78e7785889b00dd84f1ce1b6d7f1d5e8f3895565797428e83d176951d150df",
+      "file": "clips/S10_msr_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S10_msr_2026100602",
+        "case_id": "S10",
+        "method": "msr",
+        "seed": 2026100602,
+        "quality_status": "fail_at_samples",
+        "hard_violations": [
+          "ascends before descending",
+          "leaves ladder and ends on ground"
+        ],
+        "notes": "先向上爬近舱口，随后转身跳下并离梯；动作方向和终点均违反规格。",
+        "observed_good": [
+          "single actor",
+          "rigid horse and ladder",
+          "no handheld shield"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "31dff8ce69782f44b546acfaf1cbdf657c98059403187d35da1e84dd3a6217f8",
+        "output_sha256": "cd78e7785889b00dd84f1ce1b6d7f1d5e8f3895565797428e83d176951d150df"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S10_msr_first_2026100601",
+      "case_id": "S10",
+      "input_fingerprint": "959a2bc6d08a81c566e367dd9e342c85ae21421401ac669c83ce9c352c5d6722",
+      "output_sha256": "6ef45369822ebd031e468f5dccccbf27ca706878d51a3c0ffe500de10e748494",
+      "file": "clips/S10_msr_first_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S10_msr_first_2026100601",
+        "case_id": "S10",
+        "method": "msr_first",
+        "seed": 2026100601,
+        "quality_status": "fail_at_samples",
+        "hard_violations": [
+          "ascends before descending",
+          "leaves ladder and ends on ground"
+        ],
+        "notes": "与同种子MSR轨迹接近：先向上、再转身离梯落地；首帧注入没有修正方向。",
+        "observed_good": [
+          "single actor",
+          "rigid horse and ladder",
+          "no handheld shield"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "959a2bc6d08a81c566e367dd9e342c85ae21421401ac669c83ce9c352c5d6722",
+        "output_sha256": "6ef45369822ebd031e468f5dccccbf27ca706878d51a3c0ffe500de10e748494"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S10_msr_first_2026100602",
+      "case_id": "S10",
+      "input_fingerprint": "d2164da3932a273788946a0c9daff7407843ec1e228e36e07f7808c2e132765f",
+      "output_sha256": "0f59f26421562c2fd13fbd34d53dd4989aa7b65c9647aa09dca2adb180018836",
+      "file": "clips/S10_msr_first_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S10_msr_first_2026100602",
+        "case_id": "S10",
+        "method": "msr_first",
+        "seed": 2026100602,
+        "quality_status": "fail_at_samples",
+        "hard_violations": [
+          "ascends before descending",
+          "ends on ground"
+        ],
+        "notes": "仍先向上爬，然后转身落地离梯；首帧约束未解决方向与终点。",
+        "accepted_for_production": false,
+        "input_fingerprint": "d2164da3932a273788946a0c9daff7407843ec1e228e36e07f7808c2e132765f",
+        "output_sha256": "0f59f26421562c2fd13fbd34d53dd4989aa7b65c9647aa09dca2adb180018836"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S10_msr_first_last_2026100601",
+      "case_id": "S10",
+      "input_fingerprint": "c7aa84d20010d0cb8b8c592036ca3f689883b45f08393519eed718e35bac968d",
+      "output_sha256": "9cd846504e3598f0e96116c799dcd49e1ce31984d9291bd433dd449b7ef4602f",
+      "file": "clips/S10_msr_first_last_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S10_msr_first_last_2026100601",
+        "case_id": "S10",
+        "method": "msr_first_last",
+        "seed": 2026100601,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [
+          "initial upward travel"
+        ],
+        "notes": "末帧引导让后半段下移并保留在梯边/低梯位置，较A/B改善；但前约1.5秒仍向上爬，方向连续性不合格。",
+        "observed_good": [
+          "later descent",
+          "no jump-away finish",
+          "single actor and stable props"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "c7aa84d20010d0cb8b8c592036ca3f689883b45f08393519eed718e35bac968d",
+        "output_sha256": "9cd846504e3598f0e96116c799dcd49e1ce31984d9291bd433dd449b7ef4602f"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S10_msr_first_last_2026100602",
+      "case_id": "S10",
+      "input_fingerprint": "b50c460707d41527baf9ab414b79fd74eb8a1919016da96048c919cb02c1560c",
+      "output_sha256": "d8fe3d899db6f0d8ee989354a839fbe167ebb147f297b1a64790219701ea300c",
+      "file": "clips/S10_msr_first_last_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S10_msr_first_last_2026100602",
+        "case_id": "S10",
+        "method": "msr_first_last",
+        "seed": 2026100602,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [
+          "initial upward travel"
+        ],
+        "notes": "末帧引导让后半段下移并保留在梯边/低梯位置，较A/B改善；但前约1.5秒仍向上爬，方向连续性不合格。",
+        "observed_good": [
+          "later descent",
+          "no jump-away finish",
+          "single actor and stable props"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "b50c460707d41527baf9ab414b79fd74eb8a1919016da96048c919cb02c1560c",
+        "output_sha256": "d8fe3d899db6f0d8ee989354a839fbe167ebb147f297b1a64790219701ea300c"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S15_msr_2026100601",
+      "case_id": "S15",
+      "input_fingerprint": "85f85afd72a917601f1ace1ba5829fa887e48048f1d4323e8b66e5a222951c3d",
+      "output_sha256": "7a581bbcce2befe27d5bd9f92dbfbc17d94d656350b705fc0a4315d2f23acb30",
+      "file": "clips/S15_msr_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S15_msr_2026100601",
+        "case_id": "S15",
+        "method": "msr",
+        "seed": 2026100601,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [],
+        "unmet_criteria": [
+          "continuous readable combat of both background pairs"
+        ],
+        "notes": "前约2秒主要摆姿，后段前景剑矛交锋与格挡清楚；背景四人的两对持续接触不够可读。",
+        "observed_good": [
+          "foreground thrust/parry",
+          "Odysseus no shield",
+          "guard left shield and right spear broadly retained",
+          "closed gate, fixed camera, six actors"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "85f85afd72a917601f1ace1ba5829fa887e48048f1d4323e8b66e5a222951c3d",
+        "output_sha256": "7a581bbcce2befe27d5bd9f92dbfbc17d94d656350b705fc0a4315d2f23acb30"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S15_msr_2026100602",
+      "case_id": "S15",
+      "input_fingerprint": "9f4b0b614be1cfdf47ad0d23841d72ec2a429ccadef6c6ecab1792ec0c0f707c",
+      "output_sha256": "7676cd71619f72ff8ecfc85bf264dfa557b5d6244d404139d5cb917569987d6d",
+      "file": "clips/S15_msr_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S15_msr_2026100602",
+        "case_id": "S15",
+        "method": "msr",
+        "seed": 2026100602,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [],
+        "unmet_criteria": [
+          "continuous readable combat of both background pairs"
+        ],
+        "notes": "前景有一次刺击/格挡及回退，装备大体保留；起始约1秒静止，后景较多待机或挥舞。",
+        "observed_good": [
+          "foreground thrust/parry",
+          "Odysseus no shield",
+          "guard left shield and right spear broadly retained",
+          "closed gate, fixed camera, six actors"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "9f4b0b614be1cfdf47ad0d23841d72ec2a429ccadef6c6ecab1792ec0c0f707c",
+        "output_sha256": "7676cd71619f72ff8ecfc85bf264dfa557b5d6244d404139d5cb917569987d6d"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S15_msr_first_2026100601",
+      "case_id": "S15",
+      "input_fingerprint": "e31d374b685e669b87773869fa5ef5a433195720c642429c521f7aee080d908d",
+      "output_sha256": "82ba5e8a08c1be41a8caf63781674d3089099f7f8b6020c423ce92e428e2b61d",
+      "file": "clips/S15_msr_first_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S15_msr_first_2026100601",
+        "case_id": "S15",
+        "method": "msr_first",
+        "seed": 2026100601,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [],
+        "unmet_criteria": [
+          "continuous readable combat of both background pairs"
+        ],
+        "notes": "起始姿态稳定，后段前景交锋；与A轨迹接近，未明显改善两对背景战斗的持续性。",
+        "observed_good": [
+          "foreground thrust/parry",
+          "Odysseus no shield",
+          "guard left shield and right spear broadly retained",
+          "closed gate, fixed camera, six actors"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "e31d374b685e669b87773869fa5ef5a433195720c642429c521f7aee080d908d",
+        "output_sha256": "82ba5e8a08c1be41a8caf63781674d3089099f7f8b6020c423ce92e428e2b61d"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S15_msr_first_2026100602",
+      "case_id": "S15",
+      "input_fingerprint": "082a6b1a5f615b00263d765dc7ce7851d32411f86bd78a384e476cd5a675946d",
+      "output_sha256": "0fd5650178d724cb0793cb386e8353daf8b3e5180200d2f29e855f282a7b203a",
+      "file": "clips/S15_msr_first_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S15_msr_first_2026100602",
+        "case_id": "S15",
+        "method": "msr_first",
+        "seed": 2026100602,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [],
+        "unmet_criteria": [
+          "continuous readable combat of both background pairs"
+        ],
+        "notes": "前景刺击、格挡和回退可读；背景中部人物有动作，但两对交锋仍偏弱。",
+        "observed_good": [
+          "foreground thrust/parry",
+          "Odysseus no shield",
+          "guard left shield and right spear broadly retained",
+          "closed gate, fixed camera, six actors"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "082a6b1a5f615b00263d765dc7ce7851d32411f86bd78a384e476cd5a675946d",
+        "output_sha256": "0fd5650178d724cb0793cb386e8353daf8b3e5180200d2f29e855f282a7b203a"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S15_msr_first_last_2026100601",
+      "case_id": "S15",
+      "input_fingerprint": "e9d2dfafb4701523c354249e7778b6b338803a2aeb833e1af72829b1cd8e4c75",
+      "output_sha256": "5d6957e2cd1c8d11891179eb7ff60846f75788fb4fb405db76659fd6f60ed9d4",
+      "file": "clips/S15_msr_first_last_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S15_msr_first_last_2026100601",
+        "case_id": "S15",
+        "method": "msr_first_last",
+        "seed": 2026100601,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [],
+        "unmet_criteria": [
+          "continuous readable combat of both background pairs"
+        ],
+        "notes": "约1秒起前景开始连续交锋，较同种子A/B更早；末端剑矛姿态接近结束图，背景持续战斗仍不足。",
+        "observed_good": [
+          "foreground thrust/parry",
+          "Odysseus no shield",
+          "guard left shield and right spear broadly retained",
+          "closed gate, fixed camera, six actors"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "e9d2dfafb4701523c354249e7778b6b338803a2aeb833e1af72829b1cd8e4c75",
+        "output_sha256": "5d6957e2cd1c8d11891179eb7ff60846f75788fb4fb405db76659fd6f60ed9d4"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S15_msr_first_last_2026100602",
+      "case_id": "S15",
+      "input_fingerprint": "a0b30fbd05f2bc27cf2953abfbd3ec2611a0c32dc6731422b0530fabf9642d86",
+      "output_sha256": "f11af6948980114041a4ba5e8a808b50c31d6325426510203f5ba2c909340df3",
+      "file": "clips/S15_msr_first_last_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S15_msr_first_last_2026100602",
+        "case_id": "S15",
+        "method": "msr_first_last",
+        "seed": 2026100602,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [],
+        "unmet_criteria": [
+          "continuous readable combat of both background pairs"
+        ],
+        "notes": "约1秒起前景动作，2–3秒格挡清楚，后约1秒停姿；背景不是持续两对对打。",
+        "observed_good": [
+          "foreground thrust/parry",
+          "Odysseus no shield",
+          "guard left shield and right spear broadly retained",
+          "closed gate, fixed camera, six actors"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "a0b30fbd05f2bc27cf2953abfbd3ec2611a0c32dc6731422b0530fabf9642d86",
+        "output_sha256": "f11af6948980114041a4ba5e8a808b50c31d6325426510203f5ba2c909340df3"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S16_msr_2026100601",
+      "case_id": "S16",
+      "input_fingerprint": "d6b0ddeb3a7b097fb1ee8eddc0bc32f849d21866777434295551d82ed41ba334",
+      "output_sha256": "633e016a76753b96f04cb85ef16eaacfbc248956ab8bf34634566b8548275d15",
+      "file": "clips/S16_msr_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S16_msr_2026100601",
+        "case_id": "S16",
+        "method": "msr",
+        "seed": 2026100601,
+        "quality_status": "fail_at_samples",
+        "hard_violations": [
+          "mechanical supports move or duplicate",
+          "operators draw swords or release bar"
+        ],
+        "notes": "门闩先抬起后放到地面，操作者约2.5秒已拔剑，违背四手持闩/剑入鞘；托架随木闩变形移动。",
+        "observed_good": [
+          "young soldier shield stays on back",
+          "gate remains closed",
+          "side fighters visible"
+        ],
+        "accepted_for_production": false,
+        "diagnostic_only": true,
+        "input_fingerprint": "d6b0ddeb3a7b097fb1ee8eddc0bc32f849d21866777434295551d82ed41ba334",
+        "output_sha256": "633e016a76753b96f04cb85ef16eaacfbc248956ab8bf34634566b8548275d15"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S16_msr_2026100602",
+      "case_id": "S16",
+      "input_fingerprint": "4d0306adfbade30e74a039dc41edba7c405d5a85de0a8943c3149f8975dac2fb",
+      "output_sha256": "ddca6bef6cc2bc374ae47cb3dd29a907135334e4df334c822444557044b77c7f",
+      "file": "clips/S16_msr_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S16_msr_2026100602",
+        "case_id": "S16",
+        "method": "msr",
+        "seed": 2026100602,
+        "quality_status": "fail_at_samples",
+        "hard_violations": [
+          "mechanical supports move or duplicate",
+          "operators draw swords or release bar"
+        ],
+        "notes": "门闩抬高后停留在上方，操作者随后拔剑并放手，木闩仍悬挂；托架没有保持原位置。",
+        "observed_good": [
+          "young soldier shield stays on back",
+          "gate remains closed",
+          "side fighters visible"
+        ],
+        "accepted_for_production": false,
+        "diagnostic_only": true,
+        "input_fingerprint": "4d0306adfbade30e74a039dc41edba7c405d5a85de0a8943c3149f8975dac2fb",
+        "output_sha256": "ddca6bef6cc2bc374ae47cb3dd29a907135334e4df334c822444557044b77c7f"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S16_msr_first_2026100601",
+      "case_id": "S16",
+      "input_fingerprint": "135086aefb4d343dbe27ea80d2f093d5f65b56e94644147937b2b46e9946debb",
+      "output_sha256": "0d644cb1e449b5e7e8e05aeced7a70385f9781cf2c7894add1d613ffadc7a4b5",
+      "file": "clips/S16_msr_first_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S16_msr_first_2026100601",
+        "case_id": "S16",
+        "method": "msr_first",
+        "seed": 2026100601,
+        "quality_status": "fail_at_samples",
+        "hard_violations": [
+          "mechanical supports move or duplicate",
+          "operators draw swords or release bar"
+        ],
+        "notes": "首帧未修正行为：中段持闩同时拔剑，后段闩落地；固定托架随闩变化。",
+        "observed_good": [
+          "young soldier shield stays on back",
+          "gate remains closed",
+          "side fighters visible"
+        ],
+        "accepted_for_production": false,
+        "diagnostic_only": true,
+        "input_fingerprint": "135086aefb4d343dbe27ea80d2f093d5f65b56e94644147937b2b46e9946debb",
+        "output_sha256": "0d644cb1e449b5e7e8e05aeced7a70385f9781cf2c7894add1d613ffadc7a4b5"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S16_msr_first_2026100602",
+      "case_id": "S16",
+      "input_fingerprint": "d8723edd0844e1fc364968be3b60816c53fa9f8368b53f0534835327f581f4b0",
+      "output_sha256": "4a005c01d3ad06294d315df83d51be9467f4445442e9a19d31b2a54bd0447400",
+      "file": "clips/S16_msr_first_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S16_msr_first_2026100602",
+        "case_id": "S16",
+        "method": "msr_first",
+        "seed": 2026100602,
+        "quality_status": "fail_at_samples",
+        "hard_violations": [
+          "mechanical supports move or duplicate",
+          "operators draw swords or release bar"
+        ],
+        "notes": "闩抬高后两人放手、拔剑，木闩留在上方，仍有闭环托架移位。",
+        "observed_good": [
+          "young soldier shield stays on back",
+          "gate remains closed",
+          "side fighters visible"
+        ],
+        "accepted_for_production": false,
+        "diagnostic_only": true,
+        "input_fingerprint": "d8723edd0844e1fc364968be3b60816c53fa9f8368b53f0534835327f581f4b0",
+        "output_sha256": "4a005c01d3ad06294d315df83d51be9467f4445442e9a19d31b2a54bd0447400"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S16_msr_first_last_2026100601",
+      "case_id": "S16",
+      "input_fingerprint": "d3bcf6ae3814284529afb08d3fdb13522753120edbd36721709718a3a9832995",
+      "output_sha256": "1105f4687f86d7b4c76e446eac17000f35f3c16af6db4d359d0786305677dc96",
+      "file": "clips/S16_msr_first_last_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S16_msr_first_last_2026100601",
+        "case_id": "S16",
+        "method": "msr_first_last",
+        "seed": 2026100601,
+        "quality_status": "fail_at_samples",
+        "hard_violations": [
+          "mechanical supports move or duplicate",
+          "operators draw swords or release bar"
+        ],
+        "notes": "末端更接近举闩姿态，但中段仍出现拔剑并把闩降到腰部，后又抬回；门闩托架移动/新增错误保留。",
+        "observed_good": [
+          "young soldier shield stays on back",
+          "gate remains closed",
+          "side fighters visible"
+        ],
+        "accepted_for_production": false,
+        "diagnostic_only": true,
+        "input_fingerprint": "d3bcf6ae3814284529afb08d3fdb13522753120edbd36721709718a3a9832995",
+        "output_sha256": "1105f4687f86d7b4c76e446eac17000f35f3c16af6db4d359d0786305677dc96"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S16_msr_first_last_2026100602",
+      "case_id": "S16",
+      "input_fingerprint": "3b2f617f6ff79d5d66ead7c669499940111fb21406cff7830ab3732b20c924df",
+      "output_sha256": "15d53a4e07bdc4030b8f39b59dd9a82a9b01cc4223a799ffd75695e99e431a51",
+      "file": "clips/S16_msr_first_last_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S16_msr_first_last_2026100602",
+        "case_id": "S16",
+        "method": "msr_first_last",
+        "seed": 2026100602,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [
+          "mechanical supports move or duplicate",
+          "raise-lower-raise instead of one lift"
+        ],
+        "notes": "操作者比A/B更能维持持闩姿态，未见明确拔剑；但木闩先升后降再升，托架移动/新增的结构错误保留。",
+        "observed_good": [
+          "hands mostly on bar",
+          "shield on back",
+          "closed gate"
+        ],
+        "accepted_for_production": false,
+        "diagnostic_only": true,
+        "input_fingerprint": "3b2f617f6ff79d5d66ead7c669499940111fb21406cff7830ab3732b20c924df",
+        "output_sha256": "15d53a4e07bdc4030b8f39b59dd9a82a9b01cc4223a799ffd75695e99e431a51"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S20_msr_2026100601",
+      "case_id": "S20",
+      "input_fingerprint": "cbffac66512ff01af39feb5892934f374951281323b5692d304a3ced08bf6809",
+      "output_sha256": "e551d3967b566cd5c1965d748033626c22366a57186281f760f48d7dec387462",
+      "file": "clips/S20_msr_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S20_msr_2026100601",
+        "case_id": "S20",
+        "method": "msr",
+        "seed": 2026100601,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [
+          "camera pulls back despite locked camera"
+        ],
+        "unmet_criteria": [
+          "continuous readable rear army clash"
+        ],
+        "notes": "前景有交锋，随后大量转身走位；画面明显拉远，违背本次固定机位条件。后排仍偏列队。",
+        "observed_good": [
+          "no named heroes",
+          "blue-gray vs ochre/rust factions",
+          "stable rigid horse and one ladder",
+          "open left gate, right fountain",
+          "foreground blade/shield interaction"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "cbffac66512ff01af39feb5892934f374951281323b5692d304a3ced08bf6809",
+        "output_sha256": "e551d3967b566cd5c1965d748033626c22366a57186281f760f48d7dec387462"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S20_msr_2026100602",
+      "case_id": "S20",
+      "input_fingerprint": "d3c6974a41d7ece4ad95211738d1adeeca6f57d217dd9027adefc1be8f0459cd",
+      "output_sha256": "fcce47b3602809609d390128b4587d7af7c2648c541d18a4443dc92c8e0d7626",
+      "file": "clips/S20_msr_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S20_msr_2026100602",
+        "case_id": "S20",
+        "method": "msr",
+        "seed": 2026100602,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [
+          "camera pulls back despite locked camera"
+        ],
+        "unmet_criteria": [
+          "continuous readable rear army clash"
+        ],
+        "notes": "两组前景对打持续性较好，颜色可区分；构图仍缓慢拉远，中后景多摆姿/挥舞，未形成足够清晰持续交锋。",
+        "observed_good": [
+          "no named heroes",
+          "blue-gray vs ochre/rust factions",
+          "stable rigid horse and one ladder",
+          "open left gate, right fountain",
+          "foreground blade/shield interaction"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "d3c6974a41d7ece4ad95211738d1adeeca6f57d217dd9027adefc1be8f0459cd",
+        "output_sha256": "fcce47b3602809609d390128b4587d7af7c2648c541d18a4443dc92c8e0d7626"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S20_msr_first_2026100601",
+      "case_id": "S20",
+      "input_fingerprint": "234711d7d8aa71dd402bf0e4b66feac5922560e7ae72fbc16843712572404d67",
+      "output_sha256": "7db41b0f3d14142cdf95265f6ab707859922b43102db93fa281977b320c1b201",
+      "file": "clips/S20_msr_first_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S20_msr_first_2026100601",
+        "case_id": "S20",
+        "method": "msr_first",
+        "seed": 2026100601,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [
+          "camera pulls back despite locked camera"
+        ],
+        "unmet_criteria": [
+          "continuous readable rear army clash"
+        ],
+        "notes": "与同种子A接近，前景交锋后转身走位并拉远；首帧未解决群战层次或固定构图。",
+        "observed_good": [
+          "no named heroes",
+          "blue-gray vs ochre/rust factions",
+          "stable rigid horse and one ladder",
+          "open left gate, right fountain",
+          "foreground blade/shield interaction"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "234711d7d8aa71dd402bf0e4b66feac5922560e7ae72fbc16843712572404d67",
+        "output_sha256": "7db41b0f3d14142cdf95265f6ab707859922b43102db93fa281977b320c1b201"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S20_msr_first_2026100602",
+      "case_id": "S20",
+      "input_fingerprint": "8d2f1731f865f18f21979811478321345a1dbfdfc5a140ef4bbd88bc0656f103",
+      "output_sha256": "a96f88d320c8ceb5e16dd662a27eea499e218e27048ad92112c65c6f24e81764",
+      "file": "clips/S20_msr_first_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S20_msr_first_2026100602",
+        "case_id": "S20",
+        "method": "msr_first",
+        "seed": 2026100602,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [
+          "camera pulls back despite locked camera"
+        ],
+        "unmet_criteria": [
+          "continuous readable rear army clash"
+        ],
+        "notes": "前景两对剑盾互动可读，后景存在武器动作；仍有镜头拉远与后排列队感。",
+        "observed_good": [
+          "no named heroes",
+          "blue-gray vs ochre/rust factions",
+          "stable rigid horse and one ladder",
+          "open left gate, right fountain",
+          "foreground blade/shield interaction"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "8d2f1731f865f18f21979811478321345a1dbfdfc5a140ef4bbd88bc0656f103",
+        "output_sha256": "a96f88d320c8ceb5e16dd662a27eea499e218e27048ad92112c65c6f24e81764"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S20_msr_first_last_2026100601",
+      "case_id": "S20",
+      "input_fingerprint": "2a0804522ca7028195c4159eec9e3f84871a52b282db780c8d0921274ab0f825",
+      "output_sha256": "d423456f47921fecd96dbd21a5b01b9277413f78a5d1f938cfc671aa1f4f1c8e",
+      "file": "clips/S20_msr_first_last_2026100601/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S20_msr_first_last_2026100601",
+        "case_id": "S20",
+        "method": "msr_first_last",
+        "seed": 2026100601,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [],
+        "unmet_criteria": [
+          "continuous readable rear army clash"
+        ],
+        "notes": "构图较A/B稳定，结尾恢复目标对打姿态；中段前景仍转身走位，后排持续交战不足。",
+        "observed_good": [
+          "no named heroes",
+          "blue-gray vs ochre/rust factions",
+          "stable rigid horse and one ladder",
+          "open left gate, right fountain",
+          "foreground blade/shield interaction"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "2a0804522ca7028195c4159eec9e3f84871a52b282db780c8d0921274ab0f825",
+        "output_sha256": "d423456f47921fecd96dbd21a5b01b9277413f78a5d1f938cfc671aa1f4f1c8e"
+      },
+      "production_ready": false
+    },
+    {
+      "id": "S20_msr_first_last_2026100602",
+      "case_id": "S20",
+      "input_fingerprint": "cd98cc5441b23b14b2b08fa7e7a2078e9d2edb0867f328248cecdbafe4937553",
+      "output_sha256": "8e621fa3a66b49912665d558cb2f7499a72df2d638a70c8fcd4e9f197aae95c4",
+      "file": "clips/S20_msr_first_last_2026100602/delivered.mp4",
+      "technical_status": "PASS",
+      "quality": {
+        "id": "S20_msr_first_last_2026100602",
+        "case_id": "S20",
+        "method": "msr_first_last",
+        "seed": 2026100602,
+        "quality_status": "partial_at_samples",
+        "hard_violations": [],
+        "unmet_criteria": [
+          "continuous readable rear army clash"
+        ],
+        "notes": "本组前景和中景交锋最清楚，阵营颜色与构图较稳定；后排仍偏列队/摆姿，不能据此确认三层持续群战通过。",
+        "observed_good": [
+          "no named heroes",
+          "blue-gray vs ochre/rust factions",
+          "stable rigid horse and one ladder",
+          "open left gate, right fountain",
+          "foreground blade/shield interaction"
+        ],
+        "accepted_for_production": false,
+        "input_fingerprint": "cd98cc5441b23b14b2b08fa7e7a2078e9d2edb0867f328248cecdbafe4937553",
+        "output_sha256": "8e621fa3a66b49912665d558cb2f7499a72df2d638a70c8fcd4e9f197aae95c4"
+      },
+      "production_ready": false
+    }
+  ],
+  "production_ready": [],
+  "editable_intervals": [
+    {
+      "id": "S10_msr_first_last_2026100601",
+      "start_frame": 60,
+      "end_frame_exclusive": 108,
+      "duration_s": 2.0,
+      "status": "provisionally_usable_action",
+      "notes": "2.5–4.5秒: 6fps密集采样显示连续下移、双手扶梯、无跳离；用于动作样片，不等同整段通过或音轨终验。",
+      "source_sha256": "9cd846504e3598f0e96116c799dcd49e1ce31984d9291bd433dd449b7ef4602f"
+    },
+    {
+      "id": "S15_msr_first_last_2026100601",
+      "start_frame": 18,
+      "end_frame_exclusive": 90,
+      "duration_s": 3.0,
+      "status": "foreground_action_excerpt_with_background_caveat",
+      "notes": "0.75–3.75秒，6fps密集采样确认前景剑矛格挡/再攻动作；背景两对持续接触仍弱，不代表整段全部条件通过。",
+      "source_sha256": "5d6957e2cd1c8d11891179eb7ff60846f75788fb4fb405db76659fd6f60ed9d4"
+    },
+    {
+      "id": "S20_msr_first_last_2026100602",
+      "start_frame": 18,
+      "end_frame_exclusive": 90,
+      "duration_s": 3.0,
+      "status": "foreground_middle_action_excerpt_with_rear_caveat",
+      "notes": "0.75–3.75秒，6fps密集采样确认前景与中景多组挥砍、格挡和后退；远处队列仍以站立/挥舞姿态为主，不代表完整军团持续交战通过。",
+      "source_sha256": "8e621fa3a66b49912665d558cb2f7499a72df2d638a70c8fcd4e9f197aae95c4"
+    }
+  ],
+  "scope": "all creative decisions based on sampled frames; audio and between-sample final inspection pending"
+}

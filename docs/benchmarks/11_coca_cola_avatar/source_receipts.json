@@ -1,0 +1,38 @@
+[
+  {
+    "repository": "https://github.com/Soul-AILab/SoulX-FlashHead",
+    "archive_file": "avatar-flashhead.tar.gz",
+    "archive_sha256": "8228bbef194c27938aea0dd1304c66d0d1abbee30bac7ea0f2ce62e8005d850a",
+    "branch": "main",
+    "downloaded_date": "2026-10-07",
+    "source_note": "Downloaded branch archive; archive digest preserves the exact source snapshot used.",
+    "spark_archive_path": "/home/admin/digital-human-runtime/sources/avatar-flashhead.tar.gz"
+  },
+  {
+    "repository": "https://github.com/lipku/LiveTalking",
+    "archive_file": "avatar-livetalking.tar.gz",
+    "archive_sha256": "7a96133b4a5408dbba331436188a508cf466fb365fabae43395e62429ae88e53",
+    "branch": "main",
+    "downloaded_date": "2026-10-07",
+    "source_note": "Downloaded branch archive; archive digest preserves the exact source snapshot used.",
+    "spark_archive_path": "/home/admin/digital-human-runtime/sources/avatar-livetalking.tar.gz"
+  },
+  {
+    "repository": "https://github.com/HumanAIGC-Engineering/OpenAvatarChat",
+    "archive_file": "avatar-oac.tar.gz",
+    "archive_sha256": "591bbe84d1ea15580ef25b75b24181f37bbd4e1f4aba8850084f384338fc2085",
+    "branch": "main",
+    "downloaded_date": "2026-10-07",
+    "source_note": "Downloaded branch archive; archive digest preserves the exact source snapshot used.",
+    "spark_archive_path": "/home/admin/digital-human-runtime/sources/avatar-oac.tar.gz"
+  },
+  {
+    "repository": "https://github.com/antgroup/echomimic_v3",
+    "archive_file": "avatar-echomimic.tar.gz",
+    "archive_sha256": "ca6d23797c82e7574350fe18c3d606b805b9b8837c882f34831987e430a991f4",
+    "branch": "main",
+    "downloaded_date": "2026-10-07",
+    "source_note": "Downloaded branch archive; archive digest preserves the exact source snapshot used.",
+    "spark_archive_path": "/home/admin/digital-human-runtime/sources/avatar-echomimic.tar.gz"
+  }
+]

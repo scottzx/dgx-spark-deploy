@@ -1,0 +1,37 @@
+{
+  "id": "S16_start",
+  "title": "双人抬闩与掩护",
+  "output": "keyframes/S16_start.png",
+  "references": [
+    "inputs/board_S16.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Inner side of CLOSED wooden double gate, same masonry, exactly SEVEN people. Two operators at the gate: LEFT Odysseus indigo cloak NO shield, RIGHT young clean-shaven Greek blue-gray tunic with ONE shield strapped FLAT on his BACK. BOTH swords sheathed LEFT. Both operators grip the SAME heavy wooden gate bar with BOTH hands. The single bar is perfectly HORIZONTAL at chest height and still seated securely in TWO side-wall brackets. It has not been removed. Right side: exactly five distinct cover fighters (three blue-gray Greeks and two ochre/rust Trojans) in sword-and-shield combat. Operators have no handheld weapon. Keep all four operator hands readable and all feet grounded.",
+  "seed": 2026100632,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S16_start.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.809611587785184,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "12b33401ecb199785ffd85eb7eb3e69aba8e0f081ab77ad44ce6377a9e1e4bf7"
+  ],
+  "sha256": "8050cd219b1494574a68522b3486bdb8609bd47ad36ac0252ab389f60173665c",
+  "bytes": 2837517,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

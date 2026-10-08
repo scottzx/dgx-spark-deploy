@@ -1,0 +1,651 @@
+{
+  "profiles": [
+    {
+      "key": "vivian_guide",
+      "label": "A · 热情专业导购",
+      "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "speaker": "Vivian",
+      "instruction": "像有经验的女装直播导购面对镜头介绍产品，热情、自信、亲切，有感染力。声音中音区饱满，有扎实的气息支撑和清楚的咬字，亮而圆润。产品名和搭配卖点有明确重音，语气有起伏，短停顿清楚，节奏利落，句尾干净有力。普通话标准。避免尖细嗓音、刺耳高音、喊叫和气声。",
+      "shared_model_load_seconds": 31.141957849729806,
+      "clips": [
+        {
+          "key": "audition",
+          "text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+          "sample_rate": 24000,
+          "duration_seconds": 24.96,
+          "seed": 2026100900,
+          "raw_sha256": "7b24495373d8a6f3d539ca8600fadff637f496ff2cf4d465e8b530c276697f26",
+          "sha256": "4f93f636578978d066775b3811f6522a5f45aa834ef92ef2a567a69dcd51ed9d",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 18.448116107843816,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": -2.3900000000000006,
+            "pre_gain_measurement": {
+              "input_i": "-20.61",
+              "input_tp": "-2.53",
+              "input_lra": "3.20",
+              "input_thresh": "-30.96",
+              "output_i": "-20.83",
+              "output_tp": "-3.00",
+              "output_lra": "2.00",
+              "output_thresh": "-31.22",
+              "normalization_type": "dynamic",
+              "target_offset": "0.83"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "shirt",
+          "text": "白色衬衫，简洁利落，通勤好搭。",
+          "sample_rate": 24000,
+          "duration_seconds": 6.4,
+          "seed": 2026100901,
+          "raw_sha256": "825809f3c41d6841e1e11d777eadce99137a2b215dd475bad395dddf94c1b1a7",
+          "sha256": "a45ce2a79c49938fbd619d4af8c15179fdba41e8e12e294910e87a05eb18e380",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 4.8024295419454575,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": -4.989999999999998,
+            "pre_gain_measurement": {
+              "input_i": "-18.01",
+              "input_tp": "-3.12",
+              "input_lra": "2.60",
+              "input_thresh": "-28.57",
+              "output_i": "-20.40",
+              "output_tp": "-6.29",
+              "output_lra": "1.90",
+              "output_thresh": "-30.99",
+              "normalization_type": "dynamic",
+              "target_offset": "0.40"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "cardigan",
+          "text": "粉色开衫，温柔百搭，适合叠穿。",
+          "sample_rate": 24000,
+          "duration_seconds": 4.24,
+          "seed": 2026100902,
+          "raw_sha256": "41b3a8e578b11f33e185de7e48b99a6b35800ce8268842b33aac4aa6c508c06c",
+          "sha256": "3c900099f9f73cdcc84df44e0a1237f01974d113828fc4c6dd27943c202e68e7",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 3.1651630848646164,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": -3.460000000000001,
+            "pre_gain_measurement": {
+              "input_i": "-19.54",
+              "input_tp": "-3.66",
+              "input_lra": "0.80",
+              "input_thresh": "-29.95",
+              "output_i": "-19.04",
+              "output_tp": "-3.14",
+              "output_lra": "0.10",
+              "output_thresh": "-29.40",
+              "normalization_type": "dynamic",
+              "target_offset": "-0.96"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "dress",
+          "text": "黑色连衣裙，线条简洁，日常好搭。",
+          "sample_rate": 24000,
+          "duration_seconds": 5.52,
+          "seed": 2026100903,
+          "raw_sha256": "8358a224877c617ac205b35e183c68467c14af599d7ce5bb6446b1b4aa645dd6",
+          "sha256": "12537659a55aa6402289d830aa57488ba6f52e521577218f387063fc5ded1951",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 4.138326675165445,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": -1.6700000000000017,
+            "pre_gain_measurement": {
+              "input_i": "-21.33",
+              "input_tp": "-5.37",
+              "input_lra": "0.50",
+              "input_thresh": "-31.74",
+              "output_i": "-20.32",
+              "output_tp": "-3.97",
+              "output_lra": "0.80",
+              "output_thresh": "-30.69",
+              "normalization_type": "dynamic",
+              "target_offset": "0.32"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        }
+      ],
+      "generated_at_utc": "2026-10-08T11:24:59.382269+00:00",
+      "scope": "Audio audition only; existing lip-synchronized videos are unchanged.",
+      "loudness_revision": "All auditions matched to -23 LUFS by constant gain; timing, pitch and delivery unchanged."
+    },
+    {
+      "key": "vivian_live",
+      "label": "B · 强节奏直播",
+      "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "speaker": "Vivian",
+      "instruction": "兴奋、积极、有激情的成年女装带货主播，正在热情招呼直播间的观众。声音饱满、有力量，中音区清晰明亮，气息充足，节奏紧凑，有明显的轻重和语气起伏。商品名清楚突出，卖点自然加重，像面对面推荐喜欢的衣服，收尾带行动号召。避免尖叫、喊麦、尖细高音，不要机械播报、不要气声。普通话标准，语速较快但每个字都清楚。",
+      "shared_model_load_seconds": 31.141957849729806,
+      "clips": [
+        {
+          "key": "audition",
+          "text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+          "sample_rate": 24000,
+          "duration_seconds": 23.6,
+          "seed": 2026101000,
+          "raw_sha256": "278383fa33eff46257ae42878862a567f70efc1649b471c6d1a623d2bc95220d",
+          "sha256": "c2b99b38e386adc032deb51f1b5f50eeb0f98f7e6fff6d91ffa9b9da342f3dbd",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 17.611796928104013,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": -2.0599999999999987,
+            "pre_gain_measurement": {
+              "input_i": "-20.94",
+              "input_tp": "-2.77",
+              "input_lra": "3.20",
+              "input_thresh": "-31.42",
+              "output_i": "-20.60",
+              "output_tp": "-3.00",
+              "output_lra": "2.90",
+              "output_thresh": "-31.11",
+              "normalization_type": "dynamic",
+              "target_offset": "0.60"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "shirt",
+          "text": "白色衬衫，简洁利落，通勤好搭。",
+          "sample_rate": 24000,
+          "duration_seconds": 3.76,
+          "seed": 2026101001,
+          "raw_sha256": "e6735d8c3e49ff0a9e6406e902e3d269b838fdf58bcc5827af5014f48e16a98a",
+          "sha256": "d294169233c0e383c2345b547aa605758135d62ec15e570e204ede93883c5412",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 2.8205662961117923,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": -2.41,
+            "pre_gain_measurement": {
+              "input_i": "-20.59",
+              "input_tp": "-5.33",
+              "input_lra": "0.40",
+              "input_thresh": "-31.00",
+              "output_i": "-19.02",
+              "output_tp": "-3.85",
+              "output_lra": "0.00",
+              "output_thresh": "-29.40",
+              "normalization_type": "dynamic",
+              "target_offset": "-0.98"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "cardigan",
+          "text": "粉色开衫，温柔百搭，适合叠穿。",
+          "sample_rate": 24000,
+          "duration_seconds": 3.52,
+          "seed": 2026101002,
+          "raw_sha256": "8063afa16b70f1ca7e1d5802fde8fe8d8a7b49d8312f5e616ffb180e01d5e32c",
+          "sha256": "318a157de875428d9abe726276d075a3f14f14f3ea27dc815c4f0daeae934f67",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 2.6751013440079987,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": -0.4499999999999993,
+            "pre_gain_measurement": {
+              "input_i": "-22.55",
+              "input_tp": "-5.96",
+              "input_lra": "0.20",
+              "input_thresh": "-32.55",
+              "output_i": "-19.88",
+              "output_tp": "-3.39",
+              "output_lra": "0.00",
+              "output_thresh": "-29.88",
+              "normalization_type": "dynamic",
+              "target_offset": "-0.12"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "dress",
+          "text": "黑色连衣裙，线条简洁，日常好搭。",
+          "sample_rate": 24000,
+          "duration_seconds": 4.08,
+          "seed": 2026101054,
+          "raw_sha256": "32a6aee850c18bf6f11157ff9cd052209e76bfee24557d0d184327b8d0e35b1c",
+          "sha256": "e82d7ba610d8d6691865c69ef4fc2c3a0bd4032c02f8fa2028e22f15622da7dd",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 3.460960503667593,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": -2.0599999999999987,
+            "pre_gain_measurement": {
+              "input_i": "-20.94",
+              "input_tp": "-5.64",
+              "input_lra": "0.90",
+              "input_thresh": "-30.94",
+              "output_i": "-22.64",
+              "output_tp": "-7.12",
+              "output_lra": "0.80",
+              "output_thresh": "-32.64",
+              "normalization_type": "dynamic",
+              "target_offset": "-0.36"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false,
+          "instruction_override": "兴奋、积极、有激情的成年女装带货主播，正在热情招呼直播间的观众。声音饱满、有力量，中音区清晰明亮，气息充足，节奏紧凑，有明显的轻重和语气起伏。商品名清楚突出，卖点自然加重，像面对面推荐喜欢的衣服，收尾带行动号召。避免尖叫、喊麦、尖细高音，不要机械播报、不要气声。普通话标准，语速较快但每个字都清楚。商品颜色、产品名称和句尾每个字都完整清楚地说出来，不要吞字或省略字。",
+          "previous_take": {
+            "key": "dress",
+            "text": "黑色连衣裙，线条简洁，日常好搭。",
+            "sample_rate": 24000,
+            "duration_seconds": 4.24,
+            "seed": 2026101003,
+            "raw_sha256": "a68834fbdab56adc26e5f446c4e6321b3610260d5f038d873b17d200e6853874",
+            "sha256": "24e7299ec4b629cdd141d7b31e910e8e9eb6baf9bfe5a2a25d6b27c36d973d43",
+            "reused_existing_raw": false,
+            "generation_and_processing_seconds": 3.170778346247971,
+            "processing": {
+              "target_lufs": -20,
+              "constant_gain_db": -2.3500000000000014,
+              "pre_gain_measurement": {
+                "input_i": "-17.65",
+                "input_tp": "-3.13",
+                "input_lra": "2.60",
+                "input_thresh": "-27.71",
+                "output_i": "-18.38",
+                "output_tp": "-3.61",
+                "output_lra": "1.20",
+                "output_thresh": "-28.49",
+                "normalization_type": "dynamic",
+                "target_offset": "-1.62"
+              },
+              "pitch_changed": false,
+              "speed_changed": false,
+              "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+            },
+            "fits_existing_3_44_second_window": false
+          },
+          "retake_attempts": [
+            {
+              "attempt": 1,
+              "seed": 2026101054,
+              "instruction": "兴奋、积极、有激情的成年女装带货主播，正在热情招呼直播间的观众。声音饱满、有力量，中音区清晰明亮，气息充足，节奏紧凑，有明显的轻重和语气起伏。商品名清楚突出，卖点自然加重，像面对面推荐喜欢的衣服，收尾带行动号召。避免尖叫、喊麦、尖细高音，不要机械播报、不要气声。普通话标准，语速较快但每个字都清楚。商品颜色、产品名称和句尾每个字都完整清楚地说出来，不要吞字或省略字。",
+              "result": [
+                {
+                  "key": "dress_attempt1",
+                  "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>黑色连衣裙线条简洁，日常好搭。"
+                }
+              ],
+              "text_matches": true,
+              "duration_seconds": 4.08,
+              "sha256": "6786b3cb20edc14c0e7de80831eff241141378cfba777dc1e91dbf39da0f9a01"
+            }
+          ]
+        }
+      ],
+      "generated_at_utc": "2026-10-08T11:25:25.660924+00:00",
+      "scope": "Audio audition only; existing lip-synchronized videos are unchanged.",
+      "loudness_revision": "All auditions matched to -23 LUFS by constant gain; timing, pitch and delivery unchanged."
+    },
+    {
+      "key": "serena_full",
+      "label": "C · 成熟饱满导购",
+      "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "speaker": "Serena",
+      "instruction": "成熟自信、热情有感染力的成年女性服装导购，声音圆润饱满，音调中低，有胸腔共鸣与扎实气息，能量充足，像热情介绍自己很喜欢的产品。字头清晰，产品名和卖点有明确重音，语气起伏自然，节奏利落，句尾肯定有力。不要轻声平读、不要耳语或软绵绵，不要刺耳、尖细、喊叫或刻意装甜。标准普通话，语速适中偏快。",
+      "shared_model_load_seconds": 31.141957849729806,
+      "clips": [
+        {
+          "key": "audition",
+          "text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+          "sample_rate": 24000,
+          "duration_seconds": 22.48,
+          "seed": 2026101100,
+          "raw_sha256": "3f29efb714688d89746061a373c3d63f2e2cb0424ef1ad11a1f3af1ada970200",
+          "sha256": "7c0571d55c3dcf4e1b7246f90056411f1636e1bf7027b387ba9727b969ae78eb",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 16.70175475301221,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": 3.3599999999999994,
+            "pre_gain_measurement": {
+              "input_i": "-26.36",
+              "input_tp": "-6.89",
+              "input_lra": "3.70",
+              "input_thresh": "-36.80",
+              "output_i": "-19.99",
+              "output_tp": "-3.00",
+              "output_lra": "3.50",
+              "output_thresh": "-30.48",
+              "normalization_type": "dynamic",
+              "target_offset": "-0.01"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "shirt",
+          "text": "白色衬衫，简洁利落，通勤好搭。",
+          "sample_rate": 24000,
+          "duration_seconds": 3.92,
+          "seed": 2026101101,
+          "raw_sha256": "16b4b729fff9715bdaf7d8d607ffe3372bfcbb68e84477ceb095fabefe1d1a8f",
+          "sha256": "bebb8b659b5669d8339f8e9c4882c9e25266182f61296cf908e7e9cfdc18e226",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 2.935794206801802,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": 3.8999999999999986,
+            "pre_gain_measurement": {
+              "input_i": "-26.90",
+              "input_tp": "-11.82",
+              "input_lra": "1.30",
+              "input_thresh": "-37.60",
+              "output_i": "-18.87",
+              "output_tp": "-4.15",
+              "output_lra": "0.00",
+              "output_thresh": "-29.42",
+              "normalization_type": "dynamic",
+              "target_offset": "-1.13"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "cardigan",
+          "text": "粉色开衫，温柔百搭，适合叠穿。",
+          "sample_rate": 24000,
+          "duration_seconds": 2.56,
+          "seed": 2026101153,
+          "raw_sha256": "0b9cf6a0e739eac53bd789f89fd104b8caf7731bde3b5c15e88f10da188028d8",
+          "sha256": "6e4019fa1cc8480ab0bb7f5f640f9764145481e3c502fcb35c8e3a75015bbd1b",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 3.1610459531657398,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": 4.719999999999999,
+            "pre_gain_measurement": {
+              "input_i": "-27.72",
+              "input_tp": "-12.97",
+              "input_lra": "0.00",
+              "input_thresh": "-37.72",
+              "output_i": "-27.24",
+              "output_tp": "-12.48",
+              "output_lra": "0.00",
+              "output_thresh": "-37.24",
+              "normalization_type": "linear",
+              "target_offset": "4.24"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": true,
+          "instruction_override": "成熟自信、热情有感染力的成年女性服装导购，声音圆润饱满，音调中低，有胸腔共鸣与扎实气息，能量充足，像热情介绍自己很喜欢的产品。字头清晰，产品名和卖点有明确重音，语气起伏自然，节奏利落，句尾肯定有力。不要轻声平读、不要耳语或软绵绵，不要刺耳、尖细、喊叫或刻意装甜。标准普通话，语速适中偏快。商品颜色、产品名称和句尾每个字都完整清楚地说出来，不要吞字或省略字。",
+          "previous_take": {
+            "key": "cardigan",
+            "text": "粉色开衫，温柔百搭，适合叠穿。",
+            "sample_rate": 24000,
+            "duration_seconds": 2.64,
+            "seed": 2026101102,
+            "raw_sha256": "184a8ee86e5ed89a64bd25557d6cd27dfe90fbdda68a74c94ac292e6f4a7c2ab",
+            "sha256": "45c6d88b3a9697176ccdb69de03d358ddf5b1d3e62abda3c85a324535f2d8433",
+            "reused_existing_raw": false,
+            "generation_and_processing_seconds": 2.009333146736026,
+            "processing": {
+              "target_lufs": -20,
+              "constant_gain_db": 7.02,
+              "pre_gain_measurement": {
+                "input_i": "-27.02",
+                "input_tp": "-11.61",
+                "input_lra": "0.00",
+                "input_thresh": "-37.02",
+                "output_i": "-26.56",
+                "output_tp": "-11.17",
+                "output_lra": "0.00",
+                "output_thresh": "-36.56",
+                "normalization_type": "linear",
+                "target_offset": "6.56"
+              },
+              "pitch_changed": false,
+              "speed_changed": false,
+              "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+            },
+            "fits_existing_3_44_second_window": true
+          },
+          "retake_attempts": [
+            {
+              "attempt": 1,
+              "seed": 2026101153,
+              "instruction": "成熟自信、热情有感染力的成年女性服装导购，声音圆润饱满，音调中低，有胸腔共鸣与扎实气息，能量充足，像热情介绍自己很喜欢的产品。字头清晰，产品名和卖点有明确重音，语气起伏自然，节奏利落，句尾肯定有力。不要轻声平读、不要耳语或软绵绵，不要刺耳、尖细、喊叫或刻意装甜。标准普通话，语速适中偏快。商品颜色、产品名称和句尾每个字都完整清楚地说出来，不要吞字或省略字。",
+              "result": [
+                {
+                  "key": "cardigan_attempt1",
+                  "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>粉色开衫温柔百搭，适合叠穿。"
+                }
+              ],
+              "text_matches": true,
+              "duration_seconds": 2.56,
+              "sha256": "0b192e9fb850ed0c948f848c21d877ded7250a7681b5777c18599d64de1ac869"
+            }
+          ]
+        },
+        {
+          "key": "dress",
+          "text": "黑色连衣裙，线条简洁，日常好搭。",
+          "sample_rate": 24000,
+          "duration_seconds": 3.28,
+          "seed": 2026101103,
+          "raw_sha256": "7e1ded4005d7b2217d3a1d4740fa8fda2918c71fd5fbcd600fea1508b30a1a80",
+          "sha256": "ff3ae3fbe8e5122c8b4f514e80d63074a29b7f9de066adbac036e566412fffc0",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 2.467382520902902,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": 2.5199999999999996,
+            "pre_gain_measurement": {
+              "input_i": "-25.52",
+              "input_tp": "-10.42",
+              "input_lra": "0.10",
+              "input_thresh": "-35.52",
+              "output_i": "-19.80",
+              "output_tp": "-4.80",
+              "output_lra": "0.00",
+              "output_thresh": "-29.80",
+              "normalization_type": "dynamic",
+              "target_offset": "-0.20"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": true
+        }
+      ],
+      "generated_at_utc": "2026-10-08T11:25:49.775613+00:00",
+      "scope": "Audio audition only; existing lip-synchronized videos are unchanged.",
+      "loudness_revision": "All auditions matched to -23 LUFS by constant gain; timing, pitch and delivery unchanged."
+    },
+    {
+      "key": "baseline",
+      "label": "原柔和风格对照",
+      "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+      "speaker": "Serena",
+      "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。",
+      "shared_model_load_seconds": 31.141957849729806,
+      "clips": [
+        {
+          "key": "audition",
+          "text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+          "sample_rate": 24000,
+          "duration_seconds": 21.76,
+          "seed": 2026100800,
+          "raw_sha256": "2b25795683c04123f9be31c805a8c726498a6e2999baf470e1c32e92c3a66ae5",
+          "sha256": "64e12c6bc7788549117d7e87558f32a36ee1ef3994ba6a4f25be67c948dbab14",
+          "reused_existing_raw": true,
+          "generation_and_processing_seconds": 0.2522245151922107,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": 3.5199999999999996,
+            "pre_gain_measurement": {
+              "input_i": "-26.52",
+              "input_tp": "-8.09",
+              "input_lra": "2.00",
+              "input_thresh": "-37.23",
+              "output_i": "-20.62",
+              "output_tp": "-3.00",
+              "output_lra": "2.00",
+              "output_thresh": "-31.34",
+              "normalization_type": "dynamic",
+              "target_offset": "0.62"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "shirt",
+          "text": "白色衬衫，简洁利落，通勤好搭。",
+          "sample_rate": 24000,
+          "duration_seconds": 4.48,
+          "seed": 2026100801,
+          "raw_sha256": "804aff4e71a0a77b03702e0f205af067e2de096f2a43ed14409152696a6abfa2",
+          "sha256": "2eff78f667cb976acf9c4284b94a3c345e93e916968069e2f04bf408bc753060",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 4.291854469105601,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": 1.9100000000000001,
+            "pre_gain_measurement": {
+              "input_i": "-24.91",
+              "input_tp": "-8.34",
+              "input_lra": "1.80",
+              "input_thresh": "-36.22",
+              "output_i": "-18.95",
+              "output_tp": "-3.00",
+              "output_lra": "1.90",
+              "output_thresh": "-30.22",
+              "normalization_type": "dynamic",
+              "target_offset": "-1.05"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "cardigan",
+          "text": "粉色开衫，温柔百搭，适合叠穿。",
+          "sample_rate": 24000,
+          "duration_seconds": 4.4,
+          "seed": 2026100802,
+          "raw_sha256": "b0ca1fdc79da2af8cfbf51d9949320fb5f18800a7d145a0563cd8b5b664c6e21",
+          "sha256": "a2ac32dc95c516eeda121e182e6c1ec20e3f4665f127a9cd4d5a27c226dfc64d",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 3.2720221914350986,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": 5.350000000000001,
+            "pre_gain_measurement": {
+              "input_i": "-28.35",
+              "input_tp": "-10.60",
+              "input_lra": "1.40",
+              "input_thresh": "-38.80",
+              "output_i": "-19.33",
+              "output_tp": "-3.00",
+              "output_lra": "1.20",
+              "output_thresh": "-30.40",
+              "normalization_type": "dynamic",
+              "target_offset": "-0.67"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        },
+        {
+          "key": "dress",
+          "text": "黑色连衣裙，线条简洁，日常好搭。",
+          "sample_rate": 24000,
+          "duration_seconds": 3.68,
+          "seed": 2026100803,
+          "raw_sha256": "efed79a2fe25a27e97ecc65a1d756e316a58cd285c2da7c46636fb6febf2383d",
+          "sha256": "9882d851a90d165f31ed9eeb447ee46891dea26899729ffb0fcffe2a0971ae5b",
+          "reused_existing_raw": false,
+          "generation_and_processing_seconds": 2.788435849826783,
+          "processing": {
+            "target_lufs": -23,
+            "constant_gain_db": 1.8399999999999999,
+            "pre_gain_measurement": {
+              "input_i": "-24.84",
+              "input_tp": "-9.29",
+              "input_lra": "2.40",
+              "input_thresh": "-34.98",
+              "output_i": "-19.98",
+              "output_tp": "-5.44",
+              "output_lra": "0.00",
+              "output_thresh": "-30.24",
+              "normalization_type": "dynamic",
+              "target_offset": "-0.02"
+            },
+            "pitch_changed": false,
+            "speed_changed": false,
+            "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+          },
+          "fits_existing_3_44_second_window": false
+        }
+      ],
+      "generated_at_utc": "2026-10-08T11:24:28.827845+00:00",
+      "scope": "Audio audition only; existing lip-synchronized videos are unchanged.",
+      "loudness_revision": "All auditions matched to -23 LUFS by constant gain; timing, pitch and delivery unchanged."
+    }
+  ],
+  "existing_videos_changed": false,
+  "planned_voice_design_output": false,
+  "scope": "Three candidate styles and same-text baseline. Natural timing preserved."
+}

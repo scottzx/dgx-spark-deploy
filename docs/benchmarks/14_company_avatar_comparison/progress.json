@@ -1,0 +1,46 @@
+{
+  "updated_at_utc": "2026-10-07T23:43:25.557823+00:00",
+  "completed_cases": 21,
+  "total_cases": 21,
+  "models": {
+    "joyhallo": {
+      "completed": 3,
+      "state": "complete",
+      "last": "{\"engine\": \"joyhallo\", \"product\": \"zero\", \"input_sha256\": {\"driver.mp4\": \"4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7\", \"audio.wav\": \"428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f\", \"audio_16k.wav\": \"331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe\", \"reference.png\": \"6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e\"}, \"commit\": \"dbbe5b2db754ff1e707bdde3fc41a23b585aea17\", \"shared_model_load_seconds\": 11.910953464917839, \"render_seconds\": 990.1102268826216, \"peak_cuda_allocated_gib\": 7.779936790466309, \"native_output\": \"/home/admin/avatar-company-tests/outputs/joyhallo/zero/native.mp4\", \"scope\": \"Official audio-driven portrait model, face cropped from the original generated reference. Does not generate product actions.\", \"portrait_crop_xyxy\": [260, 0, 515, 255], \"portrait_reference_sha256\": \"520883def78cdc95bed6a92d5c7b8f32ab406e5959586951d9c6ef82011e823e\", \"native_frames\": 201, \"steps_per_chunk\": 40, \"guidance_scale\": 3.5, \"model_generates_product_actions\": false, \"original_LTX_actions_preserved\": false, \"compatibility\": [\"CPU ONNX face detection/embedding\", \"MediaPipe 1.1.0 ARM64 official wheel\", \"Wav2Vec2 eager attention\", \"Published inference without training optimizer/dataloader\", \"Clean speech without source separation\", \"PyTorch SDPA attention adapter where required\"], \"native_duration_seconds\": 8.04, \"native_output_sha256\": \"ec5a9bbb5c3307512e98ddac3d34b51e9c32039e748912bb3443421546d03fab\", \"video_sha256\": \"bd1814389a17d76ea7d700212fe6fd051497a0b14320eb600750ae6fb8008d85\", \"final_frame_hold_seconds\": 0.0, \"normalization_note\": \"Trim only; no tail hold.\"}",
+      "current_chunk": 13,
+      "total_chunks": 13
+    },
+    "joyvasa": {
+      "completed": 3,
+      "state": "complete",
+      "last": "{\"engine\": \"joyvasa\", \"product\": \"zero\", \"scope\": \"Official image-and-audio portrait animation. Hands and products originate from one still image; this test does not generate pickup/return actions.\", \"input_sha256\": {\"driver.mp4\": \"4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7\", \"audio.wav\": \"428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f\", \"audio_16k.wav\": \"331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe\", \"reference.png\": \"6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e\"}, \"driver\": \"/home/admin/avatar-company-tests/inputs/zero/audio_16k.wav\", \"driver_sha256\": \"331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe\", \"native_output\": \"/home/admin/avatar-company-tests/outputs/joyvasa/zero/first_frame_audio_16k.mp4\", \"native_output_sha256\": \"8b16891249d472c2dcad0eb3137ea4fdc7b3984084e01d61850a1f6c0eb7aeaa\", \"video_sha256\": \"bc4e8fc9e92f2c6a94e5a8871c8652a08ed72da4458bc5cdee9d895fbe542c2c\", \"shared_model_load_seconds\": 4.358682113699615, \"render_seconds\": 15.748707853257656, \"peak_cuda_allocated_gib\": 1.450235366821289, \"commit\": \"916a90f8de490e8648fee460c1200bd5d9a795af\", \"compatibility\": [\"CPU ONNX face detection/landmarks, four threads\", \"PyTorch trusted official checkpoint weights_only=False\", \"HuBERT eager attention restores original attention-output behavior\"], \"model_generates_product_actions\": false, \"original_LTX_actions_preserved\": false}"
+    },
+    "infinitetalk": {
+      "completed": 3,
+      "state": "complete",
+      "last": "{\"engine\": \"infinitetalk\", \"product\": \"zero\", \"input_sha256\": {\"driver.mp4\": \"4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7\", \"audio.wav\": \"428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f\", \"audio_16k.wav\": \"331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe\", \"reference.png\": \"6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e\"}, \"commit\": \"50aa0a94184315407a991ae804d9b58d6d311ba8\", \"shared_model_load_seconds\": 195.61556276865304, \"render_seconds\": 3156.6052733976394, \"peak_cuda_allocated_gib\": 41.75591230392456, \"native_output\": \"/home/admin/avatar-company-tests/outputs/infinitetalk/zero/native.mp4\", \"scope\": \"Official video-to-video InfiniteTalk. The LTX clip guides the action; InfiniteTalk regenerates the speaking video.\", \"steps_per_chunk\": 8, \"motion_frame\": 9, \"model_generates_product_actions\": true, \"variant\": \"Official documented FusionX LoRA accelerated inference, eight steps, scale 1.0\", \"original_LTX_actions_preserved\": false, \"compatibility\": [\"FlashAttention-2 and single-device xFormers dense attention use PyTorch SDPA\", \"inspect.ArgSpec restored for Python 3.12\", \"Wav2Vec2 eager attention restores original attention-output behavior\", \"Optional demo TTS disabled; same original Serena audio\"], \"action_quality\": \"Not yet visually accepted; inspect pickup, product contact and return.\", \"native_duration_seconds\": 8.0, \"native_output_sha256\": \"a1cfce973921050bd36c7e3f39a3009d57928dc1b9145ef66c82f2982b45237e\", \"video_sha256\": \"ae7c538c89a634f595527d4ab60927ab144da627b98e004ec11fd09c7773c439\"}"
+    },
+    "longcat": {
+      "completed": 3,
+      "state": "complete",
+      "last": "{\"engine\": \"longcat\", \"product\": \"zero\", \"input_sha256\": {\"driver.mp4\": \"4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7\", \"audio.wav\": \"428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f\", \"audio_16k.wav\": \"331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe\", \"reference.png\": \"6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e\"}, \"commit\": \"6b3f4b8582a8bc3f20f795735f5383716c4ba794\", \"shared_model_load_seconds\": 208.19265252212062, \"render_seconds\": 1207.9345427840017, \"peak_cuda_allocated_gib\": 60.266496658325195, \"native_output\": \"/home/admin/avatar-company-tests/outputs/longcat/zero/native.mp4\", \"scope\": \"Official image+audio+text generation and two continuation chunks; all hands/products/actions are generated by LongCat.\", \"steps_per_chunk\": 8, \"chunks\": 3, \"native_frames\": 253, \"model_generates_product_actions\": true, \"original_LTX_actions_preserved\": false, \"compatibility\": [\"Single GPU context parallel world size 1\", \"FlashAttention-2 interface uses equivalent dense PyTorch SDPA\", \"Clean Serena speech used directly without vocal separation\"], \"action_quality\": \"Not yet visually accepted; inspect pickup, product contact and return.\", \"native_duration_seconds\": 10.12, \"native_output_sha256\": \"87ee312aa3f1e640664b7148c3ca3d9fdbefa0b96c2f230ce3dae8479fe2894b\", \"video_sha256\": \"3bc37697e88849bd2fd5605b4740536708838d9cb099ce95fe7bf0bcb21b0a7d\"}"
+    },
+    "liveportrait": {
+      "completed": 3,
+      "state": "complete",
+      "last": ""
+    },
+    "latentsync": {
+      "completed": 3,
+      "state": "complete",
+      "last": ""
+    },
+    "avatarforever": {
+      "completed": 3,
+      "state": "complete",
+      "last": "{\"engine\": \"avatarforever\", \"product\": \"zero\", \"input_sha256\": {\"driver.mp4\": \"4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7\", \"audio.wav\": \"428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f\", \"audio_16k.wav\": \"331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe\", \"reference.png\": \"6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e\"}, \"commit\": \"4dfc42b0e2dbbded4d148387d186219bd7601279\", \"shared_model_load_seconds\": 0.010128890629857779, \"render_seconds\": 71.79653052566573, \"peak_cuda_allocated_gib\": 40.407623291015625, \"native_output\": \"/home/admin/avatar-company-tests/outputs/avatarforever/zero/native.mp4\", \"scope\": \"Official AvatarForever first-frame + audio + text generation, with autoregressive history feature cache.\", \"model_loading_is_lazy\": true, \"timing_includes_lazy_model_loads\": true, \"fast_infer\": false, \"model_generates_product_actions\": true, \"original_LTX_actions_preserved\": false, \"compatibility\": [\"Existing GB10 PyTorch 2.14.1 / CUDA 13 instead of repository Torch 2.7 environment\"], \"action_quality\": \"Not yet visually accepted; inspect pickup, product contact and return.\", \"native_duration_seconds\": 8.04, \"native_output_sha256\": \"5880723bc71b97a93fa9301a8e0db914a19b769b69a96ad5a933e80f74813e50\", \"video_sha256\": \"b22d31683f1c11b85493f2037c273d711a0f36f55b5dc4cd284776fe57b10d55\", \"final_frame_hold_seconds\": 0.0, \"normalization_note\": \"Trim only; no tail hold.\"}"
+    }
+  },
+  "supplemental_completed_cases": 4,
+  "supplemental_total_cases": 4
+}

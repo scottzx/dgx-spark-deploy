@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "elapsed_s": 55.95889542484656,
+  "clips": [
+    {
+      "status": "PASS",
+      "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_opening/stage1",
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/native_baseline/troy_20261003_220446_opening/h3_native.mp4",
+      "frames": 121,
+      "height": 384,
+      "width": 672,
+      "decoder": "native_full_H3_VAE",
+      "decode_s": 24.497550442814827,
+      "latent_precision": "same BF16 handoff as LTX",
+      "trim_frames": 0
+    },
+    {
+      "status": "PASS",
+      "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_continuation/stage1",
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/native_baseline/troy_20261003_220446_continuation/h3_native.mp4",
+      "frames": 102,
+      "height": 384,
+      "width": 672,
+      "decoder": "native_full_H3_VAE",
+      "decode_s": 23.146443804260343,
+      "latent_precision": "same BF16 handoff as LTX",
+      "trim_frames": 19
+    }
+  ]
+}

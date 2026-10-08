@@ -1,0 +1,1136 @@
+{
+  "title": "木马计：夺门 · MSR V2 测试片 V1",
+  "status": "prepared",
+  "remote_root": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005",
+  "source_story": "storyboard_v2/shotlist.json",
+  "source_story_sha256": "26afadafa8b3bc90e6f9ea1af7220ea2affbb898796a3208e5382106e4dbc1ed",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "source_benchmark": "09_troy_climax/msr",
+  "steps": 8,
+  "msr_strength": 1.0,
+  "distilled_strength": 1.0,
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_size": [
+    768,
+    432
+  ],
+  "delivery_crop": "remove 8 pixels from top and bottom",
+  "fps": 24,
+  "frames": 2400,
+  "duration_s": 100,
+  "audio": {
+    "dialogue": false,
+    "music": false,
+    "ambience": true,
+    "source": "native generated audio, no external soundtrack"
+  },
+  "transition": "independent shots, chronological hard cuts",
+  "samples_per_shot": 1,
+  "shots": [
+    {
+      "id": "S01",
+      "index": 1,
+      "title": "西农陈情",
+      "scene": "A",
+      "seed": 2026100501,
+      "start_s": 0,
+      "end_s": 5,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Sinon, an unarmed persuasive Greek captive.\npic2 is the Trojan guard, pointed bronze helmet, ochre armor and rust cloak.\npic3 is the unarmed Trojan woman citizen.\npic4 is sandstone city-gate exterior architecture.\npic5 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly three people. Sinon left opens his empty hands and gestures calmly toward the wooden horse outside the open gate. The guard right listens and turns his head, keeping his right-hand spear upright and his left-hand shield steady. The woman farther back watches. No one speaks or moves their lips in speech. The horse hatch remains closed and no ladder is visible.\nCamera and synchronized sound: Slow medium push-in; wind and soft cloth rustle.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "68c4b14b8b9b43e7899f2741d92743cff9295d64e197510c239e14c7e2e22ca0",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "sinon",
+          "kind": "character",
+          "role": "Sinon, an unarmed persuasive Greek captive",
+          "source_file": "assets/characters/sinon_v1.png",
+          "file": "inputs/sinon.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/sinon.png",
+          "sha256": "449ebbb4ecd5489e937d83c4ea8e1ffc053921009debbcdcdf8a72a1cbcbca0e"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 3,
+          "id": "citizen",
+          "kind": "character",
+          "role": "the unarmed Trojan woman citizen",
+          "source_file": "assets/characters/trojan_citizen_01_v1.png",
+          "file": "inputs/citizen.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/citizen.png",
+          "sha256": "ff4cc759109642df55ef851dbc8b600aabc39dac5baaed322a781e932fec190a"
+        },
+        {
+          "slot": 4,
+          "id": "gate",
+          "kind": "scene",
+          "role": "sandstone city-gate exterior architecture",
+          "source_file": "assets/scenes/gate_day_v1.png",
+          "file": "inputs/gate.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/gate.png",
+          "sha256": "9aaa0bf597413187c4047c67944c79f178502bcbeba7a034e4d0830bc741296a"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s01_v1.png",
+          "file": "inputs/board_S01.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S01.png",
+          "sha256": "cd46b04cc6acc039948ad7ea6cc00dd063b43151e5ed9a0c2f4e3dabe146dda5"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s01_v1.png",
+      "motion": "Exactly three people. Sinon left opens his empty hands and gestures calmly toward the wooden horse outside the open gate. The guard right listens and turns his head, keeping his right-hand spear upright and his left-hand shield steady. The woman farther back watches. No one speaks or moves their lips in speech. The horse hatch remains closed and no ladder is visible.",
+      "camera_sound": "Slow medium push-in; wind and soft cloth rustle."
+    },
+    {
+      "id": "S02",
+      "index": 2,
+      "title": "守卫放行",
+      "scene": "A",
+      "seed": 2026100502,
+      "start_s": 5,
+      "end_s": 10,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Sinon, an unarmed persuasive Greek captive.\npic2 is the Trojan guard, pointed bronze helmet, ochre armor and rust cloak.\npic3 is the unarmed Trojan rope-pulling worker.\npic4 is sandstone city-gate exterior architecture.\npic5 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly three people: Sinon, the guard, and the worker. The guard nods once and steps aside while still holding spear right and shield left. The worker grasps the hauling rope with both hands and leans to take its weight. Sinon lowers his empty hands. The rope leads toward the offscreen horse. Open guarded gate; no Greek army.\nCamera and synchronized sound: Steady medium shot; taut rope fibers, footsteps and quiet armor movement.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "6f97956b8abc4a3eaf7592662fa857242b9d098c6d46660a73b56c1c91f8ac74",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "sinon",
+          "kind": "character",
+          "role": "Sinon, an unarmed persuasive Greek captive",
+          "source_file": "assets/characters/sinon_v1.png",
+          "file": "inputs/sinon.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/sinon.png",
+          "sha256": "449ebbb4ecd5489e937d83c4ea8e1ffc053921009debbcdcdf8a72a1cbcbca0e"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 3,
+          "id": "worker",
+          "kind": "character",
+          "role": "the unarmed Trojan rope-pulling worker",
+          "source_file": "assets/characters/trojan_worker_01_v1.png",
+          "file": "inputs/worker.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+          "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28"
+        },
+        {
+          "slot": 4,
+          "id": "gate",
+          "kind": "scene",
+          "role": "sandstone city-gate exterior architecture",
+          "source_file": "assets/scenes/gate_day_v1.png",
+          "file": "inputs/gate.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/gate.png",
+          "sha256": "9aaa0bf597413187c4047c67944c79f178502bcbeba7a034e4d0830bc741296a"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s02_v1.png",
+          "file": "inputs/board_S02.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S02.png",
+          "sha256": "165af8f7cc8aa526cbcd4ac37549739750b98d6be7242b7cee61380973c40022"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s02_v1.png",
+      "motion": "Exactly three people: Sinon, the guard, and the worker. The guard nods once and steps aside while still holding spear right and shield left. The worker grasps the hauling rope with both hands and leans to take its weight. Sinon lowers his empty hands. The rope leads toward the offscreen horse. Open guarded gate; no Greek army.",
+      "camera_sound": "Steady medium shot; taut rope fibers, footsteps and quiet armor movement."
+    },
+    {
+      "id": "S03",
+      "index": 3,
+      "title": "木轮越过门槛",
+      "scene": "B",
+      "seed": 2026100503,
+      "start_s": 10,
+      "end_s": 15,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is the unarmed Trojan rope-pulling worker.\npic2 is rigid wooden horse design on one four-wheeled platform, facing right.\npic3 is sandstone city-gate exterior architecture.\npic4 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. One worker is visible only as legs and lower torso. He pulls the taut rope with both hands off the top of frame. The near wooden wheel rotates slowly across the stone threshold into the gateway. The wooden horse legs remain rigid on the platform; it never walks like a living animal. Closed hatch, no ladder.\nCamera and synchronized sound: Low close tracking shot following the turning wheel; wooden wheel thuds and shoes scrape stone.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "2aa23048b93c1bde493e5e4ea4d9619fafc697d22b90163c605ed9dfc87540bd",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "worker",
+          "kind": "character",
+          "role": "the unarmed Trojan rope-pulling worker",
+          "source_file": "assets/characters/trojan_worker_01_v1.png",
+          "file": "inputs/worker.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+          "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "gate",
+          "kind": "scene",
+          "role": "sandstone city-gate exterior architecture",
+          "source_file": "assets/scenes/gate_day_v1.png",
+          "file": "inputs/gate.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/gate.png",
+          "sha256": "9aaa0bf597413187c4047c67944c79f178502bcbeba7a034e4d0830bc741296a"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s03_v1.png",
+          "file": "inputs/board_S03.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S03.png",
+          "sha256": "276251eb8d61bef578a7f3f5a1494d06859b118ff3ae7780361474a4bcc1cd26"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s03_v1.png",
+      "motion": "One worker is visible only as legs and lower torso. He pulls the taut rope with both hands off the top of frame. The near wooden wheel rotates slowly across the stone threshold into the gateway. The wooden horse legs remain rigid on the platform; it never walks like a living animal. Closed hatch, no ladder.",
+      "camera_sound": "Low close tracking shot following the turning wheel; wooden wheel thuds and shoes scrape stone."
+    },
+    {
+      "id": "S04",
+      "index": 4,
+      "title": "木马进入广场",
+      "scene": "B",
+      "seed": 2026100504,
+      "start_s": 15,
+      "end_s": 20,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is the unarmed Trojan rope-pulling worker.\npic2 is the unarmed Trojan woman citizen.\npic3 is square architecture by day: gate rear left, fountain right.\npic4 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly three people: the worker, one different anonymous unarmed worker, and the woman citizen. Two workers steadily pull the rigid wooden horse on its four-wheel platform into the square, then slow it to a stop at center-left. The woman walks alongside at a safe distance. Horse faces right. Gate rear left, fountain right; closed hatch, no ladder, no Greek soldiers.\nCamera and synchronized sound: Wide slow lateral track; wheels turn, rope strains, footsteps and fountain water.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "3e9b992c2cead305428c69f24869dcb137169a3ec6c5efde9985980bfdb84cd0",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "worker",
+          "kind": "character",
+          "role": "the unarmed Trojan rope-pulling worker",
+          "source_file": "assets/characters/trojan_worker_01_v1.png",
+          "file": "inputs/worker.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+          "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28"
+        },
+        {
+          "slot": 2,
+          "id": "citizen",
+          "kind": "character",
+          "role": "the unarmed Trojan woman citizen",
+          "source_file": "assets/characters/trojan_citizen_01_v1.png",
+          "file": "inputs/citizen.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/citizen.png",
+          "sha256": "ff4cc759109642df55ef851dbc8b600aabc39dac5baaed322a781e932fec190a"
+        },
+        {
+          "slot": 3,
+          "id": "day",
+          "kind": "scene",
+          "role": "square architecture by day: gate rear left, fountain right",
+          "source_file": "assets/scenes/square_day_v1.png",
+          "file": "inputs/day.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/day.png",
+          "sha256": "e967afd5dc8ab4be8fb41d0b74551904d4ff98a459c0d472259e9e3e280fe33f"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s04_v1.png",
+          "file": "inputs/board_S04.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S04.png",
+          "sha256": "4e71adcd964c71139d8c25646df4d3565a3d99defcaf4964e2e5acdc0e9856cd"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s04_v1.png",
+      "motion": "Exactly three people: the worker, one different anonymous unarmed worker, and the woman citizen. Two workers steadily pull the rigid wooden horse on its four-wheel platform into the square, then slow it to a stop at center-left. The woman walks alongside at a safe distance. Horse faces right. Gate rear left, fountain right; closed hatch, no ladder, no Greek soldiers.",
+      "camera_sound": "Wide slow lateral track; wheels turn, rope strains, footsteps and fountain water."
+    },
+    {
+      "id": "S05",
+      "index": 5,
+      "title": "暮色停驻",
+      "scene": "C",
+      "seed": 2026100505,
+      "start_s": 20,
+      "end_s": 25,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is the unarmed Trojan rope-pulling worker.\npic2 is the unarmed Trojan woman citizen.\npic3 is square architecture at dusk: gate rear left, fountain right.\npic4 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly two people: the worker and woman citizen. At dusk the horse is already parked; its wheels stop, the hauling ropes slacken. The two people walk away from the horse toward the edge of the square. Horse remains rigid and motionless, facing right, hatch closed, ladder hidden.\nCamera and synchronized sound: Wide static dusk shot; departing footsteps, fountain and evening wind.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "4f6659e9ddd0797bac69b7dd822a39c7bdb088dd0d59ee3f1fa4e47834a8c5a6",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "worker",
+          "kind": "character",
+          "role": "the unarmed Trojan rope-pulling worker",
+          "source_file": "assets/characters/trojan_worker_01_v1.png",
+          "file": "inputs/worker.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+          "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28"
+        },
+        {
+          "slot": 2,
+          "id": "citizen",
+          "kind": "character",
+          "role": "the unarmed Trojan woman citizen",
+          "source_file": "assets/characters/trojan_citizen_01_v1.png",
+          "file": "inputs/citizen.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/citizen.png",
+          "sha256": "ff4cc759109642df55ef851dbc8b600aabc39dac5baaed322a781e932fec190a"
+        },
+        {
+          "slot": 3,
+          "id": "dusk",
+          "kind": "scene",
+          "role": "square architecture at dusk: gate rear left, fountain right",
+          "source_file": "assets/scenes/square_dusk_v1.png",
+          "file": "inputs/dusk.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/dusk.png",
+          "sha256": "7d86b6b3e4f9a2d40963cd6077919c8664433edc92d1feada440cd6100c6155c"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s05_v1.png",
+          "file": "inputs/board_S05.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S05.png",
+          "sha256": "714d42deaeeaa3edd493ab5117cee2de198633ae54220e66b48283f8ed635a1a"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s05_v1.png",
+      "motion": "Exactly two people: the worker and woman citizen. At dusk the horse is already parked; its wheels stop, the hauling ropes slacken. The two people walk away from the horse toward the edge of the square. Horse remains rigid and motionless, facing right, hatch closed, ladder hidden.",
+      "camera_sound": "Wide static dusk shot; departing footsteps, fountain and evening wind."
+    },
+    {
+      "id": "S06",
+      "index": 6,
+      "title": "暮色关城门",
+      "scene": "C",
+      "seed": 2026100506,
+      "start_s": 25,
+      "end_s": 30,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is the Trojan guard, pointed bronze helmet, ochre armor and rust cloak.\npic2 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly one guard is inside the gate at dusk. His spear and shield are set aside and both hands are empty except for gripping the wooden door and bar. He settles the two wooden leaves firmly closed and presses one horizontal locking bar securely into its sockets. Finish with the gate fully closed and locked. No extra arm, no other people.\nCamera and synchronized sound: Medium stable shot; heavy wood creak and one low locking-bar thud.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "cff5d835fe261bcb07eab5de989aa948c6dc7ee9920c207dab6105e5f3f51296",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 2,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s06_v2.png",
+          "file": "inputs/board_S06.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S06.png",
+          "sha256": "29209fbbf85a5e934889164d93943b32c8d1bdfc2194a2a03dd82055d907a886"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s06_v2.png",
+      "motion": "Exactly one guard is inside the gate at dusk. His spear and shield are set aside and both hands are empty except for gripping the wooden door and bar. He settles the two wooden leaves firmly closed and presses one horizontal locking bar securely into its sockets. Finish with the gate fully closed and locked. No extra arm, no other people.",
+      "camera_sound": "Medium stable shot; heavy wood creak and one low locking-bar thud."
+    },
+    {
+      "id": "S07",
+      "index": 7,
+      "title": "夜间静场",
+      "scene": "D",
+      "seed": 2026100507,
+      "start_s": 30,
+      "end_s": 35,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is rigid wooden horse design on one four-wheeled platform, facing right.\npic2 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. No people at all. Empty square at night. The wooden horse stands center-left facing right, hatch shut, no ladder. City gate rear left is firmly closed. Fountain right flows and two braziers flicker. Nothing emerges yet.\nCamera and synchronized sound: Very slow wide push-in; blue night light, amber flames, fountain and night wind only.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "23e51acfaad1cd51b4718c759d582f779ecb902cb0d8444420db2b7e59ab690c",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 2,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s07_v1.png",
+          "file": "inputs/board_S07.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S07.png",
+          "sha256": "9e44ec0c3ba76421e336323781eb3d96b44333497c204405c058832bd15e5131"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s07_v1.png",
+      "motion": "No people at all. Empty square at night. The wooden horse stands center-left facing right, hatch shut, no ladder. City gate rear left is firmly closed. Fountain right flows and two braziers flicker. Nothing emerges yet.",
+      "camera_sound": "Very slow wide push-in; blue night light, amber flames, fountain and night wind only."
+    },
+    {
+      "id": "S08",
+      "index": 8,
+      "title": "侧舱试探开启",
+      "scene": "D",
+      "seed": 2026100508,
+      "start_s": 35,
+      "end_s": 40,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield.\npic2 is rigid wooden horse design on one four-wheeled platform, facing right.\npic3 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly one Odysseus, only his head and torso inside the single camera-facing belly hatch. He lifts the TOP-hinged flap upward with his hands, pauses and peers cautiously into the empty square. His sword stays sheathed at his anatomical left hip; no shield. No ladder is present yet and nobody stands on the ground. Gate remains closed.\nCamera and synchronized sound: Close slow push toward the hatch; restrained wood hinge creak, cloth and distant fire.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "4ffdbce8ed9cbcae40eaf574ca3bdc9ecd430ccc4203b19893be5fffaf356ae5",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s08_v1.png",
+          "file": "inputs/board_S08.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S08.png",
+          "sha256": "380d4744d460f9a97ce1ce7f3524fb98fb5a28622a356d09176d0357636874c3"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s08_v1.png",
+      "motion": "Exactly one Odysseus, only his head and torso inside the single camera-facing belly hatch. He lifts the TOP-hinged flap upward with his hands, pauses and peers cautiously into the empty square. His sword stays sheathed at his anatomical left hip; no shield. No ladder is present yet and nobody stands on the ground. Gate remains closed.",
+      "camera_sound": "Close slow push toward the hatch; restrained wood hinge creak, cloth and distant fire."
+    },
+    {
+      "id": "S09",
+      "index": 9,
+      "title": "放下木梯",
+      "scene": "D",
+      "seed": 2026100509,
+      "start_s": 40,
+      "end_s": 45,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield.\npic2 is rigid wooden horse design on one four-wheeled platform, facing right.\npic3 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly one Odysseus stays in the open hatch. With both empty hands he lowers and steadies one wooden ladder from the hatch to clear stone paving away from the platform wheels. The top-hinged flap stays raised. Sword sheathed at anatomical left hip, no shield; no second face in the hatch and nobody on the ground.\nCamera and synchronized sound: Medium steady shot; ladder scrapes the hatch edge, then its feet touch stone.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "26b8c9d1e33185ea83114a755c2b25f7af05b8bc9b1b9776128b4551795dfdc8",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s09_v1.png",
+          "file": "inputs/board_S09.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S09.png",
+          "sha256": "662dcb331f6d26f0a26aa90ce4ba9f6b894fb720be42d5602ca14d394e3a4ad6"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s09_v1.png",
+      "motion": "Exactly one Odysseus stays in the open hatch. With both empty hands he lowers and steadies one wooden ladder from the hatch to clear stone paving away from the platform wheels. The top-hinged flap stays raised. Sword sheathed at anatomical left hip, no shield; no second face in the hatch and nobody on the ground.",
+      "camera_sound": "Medium steady shot; ladder scrapes the hatch edge, then its feet touch stone."
+    },
+    {
+      "id": "S10",
+      "index": 10,
+      "title": "奥德修斯下梯",
+      "scene": "D",
+      "seed": 2026100510,
+      "start_s": 45,
+      "end_s": 50,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield.\npic2 is rigid wooden horse design on one four-wheeled platform, facing right.\npic3 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly one Odysseus is halfway down the single ladder, facing the wooden horse. Both hands grip the rails as he carefully descends two rungs, one foot at a time. Sword remains sheathed at his anatomical left hip, no shield. Hatch is open and empty above him. The horse and its wheels do not move; gate closed.\nCamera and synchronized sound: Medium lateral shot with a small downward follow; rung creaks and quiet leather and bronze movement.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "99279af87cf928284a3017d48f79adb0da09e95f74c4dfa3301c4eba442e23e1",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s10_v1.png",
+          "file": "inputs/board_S10.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S10.png",
+          "sha256": "dba1180389e9d9d0ec635349a54289a3181edf0581e4d710c8927d6ae70ab295"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s10_v1.png",
+      "motion": "Exactly one Odysseus is halfway down the single ladder, facing the wooden horse. Both hands grip the rails as he carefully descends two rungs, one foot at a time. Sword remains sheathed at his anatomical left hip, no shield. Hatch is open and empty above him. The horse and its wheels do not move; gate closed.",
+      "camera_sound": "Medium lateral shot with a small downward follow; rung creaks and quiet leather and bronze movement."
+    },
+    {
+      "id": "S11",
+      "index": 11,
+      "title": "落地示意",
+      "scene": "D",
+      "seed": 2026100511,
+      "start_s": 50,
+      "end_s": 55,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield.\npic2 is rigid wooden horse design on one four-wheeled platform, facing right.\npic3 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly one Odysseus completes the last ladder step onto the stone paving, turns slightly toward the closed gate, then raises one EMPTY hand in a quiet signal toward the open, empty hatch. Sword remains sheathed at his anatomical left hip, no shield. One ladder only, no duplicate figure inside the horse.\nCamera and synchronized sound: Medium gentle follow; one soft footfall, fountain water and night wind.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "2591677373ea31a032fcd37e0e2daed95d95af338128b0b4059fe8ecb6bd3483",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s11_v1.png",
+          "file": "inputs/board_S11.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S11.png",
+          "sha256": "ddd56a76fd6754f44126e0719536149604ccb4be79e146017eecede19f57fc91"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s11_v1.png",
+      "motion": "Exactly one Odysseus completes the last ladder step onto the stone paving, turns slightly toward the closed gate, then raises one EMPTY hand in a quiet signal toward the open, empty hatch. Sword remains sheathed at his anatomical left hip, no shield. One ladder only, no duplicate figure inside the horse.",
+      "camera_sound": "Medium gentle follow; one soft footfall, fountain water and night wind."
+    },
+    {
+      "id": "S12",
+      "index": 12,
+      "title": "随队士兵跟出",
+      "scene": "D",
+      "seed": 2026100512,
+      "start_s": 55,
+      "end_s": 60,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield.\npic2 is the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield.\npic3 is rigid wooden horse design on one four-wheeled platform, facing right.\npic4 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly two people. Odysseus stands on the paving watching the closed gate with empty hands and his sword sheathed at anatomical left hip, no shield. The young Greek soldier faces the horse and descends the same single ladder, holding both rails; his one shield is strapped on his BACK and sword sheathed at his anatomical left hip. No one else inside the hatch.\nCamera and synchronized sound: Medium steady shot; rung creaks, muted armor and careful footfalls.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "64b5de72240e2614209170431b7820ea067c7a0accae0679295608c8c280349a",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "source_file": "assets/characters/greek_soldier_01_v1.png",
+          "file": "inputs/soldier.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s12_v2.png",
+          "file": "inputs/board_S12.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S12.png",
+          "sha256": "b7f6171ac5a36c04f1fbfd50e52751a39661a9f6efba5a3dec64c828094901a2"
+        }
+      ],
+      "storyboard_file": "storyboard/frames/s12_v2.png",
+      "motion": "Exactly two people. Odysseus stands on the paving watching the closed gate with empty hands and his sword sheathed at anatomical left hip, no shield. The young Greek soldier faces the horse and descends the same single ladder, holding both rails; his one shield is strapped on his BACK and sword sheathed at his anatomical left hip. No one else inside the hatch.",
+      "camera_sound": "Medium steady shot; rung creaks, muted armor and careful footfalls."
+    },
+    {
+      "id": "S13",
+      "index": 13,
+      "title": "伏兵集结备战",
+      "scene": "E",
+      "seed": 2026100513,
+      "start_s": 60,
+      "end_s": 65,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield.\npic2 is the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield.\npic3 is Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces.\npic4 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly six Greek people: one Odysseus, one young Greek soldier, and four distinct anonymous Greek infantry. All are already on the paving and crouch-advance together toward the closed gate. Odysseus holds one drawn sword in his RIGHT hand, LEFT hand empty, no shield. The young soldier holds one shield LEFT and one sword RIGHT. Empty hatch and single ladder remain behind them.\nCamera and synchronized sound: Low medium lateral tracking; a brief sword draw followed by synchronized quiet steps and shield straps.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "40843a187822e07b42647d613077cf499b4f7006d3a5aca7d93f00b2b34bb8d5",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "source_file": "assets/characters/greek_soldier_01_v1.png",
+          "file": "inputs/soldier.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s13_v1.png",
+          "file": "inputs/board_S13.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S13.png",
+          "sha256": "3aa28006faf81fcc2564ac92949ce5c84f4d6a986d27437a8d7660f555cb6255"
+        }
+      ],
+      "storyboard_file": "storyboard_v2/frames/s13_v1.png",
+      "motion": "Exactly six Greek people: one Odysseus, one young Greek soldier, and four distinct anonymous Greek infantry. All are already on the paving and crouch-advance together toward the closed gate. Odysseus holds one drawn sword in his RIGHT hand, LEFT hand empty, no shield. The young soldier holds one shield LEFT and one sword RIGHT. Empty hatch and single ladder remain behind them.",
+      "camera_sound": "Low medium lateral tracking; a brief sword draw followed by synchronized quiet steps and shield straps."
+    },
+    {
+      "id": "S14",
+      "index": 14,
+      "title": "守军发现突袭",
+      "scene": "E",
+      "seed": 2026100514,
+      "start_s": 65,
+      "end_s": 70,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is the Trojan guard, pointed bronze helmet, ochre armor and rust cloak.\npic2 is Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces.\npic3 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly six Trojan defenders: one pointed-helmet guard and five distinct anonymous soldiers. The guard notices the offscreen attackers, turns sharply and raises his right-hand spear while holding his left-hand shield. His companions run a few steps into a defensive line inside the closed gate. The horizontal locking bar stays seated. No Greek appears in this shot.\nCamera and synchronized sound: Medium quick pan following the guard, settling on the defense; running feet, armor and a distant bronze alarm strike, no shouted words.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "d48360e254b9411231148763d200a6213c4979ce7d4fea239dd68e7223984096",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s14_v1.png",
+          "file": "inputs/board_S14.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S14.png",
+          "sha256": "4ef550008e3307365e155288f0606aab868f73ce2f9142d9027dfdcd4278c1ae"
+        }
+      ],
+      "storyboard_file": "storyboard_v2/frames/s14_v1.png",
+      "motion": "Exactly six Trojan defenders: one pointed-helmet guard and five distinct anonymous soldiers. The guard notices the offscreen attackers, turns sharply and raises his right-hand spear while holding his left-hand shield. His companions run a few steps into a defensive line inside the closed gate. The horizontal locking bar stays seated. No Greek appears in this shot.",
+      "camera_sound": "Medium quick pan following the guard, settling on the defense; running feet, armor and a distant bronze alarm strike, no shouted words."
+    },
+    {
+      "id": "S15",
+      "index": 15,
+      "title": "门内短兵相接",
+      "scene": "E",
+      "seed": 2026100515,
+      "start_s": 70,
+      "end_s": 75,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield.\npic2 is the Trojan guard, pointed bronze helmet, ochre armor and rust cloak.\npic3 is Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces.\npic4 is Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces.\npic5 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly six people in three clear fighting pairs inside the closed gate. Foreground Odysseus parries the Trojan guard spear with one sword in his RIGHT hand, LEFT hand empty, no shield. Guard has spear RIGHT and shield LEFT. Behind them two Greek infantry exchange short controlled sword and shield blows with two Trojan defenders. Each pair strikes, blocks and recoils; distinct bodies keep their own weapons. Gate bar stays seated; no gore.\nCamera and synchronized sound: Medium restrained handheld lateral movement; sharp metal contacts, shield knocks, hurried feet and nonverbal breathing.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "8cfc7e0d1edd868e744e88a53c3cdda135dd15ea427332fab2bf5faed9f1e7ab",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s15_qwen21_v2.png",
+          "file": "inputs/board_S15.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S15.png",
+          "sha256": "df73cd890460358b3ca2c445b4d68fa38eb2decd2d74170821bb2b6a9842a9d9"
+        }
+      ],
+      "storyboard_file": "storyboard_v2/frames/s15_qwen21_v2.png",
+      "motion": "Exactly six people in three clear fighting pairs inside the closed gate. Foreground Odysseus parries the Trojan guard spear with one sword in his RIGHT hand, LEFT hand empty, no shield. Guard has spear RIGHT and shield LEFT. Behind them two Greek infantry exchange short controlled sword and shield blows with two Trojan defenders. Each pair strikes, blocks and recoils; distinct bodies keep their own weapons. Gate bar stays seated; no gore.",
+      "camera_sound": "Medium restrained handheld lateral movement; sharp metal contacts, shield knocks, hurried feet and nonverbal breathing."
+    },
+    {
+      "id": "S16",
+      "index": 16,
+      "title": "掩护之下解除横闩",
+      "scene": "E",
+      "seed": 2026100516,
+      "start_s": 75,
+      "end_s": 80,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield.\npic2 is the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield.\npic3 is Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces.\npic4 is Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces.\npic5 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly seven people. Odysseus and the young Greek soldier operate the ONE horizontal gate bar together. Both have swords fully SHEATHED at anatomical LEFT hips; Odysseus has no shield, young soldier one shield strapped on his BACK. Each uses both hands to lift the same heavy bar clear of the sockets and carry it toward the left wall. The two door leaves remain fully CLOSED. Two Greek covering soldiers fight three Trojan defenders in the side forecourt, all inside the gate. No extra operator or arm.\nCamera and synchronized sound: Medium stable lateral view; wooden bar scrapes and thuds, continuous off-to-the-side sword and shield clashes.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "10b11fc23638af976e6938823971b96c30713596bc853bfe7f29c720e85dacc2",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "source_file": "assets/characters/greek_soldier_01_v1.png",
+          "file": "inputs/soldier.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s16_qwen21_v1.png",
+          "file": "inputs/board_S16.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S16.png",
+          "sha256": "12b33401ecb199785ffd85eb7eb3e69aba8e0f081ab77ad44ce6377a9e1e4bf7"
+        }
+      ],
+      "storyboard_file": "storyboard_v2/frames/s16_qwen21_v1.png",
+      "motion": "Exactly seven people. Odysseus and the young Greek soldier operate the ONE horizontal gate bar together. Both have swords fully SHEATHED at anatomical LEFT hips; Odysseus has no shield, young soldier one shield strapped on his BACK. Each uses both hands to lift the same heavy bar clear of the sockets and carry it toward the left wall. The two door leaves remain fully CLOSED. Two Greek covering soldiers fight three Trojan defenders in the side forecourt, all inside the gate. No extra operator or arm.",
+      "camera_sound": "Medium stable lateral view; wooden bar scrapes and thuds, continuous off-to-the-side sword and shield clashes."
+    },
+    {
+      "id": "S17",
+      "index": 17,
+      "title": "阿伽门农率军待突破",
+      "scene": "F",
+      "seed": 2026100517,
+      "start_s": 80,
+      "end_s": 85,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Agamemnon, older stocky gray-black bearded commander, lion cuirass, crimson cloak, no shield.\npic2 is Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces.\npic3 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. One Agamemnon at the front left, with dozens of distinct Greek soldiers in several ranks outside Troy at night. Agamemnon raises one drawn sword in his RIGHT hand as a forward signal; LEFT hand empty, no shield. Soldiers tighten their formation and take one deliberate step. The massive gate is still closed in the right background. Plain crimson banners flutter. No Trojan, horse, fountain or Odysseus appears.\nCamera and synchronized sound: Wide slow forward move with layered foreground, middle and rear ranks; disciplined feet, shield and spear rattle, night wind, no chanting.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "e499b09e582c1a0a386dcd76cb104cf3e1c4558bf2daab1b31be38d39f5c3ae9",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "agamemnon",
+          "kind": "character",
+          "role": "Agamemnon, older stocky gray-black bearded commander, lion cuirass, crimson cloak, no shield",
+          "source_file": "assets/characters/agamemnon_v1.png",
+          "file": "inputs/agamemnon.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/agamemnon.png",
+          "sha256": "d7d48940893fe78b4e3929c75a6ab34dfb023df95810345fe5df299cef696b7f"
+        },
+        {
+          "slot": 2,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s17_qwen21_v1.png",
+          "file": "inputs/board_S17.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S17.png",
+          "sha256": "d0a38cd68d7ef14b834b29ff36aaf40ccff4d76e90b173194a9ac0d7ed036966"
+        }
+      ],
+      "storyboard_file": "storyboard_v2/frames/s17_qwen21_v1.png",
+      "motion": "One Agamemnon at the front left, with dozens of distinct Greek soldiers in several ranks outside Troy at night. Agamemnon raises one drawn sword in his RIGHT hand as a forward signal; LEFT hand empty, no shield. Soldiers tighten their formation and take one deliberate step. The massive gate is still closed in the right background. Plain crimson banners flutter. No Trojan, horse, fountain or Odysseus appears.",
+      "camera_sound": "Wide slow forward move with layered foreground, middle and rear ranks; disciplined feet, shield and spear rattle, night wind, no chanting."
+    },
+    {
+      "id": "S18",
+      "index": 18,
+      "title": "交战中推开城门",
+      "scene": "E",
+      "seed": 2026100518,
+      "start_s": 85,
+      "end_s": 90,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield.\npic2 is the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield.\npic3 is Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces.\npic4 is Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces.\npic5 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Exactly seven people as in the bar-removal shot. The locking bar is already removed. Odysseus at the left leaf and the young Greek soldier at the right leaf each push their own heavy door using BOTH empty hands, widening one central gap to reveal blue night outside. Both swords remain SHEATHED at anatomical LEFT hips; young soldier shield on BACK, Odysseus no shield. Two Greek covering soldiers continue fighting three Trojan defenders at the side, all inside. No army crosses the threshold yet.\nCamera and synchronized sound: Medium steady camera; heavy hinge creaks, wood friction and side-forecourt shield and sword clashes.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "5fbe76da0344c6ecd5cc5e4224a76453404fb8aa48287bf6053de3a033b70a12",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "source_file": "assets/characters/greek_soldier_01_v1.png",
+          "file": "inputs/soldier.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s18_qwen21_v2.png",
+          "file": "inputs/board_S18.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S18.png",
+          "sha256": "9b4ba7f6e165fce76ba2ea1b9b4a98999c9751368da27173049fae5b0edf5051"
+        }
+      ],
+      "storyboard_file": "storyboard_v2/frames/s18_qwen21_v2.png",
+      "motion": "Exactly seven people as in the bar-removal shot. The locking bar is already removed. Odysseus at the left leaf and the young Greek soldier at the right leaf each push their own heavy door using BOTH empty hands, widening one central gap to reveal blue night outside. Both swords remain SHEATHED at anatomical LEFT hips; young soldier shield on BACK, Odysseus no shield. Two Greek covering soldiers continue fighting three Trojan defenders at the side, all inside. No army crosses the threshold yet.",
+      "camera_sound": "Medium steady camera; heavy hinge creaks, wood friction and side-forecourt shield and sword clashes."
+    },
+    {
+      "id": "S19",
+      "index": 19,
+      "title": "军团冲门交锋",
+      "scene": "G",
+      "seed": 2026100519,
+      "start_s": 90,
+      "end_s": 95,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Agamemnon, older stocky gray-black bearded commander, lion cuirass, crimson cloak, no shield.\npic2 is Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces.\npic3 is Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces.\npic4 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Massed Greek infantry surge from outside through the now fully OPEN gate into the interior. One Agamemnon in crimson is at the threshold behind the first fighters, moving forward with one sword RIGHT, LEFT empty, no shield. Dozens of Greek gray-blue soldiers in continuous rear ranks collide with an ochre/rust Trojan shield line. Foreground pairs exchange short thrusts, shield blocks and recoil; middle and background ranks keep advancing. Odysseus and the young named soldier remain offscreen. Plain crimson banners, no gore.\nCamera and synchronized sound: Wide low forward tracking through the interior forecourt; dense running footsteps, shield-wall impact and repeated metal blows, no speech or music.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "29e17bea5c13a21e816e33233fc205bcd4a40cf7b09bcd61c31e8de7f0141541",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "agamemnon",
+          "kind": "character",
+          "role": "Agamemnon, older stocky gray-black bearded commander, lion cuirass, crimson cloak, no shield",
+          "source_file": "assets/characters/agamemnon_v1.png",
+          "file": "inputs/agamemnon.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/agamemnon.png",
+          "sha256": "d7d48940893fe78b4e3929c75a6ab34dfb023df95810345fe5df299cef696b7f"
+        },
+        {
+          "slot": 2,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 3,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s19_qwen21_v1.png",
+          "file": "inputs/board_S19.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S19.png",
+          "sha256": "6ed03ff6b3bbb517a768c31908ecdc33c7790151e153dec34c8e2273894fdf03"
+        }
+      ],
+      "storyboard_file": "storyboard_v2/frames/s19_qwen21_v1.png",
+      "motion": "Massed Greek infantry surge from outside through the now fully OPEN gate into the interior. One Agamemnon in crimson is at the threshold behind the first fighters, moving forward with one sword RIGHT, LEFT empty, no shield. Dozens of Greek gray-blue soldiers in continuous rear ranks collide with an ochre/rust Trojan shield line. Foreground pairs exchange short thrusts, shield blocks and recoil; middle and background ranks keep advancing. Odysseus and the young named soldier remain offscreen. Plain crimson banners, no gore.",
+      "camera_sound": "Wide low forward tracking through the interior forecourt; dense running footsteps, shield-wall impact and repeated metal blows, no speech or music."
+    },
+    {
+      "id": "S20",
+      "index": 20,
+      "title": "广场两军大规模混战",
+      "scene": "H",
+      "seed": 2026100520,
+      "start_s": 95,
+      "end_s": 100,
+      "delivered_frames": 120,
+      "native_frames": 121,
+      "prompt": "pic1 is Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces.\npic2 is Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces.\npic3 is this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies.\nGenerate one continuous five-second live-action shot. Large square battle with many dozens of distinct ANONYMOUS soldiers on both sides; all named heroes stay OFFSCREEN. Greek gray-blue ranks keep entering from the open gate at rear LEFT and press the ochre/rust Trojan line beside the fountain at RIGHT. Several readable foreground pairs exchange sword or spear strikes and shield blocks; middle shield formations push and rear ranks continue flowing in. Wooden horse stays parked center-left facing RIGHT, hatch open and empty, one ladder untouched, legs and wheels rigid. Maintain clear faction colors, plain crimson banners, no gore.\nCamera and synchronized sound: Wide camera slowly rises slightly to reveal the sustained multi-layer battle; many footsteps and repeated shield, sword and spear impacts over faint fountain and fire, no chanting.\nPhotorealistic 1970s Shaw Brothers historical studio film set in ancient Troy. Handmade sandstone and timber, woven fabrics, aged bronze, saturated restrained 35mm colors, fine film grain. Match reference faces and costumes. At night use readable blue ambient light and warm amber fire. Respect the action-specific weapon and gate states even when identity plates show other poses. Reference group images describe clothing, not extra people to add. No duplicate named person, extra limbs, panels, captions, writing, watermark, modern objects, fantasy magic or Achilles. No dialogue, intelligible speech, singing, music or score. Only synchronized physical action sounds and environmental ambience.",
+      "prompt_sha256": "b09a31689e9daf61bfcb3819abd8ea9c96f31ee521d99be99b693e5eb0746f09",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s20_qwen21_v2.png",
+          "file": "inputs/board_S20.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S20.png",
+          "sha256": "f7be7c6ca583062347d02a4868e2e076210a86deeddc74259871964b1b5ac095"
+        }
+      ],
+      "storyboard_file": "storyboard_v2/frames/s20_qwen21_v2.png",
+      "motion": "Large square battle with many dozens of distinct ANONYMOUS soldiers on both sides; all named heroes stay OFFSCREEN. Greek gray-blue ranks keep entering from the open gate at rear LEFT and press the ochre/rust Trojan line beside the fountain at RIGHT. Several readable foreground pairs exchange sword or spear strikes and shield blocks; middle shield formations push and rear ranks continue flowing in. Wooden horse stays parked center-left facing RIGHT, hatch open and empty, one ladder untouched, legs and wheels rigid. Maintain clear faction colors, plain crimson banners, no gore.",
+      "camera_sound": "Wide camera slowly rises slightly to reveal the sustained multi-layer battle; many footsteps and repeated shield, sword and spear impacts over faint fountain and fire, no chanting."
+    }
+  ],
+  "image_policy": "Reuse selected existing assets and boards; no new image generation; future stills use self-hosted Qwen-Image-2.1",
+  "fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8"
+}

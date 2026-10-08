@@ -1,0 +1,218 @@
+{
+  "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+  "generated_clips": 22,
+  "selected_model_counts": {
+    "ltx": 19,
+    "h3": 1
+  },
+  "generated_model_counts": {
+    "ltx": 19,
+    "h3": 3
+  },
+  "ltx_generation_s": {
+    "median": 26.89374087797478,
+    "min": 26.732030837330967,
+    "max": 91.92586732795462,
+    "sum": 634.7414048202336
+  },
+  "h3_client_capture_s": {
+    "sum": 230.17056639445946
+  },
+  "h3_native_decode_delivery_s": 73.25893929088488,
+  "main_session_elapsed_s": 1689.9235548973083,
+  "main_phases": [
+    {
+      "phase": "native",
+      "exit_code": 0,
+      "wall_s": 91.32385967578739
+    },
+    {
+      "phase": "caches",
+      "exit_code": 0,
+      "wall_s": 124.11654414096847
+    },
+    {
+      "phase": "ltx",
+      "exit_code": 0,
+      "wall_s": 729.3321094466373
+    }
+  ],
+  "repair_phases": [
+    {
+      "phase": "caches",
+      "exit_code": 0,
+      "wall_s": 21.768141312990338
+    },
+    {
+      "phase": "ltx",
+      "exit_code": 0,
+      "wall_s": 149.72405049670488
+    }
+  ],
+  "service_restart_warmup_s": 468.69597458839417,
+  "measurement_limits": [
+    "LTX generation_s includes pipeline generation, audio/video export, delivery and media verification; excludes prompt cache and model loading. First jobs include first-use initialization overhead.",
+    "H3 generation_s is API client capture wall time; native decode and delivery are measured separately. These timers cannot establish a model speed ranking.",
+    "Main LTX phase wall time includes supervisor suspension and the repair batch; repair phase timings overlap this main phase and must not be added as disjoint durations.",
+    "Main session elapsed includes idle checks, GPU transitions and service restoration; excludes the preceding H3 captures and local editorial/QA work."
+  ],
+  "clips": [
+    {
+      "id": "S01",
+      "model": "h3",
+      "result_path": "clips/S01/result.json",
+      "generation_s": 98.74302250798792,
+      "selected": false,
+      "native_decode_and_delivery_s": 25.09512039506808
+    },
+    {
+      "id": "S02",
+      "model": "ltx",
+      "result_path": "clips/S02/result.json",
+      "generation_s": 85.62670321995392,
+      "selected": true
+    },
+    {
+      "id": "S03",
+      "model": "ltx",
+      "result_path": "clips/S03/result.json",
+      "generation_s": 27.11122092604637,
+      "selected": true
+    },
+    {
+      "id": "S04",
+      "model": "ltx",
+      "result_path": "clips/S04/result.json",
+      "generation_s": 27.03853356698528,
+      "selected": true
+    },
+    {
+      "id": "S05",
+      "model": "ltx",
+      "result_path": "clips/S05/result.json",
+      "generation_s": 26.953243006020784,
+      "selected": true
+    },
+    {
+      "id": "S06",
+      "model": "ltx",
+      "result_path": "clips/S06/result.json",
+      "generation_s": 26.77647185092792,
+      "selected": true
+    },
+    {
+      "id": "S07",
+      "model": "h3",
+      "result_path": "clips/S07/result.json",
+      "generation_s": 64.20920022809878,
+      "selected": false,
+      "native_decode_and_delivery_s": 24.135131776798517
+    },
+    {
+      "id": "S08",
+      "model": "ltx",
+      "result_path": "clips/S08/result.json",
+      "generation_s": 26.846223287750036,
+      "selected": true
+    },
+    {
+      "id": "S09",
+      "model": "ltx",
+      "result_path": "clips/S09/result.json",
+      "generation_s": 26.732030837330967,
+      "selected": true
+    },
+    {
+      "id": "S10",
+      "model": "ltx",
+      "result_path": "clips/S10/result.json",
+      "generation_s": 26.75195058900863,
+      "selected": true
+    },
+    {
+      "id": "S11",
+      "model": "ltx",
+      "result_path": "clips/S11/result.json",
+      "generation_s": 26.884475588798523,
+      "selected": true
+    },
+    {
+      "id": "S12",
+      "model": "ltx",
+      "result_path": "clips/S12/result.json",
+      "generation_s": 26.75891323434189,
+      "selected": true
+    },
+    {
+      "id": "S13",
+      "model": "ltx",
+      "result_path": "clips/S13/result.json",
+      "generation_s": 26.89374087797478,
+      "selected": true
+    },
+    {
+      "id": "S14",
+      "model": "ltx",
+      "result_path": "clips/S14/result.json",
+      "generation_s": 27.03508663084358,
+      "selected": true
+    },
+    {
+      "id": "S15",
+      "model": "ltx",
+      "result_path": "clips/S15/result.json",
+      "generation_s": 26.809422398917377,
+      "selected": true
+    },
+    {
+      "id": "S16",
+      "model": "ltx",
+      "result_path": "clips/S16/result.json",
+      "generation_s": 26.76681332476437,
+      "selected": true
+    },
+    {
+      "id": "S17",
+      "model": "h3",
+      "result_path": "clips/S17/result.json",
+      "generation_s": 67.21834365837276,
+      "selected": true,
+      "native_decode_and_delivery_s": 24.028687119018286
+    },
+    {
+      "id": "S18",
+      "model": "ltx",
+      "result_path": "clips/S18/result.json",
+      "generation_s": 26.773940356913954,
+      "selected": true
+    },
+    {
+      "id": "S19",
+      "model": "ltx",
+      "result_path": "clips/S19/result.json",
+      "generation_s": 27.039415794890374,
+      "selected": true
+    },
+    {
+      "id": "S20",
+      "model": "ltx",
+      "result_path": "clips/S20/result.json",
+      "generation_s": 26.90226523578167,
+      "selected": true
+    },
+    {
+      "id": "S01",
+      "model": "ltx",
+      "result_path": "repairs/clips/S01/result.json",
+      "generation_s": 91.92586732795462,
+      "selected": true
+    },
+    {
+      "id": "S07",
+      "model": "ltx",
+      "result_path": "repairs/clips/S07/result.json",
+      "generation_s": 27.115086765028536,
+      "selected": true
+    }
+  ]
+}

@@ -1,0 +1,2449 @@
+{
+  "status": "PASS",
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "clips": [
+    {
+      "status": "PASS",
+      "id": "S01",
+      "title": "西农陈情",
+      "seed": 2026100501,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S01/raw.mp4",
+      "raw_sha256": "f1d3d2968e54b739e05e500ab24b58f3f20bb17c806c59fe66e03ad6be75f2e1",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S01/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "6928168b1000646b2bb9595b25d0f7f994038d39d00a6fcb81431e556fd8a6f7",
+        "bytes": 1115664
+      },
+      "generation_s": 178.46952455630526,
+      "phases_s": {
+        "reference_encode_block_s": 4.099554450716823,
+        "denoising_loop_s": 75.38649730477482,
+        "diffusion_block_s": 168.56783134117723,
+        "decode_and_encode_block_s": 5.600227262824774
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "sinon",
+          "kind": "character",
+          "role": "Sinon, an unarmed persuasive Greek captive",
+          "source_file": "assets/characters/sinon_v1.png",
+          "file": "inputs/sinon.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/sinon.png",
+          "sha256": "449ebbb4ecd5489e937d83c4ea8e1ffc053921009debbcdcdf8a72a1cbcbca0e",
+          "offset": -5,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 3,
+          "id": "citizen",
+          "kind": "character",
+          "role": "the unarmed Trojan woman citizen",
+          "source_file": "assets/characters/trojan_citizen_01_v1.png",
+          "file": "inputs/citizen.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/citizen.png",
+          "sha256": "ff4cc759109642df55ef851dbc8b600aabc39dac5baaed322a781e932fec190a",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 4,
+          "id": "gate",
+          "kind": "scene",
+          "role": "sandstone city-gate exterior architecture",
+          "source_file": "assets/scenes/gate_day_v1.png",
+          "file": "inputs/gate.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/gate.png",
+          "sha256": "9aaa0bf597413187c4047c67944c79f178502bcbeba7a034e4d0830bc741296a",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s01_v1.png",
+          "file": "inputs/board_S01.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S01.png",
+          "sha256": "cd46b04cc6acc039948ad7ea6cc00dd063b43151e5ed9a0c2f4e3dabe146dda5",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "68c4b14b8b9b43e7899f2741d92743cff9295d64e197510c239e14c7e2e22ca0",
+      "prompt_cache_fingerprint": "19a943a154c0a11c062d4d9f74a16e9759a03233b5b3921176bd66805ff48358",
+      "peak_torch_allocated_bytes": 42456008192,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S02",
+      "title": "守卫放行",
+      "seed": 2026100502,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S02/raw.mp4",
+      "raw_sha256": "7686cce1002ff32db1ebde51658db88acbf0af34dab76cba04363e373dceb466",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S02/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "b2bc2094a5ca2c9797ecd483f548e9d6b420e61a969801ad67402c5f2b165c1f",
+        "bytes": 1267423
+      },
+      "generation_s": 166.33275062032044,
+      "phases_s": {
+        "reference_encode_block_s": 3.5628296369686723,
+        "denoising_loop_s": 75.35424712393433,
+        "diffusion_block_s": 155.70965017797425,
+        "decode_and_encode_block_s": 6.999992765020579
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "sinon",
+          "kind": "character",
+          "role": "Sinon, an unarmed persuasive Greek captive",
+          "source_file": "assets/characters/sinon_v1.png",
+          "file": "inputs/sinon.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/sinon.png",
+          "sha256": "449ebbb4ecd5489e937d83c4ea8e1ffc053921009debbcdcdf8a72a1cbcbca0e",
+          "offset": -5,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 3,
+          "id": "worker",
+          "kind": "character",
+          "role": "the unarmed Trojan rope-pulling worker",
+          "source_file": "assets/characters/trojan_worker_01_v1.png",
+          "file": "inputs/worker.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+          "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 4,
+          "id": "gate",
+          "kind": "scene",
+          "role": "sandstone city-gate exterior architecture",
+          "source_file": "assets/scenes/gate_day_v1.png",
+          "file": "inputs/gate.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/gate.png",
+          "sha256": "9aaa0bf597413187c4047c67944c79f178502bcbeba7a034e4d0830bc741296a",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s02_v1.png",
+          "file": "inputs/board_S02.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S02.png",
+          "sha256": "165af8f7cc8aa526cbcd4ac37549739750b98d6be7242b7cee61380973c40022",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "6f97956b8abc4a3eaf7592662fa857242b9d098c6d46660a73b56c1c91f8ac74",
+      "prompt_cache_fingerprint": "c1e41b246f6af4423e61bb36ebfd565a6e22f87f245e41a45226dbf15e90355f",
+      "peak_torch_allocated_bytes": 42458859008,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S03",
+      "title": "木轮越过门槛",
+      "seed": 2026100503,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S03/raw.mp4",
+      "raw_sha256": "29a01faa155a5d2670c97e42d22e746b72442c56e909154f9e963e9f0de529e4",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S03/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "9739fd01a55c85dae09b0d8fef40bc84fa545356989503493c0ddc9ed6e3c80c",
+        "bytes": 1339412
+      },
+      "generation_s": 149.31274991296232,
+      "phases_s": {
+        "reference_encode_block_s": 3.0441732318140566,
+        "denoising_loop_s": 65.11057560890913,
+        "diffusion_block_s": 140.96803600387648,
+        "decode_and_encode_block_s": 5.24684683419764
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "worker",
+          "kind": "character",
+          "role": "the unarmed Trojan rope-pulling worker",
+          "source_file": "assets/characters/trojan_worker_01_v1.png",
+          "file": "inputs/worker.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+          "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 3,
+          "id": "gate",
+          "kind": "scene",
+          "role": "sandstone city-gate exterior architecture",
+          "source_file": "assets/scenes/gate_day_v1.png",
+          "file": "inputs/gate.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/gate.png",
+          "sha256": "9aaa0bf597413187c4047c67944c79f178502bcbeba7a034e4d0830bc741296a",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s03_v1.png",
+          "file": "inputs/board_S03.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S03.png",
+          "sha256": "276251eb8d61bef578a7f3f5a1494d06859b118ff3ae7780361474a4bcc1cd26",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "2aa23048b93c1bde493e5e4ea4d9619fafc697d22b90163c605ed9dfc87540bd",
+      "prompt_cache_fingerprint": "a1202133ff2a6f89531eacaa1163733088dee1990035a4e9280df5f28c862405",
+      "peak_torch_allocated_bytes": 42457502208,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S04",
+      "title": "木马进入广场",
+      "seed": 2026100504,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S04/raw.mp4",
+      "raw_sha256": "92b50e18ae3aa966981d598e8fbf4d44157f1a23038ac4b90da80269bcda9af5",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S04/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "dae5b51bf9c47ada1b9e48b8e8f012451f7d54ff4413d661e0b5bc1308bf0d32",
+        "bytes": 1249060
+      },
+      "generation_s": 136.6155360462144,
+      "phases_s": {
+        "reference_encode_block_s": 3.263604803942144,
+        "denoising_loop_s": 65.34885297063738,
+        "diffusion_block_s": 127.93848354369402,
+        "decode_and_encode_block_s": 5.374121337197721
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "worker",
+          "kind": "character",
+          "role": "the unarmed Trojan rope-pulling worker",
+          "source_file": "assets/characters/trojan_worker_01_v1.png",
+          "file": "inputs/worker.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+          "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "citizen",
+          "kind": "character",
+          "role": "the unarmed Trojan woman citizen",
+          "source_file": "assets/characters/trojan_citizen_01_v1.png",
+          "file": "inputs/citizen.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/citizen.png",
+          "sha256": "ff4cc759109642df55ef851dbc8b600aabc39dac5baaed322a781e932fec190a",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 3,
+          "id": "day",
+          "kind": "scene",
+          "role": "square architecture by day: gate rear left, fountain right",
+          "source_file": "assets/scenes/square_day_v1.png",
+          "file": "inputs/day.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/day.png",
+          "sha256": "e967afd5dc8ab4be8fb41d0b74551904d4ff98a459c0d472259e9e3e280fe33f",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s04_v1.png",
+          "file": "inputs/board_S04.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S04.png",
+          "sha256": "4e71adcd964c71139d8c25646df4d3565a3d99defcaf4964e2e5acdc0e9856cd",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "3e9b992c2cead305428c69f24869dcb137169a3ec6c5efde9985980bfdb84cd0",
+      "prompt_cache_fingerprint": "3d2c0264760a1c98d75cc070c95ade2155d6accbee1ad51b38f028df28dd7341",
+      "peak_torch_allocated_bytes": 42458428928,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S05",
+      "title": "暮色停驻",
+      "seed": 2026100505,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S05/raw.mp4",
+      "raw_sha256": "64786a67875402f6cab9c6d826804bdfdc11ee3182206e9793d6060e27ff9b93",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S05/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "9446f5acb0a6672d10fb5cd912e40c15a22aeb7112b683570f3cbc20d3f35bcb",
+        "bytes": 999375
+      },
+      "generation_s": 141.54368740087375,
+      "phases_s": {
+        "reference_encode_block_s": 2.9120083525776863,
+        "denoising_loop_s": 65.19436645973474,
+        "diffusion_block_s": 133.57184413587674,
+        "decode_and_encode_block_s": 5.03274831129238
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "worker",
+          "kind": "character",
+          "role": "the unarmed Trojan rope-pulling worker",
+          "source_file": "assets/characters/trojan_worker_01_v1.png",
+          "file": "inputs/worker.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+          "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "citizen",
+          "kind": "character",
+          "role": "the unarmed Trojan woman citizen",
+          "source_file": "assets/characters/trojan_citizen_01_v1.png",
+          "file": "inputs/citizen.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/citizen.png",
+          "sha256": "ff4cc759109642df55ef851dbc8b600aabc39dac5baaed322a781e932fec190a",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 3,
+          "id": "dusk",
+          "kind": "scene",
+          "role": "square architecture at dusk: gate rear left, fountain right",
+          "source_file": "assets/scenes/square_dusk_v1.png",
+          "file": "inputs/dusk.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/dusk.png",
+          "sha256": "7d86b6b3e4f9a2d40963cd6077919c8664433edc92d1feada440cd6100c6155c",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s05_v1.png",
+          "file": "inputs/board_S05.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S05.png",
+          "sha256": "714d42deaeeaa3edd493ab5117cee2de198633ae54220e66b48283f8ed635a1a",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "4f6659e9ddd0797bac69b7dd822a39c7bdb088dd0d59ee3f1fa4e47834a8c5a6",
+      "prompt_cache_fingerprint": "a69b0672d1dd0f469bd2712ec3e1db4af4fd73269bb94e92eb834190bcf2734c",
+      "peak_torch_allocated_bytes": 42457502208,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S06",
+      "title": "暮色关城门",
+      "seed": 2026100506,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S06/raw.mp4",
+      "raw_sha256": "fe6be27bb1f4e9a00b245fb26bca64381389361a7588e781735112e83e403fa3",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S06/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "38f9dac2ca8f82cfa52ef1add6ab28a5e3670c25830ad0d517e7a3b45cab268e",
+        "bytes": 1007293
+      },
+      "generation_s": 118.40238443017006,
+      "phases_s": {
+        "reference_encode_block_s": 1.5970082441344857,
+        "denoising_loop_s": 46.665513169020414,
+        "diffusion_block_s": 111.80344479903579,
+        "decode_and_encode_block_s": 4.964962029829621
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s06_v2.png",
+          "file": "inputs/board_S06.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S06.png",
+          "sha256": "29209fbbf85a5e934889164d93943b32c8d1bdfc2194a2a03dd82055d907a886",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "cff5d835fe261bcb07eab5de989aa948c6dc7ee9920c207dab6105e5f3f51296",
+      "prompt_cache_fingerprint": "746cbb3fdcfdfbcdd4a94646cae594bade12db5088b25710e96d5a1294eff144",
+      "peak_torch_allocated_bytes": 42457568768,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S07",
+      "title": "夜间静场",
+      "seed": 2026100507,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S07/raw.mp4",
+      "raw_sha256": "ab163ba73754ba64a45ebd6bcfd912f02dd45047f968bb492f00ed799f1b4f4f",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S07/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "ec7557fa89452a912d2b920045875b471be5a0c4afa0c6de7607b0c0767ab3e0",
+        "bytes": 953175
+      },
+      "generation_s": 127.42479274608195,
+      "phases_s": {
+        "reference_encode_block_s": 1.611799814272672,
+        "denoising_loop_s": 46.24921433022246,
+        "diffusion_block_s": 120.6995324571617,
+        "decode_and_encode_block_s": 5.083156569860876
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 2,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s07_v1.png",
+          "file": "inputs/board_S07.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S07.png",
+          "sha256": "9e44ec0c3ba76421e336323781eb3d96b44333497c204405c058832bd15e5131",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "23e51acfaad1cd51b4718c759d582f779ecb902cb0d8444420db2b7e59ab690c",
+      "prompt_cache_fingerprint": "353ffd889d7f4f652cfaf2c6bc10eade08382f71b490e93ac75b316f28bdeebd",
+      "peak_torch_allocated_bytes": 42456642048,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S08",
+      "title": "侧舱试探开启",
+      "seed": 2026100508,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S08/raw.mp4",
+      "raw_sha256": "b4375804a7b759818fe2f0a816348d53d399b916ea3beaba3facaf3b2153df43",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S08/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "7b246feedd76b27616bb152faed89b24eb932a40ea6438fadc8eba0c384847e6",
+        "bytes": 1049547
+      },
+      "generation_s": 135.12191982893273,
+      "phases_s": {
+        "reference_encode_block_s": 2.2392212287522852,
+        "denoising_loop_s": 55.617932685650885,
+        "diffusion_block_s": 127.71553416596726,
+        "decode_and_encode_block_s": 5.125342662911862
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s08_v1.png",
+          "file": "inputs/board_S08.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S08.png",
+          "sha256": "380d4744d460f9a97ce1ce7f3524fb98fb5a28622a356d09176d0357636874c3",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "4ffdbce8ed9cbcae40eaf574ca3bdc9ecd430ccc4203b19893be5fffaf356ae5",
+      "prompt_cache_fingerprint": "7de88d489e8703944895d4ab9ebfb5cb39361291a54a1477dfa0eac22d5e968f",
+      "peak_torch_allocated_bytes": 42457998848,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S09",
+      "title": "放下木梯",
+      "seed": 2026100509,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S09/raw.mp4",
+      "raw_sha256": "879f688a4941c86cf2baf8131e7e431aff0dc0416301c5e8be82bf4a58cb3883",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S09/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "a63a39a8dffa470a09ce8fb20a2362dc6a3d7113177c3580e6dfbe8f921e5a66",
+        "bytes": 1076841
+      },
+      "generation_s": 140.26225010398775,
+      "phases_s": {
+        "reference_encode_block_s": 2.213360469788313,
+        "denoising_loop_s": 55.314152115024626,
+        "diffusion_block_s": 131.98752451641485,
+        "decode_and_encode_block_s": 6.033320802729577
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s09_v1.png",
+          "file": "inputs/board_S09.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S09.png",
+          "sha256": "662dcb331f6d26f0a26aa90ce4ba9f6b894fb720be42d5602ca14d394e3a4ad6",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "26b8c9d1e33185ea83114a755c2b25f7af05b8bc9b1b9776128b4551795dfdc8",
+      "prompt_cache_fingerprint": "8e28dd94a9f847ae71f52e69bc2f252c837e88d53a5e95ce2d992e2c79c7a04e",
+      "peak_torch_allocated_bytes": 42457072128,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S10",
+      "title": "奥德修斯下梯",
+      "seed": 2026100510,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S10/raw.mp4",
+      "raw_sha256": "873e19177fe4b014f221b4dc2cb1b0b1e6c06817038db5ebe039ca881e4bf68d",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S10/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "e89a7918e99d713d01867dbade1093593e266c9d77212e623d14cb34160b359d",
+        "bytes": 1184291
+      },
+      "generation_s": 122.29176541185006,
+      "phases_s": {
+        "reference_encode_block_s": 2.360110749024898,
+        "denoising_loop_s": 55.10740827070549,
+        "diffusion_block_s": 114.84874009620398,
+        "decode_and_encode_block_s": 5.051947787869722
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s10_v1.png",
+          "file": "inputs/board_S10.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S10.png",
+          "sha256": "dba1180389e9d9d0ec635349a54289a3181edf0581e4d710c8927d6ae70ab295",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "99279af87cf928284a3017d48f79adb0da09e95f74c4dfa3301c4eba442e23e1",
+      "prompt_cache_fingerprint": "f3a30320ce82c4505c937daf1a73eafcad4c000042d480774fc7513f3ef66dd3",
+      "peak_torch_allocated_bytes": 42457998848,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S11",
+      "title": "落地示意",
+      "seed": 2026100511,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S11/raw.mp4",
+      "raw_sha256": "d647899bbd02fad833a775f2b609c09b76dafada3d9397c504869bd4c9750e45",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S11/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "a60c72845ce0f47f2025f937519d83879324779993e0ed18c2e76795fa889dd2",
+        "bytes": 1170948
+      },
+      "generation_s": 124.16055383207276,
+      "phases_s": {
+        "reference_encode_block_s": 2.234496613033116,
+        "denoising_loop_s": 56.1696795579046,
+        "diffusion_block_s": 116.90222153207287,
+        "decode_and_encode_block_s": 4.994282209780067
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s11_v1.png",
+          "file": "inputs/board_S11.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S11.png",
+          "sha256": "ddd56a76fd6754f44126e0719536149604ccb4be79e146017eecede19f57fc91",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "2591677373ea31a032fcd37e0e2daed95d95af338128b0b4059fe8ecb6bd3483",
+      "prompt_cache_fingerprint": "8d4cd028c0f9428a96c986d8f2e6dea6623ff7cfc9462201cef9bc4100cd0f4a",
+      "peak_torch_allocated_bytes": 42457072128,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S12",
+      "title": "随队士兵跟出",
+      "seed": 2026100512,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S12/raw.mp4",
+      "raw_sha256": "5490b0d98663603e4ab528f6ff03393ca53d8f0f85463bf46135e0117704227e",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S12/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "39acef8601698ad19da21e0e49afe0e2d65fd20fe66758e8beab26e849ff5a28",
+        "bytes": 1067628
+      },
+      "generation_s": 145.83538054767996,
+      "phases_s": {
+        "reference_encode_block_s": 2.849268075078726,
+        "denoising_loop_s": 65.29524693079293,
+        "diffusion_block_s": 137.99547928897664,
+        "decode_and_encode_block_s": 4.959485660772771
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "source_file": "assets/characters/greek_soldier_01_v1.png",
+          "file": "inputs/soldier.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 3,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "source_file": "assets/scenes/trojan_horse_v1.png",
+          "file": "inputs/horse.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard/frames/s12_v2.png",
+          "file": "inputs/board_S12.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S12.png",
+          "sha256": "b7f6171ac5a36c04f1fbfd50e52751a39661a9f6efba5a3dec64c828094901a2",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "64b5de72240e2614209170431b7820ea067c7a0accae0679295608c8c280349a",
+      "prompt_cache_fingerprint": "086b67261a01e1b0d03cdf32c2595bd19ec6ce360c63cfa970238c53a165101e",
+      "peak_torch_allocated_bytes": 42458428928,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S13",
+      "title": "伏兵集结备战",
+      "seed": 2026100513,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S13/raw.mp4",
+      "raw_sha256": "c3c93e701b3c1f6af2579bf3796259fec4ca795b4e9a959a88b66679e28b5ca3",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S13/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "4b135e16665e4820317360d3d4d138a09b8dad171b33216e7fc6b5c539de489d",
+        "bytes": 1446047
+      },
+      "generation_s": 138.91239875275642,
+      "phases_s": {
+        "reference_encode_block_s": 2.882332776207477,
+        "denoising_loop_s": 65.49911269498989,
+        "diffusion_block_s": 130.90175163559616,
+        "decode_and_encode_block_s": 5.096079877112061
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "source_file": "assets/characters/greek_soldier_01_v1.png",
+          "file": "inputs/soldier.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s13_v1.png",
+          "file": "inputs/board_S13.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S13.png",
+          "sha256": "3aa28006faf81fcc2564ac92949ce5c84f4d6a986d27437a8d7660f555cb6255",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "40843a187822e07b42647d613077cf499b4f7006d3a5aca7d93f00b2b34bb8d5",
+      "prompt_cache_fingerprint": "28c41a4405fba88719e707079da946abf79179f8d1d21492bf8053e4487c9338",
+      "peak_torch_allocated_bytes": 42457502208,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S14",
+      "title": "守军发现突袭",
+      "seed": 2026100514,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S14/raw.mp4",
+      "raw_sha256": "1a05bff4287d51fdb58144162ae2b162b52100e1fd63c7031ecd3c099abaade4",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S14/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "e5213e81edb77a3e986850c7d9ce2f90b6e4977474d65202846aadd9331b4293",
+        "bytes": 1526456
+      },
+      "generation_s": 129.4707026788965,
+      "phases_s": {
+        "reference_encode_block_s": 2.2637356938794255,
+        "denoising_loop_s": 55.97150584217161,
+        "diffusion_block_s": 122.02193971490487,
+        "decode_and_encode_block_s": 5.153549320995808
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s14_v1.png",
+          "file": "inputs/board_S14.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S14.png",
+          "sha256": "4ef550008e3307365e155288f0606aab868f73ce2f9142d9027dfdcd4278c1ae",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "d48360e254b9411231148763d200a6213c4979ce7d4fea239dd68e7223984096",
+      "prompt_cache_fingerprint": "662064c6b2f6604564f6dd2ed95fbd11286bd41b4aed7fcc49955b5880642507",
+      "peak_torch_allocated_bytes": 42457998848,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S15",
+      "title": "门内短兵相接",
+      "seed": 2026100515,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S15/raw.mp4",
+      "raw_sha256": "9e66accc0f82d2853e4d0730805562f12152effc58c4f0e6bf8da1b7f62e15d9",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S15/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "8ec16e7d23ade0af70a136a5dd4ee62af9921dcfadb2521131e5dbc45edaaf97",
+        "bytes": 1499026
+      },
+      "generation_s": 155.25987873086706,
+      "phases_s": {
+        "reference_encode_block_s": 3.5091724968515337,
+        "denoising_loop_s": 75.90960865095258,
+        "diffusion_block_s": 146.60191362723708,
+        "decode_and_encode_block_s": 5.124164073728025
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+          "offset": -5,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "source_file": "assets/characters/trojan_guard_01_v1.png",
+          "file": "inputs/guard.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s15_qwen21_v2.png",
+          "file": "inputs/board_S15.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S15.png",
+          "sha256": "df73cd890460358b3ca2c445b4d68fa38eb2decd2d74170821bb2b6a9842a9d9",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "8cfc7e0d1edd868e744e88a53c3cdda135dd15ea427332fab2bf5faed9f1e7ab",
+      "prompt_cache_fingerprint": "7d8688141e37a0503031d92f13f43828be84f18340fe00086d62c089735532d2",
+      "peak_torch_allocated_bytes": 42457932288,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S16",
+      "title": "掩护之下解除横闩",
+      "seed": 2026100516,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S16/raw.mp4",
+      "raw_sha256": "f70bfa53bf62f62f889ee7825fc42f6f4823f7dd83ebcaa7928f61a078807620",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S16/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "fd4270bcaab4aa0bb7e8e071cd71106c488183510abfd5e1d11eab5d7d8881c6",
+        "bytes": 1453941
+      },
+      "generation_s": 155.61662404378876,
+      "phases_s": {
+        "reference_encode_block_s": 3.4540316709317267,
+        "denoising_loop_s": 76.43198083201423,
+        "diffusion_block_s": 147.15585822798312,
+        "decode_and_encode_block_s": 4.979125097859651
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+          "offset": -5,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "source_file": "assets/characters/greek_soldier_01_v1.png",
+          "file": "inputs/soldier.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s16_qwen21_v1.png",
+          "file": "inputs/board_S16.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S16.png",
+          "sha256": "12b33401ecb199785ffd85eb7eb3e69aba8e0f081ab77ad44ce6377a9e1e4bf7",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "10b11fc23638af976e6938823971b96c30713596bc853bfe7f29c720e85dacc2",
+      "prompt_cache_fingerprint": "cb130502d356b6d6fe9cc51fe4909a6bfc7d2e6f3cc9611b569619603eb81ad4",
+      "peak_torch_allocated_bytes": 42458859008,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S17",
+      "title": "阿伽门农率军待突破",
+      "seed": 2026100517,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S17/raw.mp4",
+      "raw_sha256": "350eadfef52f66b6040d215f3e281bb6534477c157cf9bd70fe4f051b3859271",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S17/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "f459a45283ed008c787e51f53dec881a4f2eb0f1a26fcfb1d867e420c8497548",
+        "bytes": 1269037
+      },
+      "generation_s": 129.35019805794582,
+      "phases_s": {
+        "reference_encode_block_s": 2.264434070792049,
+        "denoising_loop_s": 55.81195290200412,
+        "diffusion_block_s": 121.91563145024702,
+        "decode_and_encode_block_s": 5.135013671126217
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "agamemnon",
+          "kind": "character",
+          "role": "Agamemnon, older stocky gray-black bearded commander, lion cuirass, crimson cloak, no shield",
+          "source_file": "assets/characters/agamemnon_v1.png",
+          "file": "inputs/agamemnon.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/agamemnon.png",
+          "sha256": "d7d48940893fe78b4e3929c75a6ab34dfb023df95810345fe5df299cef696b7f",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s17_qwen21_v1.png",
+          "file": "inputs/board_S17.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S17.png",
+          "sha256": "d0a38cd68d7ef14b834b29ff36aaf40ccff4d76e90b173194a9ac0d7ed036966",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "e499b09e582c1a0a386dcd76cb104cf3e1c4558bf2daab1b31be38d39f5c3ae9",
+      "prompt_cache_fingerprint": "4945aa03c4f1a68295b37086d10b96c282a35221f1e339d6345612e4b9a85abb",
+      "peak_torch_allocated_bytes": 42457072128,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S18",
+      "title": "交战中推开城门",
+      "seed": 2026100518,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S18/raw.mp4",
+      "raw_sha256": "b0d438390c1013e8595ed451a0d67367e787d0b0d5912bcf49795ceb020d7cff",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S18/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "3f51aaa12ae8ad8d92a60c974e0848af471c82a14b36e195eacfd6625f368815",
+        "bytes": 1211310
+      },
+      "generation_s": 159.6576650380157,
+      "phases_s": {
+        "reference_encode_block_s": 3.4639422791078687,
+        "denoising_loop_s": 76.22022451693192,
+        "diffusion_block_s": 150.57743407972157,
+        "decode_and_encode_block_s": 5.593805927783251
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "source_file": "assets/characters/odysseus_v1.png",
+          "file": "inputs/odysseus.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+          "offset": -5,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "source_file": "assets/characters/greek_soldier_01_v1.png",
+          "file": "inputs/soldier.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s18_qwen21_v2.png",
+          "file": "inputs/board_S18.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S18.png",
+          "sha256": "9b4ba7f6e165fce76ba2ea1b9b4a98999c9751368da27173049fae5b0edf5051",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "5fbe76da0344c6ecd5cc5e4224a76453404fb8aa48287bf6053de3a033b70a12",
+      "prompt_cache_fingerprint": "85056ec1dd16459a9d5129f65f815a601160b2c9d5ec5f1d229683b638acb34d",
+      "peak_torch_allocated_bytes": 42458859008,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S19",
+      "title": "军团冲门交锋",
+      "seed": 2026100519,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S19/raw.mp4",
+      "raw_sha256": "35df26c96ee3be6513c39407f8f51a63689186a010b8df168a7dfa97e82c4992",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S19/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "aee63db4ab4a1f8361ea41c27331813bc3cd4bedab7f5a648c130e0b277a7bc8",
+        "bytes": 1742767
+      },
+      "generation_s": 137.9308649362065,
+      "phases_s": {
+        "reference_encode_block_s": 2.8728283108212054,
+        "denoising_loop_s": 65.15114989504218,
+        "diffusion_block_s": 130.0432986910455,
+        "decode_and_encode_block_s": 4.961584668140858
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "agamemnon",
+          "kind": "character",
+          "role": "Agamemnon, older stocky gray-black bearded commander, lion cuirass, crimson cloak, no shield",
+          "source_file": "assets/characters/agamemnon_v1.png",
+          "file": "inputs/agamemnon.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/agamemnon.png",
+          "sha256": "d7d48940893fe78b4e3929c75a6ab34dfb023df95810345fe5df299cef696b7f",
+          "offset": -4,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "pad full portrait"
+        },
+        {
+          "slot": 2,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 3,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 4,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s19_qwen21_v1.png",
+          "file": "inputs/board_S19.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S19.png",
+          "sha256": "6ed03ff6b3bbb517a768c31908ecdc33c7790151e153dec34c8e2273894fdf03",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "29e17bea5c13a21e816e33233fc205bcd4a40cf7b09bcd61c31e8de7f0141541",
+      "prompt_cache_fingerprint": "dbff121961f86d552f143e944d06867b034d8aad4d25a84bce9fbf2b592edea5",
+      "peak_torch_allocated_bytes": 42457502208,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    },
+    {
+      "status": "PASS",
+      "id": "S20",
+      "title": "广场两军大规模混战",
+      "seed": 2026100520,
+      "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+      "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+      "steps": 8,
+      "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S20/raw.mp4",
+      "raw_sha256": "570923f02cd317cdca68e293d85aaa0fca5761e6d3e5625b85601857cc186402",
+      "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S20/delivered.mp4",
+      "delivered_frames": 120,
+      "media": {
+        "frames": 120,
+        "width": 768,
+        "height": 432,
+        "fps": 24,
+        "duration_s": 5.0,
+        "container_duration_s": 5.0,
+        "audio_sample_rate": 32000,
+        "channels": 2,
+        "full_decode": true,
+        "sha256": "3d05777c6aba8fce530046da57ecc27193c91fb1e6afeda065f20947567c3fd4",
+        "bytes": 1357378
+      },
+      "generation_s": 129.35458896076307,
+      "phases_s": {
+        "reference_encode_block_s": 2.232959557324648,
+        "denoising_loop_s": 55.740774287842214,
+        "diffusion_block_s": 122.01579219661653,
+        "decode_and_encode_block_s": 5.081420543603599
+      },
+      "conditions": [
+        {
+          "slot": 1,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "source_file": "assets/groups/greek_infantry_v1.png",
+          "file": "inputs/greeks.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+          "offset": -3,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "source_file": "assets/groups/trojan_defenders_v1.png",
+          "file": "inputs/trojans.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+          "offset": -2,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+          "source_file": "storyboard_v2/frames/s20_qwen21_v2.png",
+          "file": "inputs/board_S20.png",
+          "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S20.png",
+          "sha256": "f7be7c6ca583062347d02a4868e2e076210a86deeddc74259871964b1b5ac095",
+          "offset": -1,
+          "latent_shape": [
+            1,
+            128,
+            5,
+            14,
+            24
+          ],
+          "preprocessing": "fit wide reference"
+        }
+      ],
+      "prompt_sha256": "b09a31689e9daf61bfcb3819abd8ea9c96f31ee521d99be99b693e5eb0746f09",
+      "prompt_cache_fingerprint": "1b43a4030293b830453d4188458bfc02c87e3a1e9a9329f39b947bf53ccfbbdb",
+      "peak_torch_allocated_bytes": 42457998848,
+      "transition": "independent",
+      "audio_reference": false,
+      "quality_status": "not_yet_manually_reviewed",
+      "native_size": [
+        768,
+        448
+      ],
+      "delivery_crop": [
+        0,
+        8,
+        768,
+        432
+      ]
+    }
+  ],
+  "film": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/film.mp4",
+  "media": {
+    "frames": 2400,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 100.0,
+    "container_duration_s": 100.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "41bbae62134b92e7832795062e7e7baa892bef0faf0f29b3db5ddc078b26af1b",
+    "bytes": 23570826
+  },
+  "generation_s": 2821.3262166366912,
+  "editing": "chronological hard cuts, frame-based PTS, native generated audio",
+  "visual_quality": "single-seed test; requires manual review; technical pass does not assert narrative compliance"
+}

@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "id": "S20",
+  "title": "广场两军大规模混战",
+  "seed": 2026100520,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S20/raw.mp4",
+  "raw_sha256": "570923f02cd317cdca68e293d85aaa0fca5761e6d3e5625b85601857cc186402",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S20/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "3d05777c6aba8fce530046da57ecc27193c91fb1e6afeda065f20947567c3fd4",
+    "bytes": 1357378
+  },
+  "generation_s": 129.35458896076307,
+  "phases_s": {
+    "reference_encode_block_s": 2.232959557324648,
+    "denoising_loop_s": 55.740774287842214,
+    "diffusion_block_s": 122.01579219661653,
+    "decode_and_encode_block_s": 5.081420543603599
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "greeks",
+      "kind": "group",
+      "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+      "source_file": "assets/groups/greek_infantry_v1.png",
+      "file": "inputs/greeks.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 2,
+      "id": "trojans",
+      "kind": "group",
+      "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+      "source_file": "assets/groups/trojan_defenders_v1.png",
+      "file": "inputs/trojans.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/trojans.png",
+      "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 3,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard_v2/frames/s20_qwen21_v2.png",
+      "file": "inputs/board_S20.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S20.png",
+      "sha256": "f7be7c6ca583062347d02a4868e2e076210a86deeddc74259871964b1b5ac095",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "b09a31689e9daf61bfcb3819abd8ea9c96f31ee521d99be99b693e5eb0746f09",
+  "prompt_cache_fingerprint": "1b43a4030293b830453d4188458bfc02c87e3a1e9a9329f39b947bf53ccfbbdb",
+  "peak_torch_allocated_bytes": 42457998848,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

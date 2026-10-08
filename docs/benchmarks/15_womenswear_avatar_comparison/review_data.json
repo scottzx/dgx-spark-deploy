@@ -1,0 +1,307 @@
+{
+  "products": [
+    {
+      "key": "shirt",
+      "label": "白色衬衫",
+      "routes": {
+        "latentsync": {
+          "video": "results/latentsync/shirt/video.mp4",
+          "native": "results/latentsync/shirt/native_with_serena.mp4",
+          "native_original": "results/latentsync/shirt/native.mp4",
+          "native_tail": "results/latentsync/shirt/native_tail.jpg",
+          "poster": "results/latentsync/shirt/poster.jpg",
+          "action_frames": "results/latentsync/shirt/action_frames.jpg",
+          "seconds": 381.98970368597656,
+          "ltx_seconds": 189.725605933927,
+          "native_duration": 8.12,
+          "findings": "抽样保留了接衣、持衣介绍、递回和空手结束；开口、收口五帧未见人物或头部突然切换。未据此判定整段音节精确同步。",
+          "boundaries": {
+            "speech_start": 2.46,
+            "speech_end": 5.83
+          },
+          "size": [
+            576,
+            768
+          ],
+          "hold_seconds": 0.0,
+          "continuation_boundaries": [],
+          "source_motion": "ltx/shirt/motion.mp4"
+        },
+        "longcat": {
+          "video": "results/longcat/shirt/video.mp4",
+          "native": "results/longcat/shirt/native_with_serena.mp4",
+          "native_original": "results/longcat/shirt/native.mp4",
+          "native_tail": "results/longcat/shirt/native_tail.jpg",
+          "poster": "results/longcat/shirt/poster.jpg",
+          "action_frames": "results/longcat/shirt/action_frames.jpg",
+          "seconds": 1608.925741943065,
+          "ltx_seconds": null,
+          "native_duration": 10.12,
+          "findings": "人物表情和头部动作较自然；白衬衫新增翻盖口袋、收腰和深色纽扣，更像外套。助手持续扶住衣架和衣服，未完成独立接衣、递回与松手；8.00秒和原生10.08秒结尾衣服仍在画面内。抽样仅见一件衣服，开口、收口五帧未见人物或头部突然切换。",
+          "boundaries": {
+            "speech_start": 2.46,
+            "speech_end": 5.83
+          },
+          "size": [
+            576,
+            768
+          ],
+          "hold_seconds": 0.0,
+          "continuation_boundaries": [
+            {
+              "frame": 93,
+              "seconds": 3.72,
+              "sheet": "results/longcat/shirt/continuation_93.jpg"
+            },
+            {
+              "frame": 173,
+              "seconds": 6.92,
+              "sheet": "results/longcat/shirt/continuation_173.jpg"
+            }
+          ]
+        },
+        "infinitetalk": {
+          "video": "results/infinitetalk/shirt/video.mp4",
+          "native": "results/infinitetalk/shirt/native_with_serena.mp4",
+          "native_original": "results/infinitetalk/shirt/native.mp4",
+          "native_tail": "results/infinitetalk/shirt/native_tail.jpg",
+          "poster": "results/infinitetalk/shirt/poster.jpg",
+          "action_frames": "results/infinitetalk/shirt/action_frames.jpg",
+          "seconds": 3550.7708642818034,
+          "ltx_seconds": null,
+          "native_duration": 8.0,
+          "findings": "能看到接入、助手退手和主播独立持衣介绍，人物表情较自然；展示前半段衬衫较宽长、有弧形后摆，后半段衣身缩短且纽扣结构变化。助手约7.36秒才重新伸手，原生7.96秒和统一8.00秒仍持衣，未完成松手与退出。开口、收口五帧及两处续接连续帧未见人物或头部突然切换。",
+          "boundaries": {
+            "speech_start": 2.46,
+            "speech_end": 5.83
+          },
+          "size": [
+            576,
+            768
+          ],
+          "hold_seconds": 0.04,
+          "continuation_boundaries": [
+            {
+              "frame": 81,
+              "seconds": 3.24,
+              "sheet": "results/infinitetalk/shirt/continuation_81.jpg"
+            },
+            {
+              "frame": 153,
+              "seconds": 6.12,
+              "sheet": "results/infinitetalk/shirt/continuation_153.jpg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "cardigan",
+      "label": "粉色针织开衫",
+      "routes": {
+        "latentsync": {
+          "video": "results/latentsync/cardigan/video.mp4",
+          "native": "results/latentsync/cardigan/native_with_serena.mp4",
+          "native_original": "results/latentsync/cardigan/native.mp4",
+          "native_tail": "results/latentsync/cardigan/native_tail.jpg",
+          "poster": "results/latentsync/cardigan/poster.jpg",
+          "action_frames": "results/latentsync/cardigan/action_frames.jpg",
+          "seconds": 381.5749430307187,
+          "ltx_seconds": 143.23183512175456,
+          "native_duration": 8.12,
+          "findings": "抽样保留单件粉色开衫的接入、展示、递回和持续空手结束；开口、收口五帧未见人物或头部突然切换。未据此判定整段音节精确同步。",
+          "boundaries": {
+            "speech_start": 2.49,
+            "speech_end": 5.82
+          },
+          "size": [
+            576,
+            768
+          ],
+          "hold_seconds": 0.0,
+          "continuation_boundaries": [],
+          "source_motion": "ltx/cardigan/motion.mp4"
+        },
+        "longcat": {
+          "video": "results/longcat/cardigan/video.mp4",
+          "native": "results/longcat/cardigan/native_with_serena.mp4",
+          "native_original": "results/longcat/cardigan/native.mp4",
+          "native_tail": "results/longcat/cardigan/native_tail.jpg",
+          "poster": "results/longcat/cardigan/poster.jpg",
+          "action_frames": "results/longcat/cardigan/action_frames.jpg",
+          "seconds": 1402.4060129472055,
+          "ltx_seconds": null,
+          "native_duration": 10.12,
+          "findings": "有看衣服、转向镜头和持衣介绍，表情较自然；粉色、V领、长袖针织特征保留，但版型变短。助手持续抓住衣架和袖子，8.00秒及原生10.08秒仍在拉伸展示，未完成独立接衣、递回与松手。抽样仅见一件衣服，开口、收口五帧未见人物或头部突然切换。",
+          "boundaries": {
+            "speech_start": 2.49,
+            "speech_end": 5.82
+          },
+          "size": [
+            576,
+            768
+          ],
+          "hold_seconds": 0.0,
+          "continuation_boundaries": [
+            {
+              "frame": 93,
+              "seconds": 3.72,
+              "sheet": "results/longcat/cardigan/continuation_93.jpg"
+            },
+            {
+              "frame": 173,
+              "seconds": 6.92,
+              "sheet": "results/longcat/cardigan/continuation_173.jpg"
+            }
+          ]
+        },
+        "infinitetalk": {
+          "video": "results/infinitetalk/cardigan/video.mp4",
+          "native": "results/infinitetalk/cardigan/native_with_serena.mp4",
+          "native_original": "results/infinitetalk/cardigan/native.mp4",
+          "native_tail": "results/infinitetalk/cardigan/native_tail.jpg",
+          "poster": "results/infinitetalk/cardigan/poster.jpg",
+          "action_frames": "results/infinitetalk/cardigan/action_frames.jpg",
+          "seconds": 3517.8417408470996,
+          "ltx_seconds": null,
+          "native_duration": 8.0,
+          "findings": "能看到接入、助手退手和主播独立持衣介绍，人物表情较自然；粉色、V领和针织特征保留，但后半段衣身缩短、纽扣结构变化。助手约7.36秒才重新伸手，原生7.96秒和统一8.00秒仍持衣，未完成松手与退出。抽样仅见一件衣服，开口、收口五帧及两处续接连续帧未见人物或头部突然切换。",
+          "boundaries": {
+            "speech_start": 2.49,
+            "speech_end": 5.82
+          },
+          "size": [
+            576,
+            768
+          ],
+          "hold_seconds": 0.04,
+          "continuation_boundaries": [
+            {
+              "frame": 81,
+              "seconds": 3.24,
+              "sheet": "results/infinitetalk/cardigan/continuation_81.jpg"
+            },
+            {
+              "frame": 153,
+              "seconds": 6.12,
+              "sheet": "results/infinitetalk/cardigan/continuation_153.jpg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "key": "dress",
+      "label": "黑色连衣裙",
+      "routes": {
+        "latentsync": {
+          "video": "results/latentsync/dress/video.mp4",
+          "native": "results/latentsync/dress/native_with_serena.mp4",
+          "native_original": "results/latentsync/dress/native.mp4",
+          "native_tail": "results/latentsync/dress/native_tail.jpg",
+          "poster": "results/latentsync/dress/poster.jpg",
+          "action_frames": "results/latentsync/dress/action_frames.jpg",
+          "seconds": 380.70274291187525,
+          "ltx_seconds": 142.06009955285117,
+          "native_duration": 8.12,
+          "findings": "完成持衣介绍、递回与持续空手结束；保留LTX原始动作在0.64–0.80秒接衣阶段的手臂重影。开口、收口五帧未见人物或头部突然切换，未据此判定整段音节精确同步。",
+          "boundaries": {
+            "speech_start": 2.47,
+            "speech_end": 5.83
+          },
+          "size": [
+            576,
+            768
+          ],
+          "hold_seconds": 0.0,
+          "continuation_boundaries": [],
+          "source_motion": "ltx/dress/motion.mp4"
+        },
+        "longcat": {
+          "video": "results/longcat/dress/video.mp4",
+          "native": "results/longcat/dress/native_with_serena.mp4",
+          "native_original": "results/longcat/dress/native.mp4",
+          "native_tail": "results/longcat/dress/native_tail.jpg",
+          "poster": "results/longcat/dress/poster.jpg",
+          "action_frames": "results/longcat/dress/action_frames.jpg",
+          "seconds": 1411.898919166997,
+          "ltx_seconds": null,
+          "native_duration": 10.12,
+          "findings": "有看衣服、转向镜头和触摸展示，表情较自然；目标短袖圆领黑裙变成了长袖、低领、带纽扣和腰带的款式。助手持续抓住衣架，8.00秒及原生10.08秒仍在展示，未完成独立接衣、递回与松手。抽样仅见一件衣服，开口、收口五帧未见人物或头部突然切换。",
+          "boundaries": {
+            "speech_start": 2.47,
+            "speech_end": 5.83
+          },
+          "size": [
+            576,
+            768
+          ],
+          "hold_seconds": 0.0,
+          "continuation_boundaries": [
+            {
+              "frame": 93,
+              "seconds": 3.72,
+              "sheet": "results/longcat/dress/continuation_93.jpg"
+            },
+            {
+              "frame": 173,
+              "seconds": 6.92,
+              "sheet": "results/longcat/dress/continuation_173.jpg"
+            }
+          ]
+        },
+        "infinitetalk": {
+          "video": "results/infinitetalk/dress/video.mp4",
+          "native": "results/infinitetalk/dress/native_with_serena.mp4",
+          "native_original": "results/infinitetalk/dress/native.mp4",
+          "native_tail": "results/infinitetalk/dress/native_tail.jpg",
+          "poster": "results/infinitetalk/dress/poster.jpg",
+          "action_frames": "results/infinitetalk/dress/action_frames.jpg",
+          "seconds": 3548.6953216237016,
+          "ltx_seconds": null,
+          "native_duration": 8.0,
+          "findings": "人物表情较自然，黑色、短袖和圆领保留，但裙身从较直变为明显收腰的A字版型，接衣后画面变浅。介绍大部分时间助手仍抓住衣架，约6秒才退手；约7.68秒再次伸手，原生7.96秒和统一8.00秒仍持衣，未完成松手与退出。抽样仅见一件衣服，开口、收口五帧及两处续接连续帧未见人物或头部突然切换。",
+          "boundaries": {
+            "speech_start": 2.47,
+            "speech_end": 5.83
+          },
+          "size": [
+            576,
+            768
+          ],
+          "hold_seconds": 0.04,
+          "continuation_boundaries": [
+            {
+              "frame": 81,
+              "seconds": 3.24,
+              "sheet": "results/infinitetalk/dress/continuation_81.jpg"
+            },
+            {
+              "frame": 153,
+              "seconds": 6.12,
+              "sheet": "results/infinitetalk/dress/continuation_153.jpg"
+            }
+          ],
+          "handover_detail": "results/infinitetalk/dress/handover_detail.jpg"
+        }
+      }
+    }
+  ],
+  "routes": [
+    {
+      "key": "latentsync",
+      "label": "LTX＋LatentSync 1.6",
+      "compilation": "results/latentsync/three_products.mp4"
+    },
+    {
+      "key": "longcat",
+      "label": "LongCat-Video-Avatar 1.5",
+      "compilation": "results/longcat/three_products.mp4"
+    },
+    {
+      "key": "infinitetalk",
+      "label": "InfiniteTalk",
+      "compilation": "results/infinitetalk/three_products.mp4"
+    }
+  ]
+}

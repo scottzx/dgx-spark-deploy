@@ -1,0 +1,21 @@
+{
+  "prompt": "Edit reference image 1 into the middle keyframe of a product demonstration. Preserve exactly the same woman, face, red blouse, tabletop, gray background, framing, camera and lighting. She has picked up ONLY the right can as viewed by the camera, the red Zero Sugar can with black Coca-Cola lettering, whose exact product design is given in reference image 2. She holds this one can upright at upper chest height with one hand gripping its lower side and the other palm supporting the base, label facing camera, below her unobstructed face. The selected right can is no longer on the table: leave its former tabletop position empty. The other TWO cans remain standing at their exact original tabletop positions. Exactly three cans in the whole scene: ONE in her hands and TWO on the table. Realistic fingers wrapping around the same can, no hand-can penetration or extra fingers. Preserve product colors, proportions and lettering. No duplicated can, no extra products, no collage, no camera zoom. Lips gently closed.",
+  "seed": 2026100712,
+  "model": "Qwen-Image-2.1 + Viggle Turbo 6-step",
+  "size": [
+    768,
+    512
+  ],
+  "references": [
+    "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+    "/home/admin/digital-human-runtime/inputs/zero.jpg"
+  ],
+  "reference_sha256": [
+    "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e",
+    "c6b804c927e410e9d9d374434b50d080a806ba846646a141b2ff0141fe8c4066"
+  ],
+  "load_seconds": 239.03982389578596,
+  "generation_seconds": 10.112859555054456,
+  "peak_cuda_allocated_gib": 38.10468673706055,
+  "sha256": "c16dafda1894f51e07ea6fd0121c568e1ed6ebe4e9bf682c0cc620ab8c1e1cf9"
+}

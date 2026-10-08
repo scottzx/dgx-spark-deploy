@@ -1,0 +1,20 @@
+[
+  {
+    "product": "original",
+    "previous_soft_voice_sha256": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+    "wan_input_voice_sha256": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+    "unchanged": true
+  },
+  {
+    "product": "diet",
+    "previous_soft_voice_sha256": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+    "wan_input_voice_sha256": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+    "unchanged": true
+  },
+  {
+    "product": "zero",
+    "previous_soft_voice_sha256": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+    "wan_input_voice_sha256": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+    "unchanged": true
+  }
+]

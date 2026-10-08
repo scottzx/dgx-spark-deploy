@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "id": "S11",
+  "title": "落地示意",
+  "seed": 2026100511,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S11/raw.mp4",
+  "raw_sha256": "d647899bbd02fad833a775f2b609c09b76dafada3d9397c504869bd4c9750e45",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S11/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "a60c72845ce0f47f2025f937519d83879324779993e0ed18c2e76795fa889dd2",
+    "bytes": 1170948
+  },
+  "generation_s": 124.16055383207276,
+  "phases_s": {
+    "reference_encode_block_s": 2.234496613033116,
+    "denoising_loop_s": 56.1696795579046,
+    "diffusion_block_s": 116.90222153207287,
+    "decode_and_encode_block_s": 4.994282209780067
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "odysseus",
+      "kind": "character",
+      "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+      "source_file": "assets/characters/odysseus_v1.png",
+      "file": "inputs/odysseus.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+      "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "horse",
+      "kind": "prop",
+      "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+      "source_file": "assets/scenes/trojan_horse_v1.png",
+      "file": "inputs/horse.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+      "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 3,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard/frames/s11_v1.png",
+      "file": "inputs/board_S11.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S11.png",
+      "sha256": "ddd56a76fd6754f44126e0719536149604ccb4be79e146017eecede19f57fc91",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "2591677373ea31a032fcd37e0e2daed95d95af338128b0b4059fe8ecb6bd3483",
+  "prompt_cache_fingerprint": "8d4cd028c0f9428a96c986d8f2e6dea6623ff7cfc9462201cef9bc4100cd0f4a",
+  "peak_torch_allocated_bytes": 42457072128,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

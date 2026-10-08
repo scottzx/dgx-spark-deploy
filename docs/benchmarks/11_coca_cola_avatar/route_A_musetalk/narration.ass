@@ -1,0 +1,18 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Hiragino Sans GB,43,&H00FFFFFF,&H00FFFFFF,&H80251E1E,&H80251E1E,0,0,0,0,100,100,0,0,3,14,0,2,70,70,119,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:03.36,Default,,0,0,0,,可口可乐，今天你想选哪一罐？
+Dialogue: 0,0:00:03.54,0:00:06.10,Default,,0,0,0,,原味，熟悉的经典可乐风味。
+Dialogue: 0,0:00:06.28,0:00:09.72,Default,,0,0,0,,健怡，无糖，口感更轻盈。
+Dialogue: 0,0:00:09.90,0:00:13.34,Default,,0,0,0,,零度，同样无糖，\N更接近原味可口可乐的风味。
+Dialogue: 0,0:00:13.52,0:00:19.92,Default,,0,0,0,,聚餐、追剧，或者想来一口冰爽，\N三种选择，按你的口味来。
+Dialogue: 0,0:00:20.10,0:00:26.26,Default,,0,0,0,,原味、健怡、零度，认准罐身标识，\N挑一罐你喜欢的，冰镇后更过瘾！

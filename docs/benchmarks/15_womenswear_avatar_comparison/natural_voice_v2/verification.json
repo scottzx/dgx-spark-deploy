@@ -1,0 +1,163 @@
+[
+  {
+    "path": "serena_default/audition.wav",
+    "sha256": "e679cc23fc573d37863ca17174783a411c981ebffe8d4168091d634d87a278c7",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 21.92,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -5.01,
+    "full_decode": true
+  },
+  {
+    "path": "serena_default/audition_original_text.wav",
+    "sha256": "80182d434148af4a61f0fc79e895e3953307cd529ec99dab31b2d2f3f0630e9c",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 22.08,
+    "integrated_lufs": -22.98,
+    "true_peak_dbfs": -4.23,
+    "full_decode": true
+  },
+  {
+    "path": "serena_default/shirt.wav",
+    "sha256": "179c218906420a1db96c5bcc2758d958212650696dce49e187f018f9cd9cb41a",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 3.92,
+    "integrated_lufs": -23.01,
+    "true_peak_dbfs": -4.04,
+    "full_decode": true
+  },
+  {
+    "path": "serena_default/cardigan.wav",
+    "sha256": "9f0f0cbf44761fea4d77aee8cb28add98c0bc732f73cfe3a9fe724326d3cc613",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 3.28,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -8.04,
+    "full_decode": true
+  },
+  {
+    "path": "serena_default/dress.wav",
+    "sha256": "03cc99a368be5013842e5aa3728652c8881f6954821407e206b3063a9b0f44f2",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 3.52,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -6.54,
+    "full_decode": true
+  },
+  {
+    "path": "serena_chat/audition.wav",
+    "sha256": "099fd57304a0e730da712efb68e694cc61e454bf7514adde4d3a790451452d5f",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 20.72,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -5.98,
+    "full_decode": true
+  },
+  {
+    "path": "serena_chat/audition_original_text.wav",
+    "sha256": "efca82ff6c31abb7d558e71ca9e6db8ce74e71875dec8e083b67ffd09702c416",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 21.2,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -4.94,
+    "full_decode": true
+  },
+  {
+    "path": "serena_chat/shirt.wav",
+    "sha256": "5386982a405734f4e315013406c0359f8e104d868f7c07ac0604b003347b4fae",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 4.4,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -5.75,
+    "full_decode": true
+  },
+  {
+    "path": "serena_chat/cardigan.wav",
+    "sha256": "28afd5d016cec8b21313b1c3f34803bfe30f900afa4c520d24905ddb0e412271",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 3.76,
+    "integrated_lufs": -23.01,
+    "true_peak_dbfs": -5.19,
+    "full_decode": true
+  },
+  {
+    "path": "serena_chat/dress.wav",
+    "sha256": "6470e0241cb019dd5dd749669ccd7177403f63b580612a1cca7d7dd11e8f3b13",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 2.88,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -6.68,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_default/audition.wav",
+    "sha256": "079a8229b38294a0d9c63b31a5ea422fbbffb27fb3d568ad25d8418dafa5fbd6",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 21.12,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -5.98,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_default/audition_original_text.wav",
+    "sha256": "a934f5fe32d0af832e5e3d42ec3553342c37132b61e6ffbce63907dad4de7d0a",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 24.0,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -6.03,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_default/shirt.wav",
+    "sha256": "63de85a154bba43a3685f057c6505ba26dd9c66a4f7408a9a6194d4e23b18e63",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 4.48,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -6.99,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_default/cardigan.wav",
+    "sha256": "32a3873da3369a4572ca9804b326d4e84bf99adfad8dd6ed10a7c77ecc5e3299",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 4.72,
+    "integrated_lufs": -23.01,
+    "true_peak_dbfs": -5.68,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_default/dress.wav",
+    "sha256": "bd4c5e9050110969cdf2e54f05c5fad6e852571f3012dc632271bee5c3a04b8e",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 5.12,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -6.69,
+    "full_decode": true
+  },
+  {
+    "path": "previous_serena_full.wav",
+    "sha256": "7c0571d55c3dcf4e1b7246f90056411f1636e1bf7027b387ba9727b969ae78eb",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 22.48,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -3.53,
+    "full_decode": true,
+    "copied_from": "../marketing_voice_v1/serena_full/audition.wav"
+  }
+]

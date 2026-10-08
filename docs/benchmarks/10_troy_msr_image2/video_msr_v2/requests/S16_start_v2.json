@@ -1,0 +1,10 @@
+{
+  "id": "S16_start_v2",
+  "title": "\u53cc\u4eba\u62ac\u95e9\u4e0e\u63a9\u62a4",
+  "output": "keyframes/S16_start_v2.png",
+  "references": [
+    "keyframes/S16_end.png"
+  ],
+  "prompt": "Edit image1 into the START pose BEFORE lifting the gate bar. Preserve camera and seven actors and all background geometry. The single heavy gate bar must be completely STRAIGHT and LEVEL left-to-right, parallel with the horizontal iron gate straps, not tilted. Lower the whole bar to CHEST HEIGHT of both operators. The bar is now seated INSIDE TWO clearly visible iron U-shaped retaining brackets, one on each gate leaf close to the left and right ends of the bar. These TWO brackets are firmly mounted on the closed gate and support the bar, the bar prevents the double doors opening. Left Odysseus and right young soldier each grip the bar with BOTH hands, four hands visible, palms below and fingers curled around the same bar. Left Odysseus has NO shield; right soldier has exactly ONE shield strapped flat against his upper BACK (show the shoulder straps), not hanging from elbow or hand. Both swords remain sheathed at LEFT hip. Preserve all five cover fighters to right, with same faces and costumes, no additional people. ONE bar, TWO supporting brackets, FOUR hands on the bar, CLOSED gate. Night practical film still, no blood, no text.",
+  "seed": 2026100732
+}

@@ -1,0 +1,37 @@
+{
+  "id": "S20_start_v2",
+  "title": "大军团持续群战",
+  "output": "keyframes/S20_start_v2.png",
+  "references": [
+    "keyframes/S20_end.png"
+  ],
+  "prompt": "Use image1 as exact composition and actor positions. Change ONLY the combat pose of the same FOUR foreground fighters to the moment BEFORE sword contact. In BOTH foreground fighting pairs, preserve a blue-gray Greek on LEFT facing an ochre/rust Trojan on RIGHT. Keep the same faces and feet positions. Each Greek draws his RIGHT-hand sword back and upward ready to strike, and each Trojan braces his LEFT-hand shield; sword blades are clearly separated by an air gap, not touching. Each of the four retains the same RIGHT sword and LEFT shield. Do not exchange places or move people across the image. All middle and rear armies still fight in place. ONE rigid horse center, ONE raised hatch and ladder, LEFT open gate and RIGHT fountain, exact fixed camera and night lighting. NO named heroes, NO additional foreground actors, NO gore or text. Photorealistic one film frame.",
+  "seed": 2026100840,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S20_start_v2.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.67530349129811,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "a5077de8661a586b3fcf495ecfe535ac86cf9038b5534da33104c977acfde097"
+  ],
+  "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e",
+  "bytes": 2907217,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

@@ -1,0 +1,1343 @@
+{
+  "status": "PASS",
+  "films": [
+    {
+      "name": "continuous",
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/continuous.mp4",
+      "media": {
+        "status": "PASS",
+        "frames": 223,
+        "duration_s": 9.291667,
+        "width": 1344,
+        "height": 768,
+        "sample_rate": 32000,
+        "full_decode": true
+      }
+    },
+    {
+      "name": "storyboard",
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/storyboard.mp4",
+      "media": {
+        "status": "PASS",
+        "frames": 242,
+        "duration_s": 10.083333,
+        "width": 1344,
+        "height": 768,
+        "sample_rate": 32000,
+        "full_decode": true
+      }
+    }
+  ],
+  "clips": [
+    {
+      "status": "PASS",
+      "request_id": "identity_ref_opening",
+      "stage2_started_monotonic_ns": 2536016501176782,
+      "request_index": 0,
+      "preparation": {
+        "status": "READY",
+        "request_id": "identity_ref_opening",
+        "output_root": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_opening",
+        "stage2_prepare_started_monotonic_ns": 2536016500840891,
+        "conditioning_ready_monotonic_ns": 2536016501068413,
+        "stage2_prepare_s": 0.000227522,
+        "stage2_gemma_loaded": false,
+        "stage2_connector_loaded": false
+      },
+      "timing_boundary": "run_entry_after_prepare_to_atomic_final_muxed_MP4",
+      "case_id": "identity_ref_opening",
+      "capture": {
+        "case_id": "identity_ref_opening",
+        "prompt": "subject_definitions:\n<Subject 1> is the bearded Greek warrior in <Picture 1>, with short dark hair, engraved bronze cuirass, red cloak and brown sandals.\n<Subject 2> is the clean-shaven Greek warrior in <Picture 2>, with curly black hair, engraved bronze cuirass, blue cloak and brown sandals.\n<Subject 3> is the equipment in <Picture 3>: two straight silver swords, and one round bronze shield belonging only to <Subject 2>. Both men carry a sword in their right hand; the red warrior's left hand remains empty and the blue warrior's left hand carries the shield.\n<Subject 4> is the Troy courtyard in <Picture 4>, with a large stationary wooden horse sculpture assembled from timber planks, stone walls, sand and burning braziers.\n<Picture 5> is the shot composition reference with red warrior left, blue warrior right and the wooden horse behind them.\nsummary: [reference generation] Two consistent Greek warriors perform a controlled stage duel in the Troy courtyard, filmed like a 1970s Shaw Brothers studio action movie.\nretention_analysis:\n<Subject 1>: fully_preserved - preserve face, beard, hair, armor and red cloak.\n<Subject 2>: fully_preserved - preserve face, hair, armor and blue cloak.\n<Subject 3>: fully_preserved - exactly two swords and one shield, with unchanged ownership throughout.\n<Subject 4>: fully_preserved - preserve the wooden construction, courtyard and torch lighting.\n<Picture 5>: partially_preserved - preserve blocking and lighting while changing camera framing only as specified.\ndetailed_description: The target video uses warm torchlight, a theatrical studio set, saturated red and blue cloaks, 35mm grain and clear Shaw Brothers sword choreography.\n[Shot 1] One uninterrupted five-second waist-height wide shot. The red warrior advances two measured steps and swings his right-hand sword diagonally. The blue warrior parries with his right-hand sword while holding his round shield steadily in his left hand. They circle and reset their stance. The camera tracks slowly right, keeping both whole bodies and both faces readable. Preserve their bronze cuirasses, hair, faces and cloak colors; keep the timber horse completely stationary in the background. overall_soundscape: Quiet night wind, crackling braziers, sandal scuffs and metallic sword clashes. No dialogue. non_diegetic_music: None.",
+        "seed": 2026100301,
+        "source_index": 0,
+        "request_id": "identity_ref_opening",
+        "status": "PASS",
+        "same_request": true,
+        "external_anchor_used": false,
+        "duration_s": 5,
+        "stage1_frames": 124,
+        "emit_frames": 121,
+        "task": "ref2va",
+        "input_conditioned": true,
+        "input_spec": {
+          "task": "ref2va",
+          "first_frame": null,
+          "last_frame": null,
+          "references": [
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/red_identity.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/blue_identity.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/equipment.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/setting.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/board.png"
+            }
+          ]
+        },
+        "capture_rank": 0,
+        "condition_video_rows_excluded": 1272,
+        "condition_audio_rows_excluded": 0,
+        "payload_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_opening/stage1/stage1_direct_tensors.pt",
+        "payload_sha256": "760b40c8889f028a127b3cdd3a7e820a5f2a6de54cd185fb7457a1f746d389e0",
+        "continuation_state_sha256": "2681b9fece70441df70965a15db4708f8b62d6f3eff4d49dffa6fb9ecbf898a6",
+        "continuation": {},
+        "generated_first_frame_path": null,
+        "generated_first_frame_sha256": null,
+        "native_normalized_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_opening/stage1/h3_normalized_native.pt",
+        "native_normalized_sha256": "f9a9b9dcd3d6ab42620aab1df400a8f2f286449684cb5f1c047abeb3d15bafa6",
+        "h3_normalized": {
+          "shape": [
+            1,
+            24,
+            37,
+            24,
+            42
+          ],
+          "dtype": "torch.bfloat16",
+          "source_dtype": "torch.float32",
+          "bf16_cast_max_abs_error": 0.015508174896240234,
+          "normalization": "released_h3_per_channel_mean_std",
+          "source": "original packed final latent unpatchified before VAE denormalize"
+        },
+        "audio": {
+          "shape": [
+            1,
+            2,
+            161333
+          ],
+          "dtype": "torch.float32",
+          "sample_rate": 32000,
+          "native_shape": [
+            165600,
+            2
+          ],
+          "temporal_trim": "first 161333 samples for 121-frame Stage2",
+          "processing": "transpose TC to BCT; clamp [-1,1], original native PCM unchanged"
+        },
+        "native_video_shape": null,
+        "latent_only_transfer": true,
+        "video_decode_calls": 0,
+        "h3_decoder_calls": 0,
+        "capture_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_opening/stage1/capture.json",
+        "capture_sha256": "0a49988ba0d6cc43f236a91368d7a61afc5ce169820029d98de3fdca2fc2f8e7"
+      },
+      "duration_s": 5,
+      "emit_frames": 121,
+      "result": {
+        "status": "succeeded",
+        "index": 0,
+        "source_index": 0,
+        "prompt_id": "identity_ref_opening",
+        "seed": 2026100301,
+        "prompt_stats": {
+          "characters": 1212,
+          "whitespace_words": 193,
+          "raw_tokens_including_bos": 249,
+          "kept_tokens": 249,
+          "max_tokens": 1024,
+          "truncated": false,
+          "source": "offline_fixed_prompt_cache"
+        },
+        "source_video": "/dev/null",
+        "highres_first_frame": null,
+        "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_opening/refined_1344x768_121f.mp4",
+        "input_info": {
+          "wire_metadata": {
+            "input_variant": "h3_adapter",
+            "primary_kind": "h3_normalized_latent",
+            "normalization": "released_h3_per_channel_mean_std",
+            "generation_frames": 124,
+            "adapter_pixel_frames": 124,
+            "padded_canvas_frames": 129,
+            "emitted_frames": 121,
+            "pixel_height": 384,
+            "pixel_width": 672,
+            "fps": 24.0,
+            "audio_sample_rate": 32000,
+            "duration_s": 5
+          },
+          "transport": "same_request_H3_and_PCM",
+          "preprocess": "normalized_h3_x2_then_adapter_crop_t16",
+          "latent_upsampler": false
+        },
+        "output_info": {
+          "width": 1344,
+          "height": 768,
+          "frames": 121,
+          "fps": 24.0,
+          "duration_s": 5.041666666666667,
+          "bytes": 3563845
+        },
+        "attention": {
+          "backend": "sol",
+          "architecture": "sm121-triton",
+          "stage2_taus": [
+            1.0,
+            1.25,
+            1.5
+          ],
+          "thresh_type": "diag",
+          "kv_splits": "auto",
+          "dense_layers": [
+            0
+          ],
+          "sol_layers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ],
+          "cross_attention": "dense",
+          "compile_boundary": "none",
+          "completed_steps": 3,
+          "dense_calls": 3,
+          "dense_calls_source": "inferred_from_layer1_entry_after_dense_layer0",
+          "sol_calls": 141,
+          "kernel": {
+            "dispatch_calls": 0,
+            "kernel_calls": 141,
+            "hunyuan_calls": 0,
+            "dense_guard_calls": 0
+          },
+          "selected_backend": "triton"
+        },
+        "official_vae_tiling": {
+          "source": "original_Conv128_448x768",
+          "config": {
+            "frames": {
+              "tile_size": 128,
+              "overlap": 24
+            },
+            "height": {
+              "tile_size": 448,
+              "overlap": 64
+            },
+            "width": {
+              "tile_size": 768,
+              "overlap": 64
+            }
+          },
+          "progress_expected_chunks": 2,
+          "last_stream": {
+            "actual_chunks": 1,
+            "progress_expected_chunks": 2,
+            "frames": 121
+          }
+        },
+        "phases_s": {
+          "input_decode_resize_s": 0.00011,
+          "learned_latent_upsample_s": 0.0,
+          "highres_first_frame_condition_s": 4e-06,
+          "audio_vae_encode_s": 0.29166,
+          "multimodal_state_prepare_s": 0.005875,
+          "joint_video_audio_stage2_s": 38.955685,
+          "official_video_vae_decode_s": 6.9985,
+          "decode_stream_and_h264_mux_s": 7.841559,
+          "h264_encode_mux_s": 0.843059,
+          "output_verify_s": 0.019046,
+          "per_request_gc_allocator_cleanup_s": 6e-06,
+          "fixed_prompt_context_copy_s": 0.000406,
+          "h3_upscale_and_adapter_s": 2.435288,
+          "h3_latent_upscale_s": 2.0967775932513177,
+          "h3_ltx_adapter_s": 0.30936387507244945
+        },
+        "wall_s": 49.550051,
+        "spatial_route": {
+          "name": "h3_upscale_before_adapter",
+          "scale": 2.0,
+          "source": "/home/admin/sol-spark-runtime/sources/h3-upscaler/nodes/minimax_h3_latent_upscaler_3d.py",
+          "source_commit": "d7c01b9011f2e8439493f6c02c29995a27df276f",
+          "source_sha256": "744063b43e0f3eec23e2485cb7c65503069946ca9690906ecb548d7515cb89e2",
+          "checkpoint": "/home/admin/sol-spark-runtime/checkpoints/H3-upscaler/minimax_h3_latent_upscaler_3d_bf16.safetensors",
+          "checkpoint_revision": "13ccf95d85d120bdbc92c05b1247a6e147bf54bf",
+          "checkpoint_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+          "checkpoint_bytes": 690592992,
+          "model_config": {
+            "in_channels": 24,
+            "in_blocks": 12,
+            "out_blocks": 12,
+            "channels": 512,
+            "dropout": 0.1,
+            "attn": false,
+            "temporal_every": 2,
+            "temporal_kernel": 5
+          },
+          "compute_dtype": "torch.bfloat16",
+          "actual_parameter_dtypes": {
+            "torch.bfloat16": 322
+          },
+          "load_s_excluded": 0.8405478172935545,
+          "input_normalization": "released_h3_per_channel_mean_std",
+          "output_normalization": "released_h3_per_channel_mean_std",
+          "raw_normalization_roundtrip": true,
+          "normalization_boundary": "Comfy_H3_VAEEncode_samples_already_normalized",
+          "author_node_transform": "D(model(N(h3_normalized)))",
+          "normalization_roundtrip_meaning": "author_node_N_and_D; incoming_and_outgoing_LATENT_are_normalized_H3",
+          "enable_chunking": true,
+          "temporal_chunk_size": 32,
+          "temporal_overlap": 5,
+          "h3_input_shape": [
+            1,
+            24,
+            37,
+            24,
+            42
+          ],
+          "h3_upscaled_shape": [
+            1,
+            24,
+            37,
+            48,
+            84
+          ],
+          "adapter_native_output_shape": [
+            1,
+            128,
+            17,
+            24,
+            42
+          ],
+          "refiner_input_shape": [
+            1,
+            128,
+            16,
+            24,
+            42
+          ],
+          "ltx_learned_x2_enabled": false,
+          "ltx_learned_x2_loaded": false,
+          "actual_calls": {
+            "h3_upscaler": 1,
+            "adapter": 1,
+            "ltx_learned_x2": 0,
+            "input_video_vae": 0
+          }
+        }
+      },
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_opening/refined_1344x768_121f.mp4",
+      "output_sha256": "4fd947162720897c397aba26aef5c2fa87fcaaa2cb5cf7e24d2809098546325a",
+      "output_bytes": 3563845,
+      "final_mp4_complete_monotonic_ns": 2536066039343948,
+      "stage2_request_s": 49.538167166,
+      "stage2_prepare_to_mp4_s": 49.538503057,
+      "stage2_gemma_loaded": false,
+      "stage2_connector_loaded": false,
+      "fixed_prompt_cache": {
+        "prompt": "A single continuous five-second medium-wide shot in a 1970s Shaw Brothers studio sword film. Two Greek warriors duel in a sandy torch-lit Troy courtyard. The bearded warrior on the left has short dark hair, an engraved bronze cuirass, a red cloak and brown sandals; his right hand holds one straight silver sword and his left hand is empty. The clean-shaven warrior on the right has curly black hair, an engraved bronze cuirass, a blue cloak and brown sandals; his right hand holds one straight silver sword and his left hand holds a round bronze shield. The red warrior advances and delivers a diagonal strike. The blue warrior parries while continuously holding his shield. They take a half step back and circle with readable controlled choreography. Both faces, hair, engraved bronze armor, red and blue cloaks and weapons remain the same throughout. A large stationary wooden Trojan horse assembled from timber planks stands behind them. Warm amber braziers, deep blue night, saturated 35mm film colors, theatrical studio lighting, gentle rightward camera tracking. Exactly two warriors, two swords and one round shield. Wind, crackling flames, sandal scuffs and metallic blade clashes, no dialogue or music.",
+        "fingerprint": "25a3093b3a303e6e842fc31f7ddcba5a648ab25ff2b88be3da9c6b3500a3ec0b",
+        "source_path": "/home/admin/sol-spark-runtime/identity_tests_20261003/prompt_caches/specific_refiner.pt",
+        "recipe": {
+          "boundary": "post_INT8_connector_video_and_audio_encoding",
+          "text_encoder": "gemma4-12b-with-proj-ltx-2.5-comfy-int8-convrot.safetensors",
+          "text_encoder_bytes": 15372969374,
+          "connector": "ltx-2.5-22b-dev-transformer-comfy-int8-convrot.safetensors",
+          "connector_bytes": 21504034224,
+          "gemma_int8_linears": 328,
+          "connector_int8_linears": 96,
+          "weight_scale_dtype": "torch.float32",
+          "context_dtype": "torch.bfloat16",
+          "joint_audio_video": true,
+          "mask_boundary": "consumed_inside_process_hidden_states_not_denoiser_input"
+        },
+        "tensor_manifest": {
+          "video": {
+            "shape": [
+              1,
+              1024,
+              4096
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          "audio": {
+            "shape": [
+              1,
+              1024,
+              2048
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        },
+        "stage2_gemma_loaded": false,
+        "stage2_connector_loaded": false,
+        "gemma_encode_calls": 0,
+        "connector_process_calls": 0,
+        "context_copy_calls": 1
+      },
+      "writer_chunking": {
+        "chunk_frames": 16,
+        "source_chunks": 1,
+        "emitted_chunks": 8,
+        "frames": 121,
+        "source_layouts": [
+          {
+            "shape": [
+              121,
+              768,
+              1344,
+              3
+            ],
+            "dtype": "torch.bfloat16",
+            "stride": [
+              1032192,
+              1344,
+              1,
+              124895232
+            ]
+          }
+        ],
+        "complete": true,
+        "expected_frames": 121
+      },
+      "conv_output_layout_request_calls": 16,
+      "delivered_output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_opening/refined_1344x768_121f.mp4",
+      "delivered_frames": 121,
+      "trim_frames": 0,
+      "media": {
+        "status": "PASS",
+        "frames": 121,
+        "duration_s": 5.041667,
+        "width": 1344,
+        "height": 768,
+        "sample_rate": 32000,
+        "full_decode": true
+      }
+    },
+    {
+      "status": "PASS",
+      "request_id": "identity_ref_continuation",
+      "stage2_started_monotonic_ns": 2536066963617016,
+      "request_index": 1,
+      "preparation": {
+        "status": "READY",
+        "request_id": "identity_ref_continuation",
+        "output_root": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_continuation",
+        "stage2_prepare_started_monotonic_ns": 2536066963472599,
+        "conditioning_ready_monotonic_ns": 2536066963558631,
+        "stage2_prepare_s": 8.6032e-05,
+        "stage2_gemma_loaded": false,
+        "stage2_connector_loaded": false
+      },
+      "timing_boundary": "run_entry_after_prepare_to_atomic_final_muxed_MP4",
+      "case_id": "identity_ref_continuation",
+      "capture": {
+        "case_id": "identity_ref_continuation",
+        "prompt": "subject_definitions:\n<Subject 1> is the bearded Greek warrior in <Picture 1>, with short dark hair, engraved bronze cuirass, red cloak and brown sandals.\n<Subject 2> is the clean-shaven Greek warrior in <Picture 2>, with curly black hair, engraved bronze cuirass, blue cloak and brown sandals.\n<Subject 3> is the equipment in <Picture 3>: two straight silver swords, and one round bronze shield belonging only to <Subject 2>. Both men carry a sword in their right hand; the red warrior's left hand remains empty and the blue warrior's left hand carries the shield.\n<Subject 4> is the Troy courtyard in <Picture 4>, with a large stationary wooden horse sculpture assembled from timber planks, stone walls, sand and burning braziers.\n<Picture 5> is the shot composition reference with red warrior left, blue warrior right and the wooden horse behind them.\nsummary: [reference generation] Two consistent Greek warriors perform a controlled stage duel in the Troy courtyard, filmed like a 1970s Shaw Brothers studio action movie.\nretention_analysis:\n<Subject 1>: fully_preserved - preserve face, beard, hair, armor and red cloak.\n<Subject 2>: fully_preserved - preserve face, hair, armor and blue cloak.\n<Subject 3>: fully_preserved - exactly two swords and one shield, with unchanged ownership throughout.\n<Subject 4>: fully_preserved - preserve the wooden construction, courtyard and torch lighting.\n<Picture 5>: partially_preserved - preserve blocking and lighting while changing camera framing only as specified.\ndetailed_description: The target video uses warm torchlight, a theatrical studio set, saturated red and blue cloaks, 35mm grain and clear Shaw Brothers sword choreography.\n[Shot 1] Continue the previous continuous waist-height tracking shot, retaining exact camera speed and movement from the previous action context. The blue warrior steps forward with his shield on his left arm and thrusts his right-hand sword. The red warrior, whose left hand is empty, parries with his right-hand sword, pivots and counters with a controlled broad sword sweep. Both actors keep their original faces, bronze cuirasses, cloaks and weapons throughout. The timber horse remains stationary behind them. overall_soundscape: Quiet night wind, crackling braziers, sandal scuffs and metallic sword clashes. No dialogue. non_diegetic_music: None.",
+        "seed": 2026100302,
+        "source_index": 0,
+        "request_id": "identity_ref_continuation",
+        "status": "PASS",
+        "same_request": true,
+        "external_anchor_used": false,
+        "duration_s": 5,
+        "stage1_frames": 124,
+        "emit_frames": 121,
+        "task": "ref2va",
+        "input_conditioned": true,
+        "input_spec": {
+          "task": "ref2va",
+          "first_frame": null,
+          "last_frame": null,
+          "references": [
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/red_identity.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/blue_identity.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/equipment.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/setting.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/board.png"
+            }
+          ]
+        },
+        "capture_rank": 0,
+        "condition_video_rows_excluded": 3036,
+        "condition_audio_rows_excluded": 80,
+        "payload_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_continuation/stage1/stage1_direct_tensors.pt",
+        "payload_sha256": "e52cd548345c86005fe041bd3989a7f6f25a8f0d6f6ea26b0b714839db88b271",
+        "continuation_state_sha256": "594b2d5f3f710d47be35156b4f1c9cd472b9630b3db1572cd48d61ff8108b4f3",
+        "continuation": {
+          "source_capture": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_opening/stage1",
+          "source_sha256": "2681b9fece70441df70965a15db4708f8b62d6f3eff4d49dffa6fb9ecbf898a6",
+          "context_frames": 22,
+          "trim_frames": 19,
+          "audio_context_frames": 24,
+          "condition_video_rows": 3036,
+          "condition_audio_rows": 80,
+          "video_timeline_offsets": [
+            0,
+            1,
+            5,
+            9,
+            13,
+            17,
+            18
+          ],
+          "audio_join_frame": 19,
+          "frozen_prefix_verified": true,
+          "method": "native_H3_AV_latent_timeline_prefix",
+          "reference_video_rows_preserved": 1272,
+          "reference_audio_rows_preserved": 0,
+          "reference_count": 5
+        },
+        "generated_first_frame_path": null,
+        "generated_first_frame_sha256": null,
+        "native_normalized_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_continuation/stage1/h3_normalized_native.pt",
+        "native_normalized_sha256": "a369db7ac360a31b36e081568fe6289d889a6708c0996277505e99ec66e14d96",
+        "h3_normalized": {
+          "shape": [
+            1,
+            24,
+            37,
+            24,
+            42
+          ],
+          "dtype": "torch.bfloat16",
+          "source_dtype": "torch.float32",
+          "bf16_cast_max_abs_error": 0.015604972839355469,
+          "normalization": "released_h3_per_channel_mean_std",
+          "source": "original packed final latent unpatchified before VAE denormalize"
+        },
+        "audio": {
+          "shape": [
+            1,
+            2,
+            161333
+          ],
+          "dtype": "torch.float32",
+          "sample_rate": 32000,
+          "native_shape": [
+            165600,
+            2
+          ],
+          "temporal_trim": "first 161333 samples for 121-frame Stage2",
+          "processing": "transpose TC to BCT; clamp [-1,1], original native PCM unchanged"
+        },
+        "native_video_shape": null,
+        "latent_only_transfer": true,
+        "video_decode_calls": 0,
+        "h3_decoder_calls": 0,
+        "capture_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_continuation/stage1/capture.json",
+        "capture_sha256": "71e332b7d99db13e855fcec8e3fa4795fecd094ec213b32d5425116d32514675"
+      },
+      "duration_s": 5,
+      "emit_frames": 121,
+      "result": {
+        "status": "succeeded",
+        "index": 0,
+        "source_index": 0,
+        "prompt_id": "identity_ref_continuation",
+        "seed": 2026100302,
+        "prompt_stats": {
+          "characters": 1212,
+          "whitespace_words": 193,
+          "raw_tokens_including_bos": 249,
+          "kept_tokens": 249,
+          "max_tokens": 1024,
+          "truncated": false,
+          "source": "offline_fixed_prompt_cache"
+        },
+        "source_video": "/dev/null",
+        "highres_first_frame": null,
+        "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_continuation/refined_1344x768_121f.mp4",
+        "input_info": {
+          "wire_metadata": {
+            "input_variant": "h3_adapter",
+            "primary_kind": "h3_normalized_latent",
+            "normalization": "released_h3_per_channel_mean_std",
+            "generation_frames": 124,
+            "adapter_pixel_frames": 124,
+            "padded_canvas_frames": 129,
+            "emitted_frames": 121,
+            "pixel_height": 384,
+            "pixel_width": 672,
+            "fps": 24.0,
+            "audio_sample_rate": 32000,
+            "duration_s": 5
+          },
+          "transport": "same_request_H3_and_PCM",
+          "preprocess": "normalized_h3_x2_then_adapter_crop_t16",
+          "latent_upsampler": false
+        },
+        "output_info": {
+          "width": 1344,
+          "height": 768,
+          "frames": 121,
+          "fps": 24.0,
+          "duration_s": 5.041666666666667,
+          "bytes": 3029486
+        },
+        "attention": {
+          "backend": "sol",
+          "architecture": "sm121-triton",
+          "stage2_taus": [
+            1.0,
+            1.25,
+            1.5
+          ],
+          "thresh_type": "diag",
+          "kv_splits": "auto",
+          "dense_layers": [
+            0
+          ],
+          "sol_layers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ],
+          "cross_attention": "dense",
+          "compile_boundary": "none",
+          "completed_steps": 3,
+          "dense_calls": 3,
+          "dense_calls_source": "inferred_from_layer1_entry_after_dense_layer0",
+          "sol_calls": 141,
+          "kernel": {
+            "dispatch_calls": 0,
+            "kernel_calls": 141,
+            "hunyuan_calls": 0,
+            "dense_guard_calls": 0
+          },
+          "selected_backend": "triton"
+        },
+        "official_vae_tiling": {
+          "source": "original_Conv128_448x768",
+          "config": {
+            "frames": {
+              "tile_size": 128,
+              "overlap": 24
+            },
+            "height": {
+              "tile_size": 448,
+              "overlap": 64
+            },
+            "width": {
+              "tile_size": 768,
+              "overlap": 64
+            }
+          },
+          "progress_expected_chunks": 2,
+          "last_stream": {
+            "actual_chunks": 1,
+            "progress_expected_chunks": 2,
+            "frames": 121
+          }
+        },
+        "phases_s": {
+          "input_decode_resize_s": 0.000116,
+          "learned_latent_upsample_s": 0.0,
+          "highres_first_frame_condition_s": 4e-06,
+          "audio_vae_encode_s": 0.007074,
+          "multimodal_state_prepare_s": 0.000781,
+          "joint_video_audio_stage2_s": 30.685432,
+          "official_video_vae_decode_s": 6.947107,
+          "decode_stream_and_h264_mux_s": 7.759652,
+          "h264_encode_mux_s": 0.812544,
+          "output_verify_s": 0.007249,
+          "per_request_gc_allocator_cleanup_s": 8e-06,
+          "fixed_prompt_context_copy_s": 0.000376,
+          "h3_upscale_and_adapter_s": 2.055038,
+          "h3_latent_upscale_s": 1.8339519510045648,
+          "h3_ltx_adapter_s": 0.22057850006967783
+        },
+        "wall_s": 40.516124,
+        "spatial_route": {
+          "name": "h3_upscale_before_adapter",
+          "scale": 2.0,
+          "source": "/home/admin/sol-spark-runtime/sources/h3-upscaler/nodes/minimax_h3_latent_upscaler_3d.py",
+          "source_commit": "d7c01b9011f2e8439493f6c02c29995a27df276f",
+          "source_sha256": "744063b43e0f3eec23e2485cb7c65503069946ca9690906ecb548d7515cb89e2",
+          "checkpoint": "/home/admin/sol-spark-runtime/checkpoints/H3-upscaler/minimax_h3_latent_upscaler_3d_bf16.safetensors",
+          "checkpoint_revision": "13ccf95d85d120bdbc92c05b1247a6e147bf54bf",
+          "checkpoint_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+          "checkpoint_bytes": 690592992,
+          "model_config": {
+            "in_channels": 24,
+            "in_blocks": 12,
+            "out_blocks": 12,
+            "channels": 512,
+            "dropout": 0.1,
+            "attn": false,
+            "temporal_every": 2,
+            "temporal_kernel": 5
+          },
+          "compute_dtype": "torch.bfloat16",
+          "actual_parameter_dtypes": {
+            "torch.bfloat16": 322
+          },
+          "load_s_excluded": 0.8405478172935545,
+          "input_normalization": "released_h3_per_channel_mean_std",
+          "output_normalization": "released_h3_per_channel_mean_std",
+          "raw_normalization_roundtrip": true,
+          "normalization_boundary": "Comfy_H3_VAEEncode_samples_already_normalized",
+          "author_node_transform": "D(model(N(h3_normalized)))",
+          "normalization_roundtrip_meaning": "author_node_N_and_D; incoming_and_outgoing_LATENT_are_normalized_H3",
+          "enable_chunking": true,
+          "temporal_chunk_size": 32,
+          "temporal_overlap": 5,
+          "h3_input_shape": [
+            1,
+            24,
+            37,
+            24,
+            42
+          ],
+          "h3_upscaled_shape": [
+            1,
+            24,
+            37,
+            48,
+            84
+          ],
+          "adapter_native_output_shape": [
+            1,
+            128,
+            17,
+            24,
+            42
+          ],
+          "refiner_input_shape": [
+            1,
+            128,
+            16,
+            24,
+            42
+          ],
+          "ltx_learned_x2_enabled": false,
+          "ltx_learned_x2_loaded": false,
+          "actual_calls": {
+            "h3_upscaler": 1,
+            "adapter": 1,
+            "ltx_learned_x2": 0,
+            "input_video_vae": 0
+          }
+        }
+      },
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_continuation/refined_1344x768_121f.mp4",
+      "output_sha256": "7990a308e87369ee8a2e81deb9d46740c569b8f6f07204cf5aa556476f84dda7",
+      "output_bytes": 3029486,
+      "final_mp4_complete_monotonic_ns": 2536107479458839,
+      "stage2_request_s": 40.515841823,
+      "stage2_prepare_to_mp4_s": 40.51598624,
+      "stage2_gemma_loaded": false,
+      "stage2_connector_loaded": false,
+      "fixed_prompt_cache": {
+        "prompt": "A single continuous five-second medium-wide shot in a 1970s Shaw Brothers studio sword film. Two Greek warriors duel in a sandy torch-lit Troy courtyard. The bearded warrior on the left has short dark hair, an engraved bronze cuirass, a red cloak and brown sandals; his right hand holds one straight silver sword and his left hand is empty. The clean-shaven warrior on the right has curly black hair, an engraved bronze cuirass, a blue cloak and brown sandals; his right hand holds one straight silver sword and his left hand holds a round bronze shield. The red warrior advances and delivers a diagonal strike. The blue warrior parries while continuously holding his shield. They take a half step back and circle with readable controlled choreography. Both faces, hair, engraved bronze armor, red and blue cloaks and weapons remain the same throughout. A large stationary wooden Trojan horse assembled from timber planks stands behind them. Warm amber braziers, deep blue night, saturated 35mm film colors, theatrical studio lighting, gentle rightward camera tracking. Exactly two warriors, two swords and one round shield. Wind, crackling flames, sandal scuffs and metallic blade clashes, no dialogue or music.",
+        "fingerprint": "25a3093b3a303e6e842fc31f7ddcba5a648ab25ff2b88be3da9c6b3500a3ec0b",
+        "source_path": "/home/admin/sol-spark-runtime/identity_tests_20261003/prompt_caches/specific_refiner.pt",
+        "recipe": {
+          "boundary": "post_INT8_connector_video_and_audio_encoding",
+          "text_encoder": "gemma4-12b-with-proj-ltx-2.5-comfy-int8-convrot.safetensors",
+          "text_encoder_bytes": 15372969374,
+          "connector": "ltx-2.5-22b-dev-transformer-comfy-int8-convrot.safetensors",
+          "connector_bytes": 21504034224,
+          "gemma_int8_linears": 328,
+          "connector_int8_linears": 96,
+          "weight_scale_dtype": "torch.float32",
+          "context_dtype": "torch.bfloat16",
+          "joint_audio_video": true,
+          "mask_boundary": "consumed_inside_process_hidden_states_not_denoiser_input"
+        },
+        "tensor_manifest": {
+          "video": {
+            "shape": [
+              1,
+              1024,
+              4096
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          "audio": {
+            "shape": [
+              1,
+              1024,
+              2048
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        },
+        "stage2_gemma_loaded": false,
+        "stage2_connector_loaded": false,
+        "gemma_encode_calls": 0,
+        "connector_process_calls": 0,
+        "context_copy_calls": 2
+      },
+      "writer_chunking": {
+        "chunk_frames": 16,
+        "source_chunks": 1,
+        "emitted_chunks": 8,
+        "frames": 121,
+        "source_layouts": [
+          {
+            "shape": [
+              121,
+              768,
+              1344,
+              3
+            ],
+            "dtype": "torch.bfloat16",
+            "stride": [
+              1032192,
+              1344,
+              1,
+              124895232
+            ]
+          }
+        ],
+        "complete": true,
+        "expected_frames": 121
+      },
+      "conv_output_layout_request_calls": 16,
+      "delivered_output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_continuation/delivered.mp4",
+      "delivered_frames": 102,
+      "trim_frames": 19,
+      "media": {
+        "status": "PASS",
+        "frames": 102,
+        "duration_s": 4.25,
+        "width": 1344,
+        "height": 768,
+        "sample_rate": 32000,
+        "full_decode": true
+      }
+    },
+    {
+      "status": "PASS",
+      "request_id": "identity_ref_new_angle",
+      "stage2_started_monotonic_ns": 2536108550241554,
+      "request_index": 2,
+      "preparation": {
+        "status": "READY",
+        "request_id": "identity_ref_new_angle",
+        "output_root": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_new_angle",
+        "stage2_prepare_started_monotonic_ns": 2536108550095857,
+        "conditioning_ready_monotonic_ns": 2536108550183106,
+        "stage2_prepare_s": 8.7249e-05,
+        "stage2_gemma_loaded": false,
+        "stage2_connector_loaded": false
+      },
+      "timing_boundary": "run_entry_after_prepare_to_atomic_final_muxed_MP4",
+      "case_id": "identity_ref_new_angle",
+      "capture": {
+        "case_id": "identity_ref_new_angle",
+        "prompt": "subject_definitions:\n<Subject 1> is the bearded Greek warrior in <Picture 1>, with short dark hair, engraved bronze cuirass, red cloak and brown sandals.\n<Subject 2> is the clean-shaven Greek warrior in <Picture 2>, with curly black hair, engraved bronze cuirass, blue cloak and brown sandals.\n<Subject 3> is the equipment in <Picture 3>: two straight silver swords, and one round bronze shield belonging only to <Subject 2>. Both men carry a sword in their right hand; the red warrior's left hand remains empty and the blue warrior's left hand carries the shield.\n<Subject 4> is the Troy courtyard in <Picture 4>, with a large stationary wooden horse sculpture assembled from timber planks, stone walls, sand and burning braziers.\n<Picture 5> is the shot composition reference with red warrior left, blue warrior right and the wooden horse behind them.\nsummary: [reference generation] Two consistent Greek warriors perform a controlled stage duel in the Troy courtyard, filmed like a 1970s Shaw Brothers studio action movie.\nretention_analysis:\n<Subject 1>: fully_preserved - preserve face, beard, hair, armor and red cloak.\n<Subject 2>: fully_preserved - preserve face, hair, armor and blue cloak.\n<Subject 3>: fully_preserved - exactly two swords and one shield, with unchanged ownership throughout.\n<Subject 4>: fully_preserved - preserve the wooden construction, courtyard and torch lighting.\n<Picture 5>: partially_preserved - preserve blocking and lighting while changing camera framing only as specified.\ndetailed_description: The target video uses warm torchlight, a theatrical studio set, saturated red and blue cloaks, 35mm grain and clear Shaw Brothers sword choreography.\n[Shot 1] A new independent low-angle medium-wide shot. The same red warrior stands on the left and the same blue warrior stands on the right. Hold this closer camera framing, making their faces and engraved armor readable. The blue warrior raises his left-hand round bronze shield to block the red warrior right-hand sword strike, then counters with his own right-hand sword. The red warrior steps back and parries. Preserve both faces, beards, hair, red and blue cloaks, the two silver swords and the single blue-warrior shield. The wooden timber horse remains behind them. overall_soundscape: Quiet night wind, crackling braziers, sandal scuffs and metallic sword clashes. No dialogue. non_diegetic_music: None.",
+        "seed": 2026100303,
+        "source_index": 0,
+        "request_id": "identity_ref_new_angle",
+        "status": "PASS",
+        "same_request": true,
+        "external_anchor_used": false,
+        "duration_s": 5,
+        "stage1_frames": 124,
+        "emit_frames": 121,
+        "task": "ref2va",
+        "input_conditioned": true,
+        "input_spec": {
+          "task": "ref2va",
+          "first_frame": null,
+          "last_frame": null,
+          "references": [
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/red_identity.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/blue_identity.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/equipment.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/setting.png"
+            },
+            {
+              "type": "image",
+              "path": "/home/admin/sol-spark-runtime/identity_tests_20261003/assets/board.png"
+            }
+          ]
+        },
+        "capture_rank": 0,
+        "condition_video_rows_excluded": 1272,
+        "condition_audio_rows_excluded": 0,
+        "payload_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_new_angle/stage1/stage1_direct_tensors.pt",
+        "payload_sha256": "16913ac406a283fd92b881262d65952f8ab5838722772f49a78ac30775d4b5c1",
+        "continuation_state_sha256": "7fa6b08bcf85c492f827a745d78f70d82db1fc698d44d59000343e7604c2c7fb",
+        "continuation": {},
+        "generated_first_frame_path": null,
+        "generated_first_frame_sha256": null,
+        "native_normalized_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_new_angle/stage1/h3_normalized_native.pt",
+        "native_normalized_sha256": "8483edd475e6f7d0a5df7fcda79f9ee984d00992e773fa7dc85cb1bcd9dad441",
+        "h3_normalized": {
+          "shape": [
+            1,
+            24,
+            37,
+            24,
+            42
+          ],
+          "dtype": "torch.bfloat16",
+          "source_dtype": "torch.float32",
+          "bf16_cast_max_abs_error": 0.015621185302734375,
+          "normalization": "released_h3_per_channel_mean_std",
+          "source": "original packed final latent unpatchified before VAE denormalize"
+        },
+        "audio": {
+          "shape": [
+            1,
+            2,
+            161333
+          ],
+          "dtype": "torch.float32",
+          "sample_rate": 32000,
+          "native_shape": [
+            165600,
+            2
+          ],
+          "temporal_trim": "first 161333 samples for 121-frame Stage2",
+          "processing": "transpose TC to BCT; clamp [-1,1], original native PCM unchanged"
+        },
+        "native_video_shape": null,
+        "latent_only_transfer": true,
+        "video_decode_calls": 0,
+        "h3_decoder_calls": 0,
+        "capture_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_new_angle/stage1/capture.json",
+        "capture_sha256": "3675654ce9666328ee5b06c07174effabcc46963c86784c989a12b281189df1a"
+      },
+      "duration_s": 5,
+      "emit_frames": 121,
+      "result": {
+        "status": "succeeded",
+        "index": 0,
+        "source_index": 0,
+        "prompt_id": "identity_ref_new_angle",
+        "seed": 2026100303,
+        "prompt_stats": {
+          "characters": 1212,
+          "whitespace_words": 193,
+          "raw_tokens_including_bos": 249,
+          "kept_tokens": 249,
+          "max_tokens": 1024,
+          "truncated": false,
+          "source": "offline_fixed_prompt_cache"
+        },
+        "source_video": "/dev/null",
+        "highres_first_frame": null,
+        "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_new_angle/refined_1344x768_121f.mp4",
+        "input_info": {
+          "wire_metadata": {
+            "input_variant": "h3_adapter",
+            "primary_kind": "h3_normalized_latent",
+            "normalization": "released_h3_per_channel_mean_std",
+            "generation_frames": 124,
+            "adapter_pixel_frames": 124,
+            "padded_canvas_frames": 129,
+            "emitted_frames": 121,
+            "pixel_height": 384,
+            "pixel_width": 672,
+            "fps": 24.0,
+            "audio_sample_rate": 32000,
+            "duration_s": 5
+          },
+          "transport": "same_request_H3_and_PCM",
+          "preprocess": "normalized_h3_x2_then_adapter_crop_t16",
+          "latent_upsampler": false
+        },
+        "output_info": {
+          "width": 1344,
+          "height": 768,
+          "frames": 121,
+          "fps": 24.0,
+          "duration_s": 5.041666666666667,
+          "bytes": 2933637
+        },
+        "attention": {
+          "backend": "sol",
+          "architecture": "sm121-triton",
+          "stage2_taus": [
+            1.0,
+            1.25,
+            1.5
+          ],
+          "thresh_type": "diag",
+          "kv_splits": "auto",
+          "dense_layers": [
+            0
+          ],
+          "sol_layers": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47
+          ],
+          "cross_attention": "dense",
+          "compile_boundary": "none",
+          "completed_steps": 3,
+          "dense_calls": 3,
+          "dense_calls_source": "inferred_from_layer1_entry_after_dense_layer0",
+          "sol_calls": 141,
+          "kernel": {
+            "dispatch_calls": 0,
+            "kernel_calls": 141,
+            "hunyuan_calls": 0,
+            "dense_guard_calls": 0
+          },
+          "selected_backend": "triton"
+        },
+        "official_vae_tiling": {
+          "source": "original_Conv128_448x768",
+          "config": {
+            "frames": {
+              "tile_size": 128,
+              "overlap": 24
+            },
+            "height": {
+              "tile_size": 448,
+              "overlap": 64
+            },
+            "width": {
+              "tile_size": 768,
+              "overlap": 64
+            }
+          },
+          "progress_expected_chunks": 2,
+          "last_stream": {
+            "actual_chunks": 1,
+            "progress_expected_chunks": 2,
+            "frames": 121
+          }
+        },
+        "phases_s": {
+          "input_decode_resize_s": 0.000112,
+          "learned_latent_upsample_s": 0.0,
+          "highres_first_frame_condition_s": 4e-06,
+          "audio_vae_encode_s": 0.006962,
+          "multimodal_state_prepare_s": 0.000746,
+          "joint_video_audio_stage2_s": 30.636027,
+          "official_video_vae_decode_s": 6.977927,
+          "decode_stream_and_h264_mux_s": 7.776294,
+          "h264_encode_mux_s": 0.798367,
+          "output_verify_s": 0.00945,
+          "per_request_gc_allocator_cleanup_s": 6e-06,
+          "fixed_prompt_context_copy_s": 0.000329,
+          "h3_upscale_and_adapter_s": 2.057685,
+          "h3_latent_upscale_s": 1.8346906178630888,
+          "h3_ltx_adapter_s": 0.2225118651986122
+        },
+        "wall_s": 40.487971,
+        "spatial_route": {
+          "name": "h3_upscale_before_adapter",
+          "scale": 2.0,
+          "source": "/home/admin/sol-spark-runtime/sources/h3-upscaler/nodes/minimax_h3_latent_upscaler_3d.py",
+          "source_commit": "d7c01b9011f2e8439493f6c02c29995a27df276f",
+          "source_sha256": "744063b43e0f3eec23e2485cb7c65503069946ca9690906ecb548d7515cb89e2",
+          "checkpoint": "/home/admin/sol-spark-runtime/checkpoints/H3-upscaler/minimax_h3_latent_upscaler_3d_bf16.safetensors",
+          "checkpoint_revision": "13ccf95d85d120bdbc92c05b1247a6e147bf54bf",
+          "checkpoint_sha256": "4f57821f5837f32f7142b67d815606dbd7550f194e5c769f7d6c3f83b146a5e6",
+          "checkpoint_bytes": 690592992,
+          "model_config": {
+            "in_channels": 24,
+            "in_blocks": 12,
+            "out_blocks": 12,
+            "channels": 512,
+            "dropout": 0.1,
+            "attn": false,
+            "temporal_every": 2,
+            "temporal_kernel": 5
+          },
+          "compute_dtype": "torch.bfloat16",
+          "actual_parameter_dtypes": {
+            "torch.bfloat16": 322
+          },
+          "load_s_excluded": 0.8405478172935545,
+          "input_normalization": "released_h3_per_channel_mean_std",
+          "output_normalization": "released_h3_per_channel_mean_std",
+          "raw_normalization_roundtrip": true,
+          "normalization_boundary": "Comfy_H3_VAEEncode_samples_already_normalized",
+          "author_node_transform": "D(model(N(h3_normalized)))",
+          "normalization_roundtrip_meaning": "author_node_N_and_D; incoming_and_outgoing_LATENT_are_normalized_H3",
+          "enable_chunking": true,
+          "temporal_chunk_size": 32,
+          "temporal_overlap": 5,
+          "h3_input_shape": [
+            1,
+            24,
+            37,
+            24,
+            42
+          ],
+          "h3_upscaled_shape": [
+            1,
+            24,
+            37,
+            48,
+            84
+          ],
+          "adapter_native_output_shape": [
+            1,
+            128,
+            17,
+            24,
+            42
+          ],
+          "refiner_input_shape": [
+            1,
+            128,
+            16,
+            24,
+            42
+          ],
+          "ltx_learned_x2_enabled": false,
+          "ltx_learned_x2_loaded": false,
+          "actual_calls": {
+            "h3_upscaler": 1,
+            "adapter": 1,
+            "ltx_learned_x2": 0,
+            "input_video_vae": 0
+          }
+        }
+      },
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_new_angle/refined_1344x768_121f.mp4",
+      "output_sha256": "9c4f64e6c95a56b049aaab1f7ad990bbd8affa93879059d4591e7b92208e7f3e",
+      "output_bytes": 2933637,
+      "final_mp4_complete_monotonic_ns": 2536149034450181,
+      "stage2_request_s": 40.484208627,
+      "stage2_prepare_to_mp4_s": 40.484354324,
+      "stage2_gemma_loaded": false,
+      "stage2_connector_loaded": false,
+      "fixed_prompt_cache": {
+        "prompt": "A single continuous five-second medium-wide shot in a 1970s Shaw Brothers studio sword film. Two Greek warriors duel in a sandy torch-lit Troy courtyard. The bearded warrior on the left has short dark hair, an engraved bronze cuirass, a red cloak and brown sandals; his right hand holds one straight silver sword and his left hand is empty. The clean-shaven warrior on the right has curly black hair, an engraved bronze cuirass, a blue cloak and brown sandals; his right hand holds one straight silver sword and his left hand holds a round bronze shield. The red warrior advances and delivers a diagonal strike. The blue warrior parries while continuously holding his shield. They take a half step back and circle with readable controlled choreography. Both faces, hair, engraved bronze armor, red and blue cloaks and weapons remain the same throughout. A large stationary wooden Trojan horse assembled from timber planks stands behind them. Warm amber braziers, deep blue night, saturated 35mm film colors, theatrical studio lighting, gentle rightward camera tracking. Exactly two warriors, two swords and one round shield. Wind, crackling flames, sandal scuffs and metallic blade clashes, no dialogue or music.",
+        "fingerprint": "25a3093b3a303e6e842fc31f7ddcba5a648ab25ff2b88be3da9c6b3500a3ec0b",
+        "source_path": "/home/admin/sol-spark-runtime/identity_tests_20261003/prompt_caches/specific_refiner.pt",
+        "recipe": {
+          "boundary": "post_INT8_connector_video_and_audio_encoding",
+          "text_encoder": "gemma4-12b-with-proj-ltx-2.5-comfy-int8-convrot.safetensors",
+          "text_encoder_bytes": 15372969374,
+          "connector": "ltx-2.5-22b-dev-transformer-comfy-int8-convrot.safetensors",
+          "connector_bytes": 21504034224,
+          "gemma_int8_linears": 328,
+          "connector_int8_linears": 96,
+          "weight_scale_dtype": "torch.float32",
+          "context_dtype": "torch.bfloat16",
+          "joint_audio_video": true,
+          "mask_boundary": "consumed_inside_process_hidden_states_not_denoiser_input"
+        },
+        "tensor_manifest": {
+          "video": {
+            "shape": [
+              1,
+              1024,
+              4096
+            ],
+            "dtype": "torch.bfloat16"
+          },
+          "audio": {
+            "shape": [
+              1,
+              1024,
+              2048
+            ],
+            "dtype": "torch.bfloat16"
+          }
+        },
+        "stage2_gemma_loaded": false,
+        "stage2_connector_loaded": false,
+        "gemma_encode_calls": 0,
+        "connector_process_calls": 0,
+        "context_copy_calls": 3
+      },
+      "writer_chunking": {
+        "chunk_frames": 16,
+        "source_chunks": 1,
+        "emitted_chunks": 8,
+        "frames": 121,
+        "source_layouts": [
+          {
+            "shape": [
+              121,
+              768,
+              1344,
+              3
+            ],
+            "dtype": "torch.bfloat16",
+            "stride": [
+              1032192,
+              1344,
+              1,
+              124895232
+            ]
+          }
+        ],
+        "complete": true,
+        "expected_frames": 121
+      },
+      "conv_output_layout_request_calls": 16,
+      "delivered_output": "/home/admin/sol-spark-runtime/identity_tests_20261003/optimized_workflows/identity_ref_new_angle/refined_1344x768_121f.mp4",
+      "delivered_frames": 121,
+      "trim_frames": 0,
+      "media": {
+        "status": "PASS",
+        "frames": 121,
+        "duration_s": 5.041667,
+        "width": 1344,
+        "height": 768,
+        "sample_rate": 32000,
+        "full_decode": true
+      }
+    }
+  ]
+}

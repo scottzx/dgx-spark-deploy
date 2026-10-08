@@ -1,0 +1,191 @@
+{
+  "status": "PASS",
+  "url": "http://127.0.0.1:59137/video_msr_v2/review.html",
+  "cases": 4,
+  "cards": 24,
+  "sync_groups": 8,
+  "media": [
+    {
+      "src": "action_excerpt.mp4",
+      "duration": 8,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "comparison_40s.mp4",
+      "duration": 40,
+      "width": 1728,
+      "height": 372
+    },
+    {
+      "src": "selected_diagnostic.mp4",
+      "duration": 20,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S10_msr_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S10_msr_first_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S10_msr_first_last_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S10_msr_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S10_msr_first_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S10_msr_first_last_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S15_msr_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S15_msr_first_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S15_msr_first_last_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S15_msr_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S15_msr_first_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S15_msr_first_last_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S16_msr_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S16_msr_first_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S16_msr_first_last_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S16_msr_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S16_msr_first_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S16_msr_first_last_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S20_msr_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S20_msr_first_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S20_msr_first_last_2026100601/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S20_msr_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S20_msr_first_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    },
+    {
+      "src": "clips/S20_msr_first_last_2026100602/delivered.mp4",
+      "duration": 5,
+      "width": 768,
+      "height": 432
+    }
+  ],
+  "synced": [
+    {
+      "time": 0.383571,
+      "muted": true,
+      "paused": false
+    },
+    {
+      "time": 0.383592,
+      "muted": true,
+      "paused": false
+    },
+    {
+      "time": 0.38359,
+      "muted": true,
+      "paused": false
+    }
+  ],
+  "excerpt_played_to_s": 1.005275,
+  "browser_errors": [],
+  "screenshot": "preview_final.png"
+}

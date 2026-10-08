@@ -1,0 +1,411 @@
+{
+  "manifest_fingerprint": "48f2b7b853489f654863c0d57b958ec04216e4494c090beb44ba74354520b714",
+  "reviewer": "assistant visual assessment from inspected sample frames; no independent human sign-off",
+  "review_scope": "21 timestamp samples per clip; featured candidate additionally inspected at12fps over the entire5s. Not full-frame or audio certification.",
+  "audio_reviewed": false,
+  "summary": "H3＋连续攻防描述在三个种子都增加了攻防阶段，优于原描述的长时间架兵器；LTX改写后部分镜头更早活动，但六段均有兵器一致性问题。H3盾挡仍有停顿、受力和第二次闪避不足，完整成片验收尚未通过。",
+  "score_note": "Five human ordinal0–2 criteria; descriptive within this small batch, not a standardized model benchmark. Approximate times are sampled visual observations.",
+  "clips": [
+    {
+      "id": "combat_ab_h3_old_2026100601",
+      "model": "h3",
+      "variant": "old",
+      "seed": 2026100601,
+      "input_fingerprint": "fa8cebe695a7e9895e02e22090a95f4413893a1cbf2732c6d7b056e4d9ab1ee2",
+      "output_sha256": "ac2cfb063b3f84f71fa8dace8c5a3a3ba7447af225d70954a0ad9f71e2532795",
+      "quality_status": "partial_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 1,
+        "separation": 0,
+        "reaction": 0,
+        "footwork": 1,
+        "weapon_integrity": 2
+      },
+      "score_total": 4,
+      "first_attack_onset_s_approx": 1.5,
+      "longest_contact_hold_s_approx": 2.25,
+      "notes": "约1.5秒才刺矛；格挡后长时间架住兵器，约1.75–4秒动作变化很小，结尾仅再次移步。装备和前景人物较稳，背景交锋弱。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "precise impact reaction",
+        "fully continuous attack/defense"
+      ],
+      "new_prompt_sequence_adherence": "not_applicable"
+    },
+    {
+      "id": "combat_ab_h3_new_2026100601",
+      "model": "h3",
+      "variant": "new",
+      "seed": 2026100601,
+      "input_fingerprint": "ccefc924bd5d05fa72270b353124a04b383e46c66613bfa57fe240e1ace5d0e1",
+      "output_sha256": "eb13f38563d9aa9c60f7b330d9eba5609186588d8908bda31701aa66775ec239",
+      "quality_status": "partial_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 2,
+        "separation": 2,
+        "reaction": 1,
+        "footwork": 2,
+        "weapon_integrity": 2
+      },
+      "score_total": 9,
+      "first_attack_onset_s_approx": 0.5,
+      "longest_contact_hold_s_approx": 1.0,
+      "notes": "约0.5秒刺矛，随后拨开、追进斜劈、举盾抵挡、收剑并再次刺矛；三个阶段可读，兵器身份较稳。约2.2–3秒仍有持盾僵持，第二次刺矛的闪避/拨开不充分，受力反应偏弱。",
+      "sample_count": 21,
+      "dense_review_fps": 12,
+      "unmet": [
+        "precise impact reaction",
+        "fully continuous attack/defense"
+      ],
+      "new_prompt_sequence_adherence": "partial"
+    },
+    {
+      "id": "combat_ab_h3_new_2026100602",
+      "model": "h3",
+      "variant": "new",
+      "seed": 2026100602,
+      "input_fingerprint": "51f2b3d5cecdd9392346a38d91aa0d72f33756480a106e874a2855b70d9e11ac",
+      "output_sha256": "092a02c20f72d6a140f343f5078dc42e3c06a1cd3f358bcd33feef669e2bf0f9",
+      "quality_status": "partial_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 2,
+        "separation": 2,
+        "reaction": 1,
+        "footwork": 2,
+        "weapon_integrity": 2
+      },
+      "score_total": 9,
+      "first_attack_onset_s_approx": 0.75,
+      "longest_contact_hold_s_approx": 1.0,
+      "notes": "约0.75秒刺矛，接着追进斜劈和盾挡，后撤分离后再次刺矛；比同种子原版动作链完整。盾挡约2.25–3.25秒仍有停顿，最后的再次招架不清楚。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "precise impact reaction",
+        "fully continuous attack/defense"
+      ],
+      "new_prompt_sequence_adherence": "partial"
+    },
+    {
+      "id": "combat_ab_h3_old_2026100602",
+      "model": "h3",
+      "variant": "old",
+      "seed": 2026100602,
+      "input_fingerprint": "a5124cf8cba2caf815580302042ad360a4fa747566e7d7463670903fe526ca32",
+      "output_sha256": "1cdbfe70787109548a427a35244e8e537fbb4f78257ca9cad05808e1fe9b4d85",
+      "quality_status": "partial_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 1,
+        "separation": 1,
+        "reaction": 1,
+        "footwork": 1,
+        "weapon_integrity": 2
+      },
+      "score_total": 6,
+      "first_attack_onset_s_approx": 1.5,
+      "longest_contact_hold_s_approx": 1.5,
+      "notes": "约1.5秒首次交锋；随后架住剑矛，约3.5秒才有第二次挥剑与后退。没有形成清楚的盾挡反击链；人物和装备较稳。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "precise impact reaction",
+        "fully continuous attack/defense"
+      ],
+      "new_prompt_sequence_adherence": "not_applicable"
+    },
+    {
+      "id": "combat_ab_h3_old_2026100603",
+      "model": "h3",
+      "variant": "old",
+      "seed": 2026100603,
+      "input_fingerprint": "437bc1f3d13e1652f49b85b356d6b0b0d81a7ba6a9f3f91f4182a20e819b3031",
+      "output_sha256": "e1d93cd8b7360621775f4ad7259e7707163e1d015216ed78b07420eb37898e52",
+      "quality_status": "partial_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 1,
+        "separation": 1,
+        "reaction": 0,
+        "footwork": 1,
+        "weapon_integrity": 2
+      },
+      "score_total": 5,
+      "first_attack_onset_s_approx": 1.25,
+      "longest_contact_hold_s_approx": 1.5,
+      "notes": "约1.25秒刺矛，稍后奥德修斯追进举剑；后半段多次停在交叉兵器姿态，接触和受力关系弱。装备较稳。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "precise impact reaction",
+        "fully continuous attack/defense"
+      ],
+      "new_prompt_sequence_adherence": "not_applicable"
+    },
+    {
+      "id": "combat_ab_h3_new_2026100603",
+      "model": "h3",
+      "variant": "new",
+      "seed": 2026100603,
+      "input_fingerprint": "afbdd4e9bda5e4ee20608ef369f08638026715d72e0aa668ceffdf65b0b5a1b3",
+      "output_sha256": "b65211bfe146a44f3c36bc30813d2d0fef8cc10a5264abfd2e9ec0259b37075f",
+      "quality_status": "partial_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 2,
+        "separation": 2,
+        "reaction": 1,
+        "footwork": 2,
+        "weapon_integrity": 2
+      },
+      "score_total": 9,
+      "first_attack_onset_s_approx": 0.75,
+      "longest_contact_hold_s_approx": 1.25,
+      "notes": "约0.5–0.75秒开始刺矛，之后追进斜劈、盾挡、分离和再刺；比原版更早行动且往返更清楚。盾挡约2.25–3.5秒僵持，明显受力和第二次闪避仍不足。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "precise impact reaction",
+        "fully continuous attack/defense"
+      ],
+      "new_prompt_sequence_adherence": "partial"
+    },
+    {
+      "id": "combat_ab_ltx_old_2026100601",
+      "model": "ltx",
+      "variant": "old",
+      "seed": 2026100601,
+      "input_fingerprint": "3004b99cf06343e8c50cdb3dbb39da95abfdd055d12b45eb0ff601447503ee55",
+      "output_sha256": "c13242af304d0a4996a1c30fa402a46a0e1d249cb2f02d6a9fb656e09ad6cdcf",
+      "quality_status": "fail_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 1,
+        "separation": 1,
+        "reaction": 0,
+        "footwork": 1,
+        "weapon_integrity": 0
+      },
+      "score_total": 3,
+      "first_attack_onset_s_approx": 2.25,
+      "longest_contact_hold_s_approx": null,
+      "notes": "约前2秒保持起势；之后守卫冲步、双方挥击。矛逐渐变成短刀/剑，握持和近身接触不稳定，缺少清楚的格挡受力。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "weapon identity/hands",
+        "precise impact reaction",
+        "specified spear/sword choreography"
+      ],
+      "new_prompt_sequence_adherence": "not_applicable"
+    },
+    {
+      "id": "combat_ab_ltx_new_2026100601",
+      "model": "ltx",
+      "variant": "new",
+      "seed": 2026100601,
+      "input_fingerprint": "6f58c691e70198d1c51dd8dbb4b30d577dbb78cc4eb34d1a5f61a9ed32ae818e",
+      "output_sha256": "3b91410eebb7f6911b4c8d4c17eae77f891076eaf36ed0b6152974312b4aa97b",
+      "quality_status": "fail_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 1,
+        "separation": 1,
+        "reaction": 0,
+        "footwork": 2,
+        "weapon_integrity": 0
+      },
+      "score_total": 4,
+      "first_attack_onset_s_approx": 1.0,
+      "longest_contact_hold_s_approx": null,
+      "notes": "约1秒开始大幅近身交战，明显早于同种子原版；双方绕转和连续挥击较多，但身体/装备互相遮混，矛变短刀、武器短暂消失或换手，动作逻辑不可靠。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "weapon identity/hands",
+        "precise impact reaction",
+        "specified spear/sword choreography"
+      ],
+      "new_prompt_sequence_adherence": "partial"
+    },
+    {
+      "id": "combat_ab_ltx_new_2026100602",
+      "model": "ltx",
+      "variant": "new",
+      "seed": 2026100602,
+      "input_fingerprint": "90feb051c9a525e227708b79522516b4963947382dca1fb021cc71d63060251f",
+      "output_sha256": "135728b3fe18a64b6d5c27abc9d4e8ae9aa98dff7d62b995000d069ae859db2f",
+      "quality_status": "fail_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 1,
+        "separation": 1,
+        "reaction": 0,
+        "footwork": 2,
+        "weapon_integrity": 0
+      },
+      "score_total": 4,
+      "first_attack_onset_s_approx": 1.0,
+      "longest_contact_hold_s_approx": null,
+      "notes": "约1秒开始动作，与同种子原版接近；连续挥击、侧移和闪避较多，但矛变刀、盾牌变形/换位，身体反应与攻击不连贯。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "weapon identity/hands",
+        "precise impact reaction",
+        "specified spear/sword choreography"
+      ],
+      "new_prompt_sequence_adherence": "partial"
+    },
+    {
+      "id": "combat_ab_ltx_old_2026100602",
+      "model": "ltx",
+      "variant": "old",
+      "seed": 2026100602,
+      "input_fingerprint": "823b6a020e481a262fd6bf83fc40466945884b752fa317196a55b502aeabc7c0",
+      "output_sha256": "ccd9954d1634e3f99e24759724e75a621891e9c190da19594d1450a456d2e65a",
+      "quality_status": "fail_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 1,
+        "separation": 1,
+        "reaction": 0,
+        "footwork": 2,
+        "weapon_integrity": 0
+      },
+      "score_total": 4,
+      "first_attack_onset_s_approx": 1.0,
+      "longest_contact_hold_s_approx": null,
+      "notes": "约1秒开始较大动作，之后有多次接近和分离；矛变短/变刀，奥德修斯左手出现盾牌，末段双方散开，镜头构图漂移。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "weapon identity/hands",
+        "precise impact reaction",
+        "specified spear/sword choreography"
+      ],
+      "new_prompt_sequence_adherence": "not_applicable"
+    },
+    {
+      "id": "combat_ab_ltx_old_2026100603",
+      "model": "ltx",
+      "variant": "old",
+      "seed": 2026100603,
+      "input_fingerprint": "4263dc45856173efa991064299eca19da0f69fd19507acb8c8634694cb3ef9ef",
+      "output_sha256": "1675f64b519073ad1ff23b685eb91b13ad639113bbde6199dda6036fcfe4bd29",
+      "quality_status": "fail_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 1,
+        "separation": 1,
+        "reaction": 0,
+        "footwork": 1,
+        "weapon_integrity": 0
+      },
+      "score_total": 3,
+      "first_attack_onset_s_approx": 1.25,
+      "longest_contact_hold_s_approx": null,
+      "notes": "约1.25秒守卫开始挥击，后续双方多次挥刀和位移；原先的矛变成刀/剑，接触及受力关系不清楚，结尾停成对峙。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "weapon identity/hands",
+        "precise impact reaction",
+        "specified spear/sword choreography"
+      ],
+      "new_prompt_sequence_adherence": "not_applicable"
+    },
+    {
+      "id": "combat_ab_ltx_new_2026100603",
+      "model": "ltx",
+      "variant": "new",
+      "seed": 2026100603,
+      "input_fingerprint": "169501455217a9acf58ccb02204698f162f62f75459b950046112a50547b89a3",
+      "output_sha256": "d34f58a133fa11ffff56ef07e2f10a62e60c925f2d4ab73d14d45c9d27a0cf44",
+      "quality_status": "fail_at_samples",
+      "production_approved": false,
+      "scores": {
+        "contact": 1,
+        "separation": 1,
+        "reaction": 0,
+        "footwork": 2,
+        "weapon_integrity": 0
+      },
+      "score_total": 4,
+      "first_attack_onset_s_approx": 1.0,
+      "longest_contact_hold_s_approx": null,
+      "notes": "约1秒开始冲刺挥击，持续大步换位和再次进攻；活动量较大，但矛变剑/短刃，握持和盾牌形状变化，不能作为兵器一致的完整交锋镜头。",
+      "sample_count": 21,
+      "dense_review_fps": null,
+      "unmet": [
+        "weapon identity/hands",
+        "precise impact reaction",
+        "specified spear/sword choreography"
+      ],
+      "new_prompt_sequence_adherence": "partial"
+    }
+  ],
+  "paired": [
+    {
+      "model": "h3",
+      "seed": 2026100601,
+      "old_score": 4,
+      "new_score": 9,
+      "human_common_score_delta": 5,
+      "observation": "earlier multi-stage combat; still weak impact and contact holds"
+    },
+    {
+      "model": "h3",
+      "seed": 2026100602,
+      "old_score": 6,
+      "new_score": 9,
+      "human_common_score_delta": 3,
+      "observation": "earlier multi-stage combat; still weak impact and contact holds"
+    },
+    {
+      "model": "h3",
+      "seed": 2026100603,
+      "old_score": 5,
+      "new_score": 9,
+      "human_common_score_delta": 4,
+      "observation": "earlier multi-stage combat; still weak impact and contact holds"
+    },
+    {
+      "model": "ltx",
+      "seed": 2026100601,
+      "old_score": 3,
+      "new_score": 4,
+      "human_common_score_delta": 1,
+      "observation": "more activity in some seeds; weapon integrity remains failed"
+    },
+    {
+      "model": "ltx",
+      "seed": 2026100602,
+      "old_score": 4,
+      "new_score": 4,
+      "human_common_score_delta": 0,
+      "observation": "more activity in some seeds; weapon integrity remains failed"
+    },
+    {
+      "model": "ltx",
+      "seed": 2026100603,
+      "old_score": 3,
+      "new_score": 4,
+      "human_common_score_delta": 1,
+      "observation": "more activity in some seeds; weapon integrity remains failed"
+    }
+  ],
+  "featured_candidate": "combat_ab_h3_new_2026100601",
+  "featured_is_production_approved": false,
+  "production_approved_ids": [],
+  "counts": {
+    "technical_pass": 12,
+    "partial_at_samples": 6,
+    "fail_at_samples": 6,
+    "production_approved": 0
+  }
+}

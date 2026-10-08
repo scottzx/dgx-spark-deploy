@@ -1,0 +1,122 @@
+[
+  {
+    "repo": "stabilityai/sd-vae-ft-mse",
+    "revision": "31f26fdeee1355a5c34592e401dd41e45d25a493",
+    "name": "config.json",
+    "target": "musetalk/sd-vae/config.json",
+    "size": 547,
+    "sha256": null
+  },
+  {
+    "repo": "stabilityai/sd-vae-ft-mse",
+    "revision": "31f26fdeee1355a5c34592e401dd41e45d25a493",
+    "name": "diffusion_pytorch_model.safetensors",
+    "target": "musetalk/sd-vae/diffusion_pytorch_model.safetensors",
+    "size": 334643276,
+    "sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815"
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "added_tokens.json",
+    "target": "musetalk/whisper/added_tokens.json",
+    "size": 34604,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "config.json",
+    "target": "musetalk/whisper/config.json",
+    "size": 1983,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "generation_config.json",
+    "target": "musetalk/whisper/generation_config.json",
+    "size": 3747,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "merges.txt",
+    "target": "musetalk/whisper/merges.txt",
+    "size": 493869,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "model.safetensors",
+    "target": "musetalk/whisper/model.safetensors",
+    "size": 151061672,
+    "sha256": "7ebd0e69e78190ffe1438491fa05cc1f5c1aa3a4c4db3bc1723adbb551ea2395"
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "normalizer.json",
+    "target": "musetalk/whisper/normalizer.json",
+    "size": 52666,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "preprocessor_config.json",
+    "target": "musetalk/whisper/preprocessor_config.json",
+    "size": 184990,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "special_tokens_map.json",
+    "target": "musetalk/whisper/special_tokens_map.json",
+    "size": 2194,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "tokenizer.json",
+    "target": "musetalk/whisper/tokenizer.json",
+    "size": 2480466,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "tokenizer_config.json",
+    "target": "musetalk/whisper/tokenizer_config.json",
+    "size": 282683,
+    "sha256": null
+  },
+  {
+    "repo": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af",
+    "name": "vocab.json",
+    "target": "musetalk/whisper/vocab.json",
+    "size": 835550,
+    "sha256": null
+  },
+  {
+    "repo": "camenduru/MuseTalk",
+    "revision": "5cfe77e50e1dc10ac599e5340d610d69a5086af2",
+    "name": "face-parse-bisent/79999_iter.pth",
+    "target": "musetalk/face-parse-bisent/79999_iter.pth",
+    "size": 53289463,
+    "sha256": "468e13ca13a9b43cc0881a9f99083a430e9c0a38abd935431d1c28ee94b26567"
+  },
+  {
+    "repo": "camenduru/MuseTalk",
+    "revision": "5cfe77e50e1dc10ac599e5340d610d69a5086af2",
+    "name": "face-parse-bisent/resnet18-5c106cde.pth",
+    "target": "musetalk/face-parse-bisent/resnet18-5c106cde.pth",
+    "size": 46827520,
+    "sha256": "5c106cde386e87d4033832f2996f5493238eda96ccf559d1d62760c4de0613f8"
+  }
+]

@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy, with handmade sandstone and timber, aged bronze armor and saturated 35mm film colors. Continue naturally from the supplied first frame, preserving the visible actors, faces, costumes, composition and current state. Outside the closed city gate at night, one Agamemnon in a crimson cloak stands before the Greek army. He raises the same right-hand sword in a compact forward signal, keeping his left hand empty and without a shield. The ranks behind him tighten their shield line and take one measured step, then wait for the opening gate. Preserve the gray-bearded commander and separate individual soldiers, gray-blue uniforms and plain dark crimson banners. No extra people, duplicated named actor, extra limbs, modern objects, captions or fantasy effects.
+
+overall_soundscape: A slow small wide push with several ranks visible. Night wind, banner fabric, measured footfalls and shield straps. No dialogue or singing.
+
+non_diegetic_music: N/A

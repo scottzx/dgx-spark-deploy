@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "elapsed_s": 79.048750332091,
+  "clips": [
+    {
+      "status": "PASS",
+      "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_opening/stage1",
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/ref_native/identity_ref_opening/h3_native.mp4",
+      "frames": 121,
+      "height": 384,
+      "width": 672,
+      "decoder": "native_full_H3_VAE",
+      "decode_s": 24.344359228387475,
+      "latent_precision": "same BF16 handoff as LTX",
+      "trim_frames": 0
+    },
+    {
+      "status": "PASS",
+      "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_continuation/stage1",
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/ref_native/identity_ref_continuation/h3_native.mp4",
+      "frames": 102,
+      "height": 384,
+      "width": 672,
+      "decoder": "native_full_H3_VAE",
+      "decode_s": 23.168110919184983,
+      "latent_precision": "same BF16 handoff as LTX",
+      "trim_frames": 19
+    },
+    {
+      "status": "PASS",
+      "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_new_angle/stage1",
+      "output": "/home/admin/sol-spark-runtime/identity_tests_20261003/ref_native/identity_ref_new_angle/h3_native.mp4",
+      "frames": 121,
+      "height": 384,
+      "width": 672,
+      "decoder": "native_full_H3_VAE",
+      "decode_s": 23.288645536638796,
+      "latent_precision": "same BF16 handoff as LTX",
+      "trim_frames": 0
+    }
+  ]
+}

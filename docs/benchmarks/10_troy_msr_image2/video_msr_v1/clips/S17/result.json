@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "id": "S17",
+  "title": "阿伽门农率军待突破",
+  "seed": 2026100517,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S17/raw.mp4",
+  "raw_sha256": "350eadfef52f66b6040d215f3e281bb6534477c157cf9bd70fe4f051b3859271",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S17/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "f459a45283ed008c787e51f53dec881a4f2eb0f1a26fcfb1d867e420c8497548",
+    "bytes": 1269037
+  },
+  "generation_s": 129.35019805794582,
+  "phases_s": {
+    "reference_encode_block_s": 2.264434070792049,
+    "denoising_loop_s": 55.81195290200412,
+    "diffusion_block_s": 121.91563145024702,
+    "decode_and_encode_block_s": 5.135013671126217
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "agamemnon",
+      "kind": "character",
+      "role": "Agamemnon, older stocky gray-black bearded commander, lion cuirass, crimson cloak, no shield",
+      "source_file": "assets/characters/agamemnon_v1.png",
+      "file": "inputs/agamemnon.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/agamemnon.png",
+      "sha256": "d7d48940893fe78b4e3929c75a6ab34dfb023df95810345fe5df299cef696b7f",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "greeks",
+      "kind": "group",
+      "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+      "source_file": "assets/groups/greek_infantry_v1.png",
+      "file": "inputs/greeks.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 3,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard_v2/frames/s17_qwen21_v1.png",
+      "file": "inputs/board_S17.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S17.png",
+      "sha256": "d0a38cd68d7ef14b834b29ff36aaf40ccff4d76e90b173194a9ac0d7ed036966",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "e499b09e582c1a0a386dcd76cb104cf3e1c4558bf2daab1b31be38d39f5c3ae9",
+  "prompt_cache_fingerprint": "4945aa03c4f1a68295b37086d10b96c282a35221f1e339d6345612e4b9a85abb",
+  "peak_torch_allocated_bytes": 42457072128,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

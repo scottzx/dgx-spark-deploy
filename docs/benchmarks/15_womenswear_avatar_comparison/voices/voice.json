@@ -1,0 +1,108 @@
+{
+  "profile": "serena_soft",
+  "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "speaker": "Serena",
+  "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。产品名清楚，停顿简短。",
+  "content": "Three generic women's garments",
+  "load_seconds": 33.86430981801823,
+  "total_seconds": 43.953326757997274,
+  "clips": [
+    {
+      "product": "shirt",
+      "text": "白色衬衫，简洁利落，通勤好搭。",
+      "speaker": "Serena",
+      "attempts": [
+        {
+          "seed": 2026100700,
+          "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。产品名清楚，停顿简短。",
+          "raw_duration_seconds": 4.16,
+          "trimmed_duration_seconds": 4.15,
+          "trimmed_leading_seconds": 0.01,
+          "trimmed_trailing_seconds": 0.0,
+          "required_atempo": 1.2063953488372094
+        }
+      ],
+      "selected_attempt": 0,
+      "filters": "atempo=1.20639535,highpass=f=70,equalizer=f=3500:t=q:w=0.8:g=-2.5,loudnorm=I=-20:TP=-2:LRA=7",
+      "speech_duration_seconds": 3.449375,
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 5.849375,
+      "duration_seconds": 8.04,
+      "sample_rate": 24000,
+      "generation_and_processing_seconds": 4.2223905539140105,
+      "sha256": "d3db1d1c647ba7b7e6fab34a25015b6f5eca84309f2a1c603a702f3c5d0731a9",
+      "level_matching": {
+        "target_integrated_lufs": -23,
+        "measured_before_lufs": -20.61,
+        "constant_gain_db": -2.3900000000000006,
+        "pitch_or_timing_changed": false
+      }
+    },
+    {
+      "product": "cardigan",
+      "text": "粉色开衫，温柔百搭，适合叠穿。",
+      "speaker": "Serena",
+      "attempts": [
+        {
+          "seed": 2026100710,
+          "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。产品名清楚，停顿简短。",
+          "raw_duration_seconds": 3.6,
+          "trimmed_duration_seconds": 3.6,
+          "trimmed_leading_seconds": 0.0,
+          "trimmed_trailing_seconds": 0.0,
+          "required_atempo": 1.0465116279069768
+        }
+      ],
+      "selected_attempt": 0,
+      "filters": "atempo=1.04651163,highpass=f=70,equalizer=f=3500:t=q:w=0.8:g=-2.5,loudnorm=I=-20:TP=-2:LRA=7",
+      "speech_duration_seconds": 3.4397083333333334,
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 5.839708333333333,
+      "duration_seconds": 8.04,
+      "sample_rate": 24000,
+      "generation_and_processing_seconds": 2.7558756028302014,
+      "sha256": "321d70c0e2d7d5affaf691c1d72b0dd479677abdd5a730fe179681ee5da7de1d",
+      "level_matching": {
+        "target_integrated_lufs": -23,
+        "measured_before_lufs": -19.92,
+        "constant_gain_db": -3.0799999999999983,
+        "pitch_or_timing_changed": false
+      }
+    },
+    {
+      "product": "dress",
+      "text": "黑色连衣裙，线条简洁，日常好搭。",
+      "speaker": "Serena",
+      "attempts": [
+        {
+          "seed": 2026100720,
+          "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。产品名清楚，停顿简短。",
+          "raw_duration_seconds": 4.08,
+          "trimmed_duration_seconds": 4.08,
+          "trimmed_leading_seconds": 0.0,
+          "trimmed_trailing_seconds": 0.0,
+          "required_atempo": 1.186046511627907
+        }
+      ],
+      "selected_attempt": 0,
+      "filters": "atempo=1.18604651,highpass=f=70,equalizer=f=3500:t=q:w=0.8:g=-2.5,loudnorm=I=-20:TP=-2:LRA=7",
+      "speech_duration_seconds": 3.455375,
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 5.855375,
+      "duration_seconds": 8.04,
+      "sample_rate": 24000,
+      "generation_and_processing_seconds": 3.103749463800341,
+      "sha256": "adfef5e61f53730a809e0d0d41ad73e5838f4bd17d52b3e28f00892bb224fe66",
+      "level_matching": {
+        "target_integrated_lufs": -23,
+        "measured_before_lufs": -21.1,
+        "constant_gain_db": -1.8999999999999986,
+        "pitch_or_timing_changed": false
+      }
+    }
+  ],
+  "voice_preview_duration_seconds": 10.884458333333333,
+  "policy": "Same soft Serena voice and padded timeline for all three routes; mild EQ and loudness treatment; all raw attempts retained.",
+  "normalization_seconds": 0.3851074050180614,
+  "loudness_policy": "Match final padded action clips to -23 LUFS with constant gain, capped at -3 dBTP; no additional speed or pitch change."
+}

@@ -1,0 +1,63 @@
+{
+  "pid": 2591166,
+  "started_at_utc": "2026-10-08T12:34:23.227596+00:00",
+  "state": "running",
+  "stages": [
+    {
+      "stage": "latentsync",
+      "state": "complete",
+      "started_at_utc": "2026-10-08T12:34:23.227673+00:00",
+      "command": [
+        "/home/admin/digital-human-runtime/avatar-env/bin/python",
+        "/home/admin/womenswear-avatar-natural-v2/run_latentsync.py"
+      ],
+      "returncode": 0,
+      "seconds": 1143.2324612252414,
+      "ended_at_utc": "2026-10-08T12:53:26.460232+00:00"
+    },
+    {
+      "stage": "longcat",
+      "state": "complete",
+      "started_at_utc": "2026-10-08T12:53:26.460682+00:00",
+      "command": [
+        "/home/admin/digital-human-runtime/avatar-env/bin/python",
+        "/home/admin/womenswear-avatar-natural-v2/run_longcat.py"
+      ],
+      "returncode": 0,
+      "seconds": 5216.8654645676725,
+      "ended_at_utc": "2026-10-08T14:20:23.340661+00:00"
+    },
+    {
+      "stage": "infinitetalk",
+      "state": "running",
+      "started_at_utc": "2026-10-08T14:20:23.435423+00:00",
+      "command": [
+        "/home/admin/digital-human-runtime/avatar-env/bin/python",
+        "/home/admin/womenswear-avatar-natural-v2/run_infinitetalk.py"
+      ]
+    }
+  ],
+  "voice_profile": "serena_default",
+  "ltx_motion_reused": true,
+  "current_stage": "infinitetalk",
+  "updated_at_utc": "2026-10-08T14:20:23.435912+00:00",
+  "detail": "12%|█▎        | 1/8 [01:31<10:40, 91.46s/it]",
+  "log_tail": "('/home/admin/womenswear-avatar-natural-v2/inputs/cardigan/driver.mp4', '/home/admin/womenswear-avatar-natural-v2/inputs/cardigan/audio_16k.wav')\nNo conversion needed.\n\n  0%|          | 0/8 [00:00<?, ?it/s]\n 12%|█▎        | 1/8 [01:31<10:40, 91.46s/it]",
+  "outputs": [
+    "infinitetalk/shirt",
+    "latentsync/cardigan",
+    "latentsync/dress",
+    "latentsync/shirt",
+    "longcat/cardigan",
+    "longcat/dress",
+    "longcat/shirt"
+  ],
+  "ltx_outputs": [
+    "cardigan",
+    "dress",
+    "shirt"
+  ],
+  "voice_ready": true,
+  "inputs_ready": true,
+  "collected_at_utc": "2026-10-08T15:27:51.873641+00:00"
+}

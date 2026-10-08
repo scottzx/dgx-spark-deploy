@@ -30,6 +30,10 @@ if pgrep -f '[i]nfer.py --paths /home/admin/sol-spark-runtime/paths.json' >/dev/
     echo '   方式：官方 CLI，当前批次复用模型'
     echo '   输出与耗时：本次输出目录中的 results.json'
     MINIMAX_RUNNING=1
+elif pgrep -f "sol_api_server.py" >/dev/null 2>&1; then
+    echo "🟢 [在线] MiniMax Sol-H3-Spark (常驻服务, PID: $(pgrep -f "sol_api_server.py" | head -n 1))"
+    echo "   API 端点: http://0.0.0.0:8090"
+    MINIMAX_RUNNING=1
 elif pgrep -f "sglang.*MiniMax-H3" >/dev/null 2>&1; then
     H3_HEALTH=$(curl -s -m 2 http://127.0.0.1:30010/health || echo "initializing/loading")
     echo "🟢 [在线] MiniMax-H3 (SGLang Lightning, PID: $(pgrep -f "sglang.*MiniMax-H3" | head -n 1))"

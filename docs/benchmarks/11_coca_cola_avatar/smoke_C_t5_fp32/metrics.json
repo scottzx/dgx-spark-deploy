@@ -1,0 +1,27 @@
+{
+  "route": "C",
+  "engine": "EchoMimicV3 Flash",
+  "size": [
+    512,
+    512
+  ],
+  "steps": 8,
+  "attention": "native PyTorch SDPA",
+  "shot_policy": "81-frame shots, same reference image at each shot; no temporal continuation between shots",
+  "load_and_prepare_seconds": 54.71154341707006,
+  "generation_seconds": 252.53489508014172,
+  "duration_seconds": 3.24,
+  "frames": 81,
+  "generation_fps": 0.32074775240187986,
+  "peak_cuda_allocated_gib": 29.904251098632812,
+  "shots": [
+    {
+      "shot": 0,
+      "audio_start_seconds": 0.0,
+      "audio_duration_seconds": 3.24,
+      "generated_frames": 81,
+      "retained_frames": 81,
+      "seconds": 252.31117476383224
+    }
+  ]
+}

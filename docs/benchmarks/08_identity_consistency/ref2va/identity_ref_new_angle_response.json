@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "case_id": "identity_ref_new_angle",
+  "mode": "final",
+  "duration_s": 5,
+  "e2e_s": 70.87,
+  "transition": "independent",
+  "previous_clip_id": null,
+  "delivered_frames": 121,
+  "delivered_duration_s": 5.041666666666667,
+  "trim_frames": 0,
+  "continuation": {},
+  "reported_e2e_s": 70.87,
+  "qwen_s": 5.696076939,
+  "stage1_s": 29.620196876,
+  "stage2_s": 34.985808687,
+  "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_new_angle/stage1",
+  "video_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_new_angle/stage2/refined_1344x768_121f.mp4",
+  "video_url": "/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_new_angle/stage2/refined_1344x768_121f.mp4",
+  "contact_sheet_url": "/outputs/api_server_runs/session_20261003-235623_ref2va/identity_ref_new_angle/stage2/contact_sheet/contact_sheet.png"
+}

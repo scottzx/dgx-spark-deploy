@@ -1,0 +1,48 @@
+{
+  "checked_at_utc": "2026-10-08T11:31:10.249036+00:00",
+  "clips": [
+    {
+      "profile": "serena_full",
+      "clip": "cardigan",
+      "selected_attempt": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "seed": 2026101153,
+          "instruction": "成熟自信、热情有感染力的成年女性服装导购，声音圆润饱满，音调中低，有胸腔共鸣与扎实气息，能量充足，像热情介绍自己很喜欢的产品。字头清晰，产品名和卖点有明确重音，语气起伏自然，节奏利落，句尾肯定有力。不要轻声平读、不要耳语或软绵绵，不要刺耳、尖细、喊叫或刻意装甜。标准普通话，语速适中偏快。商品颜色、产品名称和句尾每个字都完整清楚地说出来，不要吞字或省略字。",
+          "result": [
+            {
+              "key": "cardigan_attempt1",
+              "text": "<|zh|><|NEUTRAL|><|Speech|><|withitn|>粉色开衫温柔百搭，适合叠穿。"
+            }
+          ],
+          "text_matches": true,
+          "duration_seconds": 2.56,
+          "sha256": "0b192e9fb850ed0c948f848c21d877ded7250a7681b5777c18599d64de1ac869"
+        }
+      ]
+    },
+    {
+      "profile": "vivian_live",
+      "clip": "dress",
+      "selected_attempt": 1,
+      "attempts": [
+        {
+          "attempt": 1,
+          "seed": 2026101054,
+          "instruction": "兴奋、积极、有激情的成年女装带货主播，正在热情招呼直播间的观众。声音饱满、有力量，中音区清晰明亮，气息充足，节奏紧凑，有明显的轻重和语气起伏。商品名清楚突出，卖点自然加重，像面对面推荐喜欢的衣服，收尾带行动号召。避免尖叫、喊麦、尖细高音，不要机械播报、不要气声。普通话标准，语速较快但每个字都清楚。商品颜色、产品名称和句尾每个字都完整清楚地说出来，不要吞字或省略字。",
+          "result": [
+            {
+              "key": "dress_attempt1",
+              "text": "<|zh|><|HAPPY|><|Speech|><|withitn|>黑色连衣裙线条简洁，日常好搭。"
+            }
+          ],
+          "text_matches": true,
+          "duration_seconds": 4.08,
+          "sha256": "6786b3cb20edc14c0e7de80831eff241141378cfba777dc1e91dbf39da0f9a01"
+        }
+      ]
+    }
+  ],
+  "scope": "Selected short retakes match automatic transcripts; listening remains the timbre acceptance criterion."
+}

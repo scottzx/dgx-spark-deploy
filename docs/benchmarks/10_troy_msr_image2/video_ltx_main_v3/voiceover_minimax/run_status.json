@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "completed_at": "2026-10-06T15:33:52.030299+00:00",
+  "plan_fingerprint": "7510ba9e055f1db657fcdd73ea1716d8859c7a814d3efcb43c887c3e1a32364e",
+  "source_film_sha256": "a52f16cb1e0effe20c9aaf73dcf863c3f6903b8e10b2ec79c6193ab1a753b92c",
+  "cues": 12,
+  "model": "speech-2.8-hd",
+  "voice_id": "Chinese (Mandarin)_Male_Announcer",
+  "cli_version": "1.0.25",
+  "film": {
+    "path": "film_voiced.mp4",
+    "duration_s": 91.25,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "dc7045f59d25dda49812107f54f2190650154f55c9d536463a2b6b4777ce0b32",
+    "bytes": 30428686,
+    "frames": 2190,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ]
+  },
+  "battle_excerpt": {
+    "path": "battle_voiced.mp4",
+    "duration_s": 31.75,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "4c0a3804627aeaa52060e5649f826fb0b6c5a3dac434c37533717df2740fefcf",
+    "bytes": 9495156,
+    "frames": 762,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ]
+  },
+  "technical_verification": "mix_verification.json",
+  "browser_verification": "browser_verification.json",
+  "narration_time_stretched": false,
+  "full_film_video_stream_unchanged": true,
+  "independent_listening_review": false,
+  "independent_asr_review": false,
+  "review_url": "http://127.0.0.1:59137/video_ltx_main_v3/voiceover_minimax/review.html",
+  "speed_1_25": {
+    "status": "complete",
+    "film": "speed_1_25/film_1_25x.mp4",
+    "review": "speed_1_25/review.html",
+    "receipt": "speed_1_25/run_status.json",
+    "duration_s": 73
+  }
+}

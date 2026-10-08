@@ -1,0 +1,96 @@
+{
+  "policy": "Decoded lower-face ROI (310,126,144,84). Subtract each same-index motion-source frame, then measure the adjacent-frame absolute change of that processing residual. 8-bit RGB MAE is a diagnostic for the former hard switches, not a universal aesthetic, identity or lip-sync score.",
+  "all_six_previous_boundaries_improved": true,
+  "clips": [
+    {
+      "product": "original",
+      "narration_start_seconds": 2.4,
+      "narration_end_seconds": 4.689583333333333,
+      "transition_seconds": 0.48,
+      "old_boundaries": [
+        {
+          "boundary_frame": 55,
+          "time_seconds": 2.2,
+          "description": "previous hard switch into lips",
+          "before_residual_step_mae": 3.577188014984131,
+          "after_residual_step_mae": 0.9571759104728699,
+          "reduction_percent": 73.24222527685293
+        },
+        {
+          "boundary_frame": 151,
+          "time_seconds": 6.04,
+          "description": "previous hard switch out of lips",
+          "before_residual_step_mae": 3.5116567611694336,
+          "after_residual_step_mae": 0.9673170447349548,
+          "reduction_percent": 72.45411181892322
+        }
+      ],
+      "final_fade_active_seconds": [
+        1.92,
+        5.2
+      ],
+      "audio_hash_unchanged": true,
+      "weights_continuous": true
+    },
+    {
+      "product": "diet",
+      "narration_start_seconds": 2.4,
+      "narration_end_seconds": 5.511083333333334,
+      "transition_seconds": 0.48,
+      "old_boundaries": [
+        {
+          "boundary_frame": 55,
+          "time_seconds": 2.2,
+          "description": "previous hard switch into lips",
+          "before_residual_step_mae": 3.4691083431243896,
+          "after_residual_step_mae": 0.9613646268844604,
+          "reduction_percent": 72.28784656467013
+        },
+        {
+          "boundary_frame": 151,
+          "time_seconds": 6.04,
+          "description": "previous hard switch out of lips",
+          "before_residual_step_mae": 3.457010507583618,
+          "after_residual_step_mae": 1.4421571493148804,
+          "reduction_percent": 58.28311351234742
+        }
+      ],
+      "final_fade_active_seconds": [
+        1.92,
+        6.0
+      ],
+      "audio_hash_unchanged": true,
+      "weights_continuous": true
+    },
+    {
+      "product": "zero",
+      "narration_start_seconds": 2.4,
+      "narration_end_seconds": 5.839041666666667,
+      "transition_seconds": 0.48,
+      "old_boundaries": [
+        {
+          "boundary_frame": 55,
+          "time_seconds": 2.2,
+          "description": "previous hard switch into lips",
+          "before_residual_step_mae": 3.742090940475464,
+          "after_residual_step_mae": 1.1100363731384277,
+          "reduction_percent": 70.33646721056468
+        },
+        {
+          "boundary_frame": 151,
+          "time_seconds": 6.04,
+          "description": "previous hard switch out of lips",
+          "before_residual_step_mae": 3.2976741790771484,
+          "after_residual_step_mae": 1.221395492553711,
+          "reduction_percent": 62.96191114625165
+        }
+      ],
+      "final_fade_active_seconds": [
+        1.92,
+        6.32
+      ],
+      "audio_hash_unchanged": true,
+      "weights_continuous": true
+    }
+  ]
+}

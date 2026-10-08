@@ -1,0 +1,37 @@
+{
+  "manifest_fingerprint": "fc3fefccad737763bfa1324360513889459ebf383e505fc4062e2723badb88e4",
+  "diagnostic_candidates": [
+    "S10_msr_first_last_2026100601",
+    "S15_msr_first_last_2026100601",
+    "S16_msr_first_last_2026100602",
+    "S20_msr_first_last_2026100602"
+  ],
+  "production_ready": [],
+  "editorial_intervals": [
+    {
+      "id": "S10_msr_first_last_2026100601",
+      "start_frame": 60,
+      "end_frame_exclusive": 108,
+      "duration_s": 2.0,
+      "status": "provisionally_usable_action",
+      "notes": "2.5–4.5秒: 6fps密集采样显示连续下移、双手扶梯、无跳离；用于动作样片，不等同整段通过或音轨终验。"
+    },
+    {
+      "id": "S15_msr_first_last_2026100601",
+      "start_frame": 18,
+      "end_frame_exclusive": 90,
+      "duration_s": 3.0,
+      "status": "foreground_action_excerpt_with_background_caveat",
+      "notes": "0.75–3.75秒，6fps密集采样确认前景剑矛格挡/再攻动作；背景两对持续接触仍弱，不代表整段全部条件通过。"
+    },
+    {
+      "id": "S20_msr_first_last_2026100602",
+      "start_frame": 18,
+      "end_frame_exclusive": 90,
+      "duration_s": 3.0,
+      "status": "foreground_middle_action_excerpt_with_rear_caveat",
+      "notes": "0.75–3.75秒，6fps密集采样确认前景与中景多组挥砍、格挡和后退；远处队列仍以站立/挥舞姿态为主，不代表完整军团持续交战通过。"
+    }
+  ],
+  "label": "20-second diagnostic reel and 8-second action excerpts; zero whole 5-second clips meet all strict criteria"
+}

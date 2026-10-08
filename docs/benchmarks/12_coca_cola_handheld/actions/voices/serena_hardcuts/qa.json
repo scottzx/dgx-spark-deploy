@@ -1,0 +1,74 @@
+{
+  "scope": "Manual visual review of both the continuous motion clips and the final dubbed clips. Final dubbed contact sheets confirm pickup, presentation, return and release, with mouth changes in the narration interval. No automated physical, identity, OCR, or SyncNet score is claimed.",
+  "summary": "三组均出现拿起、手持介绍、放回并松手的完整流程，另外两罐保持在桌上；基本动作流程通过。包装文字和运动中罐身细节仍会变形，因此这是离线技术样片，包装保真尚未合格。",
+  "motion_reviewed_times_seconds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "dubbed_reviewed_times_seconds": [
+    0,
+    0.8,
+    1.6,
+    2.56,
+    4,
+    5.44,
+    6.2,
+    7.2,
+    8
+  ],
+  "final_dubbed_visual_review_completed": true,
+  "products": [
+    {
+      "product": "original",
+      "pickup": "Visible can on left tabletop at start, lifted in first second, held near chest by about 2 seconds.",
+      "presentation": "Same red and white can held through middle interval; silver diet and red/black zero remain on table.",
+      "put_back_and_release": "Can returns to left tabletop around 6 seconds; hand leaves it and rests on table around 7 seconds.",
+      "basic_action_sequence_passed": true,
+      "packaging_fidelity_passed": false,
+      "issues": [
+        "Can lettering distorts during motion; capacity text is not reliably preserved."
+      ]
+    },
+    {
+      "product": "diet",
+      "pickup": "Middle silver can is lifted from tabletop with both hands.",
+      "presentation": "Silver can is held in front of chest; original and zero remain at left and right tabletop positions.",
+      "put_back_and_release": "Silver can is lowered to middle tabletop around 6 seconds; hands release and rest beside it around 7 seconds.",
+      "basic_action_sequence_passed": true,
+      "packaging_fidelity_passed": false,
+      "issues": [
+        "Small text is blurred or altered; motion adds transient product shape and label deformation."
+      ]
+    },
+    {
+      "product": "zero",
+      "pickup": "Right red and black can is lifted to viewer-right upper chest in first two seconds.",
+      "presentation": "One zero can is held; original left and silver diet middle remain on table.",
+      "put_back_and_release": "Zero can is lowered to its right tabletop position around 6 seconds; gripping hand leaves the can around 7 seconds.",
+      "basic_action_sequence_passed": true,
+      "packaging_fidelity_passed": false,
+      "issues": [
+        "Can lettering and contour change during the lift and lower transitions."
+      ]
+    }
+  ],
+  "input_quality_gate": {
+    "rejected": "inputs/zero_held.png duplicated zero and removed diet from the table.",
+    "accepted_replacement": "inputs/zero_held_v2.png retains original and diet on table, with only zero in hand."
+  },
+  "limits": [
+    "Each group is a separate continuous generated shot; cuts between groups are explicit.",
+    "Basic visible action completion is not a production quality or physical accuracy certification.",
+    "Source keyframes themselves already contain inaccurate small product text.",
+    "This is offline generation, not end-to-end live real-time interaction."
+  ],
+  "voice_profile": "serena_soft",
+  "voice_update": "New Serena narration; moving-frame lip inference rerun for all three clips. Final constant gain does not change phoneme timing, pitch, or actions.",
+  "voice_replacement_review_completed": true
+}

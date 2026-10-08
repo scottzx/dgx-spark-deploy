@@ -1,0 +1,117 @@
+{
+  "profile": "serena_soft",
+  "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "speaker": "Serena",
+  "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。产品名清楚，停顿简短。",
+  "previous_speaker": "Vivian",
+  "load_seconds": 30.24666382931173,
+  "total_seconds": 42.55897937528789,
+  "clips": [
+    {
+      "product": "original",
+      "text": "原味，熟悉的经典可乐风味。",
+      "speaker": "Serena",
+      "attempts": [
+        {
+          "seed": 2026100700,
+          "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。产品名清楚，停顿简短。",
+          "raw_duration_seconds": 2.32,
+          "trimmed_duration_seconds": 2.31,
+          "trimmed_leading_seconds": 0.01,
+          "trimmed_trailing_seconds": 0.0,
+          "required_atempo": 1.0
+        }
+      ],
+      "selected_attempt": 0,
+      "filters": "atempo=1.00000000,highpass=f=70,equalizer=f=3500:t=q:w=0.8:g=-2.5,loudnorm=I=-20:TP=-2:LRA=7",
+      "speech_duration_seconds": 2.2895833333333333,
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 4.689583333333333,
+      "duration_seconds": 8.04,
+      "sample_rate": 24000,
+      "generation_and_processing_seconds": 3.215443493798375,
+      "sha256": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "level_matching": {
+        "target_integrated_lufs": -23,
+        "measured_before_lufs": -28.24,
+        "constant_gain_db": 5.239999999999998,
+        "pitch_or_timing_changed": false
+      }
+    },
+    {
+      "product": "diet",
+      "text": "健怡，无糖，口感更轻盈。",
+      "speaker": "Serena",
+      "attempts": [
+        {
+          "seed": 2026100710,
+          "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。产品名清楚，停顿简短。",
+          "raw_duration_seconds": 3.12,
+          "trimmed_duration_seconds": 3.12,
+          "trimmed_leading_seconds": 0.0,
+          "trimmed_trailing_seconds": 0.0,
+          "required_atempo": 1.0
+        }
+      ],
+      "selected_attempt": 0,
+      "filters": "atempo=1.00000000,highpass=f=70,equalizer=f=3500:t=q:w=0.8:g=-2.5,loudnorm=I=-20:TP=-2:LRA=7",
+      "speech_duration_seconds": 3.111083333333333,
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 5.511083333333334,
+      "duration_seconds": 8.04,
+      "sample_rate": 24000,
+      "generation_and_processing_seconds": 2.422750384081155,
+      "sha256": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "level_matching": {
+        "target_integrated_lufs": -23,
+        "measured_before_lufs": -19.94,
+        "constant_gain_db": -3.0599999999999987,
+        "pitch_or_timing_changed": false
+      }
+    },
+    {
+      "product": "zero",
+      "text": "零度，同样无糖，更接近原味可口可乐的风味。",
+      "speaker": "Serena",
+      "attempts": [
+        {
+          "seed": 2026100720,
+          "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。产品名清楚，停顿简短。",
+          "raw_duration_seconds": 5.2,
+          "trimmed_duration_seconds": 5.2,
+          "trimmed_leading_seconds": 0.0,
+          "trimmed_trailing_seconds": 0.0,
+          "required_atempo": 1.5116279069767442
+        },
+        {
+          "seed": 2026100721,
+          "instruction": "温暖柔和、自然亲切的成年女声，音调稍低，用平稳的日常说话方式介绍商品，声音圆润放松，语速适中略紧凑，轻声清晰，不喊、不尖锐、不夸张，不用气声耳语，句尾平稳。产品名清楚，停顿简短。整句紧凑自然地说完，语速稍快但保持柔和，不拉长字音。",
+          "raw_duration_seconds": 3.68,
+          "trimmed_duration_seconds": 3.67,
+          "trimmed_leading_seconds": 0.01,
+          "trimmed_trailing_seconds": 0.0,
+          "required_atempo": 1.066860465116279
+        }
+      ],
+      "selected_attempt": 1,
+      "filters": "atempo=1.06686047,highpass=f=70,equalizer=f=3500:t=q:w=0.8:g=-2.5,loudnorm=I=-20:TP=-2:LRA=7",
+      "speech_duration_seconds": 3.4390416666666668,
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 5.839041666666667,
+      "duration_seconds": 8.04,
+      "sample_rate": 24000,
+      "generation_and_processing_seconds": 6.673143598716706,
+      "sha256": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "level_matching": {
+        "target_integrated_lufs": -23,
+        "measured_before_lufs": -21.0,
+        "constant_gain_db": -2.0,
+        "pitch_or_timing_changed": false
+      }
+    }
+  ],
+  "policy": "Same product narration and action timing; new speaker, mild EQ and loudness treatment; re-dub moving frames.",
+  "voice_preview_duration_seconds": 9.379708333333333,
+  "normalization_seconds": 0.4169440660625696,
+  "loudness_policy": "Match final padded action clips to -23 LUFS with constant gain, capped at -3 dBTP; no additional speed or pitch change."
+}

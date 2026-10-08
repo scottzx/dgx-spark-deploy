@@ -1,0 +1,11 @@
+[
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "modular_model_index.json",
+    "target": "modular_model_index.json",
+    "size": 2167,
+    "sha256": "ca29bd15a717e091b0aee14e22adc6669c511221e6e83ff82f42c339eee20827"
+  }
+]

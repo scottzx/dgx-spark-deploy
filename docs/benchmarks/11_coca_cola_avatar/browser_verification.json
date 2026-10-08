@@ -1,0 +1,14 @@
+{
+  "url": "http://127.0.0.1:58095/review.html",
+  "all_video_duration_seconds": 26.44,
+  "vertical_and_raw_views_playable": true,
+  "pause_and_restart_checked": true,
+  "sync_play_audio_only_route_A": true,
+  "observed_sync_times_seconds": [
+    8.910291,
+    8.86008,
+    8.860089
+  ],
+  "max_observed_drift_seconds": 0.050211,
+  "screenshot": "review_screenshot.jpg"
+}

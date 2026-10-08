@@ -1,0 +1,18 @@
+[
+  {
+    "shot_id": "S13",
+    "status": "connection_failed",
+    "error": "image generation failed: connection failed: error sending request",
+    "output_saved": false,
+    "retry_planned": false,
+    "retry_resolved": true
+  },
+  {
+    "shot_id": "S14",
+    "status": "connection_failed",
+    "error": "image generation failed: connection failed: error sending request",
+    "output_saved": false,
+    "retry_planned": false,
+    "retry_resolved": true
+  }
+]

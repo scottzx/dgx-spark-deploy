@@ -1,0 +1,11 @@
+{
+  "id": "S10_end_v3",
+  "title": "\u5965\u5fb7\u4fee\u65af\u5411\u4e0b\u722c\u68af",
+  "output": "keyframes/S10_end_v3.png",
+  "references": [
+    "keyframes/S10_clean.png",
+    "inputs/odysseus.png"
+  ],
+  "prompt": "Image1 is the empty scene. Image2 is only the identity and costume reference of ONE Odysseus, not a separate person in scene. Add this ONE man to the LOWEST third of the wooden ladder. His head is completely BELOW the open horse hatch, halfway between hatch bottom and the wheel axle height, around y=350 to400 in this1536x864frame. His waist is at wheel axle height around y=580. His sandals rest on the second and third ladder rungs ABOVE the stone ground around y=750, he is still on ladder, not ground or platform. Show his full body and both feet. His torso faces the wooden horse in three-quarter back view, both hands grip the low sections of the two rails. Same dark curly hair, trimmed beard, indigo cloak, bronze armor and sheathed sword at LEFT hip from image2; NO shield. Preserve the background scene EXACTLY as image1, no other people, no extra ladder, no moving horse. The man must be LOW on ladder with large EMPTY ladder region between his shoulders and hatch. One photorealistic historical film still, no text.",
+  "seed": 2026100821
+}

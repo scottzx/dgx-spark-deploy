@@ -1,0 +1,65 @@
+{
+  "case_id": "troy_v3_S17",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy, with handmade sandstone and timber, aged bronze armor and saturated 35mm film colors. Continue naturally from the supplied first frame, preserving the visible actors, faces, costumes, composition and current state. Outside the closed city gate at night, one Agamemnon in a crimson cloak stands before the Greek army. He raises the same right-hand sword in a compact forward signal, keeping his left hand empty and without a shield. The ranks behind him tighten their shield line and take one measured step, then wait for the opening gate. Preserve the gray-bearded commander and separate individual soldiers, gray-blue uniforms and plain dark crimson banners. No extra people, duplicated named actor, extra limbs, modern objects, captions or fantasy effects.\n\noverall_soundscape: A slow small wide push with several ranks visible. Night wind, banner fabric, measured footfalls and shield straps. No dialogue or singing.\n\nnon_diegetic_music: N/A",
+  "seed": 2026100617,
+  "source_index": 0,
+  "request_id": "troy_v3_S17",
+  "status": "PASS",
+  "same_request": true,
+  "external_anchor_used": false,
+  "duration_s": 5,
+  "stage1_frames": 124,
+  "emit_frames": 121,
+  "task": "fl2va",
+  "input_conditioned": true,
+  "input_spec": {
+    "task": "fl2va",
+    "first_frame": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/inputs/S17.png",
+    "last_frame": null,
+    "references": []
+  },
+  "capture_rank": 0,
+  "condition_video_rows_excluded": 252,
+  "condition_audio_rows_excluded": 0,
+  "payload_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-210324_fl2va/troy_v3_S17/stage1/stage1_direct_tensors.pt",
+  "payload_sha256": "366f049bf4b255482945cfb753cd7389b4dc3523b6ff46cba31fbb00d990c404",
+  "continuation_state_sha256": "1cef991cd375864abd0e9bc9d37496d823c587bbf6de7d0cc7396b9ee219214f",
+  "continuation": {},
+  "generated_first_frame_path": null,
+  "generated_first_frame_sha256": null,
+  "native_normalized_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-210324_fl2va/troy_v3_S17/stage1/h3_normalized_native.pt",
+  "native_normalized_sha256": "0e3d265c9194e62f0f28cf2aae47e2add2766d0d5f0ac4fe529d7133a3ccc801",
+  "h3_normalized": {
+    "shape": [
+      1,
+      24,
+      37,
+      24,
+      42
+    ],
+    "dtype": "torch.bfloat16",
+    "source_dtype": "torch.float32",
+    "bf16_cast_max_abs_error": 0.01529836654663086,
+    "normalization": "released_h3_per_channel_mean_std",
+    "source": "original packed final latent unpatchified before VAE denormalize"
+  },
+  "audio": {
+    "shape": [
+      1,
+      2,
+      161333
+    ],
+    "dtype": "torch.float32",
+    "sample_rate": 32000,
+    "native_shape": [
+      165600,
+      2
+    ],
+    "temporal_trim": "first 161333 samples for 121-frame Stage2",
+    "processing": "transpose TC to BCT; clamp [-1,1], original native PCM unchanged"
+  },
+  "native_video_shape": null,
+  "latent_only_transfer": true,
+  "video_decode_calls": 0,
+  "h3_decoder_calls": 0
+}

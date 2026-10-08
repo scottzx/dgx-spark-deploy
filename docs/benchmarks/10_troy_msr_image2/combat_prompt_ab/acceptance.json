@@ -1,0 +1,14 @@
+{
+  "scope": "Foreground Odysseus sword vs Trojan spear/shield; six actors in shared first frame. Technical decode is separate from visual combat acceptance.",
+  "review_scope": "Sample at 0,0.25,...,4.75,4.958 seconds. Inspect candidate contacts densely at 12fps. Audio is not included in visual scores.",
+  "common_combat_scores": {
+    "contact": "0 no plausible contact;1 one readable exchange;2 at least two readable exchanges",
+    "separation": "0 lingering glued weapons;1 one clear separation;2 separation and renewed attack",
+    "reaction": "0 disconnected/absent;1 some recoil;2 visible torso/shield reaction followed by a stabilizing footstep",
+    "footwork": "0 prolonged standstill;1 some reposition;2 attacking, evading and recovering through leg/hip movement",
+    "weapon_integrity": "0 swap/disappear or unusable deformation;1 brief uncertainty;2 sword/right hand/empty left and spear/right/shield/left stay credible"
+  },
+  "additional_observations": ["opening idle duration", "longest approximate contact hold", "camera/frame changes", "background relationship", "physical mismatch"],
+  "production_gate": "Readable attack/contact/separation/reaction; stable weapon identity and hands; no material weapon/body discontinuity. New-prompt sequence adherence is separately recorded, never treated as the common score itself.",
+  "limits": "Manual scores on a short scene and three seeds are descriptive, not universal model rankings; seed numbers do not pair noise across architectures. Sampled review cannot certify every intervening frame."
+}

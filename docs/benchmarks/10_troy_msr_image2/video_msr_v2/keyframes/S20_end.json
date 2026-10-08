@@ -1,0 +1,37 @@
+{
+  "id": "S20_end",
+  "title": "大军团持续群战",
+  "output": "keyframes/S20_end.png",
+  "references": [
+    "keyframes/S20_start.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Use image 1 as exact composition with identical horse, hatch, ladder, open gate, fountain and camera. Show same anonymous armies ONE BEAT LATER in continuous battle. The SAME TWO foreground pairs have just blocked sword strikes: swords touch shields, blue-gray attackers lean forward, ochre/rust defenders recoil HALF A STEP to right, all four keep swords RIGHT and shields LEFT. Middle and background fighters also show the next active combat phase with thrusts, blocks and recoils, not walking or standing ranks. Keep faction colors and density, no heroes, no gore.",
+  "seed": 2026100641,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S20_end.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 57.43016987293959,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "ddbcecd413a1c327a88f40c2d2d95d5bed3c4b21f72adbe4907b20cd9e6b08a9"
+  ],
+  "sha256": "a5077de8661a586b3fcf495ecfe535ac86cf9038b5534da33104c977acfde097",
+  "bytes": 2956959,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-10-07T10:34:50.149240+00:00",
+  "hostname": "spark-e72e",
+  "machine": "aarch64",
+  "python": "3.12.3",
+  "packages": {
+    "torch": "2.14.1",
+    "transformers": "4.57.3",
+    "diffusers": "0.36.0",
+    "numpy": "2.2.6",
+    "opencv-python": "4.12.0.88",
+    "soundfile": "0.14.0",
+    "qwen-tts": "0.1.1"
+  },
+  "gpu": "NVIDIA GB10, 580.173.02",
+  "memory": "               total        used        free      shared  buff/cache   available\nMem:     130663002112  3956027392 67390693376    33341440 60522520576 126706974720\nSwap:    17179865088   392527872 16787337216\n",
+  "active_gpu_compute": "pid, process_name, used_gpu_memory [MiB]\n",
+  "active_containers": [],
+  "runtime": "/home/admin/digital-human-runtime",
+  "model_cache": "/home/admin/models_cache/digital_human"
+}

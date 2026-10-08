@@ -1,0 +1,167 @@
+{
+  "key": "vivian_default",
+  "label": "3 · 明亮女声",
+  "model": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "speaker": "Vivian",
+  "instruction": "",
+  "shared_model_load_seconds": 35.65846471907571,
+  "clips": [
+    {
+      "key": "audition",
+      "text": "我们先看这件白衬衫，款式比较简单，上班的时候可以配长裤。接着是这件粉色开衫，搭在衬衫外面也挺合适。最后这件黑色连衣裙，整体的线条很简洁，平时出门穿也好搭。这三件你比较喜欢哪一件，我再拿近一点给你看。",
+      "sample_rate": 24000,
+      "duration_seconds": 21.12,
+      "seed": 2026100840,
+      "raw_sha256": "2cb6989dd256cfd8fcf44c39c53605d1f082d27a96ed76ca01d0a05baa3795da",
+      "sha256": "079a8229b38294a0d9c63b31a5ea422fbbffb27fb3d568ad25d8418dafa5fbd6",
+      "reused_existing_raw": false,
+      "generation_and_processing_seconds": 15.690580778289586,
+      "processing": {
+        "target_lufs": -23,
+        "constant_gain_db": 0.5199999999999996,
+        "pre_gain_measurement": {
+          "input_i": "-23.52",
+          "input_tp": "-6.50",
+          "input_lra": "2.60",
+          "input_thresh": "-33.92",
+          "output_i": "-23.02",
+          "output_tp": "-6.02",
+          "output_lra": "2.40",
+          "output_thresh": "-33.43",
+          "normalization_type": "dynamic",
+          "target_offset": "0.02"
+        },
+        "pitch_changed": false,
+        "speed_changed": false,
+        "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+      },
+      "fits_existing_3_44_second_window": false
+    },
+    {
+      "key": "audition_original_text",
+      "text": "姐妹们，今天这三件女装，咱们一件一件看！先看这件白色衬衫，简洁利落，通勤很好搭。再看粉色开衫，温柔百搭，叠穿也好看。最后这件黑色连衣裙，线条简洁，日常穿搭也很合适。喜欢哪一件，我们再看看细节！",
+      "sample_rate": 24000,
+      "duration_seconds": 24.0,
+      "seed": 2026100841,
+      "raw_sha256": "7403e68dc8445105ca933133cd07d93e2cb5573698fe71f4ce6dabce18565b8d",
+      "sha256": "a934f5fe32d0af832e5e3d42ec3553342c37132b61e6ffbce63907dad4de7d0a",
+      "reused_existing_raw": false,
+      "generation_and_processing_seconds": 17.617679309099913,
+      "processing": {
+        "target_lufs": -23,
+        "constant_gain_db": -2.9400000000000013,
+        "pre_gain_measurement": {
+          "input_i": "-20.06",
+          "input_tp": "-3.09",
+          "input_lra": "2.60",
+          "input_thresh": "-30.50",
+          "output_i": "-22.90",
+          "output_tp": "-5.91",
+          "output_lra": "2.40",
+          "output_thresh": "-33.34",
+          "normalization_type": "dynamic",
+          "target_offset": "-0.10"
+        },
+        "pitch_changed": false,
+        "speed_changed": false,
+        "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+      },
+      "fits_existing_3_44_second_window": false
+    },
+    {
+      "key": "shirt",
+      "text": "这件白衬衫款式比较简单，配长裤就挺好看。",
+      "sample_rate": 24000,
+      "duration_seconds": 4.48,
+      "seed": 2026100842,
+      "raw_sha256": "cb86acd9d916d71dd216b67a097830fbfc7ee6f6d959d39d4235f4929a85c84a",
+      "sha256": "63de85a154bba43a3685f057c6505ba26dd9c66a4f7408a9a6194d4e23b18e63",
+      "reused_existing_raw": false,
+      "generation_and_processing_seconds": 3.3827192140743136,
+      "processing": {
+        "target_lufs": -23,
+        "constant_gain_db": -1.0,
+        "pre_gain_measurement": {
+          "input_i": "-22.00",
+          "input_tp": "-5.99",
+          "input_lra": "2.30",
+          "input_thresh": "-32.25",
+          "output_i": "-23.02",
+          "output_tp": "-7.69",
+          "output_lra": "1.70",
+          "output_thresh": "-33.23",
+          "normalization_type": "dynamic",
+          "target_offset": "0.02"
+        },
+        "pitch_changed": false,
+        "speed_changed": false,
+        "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+      },
+      "fits_existing_3_44_second_window": false
+    },
+    {
+      "key": "cardigan",
+      "text": "这件粉色开衫，搭在衬衫外面也挺合适。",
+      "sample_rate": 24000,
+      "duration_seconds": 4.72,
+      "seed": 2026100843,
+      "raw_sha256": "312a0dea15a53eb3dcbe92ca837f751ce662599874e0e108729b779c02ae7e10",
+      "sha256": "32a3873da3369a4572ca9804b326d4e84bf99adfad8dd6ed10a7c77ecc5e3299",
+      "reused_existing_raw": false,
+      "generation_and_processing_seconds": 3.508096364326775,
+      "processing": {
+        "target_lufs": -23,
+        "constant_gain_db": -0.5500000000000007,
+        "pre_gain_measurement": {
+          "input_i": "-22.45",
+          "input_tp": "-5.13",
+          "input_lra": "1.20",
+          "input_thresh": "-32.95",
+          "output_i": "-23.05",
+          "output_tp": "-5.98",
+          "output_lra": "0.50",
+          "output_thresh": "-33.57",
+          "normalization_type": "dynamic",
+          "target_offset": "0.05"
+        },
+        "pitch_changed": false,
+        "speed_changed": false,
+        "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+      },
+      "fits_existing_3_44_second_window": false
+    },
+    {
+      "key": "dress",
+      "text": "这件黑色连衣裙，平时出门穿也挺好搭。",
+      "sample_rate": 24000,
+      "duration_seconds": 5.12,
+      "seed": 2026100844,
+      "raw_sha256": "299125b115a8682ef5b713170e5f34f1672e2d8c1806ff97c6be0c90c53c4d9e",
+      "sha256": "bd4c5e9050110969cdf2e54f05c5fad6e852571f3012dc632271bee5c3a04b8e",
+      "reused_existing_raw": false,
+      "generation_and_processing_seconds": 3.8985644639469683,
+      "processing": {
+        "target_lufs": -23,
+        "constant_gain_db": -2.84,
+        "pre_gain_measurement": {
+          "input_i": "-20.16",
+          "input_tp": "-3.85",
+          "input_lra": "0.60",
+          "input_thresh": "-30.33",
+          "output_i": "-23.25",
+          "output_tp": "-6.92",
+          "output_lra": "1.50",
+          "output_thresh": "-33.52",
+          "normalization_type": "dynamic",
+          "target_offset": "0.25"
+        },
+        "pitch_changed": false,
+        "speed_changed": false,
+        "equalizer": "highpass 65Hz; 3500Hz -2dB Q0.8"
+      },
+      "fits_existing_3_44_second_window": false
+    }
+  ],
+  "generated_at_utc": "2026-10-08T11:46:15.508403+00:00",
+  "scope": "Audio audition only; existing lip-synchronized videos are unchanged."
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "product": "shirt",
+    "label": "白色衬衫",
+    "directory": "/home/admin/womenswear-avatar-tests/inputs/shirt",
+    "seed": 2026100810,
+    "duration_seconds": 8.04,
+    "frames": 201,
+    "fps": 25,
+    "text": "白色衬衫，简洁利落，通勤好搭。",
+    "input_sha256": {
+      "driver.mp4": "27dbafbb87e1719f0b28677cef5064a373b856878579829462689be2689cf4e6",
+      "audio.wav": "d3db1d1c647ba7b7e6fab34a25015b6f5eca84309f2a1c603a702f3c5d0731a9",
+      "audio_16k.wav": "68d5b8b8ed7f9f492db0c538cb9c2f7af159241acaeb5e42a16328462b4b0c9f",
+      "reference.png": "505e483397eab87245e0a04410b106028af2a268d66008b79575bf8f90ab0e22",
+      "first_frame.png": "fd41e143d9484e8fd996a28e958223d349f92dd6ab7a9099ad581940a48b6073"
+    },
+    "input_kind": "generated_LTX_video",
+    "prompt": "A single continuous eight-second photorealistic women's fashion ecommerce demo. Locked PORTRAIT 3:4 medium-wide camera, no cuts or zoom. The same adult Chinese woman with shoulder-length black hair, a plain red long-sleeved top and blue jeans stands at viewer left against a warm gray studio wall. Her face stays fully visible. The display space at viewer right is empty initially and her hands are empty. The only product in this clip is one white long-sleeved button-up collared women's shirt, hanging on one wooden hanger with a silver hook. During seconds 0 to 2.4, a white-cuffed assistant's forearm enters from outside the RIGHT edge holding the hanger hook. The woman reaches toward viewer right, physically grasps the wooden hanger neck, takes its weight, and brings the same garment into the display space next to her torso. The assistant releases and withdraws completely. During seconds 2.4 to 5.8, she holds the hanger steadily with the hand on viewer right and gently supports or shows the sleeve with her other hand, garment front facing the camera, while speaking naturally with warm facial expression. Fabric hangs with gravity and subtle natural movement. During seconds 5.8 to 8, she moves this SAME garment and hanger toward the RIGHT edge, the same assistant hand grips the metal hook, then she visibly releases both hands and the assistant carries the garment COMPLETELY out through the right edge. At the end both her hands are empty and relaxed and the display space is empty again. There is exactly ONE garment and ONE hanger during the exchange and display, never a duplicate. The same garment retains its color, sleeves, collar, buttons and silhouette. It never merges with her red top, never materializes from empty space, never passes through fingers or body. Continuous reach, contact, weight transfer, hold, offer, receiver grip, release and edge exit. No other products, rack, table, text or subtitles. Soft steady studio light, realistic hand contact. During the silent beginning and ending her lips are naturally relaxed and closed."
+  },
+  {
+    "product": "cardigan",
+    "label": "粉色针织开衫",
+    "directory": "/home/admin/womenswear-avatar-tests/inputs/cardigan",
+    "seed": 2026100811,
+    "duration_seconds": 8.04,
+    "frames": 201,
+    "fps": 25,
+    "text": "粉色开衫，温柔百搭，适合叠穿。",
+    "input_sha256": {
+      "driver.mp4": "72be54a548655a49ed830f744a5386bf838ac64be911466847747c3ea259d3e3",
+      "audio.wav": "321d70c0e2d7d5affaf691c1d72b0dd479677abdd5a730fe179681ee5da7de1d",
+      "audio_16k.wav": "bd1f569de9da04cd39c572b1d15745132fc7906f8c16451b57981a44e5cd8d6f",
+      "reference.png": "505e483397eab87245e0a04410b106028af2a268d66008b79575bf8f90ab0e22",
+      "first_frame.png": "0d30980a2523bbd8ca079cc88a6ab156250a8864694b87c910a9b5d97db5411c"
+    },
+    "input_kind": "generated_LTX_video",
+    "prompt": "A single continuous eight-second photorealistic women's fashion ecommerce demo. Locked PORTRAIT 3:4 medium-wide camera, no cuts or zoom. The same adult Chinese woman with shoulder-length black hair, a plain red long-sleeved top and blue jeans stands at viewer left against a warm gray studio wall. Her face stays fully visible. The display space at viewer right is empty initially and her hands are empty. The only product in this clip is one pale dusty-pink long-sleeved V-neck knitted women's cardigan with matching buttons, hanging on one wooden hanger with a silver hook. During seconds 0 to 2.4, a white-cuffed assistant's forearm enters from outside the RIGHT edge holding the hanger hook. The woman reaches toward viewer right, physically grasps the wooden hanger neck, takes its weight, and brings the same garment into the display space next to her torso. The assistant releases and withdraws completely. During seconds 2.4 to 5.8, she holds the hanger steadily with the hand on viewer right and gently supports or shows the sleeve with her other hand, garment front facing the camera, while speaking naturally with warm facial expression. Fabric hangs with gravity and subtle natural movement. During seconds 5.8 to 8, she moves this SAME garment and hanger toward the RIGHT edge, the same assistant hand grips the metal hook, then she visibly releases both hands and the assistant carries the garment COMPLETELY out through the right edge. At the end both her hands are empty and relaxed and the display space is empty again. There is exactly ONE garment and ONE hanger during the exchange and display, never a duplicate. The same garment retains its color, sleeves, collar, buttons and silhouette. It never merges with her red top, never materializes from empty space, never passes through fingers or body. Continuous reach, contact, weight transfer, hold, offer, receiver grip, release and edge exit. No other products, rack, table, text or subtitles. Soft steady studio light, realistic hand contact. During the silent beginning and ending her lips are naturally relaxed and closed."
+  },
+  {
+    "product": "dress",
+    "label": "黑色连衣裙",
+    "directory": "/home/admin/womenswear-avatar-tests/inputs/dress",
+    "seed": 2026100812,
+    "duration_seconds": 8.04,
+    "frames": 201,
+    "fps": 25,
+    "text": "黑色连衣裙，线条简洁，日常好搭。",
+    "input_sha256": {
+      "driver.mp4": "fd4662348df3efb776a92e6ccfd14573b24fa75bb04103e1f6353a9f67927abb",
+      "audio.wav": "adfef5e61f53730a809e0d0d41ad73e5838f4bd17d52b3e28f00892bb224fe66",
+      "audio_16k.wav": "fd655a16d19563a3782cd16025d570cb64b4e1fdd767f33251cbabcfd3f26258",
+      "reference.png": "505e483397eab87245e0a04410b106028af2a268d66008b79575bf8f90ab0e22",
+      "first_frame.png": "0b14841c2b30337a9a3635f5f3f2ccf89caf99c2b8c6257b2898f9d5f0131a6c"
+    },
+    "input_kind": "generated_LTX_video",
+    "prompt": "A single continuous eight-second photorealistic women's fashion ecommerce demo. Locked PORTRAIT 3:4 medium-wide camera, no cuts or zoom. The same adult Chinese woman with shoulder-length black hair, a plain red long-sleeved top and blue jeans stands at viewer left against a warm gray studio wall. Her face stays fully visible. The display space at viewer right is empty initially and her hands are empty. The only product in this clip is one opaque black short-sleeved round-neck A-line women's dress with a defined waist seam, hanging on one wooden hanger with a silver hook. During seconds 0 to 2.4, a white-cuffed assistant's forearm enters from outside the RIGHT edge holding the hanger hook. The woman reaches toward viewer right, physically grasps the wooden hanger neck, takes its weight, and brings the same garment into the display space next to her torso. The assistant releases and withdraws completely. During seconds 2.4 to 5.8, she holds the hanger steadily with the hand on viewer right and gently supports or shows the sleeve with her other hand, garment front facing the camera, while speaking naturally with warm facial expression. Fabric hangs with gravity and subtle natural movement. During seconds 5.8 to 8, she moves this SAME garment and hanger toward the RIGHT edge, the same assistant hand grips the metal hook, then she visibly releases both hands and the assistant carries the garment COMPLETELY out through the right edge. At the end both her hands are empty and relaxed and the display space is empty again. There is exactly ONE garment and ONE hanger during the exchange and display, never a duplicate. The same garment retains its color, sleeves, collar, buttons and silhouette. It never merges with her red top, never materializes from empty space, never passes through fingers or body. Continuous reach, contact, weight transfer, hold, offer, receiver grip, release and edge exit. No other products, rack, table, text or subtitles. Soft steady studio light, realistic hand contact. During the silent beginning and ending her lips are naturally relaxed and closed."
+  }
+]

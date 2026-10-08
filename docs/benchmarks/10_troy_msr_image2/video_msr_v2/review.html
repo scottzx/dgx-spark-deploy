@@ -1,0 +1,120 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>木马计 · V2 控制实验</title><style>body{margin:0;background:#171815;color:#ebe8dc;font:16px/1.55 system-ui}main{max-width:1500px;margin:auto;padding:30px}h1{font-size:36px;margin:0}h2{border-top:1px solid #444;padding-top:24px}h3{margin:8px 0}a{color:#d5b56c}video,img{width:100%;display:block;background:#111}video{aspect-ratio:16/9}.lead{color:#c4c4b3;max-width:1100px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:#252721;padding:12px;border-radius:8px}small{color:#b1b39d}.frames{display:grid;grid-template-columns:1fr 1fr;gap:12px}summary{cursor:pointer;padding:8px 0}.tag{color:#d5b56c;font-weight:600}.pass{color:#92ce91}.partial{color:#e8c77e}.fail{color:#ee8e86}.sync{padding:10px 20px;background:#cfb16d;border:0;border-radius:6px;font-size:16px;cursor:pointer}@media(max-width:950px){.grid{grid-template-columns:1fr}.frames{grid-template-columns:1fr}}</style><main><h1>木马计 · V2 控制实验</h1><p class="lead">四个镜头 × 三种控制方式 × 两个种子，共24个新视频。组内固定提示词、MSR参考图、权重、8步、5秒和分辨率。静态关键帧全部由本地 Qwen Image 2.1 BF16 40步生成；本页展示实际推理视频。旧版只作为历史参考。</p>
+<p class="tag">已生成 24/24 · native768×448 → delivery768×432 · 24fps</p>
+<p>完整镜头严格通过 0/24。首尾帧改善了部分动作结尾；下梯开头方向、门闩机械结构、后排持续交战仍未全部解决。</p>
+<h2>动作节选 · 8秒</h2><p>下梯2秒 → 夺门交锋3秒 → 军团交战3秒。按人工检查的时间区间剪辑；战斗背景仍有站立和空挥，音轨未做听审，完整镜头仍待返修。</p><video id="action-excerpt" controls preload="metadata" src="action_excerpt.mp4"></video>
+<h2>A/B/C 同种子对比 · 40秒</h2><p>从左到右为MSR、首帧、首尾帧；每个镜头依次显示两个种子。比较视频无声。</p><video style="aspect-ratio:1728/372" controls preload="metadata" src="comparison_40s.mp4"></video>
+<details><summary>四镜头诊断样片 · 20秒（包含失败动作）</summary><p>逐镜挑选的较好候选，保留完整5秒用于检查缺陷；S16门闩结构错误，不能投入正式成片。</p><video controls preload="metadata" src="selected_diagnostic.mp4"></video></details>
+<p><a href="qa.md">验收记录</a> · <a href="shot_specs.json">镜头状态规格</a> · <a href="manifest.json">冻结输入清单</a> · <a href="../video_msr_v1/review.html">旧版100秒影片</a></p>
+<section data-case="S10"><h2>S10 · 奥德修斯向下爬梯</h2>
+<details><summary>查看已选择的起止关键帧与动作条件</summary><div class="frames">
+<figure><img loading="lazy" src="keyframes/S10_start.png"><figcaption>起始状态 · Qwen Image2.1</figcaption></figure>
+<figure><img loading="lazy" src="keyframes/S10_end_v4.png"><figcaption>结束状态 · Qwen Image2.1</figcaption></figure>
+</div><p>pelvis visibly moves down at least two rungs；no upward travel or direction reversal；both hands alternate secure ladder grips；identity, sword sheath and horse remain stable</p></details>
+<h3>种子 2026100601</h3><button class="sync" onclick="sync(this)">同时从头播放这一组</button><div class="grid">
+<article class="card"><h3>A · MSR 参考图</h3><p class="fail">动作或状态失败</p>
+<video controls preload="metadata" poster="inspection/S10_msr_2026100601/f001.jpg" src="clips/S10_msr_2026100601/delivered.mp4"></video>
+<p>0–2秒先向上靠近舱口，3.5秒转身离梯并落地；终点没有停在低两级的梯上。</p><small>S10_msr_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S10_msr_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>B · MSR＋首帧</h3><p class="fail">动作或状态失败</p>
+<video controls preload="metadata" poster="inspection/S10_msr_first_2026100601/f001.jpg" src="clips/S10_msr_first_2026100601/delivered.mp4"></video>
+<p>与同种子MSR轨迹接近：先向上、再转身离梯落地；首帧注入没有修正方向。</p><small>S10_msr_first_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S10_msr_first_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>C · MSR＋首尾帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S10_msr_first_last_2026100601/f001.jpg" src="clips/S10_msr_first_last_2026100601/delivered.mp4"></video>
+<p>末帧引导让后半段下移并保留在梯边/低梯位置，较A/B改善；但前约1.5秒仍向上爬，方向连续性不合格。</p><small>S10_msr_first_last_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S10_msr_first_last_2026100601_contact.jpg"></details></article>
+</div>
+<h3>种子 2026100602</h3><button class="sync" onclick="sync(this)">同时从头播放这一组</button><div class="grid">
+<article class="card"><h3>A · MSR 参考图</h3><p class="fail">动作或状态失败</p>
+<video controls preload="metadata" poster="inspection/S10_msr_2026100602/f001.jpg" src="clips/S10_msr_2026100602/delivered.mp4"></video>
+<p>先向上爬近舱口，随后转身跳下并离梯；动作方向和终点均违反规格。</p><small>S10_msr_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S10_msr_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>B · MSR＋首帧</h3><p class="fail">动作或状态失败</p>
+<video controls preload="metadata" poster="inspection/S10_msr_first_2026100602/f001.jpg" src="clips/S10_msr_first_2026100602/delivered.mp4"></video>
+<p>仍先向上爬，然后转身落地离梯；首帧约束未解决方向与终点。</p><small>S10_msr_first_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S10_msr_first_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>C · MSR＋首尾帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S10_msr_first_last_2026100602/f001.jpg" src="clips/S10_msr_first_last_2026100602/delivered.mp4"></video>
+<p>末帧引导让后半段下移并保留在梯边/低梯位置，较A/B改善；但前约1.5秒仍向上爬，方向连续性不合格。</p><small>S10_msr_first_last_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S10_msr_first_last_2026100602_contact.jpg"></details></article>
+</div>
+</section>
+<section data-case="S15"><h2>S15 · 剑矛交锋对照</h2>
+<details><summary>查看已选择的起止关键帧与动作条件</summary><div class="frames">
+<figure><img loading="lazy" src="keyframes/S15_start.png"><figcaption>起始状态 · Qwen Image2.1</figcaption></figure>
+<figure><img loading="lazy" src="keyframes/S15_end.png"><figcaption>结束状态 · Qwen Image2.1</figcaption></figure>
+</div><p>visible spear thrust and sword parry；no equipment transfer or duplication；both background pairs continue combat；lead faces and gate preserved</p></details>
+<h3>种子 2026100601</h3><button class="sync" onclick="sync(this)">同时从头播放这一组</button><div class="grid">
+<article class="card"><h3>A · MSR 参考图</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S15_msr_2026100601/f001.jpg" src="clips/S15_msr_2026100601/delivered.mp4"></video>
+<p>前约2秒主要摆姿，后段前景剑矛交锋与格挡清楚；背景四人的两对持续接触不够可读。</p><small>S15_msr_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S15_msr_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>B · MSR＋首帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S15_msr_first_2026100601/f001.jpg" src="clips/S15_msr_first_2026100601/delivered.mp4"></video>
+<p>起始姿态稳定，后段前景交锋；与A轨迹接近，未明显改善两对背景战斗的持续性。</p><small>S15_msr_first_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S15_msr_first_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>C · MSR＋首尾帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S15_msr_first_last_2026100601/f001.jpg" src="clips/S15_msr_first_last_2026100601/delivered.mp4"></video>
+<p>约1秒起前景开始连续交锋，较同种子A/B更早；末端剑矛姿态接近结束图，背景持续战斗仍不足。</p><small>S15_msr_first_last_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S15_msr_first_last_2026100601_contact.jpg"></details></article>
+</div>
+<h3>种子 2026100602</h3><button class="sync" onclick="sync(this)">同时从头播放这一组</button><div class="grid">
+<article class="card"><h3>A · MSR 参考图</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S15_msr_2026100602/f001.jpg" src="clips/S15_msr_2026100602/delivered.mp4"></video>
+<p>前景有一次刺击/格挡及回退，装备大体保留；起始约1秒静止，后景较多待机或挥舞。</p><small>S15_msr_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S15_msr_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>B · MSR＋首帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S15_msr_first_2026100602/f001.jpg" src="clips/S15_msr_first_2026100602/delivered.mp4"></video>
+<p>前景刺击、格挡和回退可读；背景中部人物有动作，但两对交锋仍偏弱。</p><small>S15_msr_first_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S15_msr_first_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>C · MSR＋首尾帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S15_msr_first_last_2026100602/f001.jpg" src="clips/S15_msr_first_last_2026100602/delivered.mp4"></video>
+<p>约1秒起前景动作，2–3秒格挡清楚，后约1秒停姿；背景不是持续两对对打。</p><small>S15_msr_first_last_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S15_msr_first_last_2026100602_contact.jpg"></details></article>
+</div>
+</section>
+<section data-case="S16"><h2>S16 · 双人抬闩与掩护</h2>
+<details><summary>查看已选择的起止关键帧与动作条件</summary><div class="frames">
+<figure><img loading="lazy" src="keyframes/S16_start_v4.png"><figcaption>起始状态 · Qwen Image2.1</figcaption></figure>
+<figure><img loading="lazy" src="keyframes/S16_end_v4.png"><figcaption>结束状态 · Qwen Image2.1</figcaption></figure>
+</div><p>two operators jointly lift the bar clear of both brackets；four hands stay on bar；no shield appears in operators hands；cover fighters engage throughout；gate remains closed</p></details>
+<h3>种子 2026100601</h3><button class="sync" onclick="sync(this)">同时从头播放这一组</button><div class="grid">
+<article class="card"><h3>A · MSR 参考图</h3><p class="fail">动作或状态失败</p>
+<video controls preload="metadata" poster="inspection/S16_msr_2026100601/f001.jpg" src="clips/S16_msr_2026100601/delivered.mp4"></video>
+<p>门闩先抬起后放到地面，操作者约2.5秒已拔剑，违背四手持闩/剑入鞘；托架随木闩变形移动。</p><small>S16_msr_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S16_msr_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>B · MSR＋首帧</h3><p class="fail">动作或状态失败</p>
+<video controls preload="metadata" poster="inspection/S16_msr_first_2026100601/f001.jpg" src="clips/S16_msr_first_2026100601/delivered.mp4"></video>
+<p>首帧未修正行为：中段持闩同时拔剑，后段闩落地；固定托架随闩变化。</p><small>S16_msr_first_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S16_msr_first_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>C · MSR＋首尾帧</h3><p class="fail">动作或状态失败</p>
+<video controls preload="metadata" poster="inspection/S16_msr_first_last_2026100601/f001.jpg" src="clips/S16_msr_first_last_2026100601/delivered.mp4"></video>
+<p>末端更接近举闩姿态，但中段仍出现拔剑并把闩降到腰部，后又抬回；门闩托架移动/新增错误保留。</p><small>S16_msr_first_last_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S16_msr_first_last_2026100601_contact.jpg"></details></article>
+</div>
+<h3>种子 2026100602</h3><button class="sync" onclick="sync(this)">同时从头播放这一组</button><div class="grid">
+<article class="card"><h3>A · MSR 参考图</h3><p class="fail">动作或状态失败</p>
+<video controls preload="metadata" poster="inspection/S16_msr_2026100602/f001.jpg" src="clips/S16_msr_2026100602/delivered.mp4"></video>
+<p>门闩抬高后停留在上方，操作者随后拔剑并放手，木闩仍悬挂；托架没有保持原位置。</p><small>S16_msr_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S16_msr_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>B · MSR＋首帧</h3><p class="fail">动作或状态失败</p>
+<video controls preload="metadata" poster="inspection/S16_msr_first_2026100602/f001.jpg" src="clips/S16_msr_first_2026100602/delivered.mp4"></video>
+<p>闩抬高后两人放手、拔剑，木闩留在上方，仍有闭环托架移位。</p><small>S16_msr_first_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S16_msr_first_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>C · MSR＋首尾帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S16_msr_first_last_2026100602/f001.jpg" src="clips/S16_msr_first_last_2026100602/delivered.mp4"></video>
+<p>操作者比A/B更能维持持闩姿态，未见明确拔剑；但木闩先升后降再升，托架移动/新增的结构错误保留。</p><small>S16_msr_first_last_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S16_msr_first_last_2026100602_contact.jpg"></details></article>
+</div>
+</section>
+<section data-case="S20"><h2>S20 · 大军团持续群战</h2>
+<details><summary>查看已选择的起止关键帧与动作条件</summary><div class="frames">
+<figure><img loading="lazy" src="keyframes/S20_start_v2.png"><figcaption>起始状态 · Qwen Image2.1</figcaption></figure>
+<figure><img loading="lazy" src="keyframes/S20_end.png"><figcaption>结束状态 · Qwen Image2.1</figcaption></figure>
+</div><p>both foreground pairs visibly strike, block and recoil；middle and rear lines fight rather than parade or stand still；factions visually distinct；no living horse motion or hero duplication；spatial landmarks remain fixed</p></details>
+<h3>种子 2026100601</h3><button class="sync" onclick="sync(this)">同时从头播放这一组</button><div class="grid">
+<article class="card"><h3>A · MSR 参考图</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S20_msr_2026100601/f001.jpg" src="clips/S20_msr_2026100601/delivered.mp4"></video>
+<p>前景有交锋，随后大量转身走位；画面明显拉远，违背本次固定机位条件。后排仍偏列队。</p><small>S20_msr_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S20_msr_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>B · MSR＋首帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S20_msr_first_2026100601/f001.jpg" src="clips/S20_msr_first_2026100601/delivered.mp4"></video>
+<p>与同种子A接近，前景交锋后转身走位并拉远；首帧未解决群战层次或固定构图。</p><small>S20_msr_first_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S20_msr_first_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>C · MSR＋首尾帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S20_msr_first_last_2026100601/f001.jpg" src="clips/S20_msr_first_last_2026100601/delivered.mp4"></video>
+<p>构图较A/B稳定，结尾恢复目标对打姿态；中段前景仍转身走位，后排持续交战不足。</p><small>S20_msr_first_last_2026100601</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S20_msr_first_last_2026100601_contact.jpg"></details></article>
+</div>
+<h3>种子 2026100602</h3><button class="sync" onclick="sync(this)">同时从头播放这一组</button><div class="grid">
+<article class="card"><h3>A · MSR 参考图</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S20_msr_2026100602/f001.jpg" src="clips/S20_msr_2026100602/delivered.mp4"></video>
+<p>两组前景对打持续性较好，颜色可区分；构图仍缓慢拉远，中后景多摆姿/挥舞，未形成足够清晰持续交锋。</p><small>S20_msr_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S20_msr_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>B · MSR＋首帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S20_msr_first_2026100602/f001.jpg" src="clips/S20_msr_first_2026100602/delivered.mp4"></video>
+<p>前景两对剑盾互动可读，后景存在武器动作；仍有镜头拉远与后排列队感。</p><small>S20_msr_first_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S20_msr_first_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>C · MSR＋首尾帧</h3><p class="partial">部分满足，仍有缺陷</p>
+<video controls preload="metadata" poster="inspection/S20_msr_first_last_2026100602/f001.jpg" src="clips/S20_msr_first_last_2026100602/delivered.mp4"></video>
+<p>本组前景和中景交锋最清楚，阵营颜色与构图较稳定；后排仍偏列队/摆姿，不能据此确认三层持续群战通过。</p><small>S20_msr_first_last_2026100602</small><details><summary>11个时间采样</summary><img loading="lazy" src="inspection/S20_msr_first_last_2026100602_contact.jpg"></details></article>
+</div>
+</section>
+<p class="lead">人工评价依据每段11个采样帧（每0.5秒＋末帧）；不等同于逐帧动作和音轨终验。首尾约束绑定原生第0/120帧，交付视频为前120帧。严格通过与较好候选分别记录。</p></main><script>function sync(b){let vids=b.nextElementSibling.querySelectorAll('video');vids.forEach(v=>{v.pause();v.currentTime=0;v.muted=true;v.play().catch(()=>{})})}</script></html>

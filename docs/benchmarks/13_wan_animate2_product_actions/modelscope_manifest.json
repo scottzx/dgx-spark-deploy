@@ -1,0 +1,263 @@
+[
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "transformer/config.json",
+    "target": "transformer/config.json",
+    "size": 457,
+    "sha256": "a1be4a429c78d11073464954fc94a1f811d1b3b4ccc4d6b8bfe1ff90d92bd8af"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "442c738e25d45c81b07e38adfe941c6ffef2508f",
+    "name": "text_encoder/config.json",
+    "target": "text_encoder/config.json",
+    "size": 806,
+    "sha256": "b5efc7f156f114b13fcb58d3e395f5b51dd3c9317572890b56ed4e6393c1680b"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "a319597951dc4d58aaa3a1d8ebc9ecfa3191165c",
+    "name": "vae/config.json",
+    "target": "vae/config.json",
+    "size": 898,
+    "sha256": "11f840073d1ed2f4090c738d645994bf896a6c7daea0987a15b4f2ebe89b5128"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "00b8d4270db65809b4d2313a8ad5cde9caead585",
+    "name": "image_encoder/config.json",
+    "target": "image_encoder/config.json",
+    "size": 498,
+    "sha256": "c145715057b80f65fab306986f4a4f8e41f0b499745cc5ef0aa9f90ae263c3cb"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "4258a30a6b224ec356621075a3901c290dd5d6a5",
+    "name": "configuration.json",
+    "target": "configuration.json",
+    "size": 64,
+    "sha256": "625c81a3527ce4f7a739854b431f380a987dc4af5e07e099b568e50e2e3b248c"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "transformer/diffusion_pytorch_model-00001-of-00004.safetensors",
+    "target": "transformer/diffusion_pytorch_model-00001-of-00004.safetensors",
+    "size": 9874593104,
+    "sha256": "ebc182727d948cb61cac929af3b2887e0a4b7c8b683b7356628cf0350d332c0a"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "transformer/diffusion_pytorch_model-00002-of-00004.safetensors",
+    "target": "transformer/diffusion_pytorch_model-00002-of-00004.safetensors",
+    "size": 9975379320,
+    "sha256": "e808cf7a7e7aaf358478a2198152f9e3ec8609c66712be397c21b4b7ec7ef501"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "transformer/diffusion_pytorch_model-00003-of-00004.safetensors",
+    "target": "transformer/diffusion_pytorch_model-00003-of-00004.safetensors",
+    "size": 9954401600,
+    "sha256": "444eeea631fe6d2df80780f521f6c7716bd079fc177279ba09d2d20479f2dfaf"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "transformer/diffusion_pytorch_model-00004-of-00004.safetensors",
+    "target": "transformer/diffusion_pytorch_model-00004-of-00004.safetensors",
+    "size": 2985521520,
+    "sha256": "130fd0a278a06096e483f08b2492ddd86b89fef8676b3d7b30556b3230a9b005"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "a59d1b7054cbda5f9ee0694e338e4331485a7487",
+    "name": "vae/diffusion_pytorch_model.safetensors",
+    "target": "vae/diffusion_pytorch_model.safetensors",
+    "size": 507591892,
+    "sha256": "d6e524b3fffede1787a74e81b30976dce5400c4439ba64222168e607ed19e793"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "transformer/diffusion_pytorch_model.safetensors.index.json",
+    "target": "transformer/diffusion_pytorch_model.safetensors.index.json",
+    "size": 119890,
+    "sha256": "6e80a505bfc4907ad3885b7436b3110d3f364aa84d92d0895d74a0feed6857fb"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "93d0a624ec033952f99b3fe90f2c29a2d5798694",
+    "name": "image_processor/merges.txt",
+    "target": "image_processor/merges.txt",
+    "size": 524619,
+    "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "442c738e25d45c81b07e38adfe941c6ffef2508f",
+    "name": "text_encoder/model-00001-of-00003.safetensors",
+    "target": "text_encoder/model-00001-of-00003.safetensors",
+    "size": 4935812536,
+    "sha256": "a8e861969c7433e707cc5a74065d795d36cca07ec96eb6763eb4083df7248f58"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "9288f810f81b136367edb30690415c26de71fb23",
+    "name": "text_encoder/model-00002-of-00003.safetensors",
+    "target": "text_encoder/model-00002-of-00003.safetensors",
+    "size": 4983103192,
+    "sha256": "d57d948ece4837d850b7a859a4415121d57cacf8b9ee1d4db200c67f592902d7"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "9288f810f81b136367edb30690415c26de71fb23",
+    "name": "text_encoder/model-00003-of-00003.safetensors",
+    "target": "text_encoder/model-00003-of-00003.safetensors",
+    "size": 1442935480,
+    "sha256": "0da9ee284e21d1406df708788db1d502d95d75f69faa25cd26151bf8829b7c5f"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "00b8d4270db65809b4d2313a8ad5cde9caead585",
+    "name": "image_encoder/model.safetensors",
+    "target": "image_encoder/model.safetensors",
+    "size": 1261596224,
+    "sha256": "e672f7dcb7f46458f8edc218669bc25d7ab1fc48bec53e8bd5b957bc1386a5e4"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "6da01cb18a1eaa106b0c76cac521354fb787ad2d",
+    "name": "text_encoder/model.safetensors.index.json",
+    "target": "text_encoder/model.safetensors.index.json",
+    "size": 22512,
+    "sha256": "44944817a9a9055a60de879bb54163a8cc137c350116b8a122b3b9ae59ba88cf"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "model_index.json",
+    "target": "model_index.json",
+    "size": 564,
+    "sha256": "da26517859f8e2766366795750dbfe3f758968fc9dfa6650f4c9f5beb1e6bc1d"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "93d0a624ec033952f99b3fe90f2c29a2d5798694",
+    "name": "image_processor/preprocessor_config.json",
+    "target": "image_processor/preprocessor_config.json",
+    "size": 466,
+    "sha256": "205d45875859846dc1ca211b9a19f5db72f47e953b396954ee34d48d8e95c3c6"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "scheduler/scheduler_config.json",
+    "target": "scheduler/scheduler_config.json",
+    "size": 487,
+    "sha256": "dd230f215f07fef6c626e26bb42946ab2db3a100eed1053a43fee738302f7b62"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "766f7dac2b90785d2e092c90a30caafb77a053e8",
+    "name": "image_processor/special_tokens_map.json",
+    "target": "image_processor/special_tokens_map.json",
+    "size": 588,
+    "sha256": "2cdb3b8331a60c92fc1e55a13e9fd61fd2293c5a51275fdcccd62b780052530e"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "6da01cb18a1eaa106b0c76cac521354fb787ad2d",
+    "name": "tokenizer/special_tokens_map.json",
+    "target": "tokenizer/special_tokens_map.json",
+    "size": 7079,
+    "sha256": "456b58fd240a06c743a7c2cf8008bec501240d68ebd1fc4018ea569505fea270"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "cd7b7db577dc7ae0de1b527423676494989d01e7",
+    "name": "tokenizer/spiece.model",
+    "target": "tokenizer/spiece.model",
+    "size": 4548313,
+    "sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "cd7b7db577dc7ae0de1b527423676494989d01e7",
+    "name": "tokenizer/tokenizer.json",
+    "target": "tokenizer/tokenizer.json",
+    "size": 16837459,
+    "sha256": "20a46ac256746594ed7e1e3ef733b83fbc5a6f0922aa7480eda961743de080ef"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "766f7dac2b90785d2e092c90a30caafb77a053e8",
+    "name": "image_processor/tokenizer.json",
+    "target": "image_processor/tokenizer.json",
+    "size": 3642073,
+    "sha256": "6d9109cc838977f3ca94a379eec36aecc7c807e1785cd729660ca2fc0171fb35"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "63af418783c54accfb7f96a6448206c13f2e6c89",
+    "name": "tokenizer/tokenizer_config.json",
+    "target": "tokenizer/tokenizer_config.json",
+    "size": 61786,
+    "sha256": "89bef11d01c80a229079666dd470d536aba87b8eaa00b51cc481ba625be59269"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "f3e7524f17b8bcbb4429533d89cbba1be5cced1b",
+    "name": "image_processor/tokenizer_config.json",
+    "target": "image_processor/tokenizer_config.json",
+    "size": 774,
+    "sha256": "c3d2a67c48a59ffa8fd92de060608524b12cae93acb4fe83e5eb03147a001f5a"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "f3e7524f17b8bcbb4429533d89cbba1be5cced1b",
+    "name": "image_processor/vocab.json",
+    "target": "image_processor/vocab.json",
+    "size": 862328,
+    "sha256": "5047b556ce86ccaf6aa22b3ffccfc52d391ea4accdab9c2f2407da5b742d4363"
+  },
+  {
+    "provider": "modelscope",
+    "repo": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+    "revision": "793356ec659d613c842babaf1b406d9774c83db8",
+    "name": "modular_model_index.json",
+    "target": "modular_model_index.json",
+    "size": 2167,
+    "sha256": "ca29bd15a717e091b0aee14e22adc6669c511221e6e83ff82f42c339eee20827"
+  }
+]

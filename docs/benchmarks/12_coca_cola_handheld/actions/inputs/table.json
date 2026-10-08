@@ -1,0 +1,25 @@
+{
+  "prompt": "Create one coherent photorealistic ecommerce studio photograph, landscape 3:2 composition. Preserve the exact adult Chinese woman from reference image 1, her facial identity, straight black hair, red crew-neck blouse and warm gray background. Medium waist-up shot with her centered behind a clean light gray tabletop, face clearly visible in the upper half. Both hands rest empty and relaxed on the tabletop near her body, not touching the products. Exactly three separate upright realistic 330ml beverage cans sit on the tabletop in a widely spaced row in front of her. From viewer left to right: reference image 2 red original Coca-Cola can with white letters; reference image 3 silver Diet Coke can with red letters; reference image 4 red Zero Sugar can with black letters. Preserve all three products and labels, the cans are palm-sized, realistic scale. All three cans, both hands and the space above the table are fully visible. Keep some empty table area around every can. Soft even frontal studio light and grounded can contact shadows. Her lips gently closed. No collage, no extra products, no writing outside can labels.",
+  "seed": 2026100701,
+  "model": "Qwen-Image-2.1 + Viggle Turbo 6-step",
+  "size": [
+    768,
+    512
+  ],
+  "references": [
+    "/home/admin/digital-human-runtime/inputs/presenter.png",
+    "/home/admin/digital-human-runtime/inputs/original_gb.jpg",
+    "/home/admin/digital-human-runtime/inputs/diet.jpg",
+    "/home/admin/digital-human-runtime/inputs/zero.jpg"
+  ],
+  "reference_sha256": [
+    "4b7dff47b29efdd65cc5391583201fa07a347635f929303b59824fe167eb2584",
+    "5b2c28d45df3a4b875474f92e9971ecefc1cdc2553c833bdcd29fabe943bf48e",
+    "68fb875e8799c97555d4a95628293da152beaf2b5b1ef0bcb9b0794cbdb84e92",
+    "c6b804c927e410e9d9d374434b50d080a806ba846646a141b2ff0141fe8c4066"
+  ],
+  "load_seconds": 239.03982389578596,
+  "generation_seconds": 17.940460208803415,
+  "peak_cuda_allocated_gib": 42.648966789245605,
+  "sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+}

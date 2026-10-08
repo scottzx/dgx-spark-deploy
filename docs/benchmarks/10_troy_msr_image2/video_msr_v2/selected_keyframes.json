@@ -1,0 +1,18 @@
+{
+  "S10": {
+    "start": "keyframes/S10_start.png",
+    "end": "keyframes/S10_end_v4.png"
+  },
+  "S15": {
+    "start": "keyframes/S15_start.png",
+    "end": "keyframes/S15_end.png"
+  },
+  "S16": {
+    "start": "keyframes/S16_start_v4.png",
+    "end": "keyframes/S16_end_v4.png"
+  },
+  "S20": {
+    "start": "keyframes/S20_start_v2.png",
+    "end": "keyframes/S20_end.png"
+  }
+}

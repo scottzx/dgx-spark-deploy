@@ -1,0 +1,49 @@
+{
+  "Lightricks/LTX-2.5-22b-IC-LoRA-Ingredients": [
+    {
+      "CommitMessage": "Upload folder using ModelScope SDK (batch 1/1)",
+      "CommittedDate": 1789140260,
+      "CommitterName": "systemd",
+      "InCheck": false,
+      "IsLFS": true,
+      "Mode": "33188",
+      "Name": "ltx-2.5-22b-ic-lora-ingredients-0.9.safetensors",
+      "Path": "ltx-2.5-22b-ic-lora-ingredients-0.9.safetensors",
+      "Revision": "ea9e6b3881d51b195bce890623888107dbd79f31",
+      "Sha256": "ff873a5beada3c579a8137c7c53343916f78bcc9a529ba910143073fe8715e95",
+      "Size": 1308787472,
+      "Type": "blob"
+    }
+  ],
+  "Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render": [],
+  "LiconStudio/LTX-2.5-Multiple-Subject-Reference": [
+    {
+      "CommitMessage": "Upload folder using ModelScope SDK (batch 1/11)",
+      "CommittedDate": 1786732746,
+      "CommitterName": "systemd",
+      "InCheck": false,
+      "IsLFS": true,
+      "Mode": "33188",
+      "Name": "LTX-2.5-Licon-MSR-V1.safetensors",
+      "Path": "LTX-2.5-Licon-MSR-V1.safetensors",
+      "Revision": "ae8ba30548bf62f6ae0517f8ac215e7ec1eb4ae1",
+      "Sha256": "d45cedd720e5819ccbe200a4b0ae01f7ae0e0d2966d700a24ebd4c7739515d4f",
+      "Size": 1308840536,
+      "Type": "blob"
+    },
+    {
+      "CommitMessage": "Upload LTX2.5-MSR-sample-workflow-V2.json (batch 1/10)",
+      "CommittedDate": 1790008829,
+      "CommitterName": "systemd",
+      "InCheck": false,
+      "IsLFS": true,
+      "Mode": "33188",
+      "Name": "LTX-2.5-Licon-MSR-V2.safetensors",
+      "Path": "LTX-2.5-Licon-MSR-V2.safetensors",
+      "Revision": "1eb9ecd00ed6f4a77f1509040ffb7ded658948fc",
+      "Sha256": "7cf982168d4f77f44b02943fb458f937f90c89335dcf7cf71b2f425e78bab713",
+      "Size": 2215094328,
+      "Type": "blob"
+    }
+  ]
+}

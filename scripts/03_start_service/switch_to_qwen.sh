@@ -1,42 +1,60 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-# Keep language-model startup exclusive with the Sol-H3-Spark batch.
-if [[ -d /home/admin/sol-spark-runtime ]]; then
-    exec 9>/home/admin/sol-spark-runtime/inference.lock
-    if ! flock -n 9; then
-        echo 'Sol-H3-Spark 正在生成视频；请等待任务完成，或在其运行终端按 Ctrl+C 结束后再切换。' >&2
-        exit 1
-    fi
-fi
-
 # ==============================================================================
-# 切换至 Qwen 3.8 Flash (停止 MiniMax-H3 释放显存，启动 Qwen 3.8 Flash)
+# 切换至 Qwen 3.8 Flash (停止 MiniMax / Sol-H3-Spark 释放显存，启动 Qwen 3.8 Flash 常驻服务)
 # ==============================================================================
 echo "=========================================================="
 echo "准备切换至 Qwen 3.8 Flash 服务..."
 echo "=========================================================="
 
-# 1. 停止 MiniMax-H3 服务
-echo "1. 正在停止 MiniMax-H3 进程..."
-if pgrep -f "sglang.*MiniMax-H3" >/dev/null 2>&1; then
-    pkill -f "sglang.*MiniMax-H3" || true
-    echo "   已发送停止信号，等待显存完全释放..."
-    for i in {1..15}; do
-        if ! pgrep -f "sglang.*MiniMax-H3" >/dev/null 2>&1; then
-            break
-        fi
-        sleep 1
-    done
-    rm -f /home/admin/h3-lightning/server.pid
-    echo "   MiniMax-H3 已停止。"
-else
-    echo "   MiniMax-H3 当前未在运行。"
+# 1. 停止 MiniMax-H3 / Sol-H3-Spark 服务
+echo "1. 正在停止 MiniMax / Sol-H3-Spark 相关进程与容器..."
+
+# 1.1 停止 Sol-H3-Spark 常驻 API 服务及 Worker
+if pgrep -f "sol_api_server.py" >/dev/null 2>&1 || pgrep -f "runtime.worker" >/dev/null 2>&1; then
+    echo "   发现 Sol-H3-Spark 运行中，正在停止..."
+    if [[ -x /home/admin/sol-spark-runtime/stop_sol_server.sh ]]; then
+        bash /home/admin/sol-spark-runtime/stop_sol_server.sh || true
+    else
+        pkill -f "sol_api_server.py" || true
+        sleep 2
+        pkill -9 -f "runtime.worker" || true
+        pkill -9 -f "stage1-env" || true
+        pkill -9 -f "stage2-env" || true
+    fi
 fi
 
-# 2. 启动 Qwen 3.8 Flash Docker 容器
+# 1.2 清理 Sol-H3 的临时 Qwen Docker 容器
+SOL_QWEN_CONTAINERS=$(docker ps -q --filter "name=sol-h3-qwen" 2>/dev/null || true)
+if [[ -n "${SOL_QWEN_CONTAINERS}" ]]; then
+    echo "   正在移除 Sol-H3 Qwen 临时容器..."
+    docker rm -f ${SOL_QWEN_CONTAINERS} >/dev/null 2>&1 || true
+fi
+
+# 1.3 停止旧版 SGLang MiniMax-H3
+if pgrep -f "sglang.*MiniMax-H3" >/dev/null 2>&1; then
+    echo "   停止 SGLang MiniMax-H3 进程..."
+    pkill -f "sglang.*MiniMax-H3" || true
+fi
+
+rm -f /home/admin/h3-lightning/server.pid 2>/dev/null || true
+rm -f /home/admin/sol-spark-runtime/inference.lock 2>/dev/null || true
+
+echo "   等待显存与进程完全释放..."
+for i in {1..15}; do
+    if ! pgrep -f "sol_api_server|stage1-env|stage2-env|runtime.worker|sglang.*MiniMax" >/dev/null 2>&1; then
+        break
+    fi
+    sleep 1
+done
+echo "   MiniMax 相关服务已完全停止，显存已释放。"
+
+# 2. 启动 Qwen 3.8 Flash (生产常驻全套服务: Docker 8001 + FIFO Proxy 8000)
 echo "2. 正在启动 Qwen 3.8 Flash (qwen3-8-flash-next)..."
-if docker ps -a --format "{{.Names}}" | grep -q "^qwen3-8-flash-next$"; then
+if [[ -f /home/admin/start_service_with_proxy.sh ]]; then
+    bash /home/admin/start_service_with_proxy.sh
+elif docker ps -a --format "{{.Names}}" | grep -q "^qwen3-8-flash-next$"; then
     docker start qwen3-8-flash-next
 else
     bash /home/admin/start_qwen3.8_flash_next_docker.sh

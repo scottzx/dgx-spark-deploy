@@ -1,0 +1,55 @@
+[
+  {
+    "file": "actions/dubbed/original/dubbed.mp4",
+    "frames": 201,
+    "fps": 25,
+    "video_duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "audio_duration_seconds": 8.04
+  },
+  {
+    "file": "actions/dubbed/diet/dubbed.mp4",
+    "frames": 201,
+    "fps": 25,
+    "video_duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "audio_duration_seconds": 8.04
+  },
+  {
+    "file": "actions/dubbed/zero/dubbed.mp4",
+    "frames": 201,
+    "fps": 25,
+    "video_duration_seconds": 8.04,
+    "full_decode_passed": true,
+    "audio_duration_seconds": 8.04
+  },
+  {
+    "file": "actions/motion/original/motion.mp4",
+    "frames": 201,
+    "fps": 25,
+    "video_duration_seconds": 8.04,
+    "full_decode_passed": true
+  },
+  {
+    "file": "actions/motion/diet/motion.mp4",
+    "frames": 201,
+    "fps": 25,
+    "video_duration_seconds": 8.04,
+    "full_decode_passed": true
+  },
+  {
+    "file": "actions/motion/zero/motion.mp4",
+    "frames": 201,
+    "fps": 25,
+    "video_duration_seconds": 8.04,
+    "full_decode_passed": true
+  },
+  {
+    "file": "actions/three_products.mp4",
+    "frames": 603,
+    "fps": 25,
+    "video_duration_seconds": 24.12,
+    "full_decode_passed": true,
+    "audio_duration_seconds": 24.12
+  }
+]

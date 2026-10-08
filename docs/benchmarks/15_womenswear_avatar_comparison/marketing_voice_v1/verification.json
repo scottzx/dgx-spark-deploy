@@ -1,0 +1,162 @@
+[
+  {
+    "path": "vivian_guide/audition.wav",
+    "sha256": "4f93f636578978d066775b3811f6522a5f45aa834ef92ef2a567a69dcd51ed9d",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 24.96,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -4.92,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_guide/shirt.wav",
+    "sha256": "a45ce2a79c49938fbd619d4af8c15179fdba41e8e12e294910e87a05eb18e380",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 6.4,
+    "integrated_lufs": -23.01,
+    "true_peak_dbfs": -8.11,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_guide/cardigan.wav",
+    "sha256": "3c900099f9f73cdcc84df44e0a1237f01974d113828fc4c6dd27943c202e68e7",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 4.24,
+    "integrated_lufs": -22.98,
+    "true_peak_dbfs": -7.12,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_guide/dress.wav",
+    "sha256": "12537659a55aa6402289d830aa57488ba6f52e521577218f387063fc5ded1951",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 5.52,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -7.04,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_live/audition.wav",
+    "sha256": "c2b99b38e386adc032deb51f1b5f50eeb0f98f7e6fff6d91ffa9b9da342f3dbd",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 23.6,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -4.83,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_live/shirt.wav",
+    "sha256": "d294169233c0e383c2345b547aa605758135d62ec15e570e204ede93883c5412",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 3.76,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -7.74,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_live/cardigan.wav",
+    "sha256": "318a157de875428d9abe726276d075a3f14f14f3ea27dc815c4f0daeae934f67",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 3.52,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -6.41,
+    "full_decode": true
+  },
+  {
+    "path": "vivian_live/dress.wav",
+    "sha256": "e82d7ba610d8d6691865c69ef4fc2c3a0bd4032c02f8fa2028e22f15622da7dd",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 4.08,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -7.7,
+    "full_decode": true
+  },
+  {
+    "path": "serena_full/audition.wav",
+    "sha256": "7c0571d55c3dcf4e1b7246f90056411f1636e1bf7027b387ba9727b969ae78eb",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 22.48,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -3.53,
+    "full_decode": true
+  },
+  {
+    "path": "serena_full/shirt.wav",
+    "sha256": "bebb8b659b5669d8339f8e9c4882c9e25266182f61296cf908e7e9cfdc18e226",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 3.92,
+    "integrated_lufs": -22.99,
+    "true_peak_dbfs": -7.92,
+    "full_decode": true
+  },
+  {
+    "path": "serena_full/cardigan.wav",
+    "sha256": "6e4019fa1cc8480ab0bb7f5f640f9764145481e3c502fcb35c8e3a75015bbd1b",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 2.56,
+    "integrated_lufs": -23.01,
+    "true_peak_dbfs": -8.25,
+    "full_decode": true
+  },
+  {
+    "path": "serena_full/dress.wav",
+    "sha256": "ff3ae3fbe8e5122c8b4f514e80d63074a29b7f9de066adbac036e566412fffc0",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 3.28,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -7.9,
+    "full_decode": true
+  },
+  {
+    "path": "baseline/audition.wav",
+    "sha256": "64e12c6bc7788549117d7e87558f32a36ee1ef3994ba6a4f25be67c948dbab14",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 21.76,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -4.56,
+    "full_decode": true
+  },
+  {
+    "path": "baseline/shirt.wav",
+    "sha256": "2eff78f667cb976acf9c4284b94a3c345e93e916968069e2f04bf408bc753060",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 4.48,
+    "integrated_lufs": -23.01,
+    "true_peak_dbfs": -6.43,
+    "full_decode": true
+  },
+  {
+    "path": "baseline/cardigan.wav",
+    "sha256": "a2ac32dc95c516eeda121e182e6c1ec20e3f4665f127a9cd4d5a27c226dfc64d",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 4.4,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -5.25,
+    "full_decode": true
+  },
+  {
+    "path": "baseline/dress.wav",
+    "sha256": "9882d851a90d165f31ed9eeb447ee46891dea26899729ffb0fcffe2a0971ae5b",
+    "sample_rate": 24000,
+    "channels": 1,
+    "duration_seconds": 3.68,
+    "integrated_lufs": -23.0,
+    "true_peak_dbfs": -7.45,
+    "full_decode": true
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "engine": "latentsync",
+  "product": "diet",
+  "input_sha256": {
+    "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+    "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+    "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+    "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+  },
+  "commit": "a229c3948406bc2cf6eaf4873e662e70c6a04746",
+  "shared_model_load_seconds": 11.27645057439804,
+  "render_seconds": 378.83897875389084,
+  "peak_cuda_allocated_gib": 10.991151332855225,
+  "native_output": "/home/admin/avatar-company-tests/outputs/latentsync/diet/native.mp4",
+  "scope": "Official video-to-video lip synchronization. Pickup/return body actions come from the original LTX video.",
+  "steps": 20,
+  "guidance_scale": 1.5,
+  "model_generates_product_actions": false,
+  "original_LTX_actions_preserved": true,
+  "compatibility": [
+    "OpenCV/FFmpeg CPU decord adapter",
+    "CPU ONNX face detection, four threads",
+    "Existing local sd-vae-ft-mse weights",
+    "Diffusers 0.32.2 in isolated dependency directory"
+  ],
+  "native_duration_seconds": 8.12,
+  "native_output_sha256": "ef0a4464b2ad3faa1f794aee3763ff89d8803e11762d36fb420212012af61db9",
+  "video_sha256": "2a130d41e458e9213aa2defafd655407dabb96b7c74d54626f4d06b26f205639"
+}

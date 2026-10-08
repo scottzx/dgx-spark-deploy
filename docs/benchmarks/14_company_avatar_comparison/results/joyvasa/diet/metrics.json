@@ -1,0 +1,27 @@
+{
+  "engine": "joyvasa",
+  "product": "diet",
+  "scope": "Official image-and-audio portrait animation. Hands and products originate from one still image; this test does not generate pickup/return actions.",
+  "input_sha256": {
+    "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+    "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+    "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+    "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+  },
+  "driver": "/home/admin/avatar-company-tests/inputs/diet/audio_16k.wav",
+  "driver_sha256": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+  "native_output": "/home/admin/avatar-company-tests/outputs/joyvasa/diet/first_frame_audio_16k.mp4",
+  "native_output_sha256": "63ed5402d33f43111b03d8a5912bffe7a9f0dbcf6ea83bc2920ae2aa9db83071",
+  "video_sha256": "c2b7d201fbdd80509f5dcc3e1ab874c504bb310975bc103ab1b6be72e9868990",
+  "shared_model_load_seconds": 4.358682113699615,
+  "render_seconds": 15.508330878801644,
+  "peak_cuda_allocated_gib": 1.4495062828063965,
+  "commit": "916a90f8de490e8648fee460c1200bd5d9a795af",
+  "compatibility": [
+    "CPU ONNX face detection/landmarks, four threads",
+    "PyTorch trusted official checkpoint weights_only=False",
+    "HuBERT eager attention restores original attention-output behavior"
+  ],
+  "model_generates_product_actions": false,
+  "original_LTX_actions_preserved": false
+}

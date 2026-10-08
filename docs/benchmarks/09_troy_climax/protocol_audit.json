@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "shots_per_method": 6,
+  "methods": 4,
+  "matched_capture_pairs": 6,
+  "verified_continuation_joins": 3,
+  "frames_per_film": 669,
+  "media_files_hashed": 52,
+  "assets_verified": 17,
+  "qwen_text_service": "exited"
+}

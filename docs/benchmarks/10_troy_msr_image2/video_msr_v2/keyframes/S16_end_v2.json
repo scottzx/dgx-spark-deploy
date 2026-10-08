@@ -1,0 +1,37 @@
+{
+  "id": "S16_end_v2",
+  "title": "双人抬闩与掩护",
+  "output": "keyframes/S16_end_v2.png",
+  "references": [
+    "keyframes/S16_start_v2.png"
+  ],
+  "prompt": "Use image1 as exact START composition. Now lift the SAME single horizontal gate bar about 70 PIXELS UP so it is clearly ABOVE the TWO iron U-shaped gate brackets. Show an unmistakable air gap between bar underside and both EMPTY bracket tops. Leave both brackets in their old positions attached to the gate. Left Odysseus and right young Greek move ONLY their four hands and arms upward with the bar, still holding it together horizontally; bodies and feet unchanged. The bar must be entirely clear of the brackets but still across the closed gate, not carried away. Gate remains CLOSED. Exactly same seven actors, same side fighters, same young soldier ONE shield strapped on BACK, both swords sheathed LEFT; Odysseus NO shield. Background, camera, torch light unchanged. Photorealistic single film still no text or blood.",
+  "seed": 2026100733,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S16_end_v2.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.74405387835577,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "7e5cbf99143dbae3721374a2b10a4887b813050a7f4912ecc2da4849825d355f"
+  ],
+  "sha256": "7331ed07c5566f6288a86d5d043cbedf3e0d2cd16f2634aba190f7b33d208e9c",
+  "bytes": 2707654,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "commit": "4dfc42b0e2dbbded4d148387d186219bd7601279",
+  "official_source_file": "/home/admin/avatar-company-tests/sources/avatarforever/inference.py",
+  "cli_defaults": [
+    {
+      "flag": "--stage1-sigmas",
+      "default": [
+        1.0,
+        0.98125,
+        0.909375,
+        0.421875,
+        0.0
+      ],
+      "line": 60
+    },
+    {
+      "flag": "--fast-infer",
+      "default": false,
+      "line": 66
+    },
+    {
+      "flag": "--ar-video-chunk-size",
+      "default": 4,
+      "line": 69
+    },
+    {
+      "flag": "--ar-history-chunk-count",
+      "default": 1,
+      "line": 70
+    },
+    {
+      "flag": "--ar-sink-first-chunk",
+      "default": true,
+      "line": 71
+    },
+    {
+      "flag": "--ar-relative-positions",
+      "default": true,
+      "line": 72
+    },
+    {
+      "flag": "--ar-history-feature-cache",
+      "default": false,
+      "line": 73
+    },
+    {
+      "flag": "--first-frame-prefix-condition",
+      "default": false,
+      "line": 74
+    },
+    {
+      "flag": "--first-frame-condition-position",
+      "default": "prepend",
+      "line": 80
+    },
+    {
+      "flag": "--first-frame-channel-condition",
+      "default": true,
+      "line": 90
+    },
+    {
+      "flag": "--first-frame-channel-condition-mode",
+      "default": "gated",
+      "line": 96
+    },
+    {
+      "flag": "--first-frame-channel-condition-init",
+      "default": "zero",
+      "line": 101
+    }
+  ],
+  "primary_test_history_feature_cache": true,
+  "additional_three_product_tests_history_feature_cache": false,
+  "note": "Official CLI defaults disable history feature caching. The primary run explicitly enables it; the extra product runs restore the CLI default, preserving other product inputs and settings.",
+  "constructor_compatibility": "Explicit loras=[] supplied to match the required official pipeline constructor; no LoRA weights added."
+}

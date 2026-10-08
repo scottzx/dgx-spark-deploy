@@ -1,0 +1,30 @@
+[
+  {
+    "product": "shirt",
+    "engines": [
+      "latentsync",
+      "longcat",
+      "infinitetalk"
+    ],
+    "decoded_pcm_equal": true,
+    "pcm_sha256": "3cb51296633f556497c68da5b973c7b1ebd19c8bf317919e8262ac2ca7e9c914"
+  },
+  {
+    "product": "cardigan",
+    "engines": [
+      "latentsync",
+      "longcat"
+    ],
+    "decoded_pcm_equal": true,
+    "pcm_sha256": "0dbeb714c09345d9c935a800c1dade218e5f2a734415c1b1c2fb4a73053fefd8"
+  },
+  {
+    "product": "dress",
+    "engines": [
+      "latentsync",
+      "longcat"
+    ],
+    "decoded_pcm_equal": true,
+    "pcm_sha256": "ec9face449b6a3435e06410fed11bad950c4d065965b41ecd47cf02ff7967c6b"
+  }
+]

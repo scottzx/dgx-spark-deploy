@@ -1,0 +1,30 @@
+{
+  "status": "TECHNICAL_PASS",
+  "id": "S12",
+  "input_fingerprint": "fedb6e090d690206b12c769599f1f8ffb2194f3648d4cb714bee95db58aa7cd7",
+  "manifest_fingerprint": "2e85b7075733b54237b052bda6acde23d0c2e0867d9e70d54d40737ee870996f",
+  "model": "ltx",
+  "variant": "film_v3",
+  "seed": 2026100612,
+  "decoder": "native LTX video VAE",
+  "refiner": false,
+  "raw_frames": 121,
+  "raw_sha256": "c13e4ba608dd30eebe97320a2ee53d18e2f593f34bbac46db42db52d502c747d",
+  "media": {
+    "frames": 120,
+    "size": [
+      672,
+      384
+    ],
+    "fps": 24,
+    "duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "7dd6171d9eecaab921a81ae19c108e1f7469366dcc99eb60e7f6f866752f247c",
+    "bytes": 1685087
+  },
+  "generation_s": 26.75891323434189,
+  "inference_profile": "BF16 dev transformer + distilled LoRA strength1,8 steps,first-frame strength1; no MSR",
+  "quality_status": "pending_manual"
+}

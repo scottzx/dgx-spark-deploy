@@ -1,0 +1,431 @@
+[
+  {
+    "path": "ltx/shirt/motion.mp4",
+    "sha256": "27dbafbb87e1719f0b28677cef5064a373b856878579829462689be2689cf4e6",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": false,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/shirt/video.mp4",
+    "sha256": "8aa17baa5660ae92fb91374e13d00c37ad0360e8e8d5eba945bd69ee9f6103de",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/shirt/native.mp4",
+    "sha256": "5de1d9cf57ec8334c7d644d8573b0870abc42db7b5d85b65d069b55616223158",
+    "frames": 203,
+    "duration_seconds": 8.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/shirt/native_with_serena.mp4",
+    "sha256": "c4da32c3d44a573195ac9813cf82b81aeec7fbb059df202a09fe46de7c1fd5d3",
+    "frames": 203,
+    "duration_seconds": 8.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/shirt/video.mp4",
+    "sha256": "18c90d0f948e8227d25e07d4de96e3f847951eff405f12cf54b2a41dc79751be",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/shirt/native.mp4",
+    "sha256": "4141148e65490add27506427c245d48b61fccd3c8129f35d158a5270841c8616",
+    "frames": 253,
+    "duration_seconds": 10.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": false,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/shirt/native_with_serena.mp4",
+    "sha256": "ae1d9dbe37b49d731bfd1d3da05a52a530bfbb28b6b9aed46ff9e355fa06b5de",
+    "frames": 253,
+    "duration_seconds": 10.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/shirt/video.mp4",
+    "sha256": "9b0bfe6f854dad14a98549fa53055f45130309565435e73f515dce19f74aec32",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/shirt/native.mp4",
+    "sha256": "f7e90bea061204fe4371c0d77563c61d9330a8811d9433472e468395811d881d",
+    "frames": 200,
+    "duration_seconds": 8.0,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/shirt/native_with_serena.mp4",
+    "sha256": "e4ff33c3890856973b5259c016a49c402f177abb4e6ddcb97cfc842082ffa0e6",
+    "frames": 200,
+    "duration_seconds": 8.0,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "ltx/cardigan/motion.mp4",
+    "sha256": "72be54a548655a49ed830f744a5386bf838ac64be911466847747c3ea259d3e3",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": false,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/cardigan/video.mp4",
+    "sha256": "ac4379bdb17a36f1c9661be2c5cd5577b822a3360026d1853f508a12d967e8eb",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/cardigan/native.mp4",
+    "sha256": "adfd7af24ed924f86b2d6d32f7bd2fa99fc3e36823e4248ebe182c376a295f03",
+    "frames": 203,
+    "duration_seconds": 8.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/cardigan/native_with_serena.mp4",
+    "sha256": "b17f750348ab1e0bb2ee63a8bbb71d04bba90c48a05d6065b75d15be9d26c7ec",
+    "frames": 203,
+    "duration_seconds": 8.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/cardigan/video.mp4",
+    "sha256": "41efa952ecb791d9306f87df5149cb5a824261eb081ac6ce5eace201d0b4374b",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/cardigan/native.mp4",
+    "sha256": "d667ae6c4bf3f8709c37c0d96043adfc8ef3b8dfa1fc476218bb3a675e4feb6a",
+    "frames": 253,
+    "duration_seconds": 10.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": false,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/cardigan/native_with_serena.mp4",
+    "sha256": "1f3f18efcb58ffe92cee14832afd7b3347d1e8fd218ab2fff0de2e296b5d4a20",
+    "frames": 253,
+    "duration_seconds": 10.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/cardigan/video.mp4",
+    "sha256": "f45104fc2a27d67bb489fce6c2ba1862b98963baf751363c7ff5c94c72475620",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/cardigan/native.mp4",
+    "sha256": "ef0edad72b515336f321f4e7faf6ef789651ddc7017e22cfbd9ef3cc07b92a08",
+    "frames": 200,
+    "duration_seconds": 8.0,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/cardigan/native_with_serena.mp4",
+    "sha256": "f0c23d997818bf4cfbee601ce96c5bc9ad5a321988122f1b19b26e210003c0b7",
+    "frames": 200,
+    "duration_seconds": 8.0,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "ltx/dress/motion.mp4",
+    "sha256": "fd4662348df3efb776a92e6ccfd14573b24fa75bb04103e1f6353a9f67927abb",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": false,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/dress/video.mp4",
+    "sha256": "4f4cb31bac7f9ae13a4c90988ae0bbd09416e3842468417aaaa851c90664eb6a",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/dress/native.mp4",
+    "sha256": "014012ab0625afca9ffaa364361320ed5bfb16033a87a389f1f1f5e48f4572bc",
+    "frames": 203,
+    "duration_seconds": 8.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/dress/native_with_serena.mp4",
+    "sha256": "fc048e1bcc21ed57186ae4960f77ce4b67b2177f6f6eda259924b43b7e9a1fc4",
+    "frames": 203,
+    "duration_seconds": 8.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/dress/video.mp4",
+    "sha256": "a9cbd0c4154507e901263ee2e14cd763953ce64c1ed810d2ee2a78003ac137db",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/dress/native.mp4",
+    "sha256": "093f63539a87eb10c9af15a51f448bf88122f68237fbd31bc8c53bfaabaf41fb",
+    "frames": 253,
+    "duration_seconds": 10.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": false,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/dress/native_with_serena.mp4",
+    "sha256": "27b7e54f80a42c0c352271fa09b04c0945aaa3025759447bfd14fc50ac36430f",
+    "frames": 253,
+    "duration_seconds": 10.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/dress/video.mp4",
+    "sha256": "0d2df742df1059946c23a35318a640eadc331c777cac707c5c4139e3786acff2",
+    "frames": 201,
+    "duration_seconds": 8.04,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/dress/native.mp4",
+    "sha256": "c40ef39968b1e463c8b47c8bb6e51dbffb9fa737d3f150579b5c08a402c6e604",
+    "frames": 200,
+    "duration_seconds": 8.0,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/dress/native_with_serena.mp4",
+    "sha256": "28489097a0fea99a72f23a5220aaebb1f01c94d14451168881dd1e5c893dcc46",
+    "frames": 200,
+    "duration_seconds": 8.0,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/latentsync/three_products.mp4",
+    "sha256": "677a515b63cab9e0de24676cc461edf64b67696a42a983b212ea3f178c875e7e",
+    "frames": 603,
+    "duration_seconds": 24.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/longcat/three_products.mp4",
+    "sha256": "51d9882facaef127c924ffe2ff1c43a4c99bf6e782c78b050972b9552c49131a",
+    "frames": 603,
+    "duration_seconds": 24.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  },
+  {
+    "path": "results/infinitetalk/three_products.mp4",
+    "sha256": "054ffa9d7e4683dc23b1053532bb5bb91b8cdf48377d48b7802b24b16b461cfe",
+    "frames": 603,
+    "duration_seconds": 24.12,
+    "size": [
+      576,
+      768
+    ],
+    "fps": "25/1",
+    "audio": true,
+    "full_decode": true
+  }
+]

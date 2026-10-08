@@ -1,0 +1,10 @@
+{
+  "id": "S16_start_v3",
+  "title": "\u53cc\u4eba\u62ac\u95e9\u4e0e\u63a9\u62a4",
+  "output": "keyframes/S16_start_v3.png",
+  "references": [
+    "keyframes/S16_start_v2.png"
+  ],
+  "prompt": "Make ONLY ONE mechanical correction to image1. Replace the two circular metal rings supporting the gate bar with OPEN-TOP U-SHAPED iron cradles. Remove the entire TOP half of each ring so the bar can be lifted vertically straight UP out of its cradle. Each holder has a flat BOTTOM under the bar and short vertical sides; absolutely NO metal above the bar, NO closed loop, NO top strap, NO ring. The single level wooden bar rests on the bottoms of these two OPEN-TOP supports at exactly its current height. Preserve every actor, all four operator hands, their feet, weapons sheathed, back shield and closed doors, exact framing and night lighting. One film still no text.",
+  "seed": 2026100932
+}

@@ -1,0 +1,194 @@
+{
+  "groups": [
+    {
+      "case_id": "S10",
+      "seed": 2026100601,
+      "jobs": [
+        "S10_msr_2026100601",
+        "S10_msr_first_2026100601",
+        "S10_msr_first_last_2026100601"
+      ],
+      "file": "comparison/S10_2026100601.mp4",
+      "media": {
+        "sha256": "4dd6aeaa1ad92b18d9997928ff18276e06dfe4e137f85a119a22628eee2cd092",
+        "frames": 120,
+        "fps": 24,
+        "duration_s": 5.0,
+        "size": [
+          1728,
+          372
+        ],
+        "full_decode": true
+      }
+    },
+    {
+      "case_id": "S10",
+      "seed": 2026100602,
+      "jobs": [
+        "S10_msr_2026100602",
+        "S10_msr_first_2026100602",
+        "S10_msr_first_last_2026100602"
+      ],
+      "file": "comparison/S10_2026100602.mp4",
+      "media": {
+        "sha256": "b3d6d0f9ed41002cbaeebd8a8d4cf88200105282f16921bc2c1922e8ca635e56",
+        "frames": 120,
+        "fps": 24,
+        "duration_s": 5.0,
+        "size": [
+          1728,
+          372
+        ],
+        "full_decode": true
+      }
+    },
+    {
+      "case_id": "S15",
+      "seed": 2026100601,
+      "jobs": [
+        "S15_msr_2026100601",
+        "S15_msr_first_2026100601",
+        "S15_msr_first_last_2026100601"
+      ],
+      "file": "comparison/S15_2026100601.mp4",
+      "media": {
+        "sha256": "ca66c137ec8b1b9595a4c25a888625a192d8a811537a54dee6bf76a58c818fcc",
+        "frames": 120,
+        "fps": 24,
+        "duration_s": 5.0,
+        "size": [
+          1728,
+          372
+        ],
+        "full_decode": true
+      }
+    },
+    {
+      "case_id": "S15",
+      "seed": 2026100602,
+      "jobs": [
+        "S15_msr_2026100602",
+        "S15_msr_first_2026100602",
+        "S15_msr_first_last_2026100602"
+      ],
+      "file": "comparison/S15_2026100602.mp4",
+      "media": {
+        "sha256": "1b02582b0ffe971665c5ead519d14ca1e18694f4982ef38c4efef0b2069e992d",
+        "frames": 120,
+        "fps": 24,
+        "duration_s": 5.0,
+        "size": [
+          1728,
+          372
+        ],
+        "full_decode": true
+      }
+    },
+    {
+      "case_id": "S16",
+      "seed": 2026100601,
+      "jobs": [
+        "S16_msr_2026100601",
+        "S16_msr_first_2026100601",
+        "S16_msr_first_last_2026100601"
+      ],
+      "file": "comparison/S16_2026100601.mp4",
+      "media": {
+        "sha256": "2f5cb80a69a4391ec91051cc9ef42f453589eae5154b9fe07792d792f442efda",
+        "frames": 120,
+        "fps": 24,
+        "duration_s": 5.0,
+        "size": [
+          1728,
+          372
+        ],
+        "full_decode": true
+      }
+    },
+    {
+      "case_id": "S16",
+      "seed": 2026100602,
+      "jobs": [
+        "S16_msr_2026100602",
+        "S16_msr_first_2026100602",
+        "S16_msr_first_last_2026100602"
+      ],
+      "file": "comparison/S16_2026100602.mp4",
+      "media": {
+        "sha256": "327112d2d431832beac39cfd9e4d26bc665b388cc03bffb3934ce082406838ac",
+        "frames": 120,
+        "fps": 24,
+        "duration_s": 5.0,
+        "size": [
+          1728,
+          372
+        ],
+        "full_decode": true
+      }
+    },
+    {
+      "case_id": "S20",
+      "seed": 2026100601,
+      "jobs": [
+        "S20_msr_2026100601",
+        "S20_msr_first_2026100601",
+        "S20_msr_first_last_2026100601"
+      ],
+      "file": "comparison/S20_2026100601.mp4",
+      "media": {
+        "sha256": "b57dc88b1dff87956d909ae4b183dfd6bba858bf942d48f7689ee8bc45994294",
+        "frames": 120,
+        "fps": 24,
+        "duration_s": 5.0,
+        "size": [
+          1728,
+          372
+        ],
+        "full_decode": true
+      }
+    },
+    {
+      "case_id": "S20",
+      "seed": 2026100602,
+      "jobs": [
+        "S20_msr_2026100602",
+        "S20_msr_first_2026100602",
+        "S20_msr_first_last_2026100602"
+      ],
+      "file": "comparison/S20_2026100602.mp4",
+      "media": {
+        "sha256": "0d794233508c74c05f09baecf6a12b469e4db29fbd6aa82f6dd58028b137e787",
+        "frames": 120,
+        "fps": 24,
+        "duration_s": 5.0,
+        "size": [
+          1728,
+          372
+        ],
+        "full_decode": true
+      }
+    }
+  ],
+  "comparison": {
+    "sha256": "098b9cb892f28ca95f52e82eb05a2ed95d86f6ac8cf0bb0079c74e7d1e57c8ac",
+    "frames": 960,
+    "fps": 24,
+    "duration_s": 40.0,
+    "size": [
+      1728,
+      372
+    ],
+    "full_decode": true
+  },
+  "selected_diagnostic": {
+    "sha256": "94650c5da15b2592fd6461257f045e1e03acd75d0ac570517846a64d16ccf535",
+    "frames": 480,
+    "fps": 24,
+    "duration_s": 20.0,
+    "size": [
+      768,
+      432
+    ],
+    "full_decode": true
+  }
+}

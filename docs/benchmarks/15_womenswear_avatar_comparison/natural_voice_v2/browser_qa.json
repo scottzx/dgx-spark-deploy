@@ -1,0 +1,146 @@
+{
+  "checked_at_utc": "2026-10-08T11:56:56.090353+00:00",
+  "url": "http://100.88.227.56:58124/natural_voice_v2/index.html?v=natural-final",
+  "main_players_loaded": 4,
+  "single_audio_on_switch": true,
+  "switch_state": [
+    {
+      "label": "1 · 日常女声完整试听",
+      "duration": 21.92,
+      "time": 0.093157,
+      "paused": true,
+      "ended": false,
+      "error": null
+    },
+    {
+      "label": "2 · 随口介绍完整试听",
+      "duration": 20.72,
+      "time": 0.107242,
+      "paused": false,
+      "ended": false,
+      "error": null
+    },
+    {
+      "label": "3 · 明亮女声完整试听",
+      "duration": 21.12,
+      "time": 0,
+      "paused": true,
+      "ended": false,
+      "error": null
+    },
+    {
+      "label": "上一轮成熟带货对照",
+      "duration": 22.48,
+      "time": 0,
+      "paused": true,
+      "ended": false,
+      "error": null
+    }
+  ],
+  "scope": "Availability and playback behavior; subjective naturalness is left to listening.",
+  "displayed_audio_metadata_matches_current_hashes": true,
+  "displayed_audio_elements": [
+    {
+      "path": "serena_default/audition.wav",
+      "version": "e679cc23fc57",
+      "duration": 21.92,
+      "error": null
+    },
+    {
+      "path": "serena_default/shirt.wav",
+      "version": "179c21890642",
+      "duration": 3.92,
+      "error": null
+    },
+    {
+      "path": "serena_default/cardigan.wav",
+      "version": "9f0f0cbf4476",
+      "duration": 3.28,
+      "error": null
+    },
+    {
+      "path": "serena_default/dress.wav",
+      "version": "03cc99a368be",
+      "duration": 3.52,
+      "error": null
+    },
+    {
+      "path": "serena_default/audition_original_text.wav",
+      "version": "80182d434148",
+      "duration": 22.08,
+      "error": null
+    },
+    {
+      "path": "serena_chat/audition.wav",
+      "version": "099fd57304a0",
+      "duration": 20.72,
+      "error": null
+    },
+    {
+      "path": "serena_chat/shirt.wav",
+      "version": "5386982a4057",
+      "duration": 4.4,
+      "error": null
+    },
+    {
+      "path": "serena_chat/cardigan.wav",
+      "version": "28afd5d016ce",
+      "duration": 3.76,
+      "error": null
+    },
+    {
+      "path": "serena_chat/dress.wav",
+      "version": "6470e0241cb0",
+      "duration": 2.88,
+      "error": null
+    },
+    {
+      "path": "vivian_default/audition.wav",
+      "version": "079a8229b382",
+      "duration": 21.12,
+      "error": null
+    },
+    {
+      "path": "vivian_default/shirt.wav",
+      "version": "63de85a154bb",
+      "duration": 4.48,
+      "error": null
+    },
+    {
+      "path": "vivian_default/cardigan.wav",
+      "version": "32a3873da336",
+      "duration": 4.72,
+      "error": null
+    },
+    {
+      "path": "vivian_default/dress.wav",
+      "version": "bd4c5e905011",
+      "duration": 5.12,
+      "error": null
+    },
+    {
+      "path": "vivian_default/audition_original_text.wav",
+      "version": "a934f5fe32d0",
+      "duration": 24,
+      "error": null
+    },
+    {
+      "path": "previous_serena_full.wav",
+      "version": "7c0571d55c3d",
+      "duration": 22.48,
+      "error": null
+    }
+  ],
+  "all_new_transcripts_displayed_match": true,
+  "first_main_played_to_end": {
+    "duration": 21.92,
+    "current_time": 21.92,
+    "paused": true,
+    "ended": true,
+    "error": null
+  },
+  "screenshot": "preview.png",
+  "screenshot_visually_checked": true,
+  "owned_browser_session_stopped": true,
+  "tailscale_http_status_from_dgx": 200
+}

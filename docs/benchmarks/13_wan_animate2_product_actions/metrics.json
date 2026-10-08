@@ -1,0 +1,233 @@
+[
+  {
+    "product": "original",
+    "motion": {
+      "engine": "Official diffusers WanAnimate2DistilledModularPipeline",
+      "input_kind": "generated_product_video",
+      "product": "original",
+      "reference": "/home/admin/wan-animate2-runtime/inputs/products/reference.png",
+      "reference_sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e",
+      "driving": "/home/admin/wan-animate2-runtime/inputs/products/original_driver.mp4",
+      "driving_sha256": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "prompt": "人物外观描述：一位成年中国女性，齐肩黑色直发，穿红色长袖上衣，坐在浅灰色桌后，面向镜头。背景描述：柔和均匀的摄影棚灯光，灰色背景，固定中景镜头。桌上有三罐商品：左边红白原味罐、中间银红健怡罐、右边红黑零度罐。动作描述：跟随参照视频的连续动作，双手开始为空，拿起左侧红底白字的原味可口可乐罐，举至胸前，正面朝向镜头，手持介绍，随后将同一罐放回原位，松开手，空手自然放在桌上。另外两罐始终在桌上。手与罐保持合理接触，商品形状、颜色、图案和人物面貌保持一致，不增加商品，不切镜头。",
+      "model_directory": "/home/admin/models_cache/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+      "steps": 10,
+      "seed": 20261007,
+      "fps": 24,
+      "input_frames": 201,
+      "input_fps": 25.0,
+      "segment_frame_length": 81,
+      "requested_area_size": [
+        576,
+        384
+      ],
+      "frames": 192,
+      "output_size": [
+        576,
+        384
+      ],
+      "load_seconds_shared": 350.52557394700125,
+      "generation_including_compile_seconds": 536.9504535268061,
+      "case_total_seconds": 537.6352222999558,
+      "peak_cuda_allocated_gib": 60.899526596069336,
+      "output_sha256": "aee840b304bf618d6dbf350f756a71ab5a3579d215be5728337ef5c874d5ce06",
+      "packages": {
+        "torch": "2.14.1",
+        "diffusers": "0.41.0",
+        "transformers": "5.19.0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.23.2"
+      },
+      "policy": "Motion follows the declared video. Generated drivers are not real capture; their errors may carry into the result. Official examples verify the environment only."
+    },
+    "dubbing": {
+      "product": "original",
+      "engine": "LiveTalking MuseTalk 1.5 on moving frames",
+      "input_video": "/home/admin/wan-animate2-runtime/outputs/products_25/original/motion.mp4",
+      "input_video_sha256": "04326c3f5a7f24a2db79a015678c5dd697a0649cdea002eaf918f361fc12edac",
+      "input_audio": "/home/admin/digital-human-runtime/inputs/product_actions_serena/original.wav",
+      "voice_profile": "serena_soft",
+      "speaker": "Serena",
+      "input_audio_sha256": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "frames": 201,
+      "fps": 25,
+      "duration_seconds": 8.04,
+      "size": [
+        576,
+        384
+      ],
+      "load_seconds_shared": 7.276395940687507,
+      "video_preparation_and_audio_features_seconds": 10.926640326157212,
+      "render_and_write_seconds": 6.29838404012844,
+      "peak_cuda_allocated_gib": 6.6849894523620605,
+      "face_detection_fallback_frames": [],
+      "dubbed_frames": 83,
+      "dubbing_window_seconds": [
+        1.92,
+        5.2
+      ],
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 4.689583333333333,
+      "transition_mode": "smooth",
+      "transition_seconds": 0.48,
+      "face_box_smoothing_frames": 7,
+      "mouth_region_policy": "Feathered mouth neighbourhood; nose, cheek edges and jaw outline retained from motion source.",
+      "policy": "Per-frame face input and masks; original moving hands, can, table and other products retained. No reversed playback or post-inserted return action."
+    }
+  },
+  {
+    "product": "diet",
+    "motion": {
+      "engine": "Official diffusers WanAnimate2DistilledModularPipeline",
+      "input_kind": "generated_product_video",
+      "product": "diet",
+      "reference": "/home/admin/wan-animate2-runtime/inputs/products/reference.png",
+      "reference_sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e",
+      "driving": "/home/admin/wan-animate2-runtime/inputs/products/diet_driver.mp4",
+      "driving_sha256": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "prompt": "人物外观描述：一位成年中国女性，齐肩黑色直发，穿红色长袖上衣，坐在浅灰色桌后，面向镜头。背景描述：柔和均匀的摄影棚灯光，灰色背景，固定中景镜头。桌上有三罐商品：左边红白原味罐、中间银红健怡罐、右边红黑零度罐。动作描述：跟随参照视频的连续动作，双手开始为空，拿起中间银底红字的健怡可口可乐罐，举至胸前，正面朝向镜头，手持介绍，随后将同一罐放回原位，松开手，空手自然放在桌上。另外两罐始终在桌上。手与罐保持合理接触，商品形状、颜色、图案和人物面貌保持一致，不增加商品，不切镜头。",
+      "model_directory": "/home/admin/models_cache/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+      "steps": 10,
+      "seed": 20261008,
+      "fps": 24,
+      "input_frames": 201,
+      "input_fps": 25.0,
+      "segment_frame_length": 81,
+      "requested_area_size": [
+        576,
+        384
+      ],
+      "frames": 192,
+      "output_size": [
+        576,
+        384
+      ],
+      "load_seconds_shared": 350.52557394700125,
+      "generation_including_compile_seconds": 529.4077557050623,
+      "case_total_seconds": 530.013404740952,
+      "peak_cuda_allocated_gib": 60.899526596069336,
+      "output_sha256": "dae71db2131e52cc17c11a25cdac5c6c870a7a8e145a613318ac3cb861d1e409",
+      "packages": {
+        "torch": "2.14.1",
+        "diffusers": "0.41.0",
+        "transformers": "5.19.0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.23.2"
+      },
+      "policy": "Motion follows the declared video. Generated drivers are not real capture; their errors may carry into the result. Official examples verify the environment only."
+    },
+    "dubbing": {
+      "product": "diet",
+      "engine": "LiveTalking MuseTalk 1.5 on moving frames",
+      "input_video": "/home/admin/wan-animate2-runtime/outputs/products_25/diet/motion.mp4",
+      "input_video_sha256": "6162b3bf37e8f7e9b9c716c935cfdf92bb4bffed6cc0c2896a1d27869deb15da",
+      "input_audio": "/home/admin/digital-human-runtime/inputs/product_actions_serena/diet.wav",
+      "voice_profile": "serena_soft",
+      "speaker": "Serena",
+      "input_audio_sha256": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "frames": 201,
+      "fps": 25,
+      "duration_seconds": 8.04,
+      "size": [
+        576,
+        384
+      ],
+      "load_seconds_shared": 7.276395940687507,
+      "video_preparation_and_audio_features_seconds": 9.958690997678787,
+      "render_and_write_seconds": 6.2982412204146385,
+      "peak_cuda_allocated_gib": 6.6849894523620605,
+      "face_detection_fallback_frames": [],
+      "dubbed_frames": 103,
+      "dubbing_window_seconds": [
+        1.92,
+        6.0
+      ],
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 5.511083333333334,
+      "transition_mode": "smooth",
+      "transition_seconds": 0.48,
+      "face_box_smoothing_frames": 7,
+      "mouth_region_policy": "Feathered mouth neighbourhood; nose, cheek edges and jaw outline retained from motion source.",
+      "policy": "Per-frame face input and masks; original moving hands, can, table and other products retained. No reversed playback or post-inserted return action."
+    }
+  },
+  {
+    "product": "zero",
+    "motion": {
+      "engine": "Official diffusers WanAnimate2DistilledModularPipeline",
+      "input_kind": "generated_product_video",
+      "product": "zero",
+      "reference": "/home/admin/wan-animate2-runtime/inputs/products/reference.png",
+      "reference_sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e",
+      "driving": "/home/admin/wan-animate2-runtime/inputs/products/zero_driver.mp4",
+      "driving_sha256": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "prompt": "人物外观描述：一位成年中国女性，齐肩黑色直发，穿红色长袖上衣，坐在浅灰色桌后，面向镜头。背景描述：柔和均匀的摄影棚灯光，灰色背景，固定中景镜头。桌上有三罐商品：左边红白原味罐、中间银红健怡罐、右边红黑零度罐。动作描述：跟随参照视频的连续动作，双手开始为空，拿起右侧红底黑字的零度可口可乐罐，举至胸前，正面朝向镜头，手持介绍，随后将同一罐放回原位，松开手，空手自然放在桌上。另外两罐始终在桌上。手与罐保持合理接触，商品形状、颜色、图案和人物面貌保持一致，不增加商品，不切镜头。",
+      "model_directory": "/home/admin/models_cache/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+      "steps": 10,
+      "seed": 20261009,
+      "fps": 24,
+      "input_frames": 201,
+      "input_fps": 25.0,
+      "segment_frame_length": 81,
+      "requested_area_size": [
+        576,
+        384
+      ],
+      "frames": 192,
+      "output_size": [
+        576,
+        384
+      ],
+      "load_seconds_shared": 350.52557394700125,
+      "generation_including_compile_seconds": 530.3791287820786,
+      "case_total_seconds": 531.0188966267742,
+      "peak_cuda_allocated_gib": 60.899526596069336,
+      "output_sha256": "84271701d2f8b5b37b26b580371ccd3fba4d51a527cd8637cabf1547b33d6c83",
+      "packages": {
+        "torch": "2.14.1",
+        "diffusers": "0.41.0",
+        "transformers": "5.19.0",
+        "huggingface-hub": "1.33.0",
+        "safetensors": "0.8.0",
+        "tokenizers": "0.23.2"
+      },
+      "policy": "Motion follows the declared video. Generated drivers are not real capture; their errors may carry into the result. Official examples verify the environment only."
+    },
+    "dubbing": {
+      "product": "zero",
+      "engine": "LiveTalking MuseTalk 1.5 on moving frames",
+      "input_video": "/home/admin/wan-animate2-runtime/outputs/products_25/zero/motion.mp4",
+      "input_video_sha256": "d442a9fbe225c9fcddf49d1c0d3a945d9f6a5499184f1dbd9edd9a24cb19390a",
+      "input_audio": "/home/admin/digital-human-runtime/inputs/product_actions_serena/zero.wav",
+      "voice_profile": "serena_soft",
+      "speaker": "Serena",
+      "input_audio_sha256": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "frames": 201,
+      "fps": 25,
+      "duration_seconds": 8.04,
+      "size": [
+        576,
+        384
+      ],
+      "load_seconds_shared": 7.276395940687507,
+      "video_preparation_and_audio_features_seconds": 17.433237915858626,
+      "render_and_write_seconds": 6.298039751127362,
+      "peak_cuda_allocated_gib": 6.6849894523620605,
+      "face_detection_fallback_frames": [],
+      "dubbed_frames": 111,
+      "dubbing_window_seconds": [
+        1.92,
+        6.32
+      ],
+      "narration_starts_seconds": 2.4,
+      "narration_ends_seconds": 5.839041666666667,
+      "transition_mode": "smooth",
+      "transition_seconds": 0.48,
+      "face_box_smoothing_frames": 7,
+      "mouth_region_policy": "Feathered mouth neighbourhood; nose, cheek edges and jaw outline retained from motion source.",
+      "policy": "Per-frame face input and masks; original moving hands, can, table and other products retained. No reversed playback or post-inserted return action."
+    }
+  }
+]

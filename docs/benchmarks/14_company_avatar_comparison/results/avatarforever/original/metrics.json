@@ -1,0 +1,30 @@
+{
+  "engine": "avatarforever",
+  "product": "original",
+  "input_sha256": {
+    "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+    "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+    "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+    "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+  },
+  "commit": "4dfc42b0e2dbbded4d148387d186219bd7601279",
+  "shared_model_load_seconds": 0.010128890629857779,
+  "render_seconds": 126.65772495558485,
+  "peak_cuda_allocated_gib": 40.40370750427246,
+  "native_output": "/home/admin/avatar-company-tests/outputs/avatarforever/original/native.mp4",
+  "scope": "Official AvatarForever first-frame + audio + text generation, with autoregressive history feature cache.",
+  "model_loading_is_lazy": true,
+  "timing_includes_lazy_model_loads": true,
+  "fast_infer": false,
+  "model_generates_product_actions": true,
+  "original_LTX_actions_preserved": false,
+  "compatibility": [
+    "Existing GB10 PyTorch 2.14.1 / CUDA 13 instead of repository Torch 2.7 environment"
+  ],
+  "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+  "native_duration_seconds": 8.04,
+  "native_output_sha256": "4613dc401b50f4a0cc982461797f84d41359ea73ac58c627c7778afc9e332d1c",
+  "video_sha256": "496a8f59a3ba380be0979f56b492779eef084873eded85ab9c73948a781f5790",
+  "final_frame_hold_seconds": 0.0,
+  "normalization_note": "Trim only; no tail hold."
+}

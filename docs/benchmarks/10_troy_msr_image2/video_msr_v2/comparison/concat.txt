@@ -1,0 +1,8 @@
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/video_msr_v2/comparison/S10_2026100601.mp4'
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/video_msr_v2/comparison/S10_2026100602.mp4'
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/video_msr_v2/comparison/S15_2026100601.mp4'
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/video_msr_v2/comparison/S15_2026100602.mp4'
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/video_msr_v2/comparison/S16_2026100601.mp4'
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/video_msr_v2/comparison/S16_2026100602.mp4'
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/video_msr_v2/comparison/S20_2026100601.mp4'
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/10_troy_msr_image2/video_msr_v2/comparison/S20_2026100602.mp4'

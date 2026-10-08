@@ -1,0 +1,65 @@
+{
+  "case_id": "troy_v3_S01",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy, with handmade sandstone and timber, aged bronze armor and saturated 35mm film colors. Continue naturally from the supplied first frame, preserving the visible actors, faces, costumes, composition and current state. In bright daylight outside the open gate, the three existing people remain in their own positions. Sinon on the left opens both empty hands toward the rigid wooden horse, then lowers one hand as the guard looks toward the horse. The bronze-helmeted guard keeps his spear in his right hand and shield on his left arm. The woman watches from behind. Subtle breathing and facial reactions; mouths stay closed. The wooden horse remains a rigid timber object on wheels, its side hatch closed. No extra people, duplicated named actor, extra limbs, modern objects, captions or fantasy effects.\n\noverall_soundscape: A slow small push toward Sinon. Day wind, fabric rustle and faint armor creaks. No dialogue or singing.\n\nnon_diegetic_music: N/A",
+  "seed": 2026100601,
+  "source_index": 0,
+  "request_id": "troy_v3_S01",
+  "status": "PASS",
+  "same_request": true,
+  "external_anchor_used": false,
+  "duration_s": 5,
+  "stage1_frames": 124,
+  "emit_frames": 121,
+  "task": "fl2va",
+  "input_conditioned": true,
+  "input_spec": {
+    "task": "fl2va",
+    "first_frame": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/inputs/S01.png",
+    "last_frame": null,
+    "references": []
+  },
+  "capture_rank": 0,
+  "condition_video_rows_excluded": 252,
+  "condition_audio_rows_excluded": 0,
+  "payload_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-210324_fl2va/troy_v3_S01/stage1/stage1_direct_tensors.pt",
+  "payload_sha256": "6afb35a7ef1c1021b07a3bab0ddd2f97899370b70aa5b9597b8159179d6bf2cc",
+  "continuation_state_sha256": "5a4624062e369000a602983204125c80eace868c86519629e5b978539917919f",
+  "continuation": {},
+  "generated_first_frame_path": null,
+  "generated_first_frame_sha256": null,
+  "native_normalized_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-210324_fl2va/troy_v3_S01/stage1/h3_normalized_native.pt",
+  "native_normalized_sha256": "f3cdcc3b84edbd512755b2008f3d620a4d55b1c40dc06851e55d8292ecbc83e8",
+  "h3_normalized": {
+    "shape": [
+      1,
+      24,
+      37,
+      24,
+      42
+    ],
+    "dtype": "torch.bfloat16",
+    "source_dtype": "torch.float32",
+    "bf16_cast_max_abs_error": 0.015204429626464844,
+    "normalization": "released_h3_per_channel_mean_std",
+    "source": "original packed final latent unpatchified before VAE denormalize"
+  },
+  "audio": {
+    "shape": [
+      1,
+      2,
+      161333
+    ],
+    "dtype": "torch.float32",
+    "sample_rate": 32000,
+    "native_shape": [
+      165600,
+      2
+    ],
+    "temporal_trim": "first 161333 samples for 121-frame Stage2",
+    "processing": "transpose TC to BCT; clamp [-1,1], original native PCM unchanged"
+  },
+  "native_video_shape": null,
+  "latent_only_transfer": true,
+  "video_decode_calls": 0,
+  "h3_decoder_calls": 0
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "product": "shirt",
+    "umt5_prompt_tokens": 476,
+    "within_512": true,
+    "tail_after_512": ""
+  },
+  {
+    "product": "cardigan",
+    "umt5_prompt_tokens": 483,
+    "within_512": true,
+    "tail_after_512": ""
+  },
+  {
+    "product": "dress",
+    "umt5_prompt_tokens": 486,
+    "within_512": true,
+    "tail_after_512": ""
+  }
+]

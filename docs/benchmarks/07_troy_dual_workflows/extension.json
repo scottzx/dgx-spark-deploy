@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "predecessor": "troy_20261003_220446_continuation",
+  "shot": {
+    "status": "PASS",
+    "case_id": "troy_long_20261003_223331",
+    "mode": "final",
+    "duration_s": 10,
+    "e2e_s": 257.75,
+    "transition": "continue",
+    "previous_clip_id": "troy_20261003_220446_continuation",
+    "delivered_frames": 222,
+    "delivered_duration_s": 9.25,
+    "trim_frames": 19,
+    "continuation": {
+      "source_capture": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_20261003_220446_continuation/stage1",
+      "source_sha256": "05d1b1142638c592813604a442268e0b834814ef378a4378e6ee5e5fff6a50c5",
+      "context_frames": 22,
+      "trim_frames": 19,
+      "audio_context_frames": 24,
+      "condition_video_rows": 1764,
+      "condition_audio_rows": 80,
+      "video_timeline_offsets": [
+        0,
+        1,
+        5,
+        9,
+        13,
+        17,
+        18
+      ],
+      "audio_join_frame": 19,
+      "frozen_prefix_verified": true,
+      "method": "native_H3_AV_latent_timeline_prefix"
+    },
+    "reported_e2e_s": 257.59,
+    "qwen_s": 2.103521584,
+    "stage1_s": 64.714808304,
+    "stage2_s": 189.034541781,
+    "capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_long_20261003_223331/stage1",
+    "video_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261003-215619_fl2va/troy_long_20261003_223331/stage2/refined_1344x768_241f_delivered.mp4",
+    "video_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_long_20261003_223331/stage2/refined_1344x768_241f_delivered.mp4",
+    "contact_sheet_url": "/outputs/api_server_runs/session_20261003-215619_fl2va/troy_long_20261003_223331/stage2/contact_sheet/contact_sheet.png"
+  },
+  "clip_media": {
+    "status": "PASS",
+    "frames": 222,
+    "duration_s": 9.25,
+    "width": 1344,
+    "height": 768,
+    "sample_rate": 32000,
+    "full_decode": true
+  },
+  "film": "/home/admin/sol-spark-runtime/outputs/troy_dual_workflows_20261003_v2/troy_continuous_extended.mp4",
+  "media": {
+    "status": "PASS",
+    "frames": 445,
+    "duration_s": 18.541667,
+    "width": 1344,
+    "height": 768,
+    "sample_rate": 32000,
+    "full_decode": true
+  },
+  "contact_sheet": "/home/admin/sol-spark-runtime/outputs/troy_dual_workflows_20261003_v2/continuous_extended_contact_sheet.png",
+  "seams": [
+    121,
+    223
+  ]
+}

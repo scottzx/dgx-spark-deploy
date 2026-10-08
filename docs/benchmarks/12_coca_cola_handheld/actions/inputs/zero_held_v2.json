@@ -1,0 +1,21 @@
+{
+  "prompt": "Edit reference image 1, preserving the exact camera, woman, gray background and table. There are exactly THREE beverage cans in the whole scene. Keep the LEFT red ORIGINAL can with WHITE lettering standing at the exact same left tabletop position. Keep the MIDDLE SILVER Diet Coke can with RED lettering standing at the exact same middle tabletop position. Both of these tabletop cans must remain visible. REMOVE the RIGHT red ZERO SUGAR can with BLACK lettering from the tabletop, leaving that right tabletop position EMPTY. The woman now physically holds that SAME removed ZERO SUGAR can at her upper chest on the VIEWER RIGHT side of her face, using one hand to grip it and the other palm to support its base. Use reference image 2 as the exact design of the ONLY ZERO SUGAR can in the scene. It exists ONLY in her hands, and never on the table in this edited frame. Exactly TWO cans on the table: original left and SILVER diet middle. Exactly ONE can in her hands: zero sugar at viewer right upper chest. Do not delete or replace the silver middle can. Do not leave a second zero sugar can on the table. Preserve her face, red blouse, camera framing, product scale and natural anatomically correct fingers. Mouth closed, coherent realistic photograph.",
+  "seed": 2026100791,
+  "model": "Qwen-Image-2.1 + Viggle Turbo 6-step",
+  "size": [
+    768,
+    512
+  ],
+  "references": [
+    "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+    "/home/admin/digital-human-runtime/inputs/zero.jpg"
+  ],
+  "reference_sha256": [
+    "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e",
+    "c6b804c927e410e9d9d374434b50d080a806ba846646a141b2ff0141fe8c4066"
+  ],
+  "load_seconds": 191.55091678304598,
+  "generation_seconds": 11.191820659209043,
+  "peak_cuda_allocated_gib": 38.13308238983154,
+  "sha256": "ac6ff6ff75ae961ee48444ce564bb6192ebaec7e338010696301f70e5f57c964"
+}

@@ -1,0 +1,35 @@
+{
+  "status": "TECHNICAL_PASS",
+  "id": "combat_ab_h3_old_2026100602",
+  "input_fingerprint": "a5124cf8cba2caf815580302042ad360a4fa747566e7d7463670903fe526ca32",
+  "manifest_fingerprint": "48f2b7b853489f654863c0d57b958ec04216e4494c090beb44ba74354520b714",
+  "model": "h3",
+  "variant": "old",
+  "seed": 2026100602,
+  "decoder": "native full H3 VAE",
+  "refiner": false,
+  "raw_frames": 124,
+  "raw_sha256": "8ab8fa53651b443b178b0b05d27daf32b4cbbce0c951999d01b7c606eb6b40b6",
+  "media": {
+    "frames": 120,
+    "size": [
+      672,
+      384
+    ],
+    "fps": 24,
+    "duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "1cdbfe70787109548a427a35244e8e537fbb4f78257ca9cad05808e1fe9b4d85",
+    "bytes": 1254704
+  },
+  "native_decode_and_delivery_s": 23.975742196664214,
+  "inference_profile": "existing local W8A8/FastH3-VSA FL2VA, four transformer updates; native full VAE, no LTX refinement",
+  "h3_capture_dir": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-015342_fl2va/combat_ab_h3_old_2026100602/stage1",
+  "capture_tensor_sha256": "1532044cc81e34b8369958b56b8e7cea8ff462e75bdf91bd68e0819c23ccc8fc",
+  "generation_s": 53.87992778420448,
+  "quality_status": "partial_at_samples",
+  "production_approved": false,
+  "quality_review_file": "../../quality_review.json"
+}

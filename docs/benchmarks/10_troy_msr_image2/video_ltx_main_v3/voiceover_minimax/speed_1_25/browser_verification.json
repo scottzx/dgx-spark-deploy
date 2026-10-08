@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "url": "http://127.0.0.1:59137/video_ltx_main_v3/voiceover_minimax/speed_1_25/review.html",
+  "metadata": {
+    "duration": 73,
+    "width": 672,
+    "height": 384,
+    "rate": 1
+  },
+  "playback": {
+    "time": 2.006171,
+    "muted": false,
+    "paused": false,
+    "rate": 1,
+    "audio_bytes": 58665
+  },
+  "seek_s": 56.48,
+  "caption": "同伴拼死掩护，两人抬起门闩。",
+  "range_http_status": 206,
+  "browser_errors": [],
+  "screenshot": "preview.png",
+  "scope": "Real browser playback and audio decoding; not independent perceptual listening."
+}

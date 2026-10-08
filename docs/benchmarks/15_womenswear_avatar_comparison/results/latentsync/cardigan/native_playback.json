@@ -1,0 +1,10 @@
+{
+  "inputs": {
+    "native_sha256": "adfd7af24ed924f86b2d6d32f7bd2fa99fc3e36823e4248ebe182c376a295f03",
+    "audio_sha256": "321d70c0e2d7d5affaf691c1d72b0dd479677abdd5a730fe179681ee5da7de1d",
+    "duration_seconds": 8.12
+  },
+  "sha256": "b17f750348ab1e0bb2ee63a8bbb71d04bba90c48a05d6065b75d15be9d26c7ec",
+  "video_policy": "Original encoded video stream copied; no video edits.",
+  "audio_policy": "Common Serena WAV added; silence padded only beyond its duration."
+}

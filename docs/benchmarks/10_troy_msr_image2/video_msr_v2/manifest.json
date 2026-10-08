@@ -1,0 +1,2635 @@
+{
+  "version": 2,
+  "remote_root": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006",
+  "method": "controlled_msr_temporal_keyframe_regression",
+  "steps": 8,
+  "fps": 24,
+  "frames": 2880,
+  "shots": [
+    {
+      "shot_spec": {
+        "id": "S10",
+        "title": "奥德修斯向下爬梯",
+        "actors": [
+          "odysseus"
+        ],
+        "camera": "locked full-body medium wide side view",
+        "start": {
+          "actor": "one Odysseus on upper ladder; torso faces wooden horse; hands grip both rails; feet on upper rungs",
+          "hatch": "open upward, top hinge",
+          "ladder": "one fixed ladder",
+          "gate": "closed"
+        },
+        "end": {
+          "actor": "same Odysseus exactly two rungs lower, facing horse, hands grip rails, feet still on ladder",
+          "hatch": "unchanged",
+          "ladder": "unchanged",
+          "gate": "closed"
+        },
+        "invariants": [
+          "one Odysseus, no duplicates",
+          "no shield",
+          "sword stays sheathed at left hip",
+          "one rigid wooden horse facing right",
+          "one ladder and one hatch",
+          "camera stationary"
+        ],
+        "acceptance": [
+          "pelvis visibly moves down at least two rungs",
+          "no upward travel or direction reversal",
+          "both hands alternate secure ladder grips",
+          "identity, sword sheath and horse remain stable"
+        ]
+      },
+      "prompt_sha256": "2e4c360b4ba449d197242f7c2744996b0c2960741df6e681661b49c81b37361e",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "file": "inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S10",
+      "id": "S10_msr_2026100601",
+      "title": "奥德修斯向下爬梯",
+      "method": "msr",
+      "seed": 2026100601,
+      "temporal": [],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: rigid wooden horse design on one four-wheeled platform, facing right. Picture 3: start-state composition reference; same cast, not additional people. At the start ONE Odysseus is on the upper third of ONE ladder facing the wooden horse, with both hands gripping its rails. He steadily DESCENDS DOWNWARD by exactly TWO rungs, alternating one hand and one foot, lowering his pelvis throughout. He finishes on lower rungs still above ground and still facing the horse. Do not ascend, reverse direction, turn to camera, jump or leave the ladder. Sword remains sheathed at LEFT hip, NO shield. One upward-open top-hinged hatch, one rigid horse facing right on fixed wheels, closed gate left, fountain right. The horse, hatch and ladder are motionless.",
+      "input_fingerprint": "8169311131568e05bdab0768c5a5a0c7196921b1c2bcbac3229607568f606a30"
+    },
+    {
+      "shot_spec": {
+        "id": "S10",
+        "title": "奥德修斯向下爬梯",
+        "actors": [
+          "odysseus"
+        ],
+        "camera": "locked full-body medium wide side view",
+        "start": {
+          "actor": "one Odysseus on upper ladder; torso faces wooden horse; hands grip both rails; feet on upper rungs",
+          "hatch": "open upward, top hinge",
+          "ladder": "one fixed ladder",
+          "gate": "closed"
+        },
+        "end": {
+          "actor": "same Odysseus exactly two rungs lower, facing horse, hands grip rails, feet still on ladder",
+          "hatch": "unchanged",
+          "ladder": "unchanged",
+          "gate": "closed"
+        },
+        "invariants": [
+          "one Odysseus, no duplicates",
+          "no shield",
+          "sword stays sheathed at left hip",
+          "one rigid wooden horse facing right",
+          "one ladder and one hatch",
+          "camera stationary"
+        ],
+        "acceptance": [
+          "pelvis visibly moves down at least two rungs",
+          "no upward travel or direction reversal",
+          "both hands alternate secure ladder grips",
+          "identity, sword sheath and horse remain stable"
+        ]
+      },
+      "prompt_sha256": "2e4c360b4ba449d197242f7c2744996b0c2960741df6e681661b49c81b37361e",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "file": "inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S10",
+      "id": "S10_msr_2026100602",
+      "title": "奥德修斯向下爬梯",
+      "method": "msr",
+      "seed": 2026100602,
+      "temporal": [],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: rigid wooden horse design on one four-wheeled platform, facing right. Picture 3: start-state composition reference; same cast, not additional people. At the start ONE Odysseus is on the upper third of ONE ladder facing the wooden horse, with both hands gripping its rails. He steadily DESCENDS DOWNWARD by exactly TWO rungs, alternating one hand and one foot, lowering his pelvis throughout. He finishes on lower rungs still above ground and still facing the horse. Do not ascend, reverse direction, turn to camera, jump or leave the ladder. Sword remains sheathed at LEFT hip, NO shield. One upward-open top-hinged hatch, one rigid horse facing right on fixed wheels, closed gate left, fountain right. The horse, hatch and ladder are motionless.",
+      "input_fingerprint": "31dff8ce69782f44b546acfaf1cbdf657c98059403187d35da1e84dd3a6217f8"
+    },
+    {
+      "shot_spec": {
+        "id": "S10",
+        "title": "奥德修斯向下爬梯",
+        "actors": [
+          "odysseus"
+        ],
+        "camera": "locked full-body medium wide side view",
+        "start": {
+          "actor": "one Odysseus on upper ladder; torso faces wooden horse; hands grip both rails; feet on upper rungs",
+          "hatch": "open upward, top hinge",
+          "ladder": "one fixed ladder",
+          "gate": "closed"
+        },
+        "end": {
+          "actor": "same Odysseus exactly two rungs lower, facing horse, hands grip rails, feet still on ladder",
+          "hatch": "unchanged",
+          "ladder": "unchanged",
+          "gate": "closed"
+        },
+        "invariants": [
+          "one Odysseus, no duplicates",
+          "no shield",
+          "sword stays sheathed at left hip",
+          "one rigid wooden horse facing right",
+          "one ladder and one hatch",
+          "camera stationary"
+        ],
+        "acceptance": [
+          "pelvis visibly moves down at least two rungs",
+          "no upward travel or direction reversal",
+          "both hands alternate secure ladder grips",
+          "identity, sword sheath and horse remain stable"
+        ]
+      },
+      "prompt_sha256": "2e4c360b4ba449d197242f7c2744996b0c2960741df6e681661b49c81b37361e",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "file": "inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S10",
+      "id": "S10_msr_first_2026100601",
+      "title": "奥德修斯向下爬梯",
+      "method": "msr_first",
+      "seed": 2026100601,
+      "temporal": [
+        {
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17",
+          "frame_index": 0,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: rigid wooden horse design on one four-wheeled platform, facing right. Picture 3: start-state composition reference; same cast, not additional people. At the start ONE Odysseus is on the upper third of ONE ladder facing the wooden horse, with both hands gripping its rails. He steadily DESCENDS DOWNWARD by exactly TWO rungs, alternating one hand and one foot, lowering his pelvis throughout. He finishes on lower rungs still above ground and still facing the horse. Do not ascend, reverse direction, turn to camera, jump or leave the ladder. Sword remains sheathed at LEFT hip, NO shield. One upward-open top-hinged hatch, one rigid horse facing right on fixed wheels, closed gate left, fountain right. The horse, hatch and ladder are motionless.",
+      "input_fingerprint": "959a2bc6d08a81c566e367dd9e342c85ae21421401ac669c83ce9c352c5d6722"
+    },
+    {
+      "shot_spec": {
+        "id": "S10",
+        "title": "奥德修斯向下爬梯",
+        "actors": [
+          "odysseus"
+        ],
+        "camera": "locked full-body medium wide side view",
+        "start": {
+          "actor": "one Odysseus on upper ladder; torso faces wooden horse; hands grip both rails; feet on upper rungs",
+          "hatch": "open upward, top hinge",
+          "ladder": "one fixed ladder",
+          "gate": "closed"
+        },
+        "end": {
+          "actor": "same Odysseus exactly two rungs lower, facing horse, hands grip rails, feet still on ladder",
+          "hatch": "unchanged",
+          "ladder": "unchanged",
+          "gate": "closed"
+        },
+        "invariants": [
+          "one Odysseus, no duplicates",
+          "no shield",
+          "sword stays sheathed at left hip",
+          "one rigid wooden horse facing right",
+          "one ladder and one hatch",
+          "camera stationary"
+        ],
+        "acceptance": [
+          "pelvis visibly moves down at least two rungs",
+          "no upward travel or direction reversal",
+          "both hands alternate secure ladder grips",
+          "identity, sword sheath and horse remain stable"
+        ]
+      },
+      "prompt_sha256": "2e4c360b4ba449d197242f7c2744996b0c2960741df6e681661b49c81b37361e",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "file": "inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S10",
+      "id": "S10_msr_first_2026100602",
+      "title": "奥德修斯向下爬梯",
+      "method": "msr_first",
+      "seed": 2026100602,
+      "temporal": [
+        {
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17",
+          "frame_index": 0,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: rigid wooden horse design on one four-wheeled platform, facing right. Picture 3: start-state composition reference; same cast, not additional people. At the start ONE Odysseus is on the upper third of ONE ladder facing the wooden horse, with both hands gripping its rails. He steadily DESCENDS DOWNWARD by exactly TWO rungs, alternating one hand and one foot, lowering his pelvis throughout. He finishes on lower rungs still above ground and still facing the horse. Do not ascend, reverse direction, turn to camera, jump or leave the ladder. Sword remains sheathed at LEFT hip, NO shield. One upward-open top-hinged hatch, one rigid horse facing right on fixed wheels, closed gate left, fountain right. The horse, hatch and ladder are motionless.",
+      "input_fingerprint": "d2164da3932a273788946a0c9daff7407843ec1e228e36e07f7808c2e132765f"
+    },
+    {
+      "shot_spec": {
+        "id": "S10",
+        "title": "奥德修斯向下爬梯",
+        "actors": [
+          "odysseus"
+        ],
+        "camera": "locked full-body medium wide side view",
+        "start": {
+          "actor": "one Odysseus on upper ladder; torso faces wooden horse; hands grip both rails; feet on upper rungs",
+          "hatch": "open upward, top hinge",
+          "ladder": "one fixed ladder",
+          "gate": "closed"
+        },
+        "end": {
+          "actor": "same Odysseus exactly two rungs lower, facing horse, hands grip rails, feet still on ladder",
+          "hatch": "unchanged",
+          "ladder": "unchanged",
+          "gate": "closed"
+        },
+        "invariants": [
+          "one Odysseus, no duplicates",
+          "no shield",
+          "sword stays sheathed at left hip",
+          "one rigid wooden horse facing right",
+          "one ladder and one hatch",
+          "camera stationary"
+        ],
+        "acceptance": [
+          "pelvis visibly moves down at least two rungs",
+          "no upward travel or direction reversal",
+          "both hands alternate secure ladder grips",
+          "identity, sword sheath and horse remain stable"
+        ]
+      },
+      "prompt_sha256": "2e4c360b4ba449d197242f7c2744996b0c2960741df6e681661b49c81b37361e",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "file": "inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S10",
+      "id": "S10_msr_first_last_2026100601",
+      "title": "奥德修斯向下爬梯",
+      "method": "msr_first_last",
+      "seed": 2026100601,
+      "temporal": [
+        {
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        {
+          "file": "keyframes/S10_end_v4.png",
+          "sha256": "c48a91aa1533c33c96fbe3f9a4e16703721ca2a06348e67569aa7382aef1f4e8",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: rigid wooden horse design on one four-wheeled platform, facing right. Picture 3: start-state composition reference; same cast, not additional people. At the start ONE Odysseus is on the upper third of ONE ladder facing the wooden horse, with both hands gripping its rails. He steadily DESCENDS DOWNWARD by exactly TWO rungs, alternating one hand and one foot, lowering his pelvis throughout. He finishes on lower rungs still above ground and still facing the horse. Do not ascend, reverse direction, turn to camera, jump or leave the ladder. Sword remains sheathed at LEFT hip, NO shield. One upward-open top-hinged hatch, one rigid horse facing right on fixed wheels, closed gate left, fountain right. The horse, hatch and ladder are motionless.",
+      "input_fingerprint": "c7aa84d20010d0cb8b8c592036ca3f689883b45f08393519eed718e35bac968d"
+    },
+    {
+      "shot_spec": {
+        "id": "S10",
+        "title": "奥德修斯向下爬梯",
+        "actors": [
+          "odysseus"
+        ],
+        "camera": "locked full-body medium wide side view",
+        "start": {
+          "actor": "one Odysseus on upper ladder; torso faces wooden horse; hands grip both rails; feet on upper rungs",
+          "hatch": "open upward, top hinge",
+          "ladder": "one fixed ladder",
+          "gate": "closed"
+        },
+        "end": {
+          "actor": "same Odysseus exactly two rungs lower, facing horse, hands grip rails, feet still on ladder",
+          "hatch": "unchanged",
+          "ladder": "unchanged",
+          "gate": "closed"
+        },
+        "invariants": [
+          "one Odysseus, no duplicates",
+          "no shield",
+          "sword stays sheathed at left hip",
+          "one rigid wooden horse facing right",
+          "one ladder and one hatch",
+          "camera stationary"
+        ],
+        "acceptance": [
+          "pelvis visibly moves down at least two rungs",
+          "no upward travel or direction reversal",
+          "both hands alternate secure ladder grips",
+          "identity, sword sheath and horse remain stable"
+        ]
+      },
+      "prompt_sha256": "2e4c360b4ba449d197242f7c2744996b0c2960741df6e681661b49c81b37361e",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "horse",
+          "kind": "prop",
+          "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+          "file": "inputs/horse.png",
+          "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S10",
+      "id": "S10_msr_first_last_2026100602",
+      "title": "奥德修斯向下爬梯",
+      "method": "msr_first_last",
+      "seed": 2026100602,
+      "temporal": [
+        {
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        {
+          "file": "keyframes/S10_end_v4.png",
+          "sha256": "c48a91aa1533c33c96fbe3f9a4e16703721ca2a06348e67569aa7382aef1f4e8",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: rigid wooden horse design on one four-wheeled platform, facing right. Picture 3: start-state composition reference; same cast, not additional people. At the start ONE Odysseus is on the upper third of ONE ladder facing the wooden horse, with both hands gripping its rails. He steadily DESCENDS DOWNWARD by exactly TWO rungs, alternating one hand and one foot, lowering his pelvis throughout. He finishes on lower rungs still above ground and still facing the horse. Do not ascend, reverse direction, turn to camera, jump or leave the ladder. Sword remains sheathed at LEFT hip, NO shield. One upward-open top-hinged hatch, one rigid horse facing right on fixed wheels, closed gate left, fountain right. The horse, hatch and ladder are motionless.",
+      "input_fingerprint": "b50c460707d41527baf9ab414b79fd74eb8a1919016da96048c919cb02c1560c"
+    },
+    {
+      "shot_spec": {
+        "id": "S15",
+        "title": "剑矛交锋对照",
+        "actors": [
+          "odysseus",
+          "guard",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked full-body medium wide",
+        "start": {
+          "odysseus": "left foreground right-hand sword raised before parry; left hand empty",
+          "guard": "right foreground spear thrust beginning; left shield",
+          "extras": "two background fighting pairs",
+          "gate": "closed"
+        },
+        "end": {
+          "odysseus": "same left foreground sword high right after parry; left hand empty",
+          "guard": "same right foreground recoils one half-step after spear deflection; shield left",
+          "extras": "same two background pairs at next fight phase",
+          "gate": "closed"
+        },
+        "invariants": [
+          "six distinct people",
+          "Odysseus has no shield",
+          "guard keeps right spear and left shield",
+          "two background Greek/Trojan pairs",
+          "closed gate and camera fixed"
+        ],
+        "acceptance": [
+          "visible spear thrust and sword parry",
+          "no equipment transfer or duplication",
+          "both background pairs continue combat",
+          "lead faces and gate preserved"
+        ]
+      },
+      "prompt_sha256": "cbbd11d41ba5d1b90d2b43ec8f4d4639269ba1c01613ffeaad7355339c953923",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "file": "inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S15",
+      "id": "S15_msr_2026100601",
+      "title": "剑矛交锋对照",
+      "method": "msr",
+      "seed": 2026100601,
+      "temporal": [],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the Trojan guard, pointed bronze helmet, ochre armor and rust cloak. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SIX different people: Odysseus foreground LEFT with RIGHT sword and LEFT hand EMPTY, no shield; foreground RIGHT Trojan guard with pointed helmet, ochre tunic and rust cloak, RIGHT spear and LEFT shield. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. The same two background Greek/Trojan pairs continuously strike and block. Each keeps weapons in its original hands. Closed double gate throughout. No additional people or equipment transfers.",
+      "input_fingerprint": "85f85afd72a917601f1ace1ba5829fa887e48048f1d4323e8b66e5a222951c3d"
+    },
+    {
+      "shot_spec": {
+        "id": "S15",
+        "title": "剑矛交锋对照",
+        "actors": [
+          "odysseus",
+          "guard",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked full-body medium wide",
+        "start": {
+          "odysseus": "left foreground right-hand sword raised before parry; left hand empty",
+          "guard": "right foreground spear thrust beginning; left shield",
+          "extras": "two background fighting pairs",
+          "gate": "closed"
+        },
+        "end": {
+          "odysseus": "same left foreground sword high right after parry; left hand empty",
+          "guard": "same right foreground recoils one half-step after spear deflection; shield left",
+          "extras": "same two background pairs at next fight phase",
+          "gate": "closed"
+        },
+        "invariants": [
+          "six distinct people",
+          "Odysseus has no shield",
+          "guard keeps right spear and left shield",
+          "two background Greek/Trojan pairs",
+          "closed gate and camera fixed"
+        ],
+        "acceptance": [
+          "visible spear thrust and sword parry",
+          "no equipment transfer or duplication",
+          "both background pairs continue combat",
+          "lead faces and gate preserved"
+        ]
+      },
+      "prompt_sha256": "cbbd11d41ba5d1b90d2b43ec8f4d4639269ba1c01613ffeaad7355339c953923",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "file": "inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S15",
+      "id": "S15_msr_2026100602",
+      "title": "剑矛交锋对照",
+      "method": "msr",
+      "seed": 2026100602,
+      "temporal": [],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the Trojan guard, pointed bronze helmet, ochre armor and rust cloak. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SIX different people: Odysseus foreground LEFT with RIGHT sword and LEFT hand EMPTY, no shield; foreground RIGHT Trojan guard with pointed helmet, ochre tunic and rust cloak, RIGHT spear and LEFT shield. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. The same two background Greek/Trojan pairs continuously strike and block. Each keeps weapons in its original hands. Closed double gate throughout. No additional people or equipment transfers.",
+      "input_fingerprint": "9f4b0b614be1cfdf47ad0d23841d72ec2a429ccadef6c6ecab1792ec0c0f707c"
+    },
+    {
+      "shot_spec": {
+        "id": "S15",
+        "title": "剑矛交锋对照",
+        "actors": [
+          "odysseus",
+          "guard",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked full-body medium wide",
+        "start": {
+          "odysseus": "left foreground right-hand sword raised before parry; left hand empty",
+          "guard": "right foreground spear thrust beginning; left shield",
+          "extras": "two background fighting pairs",
+          "gate": "closed"
+        },
+        "end": {
+          "odysseus": "same left foreground sword high right after parry; left hand empty",
+          "guard": "same right foreground recoils one half-step after spear deflection; shield left",
+          "extras": "same two background pairs at next fight phase",
+          "gate": "closed"
+        },
+        "invariants": [
+          "six distinct people",
+          "Odysseus has no shield",
+          "guard keeps right spear and left shield",
+          "two background Greek/Trojan pairs",
+          "closed gate and camera fixed"
+        ],
+        "acceptance": [
+          "visible spear thrust and sword parry",
+          "no equipment transfer or duplication",
+          "both background pairs continue combat",
+          "lead faces and gate preserved"
+        ]
+      },
+      "prompt_sha256": "cbbd11d41ba5d1b90d2b43ec8f4d4639269ba1c01613ffeaad7355339c953923",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "file": "inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S15",
+      "id": "S15_msr_first_2026100601",
+      "title": "剑矛交锋对照",
+      "method": "msr_first",
+      "seed": 2026100601,
+      "temporal": [
+        {
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6",
+          "frame_index": 0,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the Trojan guard, pointed bronze helmet, ochre armor and rust cloak. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SIX different people: Odysseus foreground LEFT with RIGHT sword and LEFT hand EMPTY, no shield; foreground RIGHT Trojan guard with pointed helmet, ochre tunic and rust cloak, RIGHT spear and LEFT shield. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. The same two background Greek/Trojan pairs continuously strike and block. Each keeps weapons in its original hands. Closed double gate throughout. No additional people or equipment transfers.",
+      "input_fingerprint": "e31d374b685e669b87773869fa5ef5a433195720c642429c521f7aee080d908d"
+    },
+    {
+      "shot_spec": {
+        "id": "S15",
+        "title": "剑矛交锋对照",
+        "actors": [
+          "odysseus",
+          "guard",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked full-body medium wide",
+        "start": {
+          "odysseus": "left foreground right-hand sword raised before parry; left hand empty",
+          "guard": "right foreground spear thrust beginning; left shield",
+          "extras": "two background fighting pairs",
+          "gate": "closed"
+        },
+        "end": {
+          "odysseus": "same left foreground sword high right after parry; left hand empty",
+          "guard": "same right foreground recoils one half-step after spear deflection; shield left",
+          "extras": "same two background pairs at next fight phase",
+          "gate": "closed"
+        },
+        "invariants": [
+          "six distinct people",
+          "Odysseus has no shield",
+          "guard keeps right spear and left shield",
+          "two background Greek/Trojan pairs",
+          "closed gate and camera fixed"
+        ],
+        "acceptance": [
+          "visible spear thrust and sword parry",
+          "no equipment transfer or duplication",
+          "both background pairs continue combat",
+          "lead faces and gate preserved"
+        ]
+      },
+      "prompt_sha256": "cbbd11d41ba5d1b90d2b43ec8f4d4639269ba1c01613ffeaad7355339c953923",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "file": "inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S15",
+      "id": "S15_msr_first_2026100602",
+      "title": "剑矛交锋对照",
+      "method": "msr_first",
+      "seed": 2026100602,
+      "temporal": [
+        {
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6",
+          "frame_index": 0,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the Trojan guard, pointed bronze helmet, ochre armor and rust cloak. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SIX different people: Odysseus foreground LEFT with RIGHT sword and LEFT hand EMPTY, no shield; foreground RIGHT Trojan guard with pointed helmet, ochre tunic and rust cloak, RIGHT spear and LEFT shield. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. The same two background Greek/Trojan pairs continuously strike and block. Each keeps weapons in its original hands. Closed double gate throughout. No additional people or equipment transfers.",
+      "input_fingerprint": "082a6b1a5f615b00263d765dc7ce7851d32411f86bd78a384e476cd5a675946d"
+    },
+    {
+      "shot_spec": {
+        "id": "S15",
+        "title": "剑矛交锋对照",
+        "actors": [
+          "odysseus",
+          "guard",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked full-body medium wide",
+        "start": {
+          "odysseus": "left foreground right-hand sword raised before parry; left hand empty",
+          "guard": "right foreground spear thrust beginning; left shield",
+          "extras": "two background fighting pairs",
+          "gate": "closed"
+        },
+        "end": {
+          "odysseus": "same left foreground sword high right after parry; left hand empty",
+          "guard": "same right foreground recoils one half-step after spear deflection; shield left",
+          "extras": "same two background pairs at next fight phase",
+          "gate": "closed"
+        },
+        "invariants": [
+          "six distinct people",
+          "Odysseus has no shield",
+          "guard keeps right spear and left shield",
+          "two background Greek/Trojan pairs",
+          "closed gate and camera fixed"
+        ],
+        "acceptance": [
+          "visible spear thrust and sword parry",
+          "no equipment transfer or duplication",
+          "both background pairs continue combat",
+          "lead faces and gate preserved"
+        ]
+      },
+      "prompt_sha256": "cbbd11d41ba5d1b90d2b43ec8f4d4639269ba1c01613ffeaad7355339c953923",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "file": "inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S15",
+      "id": "S15_msr_first_last_2026100601",
+      "title": "剑矛交锋对照",
+      "method": "msr_first_last",
+      "seed": 2026100601,
+      "temporal": [
+        {
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        {
+          "file": "keyframes/S15_end.png",
+          "sha256": "f4f49b95aeeff8f820fee327b0d0e25615b1e9735717e8b604f849bb60ca9fa7",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the Trojan guard, pointed bronze helmet, ochre armor and rust cloak. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SIX different people: Odysseus foreground LEFT with RIGHT sword and LEFT hand EMPTY, no shield; foreground RIGHT Trojan guard with pointed helmet, ochre tunic and rust cloak, RIGHT spear and LEFT shield. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. The same two background Greek/Trojan pairs continuously strike and block. Each keeps weapons in its original hands. Closed double gate throughout. No additional people or equipment transfers.",
+      "input_fingerprint": "e9d2dfafb4701523c354249e7778b6b338803a2aeb833e1af72829b1cd8e4c75"
+    },
+    {
+      "shot_spec": {
+        "id": "S15",
+        "title": "剑矛交锋对照",
+        "actors": [
+          "odysseus",
+          "guard",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked full-body medium wide",
+        "start": {
+          "odysseus": "left foreground right-hand sword raised before parry; left hand empty",
+          "guard": "right foreground spear thrust beginning; left shield",
+          "extras": "two background fighting pairs",
+          "gate": "closed"
+        },
+        "end": {
+          "odysseus": "same left foreground sword high right after parry; left hand empty",
+          "guard": "same right foreground recoils one half-step after spear deflection; shield left",
+          "extras": "same two background pairs at next fight phase",
+          "gate": "closed"
+        },
+        "invariants": [
+          "six distinct people",
+          "Odysseus has no shield",
+          "guard keeps right spear and left shield",
+          "two background Greek/Trojan pairs",
+          "closed gate and camera fixed"
+        ],
+        "acceptance": [
+          "visible spear thrust and sword parry",
+          "no equipment transfer or duplication",
+          "both background pairs continue combat",
+          "lead faces and gate preserved"
+        ]
+      },
+      "prompt_sha256": "cbbd11d41ba5d1b90d2b43ec8f4d4639269ba1c01613ffeaad7355339c953923",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "guard",
+          "kind": "character",
+          "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+          "file": "inputs/guard.png",
+          "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S15",
+      "id": "S15_msr_first_last_2026100602",
+      "title": "剑矛交锋对照",
+      "method": "msr_first_last",
+      "seed": 2026100602,
+      "temporal": [
+        {
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        {
+          "file": "keyframes/S15_end.png",
+          "sha256": "f4f49b95aeeff8f820fee327b0d0e25615b1e9735717e8b604f849bb60ca9fa7",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the Trojan guard, pointed bronze helmet, ochre armor and rust cloak. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SIX different people: Odysseus foreground LEFT with RIGHT sword and LEFT hand EMPTY, no shield; foreground RIGHT Trojan guard with pointed helmet, ochre tunic and rust cloak, RIGHT spear and LEFT shield. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. The same two background Greek/Trojan pairs continuously strike and block. Each keeps weapons in its original hands. Closed double gate throughout. No additional people or equipment transfers.",
+      "input_fingerprint": "a0b30fbd05f2bc27cf2953abfbd3ec2611a0c32dc6731422b0530fabf9642d86"
+    },
+    {
+      "shot_spec": {
+        "id": "S16",
+        "title": "双人抬闩与掩护",
+        "actors": [
+          "odysseus",
+          "soldier",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked wide inner-gate view",
+        "start": {
+          "bar": "one wooden bar horizontal and seated in two wall brackets",
+          "operators": "Odysseus left and young Greek right grip bar with both hands",
+          "soldier_shield": "strapped flat on back",
+          "swords": "both sheathed left",
+          "gate": "closed",
+          "extras": "three Greeks and two Trojans fighting at right"
+        },
+        "end": {
+          "bar": "same bar lifted 25cm vertically clear above both brackets, held horizontally in front of closed gate",
+          "operators": "same two actors, both hands still carry bar",
+          "soldier_shield": "same flat back shield",
+          "swords": "both sheathed",
+          "gate": "closed",
+          "extras": "same five cover fighters continue at right"
+        },
+        "invariants": [
+          "seven distinct actors total",
+          "operators never draw swords",
+          "young soldier shield stays on back",
+          "Odysseus no shield",
+          "one bar only",
+          "both gate leaves closed",
+          "no camera move"
+        ],
+        "acceptance": [
+          "two operators jointly lift the bar clear of both brackets",
+          "four hands stay on bar",
+          "no shield appears in operators hands",
+          "cover fighters engage throughout",
+          "gate remains closed"
+        ]
+      },
+      "prompt_sha256": "e65e137a488d87439a86ac8c52b4dfd764f42d96b114a7a0c356bd0611ceba9f",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "file": "inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S16",
+      "id": "S16_msr_2026100601",
+      "title": "双人抬闩与掩护",
+      "method": "msr",
+      "seed": 2026100601,
+      "temporal": [],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SEVEN different people. At the closed double gate, LEFT Odysseus in indigo with NO shield and RIGHT young clean-shaven Greek with ONE shield strapped flat on his BACK each grip ONE horizontal wooden gate bar with BOTH hands. Both swords remain sheathed LEFT. Together they lift the SAME heavy bar VERTICALLY 25 centimeters CLEAR ABOVE BOTH side-wall brackets. The bar remains HORIZONTAL in their FOUR hands in front of the still CLOSED gate until the last frame. They do not carry it away, turn it vertical, draw swords or open the gate. At right exactly three blue-gray Greeks and two ochre/rust Trojans continue sword and shield fighting to cover the operators. Grounded feet, constant cast and equipment.",
+      "input_fingerprint": "d6b0ddeb3a7b097fb1ee8eddc0bc32f849d21866777434295551d82ed41ba334"
+    },
+    {
+      "shot_spec": {
+        "id": "S16",
+        "title": "双人抬闩与掩护",
+        "actors": [
+          "odysseus",
+          "soldier",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked wide inner-gate view",
+        "start": {
+          "bar": "one wooden bar horizontal and seated in two wall brackets",
+          "operators": "Odysseus left and young Greek right grip bar with both hands",
+          "soldier_shield": "strapped flat on back",
+          "swords": "both sheathed left",
+          "gate": "closed",
+          "extras": "three Greeks and two Trojans fighting at right"
+        },
+        "end": {
+          "bar": "same bar lifted 25cm vertically clear above both brackets, held horizontally in front of closed gate",
+          "operators": "same two actors, both hands still carry bar",
+          "soldier_shield": "same flat back shield",
+          "swords": "both sheathed",
+          "gate": "closed",
+          "extras": "same five cover fighters continue at right"
+        },
+        "invariants": [
+          "seven distinct actors total",
+          "operators never draw swords",
+          "young soldier shield stays on back",
+          "Odysseus no shield",
+          "one bar only",
+          "both gate leaves closed",
+          "no camera move"
+        ],
+        "acceptance": [
+          "two operators jointly lift the bar clear of both brackets",
+          "four hands stay on bar",
+          "no shield appears in operators hands",
+          "cover fighters engage throughout",
+          "gate remains closed"
+        ]
+      },
+      "prompt_sha256": "e65e137a488d87439a86ac8c52b4dfd764f42d96b114a7a0c356bd0611ceba9f",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "file": "inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S16",
+      "id": "S16_msr_2026100602",
+      "title": "双人抬闩与掩护",
+      "method": "msr",
+      "seed": 2026100602,
+      "temporal": [],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SEVEN different people. At the closed double gate, LEFT Odysseus in indigo with NO shield and RIGHT young clean-shaven Greek with ONE shield strapped flat on his BACK each grip ONE horizontal wooden gate bar with BOTH hands. Both swords remain sheathed LEFT. Together they lift the SAME heavy bar VERTICALLY 25 centimeters CLEAR ABOVE BOTH side-wall brackets. The bar remains HORIZONTAL in their FOUR hands in front of the still CLOSED gate until the last frame. They do not carry it away, turn it vertical, draw swords or open the gate. At right exactly three blue-gray Greeks and two ochre/rust Trojans continue sword and shield fighting to cover the operators. Grounded feet, constant cast and equipment.",
+      "input_fingerprint": "4d0306adfbade30e74a039dc41edba7c405d5a85de0a8943c3149f8975dac2fb"
+    },
+    {
+      "shot_spec": {
+        "id": "S16",
+        "title": "双人抬闩与掩护",
+        "actors": [
+          "odysseus",
+          "soldier",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked wide inner-gate view",
+        "start": {
+          "bar": "one wooden bar horizontal and seated in two wall brackets",
+          "operators": "Odysseus left and young Greek right grip bar with both hands",
+          "soldier_shield": "strapped flat on back",
+          "swords": "both sheathed left",
+          "gate": "closed",
+          "extras": "three Greeks and two Trojans fighting at right"
+        },
+        "end": {
+          "bar": "same bar lifted 25cm vertically clear above both brackets, held horizontally in front of closed gate",
+          "operators": "same two actors, both hands still carry bar",
+          "soldier_shield": "same flat back shield",
+          "swords": "both sheathed",
+          "gate": "closed",
+          "extras": "same five cover fighters continue at right"
+        },
+        "invariants": [
+          "seven distinct actors total",
+          "operators never draw swords",
+          "young soldier shield stays on back",
+          "Odysseus no shield",
+          "one bar only",
+          "both gate leaves closed",
+          "no camera move"
+        ],
+        "acceptance": [
+          "two operators jointly lift the bar clear of both brackets",
+          "four hands stay on bar",
+          "no shield appears in operators hands",
+          "cover fighters engage throughout",
+          "gate remains closed"
+        ]
+      },
+      "prompt_sha256": "e65e137a488d87439a86ac8c52b4dfd764f42d96b114a7a0c356bd0611ceba9f",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "file": "inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S16",
+      "id": "S16_msr_first_2026100601",
+      "title": "双人抬闩与掩护",
+      "method": "msr_first",
+      "seed": 2026100601,
+      "temporal": [
+        {
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6",
+          "frame_index": 0,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SEVEN different people. At the closed double gate, LEFT Odysseus in indigo with NO shield and RIGHT young clean-shaven Greek with ONE shield strapped flat on his BACK each grip ONE horizontal wooden gate bar with BOTH hands. Both swords remain sheathed LEFT. Together they lift the SAME heavy bar VERTICALLY 25 centimeters CLEAR ABOVE BOTH side-wall brackets. The bar remains HORIZONTAL in their FOUR hands in front of the still CLOSED gate until the last frame. They do not carry it away, turn it vertical, draw swords or open the gate. At right exactly three blue-gray Greeks and two ochre/rust Trojans continue sword and shield fighting to cover the operators. Grounded feet, constant cast and equipment.",
+      "input_fingerprint": "135086aefb4d343dbe27ea80d2f093d5f65b56e94644147937b2b46e9946debb"
+    },
+    {
+      "shot_spec": {
+        "id": "S16",
+        "title": "双人抬闩与掩护",
+        "actors": [
+          "odysseus",
+          "soldier",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked wide inner-gate view",
+        "start": {
+          "bar": "one wooden bar horizontal and seated in two wall brackets",
+          "operators": "Odysseus left and young Greek right grip bar with both hands",
+          "soldier_shield": "strapped flat on back",
+          "swords": "both sheathed left",
+          "gate": "closed",
+          "extras": "three Greeks and two Trojans fighting at right"
+        },
+        "end": {
+          "bar": "same bar lifted 25cm vertically clear above both brackets, held horizontally in front of closed gate",
+          "operators": "same two actors, both hands still carry bar",
+          "soldier_shield": "same flat back shield",
+          "swords": "both sheathed",
+          "gate": "closed",
+          "extras": "same five cover fighters continue at right"
+        },
+        "invariants": [
+          "seven distinct actors total",
+          "operators never draw swords",
+          "young soldier shield stays on back",
+          "Odysseus no shield",
+          "one bar only",
+          "both gate leaves closed",
+          "no camera move"
+        ],
+        "acceptance": [
+          "two operators jointly lift the bar clear of both brackets",
+          "four hands stay on bar",
+          "no shield appears in operators hands",
+          "cover fighters engage throughout",
+          "gate remains closed"
+        ]
+      },
+      "prompt_sha256": "e65e137a488d87439a86ac8c52b4dfd764f42d96b114a7a0c356bd0611ceba9f",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "file": "inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S16",
+      "id": "S16_msr_first_2026100602",
+      "title": "双人抬闩与掩护",
+      "method": "msr_first",
+      "seed": 2026100602,
+      "temporal": [
+        {
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6",
+          "frame_index": 0,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SEVEN different people. At the closed double gate, LEFT Odysseus in indigo with NO shield and RIGHT young clean-shaven Greek with ONE shield strapped flat on his BACK each grip ONE horizontal wooden gate bar with BOTH hands. Both swords remain sheathed LEFT. Together they lift the SAME heavy bar VERTICALLY 25 centimeters CLEAR ABOVE BOTH side-wall brackets. The bar remains HORIZONTAL in their FOUR hands in front of the still CLOSED gate until the last frame. They do not carry it away, turn it vertical, draw swords or open the gate. At right exactly three blue-gray Greeks and two ochre/rust Trojans continue sword and shield fighting to cover the operators. Grounded feet, constant cast and equipment.",
+      "input_fingerprint": "d8723edd0844e1fc364968be3b60816c53fa9f8368b53f0534835327f581f4b0"
+    },
+    {
+      "shot_spec": {
+        "id": "S16",
+        "title": "双人抬闩与掩护",
+        "actors": [
+          "odysseus",
+          "soldier",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked wide inner-gate view",
+        "start": {
+          "bar": "one wooden bar horizontal and seated in two wall brackets",
+          "operators": "Odysseus left and young Greek right grip bar with both hands",
+          "soldier_shield": "strapped flat on back",
+          "swords": "both sheathed left",
+          "gate": "closed",
+          "extras": "three Greeks and two Trojans fighting at right"
+        },
+        "end": {
+          "bar": "same bar lifted 25cm vertically clear above both brackets, held horizontally in front of closed gate",
+          "operators": "same two actors, both hands still carry bar",
+          "soldier_shield": "same flat back shield",
+          "swords": "both sheathed",
+          "gate": "closed",
+          "extras": "same five cover fighters continue at right"
+        },
+        "invariants": [
+          "seven distinct actors total",
+          "operators never draw swords",
+          "young soldier shield stays on back",
+          "Odysseus no shield",
+          "one bar only",
+          "both gate leaves closed",
+          "no camera move"
+        ],
+        "acceptance": [
+          "two operators jointly lift the bar clear of both brackets",
+          "four hands stay on bar",
+          "no shield appears in operators hands",
+          "cover fighters engage throughout",
+          "gate remains closed"
+        ]
+      },
+      "prompt_sha256": "e65e137a488d87439a86ac8c52b4dfd764f42d96b114a7a0c356bd0611ceba9f",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "file": "inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S16",
+      "id": "S16_msr_first_last_2026100601",
+      "title": "双人抬闩与掩护",
+      "method": "msr_first_last",
+      "seed": 2026100601,
+      "temporal": [
+        {
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        {
+          "file": "keyframes/S16_end_v4.png",
+          "sha256": "2b157d12487376cbcbc16c0f7971b757ca3a08e7bdcbbe93e784e2f9474bfef7",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SEVEN different people. At the closed double gate, LEFT Odysseus in indigo with NO shield and RIGHT young clean-shaven Greek with ONE shield strapped flat on his BACK each grip ONE horizontal wooden gate bar with BOTH hands. Both swords remain sheathed LEFT. Together they lift the SAME heavy bar VERTICALLY 25 centimeters CLEAR ABOVE BOTH side-wall brackets. The bar remains HORIZONTAL in their FOUR hands in front of the still CLOSED gate until the last frame. They do not carry it away, turn it vertical, draw swords or open the gate. At right exactly three blue-gray Greeks and two ochre/rust Trojans continue sword and shield fighting to cover the operators. Grounded feet, constant cast and equipment.",
+      "input_fingerprint": "d3bcf6ae3814284529afb08d3fdb13522753120edbd36721709718a3a9832995"
+    },
+    {
+      "shot_spec": {
+        "id": "S16",
+        "title": "双人抬闩与掩护",
+        "actors": [
+          "odysseus",
+          "soldier",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked wide inner-gate view",
+        "start": {
+          "bar": "one wooden bar horizontal and seated in two wall brackets",
+          "operators": "Odysseus left and young Greek right grip bar with both hands",
+          "soldier_shield": "strapped flat on back",
+          "swords": "both sheathed left",
+          "gate": "closed",
+          "extras": "three Greeks and two Trojans fighting at right"
+        },
+        "end": {
+          "bar": "same bar lifted 25cm vertically clear above both brackets, held horizontally in front of closed gate",
+          "operators": "same two actors, both hands still carry bar",
+          "soldier_shield": "same flat back shield",
+          "swords": "both sheathed",
+          "gate": "closed",
+          "extras": "same five cover fighters continue at right"
+        },
+        "invariants": [
+          "seven distinct actors total",
+          "operators never draw swords",
+          "young soldier shield stays on back",
+          "Odysseus no shield",
+          "one bar only",
+          "both gate leaves closed",
+          "no camera move"
+        ],
+        "acceptance": [
+          "two operators jointly lift the bar clear of both brackets",
+          "four hands stay on bar",
+          "no shield appears in operators hands",
+          "cover fighters engage throughout",
+          "gate remains closed"
+        ]
+      },
+      "prompt_sha256": "e65e137a488d87439a86ac8c52b4dfd764f42d96b114a7a0c356bd0611ceba9f",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "odysseus",
+          "kind": "character",
+          "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+          "file": "inputs/odysseus.png",
+          "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a"
+        },
+        {
+          "slot": 2,
+          "id": "soldier",
+          "kind": "character",
+          "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+          "file": "inputs/soldier.png",
+          "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6"
+        },
+        {
+          "slot": 3,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 4,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 5,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S16",
+      "id": "S16_msr_first_last_2026100602",
+      "title": "双人抬闩与掩护",
+      "method": "msr_first_last",
+      "seed": 2026100602,
+      "temporal": [
+        {
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        {
+          "file": "keyframes/S16_end_v4.png",
+          "sha256": "2b157d12487376cbcbc16c0f7971b757ca3a08e7bdcbbe93e784e2f9474bfef7",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield. Picture 2: the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield. Picture 3: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 4: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 5: start-state composition reference; same cast, not additional people. Exactly SEVEN different people. At the closed double gate, LEFT Odysseus in indigo with NO shield and RIGHT young clean-shaven Greek with ONE shield strapped flat on his BACK each grip ONE horizontal wooden gate bar with BOTH hands. Both swords remain sheathed LEFT. Together they lift the SAME heavy bar VERTICALLY 25 centimeters CLEAR ABOVE BOTH side-wall brackets. The bar remains HORIZONTAL in their FOUR hands in front of the still CLOSED gate until the last frame. They do not carry it away, turn it vertical, draw swords or open the gate. At right exactly three blue-gray Greeks and two ochre/rust Trojans continue sword and shield fighting to cover the operators. Grounded feet, constant cast and equipment.",
+      "input_fingerprint": "3b2f617f6ff79d5d66ead7c669499940111fb21406cff7830ab3732b20c924df"
+    },
+    {
+      "shot_spec": {
+        "id": "S20",
+        "title": "大军团持续群战",
+        "actors": [
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked elevated wide master shot; no crane this regression",
+        "start": {
+          "foreground": "two readable Greek/Trojan sword-shield combat pairs, attack preparation",
+          "middle": "blue-gray and rust-colored infantry fighting around both sides of horse",
+          "background": "dense opposing armies clash between open left gate and right fountain",
+          "horse": "one rigid horse, hatch up, ladder down"
+        },
+        "end": {
+          "foreground": "same four foreground fighters after blocked strikes, half-step recoil",
+          "middle": "same armies advance and recoil during combat",
+          "background": "same dense clash with weapons raised",
+          "horse": "unchanged"
+        },
+        "invariants": [
+          "no named heroes",
+          "Greeks blue-gray, Trojans ochre/rust",
+          "one horse, one hatch, one ladder",
+          "gate open on left and fountain on right",
+          "foreground, middle and background combat",
+          "locked camera"
+        ],
+        "acceptance": [
+          "both foreground pairs visibly strike, block and recoil",
+          "middle and rear lines fight rather than parade or stand still",
+          "factions visually distinct",
+          "no living horse motion or hero duplication",
+          "spatial landmarks remain fixed"
+        ]
+      },
+      "prompt_sha256": "f09b89513193c28a7d7078d38e8915e6fa5723d5488379a49c268a2b67604229",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S20",
+      "id": "S20_msr_2026100601",
+      "title": "大军团持续群战",
+      "method": "msr",
+      "seed": 2026100601,
+      "temporal": [],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 2: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 3: start-state composition reference; same cast, not additional people. A sustained anonymous large-army battle, with no named heroes. Greeks wear blue-gray cloth and bronze armor; Trojans wear ochre tunics and rust-red capes. Foreground TWO distinct opposed pairs keep RIGHT swords and LEFT shields: blue-gray Greek left, ochre/rust Trojan right. Both pairs strike, block and recoil through the shot; attackers lean forward while defenders recoil half a step. Middle and background infantry continuously clash in staggered opposing pairs on both sides of the horse, with thrusts, defensive shields and recoils. No parade, idle formation or walking away. ONE motionless rigid wooden horse center faces right, ONE hatch stays raised, ONE ladder stays fixed. Gate at LEFT remains OPEN; fountain stays at RIGHT. Maintain all three depths of action and clear faction colors.",
+      "input_fingerprint": "cbffac66512ff01af39feb5892934f374951281323b5692d304a3ced08bf6809"
+    },
+    {
+      "shot_spec": {
+        "id": "S20",
+        "title": "大军团持续群战",
+        "actors": [
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked elevated wide master shot; no crane this regression",
+        "start": {
+          "foreground": "two readable Greek/Trojan sword-shield combat pairs, attack preparation",
+          "middle": "blue-gray and rust-colored infantry fighting around both sides of horse",
+          "background": "dense opposing armies clash between open left gate and right fountain",
+          "horse": "one rigid horse, hatch up, ladder down"
+        },
+        "end": {
+          "foreground": "same four foreground fighters after blocked strikes, half-step recoil",
+          "middle": "same armies advance and recoil during combat",
+          "background": "same dense clash with weapons raised",
+          "horse": "unchanged"
+        },
+        "invariants": [
+          "no named heroes",
+          "Greeks blue-gray, Trojans ochre/rust",
+          "one horse, one hatch, one ladder",
+          "gate open on left and fountain on right",
+          "foreground, middle and background combat",
+          "locked camera"
+        ],
+        "acceptance": [
+          "both foreground pairs visibly strike, block and recoil",
+          "middle and rear lines fight rather than parade or stand still",
+          "factions visually distinct",
+          "no living horse motion or hero duplication",
+          "spatial landmarks remain fixed"
+        ]
+      },
+      "prompt_sha256": "f09b89513193c28a7d7078d38e8915e6fa5723d5488379a49c268a2b67604229",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S20",
+      "id": "S20_msr_2026100602",
+      "title": "大军团持续群战",
+      "method": "msr",
+      "seed": 2026100602,
+      "temporal": [],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 2: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 3: start-state composition reference; same cast, not additional people. A sustained anonymous large-army battle, with no named heroes. Greeks wear blue-gray cloth and bronze armor; Trojans wear ochre tunics and rust-red capes. Foreground TWO distinct opposed pairs keep RIGHT swords and LEFT shields: blue-gray Greek left, ochre/rust Trojan right. Both pairs strike, block and recoil through the shot; attackers lean forward while defenders recoil half a step. Middle and background infantry continuously clash in staggered opposing pairs on both sides of the horse, with thrusts, defensive shields and recoils. No parade, idle formation or walking away. ONE motionless rigid wooden horse center faces right, ONE hatch stays raised, ONE ladder stays fixed. Gate at LEFT remains OPEN; fountain stays at RIGHT. Maintain all three depths of action and clear faction colors.",
+      "input_fingerprint": "d3c6974a41d7ece4ad95211738d1adeeca6f57d217dd9027adefc1be8f0459cd"
+    },
+    {
+      "shot_spec": {
+        "id": "S20",
+        "title": "大军团持续群战",
+        "actors": [
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked elevated wide master shot; no crane this regression",
+        "start": {
+          "foreground": "two readable Greek/Trojan sword-shield combat pairs, attack preparation",
+          "middle": "blue-gray and rust-colored infantry fighting around both sides of horse",
+          "background": "dense opposing armies clash between open left gate and right fountain",
+          "horse": "one rigid horse, hatch up, ladder down"
+        },
+        "end": {
+          "foreground": "same four foreground fighters after blocked strikes, half-step recoil",
+          "middle": "same armies advance and recoil during combat",
+          "background": "same dense clash with weapons raised",
+          "horse": "unchanged"
+        },
+        "invariants": [
+          "no named heroes",
+          "Greeks blue-gray, Trojans ochre/rust",
+          "one horse, one hatch, one ladder",
+          "gate open on left and fountain on right",
+          "foreground, middle and background combat",
+          "locked camera"
+        ],
+        "acceptance": [
+          "both foreground pairs visibly strike, block and recoil",
+          "middle and rear lines fight rather than parade or stand still",
+          "factions visually distinct",
+          "no living horse motion or hero duplication",
+          "spatial landmarks remain fixed"
+        ]
+      },
+      "prompt_sha256": "f09b89513193c28a7d7078d38e8915e6fa5723d5488379a49c268a2b67604229",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S20",
+      "id": "S20_msr_first_2026100601",
+      "title": "大军团持续群战",
+      "method": "msr_first",
+      "seed": 2026100601,
+      "temporal": [
+        {
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e",
+          "frame_index": 0,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 2: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 3: start-state composition reference; same cast, not additional people. A sustained anonymous large-army battle, with no named heroes. Greeks wear blue-gray cloth and bronze armor; Trojans wear ochre tunics and rust-red capes. Foreground TWO distinct opposed pairs keep RIGHT swords and LEFT shields: blue-gray Greek left, ochre/rust Trojan right. Both pairs strike, block and recoil through the shot; attackers lean forward while defenders recoil half a step. Middle and background infantry continuously clash in staggered opposing pairs on both sides of the horse, with thrusts, defensive shields and recoils. No parade, idle formation or walking away. ONE motionless rigid wooden horse center faces right, ONE hatch stays raised, ONE ladder stays fixed. Gate at LEFT remains OPEN; fountain stays at RIGHT. Maintain all three depths of action and clear faction colors.",
+      "input_fingerprint": "234711d7d8aa71dd402bf0e4b66feac5922560e7ae72fbc16843712572404d67"
+    },
+    {
+      "shot_spec": {
+        "id": "S20",
+        "title": "大军团持续群战",
+        "actors": [
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked elevated wide master shot; no crane this regression",
+        "start": {
+          "foreground": "two readable Greek/Trojan sword-shield combat pairs, attack preparation",
+          "middle": "blue-gray and rust-colored infantry fighting around both sides of horse",
+          "background": "dense opposing armies clash between open left gate and right fountain",
+          "horse": "one rigid horse, hatch up, ladder down"
+        },
+        "end": {
+          "foreground": "same four foreground fighters after blocked strikes, half-step recoil",
+          "middle": "same armies advance and recoil during combat",
+          "background": "same dense clash with weapons raised",
+          "horse": "unchanged"
+        },
+        "invariants": [
+          "no named heroes",
+          "Greeks blue-gray, Trojans ochre/rust",
+          "one horse, one hatch, one ladder",
+          "gate open on left and fountain on right",
+          "foreground, middle and background combat",
+          "locked camera"
+        ],
+        "acceptance": [
+          "both foreground pairs visibly strike, block and recoil",
+          "middle and rear lines fight rather than parade or stand still",
+          "factions visually distinct",
+          "no living horse motion or hero duplication",
+          "spatial landmarks remain fixed"
+        ]
+      },
+      "prompt_sha256": "f09b89513193c28a7d7078d38e8915e6fa5723d5488379a49c268a2b67604229",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S20",
+      "id": "S20_msr_first_2026100602",
+      "title": "大军团持续群战",
+      "method": "msr_first",
+      "seed": 2026100602,
+      "temporal": [
+        {
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e",
+          "frame_index": 0,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 2: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 3: start-state composition reference; same cast, not additional people. A sustained anonymous large-army battle, with no named heroes. Greeks wear blue-gray cloth and bronze armor; Trojans wear ochre tunics and rust-red capes. Foreground TWO distinct opposed pairs keep RIGHT swords and LEFT shields: blue-gray Greek left, ochre/rust Trojan right. Both pairs strike, block and recoil through the shot; attackers lean forward while defenders recoil half a step. Middle and background infantry continuously clash in staggered opposing pairs on both sides of the horse, with thrusts, defensive shields and recoils. No parade, idle formation or walking away. ONE motionless rigid wooden horse center faces right, ONE hatch stays raised, ONE ladder stays fixed. Gate at LEFT remains OPEN; fountain stays at RIGHT. Maintain all three depths of action and clear faction colors.",
+      "input_fingerprint": "8d2f1731f865f18f21979811478321345a1dbfdfc5a140ef4bbd88bc0656f103"
+    },
+    {
+      "shot_spec": {
+        "id": "S20",
+        "title": "大军团持续群战",
+        "actors": [
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked elevated wide master shot; no crane this regression",
+        "start": {
+          "foreground": "two readable Greek/Trojan sword-shield combat pairs, attack preparation",
+          "middle": "blue-gray and rust-colored infantry fighting around both sides of horse",
+          "background": "dense opposing armies clash between open left gate and right fountain",
+          "horse": "one rigid horse, hatch up, ladder down"
+        },
+        "end": {
+          "foreground": "same four foreground fighters after blocked strikes, half-step recoil",
+          "middle": "same armies advance and recoil during combat",
+          "background": "same dense clash with weapons raised",
+          "horse": "unchanged"
+        },
+        "invariants": [
+          "no named heroes",
+          "Greeks blue-gray, Trojans ochre/rust",
+          "one horse, one hatch, one ladder",
+          "gate open on left and fountain on right",
+          "foreground, middle and background combat",
+          "locked camera"
+        ],
+        "acceptance": [
+          "both foreground pairs visibly strike, block and recoil",
+          "middle and rear lines fight rather than parade or stand still",
+          "factions visually distinct",
+          "no living horse motion or hero duplication",
+          "spatial landmarks remain fixed"
+        ]
+      },
+      "prompt_sha256": "f09b89513193c28a7d7078d38e8915e6fa5723d5488379a49c268a2b67604229",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S20",
+      "id": "S20_msr_first_last_2026100601",
+      "title": "大军团持续群战",
+      "method": "msr_first_last",
+      "seed": 2026100601,
+      "temporal": [
+        {
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        {
+          "file": "keyframes/S20_end.png",
+          "sha256": "a5077de8661a586b3fcf495ecfe535ac86cf9038b5534da33104c977acfde097",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 2: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 3: start-state composition reference; same cast, not additional people. A sustained anonymous large-army battle, with no named heroes. Greeks wear blue-gray cloth and bronze armor; Trojans wear ochre tunics and rust-red capes. Foreground TWO distinct opposed pairs keep RIGHT swords and LEFT shields: blue-gray Greek left, ochre/rust Trojan right. Both pairs strike, block and recoil through the shot; attackers lean forward while defenders recoil half a step. Middle and background infantry continuously clash in staggered opposing pairs on both sides of the horse, with thrusts, defensive shields and recoils. No parade, idle formation or walking away. ONE motionless rigid wooden horse center faces right, ONE hatch stays raised, ONE ladder stays fixed. Gate at LEFT remains OPEN; fountain stays at RIGHT. Maintain all three depths of action and clear faction colors.",
+      "input_fingerprint": "2a0804522ca7028195c4159eec9e3f84871a52b282db780c8d0921274ab0f825"
+    },
+    {
+      "shot_spec": {
+        "id": "S20",
+        "title": "大军团持续群战",
+        "actors": [
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked elevated wide master shot; no crane this regression",
+        "start": {
+          "foreground": "two readable Greek/Trojan sword-shield combat pairs, attack preparation",
+          "middle": "blue-gray and rust-colored infantry fighting around both sides of horse",
+          "background": "dense opposing armies clash between open left gate and right fountain",
+          "horse": "one rigid horse, hatch up, ladder down"
+        },
+        "end": {
+          "foreground": "same four foreground fighters after blocked strikes, half-step recoil",
+          "middle": "same armies advance and recoil during combat",
+          "background": "same dense clash with weapons raised",
+          "horse": "unchanged"
+        },
+        "invariants": [
+          "no named heroes",
+          "Greeks blue-gray, Trojans ochre/rust",
+          "one horse, one hatch, one ladder",
+          "gate open on left and fountain on right",
+          "foreground, middle and background combat",
+          "locked camera"
+        ],
+        "acceptance": [
+          "both foreground pairs visibly strike, block and recoil",
+          "middle and rear lines fight rather than parade or stand still",
+          "factions visually distinct",
+          "no living horse motion or hero duplication",
+          "spatial landmarks remain fixed"
+        ]
+      },
+      "prompt_sha256": "f09b89513193c28a7d7078d38e8915e6fa5723d5488379a49c268a2b67604229",
+      "slots": [
+        {
+          "slot": 1,
+          "id": "greeks",
+          "kind": "group",
+          "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+          "file": "inputs/greeks.png",
+          "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8"
+        },
+        {
+          "slot": 2,
+          "id": "trojans",
+          "kind": "group",
+          "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+          "file": "inputs/trojans.png",
+          "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b"
+        },
+        {
+          "slot": 3,
+          "id": "board",
+          "kind": "staging",
+          "role": "start-state composition reference; same cast, not additional people",
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e"
+        }
+      ],
+      "native_size": [
+        768,
+        448
+      ],
+      "frames": 121,
+      "fps": 24,
+      "steps": 8,
+      "msr_strength": 1.0,
+      "distilled_strength": 1.0,
+      "adapter_revision": "03061c18f8a79d26f3c63931dd8e28f5e5d872a6",
+      "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+      "case_id": "S20",
+      "id": "S20_msr_first_last_2026100602",
+      "title": "大军团持续群战",
+      "method": "msr_first_last",
+      "seed": 2026100602,
+      "temporal": [
+        {
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        {
+          "file": "keyframes/S20_end.png",
+          "sha256": "a5077de8661a586b3fcf495ecfe535ac86cf9038b5534da33104c977acfde097",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      ],
+      "prompt": "A five-second continuous photorealistic 1970s Shaw Brothers historical Troy film shot. Practical night lighting: warm amber torches and cold blue moonlight, gritty bronze, rough wood and cloth. The camera is locked off throughout: no zoom, pan or crane. No dialogue, no music, only diegetic footsteps, armor, wood or sword sounds. No captions, no blood or visible wounds. Picture 1: Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces. Picture 2: Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces. Picture 3: start-state composition reference; same cast, not additional people. A sustained anonymous large-army battle, with no named heroes. Greeks wear blue-gray cloth and bronze armor; Trojans wear ochre tunics and rust-red capes. Foreground TWO distinct opposed pairs keep RIGHT swords and LEFT shields: blue-gray Greek left, ochre/rust Trojan right. Both pairs strike, block and recoil through the shot; attackers lean forward while defenders recoil half a step. Middle and background infantry continuously clash in staggered opposing pairs on both sides of the horse, with thrusts, defensive shields and recoils. No parade, idle formation or walking away. ONE motionless rigid wooden horse center faces right, ONE hatch stays raised, ONE ladder stays fixed. Gate at LEFT remains OPEN; fountain stays at RIGHT. Maintain all three depths of action and clear faction colors.",
+      "input_fingerprint": "cd98cc5441b23b14b2b08fa7e7a2078e9d2edb0867f328248cecdbafe4937553"
+    }
+  ],
+  "cases": [
+    {
+      "id": "S10",
+      "title": "奥德修斯向下爬梯",
+      "spec": {
+        "id": "S10",
+        "title": "奥德修斯向下爬梯",
+        "actors": [
+          "odysseus"
+        ],
+        "camera": "locked full-body medium wide side view",
+        "start": {
+          "actor": "one Odysseus on upper ladder; torso faces wooden horse; hands grip both rails; feet on upper rungs",
+          "hatch": "open upward, top hinge",
+          "ladder": "one fixed ladder",
+          "gate": "closed"
+        },
+        "end": {
+          "actor": "same Odysseus exactly two rungs lower, facing horse, hands grip rails, feet still on ladder",
+          "hatch": "unchanged",
+          "ladder": "unchanged",
+          "gate": "closed"
+        },
+        "invariants": [
+          "one Odysseus, no duplicates",
+          "no shield",
+          "sword stays sheathed at left hip",
+          "one rigid wooden horse facing right",
+          "one ladder and one hatch",
+          "camera stationary"
+        ],
+        "acceptance": [
+          "pelvis visibly moves down at least two rungs",
+          "no upward travel or direction reversal",
+          "both hands alternate secure ladder grips",
+          "identity, sword sheath and horse remain stable"
+        ]
+      },
+      "keyframes": {
+        "start": {
+          "file": "keyframes/S10_start.png",
+          "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        "end": {
+          "file": "keyframes/S10_end_v4.png",
+          "sha256": "c48a91aa1533c33c96fbe3f9a4e16703721ca2a06348e67569aa7382aef1f4e8",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      }
+    },
+    {
+      "id": "S15",
+      "title": "剑矛交锋对照",
+      "spec": {
+        "id": "S15",
+        "title": "剑矛交锋对照",
+        "actors": [
+          "odysseus",
+          "guard",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked full-body medium wide",
+        "start": {
+          "odysseus": "left foreground right-hand sword raised before parry; left hand empty",
+          "guard": "right foreground spear thrust beginning; left shield",
+          "extras": "two background fighting pairs",
+          "gate": "closed"
+        },
+        "end": {
+          "odysseus": "same left foreground sword high right after parry; left hand empty",
+          "guard": "same right foreground recoils one half-step after spear deflection; shield left",
+          "extras": "same two background pairs at next fight phase",
+          "gate": "closed"
+        },
+        "invariants": [
+          "six distinct people",
+          "Odysseus has no shield",
+          "guard keeps right spear and left shield",
+          "two background Greek/Trojan pairs",
+          "closed gate and camera fixed"
+        ],
+        "acceptance": [
+          "visible spear thrust and sword parry",
+          "no equipment transfer or duplication",
+          "both background pairs continue combat",
+          "lead faces and gate preserved"
+        ]
+      },
+      "keyframes": {
+        "start": {
+          "file": "keyframes/S15_start.png",
+          "sha256": "2f195225cb83186e58420368926a9d6151808e8c11501d86f62dc1434df1afc6",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        "end": {
+          "file": "keyframes/S15_end.png",
+          "sha256": "f4f49b95aeeff8f820fee327b0d0e25615b1e9735717e8b604f849bb60ca9fa7",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      }
+    },
+    {
+      "id": "S16",
+      "title": "双人抬闩与掩护",
+      "spec": {
+        "id": "S16",
+        "title": "双人抬闩与掩护",
+        "actors": [
+          "odysseus",
+          "soldier",
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked wide inner-gate view",
+        "start": {
+          "bar": "one wooden bar horizontal and seated in two wall brackets",
+          "operators": "Odysseus left and young Greek right grip bar with both hands",
+          "soldier_shield": "strapped flat on back",
+          "swords": "both sheathed left",
+          "gate": "closed",
+          "extras": "three Greeks and two Trojans fighting at right"
+        },
+        "end": {
+          "bar": "same bar lifted 25cm vertically clear above both brackets, held horizontally in front of closed gate",
+          "operators": "same two actors, both hands still carry bar",
+          "soldier_shield": "same flat back shield",
+          "swords": "both sheathed",
+          "gate": "closed",
+          "extras": "same five cover fighters continue at right"
+        },
+        "invariants": [
+          "seven distinct actors total",
+          "operators never draw swords",
+          "young soldier shield stays on back",
+          "Odysseus no shield",
+          "one bar only",
+          "both gate leaves closed",
+          "no camera move"
+        ],
+        "acceptance": [
+          "two operators jointly lift the bar clear of both brackets",
+          "four hands stay on bar",
+          "no shield appears in operators hands",
+          "cover fighters engage throughout",
+          "gate remains closed"
+        ]
+      },
+      "keyframes": {
+        "start": {
+          "file": "keyframes/S16_start_v4.png",
+          "sha256": "7286bc2ad2ccd194e5fe9cfd177f98c44fb03c0e34e0cb1edb7d36e642175eb6",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        "end": {
+          "file": "keyframes/S16_end_v4.png",
+          "sha256": "2b157d12487376cbcbc16c0f7971b757ca3a08e7bdcbbe93e784e2f9474bfef7",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      }
+    },
+    {
+      "id": "S20",
+      "title": "大军团持续群战",
+      "spec": {
+        "id": "S20",
+        "title": "大军团持续群战",
+        "actors": [
+          "greeks",
+          "trojans"
+        ],
+        "camera": "locked elevated wide master shot; no crane this regression",
+        "start": {
+          "foreground": "two readable Greek/Trojan sword-shield combat pairs, attack preparation",
+          "middle": "blue-gray and rust-colored infantry fighting around both sides of horse",
+          "background": "dense opposing armies clash between open left gate and right fountain",
+          "horse": "one rigid horse, hatch up, ladder down"
+        },
+        "end": {
+          "foreground": "same four foreground fighters after blocked strikes, half-step recoil",
+          "middle": "same armies advance and recoil during combat",
+          "background": "same dense clash with weapons raised",
+          "horse": "unchanged"
+        },
+        "invariants": [
+          "no named heroes",
+          "Greeks blue-gray, Trojans ochre/rust",
+          "one horse, one hatch, one ladder",
+          "gate open on left and fountain on right",
+          "foreground, middle and background combat",
+          "locked camera"
+        ],
+        "acceptance": [
+          "both foreground pairs visibly strike, block and recoil",
+          "middle and rear lines fight rather than parade or stand still",
+          "factions visually distinct",
+          "no living horse motion or hero duplication",
+          "spatial landmarks remain fixed"
+        ]
+      },
+      "keyframes": {
+        "start": {
+          "file": "keyframes/S20_start_v2.png",
+          "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e",
+          "frame_index": 0,
+          "strength": 1.0
+        },
+        "end": {
+          "file": "keyframes/S20_end.png",
+          "sha256": "a5077de8661a586b3fcf495ecfe535ac86cf9038b5534da33104c977acfde097",
+          "frame_index": 120,
+          "strength": 1.0
+        }
+      }
+    }
+  ],
+  "comparison": "24 NEW clips: same revised prompt, MSR refs, seed, duration and weights within each case. v1 is historical reference only; no paired inference from unmatched old clips.",
+  "endpoint": "last guide at native pixel frame120 (5.0s); delivered clip120 frames ends at4.958s",
+  "quality_gate": "technical PASS plus manual hard-state and motion review required; no automatic creative selection",
+  "fingerprint": "fc3fefccad737763bfa1324360513889459ebf383e505fc4062e2723badb88e4"
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:58121/review.html?v=serena-soft",
+  "videos": [
+    {
+      "source": "actions/three_products.mp4?v=3c731a0074c2",
+      "duration": 24.12,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "source": "actions/dubbed/original/dubbed.mp4?v=3c731a0074c2",
+      "duration": 8.04,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "source": "actions/dubbed/diet/dubbed.mp4?v=3c731a0074c2",
+      "duration": 8.04,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "source": "actions/dubbed/zero/dubbed.mp4?v=3c731a0074c2",
+      "duration": 8.04,
+      "width": 768,
+      "height": 512
+    }
+  ],
+  "audio_preview": {
+    "source": "actions/inputs/voice_preview.wav?v=3c731a0074c2",
+    "duration": 9.379708
+  },
+  "playback_passed": true,
+  "mobile_no_horizontal_overflow": true,
+  "page_errors": []
+}

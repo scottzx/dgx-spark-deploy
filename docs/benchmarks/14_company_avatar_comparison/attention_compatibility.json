@@ -1,0 +1,5 @@
+{
+  "gpu": "NVIDIA GB10",
+  "dense_bf16_max_absolute_error_vs_fp32_reference": 0.004516243934631348,
+  "variable_length_batch_equivalence": true
+}

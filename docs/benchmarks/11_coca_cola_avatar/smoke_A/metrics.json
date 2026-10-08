@@ -1,0 +1,150 @@
+{
+  "route": "A",
+  "engine": "LiveTalking MuseTalk 1.5 rendering components",
+  "integration_scope": "Fixed narration, model inference and compositing; WebRTC and conversational LLM not included",
+  "roi_method": "OpenCV Haar on one static portrait",
+  "bbox": [
+    227,
+    150,
+    540,
+    488
+  ],
+  "frames": 200,
+  "fps": 25,
+  "duration_seconds": 8.0,
+  "load_and_avatar_prepare_seconds": 5.571937480941415,
+  "audio_feature_seconds": 0.03288606507703662,
+  "render_and_write_seconds": 6.709681069012731,
+  "gpu_inference_seconds": 6.012119240593165,
+  "gpu_inference_fps": 33.266139941074705,
+  "render_and_write_fps": 29.807676094122932,
+  "first_batch_seconds": 0.3409881619736552,
+  "peak_cuda_allocated_gib": 6.6849894523620605,
+  "batches": [
+    {
+      "first_frame": 0,
+      "frames": 8,
+      "seconds": 0.33648639637976885
+    },
+    {
+      "first_frame": 8,
+      "frames": 8,
+      "seconds": 0.23832273203879595
+    },
+    {
+      "first_frame": 16,
+      "frames": 8,
+      "seconds": 0.2376662022434175
+    },
+    {
+      "first_frame": 24,
+      "frames": 8,
+      "seconds": 0.2362324669957161
+    },
+    {
+      "first_frame": 32,
+      "frames": 8,
+      "seconds": 0.23652201984077692
+    },
+    {
+      "first_frame": 40,
+      "frames": 8,
+      "seconds": 0.23677339730784297
+    },
+    {
+      "first_frame": 48,
+      "frames": 8,
+      "seconds": 0.23831311706453562
+    },
+    {
+      "first_frame": 56,
+      "frames": 8,
+      "seconds": 0.2353533417917788
+    },
+    {
+      "first_frame": 64,
+      "frames": 8,
+      "seconds": 0.23630904266610742
+    },
+    {
+      "first_frame": 72,
+      "frames": 8,
+      "seconds": 0.23701098281890154
+    },
+    {
+      "first_frame": 80,
+      "frames": 8,
+      "seconds": 0.2348249889910221
+    },
+    {
+      "first_frame": 88,
+      "frames": 8,
+      "seconds": 0.23714048694819212
+    },
+    {
+      "first_frame": 96,
+      "frames": 8,
+      "seconds": 0.23627520399168134
+    },
+    {
+      "first_frame": 104,
+      "frames": 8,
+      "seconds": 0.23635345976799726
+    },
+    {
+      "first_frame": 112,
+      "frames": 8,
+      "seconds": 0.2372135599143803
+    },
+    {
+      "first_frame": 120,
+      "frames": 8,
+      "seconds": 0.2363936840556562
+    },
+    {
+      "first_frame": 128,
+      "frames": 8,
+      "seconds": 0.2357200807891786
+    },
+    {
+      "first_frame": 136,
+      "frames": 8,
+      "seconds": 0.23757450561970472
+    },
+    {
+      "first_frame": 144,
+      "frames": 8,
+      "seconds": 0.23849385511130095
+    },
+    {
+      "first_frame": 152,
+      "frames": 8,
+      "seconds": 0.2337979283183813
+    },
+    {
+      "first_frame": 160,
+      "frames": 8,
+      "seconds": 0.2344103306531906
+    },
+    {
+      "first_frame": 168,
+      "frames": 8,
+      "seconds": 0.23666131822392344
+    },
+    {
+      "first_frame": 176,
+      "frames": 8,
+      "seconds": 0.23615230806171894
+    },
+    {
+      "first_frame": 184,
+      "frames": 8,
+      "seconds": 0.2360693160444498
+    },
+    {
+      "first_frame": 192,
+      "frames": 8,
+      "seconds": 0.23604851495474577
+    }
+  ]
+}

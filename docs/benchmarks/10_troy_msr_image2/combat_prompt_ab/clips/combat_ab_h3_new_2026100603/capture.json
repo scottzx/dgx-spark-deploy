@@ -1,0 +1,65 @@
+{
+  "case_id": "combat_ab_h3_new_2026100603",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy. A static full-body medium-wide shot continues from the provided first frame, in front of a closed wooden double gate at night, lit by warm amber torches and cool moonlight. Foreground left is Odysseus with short dark wavy hair, trimmed beard, indigo cloak, a sword in his right hand and an empty left hand. Foreground right is the Trojan guard with a pointed bronze helmet, ochre tunic and rust cloak, a spear in his right hand and a round shield in his left hand. The same four background soldiers remain behind the foreground duel as two opposed pairs striking and blocking. The six people retain their identities, equipment and original weapon hands; the gate remains closed. The foreground duel begins immediately at normal real-time speed. The guard plants his lead foot and lunges, driving the spear toward Odysseus' chest. Odysseus steps diagonally aside and strikes the spear shaft upward with his sword, visibly diverting the spear point past his shoulder. After the brief contact the weapons separate: the guard pulls his spear back while Odysseus steps forward and delivers a diagonal sword cut toward the guard's upper body. The guard raises his left shield into the sword path; the blade hits the shield, the shield and his shoulder jolt back together, and his rear foot steps back to catch his weight. Odysseus withdraws the sword from the shield as the guard lowers the shield slightly and drives a second spear thrust. Odysseus again slips sideways and knocks the shaft away. Their knees, hips and feet drive each attack and recovery, and they keep moving after each brief contact. No blood, visible wounds or captions.\n\noverall_soundscape: Torch crackle under synchronized metal-on-wood clashes, spear-shaft knocks, armor rattles, quick scraping footsteps and strained breathing. No dialogue or singing.\n\nnon_diegetic_music: N/A",
+  "seed": 2026100603,
+  "source_index": 0,
+  "request_id": "combat_ab_h3_new_2026100603",
+  "status": "PASS",
+  "same_request": true,
+  "external_anchor_used": false,
+  "duration_s": 5,
+  "stage1_frames": 124,
+  "emit_frames": 121,
+  "task": "fl2va",
+  "input_conditioned": true,
+  "input_spec": {
+    "task": "fl2va",
+    "first_frame": "/home/admin/sol-spark-runtime/troy_combat_prompt_ab_20261006/inputs/first.png",
+    "last_frame": null,
+    "references": []
+  },
+  "capture_rank": 0,
+  "condition_video_rows_excluded": 252,
+  "condition_audio_rows_excluded": 0,
+  "payload_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-015342_fl2va/combat_ab_h3_new_2026100603/stage1/stage1_direct_tensors.pt",
+  "payload_sha256": "10eedda8320c45680d8b74523cd2688489331f89846302d255b76aa7b639c888",
+  "continuation_state_sha256": "ac33fab6580cc0413e9597f79f196b1c117f8a2e409b61b941cb10be3ee8876f",
+  "continuation": {},
+  "generated_first_frame_path": null,
+  "generated_first_frame_sha256": null,
+  "native_normalized_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-015342_fl2va/combat_ab_h3_new_2026100603/stage1/h3_normalized_native.pt",
+  "native_normalized_sha256": "4f7861ddf47111ca834ed4bf3cefaf65f1c652a960747f5c8c9a3ddf5a427254",
+  "h3_normalized": {
+    "shape": [
+      1,
+      24,
+      37,
+      24,
+      42
+    ],
+    "dtype": "torch.bfloat16",
+    "source_dtype": "torch.float32",
+    "bf16_cast_max_abs_error": 0.014924049377441406,
+    "normalization": "released_h3_per_channel_mean_std",
+    "source": "original packed final latent unpatchified before VAE denormalize"
+  },
+  "audio": {
+    "shape": [
+      1,
+      2,
+      161333
+    ],
+    "dtype": "torch.float32",
+    "sample_rate": 32000,
+    "native_shape": [
+      165600,
+      2
+    ],
+    "temporal_trim": "first 161333 samples for 121-frame Stage2",
+    "processing": "transpose TC to BCT; clamp [-1,1], original native PCM unchanged"
+  },
+  "native_video_shape": null,
+  "latent_only_transfer": true,
+  "video_decode_calls": 0,
+  "h3_decoder_calls": 0
+}

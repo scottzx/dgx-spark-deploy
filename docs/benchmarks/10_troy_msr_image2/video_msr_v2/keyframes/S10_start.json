@@ -1,0 +1,37 @@
+{
+  "id": "S10_start",
+  "title": "奥德修斯向下爬梯",
+  "output": "keyframes/S10_start.png",
+  "references": [
+    "inputs/board_S10.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Preserve the supplied composition and the ONE ladder. Pose ONE Odysseus facing the horse with his back three-quarters to camera, head looking down at the rungs. His torso is at the upper third of the ladder just below the open hatch. Both hands hold separate ladder rails, both feet supported on upper rungs. Keep his indigo cloak, dark curly hair and short beard. His sword is sheathed at LEFT hip, he has NO shield. The feet must remain clearly visible. Horse and wheels stationary. Closed gate left, fountain right.",
+  "seed": 2026100620,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S10_start.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 57.14843339193612,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "dba1180389e9d9d0ec635349a54289a3181edf0581e4d710c8927d6ae70ab295"
+  ],
+  "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17",
+  "bytes": 2783872,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

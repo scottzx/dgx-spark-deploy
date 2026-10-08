@@ -1,0 +1,488 @@
+{
+  "status": "PASS",
+  "clips": [
+    {
+      "id": "S10_msr_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "4afda0dadafdbc21d52fcc91a99dc7d054ecdedee05a46506ea0778ffcf262f7",
+      "full_decode": true
+    },
+    {
+      "id": "S10_msr_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "cd78e7785889b00dd84f1ce1b6d7f1d5e8f3895565797428e83d176951d150df",
+      "full_decode": true
+    },
+    {
+      "id": "S10_msr_first_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "6ef45369822ebd031e468f5dccccbf27ca706878d51a3c0ffe500de10e748494",
+      "full_decode": true
+    },
+    {
+      "id": "S10_msr_first_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "0f59f26421562c2fd13fbd34d53dd4989aa7b65c9647aa09dca2adb180018836",
+      "full_decode": true
+    },
+    {
+      "id": "S10_msr_first_last_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "9cd846504e3598f0e96116c799dcd49e1ce31984d9291bd433dd449b7ef4602f",
+      "full_decode": true
+    },
+    {
+      "id": "S10_msr_first_last_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "d8fe3d899db6f0d8ee989354a839fbe167ebb147f297b1a64790219701ea300c",
+      "full_decode": true
+    },
+    {
+      "id": "S15_msr_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "7a581bbcce2befe27d5bd9f92dbfbc17d94d656350b705fc0a4315d2f23acb30",
+      "full_decode": true
+    },
+    {
+      "id": "S15_msr_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "7676cd71619f72ff8ecfc85bf264dfa557b5d6244d404139d5cb917569987d6d",
+      "full_decode": true
+    },
+    {
+      "id": "S15_msr_first_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "82ba5e8a08c1be41a8caf63781674d3089099f7f8b6020c423ce92e428e2b61d",
+      "full_decode": true
+    },
+    {
+      "id": "S15_msr_first_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "0fd5650178d724cb0793cb386e8353daf8b3e5180200d2f29e855f282a7b203a",
+      "full_decode": true
+    },
+    {
+      "id": "S15_msr_first_last_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "5d6957e2cd1c8d11891179eb7ff60846f75788fb4fb405db76659fd6f60ed9d4",
+      "full_decode": true
+    },
+    {
+      "id": "S15_msr_first_last_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "f11af6948980114041a4ba5e8a808b50c31d6325426510203f5ba2c909340df3",
+      "full_decode": true
+    },
+    {
+      "id": "S16_msr_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "633e016a76753b96f04cb85ef16eaacfbc248956ab8bf34634566b8548275d15",
+      "full_decode": true
+    },
+    {
+      "id": "S16_msr_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "ddca6bef6cc2bc374ae47cb3dd29a907135334e4df334c822444557044b77c7f",
+      "full_decode": true
+    },
+    {
+      "id": "S16_msr_first_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "0d644cb1e449b5e7e8e05aeced7a70385f9781cf2c7894add1d613ffadc7a4b5",
+      "full_decode": true
+    },
+    {
+      "id": "S16_msr_first_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "4a005c01d3ad06294d315df83d51be9467f4445442e9a19d31b2a54bd0447400",
+      "full_decode": true
+    },
+    {
+      "id": "S16_msr_first_last_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "1105f4687f86d7b4c76e446eac17000f35f3c16af6db4d359d0786305677dc96",
+      "full_decode": true
+    },
+    {
+      "id": "S16_msr_first_last_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "15d53a4e07bdc4030b8f39b59dd9a82a9b01cc4223a799ffd75695e99e431a51",
+      "full_decode": true
+    },
+    {
+      "id": "S20_msr_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "e551d3967b566cd5c1965d748033626c22366a57186281f760f48d7dec387462",
+      "full_decode": true
+    },
+    {
+      "id": "S20_msr_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "fcce47b3602809609d390128b4587d7af7c2648c541d18a4443dc92c8e0d7626",
+      "full_decode": true
+    },
+    {
+      "id": "S20_msr_first_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "7db41b0f3d14142cdf95265f6ab707859922b43102db93fa281977b320c1b201",
+      "full_decode": true
+    },
+    {
+      "id": "S20_msr_first_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "a96f88d320c8ceb5e16dd662a27eea499e218e27048ad92112c65c6f24e81764",
+      "full_decode": true
+    },
+    {
+      "id": "S20_msr_first_last_2026100601",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "d423456f47921fecd96dbd21a5b01b9277413f78a5d1f938cfc671aa1f4f1c8e",
+      "full_decode": true
+    },
+    {
+      "id": "S20_msr_first_last_2026100602",
+      "copy_matches": true,
+      "frames": 120,
+      "sampled_times_s": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        4.958333333333333
+      ],
+      "sha256": "8e621fa3a66b49912665d558cb2f7499a72df2d638a70c8fcd4e9f197aae95c4",
+      "full_decode": true
+    }
+  ],
+  "count": 24,
+  "expected": 24,
+  "scope": "11 samples per clip; no audio or between-sample full-motion acceptance"
+}

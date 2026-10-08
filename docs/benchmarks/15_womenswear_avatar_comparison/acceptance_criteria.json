@@ -1,0 +1,9 @@
+{
+  "start": "Both hands empty; garment enters through viewer right edge, no materialization.",
+  "pickup": "Presenter touches hanger, takes its weight; assistant releases and withdraws.",
+  "presentation": "One consistent garment and hanger; face visible; soft Serena voice; no hand or body penetration.",
+  "return": "Same garment offered toward right edge; assistant grips; presenter releases; garment exits via edge.",
+  "ending": "Hands empty in a sustained final interval, not only the conditioned last frame.",
+  "face_boundaries": "Inspect consecutive frames around actual audio energy start/end; do not infer full phoneme accuracy from one frame.",
+  "limits": "Three independent 8.04-second clips per route; generated reference motion. Different route conditioning strength."
+}

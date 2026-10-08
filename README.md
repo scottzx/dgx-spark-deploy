@@ -32,6 +32,7 @@ docs/                      部署文档与实战总结
 | `install_llama_cpp_gb10.sh` | 从源码编译 llama.cpp，启用 Blackwell (sm_121a) 加速，装到 `~/.local/bin` |
 | `pull_llama_cpp_docker.sh` | 拉取官方镜像 `ghcr.io/ggml-org/llama.cpp:server-cuda13`（带重试） |
 | `prepare_sol_spark_assets.py` | Sol-H3-Spark 固定源码与 ModelScope 权重下载、哈希校验 |
+| `install_qwen_image_21.sh` | Qwen-Image-2.1 独立环境、固定源码与官方权重安装 |
 | `manage_filebrowser.sh` | FileBrowser 远端文件管理器守护进程管理（启动 / 停止 / 重启 / 状态 / 日志） |
 
 ### 02 模型下载
@@ -41,6 +42,8 @@ docs/                      部署文档与实战总结
 | `download_qwen3.8_27b.sh` | Qwen3.8-27B `Q8_0`（约 29GB，质量优先） |
 | `download_qwen3.8_flash_next.sh` | Qwen3.8-Flash-Next `UD-IQ4_XS`（177B MoE，分片） |
 | `download_minimax_h3.sh` | MiniMax-H3 全量多模态视频模型（ModelScope） |
+| `download_qwen_image_21.py` | Qwen-Image-2.1 官方 BF16 权重分段续传与 SHA-256 校验 |
+| `verify_qwen_image_21.py` | 按官方文件清单校验图像模型并生成凭据 |
 
 ### 03 服务启动与模型切换
 | 脚本 | 模型 / 功能 | 方式 |
@@ -53,6 +56,7 @@ docs/                      部署文档与实战总结
 | `session_fifo_proxy.py` | NVMe 多槽位 KV Cache 持久化代理 | `:8000` 端口反向代理与 FIFO 淘汰持久化 |
 | `switch_to_minimax.sh` | 停止 Qwen，执行 Sol-H3-Spark 视频批次 | 官方 CLI（已验收上线） |
 | `run_sol_h3_spark.sh` | 执行 Sol-H3-Spark，检查输入清单并限制同时运行一个批次 | 官方 CLI |
+| `run_qwen_image_21.sh` / `generate_qwen_image_21.py` | 生成角色、场景、透明 PNG 与参考图编辑；[部署说明](docs/deployments/Qwen-Image-2.1部署.md) | 独立 Diffusers CLI |
 | `switch_to_qwen.sh` | 切换至 Qwen 3.8 Flash（停止 MiniMax，启动 Qwen 容器） | Docker (`:8000`) |
 | `check_serving_status.sh` | 实时查看当前活跃模型、显存与健康状态 | 状态检测 |
 
@@ -63,6 +67,10 @@ docs/                      部署文档与实战总结
 | `benchmark_serving.py` | 吞吐压测，支持并发梯度扫描 |
 | `preflight_sol_h3_component.py` | 单独检查官方 Qwen 编码和 H3 去噪工作进程 |
 | `verify_sol_h3_video.py` | 最终视频格式、全部帧解码检查及抽帧；画面需另行查看 |
+| `test_qwen_image_21.sh` | 实测场景、透明道具与参考图编辑；可临时暂停空闲语言模型并在结束后恢复 |
+| `test_qwen_image_21_speed.sh` / `benchmark_qwen_image_21.py` | 六步 Turbo 与原版的连续出图对照；[加速实测](docs/deployments/Qwen-Image-2.1加速实测.md) |
+| `test_qwen_image_21_sglang.py` / `benchmark_qwen_image_21_http.py` | 独立 SGLang 原生服务的同素材 HTTP 性能与透明通道测试 |
+| `benchmark_qwen_image_21_composition.py` | 五角色与三背景的六参考图合成对照；[实测](docs/deployments/Qwen-Image-2.1多角色合成实测.md) |
 | `run_pool_elbow_batch.py` | 三镜头连续微短剧多任务批次生成 |
 | `run_chained_cow_story.py` | 四镜头 20 秒链式连贯微短剧生成（首尾帧衔接 + TTS 对齐混流 + 母带拼接） |
 

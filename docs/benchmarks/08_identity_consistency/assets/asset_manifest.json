@@ -1,0 +1,78 @@
+{
+  "source": "/Users/scott/Documents/01-\u5f00\u53d1\u9879\u76ee/DXG\u79c1\u6709\u5316\u90e8\u7f72/docs/benchmarks/07_troy_dual_workflows/assets/board_01.png",
+  "source_sha256": "b822f2bc9db9b9f68c806a72eb9a461ade8706b638b8e6a609c327700a6a45f0",
+  "source_pixels": [
+    1344,
+    768
+  ],
+  "crops": {
+    "red_face": [
+      365,
+      183,
+      470,
+      299
+    ],
+    "blue_face": [
+      924,
+      247,
+      1025,
+      342
+    ],
+    "red_body": [
+      150,
+      177,
+      594,
+      721
+    ],
+    "blue_body": [
+      817,
+      234,
+      1216,
+      710
+    ],
+    "red_sword": [
+      501,
+      207,
+      701,
+      357
+    ],
+    "blue_sword": [
+      790,
+      189,
+      900,
+      386
+    ],
+    "blue_shield": [
+      967,
+      347,
+      1156,
+      542
+    ],
+    "setting": [
+      473,
+      17,
+      928,
+      581
+    ]
+  },
+  "roles": {
+    "red": "bearded, red cloak, bronze armor; right hand sword, left hand empty",
+    "blue": "clean shaven, curly dark hair, blue cloak, bronze armor; right hand sword, left hand round shield"
+  },
+  "note": "Resizing crops does not create facial detail. The source provides one view, not a true turnaround.",
+  "files": {
+    "red_identity.png": "32860f1cab0df2a9c7e30cce8deaeb948e510d0977286cb75cfcab60f2c51a55",
+    "ingredients_sheet.png": "07c13f3a069d816dbafb00fd45a82f6f4decb57e6e8afe775ccde31f6ca335cc",
+    "red_body.png": "69d47dae9cc5b6784b30d671699980cf6fffb180c1eb0abf173a4afc078ac110",
+    "red_face.png": "8557d1fc179ac1f2f553a5b391da7310d9d7c5318c02decf390877a6510539b3",
+    "equipment.png": "99e7d93c4e52ddf23aa41925b519796f080b55941977d04b66eb9d5efdbe99c9",
+    "blue_shield.png": "d50703395d91af1e502f5c2e8d90b78f97a1dc063d3a8744e1d37f2cf0b6fae2",
+    "blue_body.png": "3780060f76fc20fdccbdaf25b5bedbbfcb070a18b9eaeb8dfadbb23267d55d91",
+    "blue_face.png": "fe9b28f728d079d32d8d7791ad590ecf9b6fc51910ee3bde9183d6287b9afda3",
+    "board.png": "887354086545d98db80de92b8685cb24ac6787ef035d53b2bb99ec7e0465aeb1",
+    "blue_sword.png": "350bf562bc748ba9c7e1ea8bf13967b67c35556fd48f6ba8acd05c78e3101631",
+    "red_sword.png": "ea509c67ab32798fcedd3c8903612225a05fe5fb8512a32f5769fe8b22b7a55a",
+    "blue_identity.png": "d3424959bde41c3750608759194549c53d59c9105db9bb09ef4953c51ea4fa03",
+    "setting.png": "cb291a3a65be57ff8bd80025c1a75adf33433534fe7f2c13751392a4bfcb06ba"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "media": [
+    {
+      "file": "handheld_A_original/raw.mp4",
+      "frames": 97,
+      "video_seconds": 3.88,
+      "audio_seconds": 3.88,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "4419680fe5ce57bb6c60b5e52d0326daada24b72c93e0362edadc871aa2c18c1"
+    },
+    {
+      "file": "handheld_A_diet/raw.mp4",
+      "frames": 97,
+      "video_seconds": 3.88,
+      "audio_seconds": 3.88,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "602aeab00cb423624d098aef045fb75cd484eaed6a4cf54af9d29eb6207a148b"
+    },
+    {
+      "file": "handheld_A_zero/raw.mp4",
+      "frames": 97,
+      "video_seconds": 3.88,
+      "audio_seconds": 3.88,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "ff0c0322ced374276933375759b0afdd308f1484193da6574722834403146137"
+    },
+    {
+      "file": "route_A/handheld.mp4",
+      "frames": 291,
+      "video_seconds": 11.64,
+      "audio_seconds": 11.64,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "57d26c7a5308434ff7bb2b2cf37c11e84944e9ababa8f4420543f3d7a7137642"
+    },
+    {
+      "file": "handheld_B_original/raw.mp4",
+      "frames": 97,
+      "video_seconds": 3.88,
+      "audio_seconds": 3.88,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "4419680fe5ce57bb6c60b5e52d0326daada24b72c93e0362edadc871aa2c18c1"
+    },
+    {
+      "file": "handheld_B_diet/raw.mp4",
+      "frames": 97,
+      "video_seconds": 3.88,
+      "audio_seconds": 3.88,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "602aeab00cb423624d098aef045fb75cd484eaed6a4cf54af9d29eb6207a148b"
+    },
+    {
+      "file": "handheld_B_zero/raw.mp4",
+      "frames": 97,
+      "video_seconds": 3.88,
+      "audio_seconds": 3.88,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "ff0c0322ced374276933375759b0afdd308f1484193da6574722834403146137"
+    },
+    {
+      "file": "route_B/handheld.mp4",
+      "frames": 291,
+      "video_seconds": 11.64,
+      "audio_seconds": 11.64,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "57d26c7a5308434ff7bb2b2cf37c11e84944e9ababa8f4420543f3d7a7137642"
+    },
+    {
+      "file": "handheld_C_original/raw.mp4",
+      "frames": 97,
+      "video_seconds": 3.88,
+      "audio_seconds": 3.88,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "4419680fe5ce57bb6c60b5e52d0326daada24b72c93e0362edadc871aa2c18c1"
+    },
+    {
+      "file": "handheld_C_diet/raw.mp4",
+      "frames": 97,
+      "video_seconds": 3.88,
+      "audio_seconds": 3.88,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "602aeab00cb423624d098aef045fb75cd484eaed6a4cf54af9d29eb6207a148b"
+    },
+    {
+      "file": "handheld_C_zero/raw.mp4",
+      "frames": 97,
+      "video_seconds": 3.88,
+      "audio_seconds": 3.88,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "ff0c0322ced374276933375759b0afdd308f1484193da6574722834403146137"
+    },
+    {
+      "file": "route_C/handheld.mp4",
+      "frames": 291,
+      "video_seconds": 11.64,
+      "audio_seconds": 11.64,
+      "full_decode_passed": true,
+      "decoded_audio_sha256": "57d26c7a5308434ff7bb2b2cf37c11e84944e9ababa8f4420543f3d7a7137642"
+    }
+  ],
+  "identical_decoded_audio_per_sku": true
+}

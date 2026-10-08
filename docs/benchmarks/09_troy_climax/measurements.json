@@ -1,0 +1,130 @@
+{
+  "status": "FILES_VERIFIED",
+  "methods": {
+    "generic": {
+      "generation_s": 251.682315278,
+      "per_shot_s": [
+        50.112122862,
+        40.234744079,
+        40.307581554,
+        40.324088806,
+        40.422025844,
+        40.281752133
+      ],
+      "median_per_shot_s": 40.31583518,
+      "video_duration_s": 27.875,
+      "output": {
+        "frames": 669,
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "duration_s": 27.875,
+        "sample_rate": 32000,
+        "full_decode": true
+      },
+      "shared_model_initialization_s": 50.54002227075398,
+      "method_preparation_s": null,
+      "h3_text_and_stage1_s": 193.18377958099998,
+      "estimated_pipeline_compute_s": 444.866094859,
+      "peak_torch_allocated_gib": 44.06431865692139,
+      "timing_note": "Estimated pipeline compute sums separately measured H3 and controlled Stage2; excludes service boot, offline prompt encoding, validation and assembly. Generic/specific share one uncompiled resident refiner; order alternates by shot."
+    },
+    "specific": {
+      "generation_s": 241.683959443,
+      "per_shot_s": [
+        40.228801078,
+        40.271518928,
+        40.144093466,
+        40.37487037,
+        40.362382453,
+        40.302293148
+      ],
+      "median_per_shot_s": 40.286906038,
+      "video_duration_s": 27.875,
+      "output": {
+        "frames": 669,
+        "width": 1344,
+        "height": 768,
+        "fps": 24,
+        "duration_s": 27.875,
+        "sample_rate": 32000,
+        "full_decode": true
+      },
+      "shared_model_initialization_s": 50.54002227075398,
+      "method_preparation_s": null,
+      "h3_text_and_stage1_s": 193.18377958099998,
+      "estimated_pipeline_compute_s": 434.867739024,
+      "peak_torch_allocated_gib": 41.02764701843262,
+      "timing_note": "Estimated pipeline compute sums separately measured H3 and controlled Stage2; excludes service boot, offline prompt encoding, validation and assembly. Generic/specific share one uncompiled resident refiner; order alternates by shot."
+    },
+    "ingredients": {
+      "generation_s": 777.0698302052915,
+      "per_shot_s": [
+        138.104424436111,
+        134.6626204890199,
+        119.56833073776215,
+        118.30385071691126,
+        133.4344662381336,
+        132.9961375873536
+      ],
+      "median_per_shot_s": 133.2153019127436,
+      "video_duration_s": 27.875,
+      "output": {
+        "frames": 669,
+        "width": 768,
+        "height": 448,
+        "fps": 24,
+        "duration_s": 27.875,
+        "sample_rate": 32000,
+        "full_decode": true
+      },
+      "shared_model_initialization_s": null,
+      "method_preparation_s": 0.758969091810286,
+      "h3_text_and_stage1_s": null,
+      "estimated_pipeline_compute_s": null,
+      "peak_torch_allocated_gib": 39.52746343612671,
+      "timing_note": "Per-block official model lifecycle; weights reload for each block. Offline text preparation, validation and final assembly excluded.",
+      "denoising_loop_s": 343.42600060021505
+    },
+    "msr": {
+      "generation_s": 841.219968107529,
+      "per_shot_s": [
+        121.73615359608084,
+        132.55062211398035,
+        130.76386045571417,
+        130.45931605715305,
+        166.6347472895868,
+        159.07526859501377
+      ],
+      "median_per_shot_s": 131.65724128484726,
+      "video_duration_s": 27.875,
+      "output": {
+        "frames": 669,
+        "width": 768,
+        "height": 448,
+        "fps": 24,
+        "duration_s": 27.875,
+        "sample_rate": 32000,
+        "full_decode": true
+      },
+      "shared_model_initialization_s": null,
+      "method_preparation_s": 2.086007180158049,
+      "h3_text_and_stage1_s": null,
+      "estimated_pipeline_compute_s": null,
+      "peak_torch_allocated_gib": 39.61723470687866,
+      "timing_note": "Per-block official model lifecycle; weights reload for each block. Offline text preparation, validation and final assembly excluded.",
+      "denoising_loop_s": 339.94570318236947
+    }
+  },
+  "frames": 669,
+  "comparison_media": {
+    "frames": 669,
+    "width": 1344,
+    "height": 848,
+    "fps": 24,
+    "duration_s": 27.875,
+    "sample_rate": 32000,
+    "full_decode": true
+  },
+  "quality_scoring": "Manual narrative review, recorded separately; no biometric score or perceptual quality score inferred from decoding or resolution."
+}

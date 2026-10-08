@@ -1,0 +1,37 @@
+{
+  "id": "S16_end",
+  "title": "双人抬闩与掩护",
+  "output": "keyframes/S16_end.png",
+  "references": [
+    "keyframes/S16_start.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Use image 1 as exact start composition. Change ONLY the bar and operators arms: the SAME single wooden bar is lifted VERTICALLY 25 centimeters ABOVE and CLEAR OF BOTH empty wall brackets, still HORIZONTAL across the CLOSED gate, held by FOUR hands of the same two operators. Their feet and bodies stay in the same positions, swords still sheathed LEFT, young Greek shield strapped flat on BACK, Odysseus has NO shield. Do not turn the bar vertical or carry it away. The same five right-side fighters advance to the next sword-and-shield pose. Closed gate, stone walls, framing and lighting unchanged.",
+  "seed": 2026100633,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S16_end.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.75110157392919,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "8050cd219b1494574a68522b3486bdb8609bd47ad36ac0252ab389f60173665c"
+  ],
+  "sha256": "a0544c0c62ab11f2e86d2b2e4f09f89612a8c7b273066e68b4fc5836e346e3ff",
+  "bytes": 2827487,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

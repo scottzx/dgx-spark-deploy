@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "remote_root": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/repairs",
+  "base_manifest_fingerprint": "2e85b7075733b54237b052bda6acde23d0c2e0867d9e70d54d40737ee870996f",
+  "reason": "H3 S01 and S07 prematurely reveal the horse hatch; S07 also generates the ladder before the planned reveal. Replace with new LTX outputs.",
+  "jobs": [
+    {
+      "id": "S01",
+      "index": 1,
+      "title": "西农陈情",
+      "scene": "A",
+      "model": "ltx",
+      "variant": "film_v3_repair",
+      "seed": 2026100601,
+      "duration_s": 5,
+      "delivered_frames": 120,
+      "fps": 24,
+      "size": [
+        672,
+        384
+      ],
+      "first_frame": "../inputs/S01.png",
+      "first_frame_sha256": "8512de56e649342725ce92770213fbc0f6cde4b87e35dbf3a2ff3946c9b8c907",
+      "source_image": "storyboard/frames/s01_v1.png",
+      "source_image_sha256": "cd46b04cc6acc039948ad7ea6cc00dd063b43151e5ed9a0c2f4e3dabe146dda5",
+      "prompt": "Live-action, cinematic 1970s Shaw Brothers historical Troy, with handmade sandstone and timber, aged bronze armor and saturated 35mm film colors. Continue naturally from the supplied first frame, preserving the visible actors, faces, costumes, composition and current state. In bright daylight outside the open gate, the three existing people remain in their own positions. Sinon on the left opens both empty hands toward the rigid wooden horse, then lowers one hand as the guard looks toward the horse. The bronze-helmeted guard keeps his spear in his right hand and shield on his left arm. The woman watches from behind. Subtle breathing and facial reactions; mouths stay closed. The wooden horse remains a rigid timber object on wheels, its side hatch closed. No extra people, duplicated named actor, extra limbs, modern objects, captions or fantasy effects. A slow small push toward Sinon. Day wind, fabric rustle and faint armor creaks. No dialogue or singing. No background music.",
+      "prompt_sha256": "e105ddf5ceb7f65b0b1fa30a63ebfd68c6ebda20ab4b7d579332ad7daa347a44",
+      "conditioning": "first_frame_only",
+      "msr": false,
+      "last_frame": false,
+      "combat_lora": false,
+      "start_s": 0,
+      "end_s": 5,
+      "input_fingerprint": "a6b7ac121fb289308bd55c76398699465a2a54bca19660a45587a4701d09b507"
+    },
+    {
+      "id": "S07",
+      "index": 7,
+      "title": "夜间静场",
+      "scene": "D",
+      "model": "ltx",
+      "variant": "film_v3_repair",
+      "seed": 2026100607,
+      "duration_s": 5,
+      "delivered_frames": 120,
+      "fps": 24,
+      "size": [
+        672,
+        384
+      ],
+      "first_frame": "../inputs/S07.png",
+      "first_frame_sha256": "a8475dfbae47a9481927ca1d0c55a2fdc9ec214ab14f9655cc7a293ce8063197",
+      "source_image": "storyboard/frames/s07_v1.png",
+      "source_image_sha256": "9e44ec0c3ba76421e336323781eb3d96b44333497c204405c058832bd15e5131",
+      "prompt": "Live-action, cinematic 1970s Shaw Brothers historical Troy, with handmade sandstone and timber, aged bronze armor and saturated 35mm film colors. Continue naturally from the supplied first frame, preserving the visible actors, faces, costumes, composition and current state. The empty square remains unoccupied at night. The rigid timber horse stands parked center-left, facing right, its belly hatch closed and with no visible ladder. The stone gate at rear left stays shut. Flame tips flutter and the fountain water continues flowing; moonlight and amber firelight remain steady. No extra people, duplicated named actor, extra limbs, modern objects, captions or fantasy effects. An extremely slow wide push. Fountain water, fire crackle and night wind only. No dialogue or singing. No background music.",
+      "prompt_sha256": "3d91720eb1625e88dd23538062a4756416f801fe7285a20fcc45e8e51c11f04f",
+      "conditioning": "first_frame_only",
+      "msr": false,
+      "last_frame": false,
+      "combat_lora": false,
+      "start_s": 30,
+      "end_s": 35,
+      "input_fingerprint": "d791867736a4a94532a51a0a425e909addc261126d3efba11d1d562bfd40ca87"
+    }
+  ],
+  "fingerprint": "726de984b99d58cbb75afaf6e9dceb1273d47639c24d1f6c511f203b1a948f71"
+}

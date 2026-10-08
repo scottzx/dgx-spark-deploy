@@ -1,0 +1,9 @@
+{
+  "bitwise_equal": true,
+  "probe_id": "S10_msr_2026100601",
+  "input_fingerprint": "8169311131568e05bdab0768c5a5a0c7196921b1c2bcbac3229607568f606a30",
+  "video_max_abs_delta": 0.0,
+  "audio_max_abs_delta": 0.0,
+  "ltx_revision": "d151147788a9284cca791edc6ce898007e727fe6",
+  "policy": "same pre-encoded conditions, prompt context, seed, sigmas and weights; retain built transformer only after numerical validation"
+}

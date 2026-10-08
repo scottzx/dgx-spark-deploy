@@ -1,0 +1,10 @@
+{
+  "id": "S10_end_v2",
+  "title": "\u5965\u5fb7\u4fee\u65af\u5411\u4e0b\u722c\u68af",
+  "output": "keyframes/S10_end_v2.png",
+  "references": [
+    "keyframes/S10_start.png"
+  ],
+  "prompt": "Edit this frame. Keep the exact fixed background, camera, horse, open hatch, stone gate and fountain. Move the WHOLE single man DOWN THE LADDER BY TWO RUNG HEIGHTS, about 110 pixels in this 1536x864 image. His head, shoulders, waist, arms and BOTH FEET must all move DOWN together, not just straighten his knee. The top of his head is NOW BELOW the lower edge of the horse hatch, at about y=350 pixels; his waist is around y=570, his lowest foot is on the second rung above the ground around y=750. His head was originally level with the hatch; it must now be clearly well below it. Preserve his body proportions and same face, dark wavy hair, beard, indigo cloak and bronze armor. He still faces the horse, both hands grip the lower parts of the two rails, both feet supported on lower rungs ABOVE the ground, his sword sheathed left, NO shield. ONLY his entire body and cloak move lower; wooden ladder and all scene elements stay fixed. One photorealistic night film still, no extra man or equipment, no text, no panels.",
+  "seed": 2026100721
+}

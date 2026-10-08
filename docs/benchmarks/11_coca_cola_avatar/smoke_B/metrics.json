@@ -1,0 +1,30 @@
+{
+  "route": "B",
+  "engine": "OpenAvatarChat FlashHeadProcessor + SoulX-FlashHead Lite",
+  "integration_scope": "Actual OAC streaming audio buffer and paired output queue; browser WebRTC/LLM not included",
+  "attention": "native PyTorch SDPA",
+  "torch_compile": false,
+  "size": [
+    512,
+    512
+  ],
+  "load_and_prepare_seconds": 3.6740671461448073,
+  "generation_seconds": 12.038285261020064,
+  "frames": 200,
+  "duration_seconds": 8.0,
+  "generation_fps": 16.613661801784964,
+  "first_chunk_seconds": 1.308066348079592,
+  "chunk_seconds": [
+    1.308066348079592,
+    1.0543369017541409,
+    1.6017934898845851,
+    1.063769448082894,
+    1.6163270235992968,
+    1.0638687470927835,
+    1.6285313460975885,
+    1.057694046292454,
+    1.6374579388648272
+  ],
+  "peak_cuda_allocated_gib": 4.977908611297607,
+  "output_audio_matches_input": true
+}

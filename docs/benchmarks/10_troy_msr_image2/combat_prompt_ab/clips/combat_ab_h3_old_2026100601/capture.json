@@ -1,0 +1,65 @@
+{
+  "case_id": "combat_ab_h3_old_2026100601",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy. A static full-body medium-wide shot continues from the provided first frame, in front of a closed wooden double gate at night, lit by warm amber torches and cool moonlight. Foreground left is Odysseus with short dark wavy hair, trimmed beard, indigo cloak, a sword in his right hand and an empty left hand. Foreground right is the Trojan guard with a pointed bronze helmet, ochre tunic and rust cloak, a spear in his right hand and a round shield in his left hand. The same four background soldiers remain behind the foreground duel as two opposed pairs striking and blocking. The six people retain their identities, equipment and original weapon hands; the gate remains closed. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. No blood, visible wounds or captions.\n\noverall_soundscape: Torch crackle under synchronized metal-on-wood clashes, spear-shaft knocks, armor rattles, quick scraping footsteps and strained breathing. No dialogue or singing.\n\nnon_diegetic_music: N/A",
+  "seed": 2026100601,
+  "source_index": 0,
+  "request_id": "combat_ab_h3_old_2026100601",
+  "status": "PASS",
+  "same_request": true,
+  "external_anchor_used": false,
+  "duration_s": 5,
+  "stage1_frames": 124,
+  "emit_frames": 121,
+  "task": "fl2va",
+  "input_conditioned": true,
+  "input_spec": {
+    "task": "fl2va",
+    "first_frame": "/home/admin/sol-spark-runtime/troy_combat_prompt_ab_20261006/inputs/first.png",
+    "last_frame": null,
+    "references": []
+  },
+  "capture_rank": 0,
+  "condition_video_rows_excluded": 252,
+  "condition_audio_rows_excluded": 0,
+  "payload_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-015342_fl2va/combat_ab_h3_old_2026100601/stage1/stage1_direct_tensors.pt",
+  "payload_sha256": "eb859b4152173d420e497d028a29069b646b31b4b20fd488630563fef415ff35",
+  "continuation_state_sha256": "bd1bd419068ddd6b92521e7310f7be222ba1cbd8401f4bf2fc479095a69a8ec7",
+  "continuation": {},
+  "generated_first_frame_path": null,
+  "generated_first_frame_sha256": null,
+  "native_normalized_path": "/home/admin/sol-spark-runtime/outputs/api_server_runs/session_20261006-015342_fl2va/combat_ab_h3_old_2026100601/stage1/h3_normalized_native.pt",
+  "native_normalized_sha256": "21c5a122105e8498d7dc1d11f266ab824e0830e48dac4ece9fe5097d6d1d5121",
+  "h3_normalized": {
+    "shape": [
+      1,
+      24,
+      37,
+      24,
+      42
+    ],
+    "dtype": "torch.bfloat16",
+    "source_dtype": "torch.float32",
+    "bf16_cast_max_abs_error": 0.013939857482910156,
+    "normalization": "released_h3_per_channel_mean_std",
+    "source": "original packed final latent unpatchified before VAE denormalize"
+  },
+  "audio": {
+    "shape": [
+      1,
+      2,
+      161333
+    ],
+    "dtype": "torch.float32",
+    "sample_rate": 32000,
+    "native_shape": [
+      165600,
+      2
+    ],
+    "temporal_trim": "first 161333 samples for 121-frame Stage2",
+    "processing": "transpose TC to BCT; clamp [-1,1], original native PCM unchanged"
+  },
+  "native_video_shape": null,
+  "latent_only_transfer": true,
+  "video_decode_calls": 0,
+  "h3_decoder_calls": 0
+}

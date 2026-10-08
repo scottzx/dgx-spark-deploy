@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "id": "S20_msr_2026100601",
+  "title": "大军团持续群战",
+  "seed": 2026100601,
+  "manifest_fingerprint": "fc3fefccad737763bfa1324360513889459ebf383e505fc4062e2723badb88e4",
+  "input_fingerprint": "cbffac66512ff01af39feb5892934f374951281323b5692d304a3ced08bf6809",
+  "method": "msr",
+  "resident_transformer": true,
+  "case_id": "S20",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S20_msr_2026100601/raw.mp4",
+  "raw_sha256": "cba89ae621879cfd388a138d15215462a32fd5368f92ab46fb464da4d1c81b96",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S20_msr_2026100601/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "e551d3967b566cd5c1965d748033626c22366a57186281f760f48d7dec387462",
+    "bytes": 992708
+  },
+  "generation_s": 62.335803975816816,
+  "phases_s": {
+    "reference_encode_block_s": 2.2084937100298703,
+    "denoising_loop_s": 55.23057638807222,
+    "diffusion_block_s": 55.237052362877876,
+    "decode_and_encode_block_s": 4.866165737155825
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "greeks",
+      "kind": "group",
+      "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+      "file": "inputs/greeks.png",
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 2,
+      "id": "trojans",
+      "kind": "group",
+      "role": "Trojan defenders costume reference: ochre and rust cloth, bronze armor; different individual faces",
+      "file": "inputs/trojans.png",
+      "sha256": "26a3214fbca337a491560a6131915101a75f8466fb6bc68e00279967dd90095b",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 3,
+      "id": "board",
+      "kind": "staging",
+      "role": "start-state composition reference; same cast, not additional people",
+      "file": "keyframes/S20_start_v2.png",
+      "sha256": "1b6f2a9f9d1fc952ba53be66eb2157e3339083960b5d8711a7a0868986441e5e",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "f09b89513193c28a7d7078d38e8915e6fa5723d5488379a49c268a2b67604229",
+  "prompt_cache_fingerprint": "71bc09c1dee1718e794fee660f0f6849e91d8e5c3443734c20f005b85677c712",
+  "peak_torch_allocated_bytes": 40881755648,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

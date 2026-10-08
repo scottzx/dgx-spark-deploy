@@ -1,0 +1,78 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>夺门打斗 · 提示词与模型对照</title><style>body{margin:0;background:#151813;color:#e9e7dd;font:16px/1.6 system-ui}main{max-width:1560px;margin:auto;padding:30px}h1{margin:0;font-size:36px}h2{border-top:1px solid #49503e;padding-top:24px}h3{margin:4px 0}.lead{color:#bfc5af;max-width:1200px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{background:#252a20;padding:12px;border-radius:8px}video,img{width:100%;display:block;background:#111}video{aspect-ratio:7/4}a{color:#d9bf7a}button{background:#d9bf7a;border:0;border-radius:6px;padding:12px 22px;font-size:16px;cursor:pointer}.tag{color:#ddc786}.notes{font-size:14px}summary{cursor:pointer}table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #46503d;padding:10px;text-align:left}@media(max-width:1050px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){.grid{grid-template-columns:1fr}main{padding:18px}}</style><main><h1>夺门打斗 · 提示词与模型对照</h1><p class="lead">同一张 Qwen Image 2.1 首帧，两个本地视频模型 × 两种前景动作描述 × 三个种子，共12段新视频。每段5秒、672×384、24fps。画面包含六人，重点比较前景两人的剑矛交锋；镜头、背景动作和音效描述在模型内保持一致。</p><p class="lead">H3：现有 W8A8／FastH3-VSA 加速配置、4次去噪更新，原生完整H3 VAE解码。LTX：BF16 dev＋蒸馏LoRA、8步，原生LTX VAE解码。双方均仅使用首帧；本轮模型比较限定于这些部署配置。</p>
+<p class="tag">实际完成 12/12 · 技术验收与打斗评价分别记录</p>
+<p>H3＋连续攻防描述在三个种子都增加了攻防阶段，优于原描述的长时间架兵器；LTX改写后部分镜头更早活动，但六段均有兵器一致性问题。H3盾挡仍有停顿、受力和第二次闪避不足，完整成片验收尚未通过。</p>
+<h2>本轮较好打斗候选 · 完整5秒</h2><video controls preload="metadata" src="best_duel.mp4"></video>
+<h2>四组并排 · 三个种子共15秒</h2><video controls preload="metadata" src="comparison_15s.mp4"></video>
+<p><a href="qa.md">实测结论</a> · <a href="manifest.json">冻结输入</a> · <a href="acceptance.json">共同评价标准</a> · <a href="../video_msr_v2/review.html">上一轮</a></p><details><summary>共享首帧与提示词</summary><img style="max-width:900px" src="inputs/first.png"><div class="grid">
+<article class="card"><h3>LTX · 原动作描述</h3><p class="notes">Live-action, cinematic 1970s Shaw Brothers historical Troy. A static full-body medium-wide shot continues from the provided first frame, in front of a closed wooden double gate at night, lit by warm amber torches and cool moonlight. Foreground left is Odysseus with short dark wavy hair, trimmed beard, indigo cloak, a sword in his right hand and an empty left hand. Foreground right is the Trojan guard with a pointed bronze helmet, ochre tunic and rust cloak, a spear in his right hand and a round shield in his left hand. The same four background soldiers remain behind the foreground duel as two opposed pairs striking and blocking. The six people retain their identities, equipment and original weapon hands; the gate remains closed. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. No blood, visible wounds or captions. Torch crackle under synchronized metal-on-wood clashes, spear-shaft knocks, armor rattles, quick scraping footsteps and strained breathing. No dialogue or singing. No background music.</p></article>
+<article class="card"><h3>LTX · 连续攻防描述</h3><p class="notes">Live-action, cinematic 1970s Shaw Brothers historical Troy. A static full-body medium-wide shot continues from the provided first frame, in front of a closed wooden double gate at night, lit by warm amber torches and cool moonlight. Foreground left is Odysseus with short dark wavy hair, trimmed beard, indigo cloak, a sword in his right hand and an empty left hand. Foreground right is the Trojan guard with a pointed bronze helmet, ochre tunic and rust cloak, a spear in his right hand and a round shield in his left hand. The same four background soldiers remain behind the foreground duel as two opposed pairs striking and blocking. The six people retain their identities, equipment and original weapon hands; the gate remains closed. The foreground duel begins immediately at normal real-time speed. The guard plants his lead foot and lunges, driving the spear toward Odysseus&#x27; chest. Odysseus steps diagonally aside and strikes the spear shaft upward with his sword, visibly diverting the spear point past his shoulder. After the brief contact the weapons separate: the guard pulls his spear back while Odysseus steps forward and delivers a diagonal sword cut toward the guard&#x27;s upper body. The guard raises his left shield into the sword path; the blade hits the shield, the shield and his shoulder jolt back together, and his rear foot steps back to catch his weight. Odysseus withdraws the sword from the shield as the guard lowers the shield slightly and drives a second spear thrust. Odysseus again slips sideways and knocks the shaft away. Their knees, hips and feet drive each attack and recovery, and they keep moving after each brief contact. No blood, visible wounds or captions. Torch crackle under synchronized metal-on-wood clashes, spear-shaft knocks, armor rattles, quick scraping footsteps and strained breathing. No dialogue or singing. No background music.</p></article>
+<article class="card"><h3>H3 · 原动作描述</h3><p class="notes">For the target video, at 0.00 seconds into the target video, &lt;Picture 1&gt; (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy. A static full-body medium-wide shot continues from the provided first frame, in front of a closed wooden double gate at night, lit by warm amber torches and cool moonlight. Foreground left is Odysseus with short dark wavy hair, trimmed beard, indigo cloak, a sword in his right hand and an empty left hand. Foreground right is the Trojan guard with a pointed bronze helmet, ochre tunic and rust cloak, a spear in his right hand and a round shield in his left hand. The same four background soldiers remain behind the foreground duel as two opposed pairs striking and blocking. The six people retain their identities, equipment and original weapon hands; the gate remains closed. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. No blood, visible wounds or captions.
+
+overall_soundscape: Torch crackle under synchronized metal-on-wood clashes, spear-shaft knocks, armor rattles, quick scraping footsteps and strained breathing. No dialogue or singing.
+
+non_diegetic_music: N/A</p></article>
+<article class="card"><h3>H3 · 连续攻防描述</h3><p class="notes">For the target video, at 0.00 seconds into the target video, &lt;Picture 1&gt; (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy. A static full-body medium-wide shot continues from the provided first frame, in front of a closed wooden double gate at night, lit by warm amber torches and cool moonlight. Foreground left is Odysseus with short dark wavy hair, trimmed beard, indigo cloak, a sword in his right hand and an empty left hand. Foreground right is the Trojan guard with a pointed bronze helmet, ochre tunic and rust cloak, a spear in his right hand and a round shield in his left hand. The same four background soldiers remain behind the foreground duel as two opposed pairs striking and blocking. The six people retain their identities, equipment and original weapon hands; the gate remains closed. The foreground duel begins immediately at normal real-time speed. The guard plants his lead foot and lunges, driving the spear toward Odysseus&#x27; chest. Odysseus steps diagonally aside and strikes the spear shaft upward with his sword, visibly diverting the spear point past his shoulder. After the brief contact the weapons separate: the guard pulls his spear back while Odysseus steps forward and delivers a diagonal sword cut toward the guard&#x27;s upper body. The guard raises his left shield into the sword path; the blade hits the shield, the shield and his shoulder jolt back together, and his rear foot steps back to catch his weight. Odysseus withdraws the sword from the shield as the guard lowers the shield slightly and drives a second spear thrust. Odysseus again slips sideways and knocks the shaft away. Their knees, hips and feet drive each attack and recovery, and they keep moving after each brief contact. No blood, visible wounds or captions.
+
+overall_soundscape: Torch crackle under synchronized metal-on-wood clashes, spear-shaft knocks, armor rattles, quick scraping footsteps and strained breathing. No dialogue or singing.
+
+non_diegetic_music: N/A</p></article>
+</div></details>
+<section data-seed="2026100601"><h2>种子 2026100601</h2><button class="sync" onclick="sync(this)">同时从头播放四组</button><div class="grid">
+<article class="card"><h3>LTX · 原动作描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_ltx_old_2026100601/f001.jpg" src="clips/combat_ab_ltx_old_2026100601/delivered.mp4"></video>
+<p class="notes">约前2秒保持起势；之后守卫冲步、双方挥击。矛逐渐变成短刀/剑，握持和近身接触不稳定，缺少清楚的格挡受力。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_ltx_old_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>LTX · 连续攻防描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_ltx_new_2026100601/f001.jpg" src="clips/combat_ab_ltx_new_2026100601/delivered.mp4"></video>
+<p class="notes">约1秒开始大幅近身交战，明显早于同种子原版；双方绕转和连续挥击较多，但身体/装备互相遮混，矛变短刀、武器短暂消失或换手，动作逻辑不可靠。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_ltx_new_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>H3 · 原动作描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_h3_old_2026100601/f001.jpg" src="clips/combat_ab_h3_old_2026100601/delivered.mp4"></video>
+<p class="notes">约1.5秒才刺矛；格挡后长时间架住兵器，约1.75–4秒动作变化很小，结尾仅再次移步。装备和前景人物较稳，背景交锋弱。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_h3_old_2026100601_contact.jpg"></details></article>
+<article class="card"><h3>H3 · 连续攻防描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_h3_new_2026100601/f001.jpg" src="clips/combat_ab_h3_new_2026100601/delivered.mp4"></video>
+<p class="notes">约0.5秒刺矛，随后拨开、追进斜劈、举盾抵挡、收剑并再次刺矛；三个阶段可读，兵器身份较稳。约2.2–3秒仍有持盾僵持，第二次刺矛的闪避/拨开不充分，受力反应偏弱。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_h3_new_2026100601_contact.jpg"></details></article>
+</div></section>
+<section data-seed="2026100602"><h2>种子 2026100602</h2><button class="sync" onclick="sync(this)">同时从头播放四组</button><div class="grid">
+<article class="card"><h3>LTX · 原动作描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_ltx_old_2026100602/f001.jpg" src="clips/combat_ab_ltx_old_2026100602/delivered.mp4"></video>
+<p class="notes">约1秒开始较大动作，之后有多次接近和分离；矛变短/变刀，奥德修斯左手出现盾牌，末段双方散开，镜头构图漂移。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_ltx_old_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>LTX · 连续攻防描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_ltx_new_2026100602/f001.jpg" src="clips/combat_ab_ltx_new_2026100602/delivered.mp4"></video>
+<p class="notes">约1秒开始动作，与同种子原版接近；连续挥击、侧移和闪避较多，但矛变刀、盾牌变形/换位，身体反应与攻击不连贯。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_ltx_new_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>H3 · 原动作描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_h3_old_2026100602/f001.jpg" src="clips/combat_ab_h3_old_2026100602/delivered.mp4"></video>
+<p class="notes">约1.5秒首次交锋；随后架住剑矛，约3.5秒才有第二次挥剑与后退。没有形成清楚的盾挡反击链；人物和装备较稳。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_h3_old_2026100602_contact.jpg"></details></article>
+<article class="card"><h3>H3 · 连续攻防描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_h3_new_2026100602/f001.jpg" src="clips/combat_ab_h3_new_2026100602/delivered.mp4"></video>
+<p class="notes">约0.75秒刺矛，接着追进斜劈和盾挡，后撤分离后再次刺矛；比同种子原版动作链完整。盾挡约2.25–3.25秒仍有停顿，最后的再次招架不清楚。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_h3_new_2026100602_contact.jpg"></details></article>
+</div></section>
+<section data-seed="2026100603"><h2>种子 2026100603</h2><button class="sync" onclick="sync(this)">同时从头播放四组</button><div class="grid">
+<article class="card"><h3>LTX · 原动作描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_ltx_old_2026100603/f001.jpg" src="clips/combat_ab_ltx_old_2026100603/delivered.mp4"></video>
+<p class="notes">约1.25秒守卫开始挥击，后续双方多次挥刀和位移；原先的矛变成刀/剑，接触及受力关系不清楚，结尾停成对峙。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_ltx_old_2026100603_contact.jpg"></details></article>
+<article class="card"><h3>LTX · 连续攻防描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_ltx_new_2026100603/f001.jpg" src="clips/combat_ab_ltx_new_2026100603/delivered.mp4"></video>
+<p class="notes">约1秒开始冲刺挥击，持续大步换位和再次进攻；活动量较大，但矛变剑/短刃，握持和盾牌形状变化，不能作为兵器一致的完整交锋镜头。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_ltx_new_2026100603_contact.jpg"></details></article>
+<article class="card"><h3>H3 · 原动作描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_h3_old_2026100603/f001.jpg" src="clips/combat_ab_h3_old_2026100603/delivered.mp4"></video>
+<p class="notes">约1.25秒刺矛，稍后奥德修斯追进举剑；后半段多次停在交叉兵器姿态，接触和受力关系弱。装备较稳。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_h3_old_2026100603_contact.jpg"></details></article>
+<article class="card"><h3>H3 · 连续攻防描述</h3>
+<video controls preload="metadata" poster="inspection/combat_ab_h3_new_2026100603/f001.jpg" src="clips/combat_ab_h3_new_2026100603/delivered.mp4"></video>
+<p class="notes">约0.5–0.75秒开始刺矛，之后追进斜劈、盾挡、分离和再刺；比原版更早行动且往返更清楚。盾挡约2.25–3.5秒僵持，明显受力和第二次闪避仍不足。</p>
+<details><summary>21个时间采样</summary><img loading="lazy" src="inspection/combat_ab_h3_new_2026100603_contact.jpg"></details></article>
+</div></section>
+<p class="lead">共享种子数值不代表两种架构使用相同噪声。模型内的原／新描述使用相同种子；跨模型比较不是完整BF16底模能力排名。音轨保留，视觉评价与听审分别记录。</p></main><script>function sync(b){const vs=b.nextElementSibling.querySelectorAll('video');vs.forEach(v=>{v.pause();v.currentTime=0;v.muted=true});Promise.all([...vs].map(v=>v.play().catch(()=>{})))}</script></html>

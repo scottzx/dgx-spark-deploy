@@ -1,0 +1,8 @@
+{
+  "model": "Qwen-Image-2.1 + Viggle Turbo 6-step",
+  "prompt": "Photorealistic professional studio portrait for an ecommerce presenter. An original fictional Chinese adult woman aged 30, natural friendly appearance, shoulder length straight dark hair tucked behind the ears, clear unobstructed face, looking directly into the camera, lips gently closed, no visible teeth, natural subtle smile, red crew neck blouse, head and shoulders medium closeup, head centered, face occupies forty percent of frame height, soft even frontal lighting, plain warm light gray studio background, crisp eyes and face, realistic skin texture. No props, no drinks, no cans, no writing, no logo, no jewelry, no hands in frame. Square composition.",
+  "seed": 20261007,
+  "load_seconds": 212.2579373163171,
+  "total_seconds": 219.76475619291887,
+  "sha256": "4b7dff47b29efdd65cc5391583201fa07a347635f929303b59824fe167eb2584"
+}

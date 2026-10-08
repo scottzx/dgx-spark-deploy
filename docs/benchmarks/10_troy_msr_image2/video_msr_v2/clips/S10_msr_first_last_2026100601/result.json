@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "id": "S10_msr_first_last_2026100601",
+  "title": "奥德修斯向下爬梯",
+  "seed": 2026100601,
+  "manifest_fingerprint": "fc3fefccad737763bfa1324360513889459ebf383e505fc4062e2723badb88e4",
+  "input_fingerprint": "c7aa84d20010d0cb8b8c592036ca3f689883b45f08393519eed718e35bac968d",
+  "method": "msr_first_last",
+  "resident_transformer": true,
+  "case_id": "S10",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S10_msr_first_last_2026100601/raw.mp4",
+  "raw_sha256": "bf0645e939e9288b015571bffa5ffc474a83c1abb7f2fe972c7772b37a8a6846",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/clips/S10_msr_first_last_2026100601/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "9cd846504e3598f0e96116c799dcd49e1ce31984d9291bd433dd449b7ef4602f",
+    "bytes": 1072199
+  },
+  "generation_s": 64.37989958375692,
+  "phases_s": {
+    "reference_encode_block_s": 2.32333444012329,
+    "denoising_loop_s": 56.71066746581346,
+    "diffusion_block_s": 56.71833893703297,
+    "decode_and_encode_block_s": 5.316516654100269
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "odysseus",
+      "kind": "character",
+      "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+      "file": "inputs/odysseus.png",
+      "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "horse",
+      "kind": "prop",
+      "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+      "file": "inputs/horse.png",
+      "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 3,
+      "id": "board",
+      "kind": "staging",
+      "role": "start-state composition reference; same cast, not additional people",
+      "file": "keyframes/S10_start.png",
+      "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "file": "keyframes/S10_start.png",
+      "sha256": "a38ae2e786af3c114a513014331647e816845b9cdddaee546642ba1ca94b3a17",
+      "frame_index": 0,
+      "strength": 1.0,
+      "kind": "temporal_anchor",
+      "conditioning": "replace latent0"
+    },
+    {
+      "file": "keyframes/S10_end_v4.png",
+      "sha256": "c48a91aa1533c33c96fbe3f9a4e16703721ca2a06348e67569aa7382aef1f4e8",
+      "frame_index": 120,
+      "strength": 1.0,
+      "kind": "temporal_anchor",
+      "conditioning": "append guiding tokens at pixel frame120"
+    }
+  ],
+  "prompt_sha256": "2e4c360b4ba449d197242f7c2744996b0c2960741df6e681661b49c81b37361e",
+  "prompt_cache_fingerprint": "739e391dfa6df6a4775c7be3e67086e294b57c75613ffab9bb432a87d4e10b0a",
+  "peak_torch_allocated_bytes": 40878609920,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

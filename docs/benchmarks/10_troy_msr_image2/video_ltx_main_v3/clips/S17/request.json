@@ -1,0 +1,9 @@
+{
+  "case_id": "troy_v3_S17",
+  "seed": 2026100617,
+  "duration_s": 5,
+  "mode": "draft",
+  "transition": "independent",
+  "first_frame": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/inputs/S17.png",
+  "prompt": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy, with handmade sandstone and timber, aged bronze armor and saturated 35mm film colors. Continue naturally from the supplied first frame, preserving the visible actors, faces, costumes, composition and current state. Outside the closed city gate at night, one Agamemnon in a crimson cloak stands before the Greek army. He raises the same right-hand sword in a compact forward signal, keeping his left hand empty and without a shield. The ranks behind him tighten their shield line and take one measured step, then wait for the opening gate. Preserve the gray-bearded commander and separate individual soldiers, gray-blue uniforms and plain dark crimson banners. No extra people, duplicated named actor, extra limbs, modern objects, captions or fantasy effects.\n\noverall_soundscape: A slow small wide push with several ranks visible. Night wind, banner fabric, measured footfalls and shield straps. No dialogue or singing.\n\nnon_diegetic_music: N/A"
+}

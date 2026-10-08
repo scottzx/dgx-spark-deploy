@@ -1,0 +1,53 @@
+[
+  {
+    "product": "original",
+    "label": "原味",
+    "directory": "/home/admin/avatar-company-tests/inputs/original",
+    "seed": 2026100800,
+    "duration_seconds": 8.04,
+    "frames": 201,
+    "fps": 25,
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "input_kind": "generated_LTX_video",
+    "prompt": "A fixed medium shot of an adult Chinese woman with shoulder-length black hair and a red long-sleeved top sitting behind a light gray table in a gray studio. Exactly three drink cans stay visible. She starts with empty hands, picks up the red and white Coca-Cola Original can on the left, holds that same can at chest height with its front facing the camera, speaks naturally to introduce it, then puts that same can back at its original position and releases it, ending with both hands empty on the table. The other two cans stay on the table throughout. One continuous shot; realistic hand contact, consistent identity, can colors and packaging. During the silent beginning and ending her mouth is relaxed and closed."
+  },
+  {
+    "product": "diet",
+    "label": "健怡",
+    "directory": "/home/admin/avatar-company-tests/inputs/diet",
+    "seed": 2026100801,
+    "duration_seconds": 8.04,
+    "frames": 201,
+    "fps": 25,
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "input_kind": "generated_LTX_video",
+    "prompt": "A fixed medium shot of an adult Chinese woman with shoulder-length black hair and a red long-sleeved top sitting behind a light gray table in a gray studio. Exactly three drink cans stay visible. She starts with empty hands, picks up the silver and red Diet Coke can in the middle, holds that same can at chest height with its front facing the camera, speaks naturally to introduce it, then puts that same can back at its original position and releases it, ending with both hands empty on the table. The other two cans stay on the table throughout. One continuous shot; realistic hand contact, consistent identity, can colors and packaging. During the silent beginning and ending her mouth is relaxed and closed."
+  },
+  {
+    "product": "zero",
+    "label": "零度",
+    "directory": "/home/admin/avatar-company-tests/inputs/zero",
+    "seed": 2026100802,
+    "duration_seconds": 8.04,
+    "frames": 201,
+    "fps": 25,
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "input_kind": "generated_LTX_video",
+    "prompt": "A fixed medium shot of an adult Chinese woman with shoulder-length black hair and a red long-sleeved top sitting behind a light gray table in a gray studio. Exactly three drink cans stay visible. She starts with empty hands, picks up the red and black Coca-Cola Zero can on the right, holds that same can at chest height with its front facing the camera, speaks naturally to introduce it, then puts that same can back at its original position and releases it, ending with both hands empty on the table. The other two cans stay on the table throughout. One continuous shot; realistic hand contact, consistent identity, can colors and packaging. During the silent beginning and ending her mouth is relaxed and closed."
+  }
+]

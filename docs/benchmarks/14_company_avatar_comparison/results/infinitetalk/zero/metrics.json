@@ -1,0 +1,36 @@
+{
+  "engine": "infinitetalk",
+  "product": "zero",
+  "input_sha256": {
+    "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+    "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+    "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+    "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+  },
+  "commit": "50aa0a94184315407a991ae804d9b58d6d311ba8",
+  "shared_model_load_seconds": 195.61556276865304,
+  "render_seconds": 3156.6052733976394,
+  "peak_cuda_allocated_gib": 41.75591230392456,
+  "native_output": "/home/admin/avatar-company-tests/outputs/infinitetalk/zero/native.mp4",
+  "scope": "Official video-to-video InfiniteTalk. The LTX clip guides the action; InfiniteTalk regenerates the speaking video.",
+  "steps_per_chunk": 8,
+  "motion_frame": 9,
+  "model_generates_product_actions": true,
+  "variant": "Official documented FusionX LoRA accelerated inference, eight steps, scale 1.0",
+  "original_LTX_actions_preserved": false,
+  "compatibility": [
+    "FlashAttention-2 and single-device xFormers dense attention use PyTorch SDPA",
+    "inspect.ArgSpec restored for Python 3.12",
+    "Wav2Vec2 eager attention restores original attention-output behavior",
+    "Optional demo TTS disabled; same original Serena audio"
+  ],
+  "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+  "native_duration_seconds": 8.0,
+  "native_output_sha256": "a1cfce973921050bd36c7e3f39a3009d57928dc1b9145ef66c82f2982b45237e",
+  "video_sha256": "86844c54fa1744d5bf7f87619dff4f00c52d487880df5354cc78531cfd692de1",
+  "final_frame_hold_seconds": 0.04,
+  "normalization_note": "Exact 200-frame/8.00s native output: one 40ms display hold of its final real frame.",
+  "native_frames": 200,
+  "pre_normalization_video_sha256": "ae7c538c89a634f595527d4ab60927ab144da627b98e004ec11fd09c7773c439",
+  "original_mux_receipt": "/home/admin/avatar-company-tests/outputs/infinitetalk/zero/original_mux_receipt.json"
+}

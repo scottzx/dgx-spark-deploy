@@ -1,0 +1,32 @@
+{
+  "status": "TECHNICAL_PASS",
+  "id": "combat_ab_ltx_old_2026100601",
+  "input_fingerprint": "3004b99cf06343e8c50cdb3dbb39da95abfdd055d12b45eb0ff601447503ee55",
+  "manifest_fingerprint": "48f2b7b853489f654863c0d57b958ec04216e4494c090beb44ba74354520b714",
+  "model": "ltx",
+  "variant": "old",
+  "seed": 2026100601,
+  "decoder": "native LTX video VAE",
+  "refiner": false,
+  "raw_frames": 121,
+  "raw_sha256": "b38c7b8d1fe7b8e12d6819a565971810d86b92d41db627a043f12e3b58aa46d2",
+  "media": {
+    "frames": 120,
+    "size": [
+      672,
+      384
+    ],
+    "fps": 24,
+    "duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "c13242af304d0a4996a1c30fa402a46a0e1d249cb2f02d6a9fb656e09ad6cdcf",
+    "bytes": 1332552
+  },
+  "generation_s": 82.07925865380093,
+  "inference_profile": "BF16 dev transformer + distilled LoRA strength1,8 steps,first-frame strength1; no MSR",
+  "quality_status": "fail_at_samples",
+  "production_approved": false,
+  "quality_review_file": "../../quality_review.json"
+}

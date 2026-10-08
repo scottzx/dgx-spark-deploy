@@ -1,0 +1,506 @@
+[
+  {
+    "route": "A",
+    "engine": "LiveTalking · MuseTalk 1.5",
+    "frames": 291,
+    "duration_seconds": 11.64,
+    "generation_seconds": 9.956478768028319,
+    "audio_feature_seconds": 0.11861986899748445,
+    "generation_fps": 29.227200376747927,
+    "load_and_prepare_seconds_total_for_three_processes": 18.20565547933802,
+    "peak_cuda_allocated_gib": 6.6849894523620605,
+    "shots": [
+      {
+        "route": "A",
+        "engine": "LiveTalking MuseTalk 1.5 rendering components",
+        "integration_scope": "Fixed narration, model inference and compositing; WebRTC and conversational LLM not included",
+        "roi_method": "OpenCV Haar on one static portrait",
+        "input_image": "/home/admin/digital-human-runtime/inputs/handheld/original.png",
+        "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/original_16k.wav",
+        "bbox": [
+          204,
+          140,
+          467,
+          424
+        ],
+        "frames": 97,
+        "fps": 25,
+        "duration_seconds": 3.88,
+        "load_and_avatar_prepare_seconds": 6.521743211895227,
+        "audio_feature_seconds": 0.04288187110796571,
+        "render_and_write_seconds": 3.342912881169468,
+        "gpu_inference_seconds": 3.028630755841732,
+        "gpu_inference_fps": 32.027674490494725,
+        "render_and_write_fps": 29.016610198368674,
+        "first_batch_seconds": 0.3351325881667435,
+        "peak_cuda_allocated_gib": 6.6849894523620605,
+        "batches": [
+          {
+            "first_frame": 0,
+            "frames": 8,
+            "seconds": 0.3342699510976672
+          },
+          {
+            "first_frame": 8,
+            "frames": 8,
+            "seconds": 0.23891851073130965
+          },
+          {
+            "first_frame": 16,
+            "frames": 8,
+            "seconds": 0.23683402175083756
+          },
+          {
+            "first_frame": 24,
+            "frames": 8,
+            "seconds": 0.23498191544786096
+          },
+          {
+            "first_frame": 32,
+            "frames": 8,
+            "seconds": 0.23749366775155067
+          },
+          {
+            "first_frame": 40,
+            "frames": 8,
+            "seconds": 0.23630763869732618
+          },
+          {
+            "first_frame": 48,
+            "frames": 8,
+            "seconds": 0.23556397762149572
+          },
+          {
+            "first_frame": 56,
+            "frames": 8,
+            "seconds": 0.2367265340872109
+          },
+          {
+            "first_frame": 64,
+            "frames": 8,
+            "seconds": 0.23560092179104686
+          },
+          {
+            "first_frame": 72,
+            "frames": 8,
+            "seconds": 0.2365952068939805
+          },
+          {
+            "first_frame": 80,
+            "frames": 8,
+            "seconds": 0.23442644579336047
+          },
+          {
+            "first_frame": 88,
+            "frames": 8,
+            "seconds": 0.23419907130301
+          },
+          {
+            "first_frame": 96,
+            "frames": 1,
+            "seconds": 0.09671289287507534
+          }
+        ],
+        "product": "original"
+      },
+      {
+        "route": "A",
+        "engine": "LiveTalking MuseTalk 1.5 rendering components",
+        "integration_scope": "Fixed narration, model inference and compositing; WebRTC and conversational LLM not included",
+        "roi_method": "OpenCV Haar on one static portrait",
+        "input_image": "/home/admin/digital-human-runtime/inputs/handheld/diet.png",
+        "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/diet_16k.wav",
+        "bbox": [
+          209,
+          137,
+          471,
+          420
+        ],
+        "frames": 97,
+        "fps": 25,
+        "duration_seconds": 3.88,
+        "load_and_avatar_prepare_seconds": 5.9197604223154485,
+        "audio_feature_seconds": 0.03808924602344632,
+        "render_and_write_seconds": 3.311278301756829,
+        "gpu_inference_seconds": 2.999195426236838,
+        "gpu_inference_fps": 32.342007176807485,
+        "render_and_write_fps": 29.293822856428516,
+        "first_batch_seconds": 0.32966877380385995,
+        "peak_cuda_allocated_gib": 6.6849894523620605,
+        "batches": [
+          {
+            "first_frame": 0,
+            "frames": 8,
+            "seconds": 0.32873287331312895
+          },
+          {
+            "first_frame": 8,
+            "frames": 8,
+            "seconds": 0.2382601359859109
+          },
+          {
+            "first_frame": 16,
+            "frames": 8,
+            "seconds": 0.2374308267608285
+          },
+          {
+            "first_frame": 24,
+            "frames": 8,
+            "seconds": 0.2354986402206123
+          },
+          {
+            "first_frame": 32,
+            "frames": 8,
+            "seconds": 0.23736109910532832
+          },
+          {
+            "first_frame": 40,
+            "frames": 8,
+            "seconds": 0.23583564721047878
+          },
+          {
+            "first_frame": 48,
+            "frames": 8,
+            "seconds": 0.2359152790158987
+          },
+          {
+            "first_frame": 56,
+            "frames": 8,
+            "seconds": 0.23661038139835
+          },
+          {
+            "first_frame": 64,
+            "frames": 8,
+            "seconds": 0.2341668689623475
+          },
+          {
+            "first_frame": 72,
+            "frames": 8,
+            "seconds": 0.23585259215906262
+          },
+          {
+            "first_frame": 80,
+            "frames": 8,
+            "seconds": 0.23460475588217378
+          },
+          {
+            "first_frame": 88,
+            "frames": 8,
+            "seconds": 0.23586817597970366
+          },
+          {
+            "first_frame": 96,
+            "frames": 1,
+            "seconds": 0.0730581502430141
+          }
+        ],
+        "product": "diet"
+      },
+      {
+        "route": "A",
+        "engine": "LiveTalking MuseTalk 1.5 rendering components",
+        "integration_scope": "Fixed narration, model inference and compositing; WebRTC and conversational LLM not included",
+        "roi_method": "OpenCV Haar on one static portrait",
+        "input_image": "/home/admin/digital-human-runtime/inputs/handheld/zero.png",
+        "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/zero_16k.wav",
+        "bbox": [
+          205,
+          138,
+          464,
+          418
+        ],
+        "frames": 97,
+        "fps": 25,
+        "duration_seconds": 3.88,
+        "load_and_avatar_prepare_seconds": 5.764151845127344,
+        "audio_feature_seconds": 0.037648751866072416,
+        "render_and_write_seconds": 3.3022875851020217,
+        "gpu_inference_seconds": 2.9925523083657026,
+        "gpu_inference_fps": 32.4138026689912,
+        "render_and_write_fps": 29.3735774066459,
+        "first_batch_seconds": 0.329387488309294,
+        "peak_cuda_allocated_gib": 6.6849894523620605,
+        "batches": [
+          {
+            "first_frame": 0,
+            "frames": 8,
+            "seconds": 0.32844470674172044
+          },
+          {
+            "first_frame": 8,
+            "frames": 8,
+            "seconds": 0.23631145991384983
+          },
+          {
+            "first_frame": 16,
+            "frames": 8,
+            "seconds": 0.23567922227084637
+          },
+          {
+            "first_frame": 24,
+            "frames": 8,
+            "seconds": 0.23480866430327296
+          },
+          {
+            "first_frame": 32,
+            "frames": 8,
+            "seconds": 0.23534887097775936
+          },
+          {
+            "first_frame": 40,
+            "frames": 8,
+            "seconds": 0.2359799901023507
+          },
+          {
+            "first_frame": 48,
+            "frames": 8,
+            "seconds": 0.23473109677433968
+          },
+          {
+            "first_frame": 56,
+            "frames": 8,
+            "seconds": 0.23731169709935784
+          },
+          {
+            "first_frame": 64,
+            "frames": 8,
+            "seconds": 0.2342471950687468
+          },
+          {
+            "first_frame": 72,
+            "frames": 8,
+            "seconds": 0.23487610509619117
+          },
+          {
+            "first_frame": 80,
+            "frames": 8,
+            "seconds": 0.23489986499771476
+          },
+          {
+            "first_frame": 88,
+            "frames": 8,
+            "seconds": 0.2346369856968522
+          },
+          {
+            "first_frame": 96,
+            "frames": 1,
+            "seconds": 0.0752764493227005
+          }
+        ],
+        "product": "zero"
+      }
+    ]
+  },
+  {
+    "route": "B",
+    "engine": "OpenAvatarChat · FlashHead Lite",
+    "frames": 291,
+    "duration_seconds": 11.64,
+    "generation_seconds": 22.948980219196528,
+    "audio_feature_seconds": 0,
+    "generation_fps": 12.680302009959563,
+    "load_and_prepare_seconds_total_for_three_processes": 16.476744877174497,
+    "peak_cuda_allocated_gib": 4.977908611297607,
+    "shots": [
+      {
+        "route": "B",
+        "engine": "OpenAvatarChat FlashHeadProcessor + SoulX-FlashHead Lite",
+        "integration_scope": "Actual OAC streaming audio buffer and paired output queue; browser WebRTC/LLM not included",
+        "attention": "native PyTorch SDPA",
+        "torch_compile": false,
+        "size": [
+          512,
+          512
+        ],
+        "input_image": "/home/admin/digital-human-runtime/inputs/handheld/original.png",
+        "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/original_16k.wav",
+        "load_and_prepare_seconds": 6.413321177009493,
+        "generation_seconds": 7.884579453151673,
+        "frames": 97,
+        "duration_seconds": 3.88,
+        "generation_fps": 12.302495088844156,
+        "first_chunk_seconds": 2.0946372458711267,
+        "chunk_seconds": [
+          2.0946372458711267,
+          1.0723837371915579,
+          1.818072147667408,
+          1.0698338467627764,
+          1.823316143359989
+        ],
+        "peak_cuda_allocated_gib": 4.977908611297607,
+        "output_audio_matches_input": true,
+        "product": "original"
+      },
+      {
+        "route": "B",
+        "engine": "OpenAvatarChat FlashHeadProcessor + SoulX-FlashHead Lite",
+        "integration_scope": "Actual OAC streaming audio buffer and paired output queue; browser WebRTC/LLM not included",
+        "attention": "native PyTorch SDPA",
+        "torch_compile": false,
+        "size": [
+          512,
+          512
+        ],
+        "input_image": "/home/admin/digital-human-runtime/inputs/handheld/diet.png",
+        "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/diet_16k.wav",
+        "load_and_prepare_seconds": 4.854563991073519,
+        "generation_seconds": 7.279569515958428,
+        "frames": 97,
+        "duration_seconds": 3.88,
+        "generation_fps": 13.324963761573335,
+        "first_chunk_seconds": 1.8981885057874024,
+        "chunk_seconds": [
+          1.8981885057874024,
+          1.0691477479413152,
+          1.6375655280426145,
+          1.0742601538076997,
+          1.5942266690544784
+        ],
+        "peak_cuda_allocated_gib": 4.977908611297607,
+        "output_audio_matches_input": true,
+        "product": "diet"
+      },
+      {
+        "route": "B",
+        "engine": "OpenAvatarChat FlashHeadProcessor + SoulX-FlashHead Lite",
+        "integration_scope": "Actual OAC streaming audio buffer and paired output queue; browser WebRTC/LLM not included",
+        "attention": "native PyTorch SDPA",
+        "torch_compile": false,
+        "size": [
+          512,
+          512
+        ],
+        "input_image": "/home/admin/digital-human-runtime/inputs/handheld/zero.png",
+        "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/zero_16k.wav",
+        "load_and_prepare_seconds": 5.2088597090914845,
+        "generation_seconds": 7.784831250086427,
+        "frames": 97,
+        "duration_seconds": 3.88,
+        "generation_fps": 12.460128791991878,
+        "first_chunk_seconds": 2.0674419831484556,
+        "chunk_seconds": [
+          2.0674419831484556,
+          1.0707404320128262,
+          1.7817869731225073,
+          1.0590292550623417,
+          1.7993230121210217
+        ],
+        "peak_cuda_allocated_gib": 4.977908611297607,
+        "output_audio_matches_input": true,
+        "product": "zero"
+      }
+    ]
+  },
+  {
+    "route": "C",
+    "engine": "EchoMimicV3 Flash",
+    "frames": 291,
+    "duration_seconds": 11.64,
+    "generation_seconds": 268.36621816828847,
+    "audio_feature_seconds": 0,
+    "generation_fps": 1.0843391615613789,
+    "load_and_prepare_seconds_total_for_three_processes": 163.0366691122763,
+    "peak_cuda_allocated_gib": 19.323780059814453,
+    "shots": [
+      {
+        "route": "C",
+        "engine": "EchoMimicV3 Flash",
+        "size": [
+          512,
+          512
+        ],
+        "steps": 8,
+        "attention": "native PyTorch SDPA",
+        "precision": "bfloat16 (explicit cast after custom T5 loader)",
+        "shot_policy": "97-frame shots, same reference image at each shot; no temporal continuation between shots",
+        "input_image": "/home/admin/digital-human-runtime/inputs/handheld/original.png",
+        "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/original_16k.wav",
+        "prompt": "A professional woman in a red blouse speaks naturally to the camera while physically holding one beverage can in both hands. She gently lifts the can a few centimeters to present it and then holds it steady, with subtle head movement and a small friendly expression. Her fingers stay wrapped around the same can, one palm supports its base, label faces camera. Preserve the reference can colors, shape, lettering, her facial identity, and realistic hand-object contact. Locked camera, no cuts, no extra products.",
+        "negative_prompt": "distorted face, distorted hands, extra fingers, hand passing through can, floating can, duplicate can, can disappearing, changing can shape, changing label, blurred logo, exaggerated arm gestures, fast rotation, camera movement",
+        "load_and_prepare_seconds": 58.32174022914842,
+        "generation_seconds": 89.5494438027963,
+        "duration_seconds": 3.88,
+        "frames": 97,
+        "generation_fps": 1.0832004742945265,
+        "peak_cuda_allocated_gib": 19.323780059814453,
+        "shots": [
+          {
+            "shot": 0,
+            "audio_start_seconds": 0.0,
+            "audio_duration_seconds": 3.88,
+            "generated_frames": 97,
+            "retained_frames": 97,
+            "seconds": 89.12141551729292
+          }
+        ],
+        "product": "original"
+      },
+      {
+        "route": "C",
+        "engine": "EchoMimicV3 Flash",
+        "size": [
+          512,
+          512
+        ],
+        "steps": 8,
+        "attention": "native PyTorch SDPA",
+        "precision": "bfloat16 (explicit cast after custom T5 loader)",
+        "shot_policy": "97-frame shots, same reference image at each shot; no temporal continuation between shots",
+        "input_image": "/home/admin/digital-human-runtime/inputs/handheld/diet.png",
+        "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/diet_16k.wav",
+        "prompt": "A professional woman in a red blouse speaks naturally to the camera while physically holding one beverage can in both hands. She gently lifts the can a few centimeters to present it and then holds it steady, with subtle head movement and a small friendly expression. Her fingers stay wrapped around the same can, one palm supports its base, label faces camera. Preserve the reference can colors, shape, lettering, her facial identity, and realistic hand-object contact. Locked camera, no cuts, no extra products.",
+        "negative_prompt": "distorted face, distorted hands, extra fingers, hand passing through can, floating can, duplicate can, can disappearing, changing can shape, changing label, blurred logo, exaggerated arm gestures, fast rotation, camera movement",
+        "load_and_prepare_seconds": 53.438674037810415,
+        "generation_seconds": 89.62077425094321,
+        "duration_seconds": 3.88,
+        "frames": 97,
+        "generation_fps": 1.0823383396398087,
+        "peak_cuda_allocated_gib": 19.323780059814453,
+        "shots": [
+          {
+            "shot": 0,
+            "audio_start_seconds": 0.0,
+            "audio_duration_seconds": 3.88,
+            "generated_frames": 97,
+            "retained_frames": 97,
+            "seconds": 89.19578168401495
+          }
+        ],
+        "product": "diet"
+      },
+      {
+        "route": "C",
+        "engine": "EchoMimicV3 Flash",
+        "size": [
+          512,
+          512
+        ],
+        "steps": 8,
+        "attention": "native PyTorch SDPA",
+        "precision": "bfloat16 (explicit cast after custom T5 loader)",
+        "shot_policy": "97-frame shots, same reference image at each shot; no temporal continuation between shots",
+        "input_image": "/home/admin/digital-human-runtime/inputs/handheld/zero.png",
+        "input_audio": "/home/admin/digital-human-runtime/inputs/handheld/zero_16k.wav",
+        "prompt": "A professional woman in a red blouse speaks naturally to the camera while physically holding one beverage can in both hands. She gently lifts the can a few centimeters to present it and then holds it steady, with subtle head movement and a small friendly expression. Her fingers stay wrapped around the same can, one palm supports its base, label faces camera. Preserve the reference can colors, shape, lettering, her facial identity, and realistic hand-object contact. Locked camera, no cuts, no extra products.",
+        "negative_prompt": "distorted face, distorted hands, extra fingers, hand passing through can, floating can, duplicate can, can disappearing, changing can shape, changing label, blurred logo, exaggerated arm gestures, fast rotation, camera movement",
+        "load_and_prepare_seconds": 51.27625484531745,
+        "generation_seconds": 89.19600011454895,
+        "duration_seconds": 3.88,
+        "frames": 97,
+        "generation_fps": 1.0874927112810984,
+        "peak_cuda_allocated_gib": 19.323780059814453,
+        "shots": [
+          {
+            "shot": 0,
+            "audio_start_seconds": 0.0,
+            "audio_duration_seconds": 3.88,
+            "generated_frames": 97,
+            "retained_frames": 97,
+            "seconds": 88.76876907609403
+          }
+        ],
+        "product": "zero"
+      }
+    ]
+  }
+]

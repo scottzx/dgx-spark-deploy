@@ -1,0 +1,38 @@
+{
+  "all_audio_identical": true,
+  "files": [
+    {
+      "route": "route_A_musetalk",
+      "file": "route_A_musetalk/coca_cola_vertical.mp4",
+      "width": 1080,
+      "height": 1920,
+      "frames": 661,
+      "duration_seconds": 26.44,
+      "complete_decode": true,
+      "decoded_audio_sha256": "ec2cfdb6d928d96c245a8a1624fb4442b568eab2c4728b6035e94750cb238312",
+      "file_sha256": "25ad383d4e2b1b7c42ed747248d8d0f4b7067633d082004f214e989e6c48e257"
+    },
+    {
+      "route": "route_B_flashhead",
+      "file": "route_B_flashhead/coca_cola_vertical.mp4",
+      "width": 1080,
+      "height": 1920,
+      "frames": 661,
+      "duration_seconds": 26.44,
+      "complete_decode": true,
+      "decoded_audio_sha256": "ec2cfdb6d928d96c245a8a1624fb4442b568eab2c4728b6035e94750cb238312",
+      "file_sha256": "00e9bfa72592c40feb5335ad1c8bbb974447735601eb4f1ceb37110eacf507a6"
+    },
+    {
+      "route": "route_C_echomimic",
+      "file": "route_C_echomimic/coca_cola_vertical.mp4",
+      "width": 1080,
+      "height": 1920,
+      "frames": 661,
+      "duration_seconds": 26.44,
+      "complete_decode": true,
+      "decoded_audio_sha256": "ec2cfdb6d928d96c245a8a1624fb4442b568eab2c4728b6035e94750cb238312",
+      "file_sha256": "e91d00feeeac8e74d608ee7cfc444d6e7a9df3cf21d7e9c181cb78918a4b23e1"
+    }
+  ]
+}

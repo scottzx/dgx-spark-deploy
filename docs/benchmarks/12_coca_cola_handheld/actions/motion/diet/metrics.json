@@ -1,0 +1,43 @@
+{
+  "product": "diet",
+  "model": "LTX-2.5 dev + distilled LoRA",
+  "frames": 201,
+  "fps": 25,
+  "duration_seconds": 8.04,
+  "size": [
+    768,
+    512
+  ],
+  "steps": 8,
+  "seed": 2026100721,
+  "generation_including_model_loading_seconds": 132.6694001457654,
+  "peak_cuda_allocated_gib": 39.5538763999939,
+  "prompt": "A single continuous eight-second photorealistic ecommerce demonstration, locked medium camera, no cuts, no zoom. The same Chinese woman with shoulder-length black hair and red blouse sits behind a light gray table against a gray studio backdrop. Three upright cans stand in a separated row: original red and white can at viewer left, silver diet can in the middle, red and black zero sugar can at viewer right. At the beginning both hands are empty. During the first two seconds she reaches for ONLY the middle can, the silver Diet Coke can with red lettering, wraps her fingers around it, and lifts it smoothly off the table to upper chest height. For the middle four seconds she holds this one can upright with both hands, front label facing the camera, and naturally speaks to the viewer while presenting it. During the final two seconds she lowers the SAME can back onto its ORIGINAL tabletop position, lets the base touch the table, releases her grip, and rests both empty hands on the table. The other two cans stay untouched at their original positions throughout. Exactly three cans exist at every time: during presentation one is in her hands and two are on the table. Continuous physically plausible reach, grasp, lift, hold, lower, contact, release. Preserve the can identity, colors, cylinder shape, label and her facial identity. Soft steady studio light, natural fingers and contact shadows, no floating products, no duplicates, no spontaneous transformation.",
+  "conditioning": [
+    {
+      "path": "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+      "frame": 0,
+      "strength": 1.0,
+      "sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    {
+      "path": "/home/admin/digital-human-runtime/inputs/product_actions/diet_held.png",
+      "frame": 64,
+      "strength": 0.9,
+      "sha256": "f0eec541a436b8cf185e9d169623eddbaecbd7c4a0fb2d4f2c3a75cea218d49d"
+    },
+    {
+      "path": "/home/admin/digital-human-runtime/inputs/product_actions/diet_held.png",
+      "frame": 136,
+      "strength": 0.9,
+      "sha256": "f0eec541a436b8cf185e9d169623eddbaecbd7c4a0fb2d4f2c3a75cea218d49d"
+    },
+    {
+      "path": "/home/admin/digital-human-runtime/inputs/product_actions/table.png",
+      "frame": 200,
+      "strength": 1.0,
+      "sha256": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    }
+  ],
+  "policy": "One continuous generated clip; keyframes are diffusion conditions, no inserted endpoint frames or reverse playback; Chinese dubbing is applied separately."
+}

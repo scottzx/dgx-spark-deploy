@@ -1,0 +1,26 @@
+{
+  "route": "InfiniteTalk",
+  "tokenizer": "wan21/google/umt5-xxl",
+  "input": "inputs/manifest.json prompt fields",
+  "limit": 512,
+  "cases": [
+    {
+      "product": "shirt",
+      "tokens": 476,
+      "within_512": true,
+      "tail_after_512": ""
+    },
+    {
+      "product": "cardigan",
+      "tokens": 483,
+      "within_512": true,
+      "tail_after_512": ""
+    },
+    {
+      "product": "dress",
+      "tokens": 486,
+      "within_512": true,
+      "tail_after_512": ""
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "S16_start_v3",
+  "title": "双人抬闩与掩护",
+  "output": "keyframes/S16_start_v3.png",
+  "references": [
+    "keyframes/S16_start_v2.png"
+  ],
+  "prompt": "Make ONLY ONE mechanical correction to image1. Replace the two circular metal rings supporting the gate bar with OPEN-TOP U-SHAPED iron cradles. Remove the entire TOP half of each ring so the bar can be lifted vertically straight UP out of its cradle. Each holder has a flat BOTTOM under the bar and short vertical sides; absolutely NO metal above the bar, NO closed loop, NO top strap, NO ring. The single level wooden bar rests on the bottoms of these two OPEN-TOP supports at exactly its current height. Preserve every actor, all four operator hands, their feet, weapons sheathed, back shield and closed doors, exact framing and night lighting. One film still no text.",
+  "seed": 2026100932,
+  "source": "/home/admin/sol-spark-runtime/troy_msr_controls_20261006/keyframes/S16_start_v3.png",
+  "model": "Qwen-Image-2.1",
+  "provider": "self-hosted",
+  "host": "spark-e72e",
+  "endpoint": "http://127.0.0.1:30010/v1/images/edits",
+  "backend": "sglang",
+  "precision": "BF16",
+  "steps": 40,
+  "lora": null,
+  "guidance_scale": 1.0,
+  "size": [
+    1536,
+    864
+  ],
+  "seconds": 56.365108540747315,
+  "timing": "HTTP including encoding and loopback transfer",
+  "reference_sha256": [
+    "7e5cbf99143dbae3721374a2b10a4887b813050a7f4912ecc2da4849825d355f"
+  ],
+  "sha256": "3a742d44eb73e4784659032472379f0facb63b6f481338b789574db80cd12b8e",
+  "bytes": 2717088,
+  "client_versions": {
+    "sglang": "0.5.20",
+    "torch": "2.13.0",
+    "diffusers": "0.37.0",
+    "transformers": "5.12.1"
+  }
+}

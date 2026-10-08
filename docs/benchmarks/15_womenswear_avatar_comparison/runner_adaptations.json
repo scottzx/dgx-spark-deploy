@@ -1,0 +1,21 @@
+{
+  "source": "/home/admin/avatar-company-tests",
+  "destination": "/home/admin/womenswear-avatar-tests",
+  "aspect_ratio": "3:4",
+  "native_target_size": [
+    576,
+    768
+  ],
+  "changes": [
+    "Isolated benchmark root, shared existing model weights and dependencies",
+    "Completed cases skipped on repair/resume",
+    "InfiniteTalk exact 3:4 bucket; LongCat exact 3:4 condition shape",
+    "Candidate model results preserved; no manual garment repair, post-crop or reverse playback. Official LatentSync face masking retained."
+  ],
+  "route_constraints": {
+    "ltx": "six image keyframe conditions",
+    "infinitetalk": "original streaming LTX sparse references at frames0/72/144",
+    "longcat": "LTX first frame plus same full timed text prompt and Serena audio",
+    "latentsync": "complete LTX motion plus same Serena audio"
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "checked_at_utc": "2026-10-08T11:33:24.693411+00:00",
+  "url": "http://100.88.227.56:58124/marketing_voice_v1/index.html",
+  "main_players_loaded": 4,
+  "single_audio_on_switch": true,
+  "switch_state": [
+    {
+      "label": "A · 热情专业导购完整试听",
+      "duration": 24.96,
+      "time": 0.087962,
+      "paused": true,
+      "ended": false,
+      "error": null
+    },
+    {
+      "label": "B · 强节奏直播完整试听",
+      "duration": 23.6,
+      "time": 0.104006,
+      "paused": false,
+      "ended": false,
+      "error": null
+    },
+    {
+      "label": "C · 成熟饱满导购完整试听",
+      "duration": 22.48,
+      "time": 0,
+      "paused": true,
+      "ended": false,
+      "error": null
+    },
+    {
+      "label": "对照 · 原柔和风格完整试听",
+      "duration": 21.76,
+      "time": 0,
+      "paused": true,
+      "ended": false,
+      "error": null
+    }
+  ],
+  "scope": "Player availability and switching; subjective sound quality is left to listening.",
+  "second_candidate_played_to_end": true,
+  "third_candidate_playing": [
+    {
+      "label": "A · 热情专业导购完整试听",
+      "duration": 24.96,
+      "time": 0.087962,
+      "paused": true,
+      "ended": false,
+      "error": null
+    },
+    {
+      "label": "B · 强节奏直播完整试听",
+      "duration": 23.6,
+      "time": 23.6,
+      "paused": true,
+      "ended": true,
+      "error": null
+    },
+    {
+      "label": "C · 成熟饱满导购完整试听",
+      "duration": 22.48,
+      "time": 0.042667,
+      "paused": false,
+      "ended": false,
+      "error": null
+    },
+    {
+      "label": "对照 · 原柔和风格完整试听",
+      "duration": 21.76,
+      "time": 0,
+      "paused": true,
+      "ended": false,
+      "error": null
+    }
+  ],
+  "third_candidate_played_to_end": true,
+  "final_audio_metadata_matches_receipts": true,
+  "final_audio_elements": [
+    {
+      "path": "vivian_guide/audition.wav",
+      "version": "4f93f6365789",
+      "duration": 24.96,
+      "error": null
+    },
+    {
+      "path": "vivian_guide/shirt.wav",
+      "version": "a45ce2a79c49",
+      "duration": 6.4,
+      "error": null
+    },
+    {
+      "path": "vivian_guide/cardigan.wav",
+      "version": "3c900099f9f7",
+      "duration": 4.24,
+      "error": null
+    },
+    {
+      "path": "vivian_guide/dress.wav",
+      "version": "12537659a55a",
+      "duration": 5.52,
+      "error": null
+    },
+    {
+      "path": "vivian_live/audition.wav",
+      "version": "c2b99b38e386",
+      "duration": 23.6,
+      "error": null
+    },
+    {
+      "path": "vivian_live/shirt.wav",
+      "version": "d294169233c0",
+      "duration": 3.76,
+      "error": null
+    },
+    {
+      "path": "vivian_live/cardigan.wav",
+      "version": "318a157de875",
+      "duration": 3.52,
+      "error": null
+    },
+    {
+      "path": "vivian_live/dress.wav",
+      "version": "e82d7ba610d8",
+      "duration": 4.08,
+      "error": null
+    },
+    {
+      "path": "serena_full/audition.wav",
+      "version": "7c0571d55c3d",
+      "duration": 22.48,
+      "error": null
+    },
+    {
+      "path": "serena_full/shirt.wav",
+      "version": "bebb8b659b56",
+      "duration": 3.92,
+      "error": null
+    },
+    {
+      "path": "serena_full/cardigan.wav",
+      "version": "6e4019fa1cc8",
+      "duration": 2.56,
+      "error": null
+    },
+    {
+      "path": "serena_full/dress.wav",
+      "version": "ff3ae3fbe8e5",
+      "duration": 3.28,
+      "error": null
+    },
+    {
+      "path": "baseline/audition.wav",
+      "version": "64e12c6bc778",
+      "duration": 21.76,
+      "error": null
+    },
+    {
+      "path": "baseline/shirt.wav",
+      "version": "2eff78f667cb",
+      "duration": 4.48,
+      "error": null
+    },
+    {
+      "path": "baseline/cardigan.wav",
+      "version": "a2ac32dc95c5",
+      "duration": 4.4,
+      "error": null
+    },
+    {
+      "path": "baseline/dress.wav",
+      "version": "9882d851a90d",
+      "duration": 3.68,
+      "error": null
+    }
+  ],
+  "session": "Owned Agent Window tgbc stopped",
+  "remote_tailnet_http_status": 200,
+  "screenshot": "preview.png"
+}

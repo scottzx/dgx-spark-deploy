@@ -1,0 +1,22 @@
+{
+  "model": "Qwen-Image-2.1 + Viggle Turbo 6-step",
+  "seed": 20261008,
+  "prompt": "Create a single coherent photorealistic ecommerce presenter photograph. Reference image 1 is the presenter: preserve this exact adult Chinese woman, her facial identity, straight shoulder-length black hair, red crew-neck blouse and warm gray studio background. Reference image 2 is the exact beverage can she is presenting: preserve its can shape, colors, design and visible brand lettering. Reframe as a waist-up medium shot, square composition. Her unobstructed face occupies approximately one third of the image height in the upper half. She looks at the camera with gently closed lips. Both forearms and anatomically correct hands are completely visible. She physically holds exactly one can upright at upper chest height below and to the right of her face as seen by the viewer. Her right hand grips the lower side of the can with fingers naturally wrapping around its curved surface, and her left palm supports the can bottom. The main can label faces the camera and is unobstructed. Realistic hand-can contact, contact shadows and natural proportions; the can is about the length of her palm. Face, both hands and whole can clearly visible with margin around them, consistent soft studio lighting. No separate product panel, no collage, no floating can, no additional cans, no extra fingers, no subtitles. Opaque square photograph.",
+  "size": [
+    768,
+    768
+  ],
+  "references": [
+    "/home/admin/digital-human-runtime/inputs/presenter.png",
+    "/home/admin/digital-human-runtime/inputs/diet.jpg"
+  ],
+  "reference_sha256": [
+    "4b7dff47b29efdd65cc5391583201fa07a347635f929303b59824fe167eb2584",
+    "68fb875e8799c97555d4a95628293da152beaf2b5b1ef0bcb9b0794cbdb84e92"
+  ],
+  "load_seconds": 211.7718120040372,
+  "generation_seconds": 12.785445709247142,
+  "peak_cuda_allocated_gib": 39.384132385253906,
+  "sha256": "14dc65143adf9849e7960aa09684c63519cbab0fb697a3979b313a8cbc727924",
+  "policy": "Single generated input per SKU; shared unchanged across A/B/C; no packaging repair or post-composited product"
+}

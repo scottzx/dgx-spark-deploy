@@ -1,0 +1,121 @@
+[
+  {
+    "engine": "avatarforever",
+    "product": "original",
+    "path": "results/avatarforever/original/video.mp4",
+    "sha256": "496a8f59a3ba380be0979f56b492779eef084873eded85ab9c73948a781f5790",
+    "full_decode": true,
+    "frames": 201,
+    "duration": 8.04,
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "cache": true,
+    "product_action_requested": true
+  },
+  {
+    "engine": "avatarforever_nocache",
+    "product": "original",
+    "path": "results/avatarforever_nocache/original/video.mp4",
+    "sha256": "fc55323a415b0bed1350e9a263d79a257f87e9294a9e89e7c77e77a5063f95be",
+    "full_decode": true,
+    "frames": 201,
+    "duration": 8.04,
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "cache": false,
+    "product_action_requested": true
+  },
+  {
+    "engine": "avatarforever",
+    "product": "diet",
+    "path": "results/avatarforever/diet/video.mp4",
+    "sha256": "dc3d76c52d60891e26c4b179c45ce14fecdd0d5cc2ed2dec368ca1d96cac6d42",
+    "full_decode": true,
+    "frames": 201,
+    "duration": 8.04,
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "cache": true,
+    "product_action_requested": true
+  },
+  {
+    "engine": "avatarforever_nocache",
+    "product": "diet",
+    "path": "results/avatarforever_nocache/diet/video.mp4",
+    "sha256": "322e255a92be73d5e7c25d05864b5e7f4740ca41d37c573a51e71a6a66a0772d",
+    "full_decode": true,
+    "frames": 201,
+    "duration": 8.04,
+    "input_sha256": {
+      "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+      "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+      "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "cache": false,
+    "product_action_requested": true
+  },
+  {
+    "engine": "avatarforever",
+    "product": "zero",
+    "path": "results/avatarforever/zero/video.mp4",
+    "sha256": "b22d31683f1c11b85493f2037c273d711a0f36f55b5dc4cd284776fe57b10d55",
+    "full_decode": true,
+    "frames": 201,
+    "duration": 8.04,
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "cache": true,
+    "product_action_requested": true
+  },
+  {
+    "engine": "avatarforever_nocache",
+    "product": "zero",
+    "path": "results/avatarforever_nocache/zero/video.mp4",
+    "sha256": "6a8891a6abacb76fb2ec1ae868643f097dc396c9328a818fa218afcf975d4187",
+    "full_decode": true,
+    "frames": 201,
+    "duration": 8.04,
+    "input_sha256": {
+      "driver.mp4": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+      "audio.wav": "428456254e306b2c81945c0aaf2881cdf05b9c139ec409f8710640e540889d6f",
+      "audio_16k.wav": "331754c7c5f7a42555911cd23d6ae9326db86757b5bc5e20c877a7d11f800abe",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "cache": false,
+    "product_action_requested": true
+  },
+  {
+    "engine": "avatarforever_speaking",
+    "product": "original",
+    "path": "results/avatarforever_speaking/original/video.mp4",
+    "sha256": "52bf966c600b0a6b7fa840643bd90249b872e5536524da07327ff5d511fcacb6",
+    "full_decode": true,
+    "frames": 201,
+    "duration": 8.04,
+    "input_sha256": {
+      "driver.mp4": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+      "audio.wav": "c4e88e3c5b222279357cb37d212b13bae9fe3bc26bffecdf63502d889137d5ec",
+      "audio_16k.wav": "ec1254076afdb991cf12cfa881204554a67aa9fabe1bf43d7169fb15b044e740",
+      "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+    },
+    "cache": false,
+    "product_action_requested": false
+  }
+]

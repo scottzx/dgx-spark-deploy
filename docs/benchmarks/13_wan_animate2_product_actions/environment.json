@@ -1,0 +1,39 @@
+{
+  "date_started": "2026-10-07",
+  "date_test": "2026-10-08",
+  "host": "admin@100.115.178.96",
+  "gpu": "NVIDIA GB10",
+  "architecture": "aarch64",
+  "unified_memory_gb": 128,
+  "model": "Wan-AI/Wan2.2-Animate-2-14B-Distilled-Diffusers",
+  "weights_files": 29,
+  "weights_bytes": 45947568696,
+  "modelscope_per_file_sha256_pinned": true,
+  "diffusers": "0.41.0",
+  "transformers": "5.19.0",
+  "torch": "2.14.1+cu130",
+  "pipeline": "WanAnimate2DistilledModularPipeline",
+  "dependency_isolation": "/home/admin/wan-animate2-runtime/deps overlay; existing avatar environment unchanged",
+  "attention_preflight": "attention_preflight.json",
+  "official_environment_run": "official_output/metrics.json",
+  "product_input_kind": "generated_product_video",
+  "products": [
+    "original",
+    "diet",
+    "zero"
+  ],
+  "voice_profile": "serena_soft",
+  "speaker": "Serena",
+  "product_sampling": {
+    "target_area_size": [
+      576,
+      384
+    ],
+    "steps": 10,
+    "native_fps": 24,
+    "segment_frames": 81,
+    "previous_conditioning_frames": 1
+  },
+  "runtime_directory": "/home/admin/wan-animate2-runtime",
+  "model_directory": "/home/admin/models_cache/Wan2.2-Animate-2-14B-Distilled-Diffusers"
+}

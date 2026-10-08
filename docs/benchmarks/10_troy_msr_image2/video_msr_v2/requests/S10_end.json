@@ -1,0 +1,10 @@
+{
+  "id": "S10_end",
+  "title": "奥德修斯向下爬梯",
+  "output": "keyframes/S10_end.png",
+  "references": [
+    "keyframes/S10_start.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Use image 1 as the exact start frame. Change ONLY Odysseus to the same man TWO RUNG SPACINGS LOWER on the same ladder. His pelvis, head, hands and both feet shift downward together. Both feet still stand on the lower rungs ABOVE the ground, his torso still faces the horse, both hands hold the rails. Sword remains sheathed LEFT, NO shield. The upward-open hatch, ladder feet, platform, wheels, gate, fountain, fixed camera and lighting must be identical. Show the whole downward change clearly without changing scale.",
+  "seed": 2026100621
+}

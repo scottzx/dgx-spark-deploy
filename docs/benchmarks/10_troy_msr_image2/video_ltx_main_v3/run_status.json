@@ -1,0 +1,77 @@
+{
+  "status": "complete",
+  "manifest_fingerprint": "2e85b7075733b54237b052bda6acde23d0c2e0867d9e70d54d40737ee870996f",
+  "repair_manifest_fingerprint": "726de984b99d58cbb75afaf6e9dceb1273d47639c24d1f6c511f203b1a948f71",
+  "generated_clips": 22,
+  "selected_clips": 20,
+  "technical_pass": 20,
+  "model_counts": {
+    "ltx": 19,
+    "h3": 1
+  },
+  "film": {
+    "path": "film.mp4",
+    "frames": 2190,
+    "duration_s": 91.25,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ],
+    "channels": 2,
+    "audio_sample_rate": 32000,
+    "full_decode": true,
+    "sha256": "a52f16cb1e0effe20c9aaf73dcf863c3f6903b8e10b2ec79c6193ab1a753b92c",
+    "container_duration_s": 91.25
+  },
+  "battle_excerpt": {
+    "path": "battle.mp4",
+    "frames": 762,
+    "duration_s": 31.75,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ],
+    "channels": 2,
+    "audio_sample_rate": 32000,
+    "full_decode": true,
+    "sha256": "c7a937f5668e4d19c0b57cd8ed547bb22b18ff70fd7df6242c83b6bb8a3e9e9b",
+    "container_duration_s": 31.75
+  },
+  "visual_review": "sampled_review_complete_with_known_issues",
+  "audio_reviewed": false,
+  "uncut_film": {
+    "path": "film_uncut_100s.mp4",
+    "frames": 2400,
+    "duration_s": 100.0,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ],
+    "channels": 2,
+    "audio_sample_rate": 32000,
+    "full_decode": true,
+    "sha256": "3d7da6a8f26ac14ed6dc1fdc53623c81c7915d36a23b042c490f84ed825e51e4",
+    "container_duration_s": 100.0
+  },
+  "edit_plan_fingerprint": "cbddc799057090b8a750cdad373a4e155b1d2134085176233eaa5f95ee91a58d",
+  "technical_status": "PASS",
+  "quality_review_path": "quality_review.json",
+  "sample_frames_reviewed": 250,
+  "browser_status": "PASS",
+  "browser_verification_path": "browser_verification.json",
+  "video_service_restored": true,
+  "video_service_status": "READY",
+  "service_health_path": "service_health_after.json",
+  "production_approved": false,
+  "completed_at": "2026-10-06T15:04:31.505110+00:00",
+  "range_verification_path": "range_verification.json",
+  "voiceover": {
+    "status": "complete",
+    "receipt": "voiceover_minimax/run_status.json",
+    "film": "voiceover_minimax/film_voiced.mp4",
+    "review": "voiceover_minimax/review.html"
+  }
+}

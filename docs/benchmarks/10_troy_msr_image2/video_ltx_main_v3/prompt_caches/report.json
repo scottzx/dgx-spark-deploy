@@ -1,0 +1,567 @@
+{
+  "status": "PASS",
+  "caches": [
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S02.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S02.pt",
+      "bytes": 12587621,
+      "elapsed_s": 22.7273613,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "daf8b36521a513b9104667fa0180971bfc31645ac625eb17343ed58d66862867",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S03.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S03.pt",
+      "bytes": 12587557,
+      "elapsed_s": 5.713027461,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "b3616f45d9fe662e2b08a8941e194b63cbf8f0e0f54799e643a78f1be9c06cdb",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S04.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S04.pt",
+      "bytes": 12587685,
+      "elapsed_s": 5.774580323,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "a459c5d05421ded7871b43dcc53f4b6ac3d5759a512d4b9c56926e88dbe58ed8",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S05.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S05.pt",
+      "bytes": 12587493,
+      "elapsed_s": 5.782269566,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "be442cdea5b29f950b3701a8d62bcc86d9aea266629131c63189fc0f6fb0e654",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S06.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S06.pt",
+      "bytes": 12587621,
+      "elapsed_s": 5.729094259,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "6191e4bbe2aca39b442471a7559efa0f684ccce12e63eb835f9d2e953b51d860",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S08.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S08.pt",
+      "bytes": 12587557,
+      "elapsed_s": 5.691760633,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "0e1c9438b3e798e82058544a7b53dd5776ab19d4a6ed18636d58b0657cd19b33",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S09.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S09.pt",
+      "bytes": 12587621,
+      "elapsed_s": 5.741517979,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "d00bdbfdc194ff5af700efc78de653cf4f708c8e4806e6905d1c4ebdcda6cc6e",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S10.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S10.pt",
+      "bytes": 12587685,
+      "elapsed_s": 5.757761729,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "bb1b556dcae7cd427b16b0c4e1a66d4682b391c3d0d46288e4ff8fac7737eece",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S11.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S11.pt",
+      "bytes": 12587557,
+      "elapsed_s": 5.720210187,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "d18101b83a31ba3d26b34ce0c11f8f08d66ea545d7cb4064d11316b4dfa52d84",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S12.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S12.pt",
+      "bytes": 12587621,
+      "elapsed_s": 5.699688997,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "a9124744d57314ba396a8a663fdfdf7da241739c8dcb6a1aa8bbc7bbedfe0758",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S13.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S13.pt",
+      "bytes": 12587749,
+      "elapsed_s": 5.705518497,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "356c6b6c682eda26105397f80eba97725127200b54e4c202b213f41274f76b0d",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S14.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S14.pt",
+      "bytes": 12587621,
+      "elapsed_s": 5.715765931,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "c80c323edcbf27a81bc9b962422fc6d97fe74cacdfdeca02dbe5bd2afdcb4861",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S15.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S15.pt",
+      "bytes": 12588261,
+      "elapsed_s": 5.687709243,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "bbd69ad59704a529cc6b52516628de60c33a5052c1a4cbd32f449ed94ce00cce",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S16.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S16.pt",
+      "bytes": 12587749,
+      "elapsed_s": 5.684768085,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "cda3f0083661f44d85ba35eb97a89b22e00a5331fd1ff6bfa52b49e077456d8e",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S18.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S18.pt",
+      "bytes": 12587813,
+      "elapsed_s": 5.670346252,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "0d9c5cb8d3ffdf8f379bdb2b69749e4426f2ab1951d0e2033965f5d7207e2c07",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S19.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S19.pt",
+      "bytes": 12587941,
+      "elapsed_s": 5.747701233,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "aab62241c72f7846c677c877f6a8cb0b7a91033f8ba85a196b086349fc041e8b",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    },
+    {
+      "status": "PASS",
+      "output": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S20.pt",
+      "prompt_cache_path": "/home/admin/sol-spark-runtime/troy_ltx_main_v3_20261006/prompt_caches/S20.pt",
+      "bytes": 12588261,
+      "elapsed_s": 5.724508902,
+      "saved_contexts_bitwise_equal_fresh": true,
+      "video_model_load_count": 0,
+      "gemma_encode_calls": 1,
+      "connector_process_calls": 1,
+      "fingerprint": "45fe9920ecfef5724a1e6a1ae6a3173444e9b900913910c142ce841a37200e95",
+      "tensor_manifest": {
+        "video": {
+          "shape": [
+            1,
+            1024,
+            4096
+          ],
+          "dtype": "torch.bfloat16"
+        },
+        "audio": {
+          "shape": [
+            1,
+            1024,
+            2048
+          ],
+          "dtype": "torch.bfloat16"
+        }
+      },
+      "loading_strategy": "isolated resident INT8 offline encode",
+      "numerical_reference": "fresh native INT8 encoder plus native INT8 AV connector",
+      "streaming_reference_compared": false
+    }
+  ],
+  "manifest_fingerprint": "2e85b7075733b54237b052bda6acde23d0c2e0867d9e70d54d40737ee870996f"
+}

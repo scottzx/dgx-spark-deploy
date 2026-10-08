@@ -1,0 +1,33 @@
+{
+  "case_id": "climax_v2_05_hatch",
+  "prompt": "subject_definitions:\n<Subject 1> is the red-cloaked bearded Greek leader in <Picture 1>.\n<Subject 2> is the blue-cloaked clean-shaven Greek soldier in <Picture 2>.\n<Subject 3> is their equipment in <Picture 3>; swords stay sheathed for climbing, only the blue soldier owns one round shield, strapped to his back.\n<Subject 4> is the rigid wooden horse and Troy square in <Picture 4>.\n<Picture 5> is the framing, time of day and narrative staging reference for this shot.\nsummary: [reference generation] The Trojan Horse enters Troy, is parked in the square, and conceals Greek soldiers until night.\nretention_analysis:\n<Subject 1>: fully_preserved - identity and costume reference only; hidden until the hatch opens.\n<Subject 2>: fully_preserved - identity and costume reference only; hidden until the hatch opens.\n<Subject 3>: fully_preserved - preserve equipment ownership and design.\n<Subject 4>: fully_preserved - preserve horse design, wheels, hatch and square landmarks.\n<Picture 5>: partially_preserved - preserve shot staging; follow the specified action.\ndetailed_description: Live-action 1970s Shaw Brothers historical studio cinema, ancient Troy, saturated 35mm film colors, theatrical hard light, practical timber and stone sets. One enormous hollow wooden Trojan horse, visibly made from timber planks with the same golden bronze bands, mounted on the same four-wheeled timber platform. Its four rigid wooden legs never walk, its head never moves, and its wheels rotate only while pulled. One rectangular hinged hatch on its camera-facing belly and one wooden ladder. The Greek leader is the bearded short-dark-haired man in engraved bronze armor and a red cloak, with one sword sheathed at his right hip and no shield. His companion is the clean-shaven curly-dark-haired man in engraved bronze armor and a blue cloak, with one sword sheathed at his right hip and one round bronze shield strapped to his back. They use free hands to climb. Keep faces, hair, armor, cloak colors, equipment ownership and horse construction consistent. [Shot 1] Night. Continue the previous slow camera push without a cut. The single hinged belly hatch of the parked wooden horse opens outward gradually, revealing a dark hollow interior. The same bearded red-cloaked Greek leader cautiously looks out, lowers the one wooden ladder from the hatch to the platform, then starts descending one rung. He has no shield and his sword stays sheathed. The same blue-cloaked companion waits inside behind him. The horse stays rigid. overall_soundscape: Quiet night wind, torch crackle, wooden hatch and ladder creaks, faint armor rustle. No dialogue or music. non_diegetic_music: None.",
+  "references": [
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/red_identity.png"
+    },
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/blue_identity.png"
+    },
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/equipment.png"
+    },
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/horse_square.png"
+    },
+    {
+      "type": "image",
+      "path": "/home/admin/sol-spark-runtime/troy_climax_20261004/assets/board_05.png"
+    }
+  ],
+  "seed": 2026100405,
+  "duration_s": 5,
+  "mode": "final",
+  "transition": "continue",
+  "previous_clip_id": "climax_v2_04_night",
+  "context_frames": 22,
+  "audio_context_frames": 24
+}

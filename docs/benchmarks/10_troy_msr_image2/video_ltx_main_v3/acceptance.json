@@ -1,0 +1,71 @@
+{
+  "scope": "Complete newly generated film for user review; technical completion and sampled visual findings are separate.",
+  "technical": {
+    "new_clips": 20,
+    "models": {
+      "ltx": 19,
+      "h3": 1
+    },
+    "initial_model_plan": {
+      "ltx": 17,
+      "h3": 3
+    },
+    "clip_frames": 120,
+    "film_frames": 2190,
+    "fps": 24,
+    "size": [
+      672,
+      384
+    ],
+    "film_duration_s": 91.25,
+    "audio": {
+      "sample_rate": 32000,
+      "channels": 2
+    },
+    "checks": [
+      "frozen input fingerprints",
+      "actual output hashes",
+      "all-file full decode",
+      "real browser playback"
+    ],
+    "generated_clips": 22,
+    "selected_clips": 20,
+    "uncut_film_frames": 2400,
+    "uncut_film_duration_s": 100,
+    "battle_excerpt_frames": 762,
+    "battle_excerpt_duration_s": 31.75
+  },
+  "sampled_visual": {
+    "all_shots": [
+      "readable intended action",
+      "named character identity",
+      "original equipment ownership",
+      "scene and lighting continuity"
+    ],
+    "S10_S12": [
+      "head and hips progress downward",
+      "feet use lower rungs",
+      "no reverse climb"
+    ],
+    "S15_S19_S20": [
+      "multiple attack and defense phases",
+      "weapons separate after contact",
+      "grounded footwork",
+      "no major weapon transformation",
+      "foreground and background fighting remain readable"
+    ],
+    "S16_S18_S19": [
+      "bar removal precedes gate opening",
+      "gate remains open for troop entry",
+      "operators have empty hands",
+      "cover fighters remain active"
+    ]
+  },
+  "limits": [
+    "Frame sampling does not certify all-frame anatomy, contact physics or audio synchronization.",
+    "Native audio is preserved; dialogue-free and music-free are prompt targets unless independently reviewed.",
+    "FastH3 preview was distilled for T2VA; image-conditioned supporting clips do not establish original H3 capability.",
+    "The user selected LTX continuous combat as the creative baseline; visually lively output may still require equipment fixes.",
+    "The edited film retains all 20 story shots but uses shorter prefixes of S09/S11/S17. Known sampled visual criteria failures are documented in quality_review.json; this is a reviewable test film, not production approval."
+  ]
+}

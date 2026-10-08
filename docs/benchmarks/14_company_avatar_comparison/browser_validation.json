@@ -1,0 +1,149 @@
+{
+  "method": "Actual paired playback in a separate browser-skill Agent Window. Playback state read after observing and activating real page controls. Owned browser sessions were closed. This verifies page playback, not subjective lip quality.",
+  "checks": [
+    {
+      "model": "joyvasa",
+      "product": "original",
+      "duration": 8.04,
+      "both_ended": true,
+      "both_ready_state": 4,
+      "candidate_muted": false,
+      "baseline_muted": true,
+      "media_errors": null
+    },
+    {
+      "model": "avatarforever",
+      "product": "zero",
+      "duration": 8.04,
+      "both_ended": true,
+      "both_ready_state": 4,
+      "candidate_muted": false,
+      "baseline_muted": true,
+      "media_errors": null
+    },
+    {
+      "model": "joyhallo",
+      "product": "original",
+      "duration": 8.04,
+      "both_ended": true,
+      "both_ready_state": 4,
+      "candidate_muted": false,
+      "baseline_muted": true,
+      "media_errors": null
+    },
+    {
+      "model": "joyhallo",
+      "product": "zero",
+      "duration": 8.04,
+      "both_ended": true,
+      "both_ready_state": 4,
+      "candidate_muted": false,
+      "baseline_muted": true,
+      "media_errors": null,
+      "dropped_video_frames": [
+        0,
+        0
+      ],
+      "page_completed_cases": 21
+    }
+  ],
+  "diagnostic_switch_state": [
+    {
+      "title": "原味 · 同一配音 · 8.04 秒",
+      "videos": [
+        {
+          "ended": true,
+          "error": null,
+          "muted": true,
+          "paused": true,
+          "src": "results/avatarforever/original/video.mp4",
+          "time": 8.04
+        },
+        {
+          "ended": true,
+          "error": null,
+          "muted": false,
+          "paused": true,
+          "src": "results/avatarforever_nocache/original/video.mp4",
+          "time": 8.04
+        },
+        {
+          "ended": true,
+          "error": null,
+          "muted": true,
+          "paused": true,
+          "src": "results/avatarforever_speaking/original/video.mp4",
+          "time": 8.04
+        }
+      ]
+    },
+    {
+      "title": "健怡 · 同一配音 · 8.04 秒",
+      "videos": [
+        {
+          "ended": false,
+          "error": null,
+          "muted": false,
+          "paused": true,
+          "src": "results/avatarforever/diet/video.mp4",
+          "time": 0
+        },
+        {
+          "ended": false,
+          "error": null,
+          "muted": false,
+          "paused": true,
+          "src": "results/avatarforever_nocache/diet/video.mp4",
+          "time": 0
+        }
+      ]
+    },
+    {
+      "title": "零度 · 同一配音 · 8.04 秒",
+      "videos": [
+        {
+          "ended": false,
+          "error": null,
+          "muted": true,
+          "paused": false,
+          "src": "results/avatarforever/zero/video.mp4",
+          "time": 0.070496
+        },
+        {
+          "ended": false,
+          "error": null,
+          "muted": false,
+          "paused": false,
+          "src": "results/avatarforever_nocache/zero/video.mp4",
+          "time": 0.01104
+        }
+      ]
+    }
+  ],
+  "diagnostic_zero_end_state": [
+    {
+      "dropped": 0,
+      "duration": 8.04,
+      "ended": true,
+      "error": null,
+      "muted": true,
+      "ready": 4,
+      "src": "results/avatarforever/zero/video.mp4",
+      "time": 8.04
+    },
+    {
+      "dropped": 0,
+      "duration": 8.04,
+      "ended": true,
+      "error": null,
+      "muted": false,
+      "ready": 4,
+      "src": "results/avatarforever_nocache/zero/video.mp4",
+      "time": 8.04
+    }
+  ],
+  "final_page_counts": {
+    "primary": 21,
+    "supplemental": 4
+  }
+}

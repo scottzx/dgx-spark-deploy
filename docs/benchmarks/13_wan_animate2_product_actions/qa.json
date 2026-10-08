@@ -1,0 +1,97 @@
+{
+  "status": "complete",
+  "summary": "三组均完成拿起、手持介绍、放回并松手，沿用 Serena 柔和配音与平滑口型。抽查开口、收口和 Wan 段落交界，未见原先的整幅硬切；商品包装文字仍有生成误差，保真验收未通过。",
+  "method": "Manual inspection of decoded phase frames and native segment boundaries; not OCR, identity recognition, or SyncNet scoring.",
+  "input_kind": "generated_product_video",
+  "products": [
+    {
+      "product": "original",
+      "pickup": true,
+      "held_presentation": true,
+      "put_back": true,
+      "release": true,
+      "three_cans_in_sampled_frames": true,
+      "native_segment_boundary_observation": "No obvious whole-frame cut across inspected frames 78–83 and 158–163. Natural blink is visible.",
+      "packaging_acceptance": false,
+      "packaging_note": "Reference and driver already contain incorrect product lettering. Wan reproduces/repaints lettering and cannot establish authentic packaging.",
+      "lip_dubbing_acceptance": "Continuous blending weights and inspected onset/offset closeups passed; precise audio-visual sync not scored.",
+      "evidence": [
+        "motion/original/quick_contact.jpg",
+        "motion/original/segment_boundaries.jpg",
+        "motion/original/release.jpg",
+        "dubbed/original/contact.jpg",
+        "dubbed/original/speech_boundaries.jpg"
+      ],
+      "audio_same_as_baseline": true,
+      "face_detection_fallback_frames": [],
+      "native_join_face_step_mae": [
+        1.5177950859069824,
+        1.3096287250518799
+      ]
+    },
+    {
+      "product": "diet",
+      "pickup": true,
+      "held_presentation": true,
+      "put_back": true,
+      "release": true,
+      "three_cans_in_sampled_frames": true,
+      "native_segment_boundary_observation": "No obvious whole-frame cut across inspected frames 78–83 and 158–163. Mouth articulation in raw driver is not audio-synchronized and will be replaced in the dubbing pass.",
+      "packaging_acceptance": false,
+      "packaging_note": "Silver Diet Coke can retains malformed red lettering from the generated reference/driver; authentic packaging is not recovered.",
+      "lip_dubbing_acceptance": "Continuous blending weights and inspected onset/offset closeups passed; precise audio-visual sync not scored.",
+      "evidence": [
+        "motion/diet/quick_contact.jpg",
+        "motion/diet/segment_boundaries.jpg",
+        "motion/diet/release.jpg",
+        "dubbed/diet/contact.jpg",
+        "dubbed/diet/speech_boundaries.jpg"
+      ],
+      "audio_same_as_baseline": true,
+      "face_detection_fallback_frames": [],
+      "native_join_face_step_mae": [
+        2.414797067642212,
+        2.290698528289795
+      ]
+    },
+    {
+      "product": "zero",
+      "pickup": true,
+      "held_presentation": true,
+      "put_back": true,
+      "release": true,
+      "three_cans_in_sampled_frames": true,
+      "native_segment_boundary_observation": "No obvious whole-frame cut across inspected frames 78–83 and 158–163.",
+      "packaging_acceptance": false,
+      "packaging_note": "Red/black can appearance follows the source, but stylized lettering changes; authentic Zero Sugar packaging is not verified.",
+      "lip_dubbing_acceptance": "Continuous blending weights and inspected onset/offset closeups passed; precise audio-visual sync not scored.",
+      "evidence": [
+        "motion/zero/quick_contact.jpg",
+        "motion/zero/segment_boundaries.jpg",
+        "motion/zero/release.jpg",
+        "dubbed/zero/contact.jpg",
+        "dubbed/zero/speech_boundaries.jpg"
+      ],
+      "audio_same_as_baseline": true,
+      "face_detection_fallback_frames": [],
+      "native_join_face_step_mae": [
+        0.8530648946762085,
+        1.3841146230697632
+      ]
+    }
+  ],
+  "overall_acceptance": {
+    "action_process": "passed_in_inspected_phase_frames",
+    "packaging": "failed",
+    "lip_transition": "continuous_weights_and_inspected_boundaries_passed",
+    "precise_audio_visual_sync": "not_scored",
+    "production_packaging_fidelity": "not_accepted"
+  },
+  "limitations": [
+    "Driving footage and reference are generated; no real-capture acceptance was performed.",
+    "Target resolution is lower than the previous baseline; this is a stack feasibility prototype, not a controlled maximum-quality benchmark.",
+    "A few native segment joins show small adjacent-frame face differences; no obvious whole-frame hard cut in the inspected boundary images.",
+    "Group clips are edited together at 8.04 and 16.08 seconds; the final 24.12-second video is not one unbroken generation.",
+    "SyncNet, OCR, and identity-recognition scores were not run."
+  ]
+}

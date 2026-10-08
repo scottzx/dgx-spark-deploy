@@ -1,0 +1,32 @@
+{
+  "engine": "latentsync",
+  "product": "cardigan",
+  "input_sha256": {
+    "driver.mp4": "72be54a548655a49ed830f744a5386bf838ac64be911466847747c3ea259d3e3",
+    "audio.wav": "321d70c0e2d7d5affaf691c1d72b0dd479677abdd5a730fe179681ee5da7de1d",
+    "audio_16k.wav": "bd1f569de9da04cd39c572b1d15745132fc7906f8c16451b57981a44e5cd8d6f",
+    "reference.png": "505e483397eab87245e0a04410b106028af2a268d66008b79575bf8f90ab0e22",
+    "first_frame.png": "0d30980a2523bbd8ca079cc88a6ab156250a8864694b87c910a9b5d97db5411c"
+  },
+  "commit": "a229c3948406bc2cf6eaf4873e662e70c6a04746",
+  "shared_model_load_seconds": 7.263267631176859,
+  "render_seconds": 381.5749430307187,
+  "peak_cuda_allocated_gib": 10.991151332855225,
+  "native_output": "/home/admin/womenswear-avatar-tests/outputs/latentsync/cardigan/native.mp4",
+  "scope": "Official video-to-video lip synchronization. Pickup/return body actions come from the original LTX video.",
+  "steps": 20,
+  "guidance_scale": 1.5,
+  "model_generates_product_actions": false,
+  "original_LTX_actions_preserved": true,
+  "compatibility": [
+    "OpenCV/FFmpeg CPU decord adapter",
+    "CPU ONNX face detection, four threads",
+    "Existing local sd-vae-ft-mse weights",
+    "Diffusers 0.32.2 in isolated dependency directory"
+  ],
+  "native_duration_seconds": 8.12,
+  "native_output_sha256": "adfd7af24ed924f86b2d6d32f7bd2fa99fc3e36823e4248ebe182c376a295f03",
+  "video_sha256": "ac4379bdb17a36f1c9661be2c5cd5577b822a3360026d1853f508a12d967e8eb",
+  "final_frame_hold_seconds": 0.0,
+  "normalization_note": "Trim only; no tail hold."
+}

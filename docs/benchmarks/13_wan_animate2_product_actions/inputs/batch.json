@@ -1,0 +1,20 @@
+[
+  {
+    "product": "original",
+    "reference": "/home/admin/wan-animate2-runtime/inputs/products/reference.png",
+    "driving": "/home/admin/wan-animate2-runtime/inputs/products/original_driver.mp4",
+    "prompt_file": "/home/admin/wan-animate2-runtime/inputs/products/original_prompt.txt"
+  },
+  {
+    "product": "diet",
+    "reference": "/home/admin/wan-animate2-runtime/inputs/products/reference.png",
+    "driving": "/home/admin/wan-animate2-runtime/inputs/products/diet_driver.mp4",
+    "prompt_file": "/home/admin/wan-animate2-runtime/inputs/products/diet_prompt.txt"
+  },
+  {
+    "product": "zero",
+    "reference": "/home/admin/wan-animate2-runtime/inputs/products/reference.png",
+    "driving": "/home/admin/wan-animate2-runtime/inputs/products/zero_driver.mp4",
+    "prompt_file": "/home/admin/wan-animate2-runtime/inputs/products/zero_prompt.txt"
+  }
+]

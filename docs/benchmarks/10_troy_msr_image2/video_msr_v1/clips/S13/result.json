@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "id": "S13",
+  "title": "伏兵集结备战",
+  "seed": 2026100513,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S13/raw.mp4",
+  "raw_sha256": "c3c93e701b3c1f6af2579bf3796259fec4ca795b4e9a959a88b66679e28b5ca3",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S13/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "4b135e16665e4820317360d3d4d138a09b8dad171b33216e7fc6b5c539de489d",
+    "bytes": 1446047
+  },
+  "generation_s": 138.91239875275642,
+  "phases_s": {
+    "reference_encode_block_s": 2.882332776207477,
+    "denoising_loop_s": 65.49911269498989,
+    "diffusion_block_s": 130.90175163559616,
+    "decode_and_encode_block_s": 5.096079877112061
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "odysseus",
+      "kind": "character",
+      "role": "Odysseus, dark short wavy hair and trimmed beard, indigo cloak, no shield",
+      "source_file": "assets/characters/odysseus_v1.png",
+      "file": "inputs/odysseus.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/odysseus.png",
+      "sha256": "c8a06d7a2a0b0e7578f6bf5c727607644e1da6d1935ac08de8ce04f0aaf2aa1a",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "soldier",
+      "kind": "character",
+      "role": "the young clean-shaven Greek soldier, gray-blue tunic and bronze armor, exactly one shield",
+      "source_file": "assets/characters/greek_soldier_01_v1.png",
+      "file": "inputs/soldier.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/soldier.png",
+      "sha256": "5451c255780158945b0df4c343c41b4cbe271199446111e4b0a5c3b35995b8f6",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 3,
+      "id": "greeks",
+      "kind": "group",
+      "role": "Greek infantry costume reference: gray-blue cloth and bronze armor; different individual faces",
+      "source_file": "assets/groups/greek_infantry_v1.png",
+      "file": "inputs/greeks.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/greeks.png",
+      "sha256": "6dee625340a88f6cdaa3f05ba28ce6e361c91d5c2f611f72334726ca245e63f8",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 4,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard_v2/frames/s13_v1.png",
+      "file": "inputs/board_S13.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S13.png",
+      "sha256": "3aa28006faf81fcc2564ac92949ce5c84f4d6a986d27437a8d7660f555cb6255",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "40843a187822e07b42647d613077cf499b4f7006d3a5aca7d93f00b2b34bb8d5",
+  "prompt_cache_fingerprint": "28c41a4405fba88719e707079da946abf79179f8d1d21492bf8053e4487c9338",
+  "peak_torch_allocated_bytes": 42457502208,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

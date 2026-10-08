@@ -1,0 +1,299 @@
+[
+  {
+    "repo": "AI-ModelScope/MuseTalk",
+    "target": "musetalk/musetalkV15/musetalk.json",
+    "name": "musetalkV15/musetalk.json",
+    "size": 748,
+    "sha256": "5b6923aee04d71692e0e9846c471e0a4ea07a4f686d39545e472bd4ba17e1b47",
+    "revision": "ed4fa151669e5345d10c6d2b201a67e29e395c43",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "AI-ModelScope/MuseTalk",
+    "target": "musetalk/musetalkV15/unet.pth",
+    "name": "musetalkV15/unet.pth",
+    "size": 3400074924,
+    "sha256": "7ebf6c98c181e20838e4c0054e96e944ac60d5d692cc01db42839fe11b787007",
+    "revision": "71da884400fed7b39a037d0a6f423170458fe782",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "AI-ModelScope/wav2vec2-base-960h",
+    "target": "wav2vec2-base-960h/config.json",
+    "name": "config.json",
+    "size": 1596,
+    "sha256": "d3ec255c063d9f95057b553b19c20135b259875834a4fe9deb218a6be25b4cf3",
+    "revision": "0c5dbe4bd2fc93cfaf7caf14bba8758bc433ae2b",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "AI-ModelScope/wav2vec2-base-960h",
+    "target": "wav2vec2-base-960h/feature_extractor_config.json",
+    "name": "feature_extractor_config.json",
+    "size": 158,
+    "sha256": "d3de0c797bf9b65f90bc65c30cb7b303ebeda341f6fc80af33628c4b26b95632",
+    "revision": "0c5dbe4bd2fc93cfaf7caf14bba8758bc433ae2b",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "AI-ModelScope/wav2vec2-base-960h",
+    "target": "wav2vec2-base-960h/model.safetensors",
+    "name": "model.safetensors",
+    "size": 377607901,
+    "sha256": "8aa76ab2243c81747a1f832954586bc566090c83a0ac167df6f31f0fa917d74a",
+    "revision": "0c5dbe4bd2fc93cfaf7caf14bba8758bc433ae2b",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "AI-ModelScope/wav2vec2-base-960h",
+    "target": "wav2vec2-base-960h/preprocessor_config.json",
+    "name": "preprocessor_config.json",
+    "size": 159,
+    "sha256": "b225d617c025463b9e157e06afea8b90dc7078fc70b013c533328423e0486b4a",
+    "revision": "0c5dbe4bd2fc93cfaf7caf14bba8758bc433ae2b",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "AI-ModelScope/wav2vec2-base-960h",
+    "target": "wav2vec2-base-960h/special_tokens_map.json",
+    "name": "special_tokens_map.json",
+    "size": 85,
+    "sha256": "bb7068de1150661a10b55f9e4b12a0e77af8bf91f5e45e1b58afaf1d0e17f675",
+    "revision": "0c5dbe4bd2fc93cfaf7caf14bba8758bc433ae2b",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "AI-ModelScope/wav2vec2-base-960h",
+    "target": "wav2vec2-base-960h/tokenizer_config.json",
+    "name": "tokenizer_config.json",
+    "size": 163,
+    "sha256": "dc790594f5bc351a4311c6624f40acd95850d4aaf2a5cb3c656c9b610720b608",
+    "revision": "0c5dbe4bd2fc93cfaf7caf14bba8758bc433ae2b",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "AI-ModelScope/wav2vec2-base-960h",
+    "target": "wav2vec2-base-960h/vocab.json",
+    "name": "vocab.json",
+    "size": 291,
+    "sha256": "19727f8944fe6459fc3f240ae2c198395b740f6a029bd23e06656266b83bcf64",
+    "revision": "0c5dbe4bd2fc93cfaf7caf14bba8758bc433ae2b",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "TencentGameMate/chinese-wav2vec2-base",
+    "target": "chinese-wav2vec2-base/config.json",
+    "name": "config.json",
+    "size": 1951,
+    "sha256": "dc2cd2f989104b9510ce9e43a343a6f1fe55aa60baa1fcfca0c5908e6590b8b6",
+    "revision": "f1837ac6d22cc31d0743a64b8c761bbe54cec37d",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "TencentGameMate/chinese-wav2vec2-base",
+    "target": "chinese-wav2vec2-base/preprocessor_config.json",
+    "name": "preprocessor_config.json",
+    "size": 160,
+    "sha256": "c1707926644954affc391ab09ccfaf470ccd80af218d11350991090711441c09",
+    "revision": "f1837ac6d22cc31d0743a64b8c761bbe54cec37d",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "TencentGameMate/chinese-wav2vec2-base",
+    "target": "chinese-wav2vec2-base/pytorch_model.bin",
+    "name": "pytorch_model.bin",
+    "size": 380261837,
+    "sha256": "be2da40c9e7ae26bfc904a3ed79ebb9e8f060bec6dba85d6a6ae86114bc38901",
+    "revision": "2f80d48d2f93df21734e62c4a2afd3653e455c47",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "target": "flashhead/Model_Lite/config.json",
+    "name": "Model_Lite/config.json",
+    "size": 357,
+    "sha256": "2ac56ba975a80da49f8ef1b27bfe740be473a1b250fced52f8f1df9ac101bc2c",
+    "revision": "49f773fd58e6403b4168257d59ef1e48fe56c3a1",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "target": "flashhead/VAE_LTX/config.json",
+    "name": "VAE_LTX/config.json",
+    "size": 501,
+    "sha256": "e8f12ad5305b1508f6e456797d48ab8e9fdd091c686ccf814a293ee96ce89dbb",
+    "revision": "49f773fd58e6403b4168257d59ef1e48fe56c3a1",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "target": "flashhead/config.json",
+    "name": "config.json",
+    "size": 99,
+    "sha256": "8dfdbf11629cb780c51481fe45d1cd0ced69a752d09f5ac9aa895e92ff2f9a21",
+    "revision": "058d3a487d3813d151292dbebdf044ae17e3fe1f",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "target": "flashhead/VAE_LTX/diffusion_pytorch_model.safetensors",
+    "name": "VAE_LTX/diffusion_pytorch_model.safetensors",
+    "size": 1676798532,
+    "sha256": "265ca87cb5dff5e37f924286e957324e282fe7710a952a7dafc0df43883e2010",
+    "revision": "49f773fd58e6403b4168257d59ef1e48fe56c3a1",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "target": "flashhead/Model_Lite/diffusion_pytorch_model.safetensors",
+    "name": "Model_Lite/diffusion_pytorch_model.safetensors",
+    "size": 6107542048,
+    "sha256": "aaf1cde6e80ca23f740aae236c47954249f65b151db133cc0f77d3a138ccdf6e",
+    "revision": "49f773fd58e6403b4168257d59ef1e48fe56c3a1",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "Soul-AILab/SoulX-FlashHead-1_3B",
+    "target": "flashhead/model_index.json",
+    "name": "model_index.json",
+    "size": 77,
+    "sha256": "3a6905cabd634f94a3e7eea7fc85828c51db026d271f4fd490a91fdcf03c5689",
+    "revision": "ad7b626919d438ee30d88a253cf0b845cd38e66a",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "BadToBest/EchoMimicV3",
+    "target": "echomimic/echomimicv3-flash-pro/config.json",
+    "name": "echomimicv3-flash-pro/config.json",
+    "size": 577,
+    "sha256": "abe85b8379e2591902f53f698f7ebd711bd6ba4811c796116b3d3c559d2d59ea",
+    "revision": "a054c8e35bb9ab75dd3a69c1d44867fc75644f4c",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "BadToBest/EchoMimicV3",
+    "target": "echomimic/echomimicv3-flash-pro/diffusion_pytorch_model.safetensors",
+    "name": "echomimicv3-flash-pro/diffusion_pytorch_model.safetensors",
+    "size": 3727671120,
+    "sha256": "5ebdbb2fc709108bf2a1728fd92eb2874804e4bc0324e92a2cd55425968c85a4",
+    "revision": "a054c8e35bb9ab75dd3a69c1d44867fc75644f4c",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/config.json",
+    "name": "config.json",
+    "size": 249,
+    "sha256": "5c987c9e1824d23e6ba53db32194099bc00072fb495d442e26ef9a3d85f9fd22",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/configuration.json",
+    "name": "configuration.json",
+    "size": 47,
+    "sha256": "5d1cc0f912402522f05f12a681278da402004ad37006c72ecbb461c50065ec6c",
+    "revision": "98983d052d244017280fd9eac5fddcd99e4a3374",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth",
+    "name": "models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth",
+    "size": 4772359047,
+    "sha256": "628c9998b613391f193eb67ff68da9667d75f492911e4eb3decf23460a158c38",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/models_t5_umt5-xxl-enc-bf16.pth",
+    "name": "models_t5_umt5-xxl-enc-bf16.pth",
+    "size": 11361920418,
+    "sha256": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/xlm-roberta-large/sentencepiece.bpe.model",
+    "name": "xlm-roberta-large/sentencepiece.bpe.model",
+    "size": 5069051,
+    "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/google/umt5-xxl/special_tokens_map.json",
+    "name": "google/umt5-xxl/special_tokens_map.json",
+    "size": 6623,
+    "sha256": "7b8a9f5040adb67b5805abdfd42c1f8d0f3d0e711f10726580eb3789cd0ad61d",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/xlm-roberta-large/special_tokens_map.json",
+    "name": "xlm-roberta-large/special_tokens_map.json",
+    "size": 280,
+    "sha256": "06e405a36dfe4b9604f484f6a1e619af1a7f7d09e34a8555eb0b77b66318067f",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/google/umt5-xxl/spiece.model",
+    "name": "google/umt5-xxl/spiece.model",
+    "size": 4548313,
+    "sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/google/umt5-xxl/tokenizer.json",
+    "name": "google/umt5-xxl/tokenizer.json",
+    "size": 16837417,
+    "sha256": "6e197b4d3dbd71da14b4eb255f4fa91c9c1f2068b20a2de2472967ca3d22602b",
+    "revision": "59809e780212b42e7e874d5b0e1b97fc85f48d9d",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/xlm-roberta-large/tokenizer.json",
+    "name": "xlm-roberta-large/tokenizer.json",
+    "size": 17082660,
+    "sha256": "62c24cdc13d4c9952d63718d6c9fa4c287974249e16b7ade6d5a85e7bbb75626",
+    "revision": "59809e780212b42e7e874d5b0e1b97fc85f48d9d",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/google/umt5-xxl/tokenizer_config.json",
+    "name": "google/umt5-xxl/tokenizer_config.json",
+    "size": 61728,
+    "sha256": "ed9a3a8b0faa71a70a32847e0435fe036e6e112d4df4edb7bb48a921e344dc05",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/xlm-roberta-large/tokenizer_config.json",
+    "name": "xlm-roberta-large/tokenizer_config.json",
+    "size": 418,
+    "sha256": "efb5c0d09722e5fe59a462cd2a9976ee216d55b037597d997cd3fe833216da15",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  },
+  {
+    "repo": "PAI/Wan2.1-Fun-V1.1-1.3B-InP",
+    "target": "wan-fun/Wan2.1_VAE.pth",
+    "name": "Wan2.1_VAE.pth",
+    "size": 507609880,
+    "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+    "revision": "4bfea9b2c23523ed6fc23988f24972ca6583adbc",
+    "provider": "modelscope"
+  }
+]

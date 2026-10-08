@@ -1,0 +1,22 @@
+{
+  "scope": "User requested pickup, introduction, and return for three products. Clear visible release is the operational completion criterion; portrait-only models are assessed only for speech.",
+  "criteria": [
+    {
+      "item": "拿起",
+      "observable": "目标罐离开桌面进入手中，总数仍为三罐。"
+    },
+    {
+      "item": "手持介绍",
+      "observable": "同一罐持续在手中，身份、颜色与形状保持稳定；口型随同一配音运动。"
+    },
+    {
+      "item": "放回与清晰松手",
+      "observable": "商品回到桌面，手与商品出现可见间隔后商品保持稳定；仅接触静帧不能确定是否仍用力握持。"
+    },
+    {
+      "item": "说话起止连续性",
+      "observable": "连续帧与播放中没有明显人物、脸部或姿态切换；闭嘴单帧不直接等于音画延迟。"
+    }
+  ],
+  "packaging_note": "Input LTX video already contains incorrect printed lettering. Preserve versus improve lettering are distinct from inventing additional cans or changing target SKU colors."
+}

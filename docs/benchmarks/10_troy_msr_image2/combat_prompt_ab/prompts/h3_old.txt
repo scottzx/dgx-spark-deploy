@@ -1,0 +1,7 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+
+integrated_multimodal_description: [Shot 1] Live-action, cinematic 1970s Shaw Brothers historical Troy. A static full-body medium-wide shot continues from the provided first frame, in front of a closed wooden double gate at night, lit by warm amber torches and cool moonlight. Foreground left is Odysseus with short dark wavy hair, trimmed beard, indigo cloak, a sword in his right hand and an empty left hand. Foreground right is the Trojan guard with a pointed bronze helmet, ochre tunic and rust cloak, a spear in his right hand and a round shield in his left hand. The same four background soldiers remain behind the foreground duel as two opposed pairs striking and blocking. The six people retain their identities, equipment and original weapon hands; the gate remains closed. The guard thrusts once; Odysseus parries the spear upward with his sword. The guard recoils half a step to the right. No blood, visible wounds or captions.
+
+overall_soundscape: Torch crackle under synchronized metal-on-wood clashes, spear-shaft knocks, armor rattles, quick scraping footsteps and strained breathing. No dialogue or singing.
+
+non_diegetic_music: N/A

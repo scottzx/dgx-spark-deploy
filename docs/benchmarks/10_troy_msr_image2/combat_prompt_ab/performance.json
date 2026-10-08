@@ -1,0 +1,129 @@
+{
+  "manifest_fingerprint": "48f2b7b853489f654863c0d57b958ec04216e4494c090beb44ba74354520b714",
+  "scope_note": "Measured wall times have different contents. H3 API requests include Qwen encoding, H3 inference and draft preview; native full H3 decode is separate. LTX generation includes its own decode and delivery; first request includes initialization. Do not rank pure model speed from these totals.",
+  "per_clip": [
+    {
+      "id": "combat_ab_h3_old_2026100601",
+      "model": "h3",
+      "variant": "old",
+      "seed": 2026100601,
+      "generation_s": 80.96078008692712,
+      "native_decode_and_delivery_s": 25.605537465773523
+    },
+    {
+      "id": "combat_ab_h3_new_2026100601",
+      "model": "h3",
+      "variant": "new",
+      "seed": 2026100601,
+      "generation_s": 69.77781240781769,
+      "native_decode_and_delivery_s": 24.023473531007767
+    },
+    {
+      "id": "combat_ab_h3_new_2026100602",
+      "model": "h3",
+      "variant": "new",
+      "seed": 2026100602,
+      "generation_s": 55.373835580889136,
+      "native_decode_and_delivery_s": 23.96097804326564
+    },
+    {
+      "id": "combat_ab_h3_old_2026100602",
+      "model": "h3",
+      "variant": "old",
+      "seed": 2026100602,
+      "generation_s": 53.87992778420448,
+      "native_decode_and_delivery_s": 23.975742196664214
+    },
+    {
+      "id": "combat_ab_h3_old_2026100603",
+      "model": "h3",
+      "variant": "old",
+      "seed": 2026100603,
+      "generation_s": 54.9885195447132,
+      "native_decode_and_delivery_s": 23.995216455776244
+    },
+    {
+      "id": "combat_ab_h3_new_2026100603",
+      "model": "h3",
+      "variant": "new",
+      "seed": 2026100603,
+      "generation_s": 54.70874470518902,
+      "native_decode_and_delivery_s": 24.001208294183016
+    },
+    {
+      "id": "combat_ab_ltx_old_2026100601",
+      "model": "ltx",
+      "variant": "old",
+      "seed": 2026100601,
+      "generation_s": 82.07925865380093
+    },
+    {
+      "id": "combat_ab_ltx_new_2026100601",
+      "model": "ltx",
+      "variant": "new",
+      "seed": 2026100601,
+      "generation_s": 26.959520840086043
+    },
+    {
+      "id": "combat_ab_ltx_new_2026100602",
+      "model": "ltx",
+      "variant": "new",
+      "seed": 2026100602,
+      "generation_s": 27.03140137763694
+    },
+    {
+      "id": "combat_ab_ltx_old_2026100602",
+      "model": "ltx",
+      "variant": "old",
+      "seed": 2026100602,
+      "generation_s": 27.03446422610432
+    },
+    {
+      "id": "combat_ab_ltx_old_2026100603",
+      "model": "ltx",
+      "variant": "old",
+      "seed": 2026100603,
+      "generation_s": 26.770642747171223
+    },
+    {
+      "id": "combat_ab_ltx_new_2026100603",
+      "model": "ltx",
+      "variant": "new",
+      "seed": 2026100603,
+      "generation_s": 26.772218693979084
+    }
+  ],
+  "phase_wall_s": [
+    {
+      "phase": "native",
+      "exit_code": 0,
+      "wall_s": 165.59378779213876
+    },
+    {
+      "phase": "caches",
+      "exit_code": 0,
+      "wall_s": 32.583026089239866
+    },
+    {
+      "phase": "ltx",
+      "exit_code": 0,
+      "wall_s": 263.79801965598017
+    }
+  ],
+  "service_restore_startup_and_warmup_s": 457.1161096096039,
+  "offline_supervisor_total_wall_s": 1003.716869354248,
+  "request_generation_s": {
+    "h3": {
+      "min": 53.87992778420448,
+      "max": 80.96078008692712,
+      "mean": 61.614936684956774,
+      "sum": 369.68962010974064
+    },
+    "ltx": {
+      "min": 26.770642747171223,
+      "max": 82.07925865380093,
+      "mean": 36.10791775646309,
+      "sum": 216.64750653877854
+    }
+  }
+}

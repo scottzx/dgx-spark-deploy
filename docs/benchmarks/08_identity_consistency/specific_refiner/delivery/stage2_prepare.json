@@ -1,0 +1,10 @@
+{
+  "conditioning_ready_monotonic_ns": 2535245489221768,
+  "output_root": "/home/admin/sol-spark-runtime/identity_tests_20261003/specific_refiner/delivery",
+  "request_id": "troy_20261003_220446_opening",
+  "stage2_connector_loaded": false,
+  "stage2_gemma_loaded": false,
+  "stage2_prepare_s": 0.000265959,
+  "stage2_prepare_started_monotonic_ns": 2535245488955809,
+  "status": "READY"
+}

@@ -1,0 +1,33 @@
+{
+  "url": "http://100.88.227.56:58124/natural_synthesis_v2/review.html",
+  "in_progress_page_loaded": true,
+  "tailscale_http_status_from_dgx": 200,
+  "first_latentsync_shirt_played_to_end": true,
+  "first_clip_duration": 8.04,
+  "no_browser_media_error": true,
+  "latentsync_compilation_played_to_end": {
+    "duration": 24.12,
+    "ended": true,
+    "error": null
+  },
+  "two_route_shirt_sync_played_to_end": {
+    "routes": [
+      "latentsync",
+      "longcat"
+    ],
+    "duration": 8.04,
+    "ended": true,
+    "single_unmuted_audio": true,
+    "errors": null
+  },
+  "two_route_compilations_sync_played_to_end": {
+    "routes": [
+      "latentsync",
+      "longcat"
+    ],
+    "duration": 24.12,
+    "ended": true,
+    "single_unmuted_audio": true,
+    "errors": null
+  }
+}

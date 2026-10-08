@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "id": "S03",
+  "title": "木轮越过门槛",
+  "seed": 2026100503,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S03/raw.mp4",
+  "raw_sha256": "29a01faa155a5d2670c97e42d22e746b72442c56e909154f9e963e9f0de529e4",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S03/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "9739fd01a55c85dae09b0d8fef40bc84fa545356989503493c0ddc9ed6e3c80c",
+    "bytes": 1339412
+  },
+  "generation_s": 149.31274991296232,
+  "phases_s": {
+    "reference_encode_block_s": 3.0441732318140566,
+    "denoising_loop_s": 65.11057560890913,
+    "diffusion_block_s": 140.96803600387648,
+    "decode_and_encode_block_s": 5.24684683419764
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "worker",
+      "kind": "character",
+      "role": "the unarmed Trojan rope-pulling worker",
+      "source_file": "assets/characters/trojan_worker_01_v1.png",
+      "file": "inputs/worker.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/worker.png",
+      "sha256": "7196abd58c0fafb2b7de55beb8f19f3e7e44585e9e729d3f1668ff0ea4cded28",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "horse",
+      "kind": "prop",
+      "role": "rigid wooden horse design on one four-wheeled platform, facing right",
+      "source_file": "assets/scenes/trojan_horse_v1.png",
+      "file": "inputs/horse.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/horse.png",
+      "sha256": "66161cdfb931e503c63edc67252cff4fa82e97c9500d5ea4f96af84580694514",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 3,
+      "id": "gate",
+      "kind": "scene",
+      "role": "sandstone city-gate exterior architecture",
+      "source_file": "assets/scenes/gate_day_v1.png",
+      "file": "inputs/gate.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/gate.png",
+      "sha256": "9aaa0bf597413187c4047c67944c79f178502bcbeba7a034e4d0830bc741296a",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 4,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard/frames/s03_v1.png",
+      "file": "inputs/board_S03.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S03.png",
+      "sha256": "276251eb8d61bef578a7f3f5a1494d06859b118ff3ae7780361474a4bcc1cd26",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "2aa23048b93c1bde493e5e4ea4d9619fafc697d22b90163c605ed9dfc87540bd",
+  "prompt_cache_fingerprint": "a1202133ff2a6f89531eacaa1163733088dee1990035a4e9280df5f28c862405",
+  "peak_torch_allocated_bytes": 42457502208,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}

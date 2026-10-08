@@ -1,0 +1,3 @@
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/09_troy_climax/h3_native/climax_v2_04_night/h3_native.mp4'
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/09_troy_climax/h3_native/climax_v2_05_hatch/h3_native.mp4'
+file '/Users/scott/Documents/01-开发项目/DXG私有化部署/docs/benchmarks/09_troy_climax/h3_native/climax_v2_06_exit/h3_native.mp4'

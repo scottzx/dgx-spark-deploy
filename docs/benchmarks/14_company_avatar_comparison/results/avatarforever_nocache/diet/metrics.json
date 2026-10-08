@@ -1,0 +1,34 @@
+{
+  "engine": "avatarforever_nocache",
+  "product": "diet",
+  "input_sha256": {
+    "driver.mp4": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+    "audio.wav": "f1a0bd183bfa94f6c8388747fdabe43744deb84a3f3c0d256c92c6ab4cf07c3c",
+    "audio_16k.wav": "7b152368a785fedc070e34c354cdfdfa7c8b93c51b02f336effc59dda4b7f920",
+    "reference.png": "6eb65f847adaca222f8a0b81ca994411f2b64f1d3a802cd122cec68698043c5e"
+  },
+  "commit": "4dfc42b0e2dbbded4d148387d186219bd7601279",
+  "shared_model_load_seconds": 0.00045937206596136093,
+  "render_seconds": 105.17232664488256,
+  "peak_cuda_allocated_gib": 39.81671619415283,
+  "native_output": "/home/admin/avatar-company-tests/outputs/avatarforever_nocache/diet/native.mp4",
+  "scope": "Official AvatarForever first-frame + audio + text generation; history feature cache=False, prompt variant=no-cache.",
+  "model_loading_is_lazy": true,
+  "timing_includes_lazy_model_loads": true,
+  "fast_infer": false,
+  "variant": "no-cache",
+  "prompt": "A fixed medium shot of an adult Chinese woman with shoulder-length black hair and a red long-sleeved top sitting behind a light gray table in a gray studio. Exactly three drink cans stay visible. She starts with empty hands, picks up the silver and red Diet Coke can in the middle, holds that same can at chest height with its front facing the camera, speaks naturally to introduce it, then puts that same can back at its original position and releases it, ending with both hands empty on the table. The other two cans stay on the table throughout. One continuous shot; realistic hand contact, consistent identity, can colors and packaging. During the silent beginning and ending her mouth is relaxed and closed.",
+  "ar_history_feature_cache": false,
+  "product_action_requested": true,
+  "model_generates_product_actions": true,
+  "original_LTX_actions_preserved": false,
+  "compatibility": [
+    "Existing GB10 PyTorch 2.14.1 / CUDA 13 instead of repository Torch 2.7 environment"
+  ],
+  "action_quality": "Not yet visually accepted; inspect pickup, product contact and return.",
+  "native_duration_seconds": 8.04,
+  "native_output_sha256": "ba92fab7cb660ba0e891bced5b42eb8332f9d933d07838f6e8bf46a592b8777c",
+  "video_sha256": "322e255a92be73d5e7c25d05864b5e7f4740ca41d37c573a51e71a6a66a0772d",
+  "final_frame_hold_seconds": 0.0,
+  "normalization_note": "Trim only; no tail hold."
+}

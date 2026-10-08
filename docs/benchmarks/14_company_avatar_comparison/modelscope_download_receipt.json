@@ -1,0 +1,618 @@
+[
+  {
+    "target": "liveportrait/liveportrait/base_models/appearance_feature_extractor.pth",
+    "sha256": "5279bb8654293dbdf327030b397f107237dd9212fb11dd75b83dfb635211ceb5",
+    "size": 3387959,
+    "repo": "KwaiVGI/LivePortrait",
+    "revision": "25fbc57619b720ff058bb13f1bcfdf7e6c600ea4"
+  },
+  {
+    "target": "liveportrait/insightface/models/buffalo_l/2d106det.onnx",
+    "sha256": "f001b856447c413801ef5c42091ed0cd516fcd21f2d6b79635b1e733a7109dbf",
+    "size": 5030888,
+    "repo": "KwaiVGI/LivePortrait",
+    "revision": "25fbc57619b720ff058bb13f1bcfdf7e6c600ea4"
+  },
+  {
+    "target": "liveportrait/liveportrait/retargeting_models/stitching_retargeting_module.pth",
+    "sha256": "3652d5a3f95099141a56986aaddec92fadf0a73c87a20fac9a2c07c32b28b611",
+    "size": 2393098,
+    "repo": "KwaiVGI/LivePortrait",
+    "revision": "25fbc57619b720ff058bb13f1bcfdf7e6c600ea4"
+  },
+  {
+    "target": "liveportrait/insightface/models/buffalo_l/det_10g.onnx",
+    "sha256": "5838f7fe053675b1c7a08b633df49e7af5495cee0493c7dcf6697200b85b5b91",
+    "size": 16923827,
+    "repo": "KwaiVGI/LivePortrait",
+    "revision": "25fbc57619b720ff058bb13f1bcfdf7e6c600ea4"
+  },
+  {
+    "target": "liveportrait/liveportrait/landmark.onnx",
+    "sha256": "31d22a5041326c31f19b78886939a634a5aedcaa5ab8b9b951a1167595d147db",
+    "size": 114666491,
+    "repo": "KwaiVGI/LivePortrait",
+    "revision": "25fbc57619b720ff058bb13f1bcfdf7e6c600ea4"
+  },
+  {
+    "target": "liveportrait/liveportrait/base_models/motion_extractor.pth",
+    "sha256": "251e6a94ad667a1d0c69526d292677165110ef7f0cf0f6d199f0e414e8aa0ca5",
+    "size": 112545506,
+    "repo": "KwaiVGI/LivePortrait",
+    "revision": "25fbc57619b720ff058bb13f1bcfdf7e6c600ea4"
+  },
+  {
+    "target": "liveportrait/liveportrait/base_models/spade_generator.pth",
+    "sha256": "4780afc7909a9f84e24c01d73b31a555ef651521a1fe3b2429bd04534d992aee",
+    "size": 221813590,
+    "repo": "KwaiVGI/LivePortrait",
+    "revision": "25fbc57619b720ff058bb13f1bcfdf7e6c600ea4"
+  },
+  {
+    "target": "liveportrait/liveportrait/base_models/warping_module.pth",
+    "sha256": "2f61a6f265fe344f14132364859a78bdbbc2068577170693da57fb96d636e282",
+    "size": 182180086,
+    "repo": "KwaiVGI/LivePortrait",
+    "revision": "25fbc57619b720ff058bb13f1bcfdf7e6c600ea4"
+  },
+  {
+    "target": "wan21/config.json",
+    "sha256": "b715e6ed094566c73a05e99129105683ff4362af6a783a17dc0dd32884a5d4a7",
+    "size": 250,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "df84b2f8832c205e005830cb74db74ca3357ac5d"
+  },
+  {
+    "target": "wan21/configuration.json",
+    "sha256": "625c81a3527ce4f7a739854b431f380a987dc4af5e07e099b568e50e2e3b248c",
+    "size": 64,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "9ddeff5abf8dc81868137f5d96661d8272a92260"
+  },
+  {
+    "target": "infinitetalk/single/infinitetalk.safetensors",
+    "sha256": "ff1d43f9df885f9c80f25df292050fe753440d890033270a90e1f99f75dd3721",
+    "size": 9948708152,
+    "repo": "MeiGen-AI/InfiniteTalk",
+    "revision": "e02638c5448a1b7e81d8e28cdbcf4d7feae92a57"
+  },
+  {
+    "target": "wan21/diffusion_pytorch_model-00001-of-00007.safetensors",
+    "sha256": "09c0170242cfe9598208724585196ca18f294928fe25971149e1d7b37b3b51d6",
+    "size": 9847223624,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/diffusion_pytorch_model-00002-of-00007.safetensors",
+    "sha256": "9e9dd8069241f0cbfe8f269e784e915ddaa7f177272b9850ae88c494d418c181",
+    "size": 9797021016,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/diffusion_pytorch_model-00003-of-00007.safetensors",
+    "sha256": "22af36eb620c381d57a2dd5d5e3a001bf90ba0ca32f2d5013d6ca45225b11d5f",
+    "size": 9797041744,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/diffusion_pytorch_model-00004-of-00007.safetensors",
+    "sha256": "5c2be0421b8df4a8e7dd31cdbb6489567438ae14b812b57518e43c6f4e49a755",
+    "size": 9692142864,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/diffusion_pytorch_model-00005-of-00007.safetensors",
+    "sha256": "0ba7f3ab69f414f23e5566e607b9385a8f67907302cbaaf86507b3a826a20dda",
+    "size": 9692142864,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/diffusion_pytorch_model-00006-of-00007.safetensors",
+    "sha256": "d7287e9233cbf67a75fce8ef8be24232ec93d6336f148972465db00008d69e28",
+    "size": 9692142864,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/diffusion_pytorch_model.safetensors.index.json",
+    "sha256": "19d926a3743f6744a7e0f25298f75fe10cd28dbc31f48f8fd2b0ae45db64f90c",
+    "size": 116451,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/LICENSE.txt",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "size": 11357,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/examples/i2v_input.JPG",
+    "sha256": "077e3d965090c9028c69c00931675f42e1acc815c6eb450ab291b3b72d211a8e",
+    "size": 250628,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/diffusion_pytorch_model-00007-of-00007.safetensors",
+    "sha256": "d1bc30f07b162c34b90e4ee4a349f81b6e1a3a342187ea9ea153c9e4dbb07676",
+    "size": 7061933536,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/models_clip_open-clip-xlm-roberta-large-vit-huge-14.pth",
+    "sha256": "628c9998b613391f193eb67ff68da9667d75f492911e4eb3decf23460a158c38",
+    "size": 4772359047,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/google/umt5-xxl/special_tokens_map.json",
+    "sha256": "7b8a9f5040adb67b5805abdfd42c1f8d0f3d0e711f10726580eb3789cd0ad61d",
+    "size": 6623,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/xlm-roberta-large/special_tokens_map.json",
+    "sha256": "06e405a36dfe4b9604f484f6a1e619af1a7f7d09e34a8555eb0b77b66318067f",
+    "size": 280,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/google/umt5-xxl/spiece.model",
+    "sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458",
+    "size": 4548313,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/google/umt5-xxl/tokenizer_config.json",
+    "sha256": "ed9a3a8b0faa71a70a32847e0435fe036e6e112d4df4edb7bb48a921e344dc05",
+    "size": 61728,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/xlm-roberta-large/sentencepiece.bpe.model",
+    "sha256": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "size": 5069051,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/xlm-roberta-large/tokenizer_config.json",
+    "sha256": "efb5c0d09722e5fe59a462cd2a9976ee216d55b037597d997cd3fe833216da15",
+    "size": 418,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/models_t5_umt5-xxl-enc-bf16.pth",
+    "sha256": "7cace0da2b446bbbbc57d031ab6cf163a3d59b366da94e5afe36745b746fd81d",
+    "size": 11361920418,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/xlm-roberta-large/tokenizer.json",
+    "sha256": "62c24cdc13d4c9952d63718d6c9fa4c287974249e16b7ade6d5a85e7bbb75626",
+    "size": 17082660,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "wan21/google/umt5-xxl/tokenizer.json",
+    "sha256": "6e197b4d3dbd71da14b4eb255f4fa91c9c1f2068b20a2de2472967ca3d22602b",
+    "size": 16837417,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "longcat/whisper-large-v3/.gitattributes",
+    "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361",
+    "size": 1519,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "a89f31558419f4039f47d0dcb66bd2215db5ea8a"
+  },
+  {
+    "target": "longcat/whisper-large-v3/config.json",
+    "sha256": "ad0e8d1e46f4d01f7861a21509e5d0f977d6cc1f367a370603c92541d819807b",
+    "size": 1272,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "bda5a8c2bd4a5bbd34e15ab84942c1dff2c8a95f"
+  },
+  {
+    "target": "longcat/whisper-large-v3/added_tokens.json",
+    "sha256": "3c51f66c4c21f9e126970078f11ae77a78c74aee8df606ee9daba86e467108e0",
+    "size": 34648,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "bda5a8c2bd4a5bbd34e15ab84942c1dff2c8a95f"
+  },
+  {
+    "target": "wan21/Wan2.1_VAE.pth",
+    "sha256": "38071ab59bd94681c686fa51d75a1968f64e470262043be31f7a094e442fd981",
+    "size": 507609880,
+    "repo": "Wan-AI/Wan2.1-I2V-14B-480P",
+    "revision": "541ff840a4590d5a45c7cb32cd43f0b019fe4d7f"
+  },
+  {
+    "target": "longcat/base_model/diffusion_pytorch_model-00001-of-00006.safetensors",
+    "sha256": "c6140bdeb791620f2caa1f7c4d931dd4499bbafd148acdd65f1cdc254bd45eb2",
+    "size": 5038262208,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "5c29d4d84b0242cf7900c8ab259ad14be8eeca57"
+  },
+  {
+    "target": "longcat/base_model/diffusion_pytorch_model-00002-of-00006.safetensors",
+    "sha256": "90f71c9038c3d5fc596cc2bb2fc74c598b289bc76f57096277a42ff5bc9c37d9",
+    "size": 5355725552,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "5c29d4d84b0242cf7900c8ab259ad14be8eeca57"
+  },
+  {
+    "target": "longcat/base_model/diffusion_pytorch_model-00003-of-00006.safetensors",
+    "sha256": "bf69617758bfb0a2ca73d97341725dada77cc5fd2f07d07806beac3ecc5e0e6a",
+    "size": 5458518600,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "c284af04fc4d64ad8d9eb12b884eaed9c90b24d4"
+  },
+  {
+    "target": "longcat/base_model/diffusion_pytorch_model-00004-of-00006.safetensors",
+    "sha256": "0540804fa47d2558ddc88d19dcf4a58ff7739673ec4da56cb2b1c5623810c57c",
+    "size": 5265572392,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "c284af04fc4d64ad8d9eb12b884eaed9c90b24d4"
+  },
+  {
+    "target": "longcat/base_model/diffusion_pytorch_model-00005-of-00006.safetensors",
+    "sha256": "91eedc26cf8a11a147cb0b29d640ccbd0c411c1b5f1949fad12003f48a9906c8",
+    "size": 5353652768,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "c284af04fc4d64ad8d9eb12b884eaed9c90b24d4"
+  },
+  {
+    "target": "longcat/base_model/diffusion_pytorch_model.safetensors.index.json",
+    "sha256": "a100a8ce3a9e86b216020f5a92e012c54a1d64cbcde953403e313d2b69c42bd2",
+    "size": 153151,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "c284af04fc4d64ad8d9eb12b884eaed9c90b24d4"
+  },
+  {
+    "target": "longcat/base_model/diffusion_pytorch_model-00006-of-00006.safetensors",
+    "sha256": "5fdb0fbff4bc75ea9bf1573c3551a974da4ab05b64b7cdd835a9b0d377374d1d",
+    "size": 5234276864,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "c284af04fc4d64ad8d9eb12b884eaed9c90b24d4"
+  },
+  {
+    "target": "longcat/whisper-large-v3/generation_config.json",
+    "sha256": "fbdfa70135de9b1d31553393f14e80aaeb1936ea36576b2ba864055943c09d23",
+    "size": 3903,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "bda5a8c2bd4a5bbd34e15ab84942c1dff2c8a95f"
+  },
+  {
+    "target": "longcat/vocal_separator/download_checks.json",
+    "sha256": "d310ab9abdf460db5006a844b6db92cda0ad9233f3753a24c737b4b6008a2b22",
+    "size": 16963,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "a89f31558419f4039f47d0dcb66bd2215db5ea8a"
+  },
+  {
+    "target": "longcat/vocal_separator/mdx_model_data.json",
+    "sha256": "ab7a693b10cde0c2f52a7a464e96e7687eb0e73aa549fbd1b1ef1da71c75c0cd",
+    "size": 11591,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "a89f31558419f4039f47d0dcb66bd2215db5ea8a"
+  },
+  {
+    "target": "longcat/whisper-large-v3/merges.txt",
+    "sha256": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+    "size": 493869,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "bda5a8c2bd4a5bbd34e15ab84942c1dff2c8a95f"
+  },
+  {
+    "target": "longcat/vocal_separator/Kim_Vocal_2.onnx",
+    "sha256": "ce74ef3b6a6024ce44211a07be9cf8bc6d87728cc852a68ab34eb8e58cde9c8b",
+    "size": 66759214,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "54c914c206691df98286e1a60054d12780dc13a9"
+  },
+  {
+    "target": "longcat/lora/dmd_lora.safetensors",
+    "sha256": "d969115a7f3fbc212a277ed4399f77a1a065d170148c6d4bc272e980cd3e907a",
+    "size": 2523077984,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "54c914c206691df98286e1a60054d12780dc13a9"
+  },
+  {
+    "target": "longcat/whisper-large-v3/preprocessor_config.json",
+    "sha256": "7ccc62c6f2765af1f3b46c00c9b5894426835a05021c8b9c01eecb6dfb542711",
+    "size": 340,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "13158f763440177bba10be72e1f884e3ac263304"
+  },
+  {
+    "target": "longcat/whisper-large-v3/normalizer.json",
+    "sha256": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+    "size": 52666,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "3337b52a3643d776594bf63d228418f84c376aa2"
+  },
+  {
+    "target": "longcat/scheduler/scheduler_config.json",
+    "sha256": "853cc585fa05aadcd91dac89743db59fba6d0eb4062fb7de636a90f3fff3e969",
+    "size": 213,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "54c914c206691df98286e1a60054d12780dc13a9"
+  },
+  {
+    "target": "longcat/whisper-large-v3/special_tokens_map.json",
+    "sha256": "1c70773c078cb2ca96e0fcff113102f1d3e2b1504272c3bb63b035d4a6700d87",
+    "size": 2072,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "6d4e5cd325fac159a04f6d7a270f2c118960eeed"
+  },
+  {
+    "target": "longcat/whisper-large-v3/tokenizer.json",
+    "sha256": "6d8cbd7cd0d8d5815e478dac67b85a26bbe77c1f5e0c6d76d1ce2abc0e5f21ca",
+    "size": 2480617,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "6d4e5cd325fac159a04f6d7a270f2c118960eeed"
+  },
+  {
+    "target": "longcat/vocal_separator/vr_model_data.json",
+    "sha256": "852518e3e51715e6f825879769669570351f2a51293c5cb7c3270233d196745b",
+    "size": 4243,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "a89f31558419f4039f47d0dcb66bd2215db5ea8a"
+  },
+  {
+    "target": "longcat_base/vae/config.json",
+    "sha256": "f0c1cc1d7decb5badc384f54691746a27a9aeff49f7ebca974e583389342d527",
+    "size": 724,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/text_encoder/config.json",
+    "sha256": "4087b6192155a4643f6d29fd326c4610103130674011ef4d0a53f8bce5de967d",
+    "size": 854,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat/whisper-large-v3/tokenizer_config.json",
+    "sha256": "844b642c73a91359722f47b35705f7174686df33d252695d8572cf9ac03a6389",
+    "size": 282843,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "6d4e5cd325fac159a04f6d7a270f2c118960eeed"
+  },
+  {
+    "target": "longcat/whisper-large-v3/model.safetensors",
+    "sha256": "a8e94b85976e5864ba3e9525c7e6c83b2a1eca42d4b797a0c7c24d778e40fd95",
+    "size": 3087130976,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "3337b52a3643d776594bf63d228418f84c376aa2"
+  },
+  {
+    "target": "longcat/whisper-large-v3/vocab.json",
+    "sha256": "e2aa043ef015641d363d8288e7c241c85e36a5c761fb303598e0710233344387",
+    "size": 1036558,
+    "repo": "meituan-longcat/LongCat-Video-Avatar-1.5",
+    "revision": "6d4e5cd325fac159a04f6d7a270f2c118960eeed"
+  },
+  {
+    "target": "longcat_base/vae/diffusion_pytorch_model.safetensors",
+    "sha256": "d6e524b3fffede1787a74e81b30976dce5400c4439ba64222168e607ed19e793",
+    "size": 507591892,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/text_encoder/model-00001-of-00005.safetensors",
+    "sha256": "c0ef3a140898e228a3520c9adec60743d2e8e5b3d229651bb37f1a3921919f99",
+    "size": 4972389712,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/text_encoder/model-00002-of-00005.safetensors",
+    "sha256": "481c7b2b39771c44df6dd8d13ee12ed072d731b4a650bd092885d4d52db229ad",
+    "size": 4899225672,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/text_encoder/model-00003-of-00005.safetensors",
+    "sha256": "f93148bcc04052a169e1e49bfcf6125df6cf9bf243cb9c627da75266cf8e35c3",
+    "size": 4966309504,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/text_encoder/model-00004-of-00005.safetensors",
+    "sha256": "a451792c739c05bca4606190cc2dd16731411bac03b4cf6aacc5767321f857c9",
+    "size": 4999880704,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/text_encoder/model.safetensors.index.json",
+    "sha256": "8af791f24a6447aa30c95786f40adf23d3c9df97470d2f36159c8f1113f120b4",
+    "size": 22476,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/tokenizer/special_tokens_map.json",
+    "sha256": "456b58fd240a06c743a7c2cf8008bec501240d68ebd1fc4018ea569505fea270",
+    "size": 7079,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/tokenizer/spiece.model",
+    "sha256": "e3909a67b780650b35cf529ac782ad2b6b26e6d1f849d3fbb6a872905f452458",
+    "size": 4548313,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "gemma3/added_tokens.json",
+    "sha256": "50b2f405ba56a26d4913fd772089992252d7f942123cc0a034d96424221ba946",
+    "size": 35,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "gemma3/chat_template.json",
+    "sha256": "fe16baf728db49457cde32802cd7efc0ac8a7a9877dbe22fe3322b2d9dc6ccd9",
+    "size": 1615,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "longcat_base/tokenizer/tokenizer_config.json",
+    "sha256": "1d8d2a216bf8e70ac15b7ddcea566c4dd0433c024b39a58ca5e4c66bd78defbd",
+    "size": 61758,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/scheduler/scheduler_config.json",
+    "sha256": "3bc8f1aa49f02f0ea23fe02f2c6a6a5a9c037c441a8345fd5938d0bcc61338e9",
+    "size": 201,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "gemma3/configuration.json",
+    "sha256": "7f5e4dab8f262b1731914cb110764c86dbfc0459a136de7cc3ae4ae375edc828",
+    "size": 76,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "gemma3/config.json",
+    "sha256": "72ba569f583e58bfd39e192d859bc0c0905c3d08b2d0d4e520b7f8543fc87cdc",
+    "size": 1611,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "gemma3/generation_config.json",
+    "sha256": "13da6aad6852a008419f46df754b3452fc96387a4213c25811509d474e5a4776",
+    "size": 173,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "longcat_base/tokenizer/tokenizer.json",
+    "sha256": "20a46ac256746594ed7e1e3ef733b83fbc5a6f0922aa7480eda961743de080ef",
+    "size": 16837459,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "longcat_base/text_encoder/model-00005-of-00005.safetensors",
+    "sha256": "7e76e18d224531b8197a46231cb53daf7f2f6ca707130252becf933026ac4eea",
+    "size": 2885866152,
+    "repo": "meituan-longcat/LongCat-Video",
+    "revision": "bd4c08c72d9355f6ea453cd846a34ebddd473866"
+  },
+  {
+    "target": "gemma3/model-00001-of-00005.safetensors",
+    "sha256": "e6fb899db428481aafb45a20130457df6e247e7cb03b7d9f01ee4bc2a9a08138",
+    "size": 4979902192,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "deed6032d2e7230663a8fbb839dd895c528bfe96"
+  },
+  {
+    "target": "gemma3/model-00002-of-00005.safetensors",
+    "sha256": "d251e7fe9799d529405ddb61705a44cd700bd30a8b66a8d44ae26ddf8365dbc6",
+    "size": 4931296592,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "deed6032d2e7230663a8fbb839dd895c528bfe96"
+  },
+  {
+    "target": "gemma3/model-00003-of-00005.safetensors",
+    "sha256": "0684ef801385f0669a0b3e4ab160c50877efdbfa40eb97788595985de2743e78",
+    "size": 4931296656,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "deed6032d2e7230663a8fbb839dd895c528bfe96"
+  },
+  {
+    "target": "gemma3/model-00004-of-00005.safetensors",
+    "sha256": "b4b964e6526f81ccfa625c900b72ce92d5e0fd2debb75998763038ad06b9c541",
+    "size": 4931296656,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "deed6032d2e7230663a8fbb839dd895c528bfe96"
+  },
+  {
+    "target": "gemma3/model.safetensors.index.json",
+    "sha256": "788cc42a1a92835df62d9a3791f47105f63504c7c404637a73288e9b11bc7b82",
+    "size": 108605,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "gemma3/preprocessor_config.json",
+    "sha256": "f688d6bb20c5017601c4011de7ca656da8485b540b05013efdaf986c0fcc918d",
+    "size": 570,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "gemma3/special_tokens_map.json",
+    "sha256": "2f7b0adf4fb469770bb1490e3e35df87b1dc578246c5e7e6fc76ecf33213a397",
+    "size": 662,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "gemma3/processor_config.json",
+    "sha256": "3ffd5f11778dc73e2b69b3c00535e4121e1badf7018136263cd17b5b34fbaa53",
+    "size": 70,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "gemma3/tokenizer_config.json",
+    "sha256": "31e860fdfa360fa5aa58fe93252799facde5a52d1352f77d45978ab2a7e9eeb1",
+    "size": 1157001,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  },
+  {
+    "target": "gemma3/tokenizer.model",
+    "sha256": "1299c11d7cf632ef3b4e11937501358ada021bbdf7c47638d13c0ee982f2e79c",
+    "size": 4689074,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "deed6032d2e7230663a8fbb839dd895c528bfe96"
+  },
+  {
+    "target": "gemma3/model-00005-of-00005.safetensors",
+    "sha256": "4ef2de8f93e165b4e02425769fc566000b0674256ef0c3a27b23a0d45eb12088",
+    "size": 4601000928,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "deed6032d2e7230663a8fbb839dd895c528bfe96"
+  },
+  {
+    "target": "gemma3/tokenizer.json",
+    "sha256": "7d4046bf0505a327dd5a0abbb427ecd4fc82f99c2ceaa170bc61ecde12809b0c",
+    "size": 33384570,
+    "repo": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "revision": "73d8e97b42b99a705881b8764767af1cc9d6d1fe"
+  }
+]

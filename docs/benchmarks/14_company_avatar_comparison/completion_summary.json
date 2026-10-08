@@ -1,0 +1,21 @@
+{
+  "completed_at_utc": "2026-10-07T23:47:19.876243+00:00",
+  "project_groups": 6,
+  "primary_models": 7,
+  "primary_product_clips": 21,
+  "additional_default_cache_product_clips": 3,
+  "additional_prompt_only_mouth_clips": 1,
+  "total_candidate_clips": 25,
+  "primary_media_fully_decoded": 32,
+  "diagnostic_media_fully_decoded": 7,
+  "diagnostic_primary_overlap": 3,
+  "speech_boundary_sheets": 50,
+  "same_serena_audio_verified": true,
+  "benchmark_gpu_runners_finished": true,
+  "real_time_streaming_tested": false,
+  "pages": [
+    "review.html",
+    "avatarforever_diagnostics.html"
+  ],
+  "recommendation": "Prefer preserving the LTX object actions and using LatentSync 1.6 for mouth synchronization. Full-body regeneration did not consistently complete the three product workflows in the tested configurations."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "S20_start",
+  "title": "大军团持续群战",
+  "output": "keyframes/S20_start.png",
+  "references": [
+    "inputs/board_S20.png"
+  ],
+  "prompt": "Edit the supplied film still into a single photorealistic 1970s Shaw Brothers historical Troy film frame. Preserve the identical camera, framing, fixed masonry, lighting, actor faces, armor and cloth textures. Night, practical amber torches and blue moonlight. No text, panels, collage, modern objects, blood, wounds, extra limbs or duplicate heroes. Anonymous mass army battle. Preserve the wide frame, ONE rigid wooden horse facing RIGHT center, one upward-open hatch and one ladder, open gate LEFT, fountain RIGHT. NO named heroes. Improve clear faction colors: all Greeks blue-gray cloth and bronze, all Trojans ochre tunics and rust-red short capes. In the foreground exactly TWO readable opposed fighting pairs: Greek at left versus Trojan at right in each pair, RIGHT-hand sword, LEFT-hand shield, swords raised before strike and shields braced. Behind them many different infantry visibly fight in staggered opposing pairs across middle and rear zones, with crossing swords and defensive shields; no symmetrical parade, no line facing camera. Keep camera, stonework, horse scale and illumination fixed.",
+  "seed": 2026100640
+}

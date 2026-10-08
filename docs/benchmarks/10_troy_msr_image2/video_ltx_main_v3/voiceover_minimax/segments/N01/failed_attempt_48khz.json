@@ -1,0 +1,7 @@
+{
+  "cli": "mmx 1.0.25",
+  "sample_rate": 48000,
+  "exit_code": 1,
+  "error": "API error: invalid params: sample_rate",
+  "resolution": "Use native 32000Hz, matching source film audio."
+}

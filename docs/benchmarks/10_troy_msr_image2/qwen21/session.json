@@ -1,0 +1,58 @@
+{
+  "status": "complete",
+  "model": "Qwen-Image-2.1",
+  "backend": "sglang",
+  "steps": 40,
+  "lora": null,
+  "offline": true,
+  "video_service_before": {
+    "status": "READY",
+    "task": "fl2va",
+    "paths_file": "/home/admin/sol-spark-runtime/paths.json",
+    "startup_and_warmup_s": 473.8426010608673,
+    "ready_time": "2026-10-04T02:37:16.669766",
+    "requests_served": 0,
+    "workflows": [
+      "independent",
+      "continue"
+    ],
+    "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+    "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=fl2va; modes: draft|final)"
+  },
+  "server_command": [
+    "/home/admin/qwen-image-2.1-runtime/sglang-venv/bin/sglang",
+    "serve",
+    "--model-path",
+    "/home/admin/models_cache/Qwen-Image-2.1",
+    "--model-id",
+    "Qwen-Image-2.1",
+    "--performance-mode",
+    "speed",
+    "--attention-backend",
+    "torch_sdpa",
+    "--backend",
+    "sglang",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "30010"
+  ],
+  "startup_seconds": 94.0572226359509,
+  "status_before_restore": "generation_finished",
+  "restored_server_pid": 1959720,
+  "video_service_restored": true,
+  "video_service_after": {
+    "status": "READY",
+    "task": "fl2va",
+    "paths_file": "/home/admin/sol-spark-runtime/paths.json",
+    "startup_and_warmup_s": 469.03189420700073,
+    "ready_time": "2026-10-05T10:18:31.885405",
+    "requests_served": 0,
+    "workflows": [
+      "independent",
+      "continue"
+    ],
+    "device": "NVIDIA DGX Spark GB10 (128GB Unified Memory)",
+    "model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (task=fl2va; modes: draft|final)"
+  }
+}

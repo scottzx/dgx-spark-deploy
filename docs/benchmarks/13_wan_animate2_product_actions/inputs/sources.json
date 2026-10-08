@@ -1,0 +1,53 @@
+[
+  {
+    "product": "original",
+    "label": "原味",
+    "source": "/home/admin/digital-human-runtime/outputs/product_actions_ltx/original/motion.mp4",
+    "driver": "/home/admin/wan-animate2-runtime/inputs/products/original_driver.mp4",
+    "driver_sha256": "c6ad49b924721dfb8c45908a7e534c2354baf1391217a63fbddfa99d57a9e97b",
+    "frames": 201,
+    "fps": 25,
+    "duration_seconds": 8.04,
+    "size": [
+      768,
+      512
+    ],
+    "input_kind": "generated_product_video",
+    "authorization": "User explicitly authorized using the existing generated videos because no real capture is available.",
+    "scope": "Generated motion drivers can carry their existing hand, can, and packaging errors into Wan results."
+  },
+  {
+    "product": "diet",
+    "label": "健怡",
+    "source": "/home/admin/digital-human-runtime/outputs/product_actions_ltx/diet/motion.mp4",
+    "driver": "/home/admin/wan-animate2-runtime/inputs/products/diet_driver.mp4",
+    "driver_sha256": "f4a6d6f22dfea2a4035faf804d017223764800f6bb89ad07abecd6d07d4abce7",
+    "frames": 201,
+    "fps": 25,
+    "duration_seconds": 8.04,
+    "size": [
+      768,
+      512
+    ],
+    "input_kind": "generated_product_video",
+    "authorization": "User explicitly authorized using the existing generated videos because no real capture is available.",
+    "scope": "Generated motion drivers can carry their existing hand, can, and packaging errors into Wan results."
+  },
+  {
+    "product": "zero",
+    "label": "零度",
+    "source": "/home/admin/digital-human-runtime/outputs/product_actions_ltx/zero/motion.mp4",
+    "driver": "/home/admin/wan-animate2-runtime/inputs/products/zero_driver.mp4",
+    "driver_sha256": "4c47aef657134e55bf2d41e82e5e35eea39de804c50335c44e0c7ed876441fb7",
+    "frames": 201,
+    "fps": 25,
+    "duration_seconds": 8.04,
+    "size": [
+      768,
+      512
+    ],
+    "input_kind": "generated_product_video",
+    "authorization": "User explicitly authorized using the existing generated videos because no real capture is available.",
+    "scope": "Generated motion drivers can carry their existing hand, can, and packaging errors into Wan results."
+  }
+]

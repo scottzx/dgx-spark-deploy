@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "id": "S01",
+  "title": "西农陈情",
+  "seed": 2026100501,
+  "manifest_fingerprint": "8133ab6a5e967d047df1069a205b3c738395917f0b74c98d2991d7bcabb7d4e8",
+  "method": "LTX-2.5 native + Licon MSR V2 + distilled LoRA",
+  "steps": 8,
+  "output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S01/raw.mp4",
+  "raw_sha256": "f1d3d2968e54b739e05e500ab24b58f3f20bb17c806c59fe66e03ad6be75f2e1",
+  "delivered_output": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/clips/S01/delivered.mp4",
+  "delivered_frames": 120,
+  "media": {
+    "frames": 120,
+    "width": 768,
+    "height": 432,
+    "fps": 24,
+    "duration_s": 5.0,
+    "container_duration_s": 5.0,
+    "audio_sample_rate": 32000,
+    "channels": 2,
+    "full_decode": true,
+    "sha256": "6928168b1000646b2bb9595b25d0f7f994038d39d00a6fcb81431e556fd8a6f7",
+    "bytes": 1115664
+  },
+  "generation_s": 178.46952455630526,
+  "phases_s": {
+    "reference_encode_block_s": 4.099554450716823,
+    "denoising_loop_s": 75.38649730477482,
+    "diffusion_block_s": 168.56783134117723,
+    "decode_and_encode_block_s": 5.600227262824774
+  },
+  "conditions": [
+    {
+      "slot": 1,
+      "id": "sinon",
+      "kind": "character",
+      "role": "Sinon, an unarmed persuasive Greek captive",
+      "source_file": "assets/characters/sinon_v1.png",
+      "file": "inputs/sinon.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/sinon.png",
+      "sha256": "449ebbb4ecd5489e937d83c4ea8e1ffc053921009debbcdcdf8a72a1cbcbca0e",
+      "offset": -5,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 2,
+      "id": "guard",
+      "kind": "character",
+      "role": "the Trojan guard, pointed bronze helmet, ochre armor and rust cloak",
+      "source_file": "assets/characters/trojan_guard_01_v1.png",
+      "file": "inputs/guard.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/guard.png",
+      "sha256": "6159450bf4e2003dbdf2974965758e22f86910591b8764fc66c5484f20cb20b7",
+      "offset": -4,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 3,
+      "id": "citizen",
+      "kind": "character",
+      "role": "the unarmed Trojan woman citizen",
+      "source_file": "assets/characters/trojan_citizen_01_v1.png",
+      "file": "inputs/citizen.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/citizen.png",
+      "sha256": "ff4cc759109642df55ef851dbc8b600aabc39dac5baaed322a781e932fec190a",
+      "offset": -3,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "pad full portrait"
+    },
+    {
+      "slot": 4,
+      "id": "gate",
+      "kind": "scene",
+      "role": "sandstone city-gate exterior architecture",
+      "source_file": "assets/scenes/gate_day_v1.png",
+      "file": "inputs/gate.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/gate.png",
+      "sha256": "9aaa0bf597413187c4047c67944c79f178502bcbeba7a034e4d0830bc741296a",
+      "offset": -2,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    },
+    {
+      "slot": 5,
+      "id": "board",
+      "kind": "staging",
+      "role": "this shot staging, composition, lighting and current gate/hatch/ladder state; the visible people are the same referenced actors, not additional copies",
+      "source_file": "storyboard/frames/s01_v1.png",
+      "file": "inputs/board_S01.png",
+      "remote_file": "/home/admin/sol-spark-runtime/troy_image2_msr_20261005/inputs/board_S01.png",
+      "sha256": "cd46b04cc6acc039948ad7ea6cc00dd063b43151e5ed9a0c2f4e3dabe146dda5",
+      "offset": -1,
+      "latent_shape": [
+        1,
+        128,
+        5,
+        14,
+        24
+      ],
+      "preprocessing": "fit wide reference"
+    }
+  ],
+  "prompt_sha256": "68c4b14b8b9b43e7899f2741d92743cff9295d64e197510c239e14c7e2e22ca0",
+  "prompt_cache_fingerprint": "19a943a154c0a11c062d4d9f74a16e9759a03233b5b3921176bd66805ff48358",
+  "peak_torch_allocated_bytes": 42456008192,
+  "transition": "independent",
+  "audio_reference": false,
+  "quality_status": "not_yet_manually_reviewed",
+  "native_size": [
+    768,
+    448
+  ],
+  "delivery_crop": [
+    0,
+    8,
+    768,
+    432
+  ]
+}
