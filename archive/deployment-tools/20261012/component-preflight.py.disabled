@@ -1,0 +1,27 @@
+import os,sys,json,time,argparse
+from pathlib import Path
+r=Path('/home/admin/sol-spark-runtime');p=Path('/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark')
+sys.path.insert(0,str(p))
+from runtime.pipeline import Worker,write_json
+from runtime.config import load_recipe
+parser=argparse.ArgumentParser();parser.add_argument('--stage1-start-only',action='store_true');args=parser.parse_args()
+paths=json.loads((r/'component-paths.json').read_text())
+os.environ.update(SOL_H3_SPARK_RUNTIME_ROOT=str(r),SOL_H3_SPARK_QWEN_IMAGE='sol-h3-spark-qwen',CUDA_HOME='/usr/local/cuda',CPATH=str(r/'sysroot/usr/include/python3.12')+':'+str(r/'sysroot/usr/include'))
+os.environ['PATH']='/home/admin/.local/bin:/usr/local/cuda/bin:'+os.environ['PATH']
+root=r/'preflight'/time.strftime('%Y%m%d-%H%M%S');root.mkdir(parents=True)
+print('PREFLIGHT',root,flush=True)
+config=load_recipe();stage1=qwen=None
+try:
+ stage1=Worker('stage1',root/'stage1-worker',paths,config)
+ print('STAGE1_SESSION_READY',flush=True)
+ if not args.stage1_start_only:
+  qwen=Worker('qwen',root/'qwen-worker',paths,config)
+  case={'case_id':'dance','task':'t2va','seed':42,'prompt':'A woman in a red dress performs a graceful dance on a warmly lit theater stage. Full body view, natural movement, realistic cinematic lighting. Soft instrumental music plays.'}
+  cond=qwen.call(case=case,output_root=str(root/'qwen'))
+  qwen.close();qwen=None
+  print('QWEN_CONDITIONING_READY',flush=True)
+  result=stage1.call(case=case,conditioning_path=cond['conditioning_path'],outputdir=str(root/'stage1'))
+  write_json(root/'result.json',result);print('REAL_H3_DRAFT_PASS',json.dumps(result),flush=True)
+finally:
+ if qwen:qwen.close()
+ if stage1:stage1.close()

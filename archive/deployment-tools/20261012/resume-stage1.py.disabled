@@ -1,0 +1,9 @@
+from pathlib import Path
+import time,subprocess
+pid=Path('/proc/642225/cmdline')
+while pid.exists():
+ try:
+  if b'stage2-env' not in pid.read_bytes():break
+ except FileNotFoundError:break
+ time.sleep(10)
+raise SystemExit(subprocess.call(['/home/admin/.local/bin/uv','pip','install','--python','/home/admin/sol-spark-runtime/stage1-env/bin/python','torch==2.12.0','torchvision==0.27.0','--index-url','https://mirrors.aliyun.com/pypi/simple']))

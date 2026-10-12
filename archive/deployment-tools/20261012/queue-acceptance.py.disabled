@@ -1,0 +1,22 @@
+import json,os,subprocess,time
+from pathlib import Path
+r=Path('/home/admin/sol-spark-runtime')
+p=Path('/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark')
+needed=['h3_model','vsa_lora','qwen_checkpoint','transformer','refiner_lora','output_video_vae','audio_vae','h3_upscaler_checkpoint','offline_gemma','offline_connector','adapter_dir']
+for attempt in range(360):
+ if all((r/'receipts'/(key+'.json')).is_file() for key in needed) and 'FIXED_PROMPT_CACHE_CREATED' in (r/'cache-build.log').read_text():break
+ time.sleep(30)
+else:raise RuntimeError('Final acceptance prerequisites not ready in 3 hours')
+print('All checkpoint receipts and fixed prompt cache ready',flush=True)
+if not (r/'paths.json').exists():
+ subprocess.run([str(r/'bootstrap-env/bin/python'),str(p/'prepare.py'),'--sources',str(r/'sources'),'--checkpoints',str(r/'checkpoints'),'--python-stage1',str(r/'stage1-env/bin/python'),'--python-stage2',str(r/'stage2-env/bin/python'),'--python-qwen',str(p/'qwen_python.sh'),'--prompt-cache',str(r/'fixed-prompt.pt'),'--paths',str(r/'overrides.json'),'--output',str(r/'paths.json')],check=True)
+out=r/'outputs'/('acceptance-'+time.strftime('%Y%m%d-%H%M%S'))
+(r/'active-acceptance-output.txt').write_text(str(out)+'\n')
+env=os.environ.copy();env['PATH']='/home/admin/.local/bin:/usr/local/cuda/bin:'+env['PATH']
+print('Running full warmup and three formal requests:',out,flush=True)
+subprocess.run(['bash',str(r/'run_sol_h3_spark.sh'),'--prompts',str(r/'acceptance-cases.jsonl'),'--output-dir',str(out)],check=True,env=env)
+report=json.loads((out/'results.json').read_text())
+if report.get('status')!='PASS' or len(report.get('requests',[]))!=3:raise RuntimeError('Batch acceptance contract failed')
+for row in report['requests']:
+ subprocess.run([str(r/'bootstrap-env/bin/python'),str(r/'verify_sol_h3_video.py'),row['output'],'--output-dir',str(out/'validation'/row['case_id'])],check=True,env=env)
+print('MEDIA_VALIDATED_VISUAL_REVIEW_PENDING',out,flush=True)

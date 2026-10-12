@@ -1,0 +1,157 @@
+from pathlib import Path
+import re, shutil, time
+
+path = Path("/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/pipeline.py")
+text = path.read_text()
+old = '''    def generate(self, case):
+        if self.qwen is None:
+            raise RuntimeError("Call start() before generate()")
+        if case.get("task", "t2va") != self.task:
+            raise ValueError("Use a separate pipeline for a different task")
+        request = self.root / case["case_id"]
+        request.mkdir()
+        row = {"case_id": case["case_id"], "seed": case["seed"], "task": self.task, "status": "RUNNING"}
+        self.report["requests"].append(row)
+        # This single parent clock includes fresh Qwen, scheduling, transfer and mux.
+        started = time.monotonic_ns()
+        row["request_start_monotonic_ns"] = started
+        try:
+            self.stage2.call("release_idle_cache", qwen_resident=True)
+            conditioning = self.qwen.call(case=case, output_root=str(request / "qwen"))
+            preparation = self.stage2.submit("prepare", request_id=case["case_id"],
+                                             output_root=str(request / "stage2"))
+            s1 = self.stage1.call(case=case, conditioning_path=conditioning["conditioning_path"],
+                                  outputdir=str(request / "stage1"))
+            self.qwen.call("release_idle_cache")
+            self.stage2.wait(preparation)
+            s2 = self.stage2.call(capture_dir=s1["capture_dir"], output_root=str(request / "stage2"),
+                                  request_id=case["case_id"])
+            ended = s2["final_mp4_complete_monotonic_ns"]
+            if not started < ended <= time.monotonic_ns():
+                raise RuntimeError("Inconsistent same-host endpoint clocks")
+            if not Path(s2["output"]).is_file() or Path(s2["output"]).stat().st_size == 0:
+                raise RuntimeError("Stage2 returned no completed MP4")
+            row.update(status="PASS", output=s2["output"], e2e_s=(ended - started) / 1e9,
+                       final_mp4_complete_monotonic_ns=ended,
+                       qwen_s=conditioning["request_wall_s"], stage1_s=s1["request_wall_s"],
+                       stage2_s=s2["stage2_request_s"],
+                       stage2_phases_s=s2.get("result", {}).get("phases_s", {}))
+            self.qwen.call("release_idle_cache")
+        except BaseException as error:
+            row.update(status="FAIL", error=f"{type(error).__name__}: {error}")
+            self.report["status"] = "FAIL"
+            raise
+        finally:
+            self.save()
+        return row
+'''
+
+new = '''    def generate(self, case, mode="final"):
+        """Generate a clip.
+
+        mode:
+          - "draft": Stage1 only + TAEH3 ~384x672 preview MP4 (skip LTX refine)
+          - "final": full Stage1 + Stage2 refine to 1344x768
+                     optional case["capture_dir"] skips Stage1 and refines an existing draft
+        """
+        if self.qwen is None:
+            raise RuntimeError("Call start() before generate()")
+        if case.get("task", "t2va") != self.task:
+            raise ValueError("Use a separate pipeline for a different task")
+        mode = (mode or case.get("mode") or "final").lower()
+        if mode not in {"draft", "final"}:
+            raise ValueError("mode must be draft or final")
+        request = self.root / case["case_id"]
+        request.mkdir()
+        row = {"case_id": case["case_id"], "seed": case["seed"], "task": self.task,
+               "status": "RUNNING", "mode": mode}
+        self.report["requests"].append(row)
+        started = time.monotonic_ns()
+        row["request_start_monotonic_ns"] = started
+        try:
+            capture_dir = case.get("capture_dir")
+            qwen_s = stage1_s = None
+            if mode == "final" and capture_dir:
+                # Refine-only path: reuse an existing Stage1 capture from draft review.
+                self.stage2.call("release_idle_cache", qwen_resident=True)
+                preparation = self.stage2.submit("prepare", request_id=case["case_id"],
+                                                 output_root=str(request / "stage2"))
+                self.stage2.wait(preparation)
+                s2 = self.stage2.call(capture_dir=str(capture_dir), output_root=str(request / "stage2"),
+                                      request_id=case["case_id"])
+                ended = s2["final_mp4_complete_monotonic_ns"]
+                if not started < ended <= time.monotonic_ns():
+                    raise RuntimeError("Inconsistent same-host endpoint clocks")
+                if not Path(s2["output"]).is_file() or Path(s2["output"]).stat().st_size == 0:
+                    raise RuntimeError("Stage2 returned no completed MP4")
+                row.update(status="PASS", output=s2["output"], e2e_s=(ended - started) / 1e9,
+                           final_mp4_complete_monotonic_ns=ended,
+                           capture_dir=str(capture_dir),
+                           stage2_s=s2["stage2_request_s"],
+                           stage2_phases_s=s2.get("result", {}).get("phases_s", {}))
+                self.qwen.call("release_idle_cache")
+                return row
+
+            self.stage2.call("release_idle_cache", qwen_resident=True)
+            conditioning = self.qwen.call(case=case, output_root=str(request / "qwen"))
+            qwen_s = conditioning["request_wall_s"]
+            preparation = None
+            if mode == "final":
+                preparation = self.stage2.submit("prepare", request_id=case["case_id"],
+                                                 output_root=str(request / "stage2"))
+            s1 = self.stage1.call(case=case, conditioning_path=conditioning["conditioning_path"],
+                                  outputdir=str(request / "stage1"))
+            stage1_s = s1["request_wall_s"]
+            self.qwen.call("release_idle_cache")
+
+            if mode == "draft":
+                draft_mp4 = request / "draft" / "draft_384p.mp4"
+                draft_mp4.parent.mkdir(parents=True, exist_ok=True)
+                # Prefer stage1-env (has torch + fastvideo deps). Fall back to bootstrap.
+                py = Path(self.paths.get("stage1_python", "/home/admin/sol-spark-runtime/stage1-env/bin/python"))
+                if not py.is_file():
+                    py = Path("/home/admin/sol-spark-runtime/bootstrap-env/bin/python")
+                import subprocess as _sp
+                preview = _sp.run(
+                    [str(py), "/home/admin/sol-spark-runtime/draft_preview.py",
+                     "--capture-dir", s1["capture_dir"],
+                     "--output", str(draft_mp4),
+                     "--device", "cpu"],
+                    check=True, capture_output=True, text=True)
+                ended = time.monotonic_ns()
+                row.update(status="PASS", output=str(draft_mp4), e2e_s=(ended - started) / 1e9,
+                           final_mp4_complete_monotonic_ns=ended,
+                           capture_dir=s1["capture_dir"],
+                           qwen_s=qwen_s, stage1_s=stage1_s, stage2_s=0.0,
+                           draft_preview=preview.stdout.strip())
+                self.qwen.call("release_idle_cache")
+                return row
+
+            self.stage2.wait(preparation)
+            s2 = self.stage2.call(capture_dir=s1["capture_dir"], output_root=str(request / "stage2"),
+                                  request_id=case["case_id"])
+            ended = s2["final_mp4_complete_monotonic_ns"]
+            if not started < ended <= time.monotonic_ns():
+                raise RuntimeError("Inconsistent same-host endpoint clocks")
+            if not Path(s2["output"]).is_file() or Path(s2["output"]).stat().st_size == 0:
+                raise RuntimeError("Stage2 returned no completed MP4")
+            row.update(status="PASS", output=s2["output"], e2e_s=(ended - started) / 1e9,
+                       final_mp4_complete_monotonic_ns=ended,
+                       capture_dir=s1["capture_dir"],
+                       qwen_s=qwen_s, stage1_s=stage1_s,
+                       stage2_s=s2["stage2_request_s"],
+                       stage2_phases_s=s2.get("result", {}).get("phases_s", {}))
+            self.qwen.call("release_idle_cache")
+        except BaseException as error:
+            row.update(status="FAIL", error=f"{type(error).__name__}: {error}")
+            self.report["status"] = "FAIL"
+            raise
+        finally:
+            self.save()
+        return row
+'''
+
+if old not in text:
+    raise SystemExit("generate() block not found exactly — abort")
+path.write_text(text.replace(old, new, 1))
+print("pipeline.py patched OK")

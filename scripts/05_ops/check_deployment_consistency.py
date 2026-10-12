@@ -12,6 +12,7 @@ import hashlib
 import json
 import os
 from pathlib import Path, PurePosixPath
+import re
 import shlex
 import stat
 import subprocess
@@ -109,6 +110,31 @@ def read_manifest(path):
         entry["path"] = relative_path(entry.get("path"), "excluded_remote_files.path")
         if not isinstance(entry.get("reason"), str) or not entry["reason"].strip():
             raise ValueError("each excluded_remote_files entry needs a reason")
+    archives = manifest.get("archived_remote_files", [])
+    if not isinstance(archives, list):
+        raise ValueError("manifest archived_remote_files must be a list")
+    originals, destinations = set(), set()
+    runtime_targets = {entry["target"] for entry in manifest.get("runtime_copies", [])}
+    for entry in archives:
+        for key in ("original_path", "archive_path"):
+            entry[key] = relative_path(entry.get(key), f"archived_remote_files.{key}")
+        if "source" in entry:
+            entry["source"] = relative_path(entry["source"], "archived_remote_files.source")
+        digest = entry.get("sha256")
+        if not isinstance(digest, str) or re.fullmatch(r"[0-9a-fA-F]{64}", digest) is None:
+            raise ValueError("each archived_remote_files sha256 must contain 64 hexadecimal digits")
+        entry["sha256"] = digest.lower()
+        if not isinstance(entry.get("reason"), str) or not entry["reason"].strip():
+            raise ValueError("each archived_remote_files entry needs a reason")
+        original, destination = entry["original_path"], entry["archive_path"]
+        if original in originals or destination in destinations:
+            raise ValueError("archived_remote_files paths must be unique")
+        originals.add(original)
+        destinations.add(destination)
+    if originals & destinations:
+        raise ValueError("archived original_path and archive_path must not overlap")
+    if runtime_targets & (originals | destinations):
+        raise ValueError("runtime_copies targets and archived_remote_files paths must not overlap")
     return manifest
 
 
@@ -127,17 +153,27 @@ def git(*args):
     return result.stdout
 def paths(data):
     return [os.fsdecode(x) for x in data.split(b"\0") if x]
-def snapshot(path):
+def snapshot(path, raw_executable=False):
     try:
         mode = path.lstat().st_mode
         if stat.S_ISLNK(mode):
-            data, kind, executable = os.fsencode(os.readlink(path)), "symlink", False
+            data, kind = os.fsencode(os.readlink(path)), "symlink"
+            executable = bool(mode & 0o111) if raw_executable else False
         elif stat.S_ISREG(mode):
             data, kind, executable = path.read_bytes(), "file", bool(mode & 0o111)
         else:
             return {"status": "error", "error": "not a regular file or symlink"}
         return {"status": "ok", "sha256": hashlib.sha256(data).hexdigest(),
                 "executable": executable, "kind": kind}
+    except FileNotFoundError:
+        return {"status": "missing"}
+    except OSError as error:
+        return {"status": "error", "error": str(error)}
+def presence(path):
+    # lstat detects dangling symlinks too; no original file contents are read.
+    try:
+        path.lstat()
+        return {"status": "present"}
     except FileNotFoundError:
         return {"status": "missing"}
     except OSError as error:
@@ -151,15 +187,19 @@ result = {
     "tracked_paths": tracked, "dirty_porcelain": dirty,
     "files": {path: snapshot(repo / path) for path in requested},
     "runtime_files": {path: snapshot(home / path) for path in payload["runtime_paths"]},
+    "archive_originals": {path: presence(home / path) for path in payload["archive_original_paths"]},
+    "archive_files": {path: snapshot(home / path, raw_executable=True) for path in payload["archive_paths"]},
 }
 print(json.dumps(result, ensure_ascii=True))
 '''
 
 
-def collect_remote(args, paths, runtime_paths):
+def collect_remote(args, paths, runtime_paths, archives=()):
     payload = json.dumps({
         "repo": args.remote_repo, "home": args.remote_home,
         "paths": sorted(paths), "runtime_paths": sorted(set(runtime_paths)),
+        "archive_original_paths": sorted({entry["original_path"] for entry in archives}),
+        "archive_paths": sorted({entry["archive_path"] for entry in archives}),
     }, ensure_ascii=True)
     script = REMOTE_COLLECTOR.replace("__PAYLOAD_JSON__", repr(payload))
     output = run([
@@ -184,6 +224,60 @@ def compare(checks, category, source, target, expected, actual, *, check_mode=Tr
         if different:
             entry["detail"] = "different " + ", ".join(different)
     checks.append(entry)
+
+
+def check_archive(checks, args, entry, remote, repo):
+    original = entry["original_path"]
+    destination = entry["archive_path"]
+    unavailable = {"status": "error", "error": "remote collection unavailable"}
+    original_state = remote["archive_originals"].get(original, unavailable) if remote else unavailable
+    archive_state = remote["archive_files"].get(destination, unavailable) if remote else unavailable
+    problems = []
+    if original_state.get("status") != "missing":
+        problems.append("original path still exists" if original_state.get("status") == "present"
+                        else "cannot verify original path absence")
+    expected = {"sha256": entry["sha256"], "kind": "file", "executable": False}
+    if archive_state.get("status") != "ok":
+        problems.append("archive is missing" if archive_state.get("status") == "missing"
+                        else "archive is unavailable")
+    else:
+        changed = [field for field, value in expected.items() if archive_state.get(field) != value]
+        if changed:
+            problems.append("archive different " + ", ".join(changed))
+    local_source = fingerprint(repo / entry["source"]) if "source" in entry else None
+    if local_source is not None:
+        if local_source.get("status") != "ok":
+            problems.append("local archive source is missing" if local_source.get("status") == "missing"
+                            else "local archive source is unavailable")
+        else:
+            changed = [field for field, value in expected.items() if local_source.get(field) != value]
+            if changed:
+                problems.append("local archive source different " + ", ".join(changed))
+    states = [original_state.get("status"), archive_state.get("status")]
+    if local_source is not None:
+        states.append(local_source.get("status"))
+    if not problems:
+        status = "ok"
+    elif "error" in states:
+        status = "error"
+    elif archive_state.get("status") == "missing" or (local_source is not None and local_source.get("status") == "missing"):
+        status = "missing"
+    else:
+        status = "mismatch"
+    check = {
+        "category": "remote_archive",
+        "source": f"{args.host}:{PurePosixPath(args.remote_home) / original}",
+        "target": f"{args.host}:{PurePosixPath(args.remote_home) / destination}",
+        "status": status, "reason": entry["reason"],
+        "expected": {"original_status": "missing", **expected},
+        "actual": {"original": original_state, "archive": archive_state},
+    }
+    if local_source is not None:
+        check["archive_source"] = str(repo / entry["source"])
+        check["actual"]["local_source"] = local_source
+    if problems:
+        check["detail"] = "; ".join(problems)
+    checks.append(check)
 
 
 def check_deployment(args):
@@ -222,7 +316,9 @@ def check_deployment(args):
                            "status": "error", "detail": str(error)})
 
     manifest_sources = sorted({entry["source"] for group in ("runtime_copies", "local_copies")
-                               for entry in manifest.get(group, [])})
+                               for entry in manifest.get(group, [])} |
+                              {entry["source"] for entry in manifest.get("archived_remote_files", [])
+                               if "source" in entry})
     audit_paths = [*SCOPES, *manifest_sources]
     local_paths = set(split_paths(git(repo, "ls-files", "-z", "--", *audit_paths)))
     origin_files = {}
@@ -258,7 +354,8 @@ def check_deployment(args):
 
     remote = None
     try:
-        remote = collect_remote(args, all_paths, [entry["target"] for entry in manifest.get("runtime_copies", [])])
+        remote = collect_remote(args, all_paths, [entry["target"] for entry in manifest.get("runtime_copies", [])],
+                                manifest.get("archived_remote_files", []))
         refs["remote_head"] = remote["head"]
         reference("local HEAD", f"{args.host}:{args.remote_repo} HEAD", head, remote["head"])
         remote_paths = set(remote["tracked_paths"])
@@ -294,15 +391,24 @@ def check_deployment(args):
         checks.append({"category": "remote_exclusion", "source": str(manifest_path),
                        "target": f"{args.host}:{PurePosixPath(args.remote_home) / entry['path']}",
                        "status": "excluded", "detail": entry["reason"]})
+    for entry in manifest.get("archived_remote_files", []):
+        check_archive(checks, args, entry, remote, repo)
 
     counts = dict(Counter(entry["status"] for entry in checks))
     failures = [entry for entry in checks if entry["status"] not in {"ok", "skipped", "excluded"}]
+    archival_checks = [entry for entry in checks if entry["category"] == "remote_archive"]
+    archival_ok = sum(entry["status"] == "ok" for entry in archival_checks)
     return {
         "schema_version": 1, "generated_at": datetime.now(timezone.utc).isoformat(),
         "ok": not failures, "failure_count": len(failures),
         "repo": str(repo), "host": args.host, "manifest": str(manifest_path),
         "refs": refs, "counts": counts, "local_dirty_paths": local_dirty,
         "remote_dirty_paths": remote_dirty, "checks": checks,
+        "archival_summary": {
+            "total": len(archival_checks), "ok": archival_ok,
+            "failed": len(archival_checks) - archival_ok,
+            "counts": dict(Counter(entry["status"] for entry in archival_checks)),
+        },
     }
 
 
@@ -334,6 +440,9 @@ def main(argv=None):
         args.output.write_text(json.dumps(report, ensure_ascii=True, indent=2) + "\n", encoding="utf-8")
     counts = ", ".join(f"{status}={count}" for status, count in sorted(report["counts"].items()))
     print(f"Deployment consistency: {'PASS' if report['ok'] else 'FAIL'} ({counts})")
+    archival = report.get("archival_summary", {})
+    if archival.get("total"):
+        print(f"Archived remote files: total={archival['total']}, ok={archival['ok']}, failed={archival['failed']}")
     for entry in report["checks"]:
         if entry["status"] not in {"ok", "skipped", "excluded"}:
             print(f"[{entry['status']}] {entry['source']} -> {entry['target']}: "

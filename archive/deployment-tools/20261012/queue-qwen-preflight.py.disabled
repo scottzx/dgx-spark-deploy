@@ -1,0 +1,9 @@
+import subprocess,time
+from pathlib import Path
+r=Path('/home/admin/sol-spark-runtime')
+for i in range(240):
+ if subprocess.run(['docker','image','inspect','sol-h3-spark-qwen'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0:break
+ time.sleep(30)
+else:raise RuntimeError('Qwen image did not become ready in 2 hours')
+subprocess.run([str(r/'bootstrap-env/bin/python'),str(r/'preflight_sol_h3_component.py'),'qwen','--output-dir',str(r/'qwen-preflight-1')],check=True)
+print('QWEN_PREFLIGHT_PASS',flush=True)

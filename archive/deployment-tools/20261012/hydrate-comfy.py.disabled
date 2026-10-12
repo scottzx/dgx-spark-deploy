@@ -1,0 +1,21 @@
+import concurrent.futures,hashlib,json,subprocess,time,urllib.request,urllib.parse
+from pathlib import Path
+root=Path('/home/admin/sol-spark-runtime'); repo=root/'sources/ComfyUI'
+rev='b1693ecba9f5b65f8c80ab36b195ab963ec92413'
+items=json.loads((root/'ComfyUI-missing.json').read_text())
+def get(item):
+ for attempt in range(4):
+  try:
+   opener=urllib.request.build_opener(urllib.request.ProxyHandler({'https':'http://127.0.0.1:17890'}))
+   url='https://raw.githubusercontent.com/Comfy-Org/ComfyUI/'+rev+'/'+urllib.parse.quote(item['path'],safe='/')
+   with opener.open(url,timeout=25) as r:data=r.read()
+   digest=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
+   if digest!=item['sha']:raise ValueError('Git blob hash mismatch')
+   result=subprocess.check_output(['git','-C',str(repo),'hash-object','-w','--stdin'],input=data).decode().strip()
+   if result!=digest:raise ValueError('Stored object hash mismatch')
+   return item['path']
+  except Exception as e:
+   if attempt==3:return 'FAILED '+item['path']+' '+str(e)
+   time.sleep(2)
+with concurrent.futures.ThreadPoolExecutor(6) as pool:
+ for future in concurrent.futures.as_completed([pool.submit(get,x) for x in items]):print(future.result(),flush=True)

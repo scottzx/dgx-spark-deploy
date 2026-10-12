@@ -1,0 +1,148 @@
+from pathlib import Path
+
+path = Path("/home/admin/sol-spark-runtime/sol_api_server.py")
+text = path.read_text()
+
+if "from typing import List, Optional" in text and "Literal" not in text:
+    text = text.replace(
+        "from typing import List, Optional",
+        "from typing import List, Literal, Optional",
+    )
+
+old_gen = (
+    "class GenerateRequest(BaseModel):\n"
+    '    prompt: str = Field(..., description="MiniMax-H3 prompt, including overall_soundscape and non_diegetic_music")\n'
+    '    first_frame: Optional[str] = Field(None, description="Absolute path or filename under inputs/ for FL2VA conditioning")\n'
+    '    seed: int = Field(42, description="Random seed")\n'
+    '    case_id: Optional[str] = Field(None, description="Custom ID for output directory naming")\n'
+)
+
+new_gen = (
+    "class GenerateRequest(BaseModel):\n"
+    '    prompt: str = Field(..., description="MiniMax-H3 prompt, including overall_soundscape and non_diegetic_music")\n'
+    '    first_frame: Optional[str] = Field(None, description="Absolute path or filename under inputs/ for FL2VA conditioning")\n'
+    '    seed: int = Field(42, description="Random seed")\n'
+    '    case_id: Optional[str] = Field(None, description="Custom ID for output directory naming")\n'
+    '    mode: Literal["draft", "final"] = Field(\n'
+    '        "final",\n'
+    '        description="draft=Stage1+TAEH3 ~384p preview; final=full 768p. capture_dir+final refines draft.",\n'
+    "    )\n"
+    "    capture_dir: Optional[str] = Field(\n"
+    "        None,\n"
+    '        description="Existing Stage1 capture directory from a draft run; only with mode=final",\n'
+    "    )\n"
+)
+
+if old_gen not in text:
+    raise SystemExit("GenerateRequest block not found")
+text = text.replace(old_gen, new_gen, 1)
+
+old_story = (
+    "class StoryRequest(BaseModel):\n"
+    '    story_id: str = Field("cow_story", description="Identifier for the story series")\n'
+    '    initial_frame: str = Field(..., description="Initial 16:9 canvas image path for Shot 1")\n'
+    '    shots: List[ShotItem] = Field(..., description="List of consecutive shots to chain together")\n'
+)
+
+new_story = (
+    "class StoryRequest(BaseModel):\n"
+    '    story_id: str = Field("cow_story", description="Identifier for the story series")\n'
+    '    initial_frame: str = Field(..., description="Initial 16:9 canvas image path for Shot 1")\n'
+    '    shots: List[ShotItem] = Field(..., description="List of consecutive shots to chain together")\n'
+    '    mode: Literal["draft", "final"] = Field(\n'
+    '        "final",\n'
+    '        description="draft or final for every shot in this story request",\n'
+    "    )\n"
+)
+
+if old_story not in text:
+    raise SystemExit("StoryRequest block not found")
+text = text.replace(old_story, new_story, 1)
+
+text = text.replace(
+    '"model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (Single-GPU 65s Latency)"',
+    '"model": "MiniMax-H3 W8A8 DiT + LTX-2.5 22B Refiner (modes: draft|final)"',
+)
+
+old_call = "        res = pipeline_instance.generate(norm_case)\n"
+new_call = '        res = pipeline_instance.generate(norm_case, mode=getattr(req, "mode", "final"))\n'
+count = text.count(old_call)
+if count < 1:
+    raise SystemExit("generate() call sites not found")
+text = text.replace(old_call, new_call)
+
+# Only enrich the first raw_case in generate_single_video
+marker = '            "prompt": req.prompt\n        }'
+if marker not in text:
+    raise SystemExit("raw_case marker not found")
+text = text.replace(
+    marker,
+    '            "prompt": req.prompt,\n'
+    '            "mode": req.mode,\n'
+    '            "capture_dir": req.capture_dir,\n'
+    "        }",
+    1,
+)
+
+norm_marker = "        norm_case = normalize_case(raw_case, base_dir=runtime)\n"
+# Only replace the first occurrence inside generate_single_video
+idx = text.find("async def generate_single_video")
+idx2 = text.find("async def generate_chained_story")
+chunk = text[idx:idx2]
+if norm_marker not in chunk:
+    raise SystemExit("normalize_case marker not found in generate_single_video")
+chunk2 = chunk.replace(
+    norm_marker,
+    '        if getattr(req, "mode", "final") == "final" and getattr(req, "capture_dir", None):\n'
+    "            cap = Path(req.capture_dir)\n"
+    "            if not cap.is_dir():\n"
+    '                raise HTTPException(status_code=400, detail=f"capture_dir not found: {req.capture_dir}")\n'
+    "            raw_case = {\n"
+    '                "case_id": cid,\n'
+    '                "task": pipeline_instance.task,\n'
+    '                "seed": req.seed,\n'
+    '                "prompt": req.prompt or "refine_only",\n'
+    '                "capture_dir": str(cap.resolve()),\n'
+    '                "mode": "final",\n'
+    "            }\n"
+    "            norm_case = raw_case\n"
+    "        else:\n"
+    "            norm_case = normalize_case(raw_case, base_dir=runtime)\n"
+    '            norm_case["mode"] = req.mode\n',
+    1,
+)
+text = text[:idx] + chunk2 + text[idx2:]
+
+old_ret = (
+    "        return {\n"
+    '            "status": "PASS",\n'
+    '            "case_id": cid,\n'
+    '            "e2e_s": round(elapsed, 2),\n'
+    '            "reported_e2e_s": round(res.get("e2e_s", 0), 2),\n'
+    '            "video_path": str(vid_path),\n'
+    '            "video_url": f"/outputs/{rel_path}",\n'
+    '            "contact_sheet_url": f"/outputs/{cs_file.relative_to(runtime / \'outputs\')}"\n'
+    "        }"
+)
+new_ret = (
+    "        return {\n"
+    '            "status": "PASS",\n'
+    '            "case_id": cid,\n'
+    '            "mode": getattr(req, "mode", "final"),\n'
+    '            "e2e_s": round(elapsed, 2),\n'
+    '            "reported_e2e_s": round(res.get("e2e_s", 0), 2),\n'
+    '            "qwen_s": res.get("qwen_s"),\n'
+    '            "stage1_s": res.get("stage1_s"),\n'
+    '            "stage2_s": res.get("stage2_s"),\n'
+    '            "capture_dir": res.get("capture_dir"),\n'
+    '            "video_path": str(vid_path),\n'
+    '            "video_url": f"/outputs/{rel_path}",\n'
+    '            "contact_sheet_url": f"/outputs/{cs_file.relative_to(runtime / \'outputs\')}"\n'
+    "        }"
+)
+if old_ret not in text:
+    raise SystemExit("return payload not found")
+text = text.replace(old_ret, new_ret, 1)
+
+path.write_text(text)
+print("sol_api_server.py patched OK")

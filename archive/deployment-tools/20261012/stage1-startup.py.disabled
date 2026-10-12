@@ -1,0 +1,11 @@
+import sys,json,os
+from pathlib import Path
+r=Path('/home/admin/sol-spark-runtime');p=Path('/home/admin/sol-h3-spark/models/minimax_h3/Sol-H3-Spark')
+sys.path.insert(0,str(p))
+from runtime.pipeline import Worker
+from runtime.config import load_recipe
+os.environ['CPATH']=str(r/'sysroot/usr/include/python3.12')+':'+str(r/'sysroot/usr/include')
+paths=json.loads((r/'component-paths.json').read_text())
+w=Worker('stage1',r/'stage1-startup-preflight',paths,load_recipe())
+try:print('STAGE1_LAZY_STARTUP_PASS',flush=True)
+finally:w.close()

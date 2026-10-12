@@ -1,0 +1,22 @@
+from pathlib import Path
+import subprocess,os,signal,time
+r=Path('/home/admin/sol-spark-runtime');pid=642540
+cmd=Path(f'/proc/{pid}/cmdline')
+if not cmd.exists() or 'prepare_assets.py' not in cmd.read_text():raise RuntimeError('Expected downloader not running; no changes')
+children=subprocess.run(['pgrep','-P',str(pid)],capture_output=True,text=True).stdout.split()
+owned=[int(p) for p in children if 'aria2c' in Path(f'/proc/{p}/cmdline').read_text()]
+if len(owned)!=3:raise RuntimeError('Unexpected worker count; no changes')
+print('Pausing ModelScope for at most 300 seconds',time.strftime('%F %T'),flush=True)
+os.kill(pid,signal.SIGTERM)
+for child in owned:
+ try:os.kill(child,signal.SIGTERM)
+ except ProcessLookupError:pass
+try:
+ for i in range(60):
+  if subprocess.run(['docker','image','inspect','nvcr.io/nvidia/pytorch:25.11-py3@sha256:417cbf33f87b5378849df37983552cd1f8bc8b62fe1ceabe004de816a55dff21'],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0:break
+  time.sleep(5)
+finally:
+ for child in owned:
+  if Path(f'/proc/{child}').exists():raise RuntimeError('Downloader child still present; refusing overlapping resume')
+ p=subprocess.Popen([str(r/'bootstrap-env/bin/python'),str(r/'prepare_assets.py'),'modelscope'],stdin=subprocess.DEVNULL,stdout=(r/'weights-modelscope.log').open('a'),stderr=subprocess.STDOUT,start_new_session=True)
+ print('ModelScope resumed',p.pid,time.strftime('%F %T'),flush=True)

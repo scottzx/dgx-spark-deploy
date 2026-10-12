@@ -205,6 +205,10 @@
       "target": "sol-spark-runtime/fa4-installable.txt"
     },
     {
+      "source": "scripts/01_env_setup/sol_spark_runtime/fetch-cutlass.py",
+      "target": "sol-spark-runtime/fetch-cutlass.py"
+    },
+    {
       "source": "scripts/04_test_benchmark/generate_troy_boards.py",
       "target": "sol-spark-runtime/generate_troy_boards.py"
     },
@@ -229,6 +233,10 @@
       "target": "sol-spark-runtime/prepare_assets.py"
     },
     {
+      "source": "scripts/01_env_setup/sol_spark_runtime/queue-cache.py",
+      "target": "sol-spark-runtime/queue-cache.py"
+    },
+    {
       "source": "scripts/04_test_benchmark/refine_identity_capture.py",
       "target": "sol-spark-runtime/refine_identity_capture.py"
     },
@@ -237,8 +245,16 @@
       "target": "sol-spark-runtime/refine_identity_workflows.py"
     },
     {
+      "source": "scripts/01_env_setup/sol_spark_runtime/retry-qwen-pull.py",
+      "target": "sol-spark-runtime/retry-qwen-pull.py"
+    },
+    {
       "source": "scripts/04_test_benchmark/run_chained_cow_story.py",
       "target": "sol-spark-runtime/run_chained_cow_story.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_chained_cow_story.sh",
+      "target": "sol-spark-runtime/run_chained_cow_story.sh"
     },
     {
       "source": "scripts/04_test_benchmark/run_identity_queue.py",
@@ -297,8 +313,16 @@
       "target": "sol-spark-runtime/start_sol_server_ref2va.sh"
     },
     {
+      "source": "scripts/01_env_setup/sol_spark_runtime/status.py",
+      "target": "sol-spark-runtime/status.py"
+    },
+    {
       "source": "scripts/01_env_setup/sol_spark_runtime/stop_sol_server.sh",
       "target": "sol-spark-runtime/stop_sol_server.sh"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/test-fa4.py",
+      "target": "sol-spark-runtime/test-fa4.py"
     },
     {
       "source": "scripts/04_test_benchmark/test_sol_h3_story_api.py",
@@ -363,78 +387,115 @@
       "target": ".agents/skills/llm-session-cache-optimization/scripts/stress_test_fifo.py"
     }
   ],
-  "excluded_remote_files": [
+  "excluded_remote_files": [],
+  "archived_remote_files": [
     {
-      "path": "sol-spark-runtime/component-preflight.py",
-      "reason": "早期组件预检接口；当前受管入口为 preflight_sol_h3_component.py，保留旧 CLI 避免破坏历史调用。"
+      "original_path": "sol-spark-runtime/component-preflight.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/component-preflight.py.disabled",
+      "source": "archive/deployment-tools/20261012/component-preflight.py.disabled",
+      "sha256": "dbcf8b3797fed8db7e98e1a60fbbcaee9dcad37adb8bc25729d90a110df1b6d1",
+      "reason": "旧固定舞蹈预检且无推理锁；受管 preflight_sol_h3_component.py 已提供组件预检和互斥。",
+      "original_mode": "0o664",
+      "last_modified_utc": "2026-09-12T16:35:05.054636+00:00"
     },
     {
-      "path": "sol-spark-runtime/fetch-cutlass.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/finish_identity_queue.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/finish_identity_queue.py.disabled",
+      "source": "archive/deployment-tools/20261012/finish_identity_queue.py.disabled",
+      "sha256": "2063c41b298450e05e5fe938656c47a0a2195a6027a59f60d103c7b6f70c001d",
+      "reason": "固定 identity_tests_20261003 与两个历史 PID，结束时自动恢复旧视频服务；无当前调用。",
+      "original_mode": "0o644",
+      "last_modified_utc": "2026-10-03T16:28:52.599499+00:00"
     },
     {
-      "path": "sol-spark-runtime/finish_identity_queue.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/hydrate-comfy.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/hydrate-comfy.py.disabled",
+      "source": "archive/deployment-tools/20261012/hydrate-comfy.py.disabled",
+      "sha256": "d7ad6fed1f6631c75db3a4abf8efcd747752f3e9cd3eec9458aa770550896e39",
+      "reason": "一次性补齐固定提交的缺失 Git 对象；源码已完整，当前无此恢复任务。",
+      "original_mode": "0o664",
+      "last_modified_utc": "2026-09-12T15:56:12.445681+00:00"
     },
     {
-      "path": "sol-spark-runtime/hydrate-comfy.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/login-hf.sh",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/login-hf.sh.disabled",
+      "source": "archive/deployment-tools/20261012/login-hf.sh.disabled",
+      "sha256": "f471026f35e78d7fc9575fd98ea918cd766428580f8b5c840f2d62821b0b19ac",
+      "reason": "仅交互登录，无明文凭证；当前部署使用 ModelScope，旧固定代理登录包装无当前调用。",
+      "original_mode": "0o700",
+      "last_modified_utc": "2026-09-12T14:46:02.380821+00:00"
     },
     {
-      "path": "sol-spark-runtime/login-hf.sh",
-      "reason": "历史登录辅助脚本；未执行，不上传可能含账户配置的文件。"
+      "original_path": "sol-spark-runtime/patch_api_server.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/patch_api_server.py.disabled",
+      "source": "archive/deployment-tools/20261012/patch_api_server.py.disabled",
+      "sha256": "eb182d5acf76ad27af710580f2b3e0919c7e1679af33bd88add3d6a5e9e47e3b",
+      "reason": "旧字符串替换补丁已体现在受管 sol_api_server.py，旧匹配块已不存在。",
+      "original_mode": "0o644",
+      "last_modified_utc": "2026-09-15T06:28:20.631138+00:00"
     },
     {
-      "path": "sol-spark-runtime/patch_api_server.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/patch_pipeline.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/patch_pipeline.py.disabled",
+      "source": "archive/deployment-tools/20261012/patch_pipeline.py.disabled",
+      "sha256": "ce77a3626744c9d8ecc48bad9a0295c083f24227b25fecd799a05afdf56ccd50",
+      "reason": "旧 generate 字符串补丁已体现在受管 workflow overlay，旧匹配块已不存在。",
+      "original_mode": "0o644",
+      "last_modified_utc": "2026-09-15T06:28:18.059141+00:00"
     },
     {
-      "path": "sol-spark-runtime/patch_pipeline.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/prioritize-qwen.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/prioritize-qwen.py.disabled",
+      "source": "archive/deployment-tools/20261012/prioritize-qwen.py.disabled",
+      "sha256": "ea9959553910b198c57128122b4bc7b5de68d4a400abeb2f9242ad8ecf65a7d1",
+      "reason": "固定历史下载 PID 与三个子进程，含终止和恢复旧下载批次操作，当前批次已结束。",
+      "original_mode": "0o664",
+      "last_modified_utc": "2026-09-12T17:11:13.421255+00:00"
     },
     {
-      "path": "sol-spark-runtime/prioritize-qwen.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/queue-acceptance.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/queue-acceptance.py.disabled",
+      "source": "archive/deployment-tools/20261012/queue-acceptance.py.disabled",
+      "sha256": "432718bef6bccfe64f27582147a66cec98483d02691026ec1bd99018f89eb613",
+      "reason": "2026-09-13 固定三用例验收已完成；依赖旧清单和日志，现用受管 CLI 与媒体验证器。",
+      "original_mode": "0o664",
+      "last_modified_utc": "2026-09-12T18:04:11.795585+00:00"
     },
     {
-      "path": "sol-spark-runtime/queue-acceptance.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/queue-qwen-preflight.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/queue-qwen-preflight.py.disabled",
+      "source": "archive/deployment-tools/20261012/queue-qwen-preflight.py.disabled",
+      "sha256": "39d0b111472bb2811f0d29115d81b6da26b85d6d2248f207f7e77ad9f6bb8be3",
+      "reason": "固定 qwen-preflight-1 输出已完成；受管组件预检可直接替代。",
+      "original_mode": "0o664",
+      "last_modified_utc": "2026-09-12T16:42:41.902866+00:00"
     },
     {
-      "path": "sol-spark-runtime/queue-cache.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/resume-stage1.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/resume-stage1.py.disabled",
+      "source": "archive/deployment-tools/20261012/resume-stage1.py.disabled",
+      "sha256": "86fd9c31e43bf152282b3c6bff8efc748d0317250192425124e62bab3d860d85",
+      "reason": "等待固定历史 /proc PID 后补装 Torch/Torchvision；当前安装已完成并有受管安装脚本。",
+      "original_mode": "0o664",
+      "last_modified_utc": "2026-09-12T15:35:34.944057+00:00"
     },
     {
-      "path": "sol-spark-runtime/queue-qwen-preflight.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/stage1-startup.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/stage1-startup.py.disabled",
+      "source": "archive/deployment-tools/20261012/stage1-startup.py.disabled",
+      "sha256": "a6c53dff439115f3a7a914677a6b088ec31f0d6277fc98aee87f5deae1330d95",
+      "reason": "旧无互斥锁的固定目录 Worker 初始化测试；现用受管 Stage1 组件预检。",
+      "original_mode": "0o664",
+      "last_modified_utc": "2026-09-12T16:36:51.790897+00:00"
     },
     {
-      "path": "sol-spark-runtime/resume-stage1.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
-    },
-    {
-      "path": "sol-spark-runtime/retry-qwen-pull.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
-    },
-    {
-      "path": "sol-spark-runtime/run_chained_cow_story.sh",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
-    },
-    {
-      "path": "sol-spark-runtime/stage1-startup.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
-    },
-    {
-      "path": "sol-spark-runtime/status.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
-    },
-    {
-      "path": "sol-spark-runtime/test-fa4.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
-    },
-    {
-      "path": "sol-spark-runtime/trigger_cow_story.py",
-      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+      "original_path": "sol-spark-runtime/trigger_cow_story.py",
+      "archive_path": "sol-spark-runtime/archive/legacy-tools-20261012/trigger_cow_story.py.disabled",
+      "source": "archive/deployment-tools/20261012/trigger_cow_story.py.disabled",
+      "sha256": "05799e1015638016b6748e5f8f21754d216d7d0222ffaa9ff9a3812595285b71",
+      "reason": "固定黄牛四镜头素材并自动向当前 :8090 提交任务；旧特定用例，当前无调用。",
+      "original_mode": "0o775",
+      "last_modified_utc": "2026-09-13T05:27:16.162855+00:00"
     }
   ]
 }

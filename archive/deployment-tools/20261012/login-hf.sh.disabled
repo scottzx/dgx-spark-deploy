@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+export HTTPS_PROXY=http://127.0.0.1:17890
+export HTTP_PROXY=http://127.0.0.1:17890
+exec /home/admin/.local/bin/hf auth login
