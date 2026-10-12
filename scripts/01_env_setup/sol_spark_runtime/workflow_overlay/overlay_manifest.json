@@ -48,5 +48,29 @@
   "runtime/stage1_ops/lookup.py": {
     "before_sha256": "467134caa9aa9df897ccee9f12183be52acb3ca4e1774d237d3c572c0864dc21",
     "after_sha256": "8fd685ab80f5bba5bed9f02040a88c15b780757b856847bdf95f1f5b2f90d252"
+  },
+  "runtime/latent_transfer.py": {
+    "before_sha256": "09588af507fdb23ff5e7ffdff73d1e8097cfb32b9c15b3e9fc8c79133751e783",
+    "after_sha256": "90cbe60704ac2a8f168b125b7686490bf029d74e7680caf443616ff072b9128d"
+  },
+  "runtime/stage2.py": {
+    "before_sha256": "77a2f80a9419ad8de5882628055fe163d06bfb50c3d9de4297f0058f2a865324",
+    "after_sha256": "917fc1792784343cdf4655972853d0c17cf5f530671c99952339919e6cf00ba9"
+  },
+  "runtime/stage2_ops/h3_upscale.py": {
+    "before_sha256": "c6560308bd26fed4fe0241e927a130b7b845f3792e9c02414acc9f93caeb025c",
+    "after_sha256": "c2ea9bdf7d223fe4c092bf8e90216ede44c0638a01c922f425124fe65c191bb4"
+  },
+  "runtime/stage2_ops/models.py": {
+    "before_sha256": "ba7e4c37f36fb350764afe3391f11c405764d73c65bed51ac65f48ef3d5f861f",
+    "after_sha256": "de89f2b00b5ac8758b530aaf0a747aaedc0d77e364ae00696e046acec9d3b3df"
+  },
+  "runtime/stage2_ops/writer_chunking.py": {
+    "before_sha256": "19edfb2bbd62beee4635d7900097930c13e599a4abeceb7454d408b4614dd9f3",
+    "after_sha256": "3f3ba355633fa19152c49de510c72719c04128c0b3d1223c5193109ecc7228ee"
+  },
+  "runtime/duration_profiles.py": {
+    "before_sha256": null,
+    "after_sha256": "230d479981bff51f6dcefd3a74ef7a6ceefaeda4965d53f0ce91967fa9403b0c"
   }
 }

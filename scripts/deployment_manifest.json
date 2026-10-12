@@ -1,0 +1,440 @@
+{
+  "schema_version": 1,
+  "host": "admin@100.115.178.96",
+  "remote_repo": "/home/admin/dgx-spark-deploy",
+  "remote_home": "/home/admin",
+  "runtime_copies": [
+    {
+      "source": "scripts/02_download_model/auto_resume_download.sh",
+      "target": "auto_resume_download.sh"
+    },
+    {
+      "source": "scripts/04_test_benchmark/benchmark_serving.py",
+      "target": "benchmark_serving.py"
+    },
+    {
+      "source": "scripts/02_download_model/check_download_progress.sh",
+      "target": "check_download_progress.sh"
+    },
+    {
+      "source": "scripts/03_start_service/check_serving_status.sh",
+      "target": "check_serving_status.sh"
+    },
+    {
+      "source": "scripts/02_download_model/download_audio_models.sh",
+      "target": "download_audio_models.sh"
+    },
+    {
+      "source": "scripts/02_download_model/download_minimax_h3.sh",
+      "target": "download_minimax_h3.sh"
+    },
+    {
+      "source": "scripts/02_download_model/download_qwen3.8_27b.sh",
+      "target": "download_qwen3.8_27b.sh"
+    },
+    {
+      "source": "scripts/02_download_model/download_qwen3.8_flash_next.sh",
+      "target": "download_qwen3.8_flash_next.sh"
+    },
+    {
+      "source": "scripts/01_env_setup/install_llama_cpp_gb10.sh",
+      "target": "install_llama_cpp_gb10.sh"
+    },
+    {
+      "source": "scripts/01_env_setup/manage_filebrowser.sh",
+      "target": "manage_filebrowser.sh"
+    },
+    {
+      "source": "scripts/01_env_setup/pull_llama_cpp_docker.sh",
+      "target": "pull_llama_cpp_docker.sh"
+    },
+    {
+      "source": "scripts/04_test_benchmark/benchmark_qwen_image_21.py",
+      "target": "qwen-image-2.1-runtime/benchmark_qwen_image_21.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/benchmark_qwen_image_21_composition.py",
+      "target": "qwen-image-2.1-runtime/benchmark_qwen_image_21_composition.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/benchmark_qwen_image_21_http.py",
+      "target": "qwen-image-2.1-runtime/benchmark_qwen_image_21_http.py"
+    },
+    {
+      "source": "scripts/02_download_model/download_qwen_image_21.py",
+      "target": "qwen-image-2.1-runtime/download_qwen_image_21.py"
+    },
+    {
+      "source": "docs/benchmarks/10_troy_msr_image2/qwen21/generate_frame.py",
+      "target": "qwen-image-2.1-runtime/generate_frame.py"
+    },
+    {
+      "source": "scripts/03_start_service/generate_qwen_image_21.py",
+      "target": "qwen-image-2.1-runtime/generate_qwen_image_21.py"
+    },
+    {
+      "source": "scripts/03_start_service/run_qwen_image_21.sh",
+      "target": "qwen-image-2.1-runtime/run_qwen_image_21.sh"
+    },
+    {
+      "source": "docs/benchmarks/10_troy_msr_image2/qwen21/serve_session.py",
+      "target": "qwen-image-2.1-runtime/serve_session.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/test_qwen_image_21.sh",
+      "target": "qwen-image-2.1-runtime/test_qwen_image_21.sh"
+    },
+    {
+      "source": "scripts/04_test_benchmark/test_qwen_image_21_sglang.py",
+      "target": "qwen-image-2.1-runtime/test_qwen_image_21_sglang.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/test_qwen_image_21_speed.sh",
+      "target": "qwen-image-2.1-runtime/test_qwen_image_21_speed.sh"
+    },
+    {
+      "source": "scripts/02_download_model/verify_qwen_image_21.py",
+      "target": "qwen-image-2.1-runtime/verify_qwen_image_21.py"
+    },
+    {
+      "source": "scripts/03_start_service/session_fifo_proxy.py",
+      "target": "session_fifo_proxy.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/config.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/config.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/duration_profiles.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/duration_profiles.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/latent_transfer.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/latent_transfer.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/pipeline.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/pipeline.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/stage1.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/stage1.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/stage1_ops/capture.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/stage1_ops/capture.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/stage1_ops/continuation.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/stage1_ops/continuation.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/stage1_ops/lookup.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/stage1_ops/lookup.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/stage2.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/stage2.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/stage2_ops/h3_upscale.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/stage2_ops/h3_upscale.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/stage2_ops/models.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/stage2_ops/models.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/stage2_ops/writer_chunking.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/stage2_ops/writer_chunking.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/runtime/workflows.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/runtime/workflows.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/tests/test_pipeline.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/tests/test_pipeline.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/tests/test_stage2_contract.py",
+      "target": "sol-h3-spark/models/minimax_h3/Sol-H3-Spark/tests/test_stage2_contract.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/Dockerfile.qwen.local",
+      "target": "sol-spark-runtime/Dockerfile.qwen.local"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/Dockerfile.qwen.local.dockerignore",
+      "target": "sol-spark-runtime/Dockerfile.qwen.local.dockerignore"
+    },
+    {
+      "source": "scripts/04_test_benchmark/analyze_sol_h3_join.py",
+      "target": "sol-spark-runtime/analyze_sol_h3_join.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/build-kernels.py",
+      "target": "sol-spark-runtime/build-kernels.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/build-qwen.py",
+      "target": "sol-spark-runtime/build-qwen.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/build_identity_prompt_caches.py",
+      "target": "sol-spark-runtime/build_identity_prompt_caches.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/decode_h3_identity_baseline.py",
+      "target": "sol-spark-runtime/decode_h3_identity_baseline.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/download_ltx_identity_weights.py",
+      "target": "sol-spark-runtime/download_ltx_identity_weights.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/draft_preview.py",
+      "target": "sol-spark-runtime/draft_preview.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/extend_troy_continuous.py",
+      "target": "sol-spark-runtime/extend_troy_continuous.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/fa4-installable.txt",
+      "target": "sol-spark-runtime/fa4-installable.txt"
+    },
+    {
+      "source": "scripts/04_test_benchmark/generate_troy_boards.py",
+      "target": "sol-spark-runtime/generate_troy_boards.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/install-runtime.py",
+      "target": "sol-spark-runtime/install-runtime.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/install-targets.py",
+      "target": "sol-spark-runtime/install-targets.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/install_workflow_overlay.py",
+      "target": "sol-spark-runtime/install_workflow_overlay.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/preflight_sol_h3_component.py",
+      "target": "sol-spark-runtime/preflight_sol_h3_component.py"
+    },
+    {
+      "source": "scripts/01_env_setup/prepare_sol_spark_assets.py",
+      "target": "sol-spark-runtime/prepare_assets.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/refine_identity_capture.py",
+      "target": "sol-spark-runtime/refine_identity_capture.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/refine_identity_workflows.py",
+      "target": "sol-spark-runtime/refine_identity_workflows.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_chained_cow_story.py",
+      "target": "sol-spark-runtime/run_chained_cow_story.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_identity_queue.py",
+      "target": "sol-spark-runtime/run_identity_queue.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_identity_ref2va.py",
+      "target": "sol-spark-runtime/run_identity_ref2va.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_ltx_identity_trial.py",
+      "target": "sol-spark-runtime/run_ltx_identity_trial.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_official_demo.py",
+      "target": "sol-spark-runtime/run_official_demo.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_pool_elbow_batch.py",
+      "target": "sol-spark-runtime/run_pool_elbow_batch.py"
+    },
+    {
+      "source": "scripts/03_start_service/run_sol_h3_spark.sh",
+      "target": "sol-spark-runtime/run_sol_h3_spark.sh"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_troy_climax.py",
+      "target": "sol-spark-runtime/run_troy_climax.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_troy_mixed_story.py",
+      "target": "sol-spark-runtime/run_troy_mixed_story.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/run_troy_workflow_comparison.py",
+      "target": "sol-spark-runtime/run_troy_workflow_comparison.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/workflow_overlay/sol_api_server.py",
+      "target": "sol-spark-runtime/sol_api_server.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/sol_async_gateway.py",
+      "target": "sol-spark-runtime/sol_async_gateway.py"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/start_gateway.sh",
+      "target": "sol-spark-runtime/start_gateway.sh"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/start_sol_server.sh",
+      "target": "sol-spark-runtime/start_sol_server.sh"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/start_sol_server_ref2va.sh",
+      "target": "sol-spark-runtime/start_sol_server_ref2va.sh"
+    },
+    {
+      "source": "scripts/01_env_setup/sol_spark_runtime/stop_sol_server.sh",
+      "target": "sol-spark-runtime/stop_sol_server.sh"
+    },
+    {
+      "source": "scripts/04_test_benchmark/test_sol_h3_story_api.py",
+      "target": "sol-spark-runtime/test_sol_h3_story_api.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/test_sol_h3_workflows.py",
+      "target": "sol-spark-runtime/test_sol_h3_workflows.py"
+    },
+    {
+      "source": "scripts/04_test_benchmark/verify_sol_h3_video.py",
+      "target": "sol-spark-runtime/verify_sol_h3_video.py"
+    },
+    {
+      "source": "scripts/03_start_service/start_qwen3.8_27b_docker.sh",
+      "target": "start_qwen3.8_27b_docker.sh"
+    },
+    {
+      "source": "scripts/03_start_service/start_qwen3.8_flash_next.sh",
+      "target": "start_qwen3.8_flash_next.sh"
+    },
+    {
+      "source": "scripts/03_start_service/start_qwen3.8_flash_next_docker.sh",
+      "target": "start_qwen3.8_flash_next_docker.sh"
+    },
+    {
+      "source": "scripts/03_start_service/start_service_with_proxy.sh",
+      "target": "start_service_with_proxy.sh"
+    },
+    {
+      "source": "scripts/04_test_benchmark/stress_test_fifo.py",
+      "target": "stress_test_fifo.py"
+    },
+    {
+      "source": "scripts/03_start_service/switch_to_minimax.sh",
+      "target": "switch_to_minimax.sh"
+    },
+    {
+      "source": "scripts/03_start_service/switch_to_qwen.sh",
+      "target": "switch_to_qwen.sh"
+    },
+    {
+      "source": "scripts/04_test_benchmark/test_api.sh",
+      "target": "test_api.sh"
+    },
+    {
+      "source": "scripts/04_test_benchmark/test_speedup.py",
+      "target": "test_speedup.py"
+    }
+  ],
+  "local_copies": [
+    {
+      "source": "scripts/03_start_service/session_fifo_proxy.py",
+      "target": ".agents/skills/llm-session-cache-optimization/scripts/session_fifo_proxy.py"
+    },
+    {
+      "source": "scripts/03_start_service/start_service_with_proxy.sh",
+      "target": ".agents/skills/llm-session-cache-optimization/scripts/start_service_with_proxy.sh"
+    },
+    {
+      "source": "scripts/04_test_benchmark/stress_test_fifo.py",
+      "target": ".agents/skills/llm-session-cache-optimization/scripts/stress_test_fifo.py"
+    }
+  ],
+  "excluded_remote_files": [
+    {
+      "path": "sol-spark-runtime/component-preflight.py",
+      "reason": "早期组件预检接口；当前受管入口为 preflight_sol_h3_component.py，保留旧 CLI 避免破坏历史调用。"
+    },
+    {
+      "path": "sol-spark-runtime/fetch-cutlass.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/finish_identity_queue.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/hydrate-comfy.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/login-hf.sh",
+      "reason": "历史登录辅助脚本；未执行，不上传可能含账户配置的文件。"
+    },
+    {
+      "path": "sol-spark-runtime/patch_api_server.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/patch_pipeline.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/prioritize-qwen.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/queue-acceptance.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/queue-cache.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/queue-qwen-preflight.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/resume-stage1.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/retry-qwen-pull.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/run_chained_cow_story.sh",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/stage1-startup.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/status.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/test-fa4.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    },
+    {
+      "path": "sol-spark-runtime/trigger_cow_story.py",
+      "reason": "历史单次安装、排错或基准批次工具；保留原文件，不作为当前通用部署入口。"
+    }
+  ]
+}

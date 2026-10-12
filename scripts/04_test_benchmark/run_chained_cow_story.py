@@ -26,13 +26,16 @@ os.environ["HF_HUB_OFFLINE"] = "1"
 os.environ["TRANSFORMERS_OFFLINE"] = "1"
 os.environ["PYTHONUNBUFFERED"] = "1"
 
+# Prevent PyTorch Inductor multi-worker fork deadlocks in multithreaded FastVideo runtime
+os.environ["TORCHINDUCTOR_COMPILE_THREADS"] = "1"
+os.environ["TORCHINDUCTOR_MAX_AUTOTUNE"] = "0"
+
 from runtime.config import load_paths, normalize_case
 from runtime.pipeline import Pipeline
 
 ffmpeg_bin = "/home/admin/.local/bin/ffmpeg"
 timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 out_dir = runtime / "outputs" / f"cow_story_20s_{timestamp}"
-# out_dir will be created by Pipeline.__init__
 
 initial_image = runtime / "inputs" / "yellow_cow_16x9.png"
 if not initial_image.is_file():
@@ -61,13 +64,12 @@ shot_definitions = [
     },
 ]
 
-print(f"=== Starting Chained FL2VA Cow Story Generation ({len(shot_definitions)} shots, 20s total) ===")
-print(f"Output directory: {out_dir}")
+print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] === Starting Chained FL2VA Cow Story Generation ({len(shot_definitions)} shots, 20s total) ===", flush=True)
+print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] Output directory: {out_dir}", flush=True)
 
 paths = load_paths(runtime / "paths.json", task="fl2va")
 pipeline = Pipeline(paths, out_dir, task="fl2va")
 
-# First case anchors the warmup
 case0 = {
     "case_id": shot_definitions[0]["case_id"],
     "task": "fl2va",
@@ -77,9 +79,11 @@ case0 = {
 }
 normalized_c0 = normalize_case(case0, base_dir=runtime)
 
-print("Starting pipeline and executing warmup (using initial frame)...", flush=True)
+print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] Starting pipeline and executing warmup (approx. 5-6 mins for FP8 conversion & JIT compilation)...", flush=True)
+warmup_start = time.time()
 pipeline.start(normalized_c0)
-print("Pipeline is READY with permanent workers loaded!", flush=True)
+warmup_elapsed = time.time() - warmup_start
+print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] Pipeline is READY! Warmup completed in {warmup_elapsed:.2f}s (~{warmup_elapsed/60:.1f}m)", flush=True)
 
 current_first_frame = str(initial_image)
 voiced_shots = []
@@ -87,7 +91,7 @@ voiced_shots = []
 try:
     for idx, shot in enumerate(shot_definitions):
         cid = shot["case_id"]
-        print(f"\n--- [Shot {idx+1}/4] Generating {cid} with first_frame: {current_first_frame} ---", flush=True)
+        print(f"\n[{datetime.datetime.now().strftime('%H:%M:%S')}] --- [Shot {idx+1}/4] Generating {cid} with first_frame: {Path(current_first_frame).name} ---", flush=True)
         raw_case = {
             "case_id": cid,
             "task": "fl2va",
@@ -96,8 +100,10 @@ try:
             "prompt": shot["prompt"]
         }
         norm_case = normalize_case(raw_case, base_dir=runtime)
+        t0 = time.time()
         res = pipeline.generate(norm_case)
-        print(f"PASS: {cid} generated in {res['e2e_s']:.2f}s! Video: {res['output']}", flush=True)
+        elapsed = time.time() - t0
+        print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] PASS: {cid} generated in {elapsed:.2f}s (reported e2e: {res['e2e_s']:.2f}s)! Video: {res['output']}", flush=True)
 
         vid_path = Path(res["output"])
         val_dir = out_dir / "validation" / cid
@@ -112,33 +118,32 @@ try:
             str(val_dir)
         ], check=True)
 
-        # 2. Extract tail frame (frame 120 / last frame) as next shot's first_frame
+        # 2. Extract tail frame (last frame) as next shot's first_frame
         tail_frame = val_dir / "tail_frame.png"
         subprocess.run([
             ffmpeg_bin, "-y", "-sseof", "-0.1", "-i", str(vid_path),
             "-update", "1", "-vframes", "1", str(tail_frame)
         ], check=True)
-        print(f"Extracted tail frame for chaining: {tail_frame}", flush=True)
+        print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] Extracted tail frame for chaining: {tail_frame}", flush=True)
         current_first_frame = str(tail_frame)
 
         # 3. Mux TTS voiceover into this shot
         tts_file = shot["tts_audio"]
         voiced_mp4 = out_dir / f"{cid}_voiced.mp4"
         if tts_file.is_file():
-            # Replace video audio with mastered TTS audio
             subprocess.run([
                 ffmpeg_bin, "-y", "-i", str(vid_path), "-i", str(tts_file),
                 "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
                 "-map", "0:v:0", "-map", "1:a:0", "-shortest",
                 str(voiced_mp4)
             ], check=True)
-            print(f"Muxed TTS voiceover into: {voiced_mp4}", flush=True)
+            print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] Muxed TTS voiceover into: {voiced_mp4}", flush=True)
             voiced_shots.append(voiced_mp4)
         else:
             voiced_shots.append(vid_path)
 
     pipeline.finish()
-    print(f"\nMean E2E across formal requests: {pipeline.report['mean_e2e_s']:.2f}s")
+    print(f"\n[{datetime.datetime.now().strftime('%H:%M:%S')}] Mean E2E across formal requests: {pipeline.report['mean_e2e_s']:.2f}s", flush=True)
 finally:
     pipeline.close()
 
@@ -149,7 +154,7 @@ with open(concat_txt, "w") as f:
         f.write(f"file '{p.resolve()}'\n")
 
 master_mp4 = out_dir / f"yellow_cow_20s_master.mp4"
-print(f"Concatenating {len(voiced_shots)} shots into {master_mp4}...", flush=True)
+print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] Concatenating {len(voiced_shots)} shots into {master_mp4}...", flush=True)
 subprocess.run([
     ffmpeg_bin, "-y", "-f", "concat", "-safe", "0",
     "-i", str(concat_txt),
@@ -157,7 +162,18 @@ subprocess.run([
     str(master_mp4)
 ], check=True)
 
-print(f"\n==========================================================")
-print(f"🎉 MASTER 20-SECOND VIDEO GENERATED SUCCESSFULLY!")
-print(f"Output: {master_mp4}")
-print(f"==========================================================")
+# Also create contact sheet for the master video
+master_val_dir = out_dir / "validation" / "master_20s"
+master_val_dir.mkdir(parents=True, exist_ok=True)
+subprocess.run([
+    ffmpeg_bin, "-y", "-i", str(master_mp4),
+    "-vf", r"select='not(mod(n\,60))',scale=448:256,tile=4x2",
+    "-frames:v", "1",
+    str(master_val_dir / "master_contact_sheet.png")
+], check=True)
+
+print(f"\n==========================================================", flush=True)
+print(f"🎉 MASTER 20-SECOND VIDEO GENERATED SUCCESSFULLY!", flush=True)
+print(f"Output: {master_mp4}", flush=True)
+print(f"Contact Sheet: {master_val_dir / 'master_contact_sheet.png'}", flush=True)
+print(f"==========================================================", flush=True)

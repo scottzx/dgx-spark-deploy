@@ -213,19 +213,31 @@ async def chat_completions(request: Request):
     headers = {k: v for k, v in request.headers.items() if k.lower() not in ["host", "content-length"]}
 
     if is_stream:
+        req = client.build_request(
+            "POST",
+            "/v1/chat/completions",
+            json=body,
+            headers=headers,
+            timeout=300.0
+        )
+        backend_resp = await client.send(req, stream=True)
+        if backend_resp.status_code != 200:
+            error_content = await backend_resp.aread()
+            await backend_resp.aclose()
+            return Response(
+                content=error_content,
+                status_code=backend_resp.status_code,
+                media_type=backend_resp.headers.get("content-type", "application/json")
+            )
+
         async def stream_generator():
-            async with client.stream(
-                "POST",
-                "/v1/chat/completions",
-                json=body,
-                headers=headers,
-                timeout=300.0
-            ) as backend_resp:
+            try:
                 async for chunk in backend_resp.aiter_bytes():
                     yield chunk
-
-            # 流式生成完毕后，异步存盘
-            asyncio.create_task(save_slot_snapshot(slot_id, session_filename))
+            finally:
+                await backend_resp.aclose()
+                # 流式生成完毕后，异步存盘
+                asyncio.create_task(save_slot_snapshot(slot_id, session_filename))
 
         return StreamingResponse(stream_generator(), media_type="text/event-stream")
     else:

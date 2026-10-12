@@ -20,7 +20,8 @@ scripts/
 ├── 01_env_setup/          环境准备
 ├── 02_download_model/     模型下载
 ├── 03_start_service/      服务启动（native / docker）
-└── 04_test_benchmark/     连通性测试与压测
+├── 04_test_benchmark/     连通性测试与压测
+└── 05_ops/                部署一致性检查
 docs/                      部署文档与实战总结
 ```
 
@@ -113,6 +114,17 @@ bash switch_to_qwen.sh
 ```
 
 多数参数支持环境变量覆盖：`MODEL_DIR`、`PORT`、`CONTEXT_SIZE`、`PARALLEL`、`LLAMA_CPP_IMAGE` 等。
+
+## 部署脚本一致性
+
+远程仓库与实际运行目录中的脚本副本需要分别同步。运行下面的只读检查可核对本地、origin、Spark 仓库与安装副本的提交、SHA-256 和可执行位：
+
+```bash
+python3 scripts/05_ops/check_deployment_consistency.py \
+  --output /tmp/dxg-deployment-consistency.json
+```
+
+副本映射见 [部署清单](scripts/deployment_manifest.json)，本次收敛记录与验证范围见 [脚本一致性](docs/deployments/脚本一致性.md)。
 
 ## 开源协议
 

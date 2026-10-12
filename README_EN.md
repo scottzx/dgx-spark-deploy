@@ -26,7 +26,8 @@ dgx-spark-deploy/
 │   ├── 01_env_setup/          # Environment & dependency bootstrapping
 │   ├── 02_download_model/     # Model weights acquisition & integrity checks
 │   ├── 03_start_service/      # Service launchers (Docker/Native) & model switchers
-│   └── 04_test_benchmark/     # Healthchecks, load tests & validation suites
+│   ├── 04_test_benchmark/     # Healthchecks, load tests & validation suites
+│   └── 05_ops/                # Deployment consistency audit
 ├── docs/
 │   ├── README.md              # Documentation index
 │   ├── deployments/           # Technical manuals & architecture summaries
@@ -133,11 +134,18 @@ This repository follows a **Hub-and-Spoke** architecture using GitHub as the Sin
    git commit -m "feat: updates"
    git push origin main
    ```
-2. **DGX Spark Host**: Pull latest scripts via SSH Deploy Key in seconds:
+2. **DGX Spark Host**: Fast-forward its checkout to the published commit:
    ```bash
    ssh admin@<spark-ip> "cd ~/dgx-spark-deploy && git pull"
    ```
-3. Heavy models (`~/models_cache/`) and video outputs (`~/sol-spark-runtime/outputs/`) remain isolated on NVMe storage and are shielded by `.gitignore`.
+3. Update installed copies listed in [the deployment manifest](scripts/deployment_manifest.json) after reviewing and backing up remote changes. Git pull does not update scripts installed in the home or runtime directories.
+4. Run the read-only audit from the local checkout:
+   ```bash
+   python3 scripts/05_ops/check_deployment_consistency.py --output /tmp/dxg-deployment-consistency.json
+   ```
+   This checks live origin, both checkout revisions, script hashes, executable bits, and installed copies. See [the audit record](docs/deployments/脚本一致性.md) for scope and verification.
+
+Heavy models (`~/models_cache/`) and video outputs (`~/sol-spark-runtime/outputs/`) remain isolated on NVMe storage and are shielded by `.gitignore`.
 
 ---
 

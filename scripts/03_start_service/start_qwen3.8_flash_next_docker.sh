@@ -4,6 +4,7 @@ set -Eeuo pipefail
 # ==============================================================================
 # NVIDIA DGX Spark / GB10: Qwen3.8-Flash-Next (177B MoE) 生产级常驻部署脚本
 # 特性: 开机自启、崩溃自动重启 (restart: unless-stopped)、日志轮转、健康检查
+# 优化: 启用 N-Gram 上下文投机解码 (Speculative Decoding)，大幅提升代码与长文生成速度
 # ==============================================================================
 
 IMAGE="${LLAMA_CPP_IMAGE:-ghcr.io/ggml-org/llama.cpp:server-cuda13}"
